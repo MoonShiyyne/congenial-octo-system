@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-31T07:05:26.989Z",
+ "generated": "2026-08-31T19:07:27.812Z",
  "itemCount": 81,
  "sourceStatus": [
   {
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "1g5lpqi",
+   "title": "Show HN: Turn repeated coding-agent corrections into rules/skills",
+   "summary": "",
+   "url": "https://blume.codes",
+   "discussion": "https://news.ycombinator.com/item?id=49511274",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "2 pts",
+   "date": "2026-08-31T15:57:10Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "1rc8sop",
    "title": "On the Maintenance and Co-evolution of Agent Plugins: An Empirical Study of Claude Code Plugin Marketplaces",
@@ -651,23 +668,6 @@
    "nodes": [
     "k-cli",
     "k-skills"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "cya2eo",
-   "title": "Show HN: Statey – the database your AI shares across every chat, over MCP",
-   "summary": "",
-   "url": "https://www.statey.ai",
-   "discussion": "https://news.ycombinator.com/item?id=48691461",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "4 pts",
-   "date": "2026-06-26T20:18:33Z",
-   "nodes": [
-    "a-mcp"
    ],
    "relevance": 3,
    "application": true
@@ -1406,6 +1406,17 @@
   }
  ],
  "byNode": {
+  "k-skills": [
+   "1g5lpqi",
+   "13xt578",
+   "qqjnqh",
+   "myhumj",
+   "1jovicv",
+   "1rta0q9",
+   "1tq7txv",
+   "12kn1mf",
+   "16cua2z"
+  ],
   "k-plugins": [
    "1rc8sop",
    "1jovicv",
@@ -1474,7 +1485,6 @@
   ],
   "a-mcp": [
    "5envg7",
-   "cya2eo",
    "sv0i6",
    "98y0rf",
    "1t0yqh8",
@@ -1492,16 +1502,6 @@
   "c-memory": [
    "1furdo9",
    "18ur1cp"
-  ],
-  "k-skills": [
-   "13xt578",
-   "qqjnqh",
-   "myhumj",
-   "1jovicv",
-   "1rta0q9",
-   "1tq7txv",
-   "12kn1mf",
-   "16cua2z"
   ],
   "a-managed": [
    "1c6q1us"
@@ -1551,6 +1551,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "1g5lpqi",
+   "node": "k-skills",
+   "nodeTitle": "Skills",
+   "discipline": "code",
+   "title": "Show HN: Turn repeated coding-agent corrections into rules/skills",
+   "url": "https://blume.codes"
+  },
   {
    "id": "1f3gl0i",
    "node": "c-retrieval",
@@ -1710,14 +1718,6 @@
    "discipline": "code",
    "title": "Show HN: Caliper – pass@k reliability testing for Claude Code and Codex skills",
    "url": "https://github.com/edonadei/caliper"
-  },
-  {
-   "id": "cya2eo",
-   "node": "a-mcp",
-   "nodeTitle": "MCP",
-   "discipline": "agents",
-   "title": "Show HN: Statey – the database your AI shares across every chat, over MCP",
-   "url": "https://www.statey.ai"
   },
   {
    "id": "rq0kwf",
