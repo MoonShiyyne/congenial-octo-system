@@ -20,6 +20,7 @@ const [html, css, js, signalsRaw] = await Promise.all(
   ['index.html', 'assets/app.css', 'assets/app.js', 'data/signals.json'].map(read));
 const { disciplines, levels, nodes } = await import('../data/curriculum.mjs');
 const { resources } = await import('../data/resources.mjs');
+const { primers } = await import('../data/primers.mjs');
 
 // Body content only; the Artifact host supplies the document skeleton.
 const body = html.match(/<body>([\s\S]*?)<\/body>/)[1]
@@ -33,7 +34,9 @@ const inlined = js
   .replace(/^import \{[^}]*\} from '\.\.\/data\/curriculum\.mjs';$/m,
     `const { disciplines, levels, nodes } = ${JSON.stringify({ disciplines, levels, nodes })};`)
   .replace(/^import \{[^}]*\} from '\.\.\/data\/resources\.mjs';$/m,
-    `const resources = ${JSON.stringify(resources)};`);
+    `const resources = ${JSON.stringify(resources)};`)
+  .replace(/^import \{[^}]*\} from '\.\.\/data\/primers\.mjs';$/m,
+    `const primers = ${JSON.stringify(primers)};`);
 
 if (/^import /m.test(inlined)) throw new Error('an import survived bundling — the build would ship an unresolvable module');
 

@@ -1,5 +1,6 @@
 import { disciplines, levels, nodes } from '../data/curriculum.mjs';
 import { resources } from '../data/resources.mjs';
+import { primers } from '../data/primers.mjs';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const VB = 1000, C = VB / 2;            // geometry box, centre
@@ -316,6 +317,23 @@ try { const t = localStorage.getItem('cpw.theme'); if (t) document.documentEleme
 /* ── node panel ───────────────────────────────────────────────────────── */
 // Inline formatting used in node prose. Bold must run before italic or the
 // italic rule would eat the inner pair of a **bold** span.
+// The glossary block. Sits between the hook and the deep explanation so the
+// jargon is defined before the prose leans on it. Nodes with no named artifact
+// to define simply have no primer, and this renders nothing.
+function renderPrimer(id) {
+  const p = primers[id];
+  if (!p) return '';
+  return `<section class="p-primer">
+    <h3>In plain terms</h3>
+    <p class="primer-lead">${rich(p.lead)}</p>
+    <dl class="primer-list">${p.items.map(i => `
+      <div class="primer-row">
+        <dt><code>${esc(i.n)}</code></dt>
+        <dd>${rich(i.d)}${i.e ? `<pre class="primer-ex"><code>${esc(i.e)}</code></pre>` : ''}</dd>
+      </div>`).join('')}</dl>
+  </section>`;
+}
+
 const KIND = { docs: 'Docs', post: 'Write-up', guide: 'Guide', talk: 'Talk' };
 
 const rich = s => esc(s)
@@ -342,6 +360,7 @@ function openPanel(id) {
     <h2 id="panel-title">${esc(n.title)}</h2>
     <p class="p-tag">${esc(n.tag)}</p>
     <p class="p-hook">${esc(n.hook)}</p>
+    ${renderPrimer(id)}
     <div class="p-what">${n.what.split(/\n\n+/).map(p => `<p>${rich(p)}</p>`).join('')}</div>
 
     <div class="p-sec">

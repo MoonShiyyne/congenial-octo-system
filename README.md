@@ -4,9 +4,10 @@ An interactive radial map of what Claude can do — **51 capabilities**, across 
 disciplines** and **five levels of depth** — with a live sidebar that tracks AI and
 entrepreneurial signals and attaches new ones to the nodes they touch.
 
-Every node carries an in-depth explanation, a worked example, the non-obvious detail
-that is usually learned the expensive way, and **links to the canonical material**
-that explains it — 180 references across 149 machine-checked URLs.
+Every node carries a plain-terms glossary of the things it names, an in-depth
+explanation, a worked example, the non-obvious detail that is usually learned the
+expensive way, and **links to the canonical material** that explains it — 180
+references across 149 machine-checked URLs.
 
 ---
 
@@ -113,6 +114,30 @@ The validator enforces the things that break the page quietly: unique ids,
 required fields, complete examples, prerequisites that exist, prerequisites that
 are not at a *higher* level than the node depending on them, and at least one
 level-1 entry point per discipline.
+
+---
+
+## In plain terms
+
+The prose names concrete things — `cache_control`, `PreToolUse`, `SKILL.md`,
+`custom_id` — and assumes you know what they are. `data/primers.mjs` is where that
+gets said plainly, and it renders **between the hook and the deep explanation**, so
+the jargon is defined before the writing leans on it.
+
+Each entry is the thing exactly as you would type it, one line of plain English,
+and the smallest snippet that shows its shape:
+
+```
+PreToolUse   Runs before a tool call. Exit non-zero and the call is
+             blocked — no negotiating.
+             exit 1   # the edit never happens
+```
+
+46 of the 51 nodes have one, 206 entries in total. The five without —
+precise asking, framing, exemplars, critique loops, long-form co-authoring — are
+pure technique with no named artifact to define, and a padded glossary there would
+be worse than none. The validator enforces a minimum of three entries and caps each
+description, so an entry that stops being plain terms fails the build.
 
 ---
 

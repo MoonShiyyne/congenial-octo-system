@@ -260,6 +260,36 @@ a { color: var(--accent); }
 .p-hook { max-width: 60ch; margin: 16px 0 0; padding: 13px 16px; border-left: 3px solid var(--accent);
   background: var(--accent-dim); border-radius: 0 8px 8px 0; font-size: 15px;
   line-height: 1.55; color: var(--ink); }
+.p-primer {
+  margin-top: 22px; padding: 16px 18px 6px; border-radius: 11px;
+  background: var(--bg-sunk); border: 1px solid var(--line);
+}
+.p-primer h3 {
+  font-size: 10.5px; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--ink-faint); margin-bottom: 8px;
+}
+.primer-lead { margin: 0 0 14px; font-size: 13.5px; line-height: 1.6;
+  color: var(--ink); max-width: 60ch; }
+.primer-list { margin: 0; padding: 0; display: flex; flex-direction: column; }
+.primer-row {
+  display: grid; grid-template-columns: minmax(104px, 166px) 1fr;
+  gap: 4px 18px; padding: 11px 0; border-top: 1px solid var(--line-soft);
+}
+.primer-row dt { min-width: 0; }
+.primer-row dt code {
+  font-family: var(--mono); font-size: 12px; line-height: 1.45;
+  color: var(--accent); overflow-wrap: anywhere;
+}
+.primer-row dd { margin: 0; font-size: 13.5px; line-height: 1.6; color: var(--ink-soft); }
+.primer-ex {
+  margin: 7px 0 0; padding: 7px 10px; border-radius: 6px; overflow-x: auto;
+  background: var(--code-bg); color: var(--code-ink);
+  font-family: var(--mono); font-size: 11.8px; line-height: 1.55;
+}
+@media (max-width: 620px) {
+  .primer-row { grid-template-columns: 1fr; gap: 3px; }
+}
+
 .p-what { margin-top: 20px; font-size: 14.5px; line-height: 1.72;
   color: var(--ink-soft); max-width: 62ch; }
 .p-what p { margin: 0 0 14px; }

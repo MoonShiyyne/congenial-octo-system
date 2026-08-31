@@ -50,6 +50,18 @@ for (const n of nodes) {
   }
 }
 
+// ── primers ──────────────────────────────────────────────────────────────
+const { primers } = await import('../data/primers.mjs');
+for (const [key, p] of Object.entries(primers)) {
+  check(ids.has(key), `primers: unknown node "${key}"`);
+  check(typeof p.lead === 'string' && p.lead.length > 0, `${key}: primer has no lead`);
+  check(Array.isArray(p.items) && p.items.length >= 3, `${key}: primer needs at least 3 items`);
+  for (const i of p.items ?? []) {
+    check(i.n && i.d, `${key}: primer item missing name or description`);
+    check((i.d ?? '').length < 240, `${key}: primer item "${i.n}" is too long to be plain terms`);
+  }
+}
+
 // ── signals ──────────────────────────────────────────────────────────────
 try {
   const s = JSON.parse(await readFile(join(ROOT, 'data/signals.json'), 'utf8'));
@@ -71,4 +83,5 @@ if (fail.length) {
   process.exit(1);
 }
 const refCount = Object.values(resources).flat().length;
-console.error(`✓ ${nodes.length} nodes, ${disciplines.length} disciplines, ${levels.length} levels, ${refCount} references — valid`);
+const primerCount = Object.values(primers).reduce((a, p) => a + p.items.length, 0);
+console.error(`✓ ${nodes.length} nodes, ${disciplines.length} disciplines, ${levels.length} levels, ${refCount} references, ${primerCount} primer entries — valid`);
