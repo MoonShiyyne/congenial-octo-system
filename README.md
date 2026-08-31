@@ -11,12 +11,16 @@ references across 149 machine-checked URLs.
 
 ---
 
-## The three parts
+## The four parts
 
 **The web** is the stable part: a curriculum that changes when someone edits it.
 The centre is where everyone starts; rings are levels; sectors are disciplines;
 lines are prerequisites. Hovering a node traces its lineage back to the centre,
 so "what do I need before this?" is a visual question rather than a reading task.
+
+**The capstones** sit at the summit of each sector — one project per discipline,
+reachable from the ◆ marker at the outer edge of the web or from the left rail.
+Each exercises every node in its line.
 
 **The tutor** is retrieval practice. It gives you a situation and asks which
 capability it calls for — 103 scenarios, at least two per node.
@@ -117,6 +121,40 @@ The validator enforces the things that break the page quietly: unique ids,
 required fields, complete examples, prerequisites that exist, prerequisites that
 are not at a *higher* level than the node depending on them, and at least one
 level-1 entry point per discipline.
+
+---
+
+## The capstones
+
+`data/capstones.mjs` holds six projects, one per discipline, anchored to that
+discipline's highest-tier node. They are not exercises with an answer key — each
+is a real project whose completion is the check.
+
+| Discipline | Capstone |
+|---|---|
+| Reasoning & Dialogue | **The Prompt Audit** — modernise a codebase of inherited prompts and prove you did not break anything |
+| Context & Knowledge | **The Corpus Interrogator** — cited answers over 800 documents, under a stated budget |
+| Code & Engineering | **The Self-Maintaining Repo** — make a repo one where an agent works overnight and you would merge the diff |
+| Agents & Automation | **The Overnight Analyst** — an agent that runs at 6am and cannot cost more than five dollars |
+| Creation & Craft | **One Story, Four Surfaces** — one analysis, four audiences, one visual system |
+| Platform & Scale | **The Route to Production** — take one route from prototype to something you would put a pager on |
+
+Each has a brief, six ordered stages naming the nodes they exercise, a **You have
+understood this if** list of checkable outcomes, and a **What reveals you have
+not** list of the mistakes people actually make. The stages are numbered because
+they genuinely are a sequence — in The Prompt Audit you build the eval before you
+delete anything, and doing it the other way round is the trap.
+
+The validator enforces what makes a capstone a real check: anchors must sit at the
+discipline's top tier, every node in the discipline must be exercised by some
+stage, and each capstone needs at least four stages, four proof criteria and four
+traps. Cross-discipline nodes are listed separately — a capstone that never leaves
+its own sector is not a real project.
+
+**One asymmetry worth knowing:** Context & Knowledge tops out at Architect while
+the other five reach Frontier, so its capstone anchors on two level-4 nodes rather
+than one level-5. The validator checks the anchor is at whatever that
+discipline's top tier actually is, rather than assuming 5.
 
 ---
 

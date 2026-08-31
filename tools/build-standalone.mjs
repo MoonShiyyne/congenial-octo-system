@@ -22,6 +22,7 @@ const { disciplines, levels, nodes } = await import('../data/curriculum.mjs');
 const { resources } = await import('../data/resources.mjs');
 const { primers } = await import('../data/primers.mjs');
 const { scenarios } = await import('../data/scenarios.mjs');
+const { capstones } = await import('../data/capstones.mjs');
 
 // Body content only; the Artifact host supplies the document skeleton.
 const body = html.match(/<body>([\s\S]*?)<\/body>/)[1]
@@ -39,7 +40,9 @@ const inlined = js
   .replace(/^import \{[^}]*\} from '\.\.\/data\/primers\.mjs';$/m,
     `const primers = ${JSON.stringify(primers)};`)
   .replace(/^import \{[^}]*\} from '\.\.\/data\/scenarios\.mjs';$/m,
-    `const scenarios = ${JSON.stringify(scenarios)};`);
+    `const scenarios = ${JSON.stringify(scenarios)};`)
+  .replace(/^import \{[^}]*\} from '\.\.\/data\/capstones\.mjs';$/m,
+    `const capstones = ${JSON.stringify(capstones)};`);
 
 if (/^import /m.test(inlined)) throw new Error('an import survived bundling — the build would ship an unresolvable module');
 

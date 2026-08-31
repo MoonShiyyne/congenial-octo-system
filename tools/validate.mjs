@@ -82,6 +82,38 @@ for (const n of nodes) {
   check(scenarios.some(q => q.n === n.id), `${n.id}: no tutor scenario`);
 }
 
+// ── capstones ────────────────────────────────────────────────────────────
+const { capstones } = await import('../data/capstones.mjs');
+check(capstones.length === disciplines.length, 'every discipline needs a capstone');
+for (const cap of capstones) {
+  check(discIds.has(cap.d), `capstone: unknown discipline "${cap.d}"`);
+  for (const f of ['title', 'tagline', 'brief']) check(cap[f]?.length > 0, `capstone ${cap.d}: missing ${f}`);
+  check(cap.proof?.length >= 4, `capstone ${cap.d}: needs at least 4 proof criteria`);
+  check(cap.traps?.length >= 4, `capstone ${cap.d}: needs at least 4 traps`);
+  check(cap.stages?.length >= 4, `capstone ${cap.d}: needs at least 4 stages`);
+
+  // Anchors must sit at the discipline's highest tier — a capstone that caps
+  // something below the summit is not capping the line.
+  const top = Math.max(...nodes.filter(n => n.d === cap.d).map(n => n.lvl));
+  for (const a of cap.anchors ?? []) {
+    check(ids.has(a), `capstone ${cap.d}: unknown anchor "${a}"`);
+    const an = nodes.find(n => n.id === a);
+    check(!an || an.d === cap.d, `capstone ${cap.d}: anchor "${a}" is in another discipline`);
+    check(!an || an.lvl === top, `capstone ${cap.d}: anchor "${a}" is not at the top tier (${top})`);
+  }
+
+  // The check-for-understanding only works if it exercises the whole line.
+  const exercised = new Set((cap.stages ?? []).flatMap(st => st.nodes ?? []));
+  for (const n of exercised) check(ids.has(n), `capstone ${cap.d}: unknown node "${n}" in a stage`);
+  for (const n of nodes.filter(n => n.d === cap.d)) {
+    check(exercised.has(n.id), `capstone ${cap.d}: never exercises ${n.id}`);
+  }
+  for (const st of cap.stages ?? []) {
+    check(st.n?.length > 0 && st.d?.length > 0, `capstone ${cap.d}: a stage is missing its name or description`);
+    check((st.nodes ?? []).length > 0, `capstone ${cap.d}: stage "${st.n}" exercises no nodes`);
+  }
+}
+
 // ── signals ──────────────────────────────────────────────────────────────
 try {
   const s = JSON.parse(await readFile(join(ROOT, 'data/signals.json'), 'utf8'));
@@ -104,4 +136,4 @@ if (fail.length) {
 }
 const refCount = Object.values(resources).flat().length;
 const primerCount = Object.values(primers).reduce((a, p) => a + p.items.length, 0);
-console.error(`✓ ${nodes.length} nodes, ${disciplines.length} disciplines, ${levels.length} levels, ${refCount} references, ${primerCount} primer entries, ${scenarios.length} scenarios — valid`);
+console.error(`✓ ${nodes.length} nodes, ${disciplines.length} disciplines, ${levels.length} levels, ${refCount} references, ${primerCount} primer entries, ${scenarios.length} scenarios, ${capstones.length} capstones — valid`);

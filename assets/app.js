@@ -2,6 +2,7 @@ import { disciplines, levels, nodes } from '../data/curriculum.mjs';
 import { resources } from '../data/resources.mjs';
 import { primers } from '../data/primers.mjs';
 import { scenarios } from '../data/scenarios.mjs';
+import { capstones } from '../data/capstones.mjs';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const VB = 1000, C = VB / 2;            // geometry box, centre
@@ -94,16 +95,34 @@ for (const l of levels) {
   t.textContent = label;
 }
 
-// sector labels, curved along the outer edge
+// Sector labels double as the capstone summit for that discipline: the name,
+// and beneath it the project that caps the line. The whole group is one
+// control, so the outermost thing in each sector is the thing you finish with.
 const gSect = mk('g', {}, root);
+const capstoneOf = id => capstones.find(c => c.d === id);
 disciplines.forEach((d, i) => {
   const a = (-90 + i * SECTOR + SECTOR / 2 + ROT) * Math.PI / 180;
-  const r = R(5) + 62;
-  const t = mk('text', {
-    class: 'sector-label', x: C + Math.cos(a) * r, y: C + Math.sin(a) * r,
-    fill: colour(d.id), 'text-anchor': 'middle', 'dominant-baseline': 'middle',
-  }, gSect);
+  const r = R(5) + 56;
+  const x = C + Math.cos(a) * r, y = C + Math.sin(a) * r;
+  const cap = capstoneOf(d.id);
+
+  const g = mk('g', { class: 'summit', tabindex: '0', role: 'button',
+    'aria-label': `${d.name} capstone: ${cap.title}` }, gSect);
+
+  const t = mk('text', { class: 'sector-label', x, y, fill: colour(d.id),
+    'text-anchor': 'middle', 'dominant-baseline': 'middle' }, g);
   t.textContent = d.name.toUpperCase();
+
+  // the badge sits one step further out, along the sector's own radius
+  const bx = C + Math.cos(a) * (r + 21), by = C + Math.sin(a) * (r + 21);
+  const badge = mk('text', { class: 'summit-badge', x: bx, y: by,
+    fill: colour(d.id), 'text-anchor': 'middle', 'dominant-baseline': 'middle' }, g);
+  badge.textContent = '◆ CAPSTONE';
+
+  g.addEventListener('click', () => openCapstone(d.id));
+  g.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openCapstone(d.id); }
+  });
 });
 
 // edges
@@ -290,6 +309,16 @@ el('level-list').innerHTML = levels.map(l => `
     <span><span class="lv-name">${esc(l.name)}</span> —
     <span class="lv-note">${esc(l.note)}</span></span></li>`).join('');
 
+el('capstone-list').innerHTML = capstones.map(c => `
+  <li><button data-capstone="${c.d}">
+    <span class="swatch" style="background:${colour(c.d)}"></span>
+    <span><span class="lg-name">${esc(c.title)}</span>
+    <span class="lg-blurb">${esc(discOf(c.d).name)}</span></span>
+  </button></li>`).join('');
+el('capstone-list').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (b) openCapstone(b.dataset.capstone);
+});
+
 function renderProgress() {
   el('progress-bars').innerHTML = disciplines.map(d => {
     const all = nodes.filter(n => n.d === d.id);
@@ -342,6 +371,65 @@ const rich = s => esc(s)
   .replace(/\*([^*\n]+?)\*/g, '<em>$1</em>')
   .replace(/`([^`]+?)`/g, '<code>$1</code>');
 
+
+/** The capstone panel. Reuses the node panel shell, different content. */
+function openCapstone(discId) {
+  const cap = capstones.find(c => c.d === discId);
+  if (!cap) return;
+  const d = discOf(discId);
+  const exercised = [...new Set(cap.stages.flatMap(s => s.nodes))].map(nodeOf);
+  const own = exercised.filter(n => n.d === discId);
+  const borrowed = exercised.filter(n => n.d !== discId);
+  const chip = m => `<button data-goto="${m.id}"><span class="swatch" style="background:${colour(m.d)}"></span>${esc(m.title)}</button>`;
+
+  el('panel-content').innerHTML = `
+    <div class="p-crumb">
+      <span class="swatch" style="background:${colour(discId)}"></span>
+      <span style="color:${colour(discId)}">${esc(d.name)}</span>
+      <span class="p-lvl">· Capstone · caps ${cap.anchors.map(a => esc(nodeOf(a).title)).join(' & ')}</span>
+    </div>
+    <h2 id="panel-title">${esc(cap.title)}</h2>
+    <p class="p-tag">${esc(cap.tagline)}</p>
+
+    <div class="cap-what">${cap.brief.split(/\n\n+/).map(p => `<p>${rich(p)}</p>`).join('')}</div>
+
+    <div class="p-sec">
+      <h3>The build — ${cap.stages.length} stages</h3>
+      <ol class="cap-stages">${cap.stages.map(st => `
+        <li>
+          <h4>${esc(st.n)}</h4>
+          <p>${rich(st.d)}</p>
+          <div class="cap-stage-nodes">${st.nodes.map(id => nodeOf(id)
+            ? `<button class="node-chip" data-goto="${id}">${esc(nodeOf(id).title)}</button>` : '').join('')}</div>
+        </li>`).join('')}</ol>
+    </div>
+
+    <div class="p-sec">
+      <h3>You have understood this if</h3>
+      <ul class="cap-proof">${cap.proof.map(x => `<li>${rich(x)}</li>`).join('')}</ul>
+    </div>
+
+    <div class="p-sec">
+      <h3>What reveals you have not</h3>
+      <ul class="cap-traps">${cap.traps.map(x => `<li>${rich(x)}</li>`).join('')}</ul>
+    </div>
+
+    <div class="p-sec">
+      <h3>Exercises ${own.length} of the ${nodes.filter(n => n.d === discId).length} nodes in ${esc(d.name)}</h3>
+      <div class="p-links">${own.map(chip).join('')}</div>
+      ${borrowed.length ? `<p class="cap-borrow">Plus ${borrowed.length} from other disciplines — a capstone that never leaves its own sector is not a real project.</p>
+        <div class="p-links">${borrowed.map(chip).join('')}</div>` : ''}
+    </div>`;
+
+  el('panel').dataset.node = '';
+  el('panel').hidden = false;
+  el('panel-scrim').hidden = false;
+  el('panel').scrollTop = 0;
+  el('panel').focus();
+  el('panel-content').querySelectorAll('[data-goto]')
+    .forEach(b => b.addEventListener('click', () => openPanel(b.dataset.goto)));
+}
+
 function openPanel(id) {
   const n = nodeOf(id); if (!n) return;
   const d = discOf(n.d), lv = levels[n.lvl - 1];
@@ -390,6 +478,16 @@ function openPanel(id) {
     ${prereqs.length ? `<div class="p-sec"><h3>Rests on</h3><div class="p-links">${prereqs.map(chip).join('')}</div></div>` : ''}
     ${unlocks.length ? `<div class="p-sec"><h3>Leads to</h3><div class="p-links">${unlocks.map(chip).join('')}</div></div>` : ''}
 
+    ${capstones.some(c => c.anchors.includes(id)) ? `
+    <div class="p-sec">
+      <h3>This line ends here</h3>
+      <button class="cap-link" data-capstone="${n.d}">
+        <span class="cap-link-badge" style="color:${colour(n.d)}">◆ Capstone</span>
+        <span>${esc(capstones.find(c => c.anchors.includes(id)).title)}</span>
+        <span class="cap-link-go">Open →</span>
+      </button>
+    </div>` : ''}
+
     <div class="p-sec p-sig">
       <h3>Live signals for this node</h3>
       ${sigs.length ? `<ul>${sigs.slice(0, 8).map(s => `
@@ -417,6 +515,8 @@ function openPanel(id) {
   });
   el('panel-content').querySelectorAll('[data-goto]')
     .forEach(b => b.addEventListener('click', () => openPanel(b.dataset.goto)));
+  el('panel-content').querySelectorAll('[data-capstone]')
+    .forEach(b => b.addEventListener('click', () => openCapstone(b.dataset.capstone)));
 
   state.lit = id; paint();
 }
