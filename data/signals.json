@@ -1,0 +1,1747 @@
+{
+ "generated": "2026-08-31T07:03:26.505Z",
+ "itemCount": 81,
+ "sourceStatus": [
+  {
+   "id": "claude-code-changelog",
+   "label": "Claude Code changelog",
+   "ok": true,
+   "fetched": 277,
+   "kept": 105
+  },
+  {
+   "id": "python-sdk-changelog",
+   "label": "Anthropic Python SDK",
+   "ok": true,
+   "fetched": 37,
+   "kept": 11
+  },
+  {
+   "id": "typescript-sdk-changelog",
+   "label": "Anthropic TypeScript SDK",
+   "ok": true,
+   "fetched": 38,
+   "kept": 9
+  },
+  {
+   "id": "hn-mcp",
+   "label": "Hacker News · MCP & tooling",
+   "ok": true,
+   "fetched": 50,
+   "kept": 36
+  },
+  {
+   "id": "hn-claude",
+   "label": "Hacker News · Claude",
+   "ok": true,
+   "fetched": 57,
+   "kept": 15
+  },
+  {
+   "id": "hn-agents",
+   "label": "Hacker News · AI building",
+   "ok": true,
+   "fetched": 20,
+   "kept": 3
+  },
+  {
+   "id": "hn-show",
+   "label": "Show HN · built with AI",
+   "ok": true,
+   "fetched": 50,
+   "kept": 11
+  },
+  {
+   "id": "arxiv-agents",
+   "label": "arXiv · agents & LLM systems",
+   "ok": true,
+   "fetched": 25,
+   "kept": 9
+  },
+  {
+   "id": "arxiv-eval",
+   "label": "arXiv · evaluation & prompting",
+   "ok": true,
+   "fetched": 20,
+   "kept": 7
+  }
+ ],
+ "items": [
+  {
+   "id": "1rc8sop",
+   "title": "On the Maintenance and Co-evolution of Agent Plugins: An Empirical Study of Claude Code Plugin Marketplaces",
+   "summary": "AI coding agents, software tools that automate development tasks through reasoning and tool use, are increasingly extended through plugin marketplaces, yet the structure, maintenance, and co-evolution dynamics of these emerging repositories remain empirically unexplored. Unlike traditional software packages that deliv…",
+   "url": "http://arxiv.org/abs/2608.28497v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-28T16:27:35Z",
+   "nodes": [
+    "k-plugins",
+    "k-cli",
+    "a-tools"
+   ],
+   "relevance": 9,
+   "application": false
+  },
+  {
+   "id": "1oob0f2",
+   "title": "Fidelity Is Not Enough: Dispatch-Level Instrumentation for Agentic Datasheet Extraction",
+   "summary": "One model passed our fidelity check without ever opening the datasheet. We found it while qualifying models for an internal extraction service: a structured-output constraint had silently disabled tool use, and the model answered anyway, with fabricated source text. Only the per-tool trace exposed it. Fidelity -- whet…",
+   "url": "http://arxiv.org/abs/2608.28439v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-28T15:25:12Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "15oq3zs",
+   "title": "CamoDocs: A Poisoning Attack Against Retrieval-Augmented Language Models Using Camouflaged Documents",
+   "summary": "Retrieval-augmented generation (RAG) augments LLMs with external documents, but public or user-editable sources expose RAG systems to data poisoning: attackers can inject malicious documents to steer outputs toward targeted answers. Existing poisoning attacks often rely on query inclusion, inserting the target query i…",
+   "url": "http://arxiv.org/abs/2608.28389v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-28T14:44:28Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "72xa7c",
+   "title": "Compared to What? A Human-Anchored Security Benchmark for LLM-Generated Infrastructure-as-Code",
+   "summary": "Large language models are increasingly used to author Infrastructure-as-Code (IaC), where a single insecure default can be deployed directly into production. Prior evaluations report raw vulnerability counts for model-generated IaC, but without a human baseline they cannot determine whether models are actually worse t…",
+   "url": "http://arxiv.org/abs/2608.28021v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-28T07:34:57Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "fna2ec",
+   "title": "Coverage, Not Credit: Failure-Credit Routing of Zeroth-Order Perturbation Budgets Does Not Improve On-Pool Sample Efficiency for LLM Agents",
+   "summary": "Trajectory-level credit assignment can localize which module of a tool-using LLM agent causes failures using only verifiable signals. We ask whether such failure credit should route a fixed zeroth-order/evolution-strategies (ZO/ES) perturbation budget. Across a synthetic environment and frozen Qwen2.5-1.5B/3B and Smol…",
+   "url": "http://arxiv.org/abs/2608.28011v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-28T07:27:02Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1j7im22",
+   "title": "CAITLYN: Can LLM Agents Autonomously Synthesize Defenses against Emerging Injection Attacks?",
+   "summary": "Prompt injection attacks on Large Language Model (LLM) agents seek to introduce malicious instructions or content into external text sources retrieved by agents, forcing the underlying LLMs to execute harmful actions outside their benign scope. While current defenses effectively counter known injection attacks, deploy…",
+   "url": "http://arxiv.org/abs/2608.27990v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-28T06:58:26Z",
+   "nodes": [
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1f3gl0i",
+   "title": "LINE Conversation History Retrieval for Personal Memory RAG: Evaluating Search Representations and Hybrid Retrieval",
+   "summary": "As an initial step toward personal memory retrieval-augmented generation (RAG) for large language models (LLMs), this study presents a retrieval-only case study over one user's LINE conversation history. We segmented 358,896 messages into 22,329 temporally coherent chunks and constructed three search representations:…",
+   "url": "http://arxiv.org/abs/2608.27809v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-28T00:52:11Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "1b3x26q",
+   "title": "Knowing Before Answering: Decoding Language Models for Reliable RAG",
+   "summary": "In Retrieval-Augmented Generation (RAG), retrieval may provide insufficient or conflicting information needed to answer a question. The system should not only know when to answer but also be able to identify cases in which the documents provided in RAG are insufficient or contain conflicting information. This can be f…",
+   "url": "http://arxiv.org/abs/2608.27661v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-27T19:48:41Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "i22fe9",
+   "title": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
+   "summary": "LLM-based agents are increasingly deployed in product-level execution harnesses, where jailbreaks can trigger harmful tool use and persistent state changes, creating greater risks than unsafe text generation alone. Existing automatic red-teaming methods often rely on fixed attacks, while recent agentic attackers coord…",
+   "url": "http://arxiv.org/abs/2608.27439v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-27T17:55:33Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1w4banc",
+   "title": "Persona-Execution Separation: An Architecture Pattern for Evolving LLM Agents under Execution Audit",
+   "summary": "Large language model (LLM) agents in governed organizations must let the persona (instructions, tone, self-presentation) evolve freely, while keeping execution (stateful, audited work) traceable. A single trust domain does not satisfy both cheaply. We present Persona-Execution Separation (PES): persona and execution r…",
+   "url": "http://arxiv.org/abs/2608.27427v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-27T17:50:07Z",
+   "nodes": [
+    "r-frame"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1fubxqa",
+   "title": "TransMeme: A Multi-Agent Framework for Cross-Cultural Meme Transcreation",
+   "summary": "Internet memes are a pervasive form of multimodal online communication; however, such communication often involves users from diverse linguistic and cultural backgrounds. Therefore, adapting memes across cultures and languages is a central challenge for enabling mutual understanding in online communication. Unlike ord…",
+   "url": "http://arxiv.org/abs/2608.27127v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-27T13:40:11Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "bnzgpc",
+   "title": "Key Point Analysis Needs Structure Recovery: Task Definition, Dataset Diagnosis, and a Structure-Aware Benchmark",
+   "summary": "Key Point Analysis (KPA) aims to identify a concise set of key points that summarize a collection of arguments together with their prevalence. We argue that KPA is fundamentally a structured prediction problem that requires recovering semantic groupings, generating representative key points, ensuring coverage, and est…",
+   "url": "http://arxiv.org/abs/2608.25854v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-26T14:29:05Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "g57cqn",
+   "title": "Beyond Scaling: Self-Evolving LLM Agents for Hardware Kernel Optimization via an Experience-Driven Workflow and Experience Graph Memory",
+   "summary": "Hardware kernel optimization requires repeated compilation, correctness testing, profiling, and revision. LLM agents can automate parts of this process, and stronger foundation models, longer context windows, and longer execution horizons have improved optimization within individual tasks. These advances alone do not…",
+   "url": "http://arxiv.org/abs/2608.25570v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-26T09:27:39Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1k65hph",
+   "title": "A Storage-Retrieval Gap in Parametric Knowledge Graph Memory",
+   "summary": "Graph retrieval-augmented generation places retrieved subgraphs into the model's context window at query time, paying a recurring token cost and exposing source data on every call. We study an alternative: compiling a knowledge graph offline into a bank of LoRA adapters, one per entity, that serve as a parametric know…",
+   "url": "http://arxiv.org/abs/2608.25489v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-26T08:02:00Z",
+   "nodes": [
+    "c-longctx",
+    "c-retrieval",
+    "s-cost"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "5envg7",
+   "title": "Show HN: Salestrics – An open MCP server and CRM for AI-native revenue teams",
+   "summary": "",
+   "url": "https://www.salestrics.com/",
+   "discussion": "https://news.ycombinator.com/item?id=49218097",
+   "source": "Hacker News · MCP & tooling",
+   "sourceId": "hn-mcp",
+   "category": "tooling",
+   "badge": "1 pts",
+   "date": "2026-08-08T01:32:41Z",
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 12,
+   "application": true
+  },
+  {
+   "id": "1furdo9",
+   "title": "Show HN: Remembrane – agent memory in one SQLite file, zero dependencies",
+   "summary": "",
+   "url": "https://github.com/satyasairay/remembrane",
+   "discussion": "https://news.ycombinator.com/item?id=49207194",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "13 pts",
+   "date": "2026-08-07T07:51:05Z",
+   "nodes": [
+    "c-memory"
+   ],
+   "relevance": 4,
+   "application": true
+  },
+  {
+   "id": "yq92q5",
+   "title": "Show HN: A faster coding agent than Codex and Claude Code",
+   "summary": "",
+   "url": "https://www.codewithbullet.com",
+   "discussion": "https://news.ycombinator.com/item?id=49173799",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "9 pts",
+   "date": "2026-08-04T19:33:34Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 5,
+   "application": true
+  },
+  {
+   "id": "hbx7k7",
+   "title": "Show HN: AgentCodeGUI – Multi-Account Desktop GUI for Claude Code and Codex",
+   "summary": "",
+   "url": "https://github.com/UnrealFactory/AgentCodeGUI",
+   "discussion": "https://news.ycombinator.com/item?id=49154498",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "1 pts",
+   "date": "2026-08-03T11:48:18Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "13xt578",
+   "title": "Show HN: Wienerdog – memory and self-improving skills for Claude Code/Codex",
+   "summary": "",
+   "url": "https://github.com/wienerdog-ai/wienerdog/",
+   "discussion": "https://news.ycombinator.com/item?id=49134381",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "9 pts",
+   "date": "2026-08-01T13:44:05Z",
+   "nodes": [
+    "k-cli",
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "186d7xe",
+   "title": "Show HN: Ski – Voice Coding for Claude Code, Codex and More – On-Device – Free",
+   "summary": "",
+   "url": "https://heyski.io/",
+   "discussion": "https://news.ycombinator.com/item?id=49113559",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "15 pts",
+   "date": "2026-07-30T18:10:04Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "1c6q1us",
+   "title": "Show HN: Tuneloop – a local CLI for analyzing coding agent session transcripts",
+   "summary": "",
+   "url": "https://github.com/tuneloop/tuneloop",
+   "discussion": "https://news.ycombinator.com/item?id=49112195",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "5 pts",
+   "date": "2026-07-30T16:23:34Z",
+   "nodes": [
+    "k-cli",
+    "a-managed"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "f9yd9e",
+   "title": "Ask HN: How to rewrite `Claude.md` and install the skill for Opus5 and Fable5",
+   "summary": "",
+   "url": "https://news.ycombinator.com/item?id=49080135",
+   "discussion": "https://news.ycombinator.com/item?id=49080135",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "5 pts",
+   "date": "2026-07-28T06:29:39Z",
+   "nodes": [
+    "k-claudemd"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1cc8uxk",
+   "title": "Show HN: Termic – desktop app for running CLI coding agents (Claude Code, Codex)",
+   "summary": "",
+   "url": "https://termic.dev/",
+   "discussion": "https://news.ycombinator.com/item?id=49056316",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "3 pts",
+   "date": "2026-07-26T09:36:49Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 6,
+   "application": true
+  },
+  {
+   "id": "1ledpgp",
+   "title": "Show HN: Claudexor – quota-aware routing for Claude Code, Codex, and Cursor",
+   "summary": "",
+   "url": "https://github.com/razzant/claudexor",
+   "discussion": "https://news.ycombinator.com/item?id=48988194",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "4 pts",
+   "date": "2026-07-21T04:55:46Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "1v41iem",
+   "title": "Show HN: OtoDock, run Claude Code and Codex as a team of agents on your server",
+   "summary": "",
+   "url": "https://github.com/OtoDock/oto-dock/",
+   "discussion": "https://news.ycombinator.com/item?id=48923047",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "3 pts",
+   "date": "2026-07-15T16:11:23Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "1xlg7t",
+   "title": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+   "summary": "",
+   "url": "https://finterm.ai/",
+   "discussion": "https://news.ycombinator.com/item?id=48896257",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "6 pts",
+   "date": "2026-07-13T17:52:10Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "1x163pl",
+   "title": "Show HN: Build Rules for Claude Code, Cursor, and Codex",
+   "summary": "",
+   "url": "https://kastra.ai/",
+   "discussion": "https://news.ycombinator.com/item?id=48892955",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "1 pts",
+   "date": "2026-07-13T14:07:35Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "11wcs",
+   "title": "Show HN: Policy enforcement for Claude Code, Cursor, and Codex",
+   "summary": "",
+   "url": "https://kastra.ai/",
+   "discussion": "https://news.ycombinator.com/item?id=48847526",
+   "source": "Hacker News · AI building",
+   "sourceId": "hn-agents",
+   "category": "market",
+   "badge": "13 pts",
+   "date": "2026-07-09T15:26:24Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "8kcnsx",
+   "title": "Show HN: Abralo – Free, easy way to run several Claude Code agents in one window",
+   "summary": "",
+   "url": "https://abralo.com/",
+   "discussion": "https://news.ycombinator.com/item?id=48832797",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "37 pts",
+   "date": "2026-07-08T14:54:59Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "qqjnqh",
+   "title": "Show HN: Dex – Cost-aware analytics engineering skills for agents",
+   "summary": "",
+   "url": "https://github.com/exmergo/dex",
+   "discussion": "https://news.ycombinator.com/item?id=48832208",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "5 pts",
+   "date": "2026-07-08T14:08:48Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "94d0dx",
+   "title": "Show HN: Orchestrate parallel Claude Code and Codex agents on a live map",
+   "summary": "",
+   "url": "https://github.com/Latand/live-log-viewer-next",
+   "discussion": "https://news.ycombinator.com/item?id=48804797",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "4 pts",
+   "date": "2026-07-06T14:06:25Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "9m1dvn",
+   "title": "Show HN: Make your terminal pulse orange when Claude Code needs input",
+   "summary": "",
+   "url": "https://github.com/rickardstureborg/claude-needs-input",
+   "discussion": "https://news.ycombinator.com/item?id=48778710",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "3 pts",
+   "date": "2026-07-03T19:04:49Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "7i82b8",
+   "title": "Show HN: Pull Claude Code transcripts into your Codex session, and vice versa",
+   "summary": "",
+   "url": "https://contextify.sh/",
+   "discussion": "https://news.ycombinator.com/item?id=48777790",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "7 pts",
+   "date": "2026-07-03T17:50:59Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "1euvjgd",
+   "title": "Blog HN: Claude Code Making an Ass Out of You and Me",
+   "summary": "",
+   "url": "https://news.ycombinator.com/item?id=48763592",
+   "discussion": "https://news.ycombinator.com/item?id=48763592",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "3 pts",
+   "date": "2026-07-02T16:08:17Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "myhumj",
+   "title": "Show HN: Caliper – pass@k reliability testing for Claude Code and Codex skills",
+   "summary": "",
+   "url": "https://github.com/edonadei/caliper",
+   "discussion": "https://news.ycombinator.com/item?id=48709606",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "3 pts",
+   "date": "2026-06-28T17:42:41Z",
+   "nodes": [
+    "k-cli",
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "cya2eo",
+   "title": "Show HN: Statey – the database your AI shares across every chat, over MCP",
+   "summary": "",
+   "url": "https://www.statey.ai",
+   "discussion": "https://news.ycombinator.com/item?id=48691461",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "4 pts",
+   "date": "2026-06-26T20:18:33Z",
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "haqhq7",
+   "title": "Ask HN: Anthropic banned me from using Claude Code and I don't know what to do",
+   "summary": "",
+   "url": "https://news.ycombinator.com/item?id=48641160",
+   "discussion": "https://news.ycombinator.com/item?id=48641160",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "82 pts",
+   "date": "2026-06-23T06:33:52Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "rq0kwf",
+   "title": "Show HN: A Claude Code statusline that shows live World Cup scores",
+   "summary": "",
+   "url": "https://github.com/arturogarrido/claudinho",
+   "discussion": "https://news.ycombinator.com/item?id=48499159",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "6 pts",
+   "date": "2026-06-12T02:31:26Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "68j9su",
+   "title": "Show HN: Claumon – forecasting Claude Code usage limits with a Gamma process",
+   "summary": "",
+   "url": "https://github.com/fabioconcina/claumon",
+   "discussion": "https://news.ycombinator.com/item?id=48488753",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "7 pts",
+   "date": "2026-06-11T11:05:55Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "1ewwsib",
+   "title": "AWS Bedrock to require sharing data with Anthropic for Mythos and future models",
+   "summary": "",
+   "url": "https://news.ycombinator.com/item?id=48473166",
+   "discussion": "https://news.ycombinator.com/item?id=48473166",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "427 pts",
+   "date": "2026-06-10T08:21:38Z",
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "sv0i6",
+   "title": "Show HN: HoneyLabs – Public honeypot threat Intel feed and MCP server",
+   "summary": "",
+   "url": "https://honeylabs.net",
+   "discussion": "https://news.ycombinator.com/item?id=48180335",
+   "source": "Hacker News · MCP & tooling",
+   "sourceId": "hn-mcp",
+   "category": "tooling",
+   "badge": "4 pts",
+   "date": "2026-05-18T14:22:26Z",
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 12,
+   "application": true
+  },
+  {
+   "id": "18913zk",
+   "title": "Added PreModelSwitch and PostModelSwitch hook events (block, confirm, or annotate a model switch); SessionStart resume hooks now receive session staleness and the estimated re-cache cost",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.251",
+   "date": null,
+   "nodes": [
+    "k-hooks"
+   ],
+   "relevance": 21,
+   "application": false
+  },
+  {
+   "id": "98y0rf",
+   "title": "Improved /schedule to explain that MCP servers configured in Claude Code can't be attached to cloud routines, instead of a bare \"No MCP connectors\" message",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.251",
+   "date": null,
+   "nodes": [
+    "a-mcp",
+    "k-cli"
+   ],
+   "relevance": 21,
+   "application": false
+  },
+  {
+   "id": "l1apg",
+   "title": "Fixed a \"switch to Opus 1M for 5x more context\" tip that appeared even when the current Opus model already has a 1M context window",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.251",
+   "date": null,
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1jovicv",
+   "title": "Fixed background sessions occasionally starting without any plugin skills (and staying that way) when another Claude Code process was refreshing the plugin marketplace at the same moment",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.251",
+   "date": null,
+   "nodes": [
+    "k-plugins",
+    "k-cli",
+    "k-skills"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1t0yqh8",
+   "title": "Fixed SDK and cloud sessions hanging indefinitely when an SDK MCP server's handshake acknowledgment was lost; the wait now times out after 70 seconds and marks only that server failed",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.251",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "118rml1",
+   "title": "Fixed the MCP server menu's copy shortcut: it now says how the sign-in URL was copied instead of always claiming success",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.251",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "14maikf",
+   "title": "Improved sanitization of MCP server names in error messages, menus, and command results",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.251",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1hew41q",
+   "title": "Changed /radio to be available on Bedrock, Vertex AI, Foundry, and Claude Platform on AWS, and when telemetry is disabled",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.251",
+   "date": null,
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "iu620n",
+   "title": "Fixed MCP servers whose headersHelper supplies the Authorization header falling into OAuth discovery on a 401 instead of re-running the helper and retrying the call as documented",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.248",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "ixfp7g",
+   "title": "Fixed startup warnings (e.g. \"N MCP servers need authentication\") rendering one column right of the rest of the transcript",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.248",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": true
+  },
+  {
+   "id": "1uif5cj",
+   "title": "Improved plugin marketplace hardening: names containing control or invisible characters are rejected, and marketplace-supplied text in /plugin and claude plugin output is escape-safe",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.247",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1478w8f",
+   "title": "Improved Bedrock, Vertex, and Foundry sessions (and any with telemetry disabled): Claude is now told when a configured MCP server failed to connect, instead of concluding its tools don't exist",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.247",
+   "date": null,
+   "nodes": [
+    "a-mcp",
+    "s-deploy"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1rta0q9",
+   "title": "Fixed /reload-plugins reporting 0 skills for plugins that define skills under skills/*/SKILL.md",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.246",
+   "date": null,
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "87zwwa",
+   "title": "Changed /code-review so Claude can also start it on its own on Bedrock, Vertex AI, and Foundry, through the Claude apps gateway, and when telemetry or non-essential traffic is disabled",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.246",
+   "date": null,
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1vq6rdy",
+   "title": "Fixed remote MCP servers in non-interactive (-p) and SDK sessions never recovering after a dropped connection; they now reconnect automatically or report as failed",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.243",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "jnxixi",
+   "title": "Fixed MCP server sign-in started from the desktop app failing with \"Invalid redirect URI\" on servers that support client ID metadata documents (for example Linear)",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.243",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "5yeu1d",
+   "title": "Fixed /status showing \"Found invalid entries in: .\" with no filename when ~/.claude.json has an invalid MCP server entry",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.243",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "n5keyb",
+   "title": "Fixed background sessions and their subagents being unable to edit files inside a git worktree they created with git worktree add",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.251",
+   "date": null,
+   "nodes": [
+    "k-remote",
+    "a-subagents"
+   ],
+   "relevance": 15,
+   "application": false
+  },
+  {
+   "id": "n7agi7",
+   "title": "Fixed a backgrounded worktree session losing its checkout: the background session now holds the worktree's lock while it runs, so cleanup and git worktree remove leave it alone",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.248",
+   "date": null,
+   "nodes": [
+    "k-remote"
+   ],
+   "relevance": 15,
+   "application": false
+  },
+  {
+   "id": "1f4lc2s",
+   "title": "Improved the prompt placeholder to read \"Message @name…\" while viewing a background subagent or fork transcript opened from the subagent panel or /tasks",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.251",
+   "date": null,
+   "nodes": [
+    "a-subagents"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "ndlcgc",
+   "title": "Changed the default model for seat-based Enterprise subscriptions to Opus 5, matching other premium plans",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.251",
+   "date": null,
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "19ez7pl",
+   "title": "Changed /effort to save your default effort level per model, so each model keeps its own setting when you switch",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.251",
+   "date": null,
+   "nodes": [
+    "r-effort"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "gg44kg",
+   "title": "Fixed /mcp listing a project .mcp.json entry that declares the claude.ai connector type under the trusted \"claude.ai\" heading; it now appears under its real scope",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.248",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "f90m2u",
+   "title": "Added a managed marker in /mcp and /plugins on claude.ai connectors whose authentication is managed by your organization",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.243",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "odmlhu",
+   "title": "Added the model (and effort level) each subagent ran on to /tasks and the agent detail dialogs",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.243",
+   "date": null,
+   "nodes": [
+    "r-effort",
+    "a-subagents"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "8nav22",
+   "title": "Updated the /model picker and the bundled claude-api skill to show Sonnet 5's $2/$10 per Mtok pricing as its standard list price rather than a limited-time promo",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.243",
+   "date": null,
+   "nodes": [
+    "s-models",
+    "s-cost"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "18ur1cp",
+   "title": "**tools:** preserve exact file bytes in the agent toolset and memory tool (no newline translation) ([#540](https://github.com/anthropics/anthropic-sdk-python/issues/540)) ([56921a8](https://github.com/anthropics/anthrop…",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "1.2.0",
+   "date": null,
+   "nodes": [
+    "c-memory"
+   ],
+   "relevance": 8,
+   "application": false
+  },
+  {
+   "id": "1ysfqj5",
+   "title": "**examples:** use adaptive thinking in thinking examples ([b5870af](https://github.com/anthropics/anthropic-sdk-python/commit/b5870afda154cc12ab15fad5ca6f53a280e09ee3))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "1.0.0",
+   "date": null,
+   "nodes": [
+    "r-thinking"
+   ],
+   "relevance": 8,
+   "application": false
+  },
+  {
+   "id": "1ytqzun",
+   "title": "**helpers:** support Standard Schema for structured outputs and tools ([7880078](https://github.com/anthropics/anthropic-sdk-typescript/commit/788007889c048e18f6bdf19d4903f1ac96f66cb0))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "0.121.0",
+   "date": null,
+   "nodes": [
+    "s-structured"
+   ],
+   "relevance": 8,
+   "application": false
+  },
+  {
+   "id": "jc6uj8",
+   "title": "**examples:** use adaptive thinking in thinking examples ([3dd7699](https://github.com/anthropics/anthropic-sdk-typescript/commit/3dd7699110fd34b82b795841e76ac40122a63c7d))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "0.121.0",
+   "date": null,
+   "nodes": [
+    "r-thinking"
+   ],
+   "relevance": 8,
+   "application": false
+  },
+  {
+   "id": "1tq7txv",
+   "title": "**api:** beta files/skills namespaces use GA shapes; drop dated beta header pins ([9df4565](https://github.com/anthropics/anthropic-sdk-python/commit/9df4565fdfe4eec941809a0a3d1615ee11e16b68))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "1.2.0",
+   "date": null,
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "lnnuzi",
+   "title": "**aws,bedrock:** sign raw request bytes so binary file uploads work ([#531](https://github.com/anthropics/anthropic-sdk-python/issues/531)) ([f50e910](https://github.com/anthropics/anthropic-sdk-python/commit/f50e9106c0…",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "1.2.0",
+   "date": null,
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "fxlbdv",
+   "title": "**webhooks:** require headers to be passed to unwrap() ([0baa902](https://github.com/anthropics/anthropic-sdk-python/commit/0baa90225359f6b4bec50476c19bb52c2ad4250d))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "1.2.0",
+   "date": null,
+   "nodes": [
+    "k-hooks"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "sjiksz",
+   "title": "**tools:** keep the tool runner going on pause_turn ([#343](https://github.com/anthropics/anthropic-sdk-python/issues/343)) ([ab1ec60](https://github.com/anthropics/anthropic-sdk-python/commit/ab1ec609f2cce801644ff44106…",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "1.1.0",
+   "date": null,
+   "nodes": [
+    "a-runner"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1egv449",
+   "title": "**api:** clarify session thread agent and usage.iterations compaction descriptions (beta) ([4ace503](https://github.com/anthropics/anthropic-sdk-python/commit/4ace503320c2af170fefe6be605cf2ddd729594a))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "1.1.0",
+   "date": null,
+   "nodes": [
+    "c-editing"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "12kn1mf",
+   "title": "**api:** beta files/skills namespaces use GA shapes; drop dated beta header pins ([45d693a](https://github.com/anthropics/anthropic-sdk-typescript/commit/45d693a66bc7fb1af66d9c4e3625f6d6f64bae59))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "0.122.0",
+   "date": null,
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "16cua2z",
+   "title": "**uploads:** default bare Blob filename on skills endpoints ([#422](https://github.com/anthropics/anthropic-sdk-typescript/issues/422)) ([e111649](https://github.com/anthropics/anthropic-sdk-typescript/commit/e1116491dd…",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "0.122.0",
+   "date": null,
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "hezuy1",
+   "title": "**webhooks:** require headers to be passed to unwrap() ([3230804](https://github.com/anthropics/anthropic-sdk-typescript/commit/3230804e63371f535a850d1df6752284643a01fe))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "0.122.0",
+   "date": null,
+   "nodes": [
+    "k-hooks"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "usy5c7",
+   "title": "**tools:** keep the tool runner going on pause_turn ([#288](https://github.com/anthropics/anthropic-sdk-typescript/issues/288)) ([f040dc9](https://github.com/anthropics/anthropic-sdk-typescript/commit/f040dc9d39a3ec471a…",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "0.121.0",
+   "date": null,
+   "nodes": [
+    "a-runner"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1nbmmot",
+   "title": "**api:** clarify session thread agent and usage.iterations compaction descriptions (beta) ([6e852a7](https://github.com/anthropics/anthropic-sdk-typescript/commit/6e852a70ee5db1d514e9459ac627324bfe6c904f))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "0.121.0",
+   "date": null,
+   "nodes": [
+    "c-editing"
+   ],
+   "relevance": 6,
+   "application": false
+  }
+ ],
+ "byNode": {
+  "k-plugins": [
+   "1rc8sop",
+   "1jovicv",
+   "1uif5cj"
+  ],
+  "k-cli": [
+   "1rc8sop",
+   "yq92q5",
+   "hbx7k7",
+   "13xt578",
+   "186d7xe",
+   "1c6q1us",
+   "1cc8uxk",
+   "1ledpgp",
+   "1v41iem",
+   "1xlg7t",
+   "1x163pl",
+   "11wcs",
+   "8kcnsx",
+   "94d0dx",
+   "9m1dvn",
+   "7i82b8",
+   "1euvjgd",
+   "myhumj",
+   "haqhq7",
+   "rq0kwf",
+   "68j9su",
+   "98y0rf",
+   "1jovicv"
+  ],
+  "a-tools": [
+   "1rc8sop",
+   "1oob0f2",
+   "i22fe9"
+  ],
+  "c-retrieval": [
+   "15oq3zs",
+   "fna2ec",
+   "1f3gl0i",
+   "1b3x26q",
+   "bnzgpc",
+   "1k65hph"
+  ],
+  "s-models": [
+   "72xa7c",
+   "ndlcgc",
+   "8nav22"
+  ],
+  "s-guardrails": [
+   "1j7im22"
+  ],
+  "r-frame": [
+   "1w4banc"
+  ],
+  "a-teams": [
+   "1fubxqa"
+  ],
+  "c-longctx": [
+   "g57cqn",
+   "1k65hph",
+   "l1apg"
+  ],
+  "s-cost": [
+   "1k65hph",
+   "8nav22"
+  ],
+  "a-mcp": [
+   "5envg7",
+   "cya2eo",
+   "sv0i6",
+   "98y0rf",
+   "1t0yqh8",
+   "118rml1",
+   "14maikf",
+   "iu620n",
+   "ixfp7g",
+   "1478w8f",
+   "1vq6rdy",
+   "jnxixi",
+   "5yeu1d",
+   "gg44kg",
+   "f90m2u"
+  ],
+  "c-memory": [
+   "1furdo9",
+   "18ur1cp"
+  ],
+  "k-skills": [
+   "13xt578",
+   "qqjnqh",
+   "myhumj",
+   "1jovicv",
+   "1rta0q9",
+   "1tq7txv",
+   "12kn1mf",
+   "16cua2z"
+  ],
+  "a-managed": [
+   "1c6q1us"
+  ],
+  "k-claudemd": [
+   "f9yd9e"
+  ],
+  "s-deploy": [
+   "1ewwsib",
+   "1hew41q",
+   "1478w8f",
+   "87zwwa",
+   "lnnuzi"
+  ],
+  "k-hooks": [
+   "18913zk",
+   "fxlbdv",
+   "hezuy1"
+  ],
+  "k-remote": [
+   "n5keyb",
+   "n7agi7"
+  ],
+  "a-subagents": [
+   "n5keyb",
+   "1f4lc2s",
+   "odmlhu"
+  ],
+  "r-effort": [
+   "19ez7pl",
+   "odmlhu"
+  ],
+  "r-thinking": [
+   "1ysfqj5",
+   "jc6uj8"
+  ],
+  "s-structured": [
+   "1ytqzun"
+  ],
+  "a-runner": [
+   "sjiksz",
+   "usy5c7"
+  ],
+  "c-editing": [
+   "1egv449",
+   "1nbmmot"
+  ]
+ },
+ "applications": [
+  {
+   "id": "1f3gl0i",
+   "node": "c-retrieval",
+   "nodeTitle": "Retrieval vs. Context",
+   "discipline": "context",
+   "title": "LINE Conversation History Retrieval for Personal Memory RAG: Evaluating Search Representations and Hybrid Retrieval",
+   "url": "http://arxiv.org/abs/2608.27809v1"
+  },
+  {
+   "id": "5envg7",
+   "node": "a-mcp",
+   "nodeTitle": "MCP",
+   "discipline": "agents",
+   "title": "Show HN: Salestrics – An open MCP server and CRM for AI-native revenue teams",
+   "url": "https://www.salestrics.com/"
+  },
+  {
+   "id": "1furdo9",
+   "node": "c-memory",
+   "nodeTitle": "Memory",
+   "discipline": "context",
+   "title": "Show HN: Remembrane – agent memory in one SQLite file, zero dependencies",
+   "url": "https://github.com/satyasairay/remembrane"
+  },
+  {
+   "id": "yq92q5",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: A faster coding agent than Codex and Claude Code",
+   "url": "https://www.codewithbullet.com"
+  },
+  {
+   "id": "hbx7k7",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: AgentCodeGUI – Multi-Account Desktop GUI for Claude Code and Codex",
+   "url": "https://github.com/UnrealFactory/AgentCodeGUI"
+  },
+  {
+   "id": "13xt578",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Wienerdog – memory and self-improving skills for Claude Code/Codex",
+   "url": "https://github.com/wienerdog-ai/wienerdog/"
+  },
+  {
+   "id": "186d7xe",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Ski – Voice Coding for Claude Code, Codex and More – On-Device – Free",
+   "url": "https://heyski.io/"
+  },
+  {
+   "id": "1c6q1us",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Tuneloop – a local CLI for analyzing coding agent session transcripts",
+   "url": "https://github.com/tuneloop/tuneloop"
+  },
+  {
+   "id": "1cc8uxk",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Termic – desktop app for running CLI coding agents (Claude Code, Codex)",
+   "url": "https://termic.dev/"
+  },
+  {
+   "id": "1ledpgp",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Claudexor – quota-aware routing for Claude Code, Codex, and Cursor",
+   "url": "https://github.com/razzant/claudexor"
+  },
+  {
+   "id": "1v41iem",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: OtoDock, run Claude Code and Codex as a team of agents on your server",
+   "url": "https://github.com/OtoDock/oto-dock/"
+  },
+  {
+   "id": "1xlg7t",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+   "url": "https://finterm.ai/"
+  },
+  {
+   "id": "1x163pl",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Build Rules for Claude Code, Cursor, and Codex",
+   "url": "https://kastra.ai/"
+  },
+  {
+   "id": "11wcs",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Policy enforcement for Claude Code, Cursor, and Codex",
+   "url": "https://kastra.ai/"
+  },
+  {
+   "id": "8kcnsx",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Abralo – Free, easy way to run several Claude Code agents in one window",
+   "url": "https://abralo.com/"
+  },
+  {
+   "id": "qqjnqh",
+   "node": "k-skills",
+   "nodeTitle": "Skills",
+   "discipline": "code",
+   "title": "Show HN: Dex – Cost-aware analytics engineering skills for agents",
+   "url": "https://github.com/exmergo/dex"
+  },
+  {
+   "id": "94d0dx",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Orchestrate parallel Claude Code and Codex agents on a live map",
+   "url": "https://github.com/Latand/live-log-viewer-next"
+  },
+  {
+   "id": "9m1dvn",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Make your terminal pulse orange when Claude Code needs input",
+   "url": "https://github.com/rickardstureborg/claude-needs-input"
+  },
+  {
+   "id": "7i82b8",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Pull Claude Code transcripts into your Codex session, and vice versa",
+   "url": "https://contextify.sh/"
+  },
+  {
+   "id": "myhumj",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Caliper – pass@k reliability testing for Claude Code and Codex skills",
+   "url": "https://github.com/edonadei/caliper"
+  },
+  {
+   "id": "cya2eo",
+   "node": "a-mcp",
+   "nodeTitle": "MCP",
+   "discipline": "agents",
+   "title": "Show HN: Statey – the database your AI shares across every chat, over MCP",
+   "url": "https://www.statey.ai"
+  },
+  {
+   "id": "rq0kwf",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: A Claude Code statusline that shows live World Cup scores",
+   "url": "https://github.com/arturogarrido/claudinho"
+  },
+  {
+   "id": "68j9su",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Claumon – forecasting Claude Code usage limits with a Gamma process",
+   "url": "https://github.com/fabioconcina/claumon"
+  },
+  {
+   "id": "sv0i6",
+   "node": "a-mcp",
+   "nodeTitle": "MCP",
+   "discipline": "agents",
+   "title": "Show HN: HoneyLabs – Public honeypot threat Intel feed and MCP server",
+   "url": "https://honeylabs.net"
+  }
+ ]
+}

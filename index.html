@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Claude Progression Web</title>
+<meta name="description" content="A radial map of Claude's capabilities across six disciplines and five levels, with a live sidebar of AI and entrepreneurial signals.">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="3"/>
+      <circle cx="12" cy="12" r="7.5"/>
+      <circle cx="12" cy="12" r="11"/>
+    </svg>
+    <div>
+      <h1>The Claude Progression Web</h1>
+      <p class="sub">Six disciplines · five levels · <span id="node-count">51</span> capabilities</p>
+    </div>
+  </div>
+  <div class="topbar-tools">
+    <label class="search">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M13.5 13.5 18 18"/></svg>
+      <input id="search" type="search" placeholder="Search capabilities…" autocomplete="off" aria-label="Search capabilities">
+    </label>
+    <button id="theme-toggle" class="icon-btn" title="Toggle theme" aria-label="Toggle theme">◐</button>
+  </div>
+</header>
+
+<main class="layout">
+
+  <!-- ── left rail ─────────────────────────────────────────────── -->
+  <aside class="rail" aria-label="Legend and filters">
+    <section class="rail-block">
+      <h2>Where to start</h2>
+      <p class="rail-note">Rings are levels — the centre is where everyone begins. Sectors are disciplines. Lines are prerequisites: follow one inward to see what a capability rests on.</p>
+      <p class="rail-note">Click any node for the full explanation and a worked example.</p>
+    </section>
+
+    <section class="rail-block">
+      <h2>Disciplines</h2>
+      <ul id="discipline-list" class="legend"></ul>
+    </section>
+
+    <section class="rail-block">
+      <h2>Levels</h2>
+      <ul id="level-list" class="levels"></ul>
+    </section>
+
+    <section class="rail-block">
+      <h2>Your progress</h2>
+      <p class="rail-note">Mark a node as learned in its panel. Stored in this browser only.</p>
+      <div id="progress-bars"></div>
+      <button id="reset-progress" class="text-btn">Reset progress</button>
+    </section>
+  </aside>
+
+  <!-- ── centre: the web ───────────────────────────────────────── -->
+  <section class="stage" aria-label="Capability web">
+    <div class="stage-hint" id="stage-hint">
+      <strong>Hover</strong> a node to trace its prerequisites · <strong>click</strong> to open it
+    </div>
+    <svg id="web" role="img" aria-label="Radial map of Claude capabilities"></svg>
+    <div id="tooltip" class="tooltip" hidden></div>
+  </section>
+
+  <!-- ── right: signals ────────────────────────────────────────── -->
+  <aside class="signals" aria-label="AI and entrepreneurial signals">
+    <div class="signals-head">
+      <h2>Signals</h2>
+      <span class="pulse-dot" aria-hidden="true"></span>
+    </div>
+    <p class="signals-meta" id="signals-meta">Loading…</p>
+    <nav class="tabs" id="signal-tabs" role="tablist"></nav>
+    <div class="signals-body">
+      <section id="applications-block" class="apps" hidden>
+        <h3>New applications spotted</h3>
+        <p class="apps-note">Auto-surfaced from the feeds below and matched to a node. Unreviewed — treat as leads, not facts.</p>
+        <ul id="applications-list"></ul>
+      </section>
+      <ul id="signal-list" class="signal-list"></ul>
+    </div>
+    <details class="sources">
+      <summary>Sources &amp; refresh</summary>
+      <div id="source-status"></div>
+    </details>
+  </aside>
+</main>
+
+<!-- ── node detail panel ──────────────────────────────────────── -->
+<div id="panel-scrim" class="scrim" hidden></div>
+<article id="panel" class="panel" hidden aria-labelledby="panel-title" tabindex="-1">
+  <button id="panel-close" class="panel-close" aria-label="Close">×</button>
+  <div id="panel-content"></div>
+</article>
+
+<script type="module" src="assets/app.js"></script>
+</body>
+</html>

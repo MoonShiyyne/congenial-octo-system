@@ -1,0 +1,93 @@
+{
+  "$comment": "Feed sources for the signals sidebar. Every source is best-effort: a failure is recorded in signals.json and the rest still refresh. HN feeds use search_by_date (chronological) rather than relevance ranking \u2014 relevance-sorted results skew to old high-scoring stories, which the age filter then discards. `limit` is a per-source quota so no single high-volume feed crowds out the others.",
+  "sources": [
+    {
+      "id": "claude-code-changelog",
+      "label": "Claude Code changelog",
+      "kind": "changelog-md",
+      "category": "tooling",
+      "url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
+      "maxVersions": 8,
+      "weight": 3,
+      "limit": 26
+    },
+    {
+      "id": "python-sdk-changelog",
+      "label": "Anthropic Python SDK",
+      "kind": "changelog-md",
+      "category": "model",
+      "url": "https://raw.githubusercontent.com/anthropics/anthropic-sdk-python/main/CHANGELOG.md",
+      "maxVersions": 6,
+      "weight": 2,
+      "limit": 7
+    },
+    {
+      "id": "typescript-sdk-changelog",
+      "label": "Anthropic TypeScript SDK",
+      "kind": "changelog-md",
+      "category": "model",
+      "url": "https://raw.githubusercontent.com/anthropics/anthropic-sdk-typescript/main/CHANGELOG.md",
+      "maxVersions": 6,
+      "weight": 2,
+      "limit": 7
+    },
+    {
+      "id": "hn-mcp",
+      "label": "Hacker News \u00b7 MCP & tooling",
+      "kind": "hn-algolia",
+      "category": "tooling",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=%22model%20context%20protocol%22%20OR%20%22MCP%20server%22&tags=story&hitsPerPage=50",
+      "minPoints": 0,
+      "weight": 2,
+      "limit": 10
+    },
+    {
+      "id": "hn-claude",
+      "label": "Hacker News \u00b7 Claude",
+      "kind": "hn-algolia",
+      "category": "market",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=Claude%20OR%20Anthropic&tags=story&hitsPerPage=60",
+      "minPoints": 2,
+      "weight": 1,
+      "limit": 14
+    },
+    {
+      "id": "hn-agents",
+      "label": "Hacker News \u00b7 AI building",
+      "kind": "hn-algolia",
+      "category": "market",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=%22AI%20agent%22%20OR%20%22coding%20agent%22&tags=story&hitsPerPage=60",
+      "minPoints": 3,
+      "weight": 1,
+      "limit": 10
+    },
+    {
+      "id": "hn-show",
+      "label": "Show HN \u00b7 built with AI",
+      "kind": "hn-algolia",
+      "category": "market",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=Claude%20OR%20agent%20OR%20LLM&tags=show_hn&hitsPerPage=50",
+      "minPoints": 0,
+      "weight": 1,
+      "limit": 14
+    },
+    {
+      "id": "arxiv-agents",
+      "label": "arXiv \u00b7 agents & LLM systems",
+      "kind": "arxiv",
+      "category": "research",
+      "url": "https://export.arxiv.org/api/query?search_query=abs:%22LLM+agent%22+OR+abs:%22tool+use%22+OR+abs:%22retrieval+augmented%22&max_results=25&sortBy=submittedDate&sortOrder=descending",
+      "weight": 1,
+      "limit": 10
+    },
+    {
+      "id": "arxiv-eval",
+      "label": "arXiv \u00b7 evaluation & prompting",
+      "kind": "arxiv",
+      "category": "research",
+      "url": "https://export.arxiv.org/api/query?search_query=abs:%22LLM-as-a-judge%22+OR+abs:%22prompt+engineering%22+OR+abs:%22context+window%22&max_results=20&sortBy=submittedDate&sortOrder=descending",
+      "weight": 1,
+      "limit": 8
+    }
+  ]
+}
