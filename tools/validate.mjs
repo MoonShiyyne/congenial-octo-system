@@ -62,6 +62,26 @@ for (const [key, p] of Object.entries(primers)) {
   }
 }
 
+// ── scenarios ────────────────────────────────────────────────────────────
+const { scenarios } = await import('../data/scenarios.mjs');
+const seenScenario = new Set();
+for (const q of scenarios) {
+  check(ids.has(q.n), `scenario: unknown node "${q.n}"`);
+  for (const f of ['s', 'why', 'vs']) check(q[f]?.length > 0, `scenario for ${q.n}: missing ${f}`);
+  check(!seenScenario.has(q.s), `duplicate scenario text under ${q.n}`);
+  seenScenario.add(q.s);
+  // Distractors are what make the question teach; random ones would not.
+  check((q.near ?? []).length > 0, `scenario for ${q.n}: no distractors`);
+  for (const p of q.near ?? []) {
+    check(ids.has(p), `scenario for ${q.n}: unknown distractor "${p}"`);
+    check(p !== q.n, `scenario for ${q.n}: lists itself as a distractor`);
+  }
+  check(new Set(q.near).size === (q.near ?? []).length, `scenario for ${q.n}: duplicate distractors`);
+}
+for (const n of nodes) {
+  check(scenarios.some(q => q.n === n.id), `${n.id}: no tutor scenario`);
+}
+
 // ── signals ──────────────────────────────────────────────────────────────
 try {
   const s = JSON.parse(await readFile(join(ROOT, 'data/signals.json'), 'utf8'));
@@ -84,4 +104,4 @@ if (fail.length) {
 }
 const refCount = Object.values(resources).flat().length;
 const primerCount = Object.values(primers).reduce((a, p) => a + p.items.length, 0);
-console.error(`✓ ${nodes.length} nodes, ${disciplines.length} disciplines, ${levels.length} levels, ${refCount} references, ${primerCount} primer entries — valid`);
+console.error(`✓ ${nodes.length} nodes, ${disciplines.length} disciplines, ${levels.length} levels, ${refCount} references, ${primerCount} primer entries, ${scenarios.length} scenarios — valid`);

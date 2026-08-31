@@ -1,6 +1,7 @@
 import { disciplines, levels, nodes } from '../data/curriculum.mjs';
 import { resources } from '../data/resources.mjs';
 import { primers } from '../data/primers.mjs';
+import { scenarios } from '../data/scenarios.mjs';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const VB = 1000, C = VB / 2;            // geometry box, centre
@@ -543,6 +544,219 @@ async function loadSignals() {
   }
   renderTabs(); renderSignals(); renderApplications(); renderSourceStatus(); markSignalNodes(); paint();
 }
+
+
+/* ── tutor ────────────────────────────────────────────────────────────────
+   Recall practice: a situation, and which node it calls for. Selection is
+   weighted toward what you have not seen and what you got wrong, so repeated
+   sessions drift toward your weak spots rather than re-asking what you know. */
+
+const TUTOR_KEY = 'cpw.tutor.v1';
+const OPTION_COUNT = 4;
+
+const tutor = {
+  active: new Set(disciplines.map(d => d.id)),
+  onlyWeak: false,
+  stats: loadStats(),          // sid → { seen, correct, lastWrong }
+  recent: [],                  // last few sids, to avoid immediate repeats
+  current: null,
+  answered: false,
+  session: { answered: 0, correct: 0, streak: 0 },
+};
+
+function loadStats() { try { return JSON.parse(localStorage.getItem(TUTOR_KEY)) ?? {}; } catch { return {}; } }
+function saveStats() { try { localStorage.setItem(TUTOR_KEY, JSON.stringify(tutor.stats)); } catch { /* private mode */ } }
+
+// Stable id from the scenario text, so stats survive reordering the file.
+const sidOf = q => `${q.n}:${hash32(q.s)}`;
+function hash32(str) {
+  let h = 2166136261;
+  for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); }
+  return (h >>> 0).toString(36);
+}
+
+function tutorPool() {
+  return scenarios.filter(q => {
+    if (!tutor.active.has(nodeOf(q.n).d)) return false;
+    if (tutor.onlyWeak) {
+      const st = tutor.stats[sidOf(q)];
+      return st ? st.lastWrong : false;
+    }
+    return true;
+  });
+}
+
+function pickScenario() {
+  const pool = tutorPool();
+  if (!pool.length) return null;
+  const fresh = pool.filter(q => !tutor.recent.includes(sidOf(q)));
+  const candidates = fresh.length ? fresh : pool;
+
+  const weighted = candidates.map(q => {
+    const st = tutor.stats[sidOf(q)];
+    let w;
+    if (!st) w = 6;                       // never seen — show these first
+    else if (st.lastWrong) w = 4;         // got it wrong last time
+    else w = 1 / (1 + st.correct);        // known well — show rarely
+    return { q, w };
+  });
+
+  let roll = Math.random() * weighted.reduce((a, x) => a + x.w, 0);
+  for (const x of weighted) if ((roll -= x.w) <= 0) return x.q;
+  return weighted[weighted.length - 1].q;
+}
+
+/** Correct answer plus its tempting neighbours, padded from the same discipline. */
+function buildOptions(q) {
+  const opts = [q.n, ...(q.near ?? [])].slice(0, OPTION_COUNT);
+  if (opts.length < OPTION_COUNT) {
+    const filler = nodes
+      .filter(n => n.d === nodeOf(q.n).d && !opts.includes(n.id))
+      .sort(() => Math.random() - 0.5);
+    while (opts.length < OPTION_COUNT && filler.length) opts.push(filler.pop().id);
+  }
+  for (let i = opts.length - 1; i > 0; i--) {           // shuffle
+    const j = Math.floor(Math.random() * (i + 1));
+    [opts[i], opts[j]] = [opts[j], opts[i]];
+  }
+  return opts;
+}
+
+function renderScore() {
+  el('sc-answered').textContent = tutor.session.answered;
+  el('sc-correct').textContent = tutor.session.correct;
+  el('sc-streak').textContent = tutor.session.streak;
+}
+
+function nextQuestion() {
+  const q = pickScenario();
+  el('q-feedback').hidden = true;
+  tutor.answered = false;
+
+  if (!q) {
+    el('q-scenario').textContent = '';
+    el('q-options').innerHTML =
+      `<p class="tutor-empty">Nothing to practise with those filters.<br>
+       Turn a discipline back on, or clear “only what I have got wrong”.</p>`;
+    document.querySelector('.q-eyebrow').hidden = true;
+    document.querySelector('.q-ask').hidden = true;
+    return;
+  }
+  document.querySelector('.q-eyebrow').hidden = false;
+  document.querySelector('.q-ask').hidden = false;
+
+  tutor.current = { q, options: buildOptions(q) };
+  tutor.recent = [sidOf(q), ...tutor.recent].slice(0, 6);
+
+  el('q-scenario').textContent = q.s;
+  el('q-options').innerHTML = tutor.current.options.map((id, i) => {
+    const n = nodeOf(id);
+    return `<button data-id="${id}">
+      <span class="q-key">${i + 1}</span>
+      <span>${esc(n.title)}</span>
+      <span class="q-disc" style="color:${colour(n.d)}">${esc(discOf(n.d).name)}</span>
+    </button>`;
+  }).join('');
+}
+
+function answer(chosen) {
+  if (tutor.answered || !tutor.current) return;
+  tutor.answered = true;
+
+  const { q } = tutor.current;
+  const right = chosen === q.n;
+  const sid = sidOf(q);
+  const st = tutor.stats[sid] ?? { seen: 0, correct: 0, lastWrong: false };
+  st.seen++;
+  if (right) st.correct++;
+  st.lastWrong = !right;
+  tutor.stats[sid] = st;
+  saveStats();
+
+  tutor.session.answered++;
+  if (right) { tutor.session.correct++; tutor.session.streak++; }
+  else tutor.session.streak = 0;
+  renderScore();
+
+  for (const b of el('q-options').querySelectorAll('button')) {
+    b.disabled = true;
+    if (b.dataset.id === q.n) b.classList.add('right');
+    else if (b.dataset.id === chosen) b.classList.add('wrong');
+    else b.classList.add('faded');
+  }
+
+  const picked = nodeOf(chosen);
+  el('q-feedback').innerHTML = `
+    <p class="fb-verdict ${right ? 'ok' : 'no'}">
+      ${right ? '✓ Correct' : '✗ Not quite'} — <span>${esc(nodeOf(q.n).title)}</span>
+    </p>
+    <p class="fb-block"><strong>Why:</strong> ${rich(q.why)}</p>
+    ${right ? '' : `<p class="fb-block fb-picked">
+      <strong>You picked ${esc(picked.title)}</strong> — ${esc(picked.tag)}.
+      ${esc(picked.hook)}</p>`}
+    <p class="fb-vs"><span class="fb-vs-label">The distinction that matters</span>${rich(q.vs)}</p>
+    <div class="fb-actions">
+      <button class="primary" id="fb-next">Next scenario</button>
+      <button id="fb-open">Open ${esc(nodeOf(q.n).title)}</button>
+    </div>`;
+  el('q-feedback').hidden = false;
+  el('fb-next').addEventListener('click', nextQuestion);
+  el('fb-open').addEventListener('click', () => openPanel(q.n));
+  el('fb-next').focus({ preventScroll: true });
+}
+
+el('q-options').addEventListener('click', e => {
+  const b = e.target.closest('button[data-id]');
+  if (b && !b.disabled) answer(b.dataset.id);
+});
+
+el('tutor-disciplines').innerHTML = disciplines.map(d => `
+  <button data-d="${d.id}" aria-pressed="true" style="color:${colour(d.id)}">
+    <span class="dot" style="background:${colour(d.id)}"></span>${esc(d.name.split(' ')[0])}
+  </button>`).join('');
+el('tutor-disciplines').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  const id = b.dataset.d;
+  tutor.active.has(id) ? tutor.active.delete(id) : tutor.active.add(id);
+  if (!tutor.active.size) disciplines.forEach(d => tutor.active.add(d.id));
+  [...el('tutor-disciplines').querySelectorAll('button')]
+    .forEach(x => x.setAttribute('aria-pressed', String(tutor.active.has(x.dataset.d))));
+  nextQuestion();
+});
+el('only-weak').addEventListener('change', e => { tutor.onlyWeak = e.target.checked; nextQuestion(); });
+el('tutor-reset').addEventListener('click', () => {
+  tutor.stats = {}; saveStats();
+  tutor.session = { answered: 0, correct: 0, streak: 0 };
+  tutor.recent = [];
+  renderScore(); nextQuestion();
+});
+
+// Keyboard: 1-4 to answer, Enter for the next one. Ignored while the node
+// panel is open or the user is typing in a field.
+document.addEventListener('keydown', e => {
+  if (document.body.dataset.view !== 'tutor') return;
+  if (!el('panel').hidden) return;
+  if (/^(INPUT|TEXTAREA)$/.test(e.target.tagName)) return;
+  if (e.key >= '1' && e.key <= String(OPTION_COUNT)) {
+    const b = el('q-options').querySelectorAll('button')[+e.key - 1];
+    if (b && !b.disabled) { e.preventDefault(); answer(b.dataset.id); }
+  } else if (e.key === 'Enter' && tutor.answered) {
+    e.preventDefault(); nextQuestion();
+  }
+});
+
+/* ── view switching ───────────────────────────────────────────────────── */
+function setView(v) {
+  document.body.dataset.view = v;
+  [...document.querySelectorAll('.view-tabs button')]
+    .forEach(b => b.setAttribute('aria-selected', String(b.dataset.view === v)));
+  if (v === 'tutor' && !tutor.current) nextQuestion();
+}
+document.querySelector('.view-tabs').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (b) setView(b.dataset.view);
+});
+setView('web');
+renderScore();
 
 /* ── boot ─────────────────────────────────────────────────────────────── */
 renderProgress();

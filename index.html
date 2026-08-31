@@ -21,6 +21,11 @@
       <p class="sub">Six disciplines · five levels · <span id="node-count">51</span> capabilities</p>
     </div>
   </div>
+  <nav class="view-tabs" role="tablist" aria-label="View">
+    <button role="tab" data-view="web" aria-selected="true">The Web</button>
+    <button role="tab" data-view="tutor" aria-selected="false">Tutor</button>
+  </nav>
+
   <div class="topbar-tools">
     <label class="search">
       <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M13.5 13.5 18 18"/></svg>
@@ -88,6 +93,43 @@
       <div id="source-status"></div>
     </details>
   </aside>
+  <!-- ── tutor ─────────────────────────────────────────────────── -->
+  <section class="tutor" aria-label="Scenario tutor">
+    <div class="tutor-inner">
+
+      <header class="tutor-head">
+        <div>
+          <h2>Which capability is this?</h2>
+          <p class="tutor-sub">A situation, and the node it calls for. The wrong answers are the ones people actually reach for — read why each is wrong, that is where the learning is.</p>
+        </div>
+        <dl class="tutor-score">
+          <div><dt>Answered</dt><dd id="sc-answered">0</dd></div>
+          <div><dt>Correct</dt><dd id="sc-correct">0</dd></div>
+          <div><dt>Streak</dt><dd id="sc-streak">0</dd></div>
+        </dl>
+      </header>
+
+      <div class="tutor-filters">
+        <span class="tf-label">Practise</span>
+        <div id="tutor-disciplines" class="tf-chips"></div>
+        <label class="tf-toggle">
+          <input type="checkbox" id="only-weak"> Only what I have got wrong
+        </label>
+        <button id="tutor-reset" class="text-btn">Reset score</button>
+      </div>
+
+      <article class="q-card">
+        <p class="q-eyebrow">Scenario</p>
+        <p class="q-scenario" id="q-scenario"></p>
+        <p class="q-ask">Which capability does this call for?</p>
+        <div class="q-options" id="q-options" role="group" aria-label="Answer options"></div>
+        <div class="q-feedback" id="q-feedback" hidden></div>
+      </article>
+
+      <p class="tutor-hint" id="tutor-hint">Press <kbd>1</kbd>–<kbd>4</kbd> to answer · <kbd>Enter</kbd> for the next one</p>
+    </div>
+  </section>
+
 </main>
 
 <!-- ── node detail panel ──────────────────────────────────────── -->

@@ -384,3 +384,115 @@ a { color: var(--accent); }
 .node-chip:focus-visible, .p-links button:focus-visible {
   outline: 2px solid var(--accent); outline-offset: 2px;
 }
+
+/* ── view tabs ──────────────────────────────────────────────────────────── */
+.view-tabs { display: flex; gap: 2px; padding: 3px; border-radius: 9px;
+  background: var(--bg-sunk); border: 1px solid var(--line); }
+.view-tabs button {
+  padding: 6px 15px; border: 0; border-radius: 7px; background: none;
+  color: var(--ink-faint); font: inherit; font-size: 13px; font-weight: 500; cursor: pointer;
+}
+.view-tabs button:hover { color: var(--ink); }
+.view-tabs button[aria-selected="true"] { background: var(--panel); color: var(--ink);
+  box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+
+/* One view at a time. The tutor gets the full width — no rail, no signals. */
+.tutor { display: none; overflow-y: auto; background: var(--bg); }
+body[data-view="tutor"] .rail,
+body[data-view="tutor"] .signals,
+body[data-view="tutor"] .stage,
+body[data-view="tutor"] .search { display: none; }
+body[data-view="tutor"] .layout { grid-template-columns: 1fr; }
+body[data-view="tutor"] .tutor { display: block; }
+
+.tutor-inner { max-width: 760px; margin: 0 auto; padding: 34px 26px 80px; }
+
+.tutor-head { display: flex; justify-content: space-between; align-items: flex-start;
+  gap: 26px; flex-wrap: wrap; margin-bottom: 22px; }
+.tutor-head h2 { font-family: var(--display); font-size: 27px; letter-spacing: -.015em; }
+.tutor-sub { margin: 7px 0 0; font-size: 13.5px; line-height: 1.6; color: var(--ink-soft); max-width: 52ch; }
+.tutor-score { display: flex; gap: 22px; margin: 4px 0 0; }
+.tutor-score div { text-align: right; }
+.tutor-score dt { font-size: 10px; text-transform: uppercase; letter-spacing: .09em; color: var(--ink-faint); }
+.tutor-score dd { margin: 2px 0 0; font-size: 23px; font-weight: 600;
+  font-variant-numeric: tabular-nums; color: var(--ink); }
+
+.tutor-filters { display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding: 12px 0 16px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  margin-bottom: 24px; }
+.tf-label { font-size: 10.5px; text-transform: uppercase; letter-spacing: .09em; color: var(--ink-faint); }
+.tf-chips { display: flex; gap: 5px; flex-wrap: wrap; }
+.tf-chips button {
+  display: flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 20px;
+  border: 1px solid var(--line); background: var(--panel); color: var(--ink-soft);
+  font: inherit; font-size: 12px; cursor: pointer;
+}
+.tf-chips button[aria-pressed="true"] { border-color: currentColor; color: var(--ink); }
+.tf-chips button[aria-pressed="false"] { opacity: .45; }
+.tf-chips .dot { width: 7px; height: 7px; border-radius: 50%; }
+.tf-toggle { display: flex; align-items: center; gap: 6px; font-size: 12.5px;
+  color: var(--ink-soft); cursor: pointer; margin-left: auto; }
+.tutor-filters .text-btn { margin-top: 0; }
+
+.q-card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+  padding: 26px 28px; box-shadow: var(--shadow); }
+.q-eyebrow { margin: 0 0 9px; font-size: 10.5px; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--ink-faint); }
+.q-scenario { margin: 0; font-size: 17px; line-height: 1.62; color: var(--ink);
+  text-wrap: pretty; max-width: 58ch; }
+.q-ask { margin: 24px 0 11px; font-size: 12.5px; color: var(--ink-faint); }
+
+.q-options { display: flex; flex-direction: column; gap: 8px; }
+.q-options button {
+  display: grid; grid-template-columns: 22px 1fr auto; align-items: center; gap: 12px;
+  width: 100%; padding: 13px 15px; border-radius: 10px; text-align: left;
+  border: 1px solid var(--line); background: var(--bg-sunk); color: var(--ink);
+  font: inherit; font-size: 14.5px; cursor: pointer;
+  transition: border-color .15s, background .15s;
+}
+.q-options button:hover:not(:disabled) { border-color: var(--accent); }
+.q-options button:disabled { cursor: default; }
+.q-key { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 5px;
+  background: var(--panel); border: 1px solid var(--line); font-family: var(--mono);
+  font-size: 11px; color: var(--ink-faint); }
+.q-disc { font-size: 11px; color: var(--ink-faint); white-space: nowrap; }
+.q-options button.right { border-color: hsl(152 var(--disc-s) var(--disc-l));
+  background: hsl(152 var(--disc-s) var(--disc-l) / .12); }
+.q-options button.wrong { border-color: hsl(4 var(--disc-s) var(--disc-l));
+  background: hsl(4 var(--disc-s) var(--disc-l) / .12); }
+.q-options button.faded { opacity: .5; }
+
+.q-feedback { margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--line); }
+.fb-verdict { display: flex; align-items: baseline; gap: 9px; font-size: 15.5px;
+  font-weight: 600; margin-bottom: 13px; }
+.fb-verdict.ok { color: hsl(152 var(--disc-s) var(--disc-l)); }
+.fb-verdict.no { color: hsl(4 var(--disc-s) var(--disc-l)); }
+.fb-verdict span { color: var(--ink); font-weight: 500; }
+.fb-block { margin: 0 0 12px; font-size: 14px; line-height: 1.65; color: var(--ink-soft); max-width: 60ch; }
+.fb-block strong { color: var(--ink); font-weight: 600; }
+.fb-picked { padding-left: 13px; border-left: 2px solid var(--line); }
+.fb-vs-label { display: block; font-size: 10px; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--ink-faint); margin-bottom: 6px; }
+.fb-vs { padding: 12px 14px; border-radius: 9px; background: var(--bg-sunk);
+  border: 1px solid var(--line); font-size: 13.5px; line-height: 1.6; color: var(--ink-soft); }
+.fb-actions { display: flex; gap: 9px; margin-top: 18px; flex-wrap: wrap; }
+.fb-actions button {
+  padding: 9px 17px; border-radius: 9px; font: inherit; font-size: 13.5px;
+  font-weight: 500; cursor: pointer; border: 1px solid var(--line);
+  background: var(--bg-sunk); color: var(--ink-soft);
+}
+.fb-actions button:hover { border-color: var(--accent); color: var(--accent); }
+.fb-actions .primary { background: var(--accent); border-color: var(--accent); color: var(--panel); }
+.fb-actions .primary:hover { color: var(--panel); opacity: .9; }
+
+.tutor-hint { margin: 18px 0 0; font-size: 12px; color: var(--ink-faint); text-align: center; }
+.tutor-hint kbd { font-family: var(--mono); font-size: 11px; padding: 2px 5px;
+  border-radius: 4px; border: 1px solid var(--line); background: var(--bg-sunk); }
+.tutor-empty { padding: 40px 4px; text-align: center; color: var(--ink-faint);
+  font-size: 14px; line-height: 1.7; }
+
+@media (max-width: 620px) {
+  .q-options button { grid-template-columns: 22px 1fr; }
+  .q-disc { grid-column: 2; }
+  .tutor-inner { padding: 24px 18px 60px; }
+}

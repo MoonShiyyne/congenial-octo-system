@@ -11,12 +11,15 @@ references across 149 machine-checked URLs.
 
 ---
 
-## The two halves
+## The three parts
 
 **The web** is the stable part: a curriculum that changes when someone edits it.
 The centre is where everyone starts; rings are levels; sectors are disciplines;
 lines are prerequisites. Hovering a node traces its lineage back to the centre,
 so "what do I need before this?" is a visual question rather than a reading task.
+
+**The tutor** is retrieval practice. It gives you a situation and asks which
+capability it calls for — 103 scenarios, at least two per node.
 
 **The signals sidebar** is the moving part. A scheduled job pulls from nine feeds,
 keyword-matches each item against all 51 nodes, and writes the result to
@@ -114,6 +117,36 @@ The validator enforces the things that break the page quietly: unique ids,
 required fields, complete examples, prerequisites that exist, prerequisites that
 are not at a *higher* level than the node depending on them, and at least one
 level-1 entry point per discipline.
+
+---
+
+## The tutor
+
+`data/scenarios.mjs` holds 103 scenarios, at least two per node. Each is written
+as a situation someone would actually be in, never as a restated definition.
+
+**The teaching lives in the distractors.** Every scenario carries a hand-authored
+`near` list — the capability a person would genuinely reach for by mistake — and a
+`vs` line saying what separates them. Random distractors would make each question
+trivially easy and teach nothing; these force the discrimination that is the whole
+point. Where `near` supplies fewer than four options the rest are filled from the
+same discipline, never from across the web.
+
+After an answer you get why the right node is right, what the node you picked
+actually is (pulled from its own tag and hook), and the distinction that matters.
+That last block is labelled as the nearest confusion rather than as a response to
+your specific pick — it is authored against the closest neighbour, and claiming
+otherwise would be a lie the UI tells.
+
+Selection is weighted: unseen scenarios first, then ones you got wrong, then
+rarely for ones you keep getting right, with the last six excluded so nothing
+repeats immediately. Progress persists per browser. Filter by discipline, or
+practise only what you have got wrong. Keyboard: <kbd>1</kbd>–<kbd>4</kbd> to
+answer, <kbd>Enter</kbd> for the next.
+
+The validator enforces that every node has at least one scenario, that every
+distractor exists and is not the answer itself, and that no scenario text is
+duplicated.
 
 ---
 
