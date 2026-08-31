@@ -37,6 +37,19 @@ for (const d of discIds) {
         `discipline "${d}" has no level-1 entry point`);
 }
 
+// ── resources ────────────────────────────────────────────────────────────
+const { resources } = await import('../data/resources.mjs');
+for (const key of Object.keys(resources)) check(ids.has(key), `resources: unknown node "${key}"`);
+for (const n of nodes) {
+  const list = resources[n.id];
+  check(Array.isArray(list) && list.length > 0, `${n.id}: no reference material`);
+  for (const r of list ?? []) {
+    check(r.t && r.u && r.k && r.src, `${n.id}: incomplete resource entry`);
+    check(/^https:\/\//.test(r.u ?? ''), `${n.id}: resource url is not https — ${r.u}`);
+    check(['docs', 'post', 'guide', 'talk'].includes(r.k), `${n.id}: unknown resource kind "${r.k}"`);
+  }
+}
+
 // ── signals ──────────────────────────────────────────────────────────────
 try {
   const s = JSON.parse(await readFile(join(ROOT, 'data/signals.json'), 'utf8'));
@@ -57,4 +70,5 @@ if (fail.length) {
   console.error('✗ validation failed:\n' + fail.map(f => '  · ' + f).join('\n'));
   process.exit(1);
 }
-console.error(`✓ ${nodes.length} nodes, ${disciplines.length} disciplines, ${levels.length} levels — valid`);
+const refCount = Object.values(resources).flat().length;
+console.error(`✓ ${nodes.length} nodes, ${disciplines.length} disciplines, ${levels.length} levels, ${refCount} references — valid`);

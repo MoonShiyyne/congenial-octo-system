@@ -4,8 +4,9 @@ An interactive radial map of what Claude can do — **51 capabilities**, across 
 disciplines** and **five levels of depth** — with a live sidebar that tracks AI and
 entrepreneurial signals and attaches new ones to the nodes they touch.
 
-Every node carries an in-depth explanation, a worked example, and the non-obvious
-detail that is usually learned the expensive way.
+Every node carries an in-depth explanation, a worked example, the non-obvious detail
+that is usually learned the expensive way, and **links to the canonical material**
+that explains it — 180 references across 149 machine-checked URLs.
 
 ---
 
@@ -58,7 +59,8 @@ tools below.
 ```bash
 node tools/refresh-signals.mjs      # pull the feeds, re-map to nodes
 node tools/refresh-signals.mjs --dry-run
-node tools/validate.mjs             # check the graph and the signal payload
+node tools/validate.mjs             # check the graph, resources and signal payload
+node tools/check-links.mjs          # verify every reference URL still resolves
 node tools/build-standalone.mjs     # → dist/index.html, one self-contained file
 ```
 
@@ -111,6 +113,39 @@ The validator enforces the things that break the page quietly: unique ids,
 required fields, complete examples, prerequisites that exist, prerequisites that
 are not at a *higher* level than the node depending on them, and at least one
 level-1 entry point per discipline.
+
+---
+
+## Reference material
+
+Each node's **Go deeper** section links the canonical material for that capability,
+in `data/resources.mjs`. Four kinds, each labelled with its real publisher:
+
+| Kind | Source |
+|---|---|
+| **Docs** | `platform.claude.com` and `code.claude.com` — canonical reference |
+| **Write-up** | `anthropic.com/engineering` — the deeper explanations |
+| **Guide** | `support.claude.com` — task-oriented help |
+| **Talk** | recorded sessions, attributed to the channel they are on |
+
+Every path was taken from the publisher's own sitemap rather than guessed, and
+`tools/check-links.mjs` verifies all 149 URLs resolve. Two rules the checker
+enforces that a naive link check would miss:
+
+- **YouTube is checked through oEmbed**, not by fetching the watch page. A dead
+  video id still returns HTTP 200 with a "video unavailable" body, so a status
+  check alone would pass a broken link. oEmbed 404s properly.
+- **The `src` label must match the real channel.** oEmbed returns the publisher,
+  and the checker fails if a resource claims a source it does not have. Several
+  widely-shared "official Anthropic" videos turn out to be third-party
+  re-uploads; they are deliberately absent rather than mislabelled.
+
+`.github/workflows/check-links.yml` runs the check weekly and on any edit to the
+map. A scheduled failure opens (or comments on) a `link-rot` issue, so rot
+surfaces somewhere a person will actually see it rather than as a red tick.
+
+The count per node is deliberately uneven — three strong links beat five padded
+ones, and the craft nodes have thinner canonical coverage than the API ones.
 
 ---
 

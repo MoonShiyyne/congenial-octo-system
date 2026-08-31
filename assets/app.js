@@ -1,4 +1,5 @@
 import { disciplines, levels, nodes } from '../data/curriculum.mjs';
+import { resources } from '../data/resources.mjs';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const VB = 1000, C = VB / 2;            // geometry box, centre
@@ -315,6 +316,8 @@ try { const t = localStorage.getItem('cpw.theme'); if (t) document.documentEleme
 /* ── node panel ───────────────────────────────────────────────────────── */
 // Inline formatting used in node prose. Bold must run before italic or the
 // italic rule would eat the inner pair of a **bold** span.
+const KIND = { docs: 'Docs', post: 'Write-up', guide: 'Guide', talk: 'Talk' };
+
 const rich = s => esc(s)
   .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
   .replace(/\*([^*\n]+?)\*/g, '<em>$1</em>')
@@ -352,6 +355,16 @@ function openPanel(id) {
     <div class="p-sec">
       <h3>The non-obvious part</h3>
       <p class="p-insight">${rich(n.insight)}</p>
+    </div>
+
+    <div class="p-sec">
+      <h3>Go deeper</h3>
+      <ul class="p-refs">${(resources[id] ?? []).map(r => `
+        <li><a href="${esc(r.u)}" target="_blank" rel="noopener">
+          <span class="ref-kind ref-${esc(r.k)}">${esc(KIND[r.k] ?? r.k)}</span>
+          <span class="ref-t">${esc(r.t)}</span>
+          <span class="ref-src">${esc(r.src)}</span>
+        </a></li>`).join('')}</ul>
     </div>
 
     ${prereqs.length ? `<div class="p-sec"><h3>Rests on</h3><div class="p-links">${prereqs.map(chip).join('')}</div></div>` : ''}

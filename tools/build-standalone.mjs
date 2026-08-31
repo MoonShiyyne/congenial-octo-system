@@ -19,6 +19,7 @@ const read = f => readFile(join(ROOT, f), 'utf8');
 const [html, css, js, signalsRaw] = await Promise.all(
   ['index.html', 'assets/app.css', 'assets/app.js', 'data/signals.json'].map(read));
 const { disciplines, levels, nodes } = await import('../data/curriculum.mjs');
+const { resources } = await import('../data/resources.mjs');
 
 // Body content only; the Artifact host supplies the document skeleton.
 const body = html.match(/<body>([\s\S]*?)<\/body>/)[1]
@@ -28,11 +29,13 @@ const title = html.match(/<title>(.*?)<\/title>/)[1];
 
 // Replace the module import with the data inlined. A single-line swap, so
 // nothing else in app.js has to know it is being bundled.
-const inlined = js.replace(
-  /^import \{[^}]*\} from '\.\.\/data\/curriculum\.mjs';$/m,
-  `const { disciplines, levels, nodes } = ${JSON.stringify({ disciplines, levels, nodes })};`);
+const inlined = js
+  .replace(/^import \{[^}]*\} from '\.\.\/data\/curriculum\.mjs';$/m,
+    `const { disciplines, levels, nodes } = ${JSON.stringify({ disciplines, levels, nodes })};`)
+  .replace(/^import \{[^}]*\} from '\.\.\/data\/resources\.mjs';$/m,
+    `const resources = ${JSON.stringify(resources)};`);
 
-if (inlined === js) throw new Error('curriculum import not found — build would ship an unresolvable import');
+if (/^import /m.test(inlined)) throw new Error('an import survived bundling — the build would ship an unresolvable module');
 
 const out = `<title>${title}</title>
 <style>

@@ -1,0 +1,59 @@
+name: Check reference links
+
+# Link rot is the main way data/resources.mjs goes stale: the pages move or
+# disappear without anything in this repo changing. Weekly, plus on any edit
+# to the map itself.
+on:
+  schedule:
+    - cron: '23 7 * * 1'        # Mondays
+  workflow_dispatch:
+  pull_request:
+    paths: ['data/resources.mjs', 'data/curriculum.mjs']
+  push:
+    paths: ['data/resources.mjs', 'data/curriculum.mjs']
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate the graph
+        run: node tools/validate.mjs
+
+      - name: Check every reference link
+        id: links
+        run: node tools/check-links.mjs
+
+      # A scheduled run that finds rot should leave a trace someone will see,
+      # rather than a red tick nobody opens.
+      - name: Open an issue if scheduled run found breakage
+        if: failure() && github.event_name == 'schedule'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'Reference links need attention';
+            const { data: open } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'link-rot',
+            });
+            const body = `The weekly link check failed. See the run for which URLs broke:\n\n` +
+                         `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            if (open.length) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: open[0].number, body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['link-rot'],
+              });
+            }
