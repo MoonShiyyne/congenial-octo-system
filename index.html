@@ -41,12 +41,12 @@
 
   <!-- ── left rail ─────────────────────────────────────────────── -->
   <aside class="rail" aria-label="Legend and filters">
-    <section class="rail-block">
-      <h2>Start here</h2>
+    <details class="rail-block rail-fold" id="start-fold" open>
+      <summary><h2>Start here</h2></summary>
       <p class="rail-note">Eight steps, in order. Every one works by typing in the Claude app — no terminal, no code.</p>
       <ol id="start-path" class="startpath"></ol>
       <button id="trace-route" class="text-btn" aria-pressed="false">Trace the route on the web</button>
-    </section>
+    </details>
 
     <section class="rail-block">
       <h2>Do I need to write code?</h2>
@@ -54,34 +54,29 @@
       <p class="rail-note" id="surface-note"></p>
     </section>
 
+
+
     <section class="rail-block">
-      <h2>Reading the web</h2>
-      <p class="rail-note">Rings are levels — the centre is where everyone begins. Sectors are disciplines. Lines are prerequisites: follow one inward to see what a capability rests on.</p>
+      <h2>Sectors — click to focus</h2>
+      <ul id="discipline-list" class="legend"></ul>
+      <h2 class="rail-sub">Rings</h2>
+      <ul id="level-list" class="levels"></ul>
+      <p class="rail-note">Lines are prerequisites — follow one inward to see what a capability rests on. Hover any label for more.</p>
       <button id="open-glossary" class="text-btn">Open the glossary</button>
     </section>
 
-    <section class="rail-block">
-      <h2>Disciplines</h2>
-      <ul id="discipline-list" class="legend"></ul>
-    </section>
-
-    <section class="rail-block">
-      <h2>Levels</h2>
-      <ul id="level-list" class="levels"></ul>
-    </section>
-
-    <section class="rail-block">
-      <h2>Capstones</h2>
+    <details class="rail-block rail-fold">
+      <summary><h2>Capstones</h2></summary>
       <p class="rail-note">One project per discipline, at the summit of its sector. Finishing one is the check that you can use the line, not just read it.</p>
       <ul id="capstone-list" class="legend"></ul>
-    </section>
+    </details>
 
-    <section class="rail-block">
-      <h2>Your progress</h2>
+    <details class="rail-block rail-fold">
+      <summary><h2>Your progress</h2></summary>
       <p class="rail-note">Mark a node as learned in its panel. Stored in this browser only.</p>
       <div id="progress-bars"></div>
       <button id="reset-progress" class="text-btn">Reset progress</button>
-    </section>
+    </details>
   </aside>
 
   <!-- ── centre: the web ───────────────────────────────────────── -->

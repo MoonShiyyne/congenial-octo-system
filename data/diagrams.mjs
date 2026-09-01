@@ -38,7 +38,7 @@ export const diagrams = {
 <text x="0" y="224" font-size="11" fill="currentColor" opacity=".7">Only the tools block still hits. Hit rate goes to zero with no error.</text>
 </svg>` },
 
-'c-editing': { caption: 'Two features, two verbs. Context editing deletes old tool results; compaction summarises earlier turns. Using the wrong one loses state you needed.',
+'c-editing': { caption: 'The same conversation twice. Above, stale tool results struck out and gone; below, seven turns replaced by a single summary block.',
   alt: 'A conversation timeline shown twice: context editing removes stale tool results entirely, while compaction replaces earlier turns with a summary block that must be sent back.',
   svg: `<svg viewBox="0 0 660 236" role="img" aria-label="Context editing deletes tool results; compaction summarises earlier turns">
 <text x="0" y="12" font-size="10.5" fill="currentColor" opacity=".65" letter-spacing="1.2">CONTEXT EDITING — CLEARS</text>
@@ -87,7 +87,7 @@ export const diagrams = {
 <text x="0" y="228" font-size="11" fill="currentColor" opacity=".7">Retrieval still wins on scale, freshness, and per-user access control.</text>
 </svg>` },
 
-'c-memory': { caption: 'Context is what the model is holding and pays for every turn. Memory sits outside it and costs nothing until something is fetched.',
+'c-memory': { caption: 'The context window on the left with what it holds every turn; the memory store on the right, with arrows for the two moments it is touched.',
   alt: 'A context window billed on every turn, next to a persistent memory store outside it that is written to and read from on demand.',
   svg: `<svg viewBox="0 0 660 214" role="img" aria-label="Context is billed every turn; memory is outside the window and retrieved on demand">
 <defs><marker id="ar-cmem" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker></defs>
@@ -165,7 +165,7 @@ export const diagrams = {
 <text x="0" y="200" font-size="11" fill="#d2603f">Cannot combine with a JSON schema — 400.</text>
 </svg>` },
 
-'c-files': { caption: 'The model reads a message in order. A question asked before the evidence arrives gets answered from priors, then retrofitted.',
+'c-files': { caption: 'Two message layouts. Above, the document arrives before the question; below, the question arrives first and is answered before the evidence is read.',
   alt: 'Two message layouts: the document block placed before the text block, and the reverse, which asks the question before the evidence has been read.',
   svg: `<svg viewBox="0 0 660 176" role="img" aria-label="Document block before text block, versus the reverse">
 <defs><marker id="ar-cfil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker></defs>
@@ -186,7 +186,7 @@ export const diagrams = {
 <text x="466" y="148" font-size="11" fill="#d2603f">then retrofits to the source</text>
 </svg>` },
 
-'a-tools': { caption: 'The model asks, your code answers, the loop repeats. Every result from a parallel batch must return in ONE user message — splitting them teaches the model to stop asking in parallel.',
+'a-tools': { caption: 'The exchange, left to right: three tool calls requested, run concurrently by your code, and returned together. The row below shows the same results split across separate messages.',
   alt: 'The tool-use exchange: an assistant message containing three parallel tool_use blocks, executed concurrently, with all three tool_result blocks returned in a single user message.',
   svg: `<svg viewBox="0 0 660 258" role="img" aria-label="The tool use exchange, and why parallel results must return in one message">
 <defs><marker id="ar-atool" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker></defs>
@@ -293,7 +293,7 @@ export const diagrams = {
 <text x="0" y="234" font-size="11" fill="#d2603f">A third-party server's tool descriptions enter your context. Treat it as a dependency.</text>
 </svg>` },
 
-'a-subagents': { caption: 'The product of a subagent is not parallelism — it is that the reading happens in someone else\'s window. Delegate when the input is large and the output small.',
+'a-subagents': { caption: 'Two parent windows side by side. On the left, 200K tokens of read code stay in the parent for every later turn; on the right the same reading happens in a separate window below, and three lines come back.',
   alt: 'A parent context receiving three sentences from a subagent that read two hundred thousand tokens, contrasted with doing the same work inline and carrying all of it forever.',
   svg: `<svg viewBox="0 0 660 236" role="img" aria-label="Context isolation: a subagent reads a lot and returns a little">
 <defs><marker id="ar-asub" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker></defs>
@@ -356,7 +356,7 @@ export const diagrams = {
 </g>
 </svg>` },
 
-'a-managed': { caption: 'The agent is a durable, versioned object; sessions are disposable runs against it. Creating an agent per request throws away the entire point of the surface.',
+'a-managed': { caption: 'One durable agent config on the left, referenced by id; disposable sessions on the right, each with its own container and budget. The row underneath is the same thing done wrong.',
   alt: 'A control plane holding one versioned agent config, and a data plane where many disposable sessions reference it by id, each with its own container and budget.',
   svg: `<svg viewBox="0 0 660 234" role="img" aria-label="One durable agent config, many disposable sessions referencing it">
 <defs><marker id="ar-amgd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="var(--accent)"/></marker></defs>
@@ -498,7 +498,7 @@ export const diagrams = {
 <text x="0" y="220" font-size="11" fill="#d2603f">Forty prompts an hour for 'ls' trains reflexive approval — a worse posture than a good allowlist.</text>
 </svg>` },
 
-'k-remote': { caption: 'Separate worktrees give each session its own checkout, so parallel work never collides. The limit is task independence, not session count.',
+'k-remote': { caption: 'One repository feeding three worktrees, each on its own branch with its own background session, and the branch each returns.',
   alt: 'One repository with three worktrees, each checked out to a different branch with its own background session, contrasted with three sessions sharing one working tree.',
   svg: `<svg viewBox="0 0 660 236" role="img" aria-label="Worktrees let sessions run in parallel; sharing one tree does not">
 <defs><marker id="ar-krem" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker></defs>
@@ -523,7 +523,7 @@ export const diagrams = {
 <text x="0" y="222" font-size="11" fill="currentColor" opacity=".75">reconciling the diffs costs more than doing the work sequentially would have.</text>
 </svg>` },
 
-'s-guardrails': { caption: 'A refusal is a normal 200 response. Code that reads content without first checking stop_reason hands users a blank string on the one path nobody tests.',
+'s-guardrails': { caption: 'One response fanning out into five stop reasons, with what each one means for your code on the right. Two of the five are marked because they look like success.',
   alt: 'A response branching on stop_reason into end_turn, refusal, max_tokens, tool_use and pause_turn, with the refusal path shown returning HTTP 200 and raising nothing.',
   svg: `<svg viewBox="0 0 660 244" role="img" aria-label="Branch on stop_reason before reading content; a refusal is a 200">
 <defs><marker id="ar-sgrd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker></defs>
@@ -556,7 +556,7 @@ export const diagrams = {
 <text x="0" y="226" font-size="11" fill="#d2603f">response.content[0].text with no check → a silent empty string on the path you never exercised.</text>
 </svg>` },
 
-'s-batch': { caption: 'Batch results come back in any order. Positional matching passes every small test and silently attaches the wrong summary to a third of your records at volume.',
+'s-batch': { caption: 'Three documents submitted, returning in a different order. The red arrows are what positional matching pairs up; the green row is what keying by id pairs up instead.',
   alt: 'Three documents submitted with custom ids, returning in a different order; zipping by position mismatches them while keying by custom id restores the correct pairing.',
   svg: `<svg viewBox="0 0 660 238" role="img" aria-label="Key batch results by custom_id, never by position">
 <defs><marker id="ar-sbat" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker></defs>
@@ -586,7 +586,7 @@ export const diagrams = {
 <text x="0" y="224" font-size="11" fill="currentColor" opacity=".75">Handle all four outcomes: succeeded · errored · canceled · expired. Async work is half price.</text>
 </svg>` },
 
-'s-cost': { caption: 'There is a correct order, and it exists because the early levers cost nothing in quality while the later ones do. Most bills fall a long way before any tradeoff.',
+'s-cost': { caption: 'Five levers as a ladder, widest first. Everything above the dashed line leaves the output untouched; the two below it trade quality for money.',
   alt: 'A ladder of cost levers with caching, hygiene and batching marked as free of quality cost, and effort then model choice marked as genuine tradeoffs to take last.',
   svg: `<svg viewBox="0 0 660 244" role="img" aria-label="Cost levers in order: free wins first, tradeoffs last">
 <text x="0" y="12" font-size="10.5" fill="#2e9e6b" letter-spacing="1.2">FREE — CHANGES NOTHING ABOUT THE OUTPUT</text>
@@ -643,7 +643,7 @@ export const diagrams = {
 <text x="0" y="212" font-size="11" fill="var(--accent)">Every production failure becomes a permanent case. That habit compounds faster than any technique here.</text>
 </svg>` },
 
-'s-deploy': { caption: 'The same model on a different platform is not the same product. Parity is the assumption that breaks quietly, about three weeks in.',
+'s-deploy': { caption: 'A tick-and-cross matrix across the four platforms, with the client class and model-id form each one expects underneath.',
   alt: 'A feature availability matrix across the first-party API, Bedrock, Vertex and Foundry showing which of fast mode, web fetch and Managed Agents each supports.',
   svg: `<svg viewBox="0 0 660 236" role="img" aria-label="Feature availability differs across first-party, Bedrock, Vertex and Foundry">
 <g font-size="10.5" fill="currentColor" opacity=".7">

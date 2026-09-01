@@ -145,7 +145,7 @@ When continuing a conversation on the same model, echo thinking blocks back unch
 {
   id: 'r-effort', d: 'reasoning', lvl: 3, title: 'The Effort Dial',
   tag: 'low → medium → high → xhigh → max', prereq: ['r-thinking'],
-  hook: 'One parameter trades thoroughness against spend inside a single model — and it is the lever people reach for last instead of first.',
+  hook: 'Teams set this once, globally, then wonder why their coding routes feel weaker than the same model does in a terminal.',
   what: `\`output_config: {effort: "low"|"medium"|"high"|"xhigh"|"max"}\` — note that it lives *inside* \`output_config\`, not at the top level. The default is \`high\`. It controls reasoning depth and overall token spend, and it is the first quality-trading lever you should touch after the free wins like caching.
 
 The behaviour is not just "thinks longer." Lower effort produces fewer and more consolidated tool calls, less preamble, and terser confirmations. That makes \`low\` genuinely good for subagents and simple classification, not merely cheap — a chatty subagent that narrates its work is worse *and* more expensive.
@@ -426,7 +426,7 @@ assert resp.usage.cache_read_input_tokens > 0, "silent invalidator!"
 {
   id: 'c-editing', d: 'context', lvl: 4, title: 'Context Editing & Compaction',
   tag: 'clear vs. summarise', prereq: ['c-cache'],
-  hook: 'Two features, two different verbs, and using the wrong one quietly destroys the state your agent needs.',
+  hook: 'Your agent starts behaving as though the last thirty turns never happened, and nothing anywhere reported an error.',
   what: `These are constantly conflated and they do opposite things.
 
 **Context editing** *clears*. With beta \`context-management-2025-06-27\` you pass \`context_management.edits\` with a strategy: \`clear_tool_uses_20250919\` drops old tool results (optionally their inputs too, with \`clear_tool_inputs\`), and \`clear_thinking_20251015\` drops thinking blocks. Nothing is preserved — the content is gone. That is exactly right for a 40-turn agent loop where turn 3's directory listing is dead weight, and exactly wrong if turn 3 held a decision.
@@ -800,7 +800,7 @@ for b in resp.content:
 {
   id: 'a-mcp', d: 'agents', lvl: 2, title: 'MCP',
   tag: 'one protocol, every integration', prereq: ['a-tools'],
-  hook: 'Write the connector once and it works in Claude Code, the desktop app, the API, and every other MCP client — including ones that do not exist yet.',
+  hook: 'Every integration you build without it, you build again for the next client — and again for the one after that.',
   what: `The Model Context Protocol is an open standard for exposing tools, resources and prompts to language models. Its value is combinatorial: without it, N tools × M clients means N×M bespoke integrations. With it, a server you write for your internal deploy system works in every MCP-speaking client, and every MCP server anyone else wrote works in yours.
 
 In Claude Code, servers are configured in \`.mcp.json\` — committed, so the whole team gets the same connections. On the API, the connector needs **both halves** or it fails validation: \`mcp_servers=[{type: "url", url, name}]\` *and* a matching \`tools=[{type: "mcp_toolset", mcp_server_name: <same name>}]\`, with beta \`mcp-client-2025-11-20\`. Passing only the server list is a validation error, and it is the most common first mistake.
@@ -960,7 +960,7 @@ async for msg in query(
 {
   id: 'a-managed', d: 'agents', lvl: 4, title: 'Managed Agents',
   tag: 'harness and hosting', prereq: ['a-sdk', 'c-memory'],
-  hook: 'The only option where Anthropic runs the agent loop *and* hosts the container the tools execute in.',
+  hook: 'Somebody has to keep a sandbox alive, patched and bounded in dollars. This is the one surface where that somebody is not you.',
   what: `Managed Agents is a distinct API surface. You create a persisted, versioned **Agent** config once (\`POST /v1/agents\` — or, better, as version-controlled YAML applied with the \`ant\` CLI), then start **Sessions** that reference it. Each session provisions a container as the agent's workspace: bash, file operations and code execution run there, while the loop itself runs on Anthropic's orchestration layer.
 
 Get the split right or nothing works: \`model\`, \`system\` and \`tools\` live on the **agent**, never on the session. Agents are persistent objects — create once, store the ID, reference it forever. Calling \`agents.create()\` in your request path is the classic mistake; it creates a new agent per request and discards versioning entirely. The beta header is \`managed-agents-2026-04-01\`, set automatically by the SDKs.
@@ -1311,7 +1311,7 @@ result = client.messages.parse(
 {
   id: 's-batch', d: 'scale', lvl: 3, title: 'Batch & Files',
   tag: 'half price, when you can wait', prereq: ['s-structured'],
-  hook: 'Any workload that does not need an answer in this second is a workload you are overpaying for.',
+  hook: 'Half of what that nightly job costs is a premium for finishing at 4am, when nobody reads it until nine.',
   what: `The Message Batches API runs requests asynchronously at **50% cost**. You submit an array of requests each carrying a \`custom_id\`, poll \`processing_status\` until \`"ended"\`, then stream results. That is a straight halving of spend on a large class of real work: nightly classification, backfills, evaluation suites, document processing, dataset generation — anything where latency is not the constraint.
 
 The rule that catches everyone: **results arrive in any order**. Key by \`custom_id\`, never by position. Code that zips the results array against the inputs array will look correct in testing with three items and corrupt data at scale. Each result carries \`.custom_id\` plus \`.result.type\` — \`succeeded\`, \`errored\`, \`canceled\` or \`expired\` — so handle all four rather than assuming success.
@@ -1467,7 +1467,7 @@ Sample and store real conversations, with consent and a retention policy. That c
 {
   id: 's-deploy', d: 'scale', lvl: 5, title: 'Enterprise & Multi-cloud',
   tag: 'where the request actually runs', prereq: ['s-observability', 's-guardrails'],
-  hook: 'The same model on a different platform is not the same product — feature availability, pricing and client code all diverge.',
+  hook: 'You find out the feature your product depends on is missing here in week three, in a meeting, from someone else.',
   what: `Claude runs first-party, on **Claude Platform on AWS** (Anthropic-operated, same-day API parity), and on partner platforms: **Amazon Bedrock**, **Google Vertex AI** and **Microsoft Foundry**. Which one you are on changes real things, and assuming parity is the mistake that surfaces in week three.
 
 Use the dedicated client class, never the first-party \`Anthropic()\` with a \`base_url\` override — \`AnthropicBedrockMantle\`, \`AnthropicVertex\`, \`AnthropicFoundry\`. Model IDs differ too: Bedrock takes an \`anthropic.\` prefix; Vertex takes the bare ID for current models but an \`@\` separator for dated snapshots (\`claude-opus-4-5@20251101\`, not a hyphenated date).

@@ -249,6 +249,34 @@ description, so an entry that stops being plain terms fails the build.
 
 ---
 
+## The field contract
+
+Each same-screen field on a node has exactly one job, and `tools/validate.mjs`
+fails the build if any two say the same thing (>30% bigram overlap):
+
+| Field | Its job |
+|---|---|
+| `tag` | a handle, 3–5 words |
+| `hook` | the cost of **not** knowing this. A consequence, never a definition |
+| `primer lead` | what the thing literally **is**. A definition, never a consequence |
+| `insight` | the non-obvious thing you only see afterwards |
+| `diagram caption` | what **this picture** shows. Describes the figure, not the lesson |
+| `app note` | what goes wrong doing **this example** |
+
+These drifted into each other as the panel was built up over many passes. An
+audit found 18 pairs above 25% overlap in two systematic patterns: captions
+restating the insight (10 instances) and hooks restating the primer lead (6).
+Managed Agents was the worst — four fields carrying two sentences between them.
+All 18 are now resolved and the check keeps them apart.
+
+`tag` is deliberately excluded from the check, and the metric ignores anything
+under four bigrams: a three-word handle has two bigrams, so matching both reads
+as 100% overlap when all it means is that the handle names the thing it labels.
+
+Redundancy **across** surfaces is left alone on purpose. Capstone traps overlap
+node insights on 4 pairs and tutor explanations on 8 — but repetition on one
+screen is noise, while repetition separated by time is how the tutor works.
+
 ## Accessibility
 
 Beyond comprehension: all 51 nodes and 6 capstone summits are keyboard-focusable,

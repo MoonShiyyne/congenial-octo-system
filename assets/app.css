@@ -707,3 +707,19 @@ body.pathmode .node.onpath .disc { fill-opacity: .9; }
   color: var(--ink); max-width: 58ch;
 }
 .app-note { margin: 0 16px 14px; font-size: 12.5px; line-height: 1.55; color: var(--ink-faint); max-width: 60ch; }
+
+/* ── rail density ───────────────────────────────────────────────────────── */
+/* The rail had grown to seven sections and 3.4 screens, putting the legend you
+   need to read the graph below the fold. Reference detail moved to tooltips,
+   browsing lists fold away. */
+.rail-fold > summary { cursor: pointer; list-style: none; margin-bottom: 10px; }
+.rail-fold > summary::-webkit-details-marker { display: none; }
+.rail-fold > summary h2 { display: inline; }
+.rail-fold > summary::after { content: ' ▸'; color: var(--ink-faint); font-size: 10px; }
+.rail-fold[open] > summary::after { content: ' ▾'; }
+.rail-fold > summary:hover h2 { color: var(--ink); }
+.rail-sub { margin-top: 18px; }
+.legend button { align-items: center; padding: 5px 8px; }
+.legend .swatch { margin-top: 0; }
+.levels li { align-items: baseline; gap: 8px; padding: 4px 0; }
+.lv-sub { font-size: 11px; color: var(--ink-faint); }

@@ -100,7 +100,7 @@ Answer true or false for each line, with one sentence of why.
 
 Give me the count out of 5. Do not give an overall rating.`,
   do: ['Attach the handbook so criterion 3 can be checked'],
-  note: 'Ask for a 1-10 score and you will get 7 every time, and learn nothing about what to fix.' },
+  note: 'Attach the handbook in the same message. Criterion 3 cannot be checked against something the model cannot see.' },
 
 // ── context ───────────────────────────────────────────────────────────────
 'c-files': { label: 'Attaching the evidence instead of describing it',
@@ -235,7 +235,7 @@ stored as text, and three columns that are nearly duplicates.
 
 Same numbers in all three. Flag any row you had to guess about
 rather than quietly dropping it.`,
-  note: 'The template is the cheapest quality upgrade available. Without it someone reformats the output before sending it.' },
+  note: 'Attach the template in the same message as the data, not afterwards. Sent later, you get a first draft in Calibri and restyle it by hand.' },
 
 'f-viz': { label: 'Stating the argument, not the chart type',
   where: 'claude.ai · desktop',

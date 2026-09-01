@@ -206,6 +206,57 @@ for (const n of nodes) {
         `${n.id}: app-reachable=${reachable} but app example=${!!appExamples[n.id]}`);
 }
 
+// ── field contract ───────────────────────────────────────────────────────
+// Each same-screen field has one job. They drifted into each other once
+// already — captions restating the insight, hooks restating the primer lead —
+// so a reader met the same sentence three times in one panel. This fails the
+// build if any two collapse again.
+//
+//   tag      a handle, 3-5 words
+//   hook     the cost of NOT knowing this. A consequence, never a definition
+//   lead     what the thing literally is. A definition, never a consequence
+//   insight  the non-obvious thing you only see afterwards
+//   caption  what THIS PICTURE shows. Describes the figure, not the lesson
+const OVERLAP_MAX = 0.30;
+const STOPWORDS = new Set(['this', 'that', 'with', 'from', 'have', 'which', 'when', 'what',
+  'your', 'they', 'than', 'then', 'into', 'more', 'been', 'were', 'will', 'also', 'only',
+  'just', 'because', 'rather', 'something', 'model', 'claude', 'every']);
+const bigrams = str => {
+  const w = String(str ?? '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ')
+    .split(/\s+/).filter(x => x.length > 3 && !STOPWORDS.has(x));
+  const out = new Set();
+  for (let i = 0; i < w.length - 1; i++) out.add(w[i] + ' ' + w[i + 1]);
+  return out;
+};
+const overlap = (a, b) => {
+  const A = bigrams(a), B = bigrams(b);
+  // Below four bigrams the ratio is an artifact, not a signal: a three-word
+  // tag has two bigrams, so matching both reads as 100% overlap when all it
+  // means is that the handle names the thing it labels.
+  if (A.size < 4 || B.size < 4) return 0;
+  let hit = 0;
+  for (const x of A) if (B.has(x)) hit++;
+  return hit / Math.min(A.size, B.size);
+};
+for (const n of nodes) {
+  // `tag` is deliberately absent: it is a handle, and sharing vocabulary with
+  // the definition is what a handle is for.
+  const f = {
+    hook: n.hook, insight: n.insight,
+    lead: primers[n.id]?.lead,
+    caption: diagrams[n.id]?.caption,
+    appNote: appExamples[n.id]?.note,
+  };
+  const keys = Object.keys(f).filter(k => f[k]);
+  for (let i = 0; i < keys.length; i++) {
+    for (let j = i + 1; j < keys.length; j++) {
+      const score = overlap(f[keys[i]], f[keys[j]]);
+      check(score < OVERLAP_MAX,
+        `${n.id}: "${keys[i]}" and "${keys[j]}" say the same thing (${Math.round(score * 100)}% overlap) — they have different jobs`);
+    }
+  }
+}
+
 // ── signals ──────────────────────────────────────────────────────────────
 try {
   const s = JSON.parse(await readFile(join(ROOT, 'data/signals.json'), 'utf8'));

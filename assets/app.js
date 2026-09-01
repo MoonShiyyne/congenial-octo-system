@@ -293,10 +293,9 @@ svg.addEventListener('pointercancel', endDrag);
 el('node-count').textContent = String(nodes.length);
 
 el('discipline-list').innerHTML = disciplines.map(d => `
-  <li><button data-d="${d.id}" aria-pressed="true">
+  <li><button data-d="${d.id}" aria-pressed="true" title="${esc(d.blurb)}">
     <span class="swatch" style="background:${colour(d.id)}"></span>
-    <span><span class="lg-name">${esc(d.name)}</span>
-    <span class="lg-blurb">${esc(d.blurb)}</span></span>
+    <span class="lg-name">${esc(d.name)}</span>
   </button></li>`).join('');
 
 el('discipline-list').addEventListener('click', e => {
@@ -313,9 +312,9 @@ el('discipline-list').addEventListener('click', e => {
 });
 
 el('level-list').innerHTML = levels.map(l => `
-  <li><span class="lv-num">${l.n}</span>
-    <span><span class="lv-name">${esc(l.name)}</span> —
-    <span class="lv-note">${esc(l.note)}</span></span></li>`).join('');
+  <li title="${esc(l.note)}"><span class="lv-num">${l.n}</span>
+    <span class="lv-name">${esc(l.name)}</span>
+    <span class="lv-sub">${esc(l.sub)}</span></li>`).join('');
 
 el('capstone-list').innerHTML = capstones.map(c => `
   <li><button data-capstone="${c.d}">
@@ -555,13 +554,12 @@ function openPanel(id) {
       </button>
     </div>` : ''}
 
-    <div class="p-sec p-sig">
+    ${sigs.length ? `<div class="p-sec p-sig">
       <h3>Live signals for this node</h3>
-      ${sigs.length ? `<ul>${sigs.slice(0, 8).map(s => `
+      <ul>${sigs.slice(0, 8).map(s => `
         <li><span class="sig-src">${esc(s.source)}${s.badge ? ' · ' + esc(s.badge) : ''}${s.application ? ' · new application' : ''}</span>
-        <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join('')}</ul>`
-      : `<p class="rail-note">No recent signals matched this node. The sidebar refreshes on a schedule; new ones attach here automatically.</p>`}
-    </div>
+        <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join('')}</ul>
+    </div>` : ''}
 
     ${renderAssumed(n)}
     </div>
@@ -758,6 +756,15 @@ el('start-path').innerHTML = startPath.map(step => {
     <span class="sp-why">${esc(step.why)}</span></span>
   </button></li>`;
 }).join('');
+// Open by default for a newcomer; remembered shut once someone is past it,
+// because eight steps with their reasons fill the whole rail.
+try {
+  if (localStorage.getItem('cpw.startfold') === 'shut') el('start-fold').open = false;
+} catch { /* private mode */ }
+el('start-fold').addEventListener('toggle', () => {
+  try { localStorage.setItem('cpw.startfold', el('start-fold').open ? 'open' : 'shut'); } catch { /* ignore */ }
+});
+
 el('start-path').addEventListener('click', e => {
   const b = e.target.closest('button[data-goto]');
   if (b) openPanel(b.dataset.goto);
