@@ -121,7 +121,7 @@ for (const g of glossary) {
   check(!gIds.has(g.id), `glossary: duplicate id "${g.id}"`);
   gIds.add(g.id);
   check(g.t?.length > 0 && g.d?.length > 0, `glossary ${g.id}: missing term or definition`);
-  check(['vocab', 'system'].includes(g.k), `glossary ${g.id}: unknown kind "${g.k}"`);
+  check(['vocab', 'system', 'basic'].includes(g.k), `glossary ${g.id}: unknown kind "${g.k}"`);
   check(Array.isArray(g.m) && g.m.length > 0 && g.m.every(r => r instanceof RegExp),
         `glossary ${g.id}: patterns must be a non-empty array of RegExp`);
   check((g.d ?? '').length < 260, `glossary ${g.id}: definition is too long to be a quick explainer`);
@@ -168,6 +168,26 @@ for (const [id, fig] of Object.entries(diagrams)) {
   }
 }
 
+// ── surfaces & start path ────────────────────────────────────────────────
+const { surfaces, surfaceMeta } = await import('../data/surfaces.mjs');
+const { startPath } = await import('../data/startpath.mjs');
+const surfIds = new Set(surfaceMeta.map(m => m.id));
+for (const n of nodes) {
+  const s = surfaces[n.id];
+  check(Array.isArray(s) && s.length > 0, `${n.id}: no surface tagged`);
+  for (const x of s ?? []) check(surfIds.has(x), `${n.id}: unknown surface "${x}"`);
+}
+for (const k of Object.keys(surfaces)) check(ids.has(k), `surfaces: unknown node "${k}"`);
+// The point of the start path is that a beginner can walk all of it without
+// a terminal. A step that needs code silently breaks that promise.
+check(startPath.length >= 5, 'start path is too short to be a route');
+for (const step of startPath) {
+  check(ids.has(step.n), `start path: unknown node "${step.n}"`);
+  check(step.why?.length > 0, `start path ${step.n}: no reason given`);
+  check((surfaces[step.n] ?? []).includes('apps'),
+        `start path ${step.n}: needs code — the route is advertised as no-code`);
+}
+
 // ── signals ──────────────────────────────────────────────────────────────
 try {
   const s = JSON.parse(await readFile(join(ROOT, 'data/signals.json'), 'utf8'));
@@ -190,4 +210,4 @@ if (fail.length) {
 }
 const refCount = Object.values(resources).flat().length;
 const primerCount = Object.values(primers).reduce((a, p) => a + p.items.length, 0);
-console.error(`✓ ${nodes.length} nodes, ${disciplines.length} disciplines, ${levels.length} levels, ${refCount} references, ${primerCount} primer entries, ${scenarios.length} scenarios, ${capstones.length} capstones, ${glossary.length} glossary entries, ${Object.keys(diagrams).length} diagrams — valid`);
+console.error(`✓ ${nodes.length} nodes, ${disciplines.length} disciplines, ${levels.length} levels, ${refCount} references, ${primerCount} primer entries, ${scenarios.length} scenarios, ${capstones.length} capstones, ${glossary.length} glossary entries, ${Object.keys(diagrams).length} diagrams, ${nodes.filter(n => surfaces[n.id].includes('apps')).length} no-code nodes — valid`);

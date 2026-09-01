@@ -3,8 +3,10 @@ import { resources } from '../data/resources.mjs';
 import { primers } from '../data/primers.mjs';
 import { scenarios } from '../data/scenarios.mjs';
 import { capstones } from '../data/capstones.mjs';
-import { assumedFor } from '../data/glossary.mjs';
+import { assumedFor, glossary } from '../data/glossary.mjs';
 import { diagrams } from '../data/diagrams.mjs';
+import { surfaces, surfaceMeta } from '../data/surfaces.mjs';
+import { startPath } from '../data/startpath.mjs';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const VB = 1000, C = VB / 2;            // geometry box, centre
@@ -26,6 +28,8 @@ const colour = d => `hsl(${discOf(d).hue} var(--disc-s) var(--disc-l))`;
 const state = {
   active: new Set(disciplines.map(d => d.id)),
   query: '',
+  noCode: false,
+  pathMode: false,
   lit: null,                 // node id whose lineage is highlighted
   signals: null,
   tab: 'all',
@@ -196,6 +200,7 @@ for (const n of nodes) {
 /* ── highlight / filter ───────────────────────────────────────────────── */
 function matches(n) {
   if (!state.active.has(n.d)) return false;
+  if (state.noCode && !surfaces[n.id].includes('apps')) return false;
   const q = state.query.trim().toLowerCase();
   if (!q) return true;
   return (n.title + ' ' + n.tag + ' ' + n.hook + ' ' + n.what).toLowerCase().includes(q);
@@ -432,10 +437,7 @@ function openCapstone(discId) {
     </div></div>`;
 
   el('panel').dataset.node = '';
-  el('panel').hidden = false;
-  el('panel-scrim').hidden = false;
-  el('panel').scrollTop = 0;
-  el('panel').focus();
+  showPanel();
   el('panel-content').querySelectorAll('[data-goto]')
     .forEach(b => b.addEventListener('click', () => openPanel(b.dataset.goto)));
 }
@@ -476,6 +478,11 @@ function openPanel(id) {
     </div>
     <h2 id="panel-title">${esc(n.title)}</h2>
     <p class="p-tag">${esc(n.tag)}</p>
+    <div class="p-surfaces">${surfaceMeta.map(m => {
+      const on = surfaces[id].includes(m.id);
+      return `<span class="surf ${on ? 'on' : 'off'} s-${m.id}" title="${esc(m.blurb)}">
+        ${on ? '✓' : '—'} ${esc(m.name)}</span>`;
+    }).join('')}</div>
     <p class="p-hook">${esc(n.hook)}</p>
     </header>
     <div class="p-grid">
@@ -546,10 +553,7 @@ function openPanel(id) {
     </div>`;
 
   el('panel').dataset.node = id;
-  el('panel').hidden = false;
-  el('panel-scrim').hidden = false;
-  el('panel').scrollTop = 0;
-  el('panel').focus();
+  showPanel();
 
   el('mark-done').addEventListener('click', () => {
     state.learned.has(id) ? state.learned.delete(id) : state.learned.add(id);
@@ -575,10 +579,32 @@ function setWide(on) {
 el('panel-expand').addEventListener('click', () => setWide(!el('panel').classList.contains('expanded')));
 try { setWide(localStorage.getItem(WIDE_KEY) === '1'); } catch { setWide(false); }
 
+// The panel is a modal dialog: remember what opened it, keep Tab inside while
+// it is up, and hand focus back on close.
+let panelOpener = null;
+function showPanel() {
+  panelOpener = document.activeElement;
+  el('panel').hidden = false;
+  el('panel-scrim').hidden = false;
+  el('panel').scrollTop = 0;
+  el('panel').focus();
+}
+const FOCUSABLE = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
+el('panel').addEventListener('keydown', e => {
+  if (e.key !== 'Tab') return;
+  const items = [...el('panel').querySelectorAll(FOCUSABLE)].filter(x => x.offsetParent !== null);
+  if (!items.length) return;
+  const first = items[0], last = items[items.length - 1];
+  if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+  else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+});
+
 function closePanel() {
   el('panel').hidden = true;
   el('panel-scrim').hidden = true;
   state.lit = null; paint();
+  if (panelOpener?.isConnected) panelOpener.focus();
+  panelOpener = null;
 }
 el('panel-close').addEventListener('click', closePanel);
 el('panel-scrim').addEventListener('click', closePanel);
@@ -698,6 +724,88 @@ async function loadSignals() {
   }
   renderTabs(); renderSignals(); renderApplications(); renderSourceStatus(); markSignalNodes(); paint();
 }
+
+
+
+/* ── start path, surface filter, glossary ─────────────────────────────── */
+
+el('start-path').innerHTML = startPath.map(step => {
+  const n = nodeOf(step.n);
+  return `<li><button data-goto="${step.n}">
+    <span><span class="sp-title">${esc(n.title)}</span>
+    <span class="sp-why">${esc(step.why)}</span></span>
+  </button></li>`;
+}).join('');
+el('start-path').addEventListener('click', e => {
+  const b = e.target.closest('button[data-goto]');
+  if (b) openPanel(b.dataset.goto);
+});
+
+// Number the route on the web itself, so the eight steps are a visible thread
+// through the graph rather than a list that happens to sit beside it.
+const pathIds = new Set(startPath.map(s => s.n));
+startPath.forEach((step, i) => {
+  const entry = nodeEls.get(step.n);
+  if (!entry) return;
+  entry.g.classList.add('onpath');
+  const { x, y } = pos.get(step.n);
+  const t = mk('text', { class: 'path-num', x: x - 11, y: y - 9, 'text-anchor': 'middle' }, entry.g);
+  t.textContent = String(i + 1);
+});
+el('trace-route').addEventListener('click', () => {
+  state.pathMode = !state.pathMode;
+  document.body.classList.toggle('pathmode', state.pathMode);
+  el('trace-route').setAttribute('aria-pressed', String(state.pathMode));
+  el('trace-route').textContent = state.pathMode ? 'Show the whole web again' : 'Trace the route on the web';
+});
+
+const noCodeCount = nodes.filter(n => surfaces[n.id].includes('apps')).length;
+el('surface-filter').innerHTML = `
+  <button data-nocode="0" aria-pressed="true">Show all ${nodes.length}</button>
+  <button data-nocode="1" aria-pressed="false">No code needed ${noCodeCount}</button>`;
+function renderSurfaceNote() {
+  el('surface-note').textContent = state.noCode
+    ? `${noCodeCount} of ${nodes.length} capabilities work by typing in the Claude app. The rest need a terminal or a program — they are dimmed, not hidden, so you can see where the path continues.`
+    : 'Every node lists which surfaces it works on. Switch to see only what needs no code.';
+}
+el('surface-filter').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  state.noCode = b.dataset.nocode === '1';
+  [...el('surface-filter').querySelectorAll('button')]
+    .forEach(x => x.setAttribute('aria-pressed', String((x.dataset.nocode === '1') === state.noCode)));
+  renderSurfaceNote();
+  paint();
+});
+renderSurfaceNote();
+
+/** A plain A–Z lookup, for a reader who hit a word rather than a concept. */
+function openGlossary() {
+  const kinds = [
+    ['basic', 'Foundations', 'The words everything else assumes.'],
+    ['system', 'Named things', 'Formats, protocols and tools you will meet by name.'],
+    ['vocab', 'Vocabulary', 'Ideas and shorthand used throughout the web.'],
+  ];
+  el('panel-content').innerHTML = `
+    <header class="p-head">
+      <div class="p-crumb"><span class="p-lvl">Reference</span></div>
+      <h2 id="panel-title">Glossary</h2>
+      <p class="p-tag">${glossary.length} terms · every word the web leans on</p>
+    </header>
+    <div class="p-grid"><div class="p-main">
+    ${kinds.map(([k, name, blurb]) => {
+      const list = glossary.filter(g => g.k === k).sort((a, b) => a.t.localeCompare(b.t));
+      if (!list.length) return '';
+      return `<div class="gl-group">
+        <h3>${esc(name)} — ${list.length}</h3>
+        <p class="assumed-note">${esc(blurb)}</p>
+        <dl class="assumed-list">${list.map(g => `
+          <div class="assumed-row"><dt>${esc(g.t)}</dt><dd>${rich(g.d)}</dd></div>`).join('')}</dl>
+      </div>`;
+    }).join('')}
+    </div><div class="p-side"></div></div>`;
+  showPanel();
+}
+el('open-glossary').addEventListener('click', openGlossary);
 
 
 /* ── tutor ────────────────────────────────────────────────────────────────
@@ -854,6 +962,9 @@ function answer(chosen) {
       <button id="fb-open">Open ${esc(nodeOf(q.n).title)}</button>
     </div>`;
   el('q-feedback').hidden = false;
+  el('tutor-live').textContent =
+    `${right ? 'Correct' : 'Not quite'}. The answer is ${nodeOf(q.n).title}. ` +
+    `${tutor.session.correct} of ${tutor.session.answered} correct.`;
   el('fb-next').addEventListener('click', nextQuestion);
   el('fb-open').addEventListener('click', () => openPanel(q.n));
   el('fb-next').focus({ preventScroll: true });

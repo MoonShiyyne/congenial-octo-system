@@ -19,8 +19,33 @@
 
 const GV = (id, t, d, m) => ({ id, t, k: 'vocab', d, m });
 const GS = (id, t, d, m) => ({ id, t, k: 'system', d, m });
+// Foundational words. The rest of this file assumes you already write
+// software — it defined `egress` and `p95` but not `API`. These fill that in,
+// and are ranked below the specific terms so they take leftover slots rather
+// than crowding out what a node is actually about.
+const GB = (id, t, d, m) => ({ id, t, k: 'basic', d, m, b: 1 });
 
 export const glossary = [
+  // ── foundations · assumed by everything above ───────────────────────────
+  GB('api', 'API', 'A way for one program to talk to another over the internet. "The Claude API" means writing software that sends Claude a request and gets an answer back, instead of typing into an app.', [/\bAPIs?\b/]),
+  GB('model', 'Model', 'The trained system that produces the answers — Opus 5, Sonnet 5, Haiku 4.5. Choosing one trades capability against cost and speed.', [/\bmodels?\b/i]),
+  GB('context', 'Context', 'Everything the model can see while answering: your message, the conversation so far, any files and instructions. It is finite and you pay for all of it, every turn.', [/\bcontext\b/i]),
+  GB('prompt', 'Prompt', 'What you send the model — your question plus whatever instructions and material come with it.', [/\bprompts?\b/i]),
+  GB('parameter', 'Parameter', 'A setting you pass with a request to change how it behaves, like effort or thinking. Named values, not prose.', [/\bparameters?\b/i]),
+  GB('function', 'Function', 'A named piece of code that takes inputs and returns a result. A "tool" you give Claude is usually one of these.', [/\bfunctions?\b/i]),
+  GB('string', 'String', 'Text, as a program stores it. "An exact string" means the characters must match precisely — no extra spaces, no different capitalisation.', [/\bstrings?\b/i]),
+  GB('array', 'Array / list', 'An ordered list of items in code, written in square brackets. Order matters, and position is how items are usually found.', [/\barrays?\b/i]),
+  GB('library', 'Library / SDK', 'Pre-written code you install and call rather than writing yourself. An SDK is the library a company publishes for its own API.', [/\blibrar(y|ies)\b/i, /\bSDKs?\b/]),
+  GB('dependency', 'Dependency', 'An outside package your project needs in order to run. Adding one means trusting its code as if you had written it.', [/\bdependenc(y|ies)\b/i]),
+  GB('repo', 'Repository', 'A project\'s folder of code, with its full history of changes. "The repo" is where the work lives.', [/\brepositor(y|ies)\b/i, /\brepos?\b/i]),
+  GB('branch', 'Branch', 'A parallel line of changes, so work in progress does not disturb the working version until it is merged back.', [/\bbranch(es|ed)?\b/i]),
+  GB('commit', 'Commit', 'One saved, described change in a repository. Committing records it; pushing sends it somewhere others can see.', [/\bcommit(s|ted|ting)?\b/i, /\bpush(ed|ing)?\b/i]),
+  GB('terminal', 'Terminal', 'The text window where you type commands instead of clicking. Where Claude Code runs.', [/\bterminals?\b/i, /\bcommand line\b/i]),
+  GB('server', 'Server', 'A computer that runs continuously and answers requests from others, rather than sitting on your desk.', [/\bservers?\b/i]),
+  GB('deploy', 'Deploy', 'Putting software somewhere it actually runs for real users, as opposed to on your own machine.', [/\bdeploy(ment|ments|ed|s|ing)?\b/i]),
+  GB('tests', 'Test suite', 'Code that checks other code still behaves correctly. Running it is how an agent tells whether its change worked.', [/\btest suite\b/i, /\btests?\b/i, /\btesting\b/i]),
+  GB('production', 'Production', 'The live system real people are using — as opposed to your laptop, where mistakes are cheap.', [/\bproduction\b/i]),
+
   // ── the units everything is counted in ──────────────────────────────────
   GV('token', 'Token', 'Roughly three-quarters of a word — the unit models read, write and bill in. "unbelievable" is about three tokens.', [/\btokens?\b/i]),
   GV('prefix', 'Prefix', 'The front portion of a string or a request. In caching it is compared from the first byte, so two requests match only up to their first difference; elsewhere it can simply mean a leading label, as in `anthropic.claude-opus-5`.', [/\bprefix(es|ed)?\b/i]),
@@ -148,5 +173,21 @@ export function assumedFor(node, primer, limit = 9) {
     }
     if (at !== Infinity) found.push({ g, at });
   }
-  return found.sort((a, b) => a.at - b.at).slice(0, limit).map(x => x.g);
+  const byPos = (a, b) => a.at - b.at;
+  const specific = found.filter(x => !x.g.b).sort(byPos);
+  const basic = found.filter(x => x.g.b).sort(byPos);
+  // Reserve a few slots for foundations so a dense node still defines "API"
+  // for someone who needs it, without burying what the node is about.
+  const reserved = Math.min(basic.length, 3);
+  const picked = [
+    ...specific.slice(0, Math.max(0, limit - reserved)),
+    ...basic.slice(0, reserved),
+  ];
+  if (picked.length < limit) {
+    for (const x of [...specific.slice(Math.max(0, limit - reserved)), ...basic.slice(reserved)]) {
+      if (picked.length >= limit) break;
+      if (!picked.includes(x)) picked.push(x);
+    }
+  }
+  return picked.sort(byPos).map(x => x.g);
 }

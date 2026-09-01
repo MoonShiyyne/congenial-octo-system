@@ -12,6 +12,33 @@ without explaining, and **links to the canonical material** — 180 references a
 
 ---
 
+## Getting in without a computer-science background
+
+Three things exist for a reader who has never written code.
+
+**A surface axis.** `data/surfaces.mjs` tags every node with where it is actually
+reachable: `apps` (claude.ai, desktop, mobile — no code at all), `code` (Claude
+Code, a terminal but not a program you write), `api` (you write software). The
+rail has a **"No code needed"** filter; **27 of the 51** capabilities are
+app-reachable, spread across all six disciplines. They are *dimmed, not hidden*,
+so a beginner can see where the path continues rather than hitting a wall they
+cannot see past. Each node panel shows its three surface chips.
+
+**A start route.** `data/startpath.mjs` is eight steps in order, each with a
+reason it comes next, and **the validator fails if any step needs code** — the
+route is advertised as no-code, so that promise is enforced rather than assumed.
+"Trace the route on the web" numbers the eight nodes in the graph and dims the
+rest, so the path is a visible thread rather than a list beside the picture.
+
+**Foundations in the glossary.** The assumed-background layer was built for
+someone who already writes software: it defined `egress` and `p95` but not
+`API`. 18 foundational entries now cover API, model, context, prompt, parameter,
+function, string, array, library, dependency, repository, branch, commit,
+terminal, server, deploy, test suite and production. They rank *below* the
+specific terms so they fill leftover slots rather than crowding out what a node
+is about, and three slots are reserved so a dense node still defines `API` for
+whoever needs it. A full A–Z lookup opens from the rail.
+
 ## The four parts
 
 **The web** is the stable part: a curriculum that changes when someone edits it.
@@ -212,6 +239,16 @@ be worse than none. The validator enforces a minimum of three entries and caps e
 description, so an entry that stops being plain terms fails the build.
 
 ---
+
+## Accessibility
+
+Beyond comprehension: all 51 nodes and 6 capstone summits are keyboard-focusable,
+every SVG carries `role="img"` and an `aria-label` matching its caption, and
+there is one `h1` with real landmarks. Three gaps were closed in the same pass —
+the panel is now a proper `role="dialog"` with `aria-modal`, a focus trap and
+focus returned to whatever opened it; the tutor announces each answer through an
+`aria-live` region; and a skip link jumps straight to the web, which matters
+because the rail controls now sit 37 tab stops in front of the graph.
 
 ## The node panel
 
