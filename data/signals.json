@@ -1,13 +1,13 @@
 {
- "generated": "2026-08-31T19:07:27.812Z",
- "itemCount": 81,
+ "generated": "2026-09-01T05:05:06.643Z",
+ "itemCount": 85,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 277,
-   "kept": 105
+   "fetched": 280,
+   "kept": 106
   },
   {
    "id": "python-sdk-changelog",
@@ -56,17 +56,49 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 9
+   "kept": 11
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": true,
    "fetched": 20,
-   "kept": 7
+   "kept": 8
   }
  ],
  "items": [
+  {
+   "id": "1czzgsu",
+   "title": "Configurable Semantic Chunking for Biomedical Information Extraction in Retrieval-Augmented Generation",
+   "summary": "BioMedRAG introduced retrieval-augmented generation with a learned chunk scorer for biomedical information extraction. However, it relies on fixed-size chunking which can fragment semantic evidence. We propose a configurable semantic chunking framework that addresses this limitation by combining entity-preserving wind…",
+   "url": "http://arxiv.org/abs/2608.31139v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-31T17:44:54Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 4,
+   "application": false
+  },
+  {
+   "id": "13687lb",
+   "title": "Agentic Quantitative Trading: A Survey of Workflows, Systems, and Evaluation",
+   "summary": "Quantitative trading is moving from isolated predictive models toward agentic workflows that combine reasoning, tool use, memory, and feedback. This survey reviews agentic quantitative trading across five stages: factor mining, signal discovery, portfolio construction, order execution, and risk management. We further…",
+   "url": "http://arxiv.org/abs/2608.31041v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-31T16:19:09Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "1g5lpqi",
    "title": "Show HN: Turn repeated coding-agent corrections into rules/skills",
@@ -85,33 +117,95 @@
    "application": true
   },
   {
-   "id": "1rc8sop",
-   "title": "On the Maintenance and Co-evolution of Agent Plugins: An Empirical Study of Claude Code Plugin Marketplaces",
-   "summary": "AI coding agents, software tools that automate development tasks through reasoning and tool use, are increasingly extended through plugin marketplaces, yet the structure, maintenance, and co-evolution dynamics of these emerging repositories remain empirically unexplored. Unlike traditional software packages that deliv…",
-   "url": "http://arxiv.org/abs/2608.28497v1",
+   "id": "d8ln4v",
+   "title": "Faithfulness Is Not Free: Auditing Offline KV-Cache Quantization in Retrieval-Augmented Generation",
+   "summary": "Retrieval-augmented generation systems can precompute and store key-value caches of retrieved documents to avoid re-encoding context at every query. Quantizing these caches further reduces storage, but no prior work asks whether compression damages faithfulness, whether responses remain grounded in the retrieved evide…",
+   "url": "http://arxiv.org/abs/2608.30996v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-08-28T16:27:35Z",
+   "date": "2026-08-31T15:47:23Z",
    "nodes": [
-    "k-plugins",
-    "k-cli",
-    "a-tools"
+    "c-retrieval"
    ],
-   "relevance": 9,
+   "relevance": 3,
    "application": false
   },
   {
-   "id": "1oob0f2",
-   "title": "Fidelity Is Not Enough: Dispatch-Level Instrumentation for Agentic Datasheet Extraction",
-   "summary": "One model passed our fidelity check without ever opening the datasheet. We found it while qualifying models for an internal extraction service: a structured-output constraint had silently disabled tool use, and the model answered anyway, with fabricated source text. Only the per-tool trace exposed it. Fidelity -- whet…",
-   "url": "http://arxiv.org/abs/2608.28439v1",
+   "id": "9kj5lb",
+   "title": "A Human-in-the-Loop Autonomous Agent for Industry Time Series Forecasting",
+   "summary": "Real-world time-series forecasting is rarely a one-shot model invocation: practitioners must formulate tasks, connect data and models, incorporate domain expertise, assess prediction plausibility, and communicate uncertainty. Specialized forecasting models provide strong numerical predictions but usually operate in fi…",
+   "url": "http://arxiv.org/abs/2608.30976v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-08-28T15:25:12Z",
+   "date": "2026-08-31T15:36:41Z",
+   "nodes": [
+    "a-scheduled"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1hcqg23",
+   "title": "One Policy Is Enough: Single-Agent Reinforcement Learning Outperforms Tree Search for Chemistry Tool Learning",
+   "summary": "Chemistry questions often demand exact computation and database lookups that a language model cannot supply from its parameters, so it must reach for external tools. Tool use here is a three-part problem: select the right tool from a large pool, fill it with correctly typed arguments, and chain calls so that each cons…",
+   "url": "http://arxiv.org/abs/2608.30952v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-31T15:22:19Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 4,
+   "application": false
+  },
+  {
+   "id": "uvysst",
+   "title": "TRIPPULSE: Multi-Agent Travel Planning with Review-Grounded Reasoning",
+   "summary": "Travel itinerary generation requires balancing strict spatio-temporal constraints with human preferences. Existing LLM-based planners mainly rely on structured attributes and pre- defined traveler personas, but real travel deci- sions are often shaped by reviews that reveal experiential factors such as comfort, safety…",
+   "url": "http://arxiv.org/abs/2608.30924v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-31T15:02:37Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "4do6j0",
+   "title": "TUE-Detector: A Tool-Using Expert MLLM-Based Detector for AI-Generated Videos",
+   "summary": "AI-generated video detection, which aims to distinguish AI-generated videos from real ones, has recently received increasing research attention. To perform this task reliably, a key challenge lies in accurately identifying subtle-yet-measurable unnatural artifacts. In this work, we address this challenge from a novel…",
+   "url": "http://arxiv.org/abs/2608.30704v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-31T12:42:38Z",
+   "nodes": [
+    "f-artifacts"
+   ],
+   "relevance": 5,
+   "application": false
+  },
+  {
+   "id": "14nodvs",
+   "title": "ATLAS: Dual-Horizon Diagnostic Evaluation for Industrial Tool-Use Agents",
+   "summary": "Large language model (LLM) agents are increasingly deployed in user-facing services that require iterative tool use under dynamic business conditions. Reliable evaluation is essential for sustained improvement: it must reveal capability deficiencies, inform priorities, and assess interventions. Yet industrial agent se…",
+   "url": "http://arxiv.org/abs/2608.30685v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-31T12:25:24Z",
    "nodes": [
     "a-tools"
    ],
@@ -119,17 +213,130 @@
    "application": false
   },
   {
-   "id": "15oq3zs",
-   "title": "CamoDocs: A Poisoning Attack Against Retrieval-Augmented Language Models Using Camouflaged Documents",
-   "summary": "Retrieval-augmented generation (RAG) augments LLMs with external documents, but public or user-editable sources expose RAG systems to data poisoning: attackers can inject malicious documents to steer outputs toward targeted answers. Existing poisoning attacks often rely on query inclusion, inserting the target query i…",
-   "url": "http://arxiv.org/abs/2608.28389v1",
+   "id": "1a00v05",
+   "title": "HiRS-Agent: A Hierarchical Multi-Agent System for Reliable Long-Horizon Remote Sensing Task Solving",
+   "summary": "Recent advances in large language models and multimodal models have pushed remote sensing (RS) processing from simple perception models to agentic systems designed to tackle complex, long-horizon RS tasks. However, existing systems often rely on monolithic decision-making frameworks, which fail to accommodate the mult…",
+   "url": "http://arxiv.org/abs/2608.30672v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-08-28T14:44:28Z",
+   "date": "2026-08-31T12:13:41Z",
    "nodes": [
-    "c-retrieval"
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1eervaj",
+   "title": "CM2: Multimodal Cultural Reasoning via an Integrated Multi-Agent Framework",
+   "summary": "Multimodal Large Language Models (MLLMs) have shown remarkable success in STEM domains, where progress is often driven by vertical, step-by-step deduction under relatively stable symbol systems. Their horizontal, interdisciplinary cultural reasoning, however, remains underexplored.We propose CM2, a multi-agent framewo…",
+   "url": "http://arxiv.org/abs/2608.30498v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-31T09:29:04Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1tq9ufp",
+   "title": "ECLIPSE: Self-Evolving Stealthy Prompt Injection Attack against Long-Horizon Agentic Systems",
+   "summary": "Recently, large language model (LLM) agents, such as Codex, Claude Code, and OpenClaw, have become capable of planning and executing long-horizon tasks through repeated tool calls. This capability also creates new opportunities for prompt injection. Existing attacks either place the malicious objective in one explicit…",
+   "url": "http://arxiv.org/abs/2608.30441v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-31T08:32:22Z",
+   "nodes": [
+    "k-cli",
+    "s-guardrails"
+   ],
+   "relevance": 4,
+   "application": false
+  },
+  {
+   "id": "1b0y57l",
+   "title": "Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions",
+   "summary": "Strategic deception by LLM and VLM agents has emerged as a central AI alignment and safety concern. Social-deduction games (where each player holds a hidden role and communicates with others to deduce identities) serve as the canonical testbed, particularly in multi-agent settings. Existing testbeds, however, are text…",
+   "url": "http://arxiv.org/abs/2608.30428v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-31T08:24:29Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1iezl2n",
+   "title": "LLMODE: Aligning ODEs with LLMs via Gated Token Injection for Irregular Spatio-Temporal Forecasting",
+   "summary": "Large language models (LLMs) have shown promise for spatio-temporal forecasting, but existing approaches often rely on regularly sampled token sequences and struggle with irregular observations because of temporal asynchrony, representation-space misalignment, and limited context windows. We propose LLMODE, a token-ef…",
+   "url": "http://arxiv.org/abs/2608.29640v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-30T08:02:20Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1pwvvgd",
+   "title": "Towards a Systems Foundation for Agentic Skills: Architecture, Lifecycle, and Security",
+   "summary": "Autonomous large language model (LLM) agents increasingly face reliability, context consumption, and execution stability bottlenecks when deployed on complex, long-horizon tasks. While monolithic prompt engineering and stateless tool-calling paradigms struggle to scale, the field is rapidly converging toward \\emph{age…",
+   "url": "http://arxiv.org/abs/2608.29596v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-30T06:36:42Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1yiyh6w",
+   "title": "JudgePanel: A Compact Judge with Panel Deliberation via Adaptive Multi-Reward Reinforcement Learning",
+   "summary": "The LLM-as-a-Judge paradigm has emerged as a scalable alternative to human evaluation. However, single-model judges are limited by their inherent model biases, while multi-agent evaluation protocols that mitigate this through diverse deliberation are prohibitively expensive at inference time. To this end, we propose \\…",
+   "url": "http://arxiv.org/abs/2608.29168v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-29T09:33:49Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1oob0f2",
+   "title": "Fidelity Is Not Enough: Dispatch-Level Instrumentation for Agentic Datasheet Extraction",
+   "summary": "One model passed our fidelity check without ever opening the datasheet. We found it while qualifying models for an internal extraction service: a structured-output constraint had silently disabled tool use, and the model answered anyway, with fabricated source text. Only the per-tool trace exposed it. Fidelity -- whet…",
+   "url": "http://arxiv.org/abs/2608.28439v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-28T15:25:12Z",
+   "nodes": [
+    "a-tools"
    ],
    "relevance": 3,
    "application": false
@@ -151,163 +358,17 @@
    "application": false
   },
   {
-   "id": "fna2ec",
-   "title": "Coverage, Not Credit: Failure-Credit Routing of Zeroth-Order Perturbation Budgets Does Not Improve On-Pool Sample Efficiency for LLM Agents",
-   "summary": "Trajectory-level credit assignment can localize which module of a tool-using LLM agent causes failures using only verifiable signals. We ask whether such failure credit should route a fixed zeroth-order/evolution-strategies (ZO/ES) perturbation budget. Across a synthetic environment and frozen Qwen2.5-1.5B/3B and Smol…",
-   "url": "http://arxiv.org/abs/2608.28011v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-08-28T07:27:02Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
    "id": "1j7im22",
    "title": "CAITLYN: Can LLM Agents Autonomously Synthesize Defenses against Emerging Injection Attacks?",
    "summary": "Prompt injection attacks on Large Language Model (LLM) agents seek to introduce malicious instructions or content into external text sources retrieved by agents, forcing the underlying LLMs to execute harmful actions outside their benign scope. While current defenses effectively counter known injection attacks, deploy…",
    "url": "http://arxiv.org/abs/2608.27990v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
    "date": "2026-08-28T06:58:26Z",
    "nodes": [
     "s-guardrails"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1f3gl0i",
-   "title": "LINE Conversation History Retrieval for Personal Memory RAG: Evaluating Search Representations and Hybrid Retrieval",
-   "summary": "As an initial step toward personal memory retrieval-augmented generation (RAG) for large language models (LLMs), this study presents a retrieval-only case study over one user's LINE conversation history. We segmented 358,896 messages into 22,329 temporally coherent chunks and constructed three search representations:…",
-   "url": "http://arxiv.org/abs/2608.27809v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-08-28T00:52:11Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "1b3x26q",
-   "title": "Knowing Before Answering: Decoding Language Models for Reliable RAG",
-   "summary": "In Retrieval-Augmented Generation (RAG), retrieval may provide insufficient or conflicting information needed to answer a question. The system should not only know when to answer but also be able to identify cases in which the documents provided in RAG are insufficient or contain conflicting information. This can be f…",
-   "url": "http://arxiv.org/abs/2608.27661v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-08-27T19:48:41Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "i22fe9",
-   "title": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
-   "summary": "LLM-based agents are increasingly deployed in product-level execution harnesses, where jailbreaks can trigger harmful tool use and persistent state changes, creating greater risks than unsafe text generation alone. Existing automatic red-teaming methods often rely on fixed attacks, while recent agentic attackers coord…",
-   "url": "http://arxiv.org/abs/2608.27439v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-08-27T17:55:33Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1w4banc",
-   "title": "Persona-Execution Separation: An Architecture Pattern for Evolving LLM Agents under Execution Audit",
-   "summary": "Large language model (LLM) agents in governed organizations must let the persona (instructions, tone, self-presentation) evolve freely, while keeping execution (stateful, audited work) traceable. A single trust domain does not satisfy both cheaply. We present Persona-Execution Separation (PES): persona and execution r…",
-   "url": "http://arxiv.org/abs/2608.27427v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-08-27T17:50:07Z",
-   "nodes": [
-    "r-frame"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1fubxqa",
-   "title": "TransMeme: A Multi-Agent Framework for Cross-Cultural Meme Transcreation",
-   "summary": "Internet memes are a pervasive form of multimodal online communication; however, such communication often involves users from diverse linguistic and cultural backgrounds. Therefore, adapting memes across cultures and languages is a central challenge for enabling mutual understanding in online communication. Unlike ord…",
-   "url": "http://arxiv.org/abs/2608.27127v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-08-27T13:40:11Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "bnzgpc",
-   "title": "Key Point Analysis Needs Structure Recovery: Task Definition, Dataset Diagnosis, and a Structure-Aware Benchmark",
-   "summary": "Key Point Analysis (KPA) aims to identify a concise set of key points that summarize a collection of arguments together with their prevalence. We argue that KPA is fundamentally a structured prediction problem that requires recovering semantic groupings, generating representative key points, ensuring coverage, and est…",
-   "url": "http://arxiv.org/abs/2608.25854v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-08-26T14:29:05Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "g57cqn",
-   "title": "Beyond Scaling: Self-Evolving LLM Agents for Hardware Kernel Optimization via an Experience-Driven Workflow and Experience Graph Memory",
-   "summary": "Hardware kernel optimization requires repeated compilation, correctness testing, profiling, and revision. LLM agents can automate parts of this process, and stronger foundation models, longer context windows, and longer execution horizons have improved optimization within individual tasks. These advances alone do not…",
-   "url": "http://arxiv.org/abs/2608.25570v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-08-26T09:27:39Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1k65hph",
-   "title": "A Storage-Retrieval Gap in Parametric Knowledge Graph Memory",
-   "summary": "Graph retrieval-augmented generation places retrieved subgraphs into the model's context window at query time, paying a recurring token cost and exposing source data on every call. We study an alternative: compiling a knowledge graph offline into a bank of LoRA adapters, one per entity, that serve as a parametric know…",
-   "url": "http://arxiv.org/abs/2608.25489v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-08-26T08:02:00Z",
-   "nodes": [
-    "c-longctx",
-    "c-retrieval",
-    "s-cost"
    ],
    "relevance": 3,
    "application": false
@@ -1406,8 +1467,19 @@
   }
  ],
  "byNode": {
+  "c-retrieval": [
+   "1czzgsu",
+   "d8ln4v"
+  ],
+  "a-tools": [
+   "13687lb",
+   "1hcqg23",
+   "14nodvs",
+   "1oob0f2"
+  ],
   "k-skills": [
    "1g5lpqi",
+   "1pwvvgd",
    "13xt578",
    "qqjnqh",
    "myhumj",
@@ -1417,13 +1489,21 @@
    "12kn1mf",
    "16cua2z"
   ],
-  "k-plugins": [
-   "1rc8sop",
-   "1jovicv",
-   "1uif5cj"
+  "a-scheduled": [
+   "9kj5lb"
+  ],
+  "a-teams": [
+   "uvysst",
+   "1a00v05",
+   "1eervaj",
+   "1b0y57l",
+   "1yiyh6w"
+  ],
+  "f-artifacts": [
+   "4do6j0"
   ],
   "k-cli": [
-   "1rc8sop",
+   "1tq9ufp",
    "yq92q5",
    "hbx7k7",
    "13xt578",
@@ -1447,40 +1527,17 @@
    "98y0rf",
    "1jovicv"
   ],
-  "a-tools": [
-   "1rc8sop",
-   "1oob0f2",
-   "i22fe9"
+  "s-guardrails": [
+   "1tq9ufp",
+   "1j7im22"
   ],
-  "c-retrieval": [
-   "15oq3zs",
-   "fna2ec",
-   "1f3gl0i",
-   "1b3x26q",
-   "bnzgpc",
-   "1k65hph"
+  "c-longctx": [
+   "1iezl2n",
+   "l1apg"
   ],
   "s-models": [
    "72xa7c",
    "ndlcgc",
-   "8nav22"
-  ],
-  "s-guardrails": [
-   "1j7im22"
-  ],
-  "r-frame": [
-   "1w4banc"
-  ],
-  "a-teams": [
-   "1fubxqa"
-  ],
-  "c-longctx": [
-   "g57cqn",
-   "1k65hph",
-   "l1apg"
-  ],
-  "s-cost": [
-   "1k65hph",
    "8nav22"
   ],
   "a-mcp": [
@@ -1521,6 +1578,10 @@
    "fxlbdv",
    "hezuy1"
   ],
+  "k-plugins": [
+   "1jovicv",
+   "1uif5cj"
+  ],
   "k-remote": [
    "n5keyb",
    "n7agi7"
@@ -1533,6 +1594,9 @@
   "r-effort": [
    "19ez7pl",
    "odmlhu"
+  ],
+  "s-cost": [
+   "8nav22"
   ],
   "r-thinking": [
    "1ysfqj5",
@@ -1558,14 +1622,6 @@
    "discipline": "code",
    "title": "Show HN: Turn repeated coding-agent corrections into rules/skills",
    "url": "https://blume.codes"
-  },
-  {
-   "id": "1f3gl0i",
-   "node": "c-retrieval",
-   "nodeTitle": "Retrieval vs. Context",
-   "discipline": "context",
-   "title": "LINE Conversation History Retrieval for Personal Memory RAG: Evaluating Search Representations and Hybrid Retrieval",
-   "url": "http://arxiv.org/abs/2608.27809v1"
   },
   {
    "id": "5envg7",
@@ -1742,6 +1798,14 @@
    "discipline": "agents",
    "title": "Show HN: HoneyLabs – Public honeypot threat Intel feed and MCP server",
    "url": "https://honeylabs.net"
+  },
+  {
+   "id": "ixfp7g",
+   "node": "a-mcp",
+   "nodeTitle": "MCP",
+   "discipline": "agents",
+   "title": "Fixed startup warnings (e.g. \"N MCP servers need authentication\") rendering one column right of the rest of the transcript",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   }
  ]
 }
