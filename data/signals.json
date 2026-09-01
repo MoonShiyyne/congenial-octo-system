@@ -1,27 +1,27 @@
 {
- "generated": "2026-09-01T16:39:13.337Z",
+ "generated": "2026-09-01T18:38:32.711Z",
  "itemCount": 84,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 280,
-   "kept": 106
+   "fetched": 324,
+   "kept": 126
   },
   {
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 37,
-   "kept": 11
+   "fetched": 39,
+   "kept": 12
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 38,
-   "kept": 9
+   "fetched": 42,
+   "kept": 10
   },
   {
    "id": "hn-mcp",
@@ -834,6 +834,55 @@
    "application": false
   },
   {
+   "id": "11fgxe",
+   "title": "Fixed /mcp reconnect and enable still connecting a settings-file MCP server that a managed MCP allow/deny list or strictPluginOnlyCustomization loaded after startup should block",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.257",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": true
+  },
+  {
+   "id": "p0a8wf",
+   "title": "Fixed WebSocket MCP server connection failures being logged as \"[object ErrorEvent]\" instead of the underlying error",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.257",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "hb08ex",
+   "title": "[VSCode] Changed the action menu to list slash commands in a filterable \"Slash commands\" dialog instead of inline; picking one runs it; the MCP servers dialog gained the same filter box",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.257",
+   "date": null,
+   "nodes": [
+    "a-mcp",
+    "k-slash"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
    "id": "l1apg",
    "title": "Fixed a \"switch to Opus 1M for 5x more context\" tip that appeared even when the current Opus model already has a 1M context window",
    "summary": "",
@@ -1029,51 +1078,19 @@
    "application": false
   },
   {
-   "id": "1vq6rdy",
-   "title": "Fixed remote MCP servers in non-interactive (-p) and SDK sessions never recovering after a dropped connection; they now reconnect automatically or report as failed",
+   "id": "12mpgoi",
+   "title": "Improved /fork to keep the original conversation's prompt cache in the new background session: its worktree briefing now arrives as a message instead of a system-prompt change",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.243",
+   "badge": "2.1.257",
    "date": null,
    "nodes": [
-    "a-mcp"
+    "k-remote"
    ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "jnxixi",
-   "title": "Fixed MCP server sign-in started from the desktop app failing with \"Invalid redirect URI\" on servers that support client ID metadata documents (for example Linear)",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.243",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "5yeu1d",
-   "title": "Fixed /status showing \"Found invalid entries in: .\" with no filename when ~/.claude.json has an invalid MCP server entry",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.243",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
+   "relevance": 15,
    "application": false
   },
   {
@@ -1107,6 +1124,39 @@
     "k-remote"
    ],
    "relevance": 15,
+   "application": false
+  },
+  {
+   "id": "xi5xl2",
+   "title": "Added Claude Fable 5.1 (claude-fable-5-1), now the default Fable model — 1M context, $10/$50 per Mtok with $0.25/Mtok cache reads",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.257",
+   "date": null,
+   "nodes": [
+    "s-models",
+    "c-longctx"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "l759p9",
+   "title": "Improved policy helper diagnostics — refresh failures now show in /status, declining the managed-settings dialog prints why Claude Code exited, and helper timeouts are reported as timeouts",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.257",
+   "date": null,
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 12,
    "application": false
   },
   {
@@ -1169,56 +1219,6 @@
    "date": null,
    "nodes": [
     "a-mcp"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "f90m2u",
-   "title": "Added a managed marker in /mcp and /plugins on claude.ai connectors whose authentication is managed by your organization",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.243",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "odmlhu",
-   "title": "Added the model (and effort level) each subagent ran on to /tasks and the agent detail dialogs",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.243",
-   "date": null,
-   "nodes": [
-    "r-effort",
-    "a-subagents"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "8nav22",
-   "title": "Updated the /model picker and the bundled claude-api skill to show Sonnet 5's $2/$10 per Mtok pricing as its standard list price rather than a limited-time promo",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.243",
-   "date": null,
-   "nodes": [
-    "s-models",
-    "s-cost"
    ],
    "relevance": 12,
    "application": false
@@ -1288,6 +1288,22 @@
    "application": false
   },
   {
+   "id": "1paf9pw",
+   "title": "**changelog:** detail the beta files/skills GA-shape change ([#1900](https://github.com/anthropics/anthropic-sdk-python/issues/1900)) ([7c84e13](https://github.com/anthropics/anthropic-sdk-python/commit/7c84e13357099158…",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "1.3.0",
+   "date": null,
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
    "id": "1tq7txv",
    "title": "**api:** beta files/skills namespaces use GA shapes; drop dated beta header pins ([9df4565](https://github.com/anthropics/anthropic-sdk-python/commit/9df4565fdfe4eec941809a0a3d1615ee11e16b68))",
    "summary": "",
@@ -1352,17 +1368,17 @@
    "application": false
   },
   {
-   "id": "1egv449",
-   "title": "**api:** clarify session thread agent and usage.iterations compaction descriptions (beta) ([4ace503](https://github.com/anthropics/anthropic-sdk-python/commit/4ace503320c2af170fefe6be605cf2ddd729594a))",
+   "id": "1ve6d6g",
+   "title": "**changelog:** detail the beta files/skills GA-shape change ([#1175](https://github.com/anthropics/anthropic-sdk-typescript/issues/1175)) ([4951de0](https://github.com/anthropics/anthropic-sdk-typescript/commit/4951de02…",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "1.1.0",
+   "badge": "0.123.0",
    "date": null,
    "nodes": [
-    "c-editing"
+    "k-skills"
    ],
    "relevance": 6,
    "application": false
@@ -1430,22 +1446,6 @@
    ],
    "relevance": 6,
    "application": false
-  },
-  {
-   "id": "1nbmmot",
-   "title": "**api:** clarify session thread agent and usage.iterations compaction descriptions (beta) ([6e852a7](https://github.com/anthropics/anthropic-sdk-typescript/commit/6e852a70ee5db1d514e9459ac627324bfe6c904f))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "0.121.0",
-   "date": null,
-   "nodes": [
-    "c-editing"
-   ],
-   "relevance": 6,
-   "application": false
   }
  ],
  "byNode": {
@@ -1466,7 +1466,9 @@
    "qqjnqh",
    "1jovicv",
    "1rta0q9",
+   "1paf9pw",
    "1tq7txv",
+   "1ve6d6g",
    "12kn1mf",
    "16cua2z"
   ],
@@ -1505,7 +1507,8 @@
    "rq0kwf",
    "68j9su",
    "98y0rf",
-   "1jovicv"
+   "1jovicv",
+   "l759p9"
   ],
   "s-guardrails": [
    "1tq9ufp",
@@ -1513,28 +1516,28 @@
   ],
   "c-longctx": [
    "1iezl2n",
-   "l1apg"
+   "l1apg",
+   "xi5xl2"
   ],
   "s-models": [
    "72xa7c",
-   "ndlcgc",
-   "8nav22"
+   "xi5xl2",
+   "ndlcgc"
   ],
   "a-mcp": [
    "5envg7",
    "sv0i6",
    "98y0rf",
+   "11fgxe",
+   "p0a8wf",
+   "hb08ex",
    "1t0yqh8",
    "118rml1",
    "14maikf",
    "iu620n",
    "ixfp7g",
    "1478w8f",
-   "1vq6rdy",
-   "jnxixi",
-   "5yeu1d",
-   "gg44kg",
-   "f90m2u"
+   "gg44kg"
   ],
   "c-memory": [
    "1furdo9",
@@ -1558,25 +1561,24 @@
    "fxlbdv",
    "hezuy1"
   ],
+  "k-slash": [
+   "hb08ex"
+  ],
   "k-plugins": [
    "1jovicv",
    "1uif5cj"
   ],
   "k-remote": [
+   "12mpgoi",
    "n5keyb",
    "n7agi7"
   ],
   "a-subagents": [
    "n5keyb",
-   "1f4lc2s",
-   "odmlhu"
+   "1f4lc2s"
   ],
   "r-effort": [
-   "19ez7pl",
-   "odmlhu"
-  ],
-  "s-cost": [
-   "8nav22"
+   "19ez7pl"
   ],
   "r-thinking": [
    "1ysfqj5",
@@ -1588,10 +1590,6 @@
   "a-runner": [
    "sjiksz",
    "usy5c7"
-  ],
-  "c-editing": [
-   "1egv449",
-   "1nbmmot"
   ]
  },
  "applications": [
@@ -1770,6 +1768,14 @@
    "discipline": "agents",
    "title": "Show HN: HoneyLabs – Public honeypot threat Intel feed and MCP server",
    "url": "https://honeylabs.net"
+  },
+  {
+   "id": "11fgxe",
+   "node": "a-mcp",
+   "nodeTitle": "MCP",
+   "discipline": "agents",
+   "title": "Fixed /mcp reconnect and enable still connecting a settings-file MCP server that a managed MCP allow/deny list or strictPluginOnlyCustomization loaded after startup should block",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   },
   {
    "id": "ixfp7g",
