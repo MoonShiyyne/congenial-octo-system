@@ -685,3 +685,25 @@ body.pathmode .node.onpath .disc { fill-opacity: .9; }
 .gl-group { margin-bottom: 26px; }
 .gl-group h3 { font-size: 10.5px; text-transform: uppercase; letter-spacing: .1em;
   color: var(--ink-faint); margin-bottom: 10px; }
+
+/* ── "in the Claude apps" example ───────────────────────────────────────── */
+.app-ex { border: 1px solid var(--line); border-radius: 11px; overflow: hidden; }
+.app-where {
+  margin: 0; padding: 8px 14px; background: var(--bg-sunk);
+  border-bottom: 1px solid var(--line);
+  font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase;
+  color: hsl(152 var(--disc-s) var(--disc-l));
+}
+.app-do { margin: 14px 16px 0; padding-left: 20px; }
+.app-do li { font-size: 13px; line-height: 1.6; color: var(--ink-soft); margin-bottom: 4px; }
+.app-say { margin: 14px 16px; border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; background: var(--accent-dim); padding: 11px 14px; }
+.app-say-label {
+  display: block; font-family: var(--mono); font-size: 9.5px;
+  text-transform: uppercase; letter-spacing: .12em; color: var(--accent); margin-bottom: 7px;
+}
+.app-say p {
+  margin: 0; white-space: pre-wrap; font-size: 13.5px; line-height: 1.62;
+  color: var(--ink); max-width: 58ch;
+}
+.app-note { margin: 0 16px 14px; font-size: 12.5px; line-height: 1.55; color: var(--ink-faint); max-width: 60ch; }

@@ -122,7 +122,7 @@ Do not restate the plan. Do not reassure me.` },
   id: 'r-thinking', d: 'reasoning', lvl: 3, title: 'Adaptive Thinking',
   tag: 'reasoning as a first-class parameter', prereq: ['r-critique'],
   hook: 'The model can spend tokens thinking before it answers — and on current models you no longer budget that by hand.',
-  what: `Extended thinking gives the model room to reason before producing its visible answer. The important recent change is architectural: the old fixed-budget style — \`thinking: {type: "enabled", budget_tokens: N}\` — is **deprecated on Opus 4.6 / Sonnet 4.6 and rejected with a 400 on Fable 5, Sonnet 5, and Opus 5 / 4.8 / 4.7**. The current form is \`thinking: {type: "adaptive"}\`, where the model decides how much reasoning a given request warrants.
+  what: `Extended thinking gives the model room to reason before it writes the answer you see. In the Claude apps it is a toggle; in Claude Code it is on by default; on the API it is one parameter — and the important recent change there is architectural: the old fixed-budget style — \`thinking: {type: "enabled", budget_tokens: N}\` — is **deprecated on Opus 4.6 / Sonnet 4.6 and rejected with a 400 on Fable 5, Sonnet 5, and Opus 5 / 4.8 / 4.7**. The current form is \`thinking: {type: "adaptive"}\`, where the model decides how much reasoning a given request warrants.
 
 That is a genuine shift in mental model. You are no longer pre-paying a fixed reasoning allowance for every request in a route, including the trivial ones. You are declaring reasoning *available* and letting depth vary per request, then controlling the overall envelope with **effort** (next node).
 
@@ -269,7 +269,7 @@ rg -n 'claude-[a-z]+-[0-9-]+-20[0-9]{6}'
   id: 'c-files', d: 'context', lvl: 1, title: 'Files, PDFs & Vision',
   tag: 'stop pasting, start attaching', prereq: [],
   hook: 'A screenshot of a failing dashboard is a better bug report than the paragraph you were about to write about it.',
-  what: `Claude reads images and PDFs natively, in the same request as your text. A PDF goes in as a \`document\` content block — base64 for one-offs, or a \`file_id\` from the Files API when the same document will be used across many requests. Images go in as \`image\` blocks. The content-block type must match the file's MIME type; mismatches are a common first error.
+  what: `Claude reads images and PDFs directly, alongside your text. In the apps you attach the file and ask your question. On the API a PDF goes in as a \`document\` content block — base64 for one-offs, or a \`file_id\` from the Files API when the same document will be used across many requests. Images go in as \`image\` blocks. The content-block type must match the file's MIME type; mismatches are a common first error.
 
 Placement matters more than people expect: put the document block **before** the text block in the user message. The model reads in order, and a question asked before the evidence arrives gets answered from priors and then retrofitted. Base64 strings must have no newlines. The hard limits are 32 MB per request and 600 pages (100 on 200K-context models).
 
@@ -318,7 +318,7 @@ The prompt-caching connection is the reason this is a level-one skill with level
   id: 'c-memory', d: 'context', lvl: 2, title: 'Memory',
   tag: 'state that outlives the window', prereq: ['c-projects'],
   hook: 'Context is what the model is holding. Memory is what it can go and fetch. Confusing the two is the most expensive mistake in agent design.',
-  what: `The memory tool (\`memory_20250818\`) gives Claude a persistent store it reads from and writes to across turns and sessions. Unlike context, memory does not consume the window until it is retrieved — which makes it the correct home for facts that are *occasionally* relevant: a user's preferences, decisions made three sessions ago, the shape of a codebase learned the hard way.
+  what: `Memory is a store Claude can write to and read back later — across turns, and across whole conversations. In the apps it is a setting you switch on; on the API it is a tool you declare (\`memory_20250818\`) with a backend you implement. Either way the property that matters is the same: unlike context, memory does not consume the window until it is retrieved — which makes it the correct home for facts that are *occasionally* relevant: a user's preferences, decisions made three sessions ago, the shape of a codebase learned the hard way.
 
 The design question is what deserves to be remembered. Naive implementations write everything, and the store becomes a landfill that retrieval cannot navigate. Good ones write **decisions and their reasons**, not transcripts: "chose Postgres over DynamoDB because of the reporting query shape, 2026-03" is worth a hundred turns of the discussion that produced it.
 
@@ -344,7 +344,7 @@ Pair it with context editing, not against it: memory persists what matters, cont
   id: 'c-citations', d: 'context', lvl: 2, title: 'Citations & Grounding',
   tag: 'claims you can check', prereq: ['c-files'],
   hook: 'An answer you cannot verify is a rumour with good formatting.',
-  what: `Set \`citations: {enabled: true}\` on a \`document\` content block and Claude returns its answer split into multiple \`text\` blocks, where the cited ones carry a \`citations\` array pointing back at exact source spans. It is either all documents in the request or none.
+  what: `A cited answer arrives in pieces, each carrying the exact span of the source it came from — so a reader can jump to the sentence instead of trusting the summary. In the apps you get this when Claude searches the web or reads a document you attached. On the API you set \`citations: {enabled: true}\` on a \`document\` content block, and the answer comes back split into multiple \`text\` blocks, where the cited ones carry a \`citations\` array pointing at exact source spans. It is either all documents in the request or none.
 
 The location shape depends on the source type: \`char_location\` (with \`start_char_index\`/\`end_char_index\`) for plain text, \`page_location\` (1-indexed page numbers) for PDFs, and \`content_block_location\` for custom content. That means you can render a real "jump to source" affordance, not just a footnote — which is the difference between a citation feature and a citation *interface*.
 
@@ -771,7 +771,7 @@ For guaranteed-valid inputs, set \`strict: true\` at the top level of the tool d
   id: 'a-servertools', d: 'agents', lvl: 2, title: 'Server Tools',
   tag: 'capability with no loop to write', prereq: ['a-tools'],
   hook: 'Web search, web fetch and code execution run on Anthropic\'s infrastructure — you declare them and read the results out of the same response.',
-  what: `Server tools need no client-side execution loop. You put them in \`tools\` and the results come back as content blocks in the same response.
+  what: `Some tools run on Anthropic's machines rather than yours: searching the web, fetching a page, executing code. In the apps these are the switches that let Claude look something up or actually compute something. On the API they need no execution loop of your own — you put them in \`tools\` and the results come back as content blocks in the same response.
 
 Prefer the newest type variant your model supports. Web search is \`web_search_20260209\` and web fetch is \`web_fetch_20260209\` — both with built-in dynamic filtering — on Opus 5/4.8/4.7/4.6, Sonnet 5 and Sonnet 4.6. Older models take the basic \`web_search_20250305\` / \`web_fetch_20250910\`; on Vertex AI only basic web search is available and web fetch is not offered at all. A specific trap: the \`_20260209\` variants run code execution under the hood, so do **not** separately declare \`code_execution\` alongside them — a second execution environment confuses the model.
 
@@ -991,7 +991,7 @@ session = client.beta.sessions.create(
   id: 'a-scheduled', d: 'agents', lvl: 5, title: 'Scheduled & Autonomous Work',
   tag: 'agents that start themselves', prereq: ['a-managed', 'a-teams'],
   hook: 'The last constraint to fall is that a human has to be the one who presses go.',
-  what: `Scheduled deployments fire Managed Agent sessions on a cron cadence, with per-firing run records and lifecycle controls (pause, unpause, archive). No client-side scheduler, no server you maintain to hold a crontab. In Claude Code, the equivalent is triggers and routines that resume a session, wake a named session, or spawn a fresh one per firing.
+  what: `The last constraint to fall is that a person has to press go. In the Claude apps this is a scheduled task that runs on its own and reports back. In Claude Code it is a routine or trigger that resumes a session, wakes a named one, or spawns a fresh one per firing. On the API it is a scheduled deployment firing Managed Agent sessions on a cron cadence, with per-firing run records and lifecycle controls (pause, unpause, archive) — no client-side scheduler, no server you maintain to hold a crontab.
 
 The design change is that nobody is watching. Every assumption you were making implicitly — that a human notices the weird output, that someone stops the loop when it thrashes, that a wrong turn gets caught in the next message — has to become an explicit mechanism. In practice: hard budget caps so a runaway loop is bounded in dollars, not in patience; structured output so results can be checked by a program rather than read by a person; explicit success and failure signals so a silent no-op is distinguishable from success; and a notification path that fires on *anomaly*, not on completion.
 
@@ -1246,7 +1246,7 @@ const P = {                 // named, meaningful knobs — not magic numbers
   id: 's-models', d: 'scale', lvl: 1, title: 'Choosing a Model',
   tag: 'the first architectural decision', prereq: [],
   hook: 'Model choice is a routing decision, not a loyalty one — and the default should be the most capable one until measurement says otherwise.',
-  what: `The current line-up: **Claude Fable 5** (\`claude-fable-5\`, $10/$50 per MTok) is the most capable widely released model, for the most demanding reasoning and long-horizon agentic work. **Claude Opus 5** (\`claude-opus-5\`, $5/$25) is the strong default. **Claude Sonnet 5** (\`claude-sonnet-5\`, $2/$10) balances capability and cost. **Claude Haiku 4.5** (\`claude-haiku-4-5\`, $1/$5) is the fast, cheap option and the only one with a 200K rather than 1M context window.
+  what: `Choosing a model is a routing decision, not a loyalty one — match it to the task in front of it. In the apps that is the model selector; on the API it is a string you send. The current line-up: **Claude Fable 5** (\`claude-fable-5\`, $10/$50 per MTok) is the most capable widely released model, for the most demanding reasoning and long-horizon agentic work. **Claude Opus 5** (\`claude-opus-5\`, $5/$25) is the strong default. **Claude Sonnet 5** (\`claude-sonnet-5\`, $2/$10) balances capability and cost. **Claude Haiku 4.5** (\`claude-haiku-4-5\`, $1/$5) is the fast, cheap option and the only one with a 200K rather than 1M context window.
 
 Use the exact ID strings — they are complete as written. Appending a date suffix (\`claude-sonnet-5-20251114\`) is a recalled pattern from older models and will fail. Do not downgrade a model for cost without measuring; that is a decision with quality consequences and it should be made on evidence.
 

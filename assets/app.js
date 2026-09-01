@@ -7,6 +7,7 @@ import { assumedFor, glossary } from '../data/glossary.mjs';
 import { diagrams } from '../data/diagrams.mjs';
 import { surfaces, surfaceMeta } from '../data/surfaces.mjs';
 import { startPath } from '../data/startpath.mjs';
+import { appExamples } from '../data/appexamples.mjs';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const VB = 1000, C = VB / 2;            // geometry box, centre
@@ -445,6 +446,25 @@ function openCapstone(discId) {
 // Sits at the very bottom of the panel: the words the node leans on without
 // stopping to define. Deliberately last — it is a safety net for a reader who
 // got stuck, not something to read on the way in.
+// The same capability expressed as something you type. Sits above the code
+// example rather than replacing it — seeing both is the point.
+function renderAppExample(id) {
+  const a = appExamples[id];
+  if (!a) return '';
+  return `<div class="p-sec">
+    <h3>In the Claude apps — ${esc(a.label)}</h3>
+    <div class="app-ex">
+      <p class="app-where">${esc(a.where)}</p>
+      ${a.do ? `<ol class="app-do">${a.do.map(x => `<li>${esc(x)}</li>`).join('')}</ol>` : ''}
+      <div class="app-say">
+        <span class="app-say-label">Type this</span>
+        <p>${esc(a.say)}</p>
+      </div>
+      <p class="app-note">${rich(a.note)}</p>
+    </div>
+  </div>`;
+}
+
 function renderAssumed(n) {
   const terms = assumedFor(n, primers[n.id]);
   if (!terms.length) return '';
@@ -502,8 +522,10 @@ function openPanel(id) {
       <figcaption>${rich(diagrams[id].caption)}</figcaption>
     </figure>` : ''}
 
+    ${renderAppExample(id)}
+
     <div class="p-sec">
-      <h3>Worked example — ${esc(n.example.label)}</h3>
+      <h3>${appExamples[id] ? 'In code' : 'Worked example'} — ${esc(n.example.label)}</h3>
       <div class="p-example">
         <div class="p-ex-head"><span>${esc(n.example.label)}</span><span class="p-ex-lang">${esc(n.example.lang)}</span></div>
         <pre><code>${esc(n.example.code)}</code></pre>

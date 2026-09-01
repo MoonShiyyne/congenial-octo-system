@@ -27,6 +27,7 @@ const glossarySrc = await read('data/glossary.mjs');
 const { diagrams } = await import('../data/diagrams.mjs');
 const { surfaces, surfaceMeta } = await import('../data/surfaces.mjs');
 const { startPath } = await import('../data/startpath.mjs');
+const { appExamples } = await import('../data/appexamples.mjs');
 
 // Body content only; the Artifact host supplies the document skeleton.
 const body = html.match(/<body>([\s\S]*?)<\/body>/)[1]
@@ -57,7 +58,9 @@ const inlined = js
   .replace(/^import \{[^}]*\} from '\.\.\/data\/surfaces\.mjs';$/m,
     `const surfaces = ${JSON.stringify(surfaces)};\nconst surfaceMeta = ${JSON.stringify(surfaceMeta)};`)
   .replace(/^import \{[^}]*\} from '\.\.\/data\/startpath\.mjs';$/m,
-    `const startPath = ${JSON.stringify(startPath)};`);
+    `const startPath = ${JSON.stringify(startPath)};`)
+  .replace(/^import \{[^}]*\} from '\.\.\/data\/appexamples\.mjs';$/m,
+    `const appExamples = ${JSON.stringify(appExamples)};`);
 
 if (/^import /m.test(inlined)) throw new Error('an import survived bundling — the build would ship an unresolvable module');
 

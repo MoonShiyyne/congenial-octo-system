@@ -188,6 +188,24 @@ for (const step of startPath) {
         `start path ${step.n}: needs code — the route is advertised as no-code`);
 }
 
+// ── app examples ─────────────────────────────────────────────────────────
+const { appExamples } = await import('../data/appexamples.mjs');
+for (const [id, a] of Object.entries(appExamples)) {
+  check(ids.has(id), `app example: unknown node "${id}"`);
+  for (const f of ['label', 'where', 'say', 'note']) {
+    check(a[f]?.length > 0, `app example ${id}: missing ${f}`);
+  }
+  // The whole point is that it needs no code. A stray call signature here
+  // would defeat it silently.
+  check(!/client\.|import |def |=>|\$\{/.test(a.say ?? ''), `app example ${id}: the "say" text contains code`);
+}
+// Every app-reachable node needs one, and only app-reachable nodes may have one.
+for (const n of nodes) {
+  const reachable = surfaces[n.id].includes('apps');
+  check(reachable === !!appExamples[n.id],
+        `${n.id}: app-reachable=${reachable} but app example=${!!appExamples[n.id]}`);
+}
+
 // ── signals ──────────────────────────────────────────────────────────────
 try {
   const s = JSON.parse(await readFile(join(ROOT, 'data/signals.json'), 'utf8'));
@@ -210,4 +228,4 @@ if (fail.length) {
 }
 const refCount = Object.values(resources).flat().length;
 const primerCount = Object.values(primers).reduce((a, p) => a + p.items.length, 0);
-console.error(`✓ ${nodes.length} nodes, ${disciplines.length} disciplines, ${levels.length} levels, ${refCount} references, ${primerCount} primer entries, ${scenarios.length} scenarios, ${capstones.length} capstones, ${glossary.length} glossary entries, ${Object.keys(diagrams).length} diagrams, ${nodes.filter(n => surfaces[n.id].includes('apps')).length} no-code nodes — valid`);
+console.error(`✓ ${nodes.length} nodes, ${disciplines.length} disciplines, ${levels.length} levels, ${refCount} references, ${primerCount} primer entries, ${scenarios.length} scenarios, ${capstones.length} capstones, ${glossary.length} glossary entries, ${Object.keys(diagrams).length} diagrams, ${nodes.filter(n => surfaces[n.id].includes('apps')).length} no-code nodes, ${Object.keys(appExamples).length} app examples — valid`);

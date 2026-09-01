@@ -30,6 +30,15 @@ route is advertised as no-code, so that promise is enforced rather than assumed.
 "Trace the route on the web" numbers the eight nodes in the graph and dims the
 rest, so the path is a visible thread rather than a list beside the picture.
 
+**A second worked example, in the app.** Every one of those 27 nodes carries an
+**In the Claude apps** example — where it works, the clicks if there are any, and
+the literal message to type — sitting *above* the code example rather than
+replacing it. The code block is relabelled **In code**, so the two read as the
+same idea expressed twice. Seeing the correspondence is the point: a beginner can
+stop after the first block, and a developer sees what the second one is doing.
+The validator fails if a `say` field contains code, if an app-reachable node is
+missing one, or if a code-only node has one.
+
 **Foundations in the glossary.** The assumed-background layer was built for
 someone who already writes software: it defined `egress` and `p95` but not
 `API`. 18 foundational entries now cover API, model, context, prompt, parameter,
@@ -385,6 +394,12 @@ Progress marks are stored in `localStorage`, per browser, and every access is
 wrapped in `try/catch` because private windows throw rather than return empty.
 
 ## Accuracy
+
+Seven node openings were also rewritten in that pass. Nodes a non-programmer can
+use were opening on API mechanics — Memory began with a tool id, Citations with a
+parameter, Choosing a Model with per-MTok pricing. They now lead with what the
+capability is and name every surface before descending into the call signature.
+Nothing technical was removed; it was reordered.
 
 API details — model ids, pricing, parameter shapes, deprecations — were checked
 against current sources rather than written from memory, and the Claude Code
