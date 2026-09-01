@@ -9,6 +9,10 @@ explanation, a worked example, the non-obvious detail that is usually learned th
 expensive way, and **links to the canonical material** that explains it — 180
 references across 149 machine-checked URLs.
 
+The repo also carries one standalone tool that is not part of the web:
+[**the Canvas prep-brief tool**](#the-canvas-prep-brief-tool), which reads a Canvas LMS
+account and writes a short brief for every syllabus and every assignment.
+
 ---
 
 ## The four parts
@@ -70,6 +74,9 @@ node tools/refresh-signals.mjs --dry-run
 node tools/validate.mjs             # check the graph, resources and signal payload
 node tools/check-links.mjs          # verify every reference URL still resolves
 node tools/build-standalone.mjs     # → dist/index.html, one self-contained file
+
+node tools/canvas-brief.mjs --demo  # the Canvas prep-brief tool, on sample data
+node --test 'tools/canvas/*.test.mjs'
 ```
 
 ---
@@ -258,6 +265,129 @@ The geometry has two non-obvious constraints, both learned by looking at it:
 
 Progress marks are stored in `localStorage`, per browser, and every access is
 wrapped in `try/catch` because private windows throw rather than return empty.
+
+---
+
+## The Canvas prep-brief tool
+
+`tools/canvas-brief.mjs` is separate from the web above: it reads a **Canvas
+LMS** account and writes a short brief for every course and every assignment,
+plus one index across all of them.
+
+```bash
+node tools/canvas-brief.mjs --demo          # three sample courses, no account needed
+export CANVAS_HOST=school.instructure.com
+export CANVAS_TOKEN=...                     # Canvas → Account → Settings → New Access Token
+node tools/canvas-brief.mjs                 # → out/canvas/
+```
+
+Output is `out/canvas/`: `README.md` across every course, `courses/<code>/course-brief.md`
+per syllabus, `courses/<code>/assignments/<due-date>-<name>.md` per assignment — named so
+the directory sorts into the order you will do them — and `dashboard.html`, one
+self-contained page with no scripts and nothing to fetch. `out/` is gitignored, because
+what lands there is your coursework.
+
+### What it is actually doing
+
+Canvas does not hide anything. It shows each thing on its own page: the weighting is on
+the grades tab, the rubric is behind a link, the readings are in Modules, the deadline
+change is in Announcements — and the only place they are ever assembled is in a
+student's head at 11pm. The tool assembles them on disk instead. Four joins do most of
+the work:
+
+- **Points → grade share.** 100 points means nothing on its own. A 100-point assignment
+  in a 10%-weighted group matters less than a 20-point one in a 40% group, and that
+  arithmetic needs the assignment group, its weight and every other assignment in it.
+  Where a group holds only one published assignment the share is labelled provisional,
+  because early in a term it looks like the whole group weight and it is not going to
+  stay that way.
+- **Assignment → its module.** The readings, slides and pages immediately above an
+  assignment in its own module are the inputs the instructor put there. The assignment
+  page has no idea it is in a module at all.
+- **Assignment → announcements.** An announcement posted after the assignment was
+  written can silently overrule its due date, and Canvas will not update the page.
+  Wording that means a deadline moved is flagged loudly and labelled as keyword-matched.
+- **Syllabus ↔ Canvas.** Where the syllabus states weights and Canvas's groups state
+  different ones, the brief reports the disagreement rather than picking a side. Both
+  being internally consistent and mutually contradictory is a real thing that happens,
+  and it is worth an email, not a silent choice.
+
+Per assignment it also pulls out the deliverables (from the instructor's own bulleted
+list where there is one), the constraints that cost marks on their own (word count,
+citation style, file format), the rubric ranked by what each criterion is worth, and a
+*start by* date. Per course: meeting times, who to ask, the grading scheme, the policies
+with a cost attached — late work, attendance, integrity, AI use — with their numbers
+pulled out (`5% per day`, `2 late passes`), required texts with ISBNs, and fixed dates.
+Across courses: the week, timetable clashes, an announcement feed, and where the term
+gets heavy, weighted by grade impact rather than by item count.
+
+### What it will not do
+
+Everything read out of syllabus prose is a heuristic on writing that has no schema, so
+each extraction says where it came from and the briefs distinguish the two sources by
+name: a weighting from Canvas's own groups is what Canvas computes with; the same
+weighting scraped from a sentence is a reading to confirm. Effort estimates and start
+dates are a stated planning prior, labelled as estimates every time — the useful output
+is the start date, which is wrong by a day at worst and still beats starting the night
+before. `## What this brief could not establish` on each course brief lists what came up
+empty, so a course with no grading scheme published never reads like one the tool simply
+failed to parse.
+
+### Options
+
+| | |
+|---|---|
+| `--demo` | run on `data/canvas-demo.json`, no network, nothing personal |
+| `--snapshot <file>` | analyse a saved pull instead of fetching |
+| `--save-snapshot` | keep the raw pull next to the briefs |
+| `--course` / `--term` | filter by name or code |
+| `--include-concluded` | include finished terms |
+| `--horizon <days>` | how far ahead the radar looks (default 21) |
+| `--out <dir>` | output directory (default `out/canvas`) |
+| `--no-html` | markdown only |
+
+### Notes on the API
+
+Two things a naive fetch loop gets wrong, both handled in `tools/canvas/client.mjs`:
+pagination lives in the `Link` header and nothing in the body says a page was truncated,
+so a course with 60 assignments silently returns 10; and the rate limiter reports a cost
+budget in `X-Rate-Limit-Remaining` and answers **403 with a "Rate Limit Exceeded" body**
+rather than 429, so a retry policy keyed on 429 reads throttling as an auth failure and
+gives up on a working token.
+
+Fetching is deliberately separate from analysis — a snapshot can be re-read offline
+while the extractors are tuned, rather than hammering a rate-limited server owned by
+your university. Per-course requests are best-effort in the same way the signals feed
+is: a course with the syllabus tab disabled records the gap in its brief and keeps its
+other data.
+
+An access token grants everything your account can see. Pass it in `CANVAS_TOKEN`
+rather than on the command line, where it lands in shell history, and delete it in
+Canvas when you are done.
+
+### Files
+
+| | |
+|---|---|
+| `tools/canvas-brief.mjs` | CLI |
+| `tools/canvas/client.mjs` | REST client — pagination, retries, rate limits |
+| `tools/canvas/fetch.mjs` | one snapshot of everything, best-effort per course |
+| `tools/canvas/html.mjs` | instructor-pasted HTML → text worth parsing |
+| `tools/canvas/syllabus.mjs` | meeting times, grading, policies, materials, dates |
+| `tools/canvas/assignment.mjs` | weight, deliverables, constraints, rubric, effort |
+| `tools/canvas/catalogue.mjs` | the cross-course views |
+| `tools/canvas/analyse.mjs` | the joins |
+| `tools/canvas/render.mjs` | the markdown briefs |
+| `tools/canvas/dashboard.mjs` | the self-contained HTML page |
+| `tools/canvas/canvas.test.mjs` | 52 tests, one per judgement call |
+| `data/canvas-demo.json` | synthetic three-course snapshot |
+
+The tests pin the cases where a plausible parser reads a syllabus wrongly and the wrong
+reading is silent: `R` is Thursday but `WAR` is not three weekdays, a bare `2:00` in a
+timetable is the afternoon, a stray "10% per day" in a late policy is not a grading
+scheme, and a newline inside a `<p>` is where the instructor's editor wrapped rather
+than the end of a sentence.
+
 
 ## Accuracy
 

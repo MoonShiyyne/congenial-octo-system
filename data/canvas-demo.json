@@ -1,0 +1,770 @@
+{
+ "generated": "2026-09-01T00:00:00Z",
+ "host": "https://example.instructure.com",
+ "user": {
+  "id": 4242,
+  "name": "Demo Student"
+ },
+ "courses": [
+  {
+   "id": 101,
+   "name": "The Atlantic World, 1450-1800",
+   "code": "HIST 210",
+   "term": "Fall 2026",
+   "start_at": "2026-08-18T23:59:00Z",
+   "end_at": "2026-12-20T23:59:00Z",
+   "url": "https://example.instructure.com/courses/101",
+   "syllabus_body": "\n<h2>HIST 210 &mdash; The Atlantic World, 1450&ndash;1800</h2>\n<p>Professor Ada Whitfield &middot; whitfield@example.edu &middot; Fall 2026</p>\n<p><strong>Lecture:</strong> MWF 10:00-10:50 AM in Rice Hall 130</p>\n<p><strong>Discussion section:</strong> Thursdays 3:00&ndash;3:50 pm, Wilson Hall 214</p>\n<p>Office hours: Wednesday 1:00-3:00 pm in Nau Hall 486, or by appointment.</p>\n<h3>Grading</h3>\n<table>\n  <tr><th>Component</th><th>Weight</th></tr>\n  <tr><td>Participation &amp; section</td><td>15%</td></tr>\n  <tr><td>Short response papers</td><td>20%</td></tr>\n  <tr><td>Midterm examination</td><td>25%</td></tr>\n  <tr><td>Research essay</td><td>40%</td></tr>\n</table>\n<h3>Late Work</h3>\n<p>Written work loses 5% per day late, including weekends. After seven days work will not be accepted\nand receives a zero. You have two late passes for the term, each worth 48 hours, no questions asked;\nemail me before the deadline to use one.</p>\n<h3>Attendance</h3>\n<p>Attendance in discussion section is required. More than 3 unexcused absences will lower your\nparticipation grade by one full letter. Lectures are not taken for attendance but the exams draw\nheavily on material that appears only in lecture.</p>\n<h3>Academic Integrity</h3>\n<p>All work must be your own. Plagiarism, including uncited paraphrase, is reported to the Honor\nCommittee without exception. When in doubt, cite your sources.</p>\n<h3>Generative AI</h3>\n<p>You may use AI tools such as ChatGPT or Claude to brainstorm and to check your prose. You may not\nsubmit AI-generated text as your own writing, and any use must be disclosed in a short note at the\nend of the assignment. Undisclosed use is treated as plagiarism.</p>\n<h3>Required Texts</h3>\n<ul>\n  <li>John Thornton, <em>Africa and Africans in the Making of the Atlantic World</em>, 2nd ed. ISBN 978-0521627245</li>\n  <li>Course reader, available from the Bookstore. ISBN 978-1234567897</li>\n  <li>Optional: Alison Games, <em>The Web of Empire</em> ISBN 978-0195335507</li>\n</ul>\n<h3>Schedule of Key Dates</h3>\n<ul>\n  <li>Midterm examination: October 14, in class</li>\n  <li>No class November 25 &ndash; Thanksgiving recess</li>\n  <li>Research essay due December 8</li>\n  <li>Final exam: December 16, 9:00 am</li>\n</ul>\n",
+   "public_description": "A survey of the making of the Atlantic world, from the first Portuguese voyages to the age of revolutions.",
+   "apply_assignment_group_weights": true,
+   "teachers": [
+    {
+     "id": 1,
+     "display_name": "Ada Whitfield",
+     "email": "whitfield@example.edu",
+     "enrollments": [
+      {
+       "type": "TeacherEnrollment"
+      }
+     ]
+    }
+   ],
+   "groups": [
+    {
+     "id": 20,
+     "name": "Participation",
+     "group_weight": 10
+    },
+    {
+     "id": 21,
+     "name": "Response Papers",
+     "group_weight": 25
+    },
+    {
+     "id": 22,
+     "name": "Midterm",
+     "group_weight": 25
+    },
+    {
+     "id": 23,
+     "name": "Research Essay",
+     "group_weight": 40
+    }
+   ],
+   "assignments": [
+    {
+     "id": 9101,
+     "name": "Response Paper 1: Thornton, chapters 1-3",
+     "assignment_group_id": 21,
+     "points_possible": 20,
+     "due_at": "2026-08-26T23:59:00Z",
+     "published": true,
+     "grading_type": "points",
+     "html_url": "https://example.instructure.com/courses/101/assignments/9101",
+     "submission_types": [
+      "online_upload"
+     ],
+     "allowed_extensions": [
+      "pdf",
+      "docx"
+     ],
+     "submission": {
+      "workflow_state": "graded",
+      "score": 18
+     },
+     "description": "<p>Write a 600-800 word response to Thornton, chapters 1-3.</p><ul><li>Identify the central claim Thornton is making about African agency.</li><li>Explain what evidence he uses to support it.</li><li>Argue whether you find the evidence sufficient, and say why.</li></ul><p>Submit as a PDF. Double-spaced, 12-pt Times New Roman. Chicago style footnotes.</p>"
+    },
+    {
+     "id": 9102,
+     "name": "Response Paper 2: The Middle Passage",
+     "assignment_group_id": 21,
+     "points_possible": 20,
+     "due_at": "2026-09-05T23:59:00Z",
+     "unlock_at": "2026-08-29T23:59:00Z",
+     "published": true,
+     "grading_type": "points",
+     "html_url": "https://example.instructure.com/courses/101/assignments/9102",
+     "submission_types": [
+      "online_upload"
+     ],
+     "allowed_extensions": [
+      "pdf"
+     ],
+     "submission": {
+      "workflow_state": "unsubmitted"
+     },
+     "description": "<p>A 600-800 word response to this week's primary documents on the Middle Passage.</p><ul><li>Choose one document from the reader and read it closely.</li><li>Describe what the document lets you see, and what it structurally cannot show.</li><li>Connect your reading to one argument from the Thornton chapters.</li></ul><p>Submit as a PDF, double-spaced, with Chicago footnotes. At least 3 sources.</p>"
+    },
+    {
+     "id": 9103,
+     "name": "Midterm Examination",
+     "assignment_group_id": 22,
+     "points_possible": 100,
+     "due_at": "2026-10-14T14:00:00Z",
+     "lock_at": "2026-10-14T15:20:00Z",
+     "published": true,
+     "grading_type": "points",
+     "html_url": "https://example.instructure.com/courses/101/assignments/9103",
+     "submission_types": [
+      "on_paper"
+     ],
+     "submission": {
+      "workflow_state": "unsubmitted"
+     },
+     "description": "<p>In-class midterm, 75 minutes. Covers weeks 1-7: lectures, the Thornton chapters, and all primary documents in the reader. Format: two short identifications and one essay. You must bring a blue book.</p>"
+    },
+    {
+     "id": 9104,
+     "name": "Research Essay",
+     "assignment_group_id": 23,
+     "points_possible": 200,
+     "due_at": "2026-12-08T23:59:00Z",
+     "unlock_at": "2026-09-11T23:59:00Z",
+     "published": true,
+     "grading_type": "points",
+     "html_url": "https://example.instructure.com/courses/101/assignments/9104",
+     "submission_types": [
+      "online_upload"
+     ],
+     "allowed_extensions": [
+      "pdf"
+     ],
+     "peer_reviews": true,
+     "submission": {
+      "workflow_state": "unsubmitted"
+     },
+     "rubric": [
+      {
+       "id": "c1",
+       "description": "Argument and thesis",
+       "long_description": "A specific, contestable claim sustained across the essay.",
+       "points": 40,
+       "ratings": [
+        {
+         "description": "A clear, arguable thesis that the essay actually defends throughout",
+         "points": 40
+        },
+        {
+         "description": "A thesis, but the essay drifts from it",
+         "points": 28
+        },
+        {
+         "description": "Description in place of argument",
+         "points": 15
+        }
+       ]
+      },
+      {
+       "id": "c2",
+       "description": "Use of primary sources",
+       "long_description": "Evidence drawn from the assigned primary documents, read critically.",
+       "points": 30,
+       "ratings": [
+        {
+         "description": "Primary sources are read against the grain, not just quoted",
+         "points": 30
+        },
+        {
+         "description": "Sources quoted accurately but taken at face value",
+         "points": 20
+        }
+       ]
+      },
+      {
+       "id": "c3",
+       "description": "Historiographical engagement",
+       "points": 15,
+       "ratings": [
+        {
+         "description": "Positions the argument against at least two secondary readings",
+         "points": 15
+        },
+        {
+         "description": "Mentions secondary work without engaging it",
+         "points": 9
+        }
+       ]
+      },
+      {
+       "id": "c4",
+       "description": "Prose and citation",
+       "points": 15,
+       "ratings": [
+        {
+         "description": "Clean prose, correct Chicago footnotes",
+         "points": 15
+        },
+        {
+         "description": "Readable, with citation errors",
+         "points": 10
+        }
+       ]
+      }
+     ],
+     "description": "<p>A 3000-4000 word research essay on a topic of your choosing within the scope of the course, approved by me in advance.</p><ul><li>Submit a one-paragraph proposal and working bibliography by week 9.</li><li>Build an argument from at least 4 primary sources.</li><li>Engage at least 3 secondary works in the historiography.</li><li>Include a complete Chicago-style bibliography.</li><li>You must complete two peer reviews within one week of the deadline.</li></ul><p>Submit as a PDF. Double-spaced, 12-pt font.</p>"
+    },
+    {
+     "id": 9105,
+     "name": "Section Participation",
+     "assignment_group_id": 20,
+     "points_possible": 50,
+     "due_at": null,
+     "published": true,
+     "grading_type": "points",
+     "html_url": "https://example.instructure.com/courses/101/assignments/9105",
+     "submission_types": [
+      "none"
+     ],
+     "submission": {
+      "workflow_state": "unsubmitted"
+     },
+     "description": "<p>Assessed at the end of term based on your contribution to discussion section.</p>"
+    }
+   ],
+   "announcements": [
+    {
+     "id": 501,
+     "title": "Response Paper 2 deadline extended",
+     "posted_at": "2026-08-30T09:00:00Z",
+     "html_url": "https://example.instructure.com/courses/101/discussion_topics/501",
+     "message": "<p>Several of you asked for more time with the reader. The deadline for Response Paper 2 has been extended to Friday at 11:59pm. The Canvas page still shows the old date; the new one is what counts.</p>"
+    },
+    {
+     "id": 502,
+     "title": "Midterm review session",
+     "posted_at": "2026-08-27T16:00:00Z",
+     "html_url": "https://example.instructure.com/courses/101/discussion_topics/502",
+     "message": "<p>I will hold a review session the Sunday before the midterm, 2-4pm in Rice 130. Please bring questions. Slides from weeks 1-7 are posted in the Modules tab.</p>"
+    }
+   ],
+   "modules": [
+    {
+     "id": 301,
+     "name": "Week 4: The Middle Passage",
+     "prerequisite_module_ids": [],
+     "items": [
+      {
+       "id": 1,
+       "type": "Page",
+       "title": "Week 4 overview",
+       "html_url": "https://example.instructure.com/courses/101/pages/week-4"
+      },
+      {
+       "id": 2,
+       "type": "File",
+       "title": "Reader pp. 88-140 (primary documents)",
+       "html_url": "https://example.instructure.com/courses/101/files/2211"
+      },
+      {
+       "id": 3,
+       "type": "File",
+       "title": "Lecture slides \u2014 the Middle Passage",
+       "html_url": "https://example.instructure.com/courses/101/files/2212"
+      },
+      {
+       "id": 4,
+       "type": "Assignment",
+       "title": "Response Paper 2: The Middle Passage",
+       "content_id": 9102,
+       "html_url": "https://example.instructure.com/courses/101/assignments/9102"
+      }
+     ]
+    },
+    {
+     "id": 302,
+     "name": "Week 9: Research Essay",
+     "items": [
+      {
+       "id": 5,
+       "type": "Page",
+       "title": "How to choose a topic",
+       "html_url": "https://example.instructure.com/courses/101/pages/topics"
+      },
+      {
+       "id": 6,
+       "type": "File",
+       "title": "Sample essays from previous years",
+       "html_url": "https://example.instructure.com/courses/101/files/2290"
+      },
+      {
+       "id": 7,
+       "type": "ExternalUrl",
+       "title": "Chicago Manual of Style \u2014 quick guide",
+       "external_url": "https://www.chicagomanualofstyle.org/tools_citationguide.html"
+      },
+      {
+       "id": 8,
+       "type": "Assignment",
+       "title": "Research Essay",
+       "content_id": 9104,
+       "html_url": "https://example.instructure.com/courses/101/assignments/9104"
+      }
+     ]
+    }
+   ],
+   "quizzes": [],
+   "files": [
+    {
+     "id": 2211,
+     "name": "reader-88-140.pdf",
+     "type": "application/pdf",
+     "size": 8402331,
+     "updated": "2026-08-23T23:59:00Z",
+     "url": null,
+     "folder": 10
+    }
+   ],
+   "events": [],
+   "gaps": []
+  },
+  {
+   "id": 102,
+   "name": "Systems Programming",
+   "code": "CS 250",
+   "term": "Fall 2026",
+   "start_at": "2026-08-18T23:59:00Z",
+   "end_at": "2026-12-20T23:59:00Z",
+   "url": "https://example.instructure.com/courses/102",
+   "syllabus_body": "\n<h2>CS 250: Systems Programming</h2>\n<p>Instructor: Dr. Marcus Oyelaran (oyelaran@example.edu). TA: Priya Raghavan.</p>\n<p>Lecture meets TR 2:00-3:15 pm, Olsson 120. Lab: W 4:00-5:50 pm, Thornton A238.</p>\n<p>Office hours Tuesdays 11:00 am - 12:30 pm, Rice 422.</p>\n<p>Grading in this course is points-based. There are no category weights; your grade is your total\npoints over the points available.</p>\n<h3>Late Policy</h3>\n<p>Each problem set may be submitted up to 48 hours late for a 20% penalty. Beyond 48 hours the\nautograder closes and no credit is available. There are no extensions on the final project.</p>\n<h3>Collaboration</h3>\n<p>You may discuss approaches with classmates. You may not share code. All submitted code is run\nthrough a similarity checker; matches are referred to the Honor Committee.</p>\n<h3>AI Tools</h3>\n<p>Use of Copilot, ChatGPT and similar tools is permitted on problem sets and forbidden on exams.\nYou must be able to explain every line you submit.</p>\n<h3>Materials</h3>\n<ul>\n  <li>Bryant &amp; O'Hallaron, Computer Systems: A Programmer's Perspective, 3rd ed. ISBN 978-0134092669</li>\n  <li>A laptop that can run Linux in a VM or container</li>\n</ul>\n",
+   "public_description": "How a program becomes a process: memory, linking, concurrency and the operating system interface.",
+   "apply_assignment_group_weights": false,
+   "teachers": [
+    {
+     "id": 2,
+     "display_name": "Marcus Oyelaran",
+     "email": "oyelaran@example.edu",
+     "enrollments": [
+      {
+       "type": "TeacherEnrollment"
+      }
+     ]
+    },
+    {
+     "id": 3,
+     "display_name": "Priya Raghavan",
+     "email": "raghavan@example.edu",
+     "enrollments": [
+      {
+       "type": "TaEnrollment"
+      }
+     ]
+    }
+   ],
+   "groups": [
+    {
+     "id": 31,
+     "name": "Problem Sets",
+     "group_weight": 0
+    },
+    {
+     "id": 32,
+     "name": "Labs",
+     "group_weight": 0
+    },
+    {
+     "id": 33,
+     "name": "Final Project",
+     "group_weight": 0
+    },
+    {
+     "id": 34,
+     "name": "Quizzes",
+     "group_weight": 0
+    }
+   ],
+   "assignments": [
+    {
+     "id": 9201,
+     "name": "Problem Set 3: Dynamic Memory",
+     "assignment_group_id": 31,
+     "points_possible": 100,
+     "due_at": "2026-09-03T23:59:00Z",
+     "lock_at": "2026-09-05T23:59:00Z",
+     "published": true,
+     "grading_type": "points",
+     "html_url": "https://example.instructure.com/courses/102/assignments/9201",
+     "submission_types": [
+      "online_upload"
+     ],
+     "allowed_extensions": [
+      "c",
+      "h",
+      "tar",
+      "zip"
+     ],
+     "allowed_attempts": 5,
+     "submission": {
+      "workflow_state": "unsubmitted"
+     },
+     "description": "<p>Implement a memory allocator.</p><ul><li>Implement malloc, free and realloc in mm.c.</li><li>Your allocator must achieve at least 70% utilisation on the trace suite.</li><li>Document your free-list design in a README.</li><li>Do not use any library allocator.</li></ul><p>Submit as a .zip containing mm.c and README.</p>"
+    },
+    {
+     "id": 9202,
+     "name": "Lab 4: The Shell",
+     "assignment_group_id": 32,
+     "points_possible": 40,
+     "due_at": "2026-09-10T23:59:00Z",
+     "published": true,
+     "grading_type": "points",
+     "html_url": "https://example.instructure.com/courses/102/assignments/9202",
+     "submission_types": [
+      "online_upload"
+     ],
+     "submission": {
+      "workflow_state": "unsubmitted"
+     },
+     "description": "<p>Build a small shell supporting pipes and redirection. Complete the checkpoints in order; the lab TA signs off on each.</p>"
+    },
+    {
+     "id": 9203,
+     "name": "Final Project: A Concurrent Web Server",
+     "assignment_group_id": 33,
+     "points_possible": 300,
+     "due_at": "2026-12-11T23:59:00Z",
+     "unlock_at": "2026-10-01T23:59:00Z",
+     "published": true,
+     "grading_type": "points",
+     "group_category_id": 77,
+     "html_url": "https://example.instructure.com/courses/102/assignments/9203",
+     "submission_types": [
+      "online_upload",
+      "online_url"
+     ],
+     "submission": {
+      "workflow_state": "unsubmitted"
+     },
+     "rubric": [
+      {
+       "id": "p1",
+       "description": "Correctness under concurrent load",
+       "points": 120,
+       "ratings": [
+        {
+         "description": "Handles 500 concurrent connections with no data races",
+         "points": 120
+        }
+       ]
+      },
+      {
+       "id": "p2",
+       "description": "Design and code quality",
+       "points": 80,
+       "ratings": [
+        {
+         "description": "Clear module boundaries, no global mutable state",
+         "points": 80
+        }
+       ]
+      },
+      {
+       "id": "p3",
+       "description": "Benchmark report",
+       "points": 60,
+       "ratings": [
+        {
+         "description": "Measured, reproducible, with the methodology stated",
+         "points": 60
+        }
+       ]
+      },
+      {
+       "id": "p4",
+       "description": "Demo",
+       "points": 40,
+       "ratings": [
+        {
+         "description": "Working live demo",
+         "points": 40
+        }
+       ]
+      }
+     ],
+     "description": "<p>In teams of three, build a concurrent web server in C.</p><ul><li>Implement a thread pool with a bounded work queue.</li><li>Support HTTP/1.1 keep-alive.</li><li>Write a benchmark report of at least 1500 words comparing your server against a baseline.</li><li>Present a 10 minute demo in the last week of class.</li></ul><p>Submit a repository URL and a PDF report.</p>"
+    },
+    {
+     "id": 9204,
+     "name": "Quiz 5",
+     "assignment_group_id": 34,
+     "points_possible": 20,
+     "due_at": "2026-09-06T23:59:00Z",
+     "published": true,
+     "grading_type": "points",
+     "html_url": "https://example.instructure.com/courses/102/assignments/9204",
+     "submission_types": [
+      "online_quiz"
+     ],
+     "allowed_attempts": 1,
+     "submission": {
+      "workflow_state": "unsubmitted"
+     },
+     "description": "<p>Twenty minutes, covering caching and the memory hierarchy. One attempt.</p>"
+    }
+   ],
+   "announcements": [
+    {
+     "id": 511,
+     "title": "Autograder is back up",
+     "posted_at": "2026-08-31T20:15:00Z",
+     "html_url": "https://example.instructure.com/courses/102/discussion_topics/511",
+     "message": "<p>The autograder was down for about four hours this afternoon. It is back. Because of the outage, Problem Set 3 will be accepted without penalty until Sunday night.</p>"
+    }
+   ],
+   "modules": [
+    {
+     "id": 311,
+     "name": "Unit 3: Memory",
+     "items": [
+      {
+       "id": 11,
+       "type": "Page",
+       "title": "Reading guide: CS:APP chapter 9",
+       "html_url": "https://example.instructure.com/courses/102/pages/ch9"
+      },
+      {
+       "id": 12,
+       "type": "File",
+       "title": "malloc handout.pdf",
+       "html_url": "https://example.instructure.com/courses/102/files/3311"
+      },
+      {
+       "id": 13,
+       "type": "Assignment",
+       "title": "Problem Set 3: Dynamic Memory",
+       "content_id": 9201,
+       "html_url": "https://example.instructure.com/courses/102/assignments/9201"
+      }
+     ]
+    }
+   ],
+   "quizzes": [],
+   "files": [],
+   "events": [],
+   "gaps": [
+    "files: HTTP 403 \u2014 Forbidden"
+   ]
+  },
+  {
+   "id": 103,
+   "name": "Introductory Biology",
+   "code": "BIO 101",
+   "term": "Fall 2026",
+   "start_at": "2026-08-18T23:59:00Z",
+   "end_at": "2026-12-20T23:59:00Z",
+   "url": "https://example.instructure.com/courses/103",
+   "syllabus_body": "\n<p>BIO 101 Introductory Biology. Dr. Helen Marsh, marsh@example.edu.</p>\n<p>Your final grade is composed of the following: weekly quizzes are worth 20%, three unit exams\nare worth 45% total, the lab notebook is worth 20%, and the final exam is worth 15%.</p>\n<p>Missed exams cannot be made up except with a documented medical excuse, submitted within 5 days\nof the missed exam.</p>\n<p>Lab safety training must be completed before the first lab. Students without it are turned away.</p>\n",
+   "public_description": "",
+   "apply_assignment_group_weights": true,
+   "teachers": [
+    {
+     "id": 4,
+     "display_name": "Helen Marsh",
+     "email": "marsh@example.edu",
+     "enrollments": [
+      {
+       "type": "TeacherEnrollment"
+      }
+     ]
+    }
+   ],
+   "groups": [
+    {
+     "id": 41,
+     "name": "Lab Notebook",
+     "group_weight": 20
+    },
+    {
+     "id": 42,
+     "name": "Unit Exams",
+     "group_weight": 45
+    },
+    {
+     "id": 43,
+     "name": "Weekly Quizzes",
+     "group_weight": 20
+    },
+    {
+     "id": 44,
+     "name": "Final Exam",
+     "group_weight": 15
+    }
+   ],
+   "assignments": [
+    {
+     "id": 9301,
+     "name": "Lab Notebook, Weeks 1-4",
+     "assignment_group_id": 41,
+     "points_possible": 60,
+     "due_at": "2026-08-31T23:59:00Z",
+     "published": true,
+     "grading_type": "points",
+     "html_url": "https://example.instructure.com/courses/103/assignments/9301",
+     "submission_types": [
+      "online_upload"
+     ],
+     "submission": {
+      "workflow_state": "unsubmitted"
+     },
+     "description": "<p>Scan and upload your lab notebook pages for weeks 1 through 4. Each entry must include the date, the aim, the procedure as performed, and your raw data.</p>"
+    },
+    {
+     "id": 9302,
+     "name": "Unit Exam 1",
+     "assignment_group_id": 42,
+     "points_possible": 100,
+     "due_at": "2026-09-13T13:00:00Z",
+     "published": true,
+     "grading_type": "points",
+     "html_url": "https://example.instructure.com/courses/103/assignments/9302",
+     "submission_types": [
+      "on_paper"
+     ],
+     "submission": {
+      "workflow_state": "unsubmitted"
+     },
+     "description": "<p>Covers cell structure, membranes and bioenergetics. Bring a pencil and your student ID.</p>"
+    },
+    {
+     "id": 9303,
+     "name": "Weekly Quiz 4",
+     "assignment_group_id": 43,
+     "points_possible": 10,
+     "due_at": "2026-09-04T23:59:00Z",
+     "published": true,
+     "grading_type": "points",
+     "html_url": "https://example.instructure.com/courses/103/assignments/9303",
+     "submission_types": [
+      "online_quiz"
+     ],
+     "allowed_attempts": 2,
+     "submission": {
+      "workflow_state": "unsubmitted"
+     },
+     "description": "<p>Ten questions on this week's reading. Two attempts, highest score counts.</p>"
+    }
+   ],
+   "announcements": [
+    {
+     "id": 521,
+     "title": "Lab safety training due before Thursday",
+     "posted_at": "2026-08-29T08:00:00Z",
+     "html_url": "https://example.instructure.com/courses/103/discussion_topics/521",
+     "message": "<p>Please complete the online lab safety module before your first lab session. Students who have not completed it will not be admitted to the lab.</p>"
+    }
+   ],
+   "modules": [],
+   "quizzes": [],
+   "files": [],
+   "events": [
+    {
+     "id": 600,
+     "title": "BIO 101 Lecture",
+     "start_at": "2026-09-02T09:00:00Z",
+     "end_at": "2026-09-02T09:50:00Z",
+     "all_day_date": null,
+     "location_name": "Gilmer 130",
+     "description": ""
+    },
+    {
+     "id": 601,
+     "title": "BIO 101 Lecture",
+     "start_at": "2026-09-04T09:00:00Z",
+     "end_at": "2026-09-04T09:50:00Z",
+     "all_day_date": null,
+     "location_name": "Gilmer 130",
+     "description": ""
+    },
+    {
+     "id": 602,
+     "title": "BIO 101 Lecture",
+     "start_at": "2026-09-07T09:00:00Z",
+     "end_at": "2026-09-07T09:50:00Z",
+     "all_day_date": null,
+     "location_name": "Gilmer 130",
+     "description": ""
+    },
+    {
+     "id": 603,
+     "title": "BIO 101 Lecture",
+     "start_at": "2026-09-09T09:00:00Z",
+     "end_at": "2026-09-09T09:50:00Z",
+     "all_day_date": null,
+     "location_name": "Gilmer 130",
+     "description": ""
+    },
+    {
+     "id": 604,
+     "title": "BIO 101 Lecture",
+     "start_at": "2026-09-11T09:00:00Z",
+     "end_at": "2026-09-11T09:50:00Z",
+     "all_day_date": null,
+     "location_name": "Gilmer 130",
+     "description": ""
+    },
+    {
+     "id": 605,
+     "title": "BIO 101 Lecture",
+     "start_at": "2026-09-14T09:00:00Z",
+     "end_at": "2026-09-14T09:50:00Z",
+     "all_day_date": null,
+     "location_name": "Gilmer 130",
+     "description": ""
+    },
+    {
+     "id": 606,
+     "title": "BIO 101 Lecture",
+     "start_at": "2026-09-16T09:00:00Z",
+     "end_at": "2026-09-16T09:50:00Z",
+     "all_day_date": null,
+     "location_name": "Gilmer 130",
+     "description": ""
+    },
+    {
+     "id": 607,
+     "title": "BIO 101 Lecture",
+     "start_at": "2026-09-18T09:00:00Z",
+     "end_at": "2026-09-18T09:50:00Z",
+     "all_day_date": null,
+     "location_name": "Gilmer 130",
+     "description": ""
+    },
+    {
+     "id": 608,
+     "title": "BIO 101 Lecture",
+     "start_at": "2026-09-21T09:00:00Z",
+     "end_at": "2026-09-21T09:50:00Z",
+     "all_day_date": null,
+     "location_name": "Gilmer 130",
+     "description": ""
+    },
+    {
+     "id": 700,
+     "title": "BIO 101 Lab",
+     "start_at": "2026-09-03T13:00:00Z",
+     "end_at": "2026-09-03T15:50:00Z",
+     "all_day_date": null,
+     "location_name": "Gilmer 245",
+     "description": ""
+    },
+    {
+     "id": 701,
+     "title": "BIO 101 Lab",
+     "start_at": "2026-09-10T13:00:00Z",
+     "end_at": "2026-09-10T15:50:00Z",
+     "all_day_date": null,
+     "location_name": "Gilmer 245",
+     "description": ""
+    },
+    {
+     "id": 702,
+     "title": "BIO 101 Lab",
+     "start_at": "2026-09-17T13:00:00Z",
+     "end_at": "2026-09-17T15:50:00Z",
+     "all_day_date": null,
+     "location_name": "Gilmer 245",
+     "description": ""
+    }
+   ],
+   "gaps": []
+  }
+ ]
+}
