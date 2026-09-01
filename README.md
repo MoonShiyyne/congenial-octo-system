@@ -6,8 +6,9 @@ entrepreneurial signals and attaches new ones to the nodes they touch.
 
 Every node carries a plain-terms glossary of the things it names, an in-depth
 explanation, a worked example, the non-obvious detail that is usually learned the
-expensive way, and **links to the canonical material** that explains it — 180
-references across 149 machine-checked URLs.
+expensive way, an **assumed-background** footer defining the vocabulary it leans on
+without explaining, and **links to the canonical material** — 180 references across
+149 machine-checked URLs.
 
 ---
 
@@ -209,6 +210,36 @@ precise asking, framing, exemplars, critique loops, long-form co-authoring — a
 pure technique with no named artifact to define, and a padded glossary there would
 be worse than none. The validator enforces a minimum of three entries and caps each
 description, so an entry that stops being plain terms fails the build.
+
+---
+
+## Assumed background
+
+`data/primers.mjs` defines what a node **is about**. `data/glossary.mjs` defines
+what it **takes for granted** — the words and systems you need to already know to
+follow the explanation at all: token, prefix, JSON Schema, exit code, egress,
+p95, prompt injection, blast radius, flaky test, cron, symlink.
+
+84 entries, tagged `vocab` (a word or idea) or `system` (a named thing, format or
+protocol). They render in a footer at the very bottom of the node panel —
+deliberately last, because this is a safety net for a reader who got stuck, not
+something to read on the way in.
+
+Entries attach by **matching a node's own text**, so a term only appears where it
+is genuinely used, and anything the node's own primer already defines is
+suppressed so nothing is explained twice on one page. Matching is word-boundary
+anchored and case-sensitive for acronyms — `CI` inside "efficiency" and `race`
+inside "trace" are the obvious way to get this wrong, and an early version of the
+term list was built on exactly that noise.
+
+The validator enforces the shape (unique ids, real `RegExp` patterns, definitions
+short enough to stay quick explainers), fails on any entry whose pattern matches
+no node at all, and fails if a term ever appears in both a node's primer and its
+assumed background. It deliberately does **not** fail on an entry that matches
+nodes but is always suppressed by their primers — that is the dedupe working.
+
+50 of 51 nodes carry a section. Long-form Co-authoring genuinely assumes no
+jargon, so it has none rather than a padded one.
 
 ---
 

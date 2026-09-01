@@ -554,3 +554,26 @@ body[data-view="tutor"] .tutor { display: block; }
   .cap-link { grid-template-columns: 1fr; gap: 5px; }
   .cap-stages li { padding-left: 36px; }
 }
+
+/* ── assumed background (panel footer) ──────────────────────────────────── */
+.p-assumed { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--line); }
+.assumed-note { margin: -3px 0 13px; font-size: 12.5px; line-height: 1.55; color: var(--ink-faint); max-width: 56ch; }
+.assumed-list { margin: 0; padding: 0; display: flex; flex-direction: column; }
+.assumed-row {
+  display: grid; grid-template-columns: minmax(130px, 190px) 1fr; gap: 4px 18px;
+  padding: 10px 0; border-top: 1px solid var(--line-soft);
+}
+.assumed-row dt { min-width: 0; font-size: 13px; font-weight: 600; color: var(--ink);
+  display: flex; align-items: baseline; gap: 7px; flex-wrap: wrap; }
+.assumed-row dd { margin: 0; font-size: 13px; line-height: 1.6; color: var(--ink-soft); }
+.assumed-kind {
+  font-family: var(--mono); font-size: 8.5px; text-transform: uppercase;
+  letter-spacing: .1em; padding: 2px 5px; border-radius: 4px; font-weight: 400;
+  border: 1px solid var(--line); color: var(--ink-faint); flex: 0 0 auto;
+}
+.assumed-vocab  { color: hsl(268 var(--disc-s) var(--disc-l)); border-color: hsl(268 var(--disc-s) var(--disc-l) / .35); }
+.assumed-system { color: hsl(190 var(--disc-s) var(--disc-l)); border-color: hsl(190 var(--disc-s) var(--disc-l) / .35); }
+
+@media (max-width: 620px) {
+  .assumed-row { grid-template-columns: 1fr; gap: 3px; }
+}

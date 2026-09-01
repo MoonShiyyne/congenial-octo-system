@@ -114,6 +114,38 @@ for (const cap of capstones) {
   }
 }
 
+// ── glossary ─────────────────────────────────────────────────────────────
+const { glossary, assumedFor } = await import('../data/glossary.mjs');
+const gIds = new Set();
+for (const g of glossary) {
+  check(!gIds.has(g.id), `glossary: duplicate id "${g.id}"`);
+  gIds.add(g.id);
+  check(g.t?.length > 0 && g.d?.length > 0, `glossary ${g.id}: missing term or definition`);
+  check(['vocab', 'system'].includes(g.k), `glossary ${g.id}: unknown kind "${g.k}"`);
+  check(Array.isArray(g.m) && g.m.length > 0 && g.m.every(r => r instanceof RegExp),
+        `glossary ${g.id}: patterns must be a non-empty array of RegExp`);
+  check((g.d ?? '').length < 260, `glossary ${g.id}: definition is too long to be a quick explainer`);
+}
+
+// An entry that surfaces nowhere is either a broken pattern or clutter. One
+// that matches a node but is suppressed by that node's primer is working
+// correctly — distinguish them, and only fail on the first.
+const gnorm = x => String(x).toLowerCase().replace(/[^a-z0-9]/g, '');
+for (const g of glossary) {
+  const matchesSomething = nodes.some(n => {
+    const text = [n.hook, n.what, n.insight, n.example?.label, n.example?.code].filter(Boolean).join('\n');
+    return g.m.some(rx => rx.test(text));
+  });
+  check(matchesSomething, `glossary ${g.id}: matches no node text — broken pattern or unused entry`);
+}
+// Nothing may be defined twice on the same node.
+for (const n of nodes) {
+  const defined = new Set((primers[n.id]?.items ?? []).map(i => gnorm(i.n)));
+  for (const g of assumedFor(n, primers[n.id])) {
+    check(!defined.has(gnorm(g.t)), `${n.id}: "${g.t}" appears in both its primer and its assumed background`);
+  }
+}
+
 // ── signals ──────────────────────────────────────────────────────────────
 try {
   const s = JSON.parse(await readFile(join(ROOT, 'data/signals.json'), 'utf8'));
@@ -136,4 +168,4 @@ if (fail.length) {
 }
 const refCount = Object.values(resources).flat().length;
 const primerCount = Object.values(primers).reduce((a, p) => a + p.items.length, 0);
-console.error(`✓ ${nodes.length} nodes, ${disciplines.length} disciplines, ${levels.length} levels, ${refCount} references, ${primerCount} primer entries, ${scenarios.length} scenarios, ${capstones.length} capstones — valid`);
+console.error(`✓ ${nodes.length} nodes, ${disciplines.length} disciplines, ${levels.length} levels, ${refCount} references, ${primerCount} primer entries, ${scenarios.length} scenarios, ${capstones.length} capstones, ${glossary.length} glossary entries — valid`);

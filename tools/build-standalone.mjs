@@ -23,6 +23,7 @@ const { resources } = await import('../data/resources.mjs');
 const { primers } = await import('../data/primers.mjs');
 const { scenarios } = await import('../data/scenarios.mjs');
 const { capstones } = await import('../data/capstones.mjs');
+const glossarySrc = await read('data/glossary.mjs');
 
 // Body content only; the Artifact host supplies the document skeleton.
 const body = html.match(/<body>([\s\S]*?)<\/body>/)[1]
@@ -42,7 +43,12 @@ const inlined = js
   .replace(/^import \{[^}]*\} from '\.\.\/data\/scenarios\.mjs';$/m,
     `const scenarios = ${JSON.stringify(scenarios)};`)
   .replace(/^import \{[^}]*\} from '\.\.\/data\/capstones\.mjs';$/m,
-    `const capstones = ${JSON.stringify(capstones)};`);
+    `const capstones = ${JSON.stringify(capstones)};`)
+  // glossary.mjs exports a function as well as data, so its source is inlined
+  // rather than serialised. Its top-level names are prefixed (GV/GS/gnorm) so
+  // they cannot collide with anything in app.js.
+  .replace(/^import \{[^}]*\} from '\.\.\/data\/glossary\.mjs';$/m,
+    glossarySrc.replace(/^export /gm, ''));
 
 if (/^import /m.test(inlined)) throw new Error('an import survived bundling — the build would ship an unresolvable module');
 

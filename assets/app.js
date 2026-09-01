@@ -3,6 +3,7 @@ import { resources } from '../data/resources.mjs';
 import { primers } from '../data/primers.mjs';
 import { scenarios } from '../data/scenarios.mjs';
 import { capstones } from '../data/capstones.mjs';
+import { assumedFor } from '../data/glossary.mjs';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const VB = 1000, C = VB / 2;            // geometry box, centre
@@ -430,6 +431,23 @@ function openCapstone(discId) {
     .forEach(b => b.addEventListener('click', () => openPanel(b.dataset.goto)));
 }
 
+// Sits at the very bottom of the panel: the words the node leans on without
+// stopping to define. Deliberately last — it is a safety net for a reader who
+// got stuck, not something to read on the way in.
+function renderAssumed(n) {
+  const terms = assumedFor(n, primers[n.id]);
+  if (!terms.length) return '';
+  return `<div class="p-sec p-assumed">
+    <h3>Assumed background</h3>
+    <p class="assumed-note">Vocabulary and systems this node uses without stopping to explain them.</p>
+    <dl class="assumed-list">${terms.map(g => `
+      <div class="assumed-row">
+        <dt><span class="assumed-kind assumed-${g.k}">${g.k}</span>${esc(g.t)}</dt>
+        <dd>${rich(g.d)}</dd>
+      </div>`).join('')}</dl>
+  </div>`;
+}
+
 function openPanel(id) {
   const n = nodeOf(id); if (!n) return;
   const d = discOf(n.d), lv = levels[n.lvl - 1];
@@ -495,6 +513,8 @@ function openPanel(id) {
         <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join('')}</ul>`
       : `<p class="rail-note">No recent signals matched this node. The sidebar refreshes on a schedule; new ones attach here automatically.</p>`}
     </div>
+
+    ${renderAssumed(n)}
 
     <div class="p-done">
       <button id="mark-done" aria-pressed="${state.learned.has(id)}">
