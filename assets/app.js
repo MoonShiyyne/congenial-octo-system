@@ -385,6 +385,7 @@ function openCapstone(discId) {
   const chip = m => `<button data-goto="${m.id}"><span class="swatch" style="background:${colour(m.d)}"></span>${esc(m.title)}</button>`;
 
   el('panel-content').innerHTML = `
+    <header class="p-head">
     <div class="p-crumb">
       <span class="swatch" style="background:${colour(discId)}"></span>
       <span style="color:${colour(discId)}">${esc(d.name)}</span>
@@ -393,6 +394,9 @@ function openCapstone(discId) {
     <h2 id="panel-title">${esc(cap.title)}</h2>
     <p class="p-tag">${esc(cap.tagline)}</p>
 
+    </header>
+    <div class="p-grid">
+    <div class="p-main">
     <div class="cap-what">${cap.brief.split(/\n\n+/).map(p => `<p>${rich(p)}</p>`).join('')}</div>
 
     <div class="p-sec">
@@ -410,6 +414,9 @@ function openCapstone(discId) {
       <h3>You have understood this if</h3>
       <ul class="cap-proof">${cap.proof.map(x => `<li>${rich(x)}</li>`).join('')}</ul>
     </div>
+    </div>
+
+    <div class="p-side">
 
     <div class="p-sec">
       <h3>What reveals you have not</h3>
@@ -421,7 +428,8 @@ function openCapstone(discId) {
       <div class="p-links">${own.map(chip).join('')}</div>
       ${borrowed.length ? `<p class="cap-borrow">Plus ${borrowed.length} from other disciplines — a capstone that never leaves its own sector is not a real project.</p>
         <div class="p-links">${borrowed.map(chip).join('')}</div>` : ''}
-    </div>`;
+    </div>
+    </div></div>`;
 
   el('panel').dataset.node = '';
   el('panel').hidden = false;
@@ -460,6 +468,7 @@ function openPanel(id) {
   const chip = m => `<button data-goto="${m.id}"><span class="swatch" style="background:${colour(m.d)}"></span>${esc(m.title)}</button>`;
 
   el('panel-content').innerHTML = `
+    <header class="p-head">
     <div class="p-crumb">
       <span class="swatch" style="background:${colour(n.d)}"></span>
       <span style="color:${colour(n.d)}">${esc(d.name)}</span>
@@ -468,9 +477,19 @@ function openPanel(id) {
     <h2 id="panel-title">${esc(n.title)}</h2>
     <p class="p-tag">${esc(n.tag)}</p>
     <p class="p-hook">${esc(n.hook)}</p>
+    </header>
+    <div class="p-grid">
+    <div class="p-main">
     ${renderPrimer(id)}
     <div class="p-what">${n.what.split(/\n\n+/).map(p => `<p>${rich(p)}</p>`).join('')}</div>
 
+    <div class="p-sec">
+      <h3>The non-obvious part</h3>
+      <p class="p-insight">${rich(n.insight)}</p>
+    </div>
+    </div>
+
+    <div class="p-side">
     ${diagrams[id] ? `<figure class="p-figure">
       ${diagrams[id].svg}
       <figcaption>${rich(diagrams[id].caption)}</figcaption>
@@ -482,11 +501,6 @@ function openPanel(id) {
         <div class="p-ex-head"><span>${esc(n.example.label)}</span><span class="p-ex-lang">${esc(n.example.lang)}</span></div>
         <pre><code>${esc(n.example.code)}</code></pre>
       </div>
-    </div>
-
-    <div class="p-sec">
-      <h3>The non-obvious part</h3>
-      <p class="p-insight">${rich(n.insight)}</p>
     </div>
 
     <div class="p-sec">
@@ -521,6 +535,8 @@ function openPanel(id) {
     </div>
 
     ${renderAssumed(n)}
+    </div>
+    </div>
 
     <div class="p-done">
       <button id="mark-done" aria-pressed="${state.learned.has(id)}">
@@ -546,6 +562,18 @@ function openPanel(id) {
 
   state.lit = id; paint();
 }
+
+const WIDE_KEY = 'cpw.panelwide.v1';
+function setWide(on) {
+  el('panel').classList.toggle('expanded', on);
+  const b = el('panel-expand');
+  b.setAttribute('aria-pressed', String(on));
+  b.title = on ? 'Narrow the panel' : 'Widen to full screen';
+  b.textContent = on ? '⤡' : '⤢';
+  try { localStorage.setItem(WIDE_KEY, on ? '1' : '0'); } catch { /* private mode */ }
+}
+el('panel-expand').addEventListener('click', () => setWide(!el('panel').classList.contains('expanded')));
+try { setWide(localStorage.getItem(WIDE_KEY) === '1'); } catch { setWide(false); }
 
 function closePanel() {
   el('panel').hidden = true;

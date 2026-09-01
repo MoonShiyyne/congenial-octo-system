@@ -213,6 +213,24 @@ description, so an entry that stops being plain terms fails the build.
 
 ---
 
+## The node panel
+
+Two widths. The default is 1000px — wide enough that a 660-viewBox figure renders
+at about 1.34×, and the plain-terms table stops wrapping. The **⤢ button** widens
+it to the full viewport and switches to two columns: the explanation on the left,
+the mechanism diagram and worked example on the right, so the picture stays
+visible beside the prose describing it. The choice persists per browser.
+
+Prose keeps its own measure (`68ch`) whatever the shell does, so the extra width
+goes to the figures and code blocks that need it rather than stretching lines
+nobody can track. Below 900px the wide mode collapses back to one column.
+
+The markup is `head / main / side / foot`; in the default width the grid is
+`display: block`, so a single column falls out of source order with no separate
+code path. The capstone panel reuses the same shell.
+
+---
+
 ## Mechanism diagrams
 
 28 of the 51 nodes carry a hand-authored inline SVG in `data/diagrams.mjs`,

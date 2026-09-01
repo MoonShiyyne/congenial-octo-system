@@ -141,7 +141,10 @@
 <!-- ── node detail panel ──────────────────────────────────────── -->
 <div id="panel-scrim" class="scrim" hidden></div>
 <article id="panel" class="panel" hidden aria-labelledby="panel-title" tabindex="-1">
-  <button id="panel-close" class="panel-close" aria-label="Close">×</button>
+  <div class="panel-tools">
+    <button id="panel-expand" class="panel-btn" aria-pressed="false" title="Widen to full screen" aria-label="Toggle panel width">⤢</button>
+    <button id="panel-close" class="panel-btn" aria-label="Close">×</button>
+  </div>
   <div id="panel-content"></div>
 </article>
 
