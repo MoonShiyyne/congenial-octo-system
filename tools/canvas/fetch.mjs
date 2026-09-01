@@ -16,8 +16,11 @@ import { createClient } from './client.mjs';
 
 const CONCURRENCY = 4;      // polite against a shared university instance
 
-export async function fetchSnapshot({ host, token, termFilter, courseFilter, includeConcluded = false, log = console.error }) {
-  const api = createClient({ host, token, log: () => {} });
+export async function fetchSnapshot({
+  host, token, session = false, transport,
+  termFilter, courseFilter, includeConcluded = false, log = console.error,
+}) {
+  const api = createClient({ host, token, session, transport, log: () => {} });
 
   const self = await api.get('/users/self/profile');
   log(`✓ signed in as ${self?.name ?? 'unknown user'} (${self?.primary_email ?? self?.login_id ?? 'no email'})`);

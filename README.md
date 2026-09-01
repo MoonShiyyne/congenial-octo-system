@@ -270,9 +270,10 @@ wrapped in `try/catch` because private windows throw rather than return empty.
 
 ## The Canvas prep-brief tool
 
-`tools/canvas-brief.mjs` is separate from the web above: it reads a **Canvas
-LMS** account and writes a short brief for every course and every assignment,
-plus one index across all of them.
+Separate from the web above: it reads a **Canvas LMS** account and writes a short brief
+for every course and every assignment, plus one index across all of them. There are two
+ways in, sharing one implementation — a **CLI** that writes the briefs to disk, and a
+**browser extension** that puts them in the Canvas tab itself and needs no access token.
 
 ```bash
 node tools/canvas-brief.mjs --demo          # three sample courses, no account needed
@@ -365,6 +366,63 @@ An access token grants everything your account can see. Pass it in `CANVAS_TOKEN
 rather than on the command line, where it lands in shell history, and delete it in
 Canvas when you are done.
 
+### The browser extension
+
+The CLI needs a host, an access token and a terminal. The extension needs a Canvas
+tab. It is the same analysis — `extension/lib/` is a copy of `tools/canvas/`, made by
+the build — reached by clicking a button.
+
+```bash
+node tools/build-extension.mjs        # copies the shared modules, draws the icons
+```
+
+Then **chrome://extensions** → Developer mode → **Load unpacked** → pick `extension/`.
+Open any Canvas page and click the toolbar icon. Chrome, Edge, Brave, Arc — anything on
+Chromium. `--zip` writes `dist/canvas-prep-briefs.zip` if you want to hand it to someone.
+
+**No token, because it does not need one.** A Canvas tab is already authenticated: the
+session cookie is right there. The service worker cannot use it — its own requests are
+cross-site, so the cookie is not attached, and it would need a token again, which is the
+setup step the extension exists to remove. So the worker does not fetch. It builds each
+request and hands it to the content script *in the Canvas tab*, where the same url is
+same-origin and the cookie goes with it. That is what the client's injected transport is
+for; nothing else about the client changes.
+
+Session-authenticated Canvas has one wrinkle a token does not: every response is
+prefixed with `while(1);`, so that a hostile page cannot load an API url in a `<script>`
+tag and read your data out of the array literal. It is not JSON. `JSON.parse` on it
+throws a syntax error that looks nothing like its actual cause.
+
+**Where the brief appears matters more than what is in it.** On an assignment page the
+card is inserted directly above the assignment — weight, start-by date, estimated hours,
+the heaviest rubric criterion — because that is the moment the question is being asked.
+The panel is for everything else: this course, what is due, the week, announcements that
+may have moved a deadline. It opens on whatever you are looking at.
+
+The card draws only from cache and never triggers a pull. Opening a page is not the same
+as asking to have your account read, and an extension that reads everything because you
+clicked a link is not one worth installing. The pull happens when you ask for it.
+
+Permissions are `storage`, `activeTab`, `scripting`, and `*.instructure.com`. Plenty of
+universities host Canvas on their own domain; rather than request `<all_urls>` for that,
+the extension leans on `activeTab` — clicking the toolbar button grants access to that
+one tab, and the content script is injected on demand. Everything it pulls stays in
+`chrome.storage.local` on your machine, for thirty minutes, and **Forget data** in the
+footer deletes it.
+
+The panel renders through a shadow root, so Canvas's stylesheet cannot reach it and it
+cannot reach Canvas's. Everything is built with `createElement` and `textContent`, never
+`innerHTML` — the strings passing through are instructor-written course text, and a
+syllabus should not be able to run as script because it was interpolated into a template.
+The dashboard opens in a sandboxed frame with no privileges at all, for the same reason.
+
+`tools/test-extension.mjs` loads the built extension into a real Chromium and drives it
+against a stand-in Canvas that reproduces the `while(1);` prefix, Link-header pagination
+and a 403 on one course's files. It found a bug that reading the CSS would not have:
+without `min-height: 0` the scrolling pane grew to fit a long brief and pushed the footer
+buttons off the bottom of the screen. Playwright is not a dependency of this repo — the
+script skips and exits 0 when it is absent.
+
 ### Files
 
 | | |
@@ -381,6 +439,11 @@ Canvas when you are done.
 | `tools/canvas/dashboard.mjs` | the self-contained HTML page |
 | `tools/canvas/canvas.test.mjs` | 52 tests, one per judgement call |
 | `data/canvas-demo.json` | synthetic three-course snapshot |
+| `tools/build-extension.mjs` | assembles `extension/`, draws the icons, zips it |
+| `tools/test-extension.mjs` | drives the extension in a real browser |
+| `extension/background.js` | the worker: pulls, analyses, has no DOM |
+| `extension/content.js` | the way out to the API, the panel, the card |
+| `extension/viewer.html` | the dashboard tab |
 
 The tests pin the cases where a plausible parser reads a syllabus wrongly and the wrong
 reading is silent: `R` is Thursday but `WAR` is not three weekdays, a bare `2:00` in a

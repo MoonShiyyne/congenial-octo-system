@@ -1,7 +1,7 @@
 /**
  * A small Canvas LMS REST client — no dependencies, no SDK.
  *
- * Two things about the Canvas API that a naive `fetch` loop gets wrong, and
+ * Three things about the Canvas API that a naive `fetch` loop gets wrong, and
  * that this file exists to handle:
  *
  *   1. Pagination is in the `Link` header, not the body. A course with 60
@@ -12,6 +12,18 @@
  *      answering 403 with a "Rate Limit Exceeded" body rather than 429, so a
  *      retry policy keyed on 429 alone will read that as an auth failure and
  *      give up on a token that is perfectly valid.
+ *   3. Session-authenticated responses are prefixed with `while(1);` — Canvas's
+ *      guard against a third-party site loading an API url as a `<script>` and
+ *      reading the array literal. It is not JSON, and `JSON.parse` on it throws
+ *      a syntax error that looks nothing like the "you are signed in with a
+ *      cookie" that actually caused it.
+ *
+ * **Transport is injected.** The default one is `fetch`, which is what the CLI
+ * uses with a bearer token. The browser extension supplies its own, which
+ * relays each request to a content script so it goes out same-origin from the
+ * Canvas tab and carries the session cookie the user already has. Same client,
+ * same pagination and retry behaviour, two very different ways of proving who
+ * you are — and no second implementation to keep in step.
  */
 
 const USER_AGENT = 'canvas-prep-brief/1.0';
@@ -30,6 +42,25 @@ export function nextLink(header) {
   return null;
 }
 
+/**
+ * Canvas prefixes session-authenticated JSON with `while(1);` so that a hostile
+ * page cannot load an API url in a `<script>` tag and read the result. Harmless
+ * to strip when it is absent, fatal to leave when it is not.
+ */
+export function stripGuard(body) {
+  return String(body ?? '').replace(/^\s*while\s*\(1\)\s*;?/, '');
+}
+
+const parse = body => JSON.parse(stripGuard(body));
+
+/** The default transport: plain `fetch`, with headers flattened for the client. */
+async function fetchTransport(url, { headers }) {
+  const res = await fetch(url, { headers, signal: AbortSignal.timeout(45_000) });
+  const flat = {};
+  res.headers.forEach((v, k) => { flat[k.toLowerCase()] = v; });
+  return { status: res.status, ok: res.ok, body: await res.text(), headers: flat };
+}
+
 /** Strips a trailing slash and any `/api/v1` the user pasted in. */
 export function normaliseHost(host) {
   let h = String(host ?? '').trim();
@@ -38,9 +69,12 @@ export function normaliseHost(host) {
   return h.replace(/\/+$/, '').replace(/\/api\/v1$/, '');
 }
 
-export function createClient({ host, token, perPage = 100, maxPages = 40, log = () => {} }) {
+export function createClient({
+  host, token, session = false, transport = fetchTransport,
+  perPage = 100, maxPages = 40, log = () => {},
+} = {}) {
   const base = `${normaliseHost(host)}/api/v1`;
-  if (!token) throw new Error('no Canvas API token given');
+  if (!token && !session) throw new Error('no Canvas API token given, and not in session mode');
 
   /** Budget left in the leaky bucket; used to slow down before we get cut off. */
   let remaining = Infinity;
@@ -49,48 +83,52 @@ export function createClient({ host, token, perPage = 100, maxPages = 40, log = 
     let lastErr;
     for (let i = 0; i < attempts; i++) {
       if (remaining < 100) await sleep(1500);      // ease off before the wall
-      let res, body;
+      let res;
       try {
-        res = await fetch(url, {
-          headers: {
-            authorization: `Bearer ${token}`,
-            accept: 'application/json',
-            'user-agent': USER_AGENT,
-          },
-          signal: AbortSignal.timeout(45_000),
-        });
-        body = await res.text();
+        res = await transport(url, { headers: requestHeaders() });
       } catch (err) {
         lastErr = err;
         if (i < attempts - 1) await sleep(1000 * 2 ** i);
         continue;
       }
+      const { status, body, headers = {} } = res;
+      const ok = res.ok ?? (status >= 200 && status < 300);
 
-      const budget = Number(res.headers.get('x-rate-limit-remaining'));
+      const budget = Number(headers['x-rate-limit-remaining']);
       if (Number.isFinite(budget)) remaining = budget;
 
-      if (res.ok) return { body, headers: res.headers };
+      if (ok) return { body, headers };
 
       // 403 is ambiguous in Canvas: a real permission failure, or the rate
       // limiter. Only the body tells them apart, and only one is retryable.
-      const throttled = res.status === 429 || (res.status === 403 && isRateLimitBody(body));
-      if (throttled || res.status >= 500) {
-        lastErr = new Error(`HTTP ${res.status}${throttled ? ' (rate limited)' : ''}`);
+      const throttled = status === 429 || (status === 403 && isRateLimitBody(body));
+      if (throttled || status >= 500) {
+        lastErr = new Error(`HTTP ${status}${throttled ? ' (rate limited)' : ''}`);
         if (i < attempts - 1) { await sleep(2000 * 2 ** i); continue; }
       } else {
-        const err = new Error(`HTTP ${res.status} — ${firstLine(body)}`);
-        err.status = res.status;
+        const err = new Error(`HTTP ${status} — ${firstLine(body)}`);
+        err.status = status;
         throw err;
       }
     }
     throw lastErr ?? new Error('request failed');
   }
 
+  /** Headers to send. In session mode the cookie is the credential. */
+  function requestHeaders() {
+    const h = { accept: 'application/json' };
+    if (token) h.authorization = `Bearer ${token}`;
+    // A content script cannot set user-agent, and the browser's own is right
+    // there anyway; only the CLI has a reason to identify itself.
+    if (!session) h['user-agent'] = USER_AGENT;
+    return h;
+  }
+
   /** One resource. Returns null on 404/403 rather than throwing. */
   async function get(path, params) {
     try {
       const { body } = await raw(url(path, params));
-      return JSON.parse(body);
+      return parse(body);
     } catch (err) {
       if (err.status === 404 || err.status === 403) return null;
       throw err;
@@ -106,10 +144,10 @@ export function createClient({ host, token, perPage = 100, maxPages = 40, log = 
       // "this course has no modules" produce identical empty arrays, and only
       // the caller can say which one belongs in the brief.
       const res = await raw(target);
-      const chunk = JSON.parse(res.body);
+      const chunk = parse(res.body);
       if (!Array.isArray(chunk)) return chunk;
       out.push(...chunk);
-      target = nextLink(res.headers.get('link'));
+      target = nextLink(res.headers.link);
       if (target) log(`  …page ${page + 2} of ${path}`);
     }
     return out;
