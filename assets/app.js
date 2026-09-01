@@ -410,13 +410,13 @@ function openCapstone(discId) {
         </li>`).join('')}</ol>
     </div>
 
+    </div>
+
+    <div class="p-side">
     <div class="p-sec">
       <h3>You have understood this if</h3>
       <ul class="cap-proof">${cap.proof.map(x => `<li>${rich(x)}</li>`).join('')}</ul>
     </div>
-    </div>
-
-    <div class="p-side">
 
     <div class="p-sec">
       <h3>What reveals you have not</h3>
