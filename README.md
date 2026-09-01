@@ -8,7 +8,7 @@ Every node carries a plain-terms glossary of the things it names, an in-depth
 explanation, a worked example, the non-obvious detail that is usually learned the
 expensive way, an **assumed-background** footer defining the vocabulary it leans on
 without explaining, and **links to the canonical material** — 180 references across
-149 machine-checked URLs.
+149 machine-checked URLs. 28 nodes also carry a **mechanism diagram**.
 
 ---
 
@@ -210,6 +210,45 @@ precise asking, framing, exemplars, critique loops, long-form co-authoring — a
 pure technique with no named artifact to define, and a padded glossary there would
 be worse than none. The validator enforces a minimum of three entries and caps each
 description, so an entry that stops being plain terms fails the build.
+
+---
+
+## Mechanism diagrams
+
+28 of the 51 nodes carry a hand-authored inline SVG in `data/diagrams.mjs`,
+placed between the explanation and the worked example so it consolidates the
+mechanism the prose just described.
+
+The bar for including one: **a diagram earns its place only where it lets a cold
+reader see something they would otherwise assemble from prose** — where data
+flows, what changes between two options, what state a request moves through. So
+the caching node gets one (the prefix match and what invalidates it), and the
+precise-asking node does not, because a sentence says it faster. Advisory nodes
+have none by design; the split runs 7 in Context, 7 in Agents, 5 in Platform &
+Scale, 4 in Code, 3 in Craft, 2 in Reasoning.
+
+They are drawn as mechanisms rather than labelled boxes. MCP is `N×M` bespoke
+integrations beside `N+M` through a protocol. The agent-loop node is a 2×2 of
+harness against hosting, with one empty square. Refusals is the `stop_reason`
+branch tree with the refusal path marked as a 200 that raises nothing.
+
+Conventions, because every figure ends up in the same document:
+
+- **Marker ids are namespaced per node.** A bare `id="arrow"` would collide across
+  28 inlined figures and every arrowhead would resolve to whichever was parsed
+  first. The validator fails on a duplicate id.
+- **`currentColor` for strokes and text**, so both themes work, with
+  `var(--accent)` reserved for the element the argument turns on and a green/red
+  pair for correct-versus-broken paths that reads on either ground.
+- **Self-contained** — no `<script>`, `<style>`, `<foreignObject>` or external
+  references, all enforced by the validator.
+- **`role="img"` plus an `aria-label`** carrying the same claim as the
+  `<figcaption>`, for readers who cannot see the drawing.
+
+Figures scroll inside their own container so the page body never scrolls
+sideways. A browser check walks all 28 in both themes and compares each SVG's
+rendered bounding box against its `viewBox`, because content drawn outside the
+box is clipped silently rather than erroring.
 
 ---
 

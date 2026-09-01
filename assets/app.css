@@ -246,7 +246,7 @@ a { color: var(--accent); }
 /* ── node panel ─────────────────────────────────────────────────────────── */
 .scrim { position: fixed; inset: 0; background: rgba(10,8,20,.5); z-index: 40; }
 .panel {
-  position: fixed; top: 0; right: 0; bottom: 0; width: min(660px, 94vw); z-index: 41;
+  position: fixed; top: 0; right: 0; bottom: 0; width: min(772px, 96vw); z-index: 41;
   background: var(--panel); border-left: 1px solid var(--line); box-shadow: var(--shadow);
   overflow-y: auto; padding: 30px 36px 60px;
 }
@@ -577,3 +577,16 @@ body[data-view="tutor"] .tutor { display: block; }
 @media (max-width: 620px) {
   .assumed-row { grid-template-columns: 1fr; gap: 3px; }
 }
+
+/* ── mechanism figures ──────────────────────────────────────────────────── */
+.p-figure {
+  margin: 26px 0 0; padding: 20px 20px 16px; border-radius: 12px;
+  background: var(--bg-sunk); border: 1px solid var(--line);
+  overflow-x: auto;                    /* wide figures scroll, the page never does */
+}
+.p-figure svg { display: block; width: 100%; min-width: 560px; height: auto; color: var(--ink); }
+.p-figure figcaption {
+  margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line);
+  font-size: 12.5px; line-height: 1.6; color: var(--ink-soft); max-width: 62ch;
+}
+.p-figure figcaption code { font-family: var(--mono); font-size: .88em; }

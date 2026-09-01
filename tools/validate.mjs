@@ -146,6 +146,28 @@ for (const n of nodes) {
   }
 }
 
+// ── diagrams ─────────────────────────────────────────────────────────────
+const { diagrams } = await import('../data/diagrams.mjs');
+const markerIds = new Set();
+for (const [id, fig] of Object.entries(diagrams)) {
+  check(ids.has(id), `diagram: unknown node "${id}"`);
+  check(fig.caption?.length > 0, `diagram ${id}: no caption`);
+  check(fig.alt?.length > 0, `diagram ${id}: no alt text`);
+  check(/^<svg /.test(fig.svg?.trim() ?? ''), `diagram ${id}: does not start with <svg`);
+  check(/viewBox="0 0 \d+ \d+"/.test(fig.svg ?? ''), `diagram ${id}: missing a numeric viewBox`);
+  check(/role="img"/.test(fig.svg ?? ''), `diagram ${id}: missing role="img"`);
+  check(/aria-label="/.test(fig.svg ?? ''), `diagram ${id}: missing aria-label`);
+  // Self-contained: no script, style, foreignObject or external references.
+  for (const banned of ['<script', '<style', '<foreignObject', 'xlink:href', 'http://', 'https://']) {
+    check(!(fig.svg ?? '').includes(banned), `diagram ${id}: contains "${banned}"`);
+  }
+  // Every figure lands in the same document, so a bare id="arrow" would collide.
+  for (const m of (fig.svg ?? '').matchAll(/id="([^"]+)"/g)) {
+    check(!markerIds.has(m[1]), `diagram ${id}: marker id "${m[1]}" collides with another figure`);
+    markerIds.add(m[1]);
+  }
+}
+
 // ── signals ──────────────────────────────────────────────────────────────
 try {
   const s = JSON.parse(await readFile(join(ROOT, 'data/signals.json'), 'utf8'));
@@ -168,4 +190,4 @@ if (fail.length) {
 }
 const refCount = Object.values(resources).flat().length;
 const primerCount = Object.values(primers).reduce((a, p) => a + p.items.length, 0);
-console.error(`✓ ${nodes.length} nodes, ${disciplines.length} disciplines, ${levels.length} levels, ${refCount} references, ${primerCount} primer entries, ${scenarios.length} scenarios, ${capstones.length} capstones, ${glossary.length} glossary entries — valid`);
+console.error(`✓ ${nodes.length} nodes, ${disciplines.length} disciplines, ${levels.length} levels, ${refCount} references, ${primerCount} primer entries, ${scenarios.length} scenarios, ${capstones.length} capstones, ${glossary.length} glossary entries, ${Object.keys(diagrams).length} diagrams — valid`);

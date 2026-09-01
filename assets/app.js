@@ -4,6 +4,7 @@ import { primers } from '../data/primers.mjs';
 import { scenarios } from '../data/scenarios.mjs';
 import { capstones } from '../data/capstones.mjs';
 import { assumedFor } from '../data/glossary.mjs';
+import { diagrams } from '../data/diagrams.mjs';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const VB = 1000, C = VB / 2;            // geometry box, centre
@@ -469,6 +470,11 @@ function openPanel(id) {
     <p class="p-hook">${esc(n.hook)}</p>
     ${renderPrimer(id)}
     <div class="p-what">${n.what.split(/\n\n+/).map(p => `<p>${rich(p)}</p>`).join('')}</div>
+
+    ${diagrams[id] ? `<figure class="p-figure">
+      ${diagrams[id].svg}
+      <figcaption>${rich(diagrams[id].caption)}</figcaption>
+    </figure>` : ''}
 
     <div class="p-sec">
       <h3>Worked example — ${esc(n.example.label)}</h3>
