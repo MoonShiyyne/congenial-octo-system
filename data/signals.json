@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-02T16:32:50.281Z",
+ "generated": "2026-09-02T21:01:37.706Z",
  "itemCount": 83,
  "sourceStatus": [
   {
@@ -633,6 +633,23 @@
    "application": true
   },
   {
+   "id": "94d0dx",
+   "title": "Show HN: Orchestrate parallel Claude Code and Codex agents on a live map",
+   "summary": "",
+   "url": "https://github.com/Latand/live-log-viewer-next",
+   "discussion": "https://news.ycombinator.com/item?id=48804797",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "4 pts",
+   "date": "2026-07-06T14:06:25Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
    "id": "9m1dvn",
    "title": "Show HN: Make your terminal pulse orange when Claude Code needs input",
    "summary": "",
@@ -643,6 +660,23 @@
    "category": "market",
    "badge": "3 pts",
    "date": "2026-07-03T19:04:49Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "7i82b8",
+   "title": "Show HN: Pull Claude Code transcripts into your Codex session, and vice versa",
+   "summary": "",
+   "url": "https://contextify.sh/",
+   "discussion": "https://news.ycombinator.com/item?id=48777790",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "7 pts",
+   "date": "2026-07-03T17:50:59Z",
    "nodes": [
     "k-cli"
    ],
@@ -665,41 +699,6 @@
    ],
    "relevance": 3,
    "application": false
-  },
-  {
-   "id": "myhumj",
-   "title": "Show HN: Caliper – pass@k reliability testing for Claude Code and Codex skills",
-   "summary": "",
-   "url": "https://github.com/edonadei/caliper",
-   "discussion": "https://news.ycombinator.com/item?id=48709606",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "3 pts",
-   "date": "2026-06-28T17:42:41Z",
-   "nodes": [
-    "k-cli",
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "cya2eo",
-   "title": "Show HN: Statey – the database your AI shares across every chat, over MCP",
-   "summary": "",
-   "url": "https://www.statey.ai",
-   "discussion": "https://news.ycombinator.com/item?id=48691461",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "4 pts",
-   "date": "2026-06-26T20:18:33Z",
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 3,
-   "application": true
   },
   {
    "id": "haqhq7",
@@ -1471,7 +1470,6 @@
    "1pwvvgd",
    "13xt578",
    "qqjnqh",
-   "myhumj",
    "1jovicv",
    "1rta0q9",
    "1paf9pw",
@@ -1487,7 +1485,6 @@
   ],
   "a-mcp": [
    "5envg7",
-   "cya2eo",
    "sv0i6",
    "98y0rf",
    "11fgxe",
@@ -1518,9 +1515,10 @@
    "1x163pl",
    "11wcs",
    "8kcnsx",
+   "94d0dx",
    "9m1dvn",
+   "7i82b8",
    "1euvjgd",
-   "myhumj",
    "haqhq7",
    "rq0kwf",
    "68j9su",
@@ -1723,6 +1721,14 @@
    "url": "https://github.com/exmergo/dex"
   },
   {
+   "id": "94d0dx",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Orchestrate parallel Claude Code and Codex agents on a live map",
+   "url": "https://github.com/Latand/live-log-viewer-next"
+  },
+  {
    "id": "9m1dvn",
    "node": "k-cli",
    "nodeTitle": "Claude Code",
@@ -1731,20 +1737,12 @@
    "url": "https://github.com/rickardstureborg/claude-needs-input"
   },
   {
-   "id": "myhumj",
+   "id": "7i82b8",
    "node": "k-cli",
    "nodeTitle": "Claude Code",
    "discipline": "code",
-   "title": "Show HN: Caliper – pass@k reliability testing for Claude Code and Codex skills",
-   "url": "https://github.com/edonadei/caliper"
-  },
-  {
-   "id": "cya2eo",
-   "node": "a-mcp",
-   "nodeTitle": "MCP",
-   "discipline": "agents",
-   "title": "Show HN: Statey – the database your AI shares across every chat, over MCP",
-   "url": "https://www.statey.ai"
+   "title": "Show HN: Pull Claude Code transcripts into your Codex session, and vice versa",
+   "url": "https://contextify.sh/"
   },
   {
    "id": "rq0kwf",
