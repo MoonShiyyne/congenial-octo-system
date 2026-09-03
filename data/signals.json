@@ -1,13 +1,13 @@
 {
- "generated": "2026-09-02T21:01:37.706Z",
- "itemCount": 83,
+ "generated": "2026-09-03T04:20:57.650Z",
+ "itemCount": 82,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 325,
-   "kept": 127
+   "fetched": 301,
+   "kept": 122
   },
   {
    "id": "python-sdk-changelog",
@@ -56,27 +56,93 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 11
+   "kept": 10
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": true,
    "fetched": 20,
-   "kept": 7
+   "kept": 6
   }
  ],
  "items": [
   {
-   "id": "1unvvl",
-   "title": "Adaptive Critical Token-Aware Retrieval for Repository-Level Code Generation",
-   "summary": "The repository-level code generation task requires synthesizing code that satisfies task requirements while remaining consistent with the target repository context. Since real-world repositories often exceed the input length limits of LLMs, existing approaches commonly adopt retrieval-augmented generation (RAG) to pro…",
-   "url": "http://arxiv.org/abs/2609.01601v1",
+   "id": "7gxg7d",
+   "title": "EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction",
+   "summary": "Evaluating LLM agents is essential for guiding their development, yet it has grown prohibitively expensive: a single pass of a frontier model over an agentic benchmark can cost hundreds to thousands of dollars, a price paid repeatedly across iterative development cycles. Prior efforts, centered on benchmark distillati…",
+   "url": "http://arxiv.org/abs/2609.02783v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-01T17:59:39Z",
+   "date": "2026-09-02T16:15:18Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "xl489o",
+   "title": "CodePoisonRAG: Knowledge Poisoning Attacks on Retrieval-Augmented Code Generation",
+   "summary": "Retrieval-Augmented Code Generation (RACG) improves LLM-based software development by retrieving external code artifacts, documentation, and patches, and incorporating them into the generation context. This reliance on external knowledge introduces a critical trust boundary: poisoned artifacts can influence generated…",
+   "url": "http://arxiv.org/abs/2609.02774v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-02T16:11:01Z",
+   "nodes": [
+    "f-artifacts",
+    "c-retrieval"
+   ],
+   "relevance": 5,
+   "application": false
+  },
+  {
+   "id": "8k9agd",
+   "title": "ACLE-MCP: Attested Capability Leases for Execution-Time Trust in Remote LLM Tool Use",
+   "summary": "Remote Model Context Protocol (MCP) services enable large language model agents to invoke external tools, but OAuth authorization alone does not ensure that a later tool call is executed by the provider-side workload that the relying party intended to trust. An endpoint may remain authorized even after execution shift…",
+   "url": "http://arxiv.org/abs/2609.02690v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-02T14:58:17Z",
+   "nodes": [
+    "a-mcp",
+    "a-tools"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "3jhtia",
+   "title": "A Finger on the Scale: Covert Policy Steering through Agentic Skills",
+   "summary": "Reusable agent skills extend large language model (LLM) agents with task procedures, tool-use guidance, and output constraints. Yet these skills also act as externalized behavioral policies, which create a supply-chain risk: a third-party skill may preserve the declared task and valid output interface while covertly r…",
+   "url": "http://arxiv.org/abs/2609.02564v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-02T13:15:14Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "9x9457",
+   "title": "ViSAR: Training-Free Adaptive-$k$ Retrieval for Visual Document Question Answering",
+   "summary": "Document Visual Question Answering (DocVQA) often leverages Retrieval-Augmented Generation (RAG), where late-interaction encoders are commonly used to identify document pages relevant to a user query, before answer generation by a Large Vision-Language Model (LVLM). Existing approaches typically retrieve a fixed top-$…",
+   "url": "http://arxiv.org/abs/2609.02486v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-02T11:54:58Z",
    "nodes": [
     "c-retrieval"
    ],
@@ -84,17 +150,116 @@
    "application": false
   },
   {
-   "id": "wlzad0",
-   "title": "GlossoGen: Emergent Language in Complex Multi-Agent LLM Interactions",
-   "summary": "The growing rate at which LLM agents interact with one another raises key questions about language evolution in multi-LLM-agent settings, with implications for safety and monitorability as well as for linguistic accounts of LLMs. To address these questions, we introduce GlossoGen, a novel platform for studying multi-a…",
-   "url": "http://arxiv.org/abs/2609.01491v1",
+   "id": "10rryv9",
+   "title": "NE-R1: Enhancing Named Entity Recognition Model via Reinforcement Learning",
+   "summary": "Named Entity Recognition (NER) has achieved substantial progress since the advent of large language models (LLMs). Nevertheless, the recognition of long-tail and domain-specific entities remains challenging due to the deficiency in parametric knowledge. Retrieval-augmented generation (RAG) offers a promising remedy by…",
+   "url": "http://arxiv.org/abs/2609.02366v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-01T16:22:07Z",
+   "date": "2026-09-02T09:37:16Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "b3diba",
+   "title": "From Prompting to Engineering: A Research Agenda for Prompt Engineering in Software Engineering",
+   "summary": "Prompt engineering is increasingly used across Software Engineering (SE) activities, including requirements analysis, coding, testing, documentation, repository analysis, and planning. Yet prompts and related instruction artifacts are often created and evolved through task-specific and informal practices, with limited…",
+   "url": "http://arxiv.org/abs/2609.02248v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-02T07:55:20Z",
+   "nodes": [
+    "f-artifacts",
+    "r-ask"
+   ],
+   "relevance": 5,
+   "application": false
+  },
+  {
+   "id": "107bqny",
+   "title": "SkillGLoW: Procedural-Family Skill Consolidation for Self-Improving Agents on Long-Horizon Task Streams",
+   "summary": "LLM agents increasingly self-improve by writing and reusing textual skills, kept either as one global document or as a flat pool of per-task entries, though most of the evidence comes from domains with structurally similar tasks. On long-horizon workloads where each task demands a different solution, the two forms fai…",
+   "url": "http://arxiv.org/abs/2609.02217v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-02T07:31:18Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1t5pwt7",
+   "title": "ToolGate: An Executable Acceptance Pipeline for Tool-Dependent Scientific Benchmark Construction",
+   "summary": "Scientific benchmarks are commonly built by domain experts who write tasks and cross-check one another's work, or who adapt existing material from textbooks, published papers, and online resources. These routes can produce strong evaluations, but they require substantial per-item labor. Language models can reduce this…",
+   "url": "http://arxiv.org/abs/2609.02067v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-02T03:49:37Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "zxb46m",
+   "title": "Implicit Manipulation for Skill Selection in LLM Agents with Semantic Matching",
+   "summary": "Skill selection is a key stage in LLM-agent workflows, determining which installed skill should handle a user request. Existing attacks on this stage primarily rely on explicit prompt injection or instruction-level steering, which can expose recognizable manipulation signals. In this work, we identify a new implicit a…",
+   "url": "http://arxiv.org/abs/2609.02035v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-02T03:07:11Z",
+   "nodes": [
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "yy2un2",
+   "title": "Epistemic Sybil Resistance: Multiplying AI Agents Without Multiplying Evidence",
+   "summary": "Multi-agent AI systems improve inference by spawning agents and synthesizing reports. But another agent is not another observation: apparently independent reports may descend from the same evidence, and genuinely independent evidence can produce nearly identical reports. We formalize this as an epistemic Sybil problem…",
+   "url": "http://arxiv.org/abs/2609.01873v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-01T21:11:27Z",
    "nodes": [
     "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "4yvz0n",
+   "title": "MemeCULT-1K: Benchmarking South Asian Cultural Context and Humor Understanding of Multimodal Models",
+   "summary": "Meme understanding goes beyond recognizing visual content or literal text; it requires implicit cultural knowledge and pragmatic inference that most vision-language models still lack. We introduce MemeCULT-1K, a multilingual benchmark of 1,000 South Asian memes in Bengali, English, and Hindi, where each meme is paired…",
+   "url": "http://arxiv.org/abs/2609.01772v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-01T18:43:03Z",
+   "nodes": [
+    "c-files",
+    "c-retrieval",
+    "s-models"
    ],
    "relevance": 3,
    "application": false
@@ -116,71 +281,6 @@
    "application": false
   },
   {
-   "id": "1waqxtk",
-   "title": "TRIAGE: Three-level Routing and Intelligent Agent Guidance for Efficient Execution",
-   "summary": "Large Language Model (LLM) agents based on the ReAct paradigm have demonstrated remarkable capabilities in tool use and task execution. However, ReAct suffers from a fundamental efficiency problem: every query triggers a complete reasoning loop from scratch, and similar queries repeat identical steps without leveragin…",
-   "url": "http://arxiv.org/abs/2609.01428v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-01T15:40:09Z",
-   "nodes": [
-    "c-retrieval",
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "zvdnj0",
-   "title": "EDGE: Error Dependency Graph-Guided Multi-Error Attribution in Multi-Agent LLM Systems",
-   "summary": "Large language model (LLM) agent failures often contain multiple related errors rather than a single mistake. Existing attribution methods usually identify a responsible agent, step, or root cause, but do not explicitly model dependency between errors. We introduce EDGE, an Error Dependency Graph-guided multi-Error at…",
-   "url": "http://arxiv.org/abs/2609.01360v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-01T15:00:54Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1i8pbe5",
-   "title": "LEAP: Likelihood Elicitation and Aggregation for LLM-based Probabilistic Forecasting",
-   "summary": "LLM-based forecasting systems have improved on real-world tasks such as financial markets and sports outcomes, largely through stronger search and tool use. Many systems still ask an LLM to read all collected evidence together and produce the final forecast. We call this design Monolithic Prediction. It can obscure ho…",
-   "url": "http://arxiv.org/abs/2609.01337v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-01T14:49:19Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "12w26hp",
-   "title": "VerTox: Verifiable Reward-Guided Corpus Poisoning Against Neural Ranking Models",
-   "summary": "Neural ranking models have become core components of modern information retrieval systems and important building blocks of AI systems such as retrieval-augmented generation (RAG) pipelines. However, their robustness remains insufficiently understood in the presence of large language models (LLMs), which can generate f…",
-   "url": "http://arxiv.org/abs/2609.01325v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-01T14:43:11Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
    "id": "1j2w1zb",
    "title": "EDRAC: Benchmarking Arabic Dialect Reading Comprehension",
    "summary": "Dialectal Arabic (DA) remains under-resourced compared to Modern Standard Arabic (MSA), particularly for machine reading comprehension (MRC) and question answering (QA). Existing Arabic QA benchmarks primarily focus on formal written MSA or multiple-choice QA, with limited coverage of naturally spoken dialects. Here,…",
@@ -190,71 +290,6 @@
    "category": "research",
    "badge": "preprint",
    "date": "2026-09-01T11:51:49Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "7kj54d",
-   "title": "Calibration is the Bottleneck: An Action-Class Diagnostic of Multi-Turn Tool-Calling",
-   "summary": "Multi-turn tool calling is a core evaluation scenario for large language model (LLM) agents. On public tool-calling benchmarks, open-weight models now approach or even surpass closed-source frontier models in aggregate accuracy. However, this metric averages over many different multi-turn situations and obscures wheth…",
-   "url": "http://arxiv.org/abs/2609.00949v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-01T09:08:15Z",
-   "nodes": [
-    "c-retrieval",
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1wxw7gd",
-   "title": "Benchmarking Vision-Language Models for Automated Pathology Diagnosis and Report Generation",
-   "summary": "The rapid advancement of vision-language models (VLMs) has accelerated progress in computational pathology; however, whole-slide image (WSI)-based pathology report generation remains limited by the scarcity of large-scale WSI--report datasets and the complexity of mapping spatially distributed visual patterns to struc…",
-   "url": "http://arxiv.org/abs/2609.00866v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-01T08:01:31Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "iedocf",
-   "title": "Automated Tree Knowledge Graph Construction using Ontology Expansion and Retrieval from Vietnamese History Textbooks",
-   "summary": "Hierarchical Knowledge graph (KG)-based retrieval augmented generation (RAG) has emerged as a powerful approach for supporting large language models with structured knowledge. However, there are primary challenges: (i) the lack of methods for automatic KG construction using ontology expansion for low-resource language…",
-   "url": "http://arxiv.org/abs/2609.00763v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-01T05:52:50Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 6,
-   "application": true
-  },
-  {
-   "id": "i69klq",
-   "title": "Agent-Enhanced Heterogeneous Graph RAG for Academic Question Answering",
-   "summary": "Academic question answering requires reasoning over heterogeneous scholarly graphs, where queries range from simple attribute lookups to multi-hop inference across author--paper--venue structures. Existing retrieval-augmented generation (RAG) systems struggle in this setting due to three limitations: (1) fixed retriev…",
-   "url": "http://arxiv.org/abs/2609.00761v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-01T05:50:58Z",
    "nodes": [
     "c-retrieval"
    ],
@@ -278,6 +313,22 @@
    "application": false
   },
   {
+   "id": "1be3gg6",
+   "title": "How Fast Do Agents Rot? An Empirical Study of Long-Horizon Degradation in LLM Agents for Production Decision-Making",
+   "summary": "Production deployments of large language model (LLM) agents remain unreliable on long, multi-step workflows even as benchmark success rates climb steadily. We argue this gap is largely an artifact of task horizon: benchmarks are dominated by short-to-medium horizons where success remains high, while production workloa…",
+   "url": "http://arxiv.org/abs/2609.01660v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-08-31T19:11:47Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
    "id": "1g5lpqi",
    "title": "Show HN: Turn repeated coding-agent corrections into rules/skills",
    "summary": "",
@@ -293,70 +344,6 @@
    ],
    "relevance": 3,
    "application": true
-  },
-  {
-   "id": "uvysst",
-   "title": "TRIPPULSE: Multi-Agent Travel Planning with Review-Grounded Reasoning",
-   "summary": "Travel itinerary generation requires balancing strict spatio-temporal constraints with human preferences. Existing LLM-based planners mainly rely on structured attributes and pre- defined traveler personas, but real travel deci- sions are often shaped by reviews that reveal experiential factors such as comfort, safety…",
-   "url": "http://arxiv.org/abs/2608.30924v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-08-31T15:02:37Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1b0y57l",
-   "title": "Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions",
-   "summary": "Strategic deception by LLM and VLM agents has emerged as a central AI alignment and safety concern. Social-deduction games (where each player holds a hidden role and communicates with others to deduce identities) serve as the canonical testbed, particularly in multi-agent settings. Existing testbeds, however, are text…",
-   "url": "http://arxiv.org/abs/2608.30428v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-08-31T08:24:29Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1iezl2n",
-   "title": "LLMODE: Aligning ODEs with LLMs via Gated Token Injection for Irregular Spatio-Temporal Forecasting",
-   "summary": "Large language models (LLMs) have shown promise for spatio-temporal forecasting, but existing approaches often rely on regularly sampled token sequences and struggle with irregular observations because of temporal asynchrony, representation-space misalignment, and limited context windows. We propose LLMODE, a token-ef…",
-   "url": "http://arxiv.org/abs/2608.29640v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-08-30T08:02:20Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1pwvvgd",
-   "title": "Towards a Systems Foundation for Agentic Skills: Architecture, Lifecycle, and Security",
-   "summary": "Autonomous large language model (LLM) agents increasingly face reliability, context consumption, and execution stability bottlenecks when deployed on complex, long-horizon tasks. While monolithic prompt engineering and stateless tool-calling paradigms struggle to scale, the field is rapidly converging toward \\emph{age…",
-   "url": "http://arxiv.org/abs/2608.29596v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-08-30T06:36:42Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": false
   },
   {
    "id": "5envg7",
@@ -819,6 +806,70 @@
    "application": false
   },
   {
+   "id": "1mlqcjg",
+   "title": "Added managedMcpServers managed setting: organizations can provide HTTP/SSE MCP servers to every user (same entry shape as .mcp.json); entries that name a command to run are skipped",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.259",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "167xzma",
+   "title": "Fixed MCP servers that disconnect while their tools are being listed at startup showing as connected with no tools instead of reporting the error",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.259",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": true
+  },
+  {
+   "id": "1by74ww",
+   "title": "Fixed remote (claude.ai) sessions taking 60 seconds to start a turn after a browser-hosted MCP server's page had gone away",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.259",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1rxlg6f",
+   "title": "Improved headless/SDK session start: the first turn begins up to 50 ms sooner when MCP servers finish connecting",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.259",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
    "id": "11fgxe",
    "title": "Fixed /mcp reconnect and enable still connecting a settings-file MCP server that a managed MCP allow/deny list or strictPluginOnlyCustomization loaded after startup should block",
    "summary": "",
@@ -1031,38 +1082,6 @@
    "application": false
   },
   {
-   "id": "1rta0q9",
-   "title": "Fixed /reload-plugins reporting 0 skills for plugins that define skills under skills/*/SKILL.md",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.246",
-   "date": null,
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "87zwwa",
-   "title": "Changed /code-review so Claude can also start it on its own on Bedrock, Vertex AI, and Foundry, through the Claude apps gateway, and when telemetry or non-essential traffic is disabled",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.246",
-   "date": null,
-   "nodes": [
-    "s-deploy"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
    "id": "12mpgoi",
    "title": "Improved /fork to keep the original conversation's prompt cache in the new background session: its worktree briefing now arrives as a message instead of a system-prompt change",
    "summary": "",
@@ -1172,38 +1191,6 @@
    "date": null,
    "nodes": [
     "s-models"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "19ez7pl",
-   "title": "Changed /effort to save your default effort level per model, so each model keeps its own setting when you switch",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.251",
-   "date": null,
-   "nodes": [
-    "r-effort"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "gg44kg",
-   "title": "Fixed /mcp listing a project .mcp.json entry that declares the claude.ai connector type under the trusted \"claude.ai\" heading; it now appears under its real scope",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.248",
-   "date": null,
-   "nodes": [
-    "a-mcp"
    ],
    "relevance": 12,
    "application": false
@@ -1434,59 +1421,34 @@
   }
  ],
  "byNode": {
-  "c-retrieval": [
-   "1unvvl",
-   "1waqxtk",
-   "12w26hp",
-   "1j2w1zb",
-   "7kj54d",
-   "iedocf",
-   "i69klq"
-  ],
-  "a-teams": [
-   "wlzad0",
-   "zvdnj0",
-   "uvysst",
-   "1b0y57l"
-  ],
-  "c-citations": [
-   "1vhpd4w"
-  ],
-  "a-tools": [
-   "1waqxtk",
-   "1i8pbe5"
-  ],
   "s-models": [
-   "7kj54d",
-   "1wxw7gd",
+   "7gxg7d",
+   "1t5pwt7",
+   "4yvz0n",
+   "1be3gg6",
    "xi5xl2",
    "ndlcgc"
   ],
-  "s-guardrails": [
-   "6m43jc"
+  "f-artifacts": [
+   "xl489o",
+   "b3diba"
   ],
-  "k-skills": [
-   "1g5lpqi",
-   "1pwvvgd",
-   "13xt578",
-   "qqjnqh",
-   "1jovicv",
-   "1rta0q9",
-   "1paf9pw",
-   "1tq7txv",
-   "1ve6d6g",
-   "12kn1mf",
-   "16cua2z"
-  ],
-  "c-longctx": [
-   "1iezl2n",
-   "l1apg",
-   "xi5xl2"
+  "c-retrieval": [
+   "xl489o",
+   "9x9457",
+   "10rryv9",
+   "4yvz0n",
+   "1j2w1zb"
   ],
   "a-mcp": [
+   "8k9agd",
    "5envg7",
    "sv0i6",
    "98y0rf",
+   "1mlqcjg",
+   "167xzma",
+   "1by74ww",
+   "1rxlg6f",
    "11fgxe",
    "p0a8wf",
    "hb08ex",
@@ -1495,8 +1457,39 @@
    "14maikf",
    "iu620n",
    "ixfp7g",
-   "1478w8f",
-   "gg44kg"
+   "1478w8f"
+  ],
+  "a-tools": [
+   "8k9agd"
+  ],
+  "k-skills": [
+   "3jhtia",
+   "107bqny",
+   "1g5lpqi",
+   "13xt578",
+   "qqjnqh",
+   "1jovicv",
+   "1paf9pw",
+   "1tq7txv",
+   "1ve6d6g",
+   "12kn1mf",
+   "16cua2z"
+  ],
+  "r-ask": [
+   "b3diba"
+  ],
+  "s-guardrails": [
+   "zxb46m",
+   "6m43jc"
+  ],
+  "a-teams": [
+   "yy2un2"
+  ],
+  "c-files": [
+   "4yvz0n"
+  ],
+  "c-citations": [
+   "1vhpd4w"
   ],
   "c-memory": [
    "1furdo9",
@@ -1536,7 +1529,6 @@
    "1ewwsib",
    "1hew41q",
    "1478w8f",
-   "87zwwa",
    "lnnuzi"
   ],
   "k-hooks": [
@@ -1546,6 +1538,10 @@
   ],
   "k-slash": [
    "hb08ex"
+  ],
+  "c-longctx": [
+   "l1apg",
+   "xi5xl2"
   ],
   "k-plugins": [
    "1jovicv",
@@ -1560,9 +1556,6 @@
    "n5keyb",
    "1f4lc2s"
   ],
-  "r-effort": [
-   "19ez7pl"
-  ],
   "r-thinking": [
    "1ysfqj5",
    "jc6uj8"
@@ -1576,22 +1569,6 @@
   ]
  },
  "applications": [
-  {
-   "id": "1wxw7gd",
-   "node": "s-models",
-   "nodeTitle": "Choosing a Model",
-   "discipline": "scale",
-   "title": "Benchmarking Vision-Language Models for Automated Pathology Diagnosis and Report Generation",
-   "url": "http://arxiv.org/abs/2609.00866v1"
-  },
-  {
-   "id": "iedocf",
-   "node": "c-retrieval",
-   "nodeTitle": "Retrieval vs. Context",
-   "discipline": "context",
-   "title": "Automated Tree Knowledge Graph Construction using Ontology Expansion and Retrieval from Vietnamese History Textbooks",
-   "url": "http://arxiv.org/abs/2609.00763v1"
-  },
   {
    "id": "1g5lpqi",
    "node": "k-skills",
@@ -1767,6 +1744,22 @@
    "discipline": "agents",
    "title": "Show HN: HoneyLabs – Public honeypot threat Intel feed and MCP server",
    "url": "https://honeylabs.net"
+  },
+  {
+   "id": "167xzma",
+   "node": "a-mcp",
+   "nodeTitle": "MCP",
+   "discipline": "agents",
+   "title": "Fixed MCP servers that disconnect while their tools are being listed at startup showing as connected with no tools instead of reporting the error",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+  },
+  {
+   "id": "11fgxe",
+   "node": "a-mcp",
+   "nodeTitle": "MCP",
+   "discipline": "agents",
+   "title": "Fixed /mcp reconnect and enable still connecting a settings-file MCP server that a managed MCP allow/deny list or strictPluginOnlyCustomization loaded after startup should block",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   }
  ]
 }
