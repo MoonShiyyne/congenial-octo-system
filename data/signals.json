@@ -1,13 +1,13 @@
 {
- "generated": "2026-09-04T16:19:56.919Z",
+ "generated": "2026-09-04T20:44:17.545Z",
  "itemCount": 82,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 334,
-   "kept": 139
+   "fetched": 352,
+   "kept": 143
   },
   {
    "id": "python-sdk-changelog",
@@ -34,7 +34,7 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 56,
+   "fetched": 57,
    "kept": 15
   },
   {
@@ -837,6 +837,55 @@
    "application": false
   },
   {
+   "id": "o936zs",
+   "title": "Improved the /model picker and the VS Code model pill to show a model's name instead of its raw Bedrock, Vertex AI, or LLM gateway ID when Claude Code recognizes it",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.261",
+   "date": null,
+   "nodes": [
+    "s-deploy",
+    "k-cli"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "113cp0b",
+   "title": "Changed machines whose managed settings pin forceLoginMethod: \"gateway\" to ignore a leftover API key or claude.ai login and ask for /login; Bedrock, Vertex AI, and Foundry sessions are unaffected",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.261",
+   "date": null,
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "19epl4v",
+   "title": "[VSCode] Added an Add server form and a Remove action to the MCP servers dialog, so MCP servers can be added and removed without leaving the IDE",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.261",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
    "id": "1mlqcjg",
    "title": "Added managedMcpServers managed setting: organizations can provide HTTP/SSE MCP servers to every user (same entry shape as .mcp.json); entries that name a command to run are skipped",
    "summary": "",
@@ -1048,38 +1097,6 @@
    "application": false
   },
   {
-   "id": "iu620n",
-   "title": "Fixed MCP servers whose headersHelper supplies the Authorization header falling into OAuth discovery on a 401 instead of re-running the helper and retrying the call as documented",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.248",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "ixfp7g",
-   "title": "Fixed startup warnings (e.g. \"N MCP servers need authentication\") rendering one column right of the rest of the transcript",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.248",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": true
-  },
-  {
    "id": "1okxzyj",
    "title": "Improved deleting a background session whose worktree has unpushed commits: the message now names the branch and commit count, and deleting again discards the worktree",
    "summary": "",
@@ -1129,19 +1146,37 @@
    "application": false
   },
   {
-   "id": "n7agi7",
-   "title": "Fixed a backgrounded worktree session losing its checkout: the background session now holds the worktree's lock while it runs, so cleanup and git worktree remove leave it alone",
+   "id": "1t4hbf8",
+   "title": "Fixed Remote Control sessions showing the default effort level on claude.ai when the effort comes from settings",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.248",
+   "badge": "2.1.261",
    "date": null,
    "nodes": [
+    "r-effort",
     "k-remote"
    ],
-   "relevance": 15,
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "2vcvzd",
+   "title": "[VSCode] Fixed a session teleported from Claude Code on the web treating a question that was cut off when the cloud session shut down as declined",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.261",
+   "date": null,
+   "nodes": [
+    "k-cli",
+    "k-remote"
+   ],
+   "relevance": 12,
    "application": false
   },
   {
@@ -1157,39 +1192,6 @@
    "nodes": [
     "k-remote",
     "a-sdk"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "ufjboa",
-   "title": "Fixed prompt caching on Claude Fable 5.1 not covering the context attached after tool results, so it was re-sent as uncached input on every tool-call turn",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.260",
-   "date": null,
-   "nodes": [
-    "c-cache",
-    "s-models"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "19tf16b",
-   "title": "[VSCode] Added the selected effort level to the footer model pill, fixed a stale effort level after switching models, and returned the footer pills to their earlier compact size",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.260",
-   "date": null,
-   "nodes": [
-    "r-effort"
    ],
    "relevance": 12,
    "application": false
@@ -1456,8 +1458,7 @@
    "4yvz0n"
   ],
   "s-models": [
-   "4yvz0n",
-   "ufjboa"
+   "4yvz0n"
   ],
   "c-citations": [
    "1vhpd4w"
@@ -1478,6 +1479,7 @@
    "sv0i6",
    "1ilnp6h",
    "98y0rf",
+   "19epl4v",
    "1mlqcjg",
    "167xzma",
    "1by74ww",
@@ -1487,9 +1489,7 @@
    "hb08ex",
    "1t0yqh8",
    "118rml1",
-   "14maikf",
-   "iu620n",
-   "ixfp7g"
+   "14maikf"
   ],
   "c-memory": [
    "1furdo9",
@@ -1516,7 +1516,9 @@
    "rq0kwf",
    "68j9su",
    "98y0rf",
-   "1jovicv"
+   "o936zs",
+   "1jovicv",
+   "2vcvzd"
   ],
   "a-managed": [
    "1c6q1us"
@@ -1526,6 +1528,8 @@
   ],
   "s-deploy": [
    "1ewwsib",
+   "o936zs",
+   "113cp0b",
    "1hew41q",
    "lnnuzi"
   ],
@@ -1548,20 +1552,18 @@
    "1okxzyj",
    "12mpgoi",
    "n5keyb",
-   "n7agi7",
+   "1t4hbf8",
+   "2vcvzd",
    "16wh4n8"
   ],
   "a-subagents": [
    "n5keyb"
   ],
+  "r-effort": [
+   "1t4hbf8"
+  ],
   "a-sdk": [
    "16wh4n8"
-  ],
-  "c-cache": [
-   "ufjboa"
-  ],
-  "r-effort": [
-   "19tf16b"
   ],
   "r-thinking": [
    "1ysfqj5",
