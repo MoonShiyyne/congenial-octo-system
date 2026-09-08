@@ -1,13 +1,13 @@
 {
- "generated": "2026-09-08T16:36:39.017Z",
+ "generated": "2026-09-08T21:08:02.903Z",
  "itemCount": 84,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 352,
-   "kept": 143
+   "fetched": 331,
+   "kept": 123
   },
   {
    "id": "python-sdk-changelog",
@@ -836,36 +836,37 @@
    "application": false
   },
   {
-   "id": "18913zk",
-   "title": "Added PreModelSwitch and PostModelSwitch hook events (block, confirm, or annotate a model switch); SessionStart resume hooks now receive session staleness and the estimated re-cache cost",
+   "id": "cy2oqw",
+   "title": "Fixed MCP servers configured as http that only speak the legacy HTTP+SSE transport never connecting; Claude Code now falls back to SSE as the MCP spec describes",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.251",
-   "date": null,
-   "nodes": [
-    "k-hooks"
-   ],
-   "relevance": 21,
-   "application": false
-  },
-  {
-   "id": "98y0rf",
-   "title": "Improved /schedule to explain that MCP servers configured in Claude Code can't be attached to cloud routines, instead of a bare \"No MCP connectors\" message",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.251",
+   "badge": "2.1.265",
    "date": null,
    "nodes": [
     "a-mcp",
     "k-cli"
    ],
-   "relevance": 21,
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "uctr40",
+   "title": "Improved remote MCP servers that need sign-in: Claude Code no longer registers an OAuth client with them until you actually authenticate",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.265",
+   "date": null,
+   "nodes": [
+    "a-mcp",
+    "k-cli"
+   ],
+   "relevance": 18,
    "application": false
   },
   {
@@ -1031,101 +1032,20 @@
    "application": false
   },
   {
-   "id": "l1apg",
-   "title": "Fixed a \"switch to Opus 1M for 5x more context\" tip that appeared even when the current Opus model already has a 1M context window",
+   "id": "1q2hrn0",
+   "title": "Fixed /clear from Remote Control waiting on SessionStart hooks and on open terminal dialogs before completing",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.251",
+   "badge": "2.1.265",
    "date": null,
    "nodes": [
-    "c-longctx"
+    "k-hooks",
+    "k-remote"
    ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1jovicv",
-   "title": "Fixed background sessions occasionally starting without any plugin skills (and staying that way) when another Claude Code process was refreshing the plugin marketplace at the same moment",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.251",
-   "date": null,
-   "nodes": [
-    "k-plugins",
-    "k-cli",
-    "k-skills"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1t0yqh8",
-   "title": "Fixed SDK and cloud sessions hanging indefinitely when an SDK MCP server's handshake acknowledgment was lost; the wait now times out after 70 seconds and marks only that server failed",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.251",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "118rml1",
-   "title": "Fixed the MCP server menu's copy shortcut: it now says how the sign-in URL was copied instead of always claiming success",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.251",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "14maikf",
-   "title": "Improved sanitization of MCP server names in error messages, menus, and command results",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.251",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1hew41q",
-   "title": "Changed /radio to be available on Bedrock, Vertex AI, Foundry, and Claude Platform on AWS, and when telemetry is disabled",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.251",
-   "date": null,
-   "nodes": [
-    "s-deploy"
-   ],
-   "relevance": 18,
+   "relevance": 15,
    "application": false
   },
   {
@@ -1161,20 +1081,20 @@
    "application": false
   },
   {
-   "id": "n5keyb",
-   "title": "Fixed background sessions and their subagents being unable to edit files inside a git worktree they created with git worktree add",
+   "id": "13nat1j",
+   "title": "Fixed forked skills (context: fork) not streaming their kickoff prompt and, with --forward-subagent-text, their text turns as progress events in stream-json",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.251",
+   "badge": "2.1.265",
    "date": null,
    "nodes": [
-    "k-remote",
-    "a-subagents"
+    "a-subagents",
+    "k-skills"
    ],
-   "relevance": 15,
+   "relevance": 12,
    "application": false
   },
   {
@@ -1226,6 +1146,88 @@
     "a-sdk"
    ],
    "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "ufjboa",
+   "title": "Fixed prompt caching on Claude Fable 5.1 not covering the context attached after tool results, so it was re-sent as uncached input on every tool-call turn",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.260",
+   "date": null,
+   "nodes": [
+    "c-cache",
+    "s-models"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "19tf16b",
+   "title": "[VSCode] Added the selected effort level to the footer model pill, fixed a stale effort level after switching models, and returned the footer pills to their earlier compact size",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.260",
+   "date": null,
+   "nodes": [
+    "r-effort"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "xi5xl2",
+   "title": "Added Claude Fable 5.1 (claude-fable-5-1), now the default Fable model — 1M context, $10/$50 per Mtok with $0.25/Mtok cache reads",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.257",
+   "date": null,
+   "nodes": [
+    "s-models",
+    "c-longctx"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "l759p9",
+   "title": "Improved policy helper diagnostics — refresh failures now show in /status, declining the managed-settings dialog prints why Claude Code exited, and helper timeouts are reported as timeouts",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.257",
+   "date": null,
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "1b3b8xm",
+   "title": "Fixed resuming a foreground-spawned subagent changing its tool list and system prompt prefix, which broke prompt-cache reuse for that agent",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.265",
+   "date": null,
+   "nodes": [
+    "a-subagents"
+   ],
+   "relevance": 9,
    "application": false
   },
   {
@@ -1457,7 +1459,9 @@
   "s-models": [
    "6lkh8b",
    "1rec0f2",
-   "4yvz0n"
+   "4yvz0n",
+   "ufjboa",
+   "xi5xl2"
   ],
   "c-retrieval": [
    "m11sn1",
@@ -1477,7 +1481,7 @@
    "1g5lpqi",
    "13xt578",
    "qqjnqh",
-   "1jovicv",
+   "13nat1j",
    "1paf9pw",
    "1tq7txv",
    "1ve6d6g",
@@ -1488,7 +1492,7 @@
    "1s8wg5b",
    "wjbazh",
    "1e4gd4t",
-   "l1apg"
+   "xi5xl2"
   ],
   "a-teams": [
    "lfsizt"
@@ -1510,7 +1514,8 @@
    "5envg7",
    "sv0i6",
    "1ilnp6h",
-   "98y0rf",
+   "cy2oqw",
+   "uctr40",
    "19epl4v",
    "1mlqcjg",
    "167xzma",
@@ -1518,10 +1523,7 @@
    "1rxlg6f",
    "11fgxe",
    "p0a8wf",
-   "hb08ex",
-   "1t0yqh8",
-   "118rml1",
-   "14maikf"
+   "hb08ex"
   ],
   "c-memory": [
    "1furdo9",
@@ -1547,10 +1549,11 @@
    "haqhq7",
    "rq0kwf",
    "68j9su",
-   "98y0rf",
+   "cy2oqw",
+   "uctr40",
    "o936zs",
-   "1jovicv",
-   "2vcvzd"
+   "2vcvzd",
+   "l759p9"
   ],
   "a-managed": [
    "1c6q1us"
@@ -1562,40 +1565,41 @@
    "1ewwsib",
    "o936zs",
    "113cp0b",
-   "1hew41q",
    "lnnuzi"
   ],
   "s-structured": [
    "gkwozc",
    "1ytqzun"
   ],
-  "k-hooks": [
-   "18913zk",
-   "fxlbdv",
-   "hezuy1"
-  ],
   "k-slash": [
    "hb08ex"
   ],
-  "k-plugins": [
-   "1jovicv"
+  "k-hooks": [
+   "1q2hrn0",
+   "fxlbdv",
+   "hezuy1"
   ],
   "k-remote": [
+   "1q2hrn0",
    "1okxzyj",
    "12mpgoi",
-   "n5keyb",
    "1t4hbf8",
    "2vcvzd",
    "16wh4n8"
   ],
   "a-subagents": [
-   "n5keyb"
+   "13nat1j",
+   "1b3b8xm"
   ],
   "r-effort": [
-   "1t4hbf8"
+   "1t4hbf8",
+   "19tf16b"
   ],
   "a-sdk": [
    "16wh4n8"
+  ],
+  "c-cache": [
+   "ufjboa"
   ],
   "r-thinking": [
    "1ysfqj5",
