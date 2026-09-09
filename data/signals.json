@@ -1,13 +1,13 @@
 {
- "generated": "2026-09-09T16:36:44.979Z",
+ "generated": "2026-09-09T20:54:50.287Z",
  "itemCount": 84,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 328,
-   "kept": 122
+   "fetched": 277,
+   "kept": 94
   },
   {
    "id": "python-sdk-changelog",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 54,
-   "kept": 15
+   "kept": 16
   },
   {
    "id": "hn-agents",
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "hzhlbu",
+   "title": "Show HN: Self-hosted company OS, Claude Code and Codex agents in departments",
+   "summary": "",
+   "url": "https://github.com/OtoDock/oto-dock",
+   "discussion": "https://news.ycombinator.com/item?id=49630606",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "20 pts",
+   "date": "2026-09-09T17:57:55Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "1syviai",
    "title": "ReCite: Agentic Reasoning for Faithful Citation",
@@ -769,23 +786,6 @@
    "application": true
   },
   {
-   "id": "1ewwsib",
-   "title": "AWS Bedrock to require sharing data with Anthropic for Mythos and future models",
-   "summary": "",
-   "url": "https://news.ycombinator.com/item?id=48473166",
-   "discussion": "https://news.ycombinator.com/item?id=48473166",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "427 pts",
-   "date": "2026-06-10T08:21:38Z",
-   "nodes": [
-    "s-deploy"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
    "id": "sv0i6",
    "title": "Show HN: HoneyLabs – Public honeypot threat Intel feed and MCP server",
    "summary": "",
@@ -832,6 +832,38 @@
     "s-structured"
    ],
    "relevance": 21,
+   "application": false
+  },
+  {
+   "id": "800ooo",
+   "title": "Fixed earlier reasoning being dropped when an MCP server re-sends, or a built-in tool re-renders, a tool the model already loaded",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.267",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1hjlg19",
+   "title": "Fixed a tool that disappears mid-conversation, from a disconnected MCP server or an upgrade, rewriting the tool list and discarding earlier thinking",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.267",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
    "application": false
   },
   {
@@ -982,55 +1014,6 @@
    "application": false
   },
   {
-   "id": "11fgxe",
-   "title": "Fixed /mcp reconnect and enable still connecting a settings-file MCP server that a managed MCP allow/deny list or strictPluginOnlyCustomization loaded after startup should block",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.257",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": true
-  },
-  {
-   "id": "p0a8wf",
-   "title": "Fixed WebSocket MCP server connection failures being logged as \"[object ErrorEvent]\" instead of the underlying error",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.257",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "hb08ex",
-   "title": "[VSCode] Changed the action menu to list slash commands in a filterable \"Slash commands\" dialog instead of inline; picking one runs it; the MCP servers dialog gained the same filter box",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.257",
-   "date": null,
-   "nodes": [
-    "a-mcp",
-    "k-slash"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
    "id": "1q2hrn0",
    "title": "Fixed /clear from Remote Control waiting on SessionStart hooks and on open terminal dialogs before completing",
    "summary": "",
@@ -1064,19 +1047,85 @@
    "application": false
   },
   {
-   "id": "12mpgoi",
-   "title": "Improved /fork to keep the original conversation's prompt cache in the new background session: its worktree briefing now arrives as a message instead of a system-prompt change",
+   "id": "1n26dtz",
+   "title": "Added maxEffortLevel setting (top-level or per model under modelSettings): caps the effort level on every provider, including Bedrock, Vertex and Foundry; users can still pick a lower level",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.257",
+   "badge": "2.1.267",
    "date": null,
    "nodes": [
-    "k-remote"
+    "r-effort",
+    "s-deploy"
    ],
-   "relevance": 15,
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "jgb6ov",
+   "title": "Fixed Cowork scheduled tasks in the cloud failing at startup for organizations whose managed settings require sandboxing",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.267",
+   "date": null,
+   "nodes": [
+    "k-permissions"
+   ],
+   "relevance": 12,
+   "application": true
+  },
+  {
+   "id": "gkboed",
+   "title": "Fixed resumed sessions rewriting the inline tool set when an MCP connector reconnects at a different moment than before",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.267",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "p590cu",
+   "title": "Fixed prompt-cache misses and dropped extended thinking when a claude.ai connector's tools change between a session and its resume",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.267",
+   "date": null,
+   "nodes": [
+    "r-thinking"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "16b78lo",
+   "title": "Fixed resumed sessions rewriting earlier MCP tool announcements (and dropping extended thinking) before their connectors reconnect",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.267",
+   "date": null,
+   "nodes": [
+    "r-thinking",
+    "a-mcp"
+   ],
+   "relevance": 12,
    "application": false
   },
   {
@@ -1178,55 +1227,6 @@
     "r-effort"
    ],
    "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "xi5xl2",
-   "title": "Added Claude Fable 5.1 (claude-fable-5-1), now the default Fable model — 1M context, $10/$50 per Mtok with $0.25/Mtok cache reads",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.257",
-   "date": null,
-   "nodes": [
-    "s-models",
-    "c-longctx"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "l759p9",
-   "title": "Improved policy helper diagnostics — refresh failures now show in /status, declining the managed-settings dialog prints why Claude Code exited, and helper timeouts are reported as timeouts",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.257",
-   "date": null,
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "1b3b8xm",
-   "title": "Fixed resuming a foreground-spawned subagent changing its tool list and system prompt prefix, which broke prompt-cache reuse for that agent",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.265",
-   "date": null,
-   "nodes": [
-    "a-subagents"
-   ],
-   "relevance": 9,
    "application": false
   },
   {
@@ -1455,6 +1455,32 @@
   }
  ],
  "byNode": {
+  "k-cli": [
+   "hzhlbu",
+   "yq92q5",
+   "hbx7k7",
+   "13xt578",
+   "186d7xe",
+   "1c6q1us",
+   "1cc8uxk",
+   "1ledpgp",
+   "1v41iem",
+   "1xlg7t",
+   "1x163pl",
+   "11wcs",
+   "8kcnsx",
+   "94d0dx",
+   "9m1dvn",
+   "7i82b8",
+   "1euvjgd",
+   "haqhq7",
+   "rq0kwf",
+   "68j9su",
+   "cy2oqw",
+   "uctr40",
+   "o936zs",
+   "2vcvzd"
+  ],
   "c-citations": [
    "1syviai"
   ],
@@ -1477,8 +1503,7 @@
    "11o42vr",
    "7xfeh6",
    "1rec0f2",
-   "ufjboa",
-   "xi5xl2"
+   "ufjboa"
   ],
   "s-guardrails": [
    "10rr3g3"
@@ -1488,8 +1513,7 @@
    "z98g5z",
    "1i67ekt",
    "1s8wg5b",
-   "wjbazh",
-   "xi5xl2"
+   "wjbazh"
   ],
   "k-skills": [
    "1hstbfp",
@@ -1514,6 +1538,8 @@
    "5envg7",
    "sv0i6",
    "1ilnp6h",
+   "800ooo",
+   "1hjlg19",
    "cy2oqw",
    "uctr40",
    "19epl4v",
@@ -1521,35 +1547,8 @@
    "167xzma",
    "1by74ww",
    "1rxlg6f",
-   "11fgxe",
-   "p0a8wf",
-   "hb08ex"
-  ],
-  "k-cli": [
-   "yq92q5",
-   "hbx7k7",
-   "13xt578",
-   "186d7xe",
-   "1c6q1us",
-   "1cc8uxk",
-   "1ledpgp",
-   "1v41iem",
-   "1xlg7t",
-   "1x163pl",
-   "11wcs",
-   "8kcnsx",
-   "94d0dx",
-   "9m1dvn",
-   "7i82b8",
-   "1euvjgd",
-   "haqhq7",
-   "rq0kwf",
-   "68j9su",
-   "cy2oqw",
-   "uctr40",
-   "o936zs",
-   "2vcvzd",
-   "l759p9"
+   "gkboed",
+   "16b78lo"
   ],
   "a-managed": [
    "1c6q1us"
@@ -1557,18 +1556,15 @@
   "k-claudemd": [
    "f9yd9e"
   ],
-  "s-deploy": [
-   "1ewwsib",
-   "o936zs",
-   "113cp0b",
-   "lnnuzi"
-  ],
   "s-structured": [
    "gkwozc",
    "1ytqzun"
   ],
-  "k-slash": [
-   "hb08ex"
+  "s-deploy": [
+   "o936zs",
+   "113cp0b",
+   "1n26dtz",
+   "lnnuzi"
   ],
   "k-hooks": [
    "1q2hrn0",
@@ -1578,18 +1574,26 @@
   "k-remote": [
    "1q2hrn0",
    "1okxzyj",
-   "12mpgoi",
    "1t4hbf8",
    "2vcvzd",
    "16wh4n8"
   ],
-  "a-subagents": [
-   "13nat1j",
-   "1b3b8xm"
-  ],
   "r-effort": [
+   "1n26dtz",
    "1t4hbf8",
    "19tf16b"
+  ],
+  "k-permissions": [
+   "jgb6ov"
+  ],
+  "r-thinking": [
+   "p590cu",
+   "16b78lo",
+   "1ysfqj5",
+   "jc6uj8"
+  ],
+  "a-subagents": [
+   "13nat1j"
   ],
   "a-sdk": [
    "16wh4n8"
@@ -1597,16 +1601,20 @@
   "c-cache": [
    "ufjboa"
   ],
-  "r-thinking": [
-   "1ysfqj5",
-   "jc6uj8"
-  ],
   "a-runner": [
    "sjiksz",
    "usy5c7"
   ]
  },
  "applications": [
+  {
+   "id": "hzhlbu",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Self-hosted company OS, Claude Code and Codex agents in departments",
+   "url": "https://github.com/OtoDock/oto-dock"
+  },
   {
    "id": "1g5lpqi",
    "node": "k-skills",
@@ -1789,14 +1797,6 @@
    "nodeTitle": "MCP",
    "discipline": "agents",
    "title": "Fixed MCP servers that disconnect while their tools are being listed at startup showing as connected with no tools instead of reporting the error",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
-  },
-  {
-   "id": "11fgxe",
-   "node": "a-mcp",
-   "nodeTitle": "MCP",
-   "discipline": "agents",
-   "title": "Fixed /mcp reconnect and enable still connecting a settings-file MCP server that a managed MCP allow/deny list or strictPluginOnlyCustomization loaded after startup should block",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   }
  ]
