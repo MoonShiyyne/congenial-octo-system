@@ -1,13 +1,13 @@
 {
- "generated": "2026-09-08T21:08:02.903Z",
+ "generated": "2026-09-09T04:38:55.541Z",
  "itemCount": 84,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 331,
-   "kept": 123
+   "fetched": 328,
+   "kept": 122
   },
   {
    "id": "python-sdk-changelog",
@@ -56,7 +56,7 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 13
+   "kept": 10
   },
   {
    "id": "arxiv-eval",
@@ -68,15 +68,79 @@
  ],
  "items": [
   {
-   "id": "6lkh8b",
-   "title": "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe",
-   "summary": "Data-sovereignty regulations increasingly require public institutions to deploy open-source, on-premise LLM agents that chain multiple tool-calls across live government APIs. However, open-source models consistently underperform in this multi-step setting, and no existing benchmark measures the gap. We introduce the K…",
-   "url": "http://arxiv.org/abs/2609.05395v1",
+   "id": "1syviai",
+   "title": "ReCite: Agentic Reasoning for Faithful Citation",
+   "summary": "Accurate citations are the foundation of academic writing, tracing intellectual origins and substantiating core claims. However, manually navigating the growing volume of scientific literature is increasingly difficult, prompting reliance on automatic citation recommendation. While modern retrieval-augmented architect…",
+   "url": "http://arxiv.org/abs/2609.09156v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-04T17:44:52Z",
+   "date": "2026-09-08T17:59:50Z",
+   "nodes": [
+    "c-citations"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1jeb66u",
+   "title": "PlannerForge: LLM Agents for Scenario-Based Testing of Motion Planners in Autonomous Driving",
+   "summary": "Ensuring the safety of autonomous driving is a critical challenge. Scenario-based testing is a systematic process used to validate Autonomous Driving Systems (ADSs), but it remains a fragmented modular pipeline in which scenario generation, retrieval, modification, ADS execution, and results analysis are performed by…",
+   "url": "http://arxiv.org/abs/2609.08965v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-08T16:19:06Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "9rny8q",
+   "title": "Evidence-Grounded Retrieval for Investigation Hunt Lead Generation from CTI Reports",
+   "summary": "Threat hunting increasingly depends on converting unstructured knowledge (e.g., Cyber Threat Intelligence reports) into actionable hunt leads: concise, investigable hypotheses grounded in observable artifacts and adversary techniques. Producing such leads manually is a tedious and hard-to-scale task. Existing automate…",
+   "url": "http://arxiv.org/abs/2609.08790v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-08T14:21:35Z",
+   "nodes": [
+    "f-artifacts"
+   ],
+   "relevance": 5,
+   "application": false
+  },
+  {
+   "id": "1f7havs",
+   "title": "Personalizing LLM Agent Memory Using Biometrics",
+   "summary": "Personalized memory helps LLM agents deliver stable, tailored assistance by storing and reusing user-specific data across interactions. In multi-user scenarios, however, retrieval must consider not only semantic similarity but also whether the current requester matches the identity associated with the stored memory. W…",
+   "url": "http://arxiv.org/abs/2609.08558v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-08T10:46:12Z",
+   "nodes": [
+    "c-memory"
+   ],
+   "relevance": 4,
+   "application": false
+  },
+  {
+   "id": "11o42vr",
+   "title": "Individual Text Corpora Predict User-Specific Knowledge: Benchmarks of Individualized Knowledge Simulation",
+   "summary": "This study examines whether individual text corpora (ICs) from search histories can be used to simulate individual knowledge. We collected ICs from 316 adults, who answered 36 multiple-choice knowledge items, and compared several large language models (LLMs) on this task, of which only Qwen3-1.7B proved viable. After…",
+   "url": "http://arxiv.org/abs/2609.08532v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-08T10:19:28Z",
    "nodes": [
     "s-models"
    ],
@@ -84,31 +148,47 @@
    "application": false
   },
   {
-   "id": "m11sn1",
-   "title": "Compression Beyond the Uncompressed: A Two-Stage Training Recipe for Soft Context Compression in RAG",
-   "summary": "Retrieval-Augmented Generation (RAG) enhances language models with external knowledge, but the lengthy retrieved context inflates the input and degrades inference efficiency. Soft context compression encodes each document into a substantially shorter embedding sequence. However, most existing approaches are trained by…",
-   "url": "http://arxiv.org/abs/2609.05152v1",
+   "id": "7xfeh6",
+   "title": "TSBench: A physics-grounded benchmark for evaluating LLM understanding of chemical reaction mechanisms",
+   "summary": "Understanding a chemical reaction requires mapping a symbolic reactant-product description onto the three-dimensional pathway through which atoms rearrange, yet chemistry benchmarks for large language models (LLMs) largely probe factual knowledge and text-based reasoning. Here we introduce TSBench, a benchmark in whic…",
+   "url": "http://arxiv.org/abs/2609.08503v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-04T13:53:43Z",
+   "date": "2026-09-08T09:44:37Z",
    "nodes": [
-    "c-retrieval"
+    "s-models"
    ],
-   "relevance": 5,
+   "relevance": 3,
    "application": false
   },
   {
-   "id": "1rgzd7g",
-   "title": "NS-ST-GraphRAG: Neuro-Symbolic Spatio-Temporal GraphRAG for Literary Knowledge Processing",
-   "summary": "Long-form literary narratives pose a distinctive information-processing challenge for retrieval-augmented generation: relevant evidence is distributed across chapters, relations evolve over narrative time, and correct answers may depend jointly on temporal, spatial, and relational constraints. We propose NS-ST-GraphRA…",
-   "url": "http://arxiv.org/abs/2609.05139v1",
+   "id": "10rr3g3",
+   "title": "Authority Is Not a String: A Capability-Scoped Harness for Prompt-Injection-Resistant Coding Agents",
+   "summary": "Coding agents use system-level tools to read files, execute commands, and modify source code. Within the agent's sandbox, these tools often carry ambient authority: naming a resource is sufficient to act on it. Indirect prompt injection exploits this authority by placing instructions in repository files or tool output…",
+   "url": "http://arxiv.org/abs/2609.08371v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-04T13:39:07Z",
+   "date": "2026-09-08T07:37:00Z",
+   "nodes": [
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1aelqxp",
+   "title": "ReMoMask-2: Latent Retrieval-Augmented Masked Motion Generation",
+   "summary": "Text-to-motion (T2M) generation maps natural language to human joint movements, aiding gaming, VR, and robotics. Retrieval-Augmented Text-to-Motion (RAG-T2M) improves generation on complex descriptions by conditioning on retrieved motion-text pairs. However, existing RAG-T2M models face two challenges: coarse-grained…",
+   "url": "http://arxiv.org/abs/2609.08365v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-08T07:33:02Z",
    "nodes": [
     "c-retrieval"
    ],
@@ -116,49 +196,115 @@
    "application": false
   },
   {
-   "id": "1iuv4zi",
-   "title": "Beyond Maintenance Manual Multimodal RAG: Suggesting What Tool",
-   "summary": "Aircraft technicians are required to consult the maintenance manual (MM) for nearly every task, and locating the relevant procedure across hundreds of pages remains time-consuming. Multimodal retrieval augmented generation (MRAG) has been proposed to address this, allowing technicians to retrieve procedures, together…",
-   "url": "http://arxiv.org/abs/2609.05116v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
+   "id": "d8x6sy",
+   "title": "AttnCompress: Dynamic Attention-Guided Trajectory Compression for Software Engineering Agents",
+   "summary": "The transition from human-centric assistance to Autonomous Software Engineering (ASE) agents has enabled the resolution of complex real-world SE tasks. However, the trial-and-error nature of these agents generates lengthy interaction trajectories, creating severe bottlenecks in terms of context window limits and cost.…",
+   "url": "http://arxiv.org/abs/2609.08318v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-04T13:09:16Z",
+   "date": "2026-09-08T06:42:24Z",
    "nodes": [
-    "c-retrieval"
+    "c-longctx"
    ],
-   "relevance": 6,
+   "relevance": 3,
    "application": false
   },
   {
-   "id": "206i3s",
-   "title": "Artificial Intelligence in Equity and Crypto Markets: Progress, Profitability Evidence, and the Limits of Automated Investing",
-   "summary": "Artificial intelligence (AI) now supports investment workflows from data and prediction through research, portfolios, execution, and tool use. Technical capability, however, is not evidence of investment profitability. This critical state-of-the-art review examines public research available through 31 August 2026 on l…",
-   "url": "http://arxiv.org/abs/2609.04917v1",
+   "id": "1hstbfp",
+   "title": "SE-GoS: Self-Evolving Graph-of-Skills for Skill Library at Scale",
+   "summary": "Modern LLM agents increasingly rely on reusable skills, yet as skill libraries scale to thousands of entries, effective retrieval becomes a bottleneck. Graph-of-Skills (GoS) addresses this challenge by exploiting dependency-aware graph structure for scalable skill retrieval, while SkillDAG further demonstrates that sk…",
+   "url": "http://arxiv.org/abs/2609.08228v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-04T09:19:51Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "b4b5tv",
-   "title": "CoSkill: Joint Reinforcement Learning of Reasoning and Meta-Skill Agents for Hierarchical Skill Evolution",
-   "summary": "Skill libraries improve the sample efficiency of agentic reinforcement learning (RL) by enabling large language model (LLM) agents to reuse procedural knowledge. Yet existing paradigms exhibit structural shortcomings: they either decouple skill evolution from policy optimization or instantiate meta-skills as fixed wor…",
-   "url": "http://arxiv.org/abs/2609.04865v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-04T08:25:30Z",
+   "date": "2026-09-08T04:20:11Z",
    "nodes": [
     "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1hb4exa",
+   "title": "Bridging the Semantic-Utility Gap in Multimodal RAG via Generator-in-the-Loop Alignment",
+   "summary": "Vision-language models (VLMs) augmented with retrieval-augmented generation (RAG) benefit from access to external evidence. However, standard retrievers and rerankers optimize for semantic similarity rather than answer utility, creating a preference gap: documents that appear relevant may not help the generator produc…",
+   "url": "http://arxiv.org/abs/2609.08188v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-08T03:18:58Z",
+   "nodes": [
+    "c-files",
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "z98g5z",
+   "title": "MEMO: Multimodal Evidence Memory Organization for Long-Horizon LLM Agents",
+   "summary": "Long-running LLM agents rely on external memory to store and reuse information beyond a single context window, yet there is a fundamental tension between the continuous accumulation of interaction trajectories and the limited context capacity. The key challenge in agent memory is therefore not only to retrieve relevan…",
+   "url": "http://arxiv.org/abs/2609.07471v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-07T13:24:40Z",
+   "nodes": [
+    "c-memory",
+    "c-longctx"
+   ],
+   "relevance": 4,
+   "application": false
+  },
+  {
+   "id": "1hbklw3",
+   "title": "Shortcutting the Fix: Identifying and Categorizing Agentic Exploits in Software Engineering Benchmarks",
+   "summary": "While autonomous software engineering (SWE) agents achieve high benchmark resolution rates, these scores can mask exploitative behaviors---such as leveraging local Git histories, accessing upstream repositories, or recalling memorized solutions---rather than demonstrating genuine problem solving. We systematize and au…",
+   "url": "http://arxiv.org/abs/2609.06780v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-06T18:55:39Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1i67ekt",
+   "title": "CAM: Question Answering on Entity-Centric Videos with Continuous Extraction and Adaptive Querying",
+   "summary": "Memory facilitates question answering over long videos by extracting and retrieving facts to fit within the limited context windows of multimodal LLMs (MLLMs). Existing solutions typically extract independent memory entries from fixed-length video clips and thus cannot capture high-level semantics that need to be summ…",
+   "url": "http://arxiv.org/abs/2609.06504v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-06T09:39:49Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "r0td06",
+   "title": "Robust Conformal Consensus: Multi-Agent LLM-as-a-Judge Interval Evaluation with Conformal Prediction",
+   "summary": "LLM-as-a-Judge has emerged as a promising paradigm for evaluating natural language generation. However, the uncertainty associated with such evaluations remains largely unexplored, which limits their reliability in real-world applications. Although conformal prediction offers a principled framework for uncertainty qua…",
+   "url": "http://arxiv.org/abs/2609.06367v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-06T03:55:09Z",
+   "nodes": [
+    "a-teams"
    ],
    "relevance": 3,
    "application": false
@@ -168,29 +314,13 @@
    "title": "KVMem: Virtualizing Million-Token Agent Workspaces on a Consumer GPU",
    "summary": "Modern LLM agents operate in persistent workspaces whose accumulated history can exceed both GPU KV capacity and the model's native context window. Existing systems typically compact older context into summaries or retrieve it later as text, either losing fine-grained execution evidence or repeatedly prefilling conten…",
    "url": "http://arxiv.org/abs/2609.04852v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
    "date": "2026-09-04T08:09:59Z",
    "nodes": [
     "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "lfsizt",
-   "title": "MABPD: Multi-Agent Bias Probing & Detection via Structured Argument Debate",
-   "summary": "Media bias in news articles operates through subtle linguistic cues---loaded language, selective framing, and strategic omission---that resist single-model detection and have traditionally required large annotated corpora for supervised training. We ask whether structured multi-agent deliberation can serve as a princi…",
-   "url": "http://arxiv.org/abs/2609.04841v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-04T07:58:33Z",
-   "nodes": [
-    "a-teams"
    ],
    "relevance": 3,
    "application": false
@@ -212,38 +342,6 @@
    "application": false
   },
   {
-   "id": "g6ya3v",
-   "title": "Shadow Queries for Private Retrieval in Vector Databases",
-   "summary": "Large language models (LLMs) increasingly rely on information retrieval (IR) systems, such as Retrieval-Augmented Generation (RAG), to incorporate domain-specific knowledge without costly re-training. These systems often store pre-computed document embeddings in cloud-based vector databases. However, such embeddings a…",
-   "url": "http://arxiv.org/abs/2609.04767v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-04T05:59:54Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 7,
-   "application": false
-  },
-  {
-   "id": "1otikpr",
-   "title": "Ordering, Artin--Tits group, Garside structure",
-   "summary": "A Dehornoy structure is a tool used to obtain a left order in the Garside group~$G$. Arcis and Paris introduced two conditions, known as Condition~$A$ and Condition~$B$. When they are both satisfied, they ensure that~$G$ possesses a Dehornoy structure. These two conditions describes how the product in the correspondin…",
-   "url": "http://arxiv.org/abs/2609.04757v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-04T05:40:08Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
    "id": "1rec0f2",
    "title": "PetQA: Benchmarking Veterinary Knowledge and Clinical Reasoning",
    "summary": "We introduce PetQA, a Korean long-form question-answering (QA) benchmark for evaluating veterinary knowledge and clinical reasoning in large language models (LLMs) and large vision-language models (LVLMs). PetQA contains 10,076 text-only and 8,751 multimodal QA pairs derived from real-world questions about dogs and ca…",
@@ -256,105 +354,6 @@
    "nodes": [
     "c-files",
     "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1e4gd4t",
-   "title": "SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center",
-   "summary": "Large language model (LLM) agents are increasingly proposed as autonomous SOC analysts, but two limitations make them unreliable at enterprise scale: a finite context window cannot hold a multi-thousand-host authentication graph, and free-form generation offers no guarantee that a recommended containment action is con…",
-   "url": "http://arxiv.org/abs/2609.04159v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-03T17:49:12Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "mn130y",
-   "title": "A Prompt-Engineering Approach to Develop Scalable, Flexible, and Real-Time Hybrid Micro-Level Personalization in a General Purpose AI Teaching Assistant",
-   "summary": "Artificial intelligence (AI) teaching assistants powered by large language models (LLMs) offer scalable educational support but often provide limited personalization. This study presents a prompt-engineering-based framework for personalizing general-purpose LLM/RAG-based AI teaching assistants such as Jill Watson acro…",
-   "url": "http://arxiv.org/abs/2609.03402v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-03T06:01:47Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "zbmn54",
-   "title": "Unifying Conformal Language Tasks with In-Context Ensembles",
-   "summary": "Many NLP tasks, such as summarization and extractive question answering, reduce to retrieving relevant content from documents under two constraints: coverage, retaining enough pertinent information to achieve some goal, and conciseness, removing as much irrelevant information as possible. Conformal prediction methods…",
-   "url": "http://arxiv.org/abs/2609.03005v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-02T18:00:01Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "b3diba",
-   "title": "From Prompting to Engineering: A Research Agenda for Prompt Engineering in Software Engineering",
-   "summary": "Prompt engineering is increasingly used across Software Engineering (SE) activities, including requirements analysis, coding, testing, documentation, repository analysis, and planning. Yet prompts and related instruction artifacts are often created and evolved through task-specific and informal practices, with limited…",
-   "url": "http://arxiv.org/abs/2609.02248v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-02T07:55:20Z",
-   "nodes": [
-    "f-artifacts",
-    "r-ask"
-   ],
-   "relevance": 5,
-   "application": false
-  },
-  {
-   "id": "4yvz0n",
-   "title": "MemeCULT-1K: Benchmarking South Asian Cultural Context and Humor Understanding of Multimodal Models",
-   "summary": "Meme understanding goes beyond recognizing visual content or literal text; it requires implicit cultural knowledge and pragmatic inference that most vision-language models still lack. We introduce MemeCULT-1K, a multilingual benchmark of 1,000 South Asian memes in Bengali, English, and Hindi, where each meme is paired…",
-   "url": "http://arxiv.org/abs/2609.01772v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-01T18:43:03Z",
-   "nodes": [
-    "c-files",
-    "c-retrieval",
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1vhpd4w",
-   "title": "Citing Less Critically: LLMs Reshape the Rhetoric and Reach of Scientific Citation",
-   "summary": "Scientific citations carry rhetorical intent. Scholars may cite prior work positively (supporting), negatively (contrasting), or neutrally (mentioning). As large language models (LLMs) increasingly assist scientific writing, whether they reproduce citations with the same rhetorical intent as humans remains unclear. We…",
-   "url": "http://arxiv.org/abs/2609.01432v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-01T15:42:04Z",
-   "nodes": [
-    "c-citations"
    ],
    "relevance": 3,
    "application": false
@@ -1456,28 +1455,44 @@
   }
  ],
  "byNode": {
+  "c-citations": [
+   "1syviai"
+  ],
+  "c-retrieval": [
+   "1jeb66u",
+   "1aelqxp",
+   "1hb4exa",
+   "1hbklw3"
+  ],
+  "f-artifacts": [
+   "9rny8q"
+  ],
+  "c-memory": [
+   "1f7havs",
+   "z98g5z",
+   "1furdo9",
+   "18ur1cp"
+  ],
   "s-models": [
-   "6lkh8b",
+   "11o42vr",
+   "7xfeh6",
    "1rec0f2",
-   "4yvz0n",
    "ufjboa",
    "xi5xl2"
   ],
-  "c-retrieval": [
-   "m11sn1",
-   "1rgzd7g",
-   "1iuv4zi",
-   "g6ya3v",
-   "mn130y",
-   "zbmn54",
-   "4yvz0n"
+  "s-guardrails": [
+   "10rr3g3"
   ],
-  "a-tools": [
-   "206i3s",
-   "1otikpr"
+  "c-longctx": [
+   "d8x6sy",
+   "z98g5z",
+   "1i67ekt",
+   "1s8wg5b",
+   "wjbazh",
+   "xi5xl2"
   ],
   "k-skills": [
-   "b4b5tv",
+   "1hstbfp",
    "1g5lpqi",
    "13xt578",
    "qqjnqh",
@@ -1488,27 +1503,12 @@
    "12kn1mf",
    "16cua2z"
   ],
-  "c-longctx": [
-   "1s8wg5b",
-   "wjbazh",
-   "1e4gd4t",
-   "xi5xl2"
+  "c-files": [
+   "1hb4exa",
+   "1rec0f2"
   ],
   "a-teams": [
-   "lfsizt"
-  ],
-  "c-files": [
-   "1rec0f2",
-   "4yvz0n"
-  ],
-  "f-artifacts": [
-   "b3diba"
-  ],
-  "r-ask": [
-   "b3diba"
-  ],
-  "c-citations": [
-   "1vhpd4w"
+   "r0td06"
   ],
   "a-mcp": [
    "5envg7",
@@ -1524,10 +1524,6 @@
    "11fgxe",
    "p0a8wf",
    "hb08ex"
-  ],
-  "c-memory": [
-   "1furdo9",
-   "18ur1cp"
   ],
   "k-cli": [
    "yq92q5",
@@ -1611,14 +1607,6 @@
   ]
  },
  "applications": [
-  {
-   "id": "206i3s",
-   "node": "a-tools",
-   "nodeTitle": "Tool Use",
-   "discipline": "agents",
-   "title": "Artificial Intelligence in Equity and Crypto Markets: Progress, Profitability Evidence, and the Limits of Automated Investing",
-   "url": "http://arxiv.org/abs/2609.04917v1"
-  },
   {
    "id": "1g5lpqi",
    "node": "k-skills",
@@ -1801,6 +1789,14 @@
    "nodeTitle": "MCP",
    "discipline": "agents",
    "title": "Fixed MCP servers that disconnect while their tools are being listed at startup showing as connected with no tools instead of reporting the error",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+  },
+  {
+   "id": "11fgxe",
+   "node": "a-mcp",
+   "nodeTitle": "MCP",
+   "discipline": "agents",
+   "title": "Fixed /mcp reconnect and enable still connecting a settings-file MCP server that a managed MCP allow/deny list or strictPluginOnlyCustomization loaded after startup should block",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   }
  ]
