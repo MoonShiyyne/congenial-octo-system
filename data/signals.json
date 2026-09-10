@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-10T11:16:33.741Z",
+ "generated": "2026-09-10T16:22:40.397Z",
  "itemCount": 84,
  "sourceStatus": [
   {
@@ -34,8 +34,8 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 54,
-   "kept": 16
+   "fetched": 53,
+   "kept": 15
   },
   {
    "id": "hn-agents",
@@ -76,7 +76,7 @@
    "source": "Hacker News · Claude",
    "sourceId": "hn-claude",
    "category": "market",
-   "badge": "45 pts",
+   "badge": "46 pts",
    "date": "2026-09-09T17:57:55Z",
    "nodes": [
     "k-cli"
