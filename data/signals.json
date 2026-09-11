@@ -1,13 +1,13 @@
 {
- "generated": "2026-09-11T16:26:39.457Z",
+ "generated": "2026-09-11T20:56:35.997Z",
  "itemCount": 83,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 371,
-   "kept": 125
+   "fetched": 432,
+   "kept": 139
   },
   {
    "id": "python-sdk-changelog",
@@ -254,7 +254,7 @@
    "source": "Hacker News · Claude",
    "sourceId": "hn-claude",
    "category": "market",
-   "badge": "46 pts",
+   "badge": "47 pts",
    "date": "2026-09-09T17:57:55Z",
    "nodes": [
     "k-cli"
@@ -821,6 +821,54 @@
    "application": false
   },
   {
+   "id": "imx7s2",
+   "title": "Fixed synced plugin MCP servers not connecting when a remote session resumes",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.269",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1i3rnwv",
+   "title": "Fixed MCP servers reconnecting when an updated config only changed the order of the server URL's query parameters",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.269",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "78d8t8",
+   "title": "Improved first-party sessions with telemetry disabled: an alwaysLoad MCP server that finishes connecting mid-conversation is usable on the next turn without a tool-search round trip",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.269",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
    "id": "wvte4n",
    "title": "Fixed MCP server OAuth sign-in failing with \"No available ports for OAuth redirect\" when the local callback port range can't be bound",
    "summary": "",
@@ -968,70 +1016,6 @@
    "application": false
   },
   {
-   "id": "1mlqcjg",
-   "title": "Added managedMcpServers managed setting: organizations can provide HTTP/SSE MCP servers to every user (same entry shape as .mcp.json); entries that name a command to run are skipped",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.259",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "167xzma",
-   "title": "Fixed MCP servers that disconnect while their tools are being listed at startup showing as connected with no tools instead of reporting the error",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.259",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": true
-  },
-  {
-   "id": "1by74ww",
-   "title": "Fixed remote (claude.ai) sessions taking 60 seconds to start a turn after a browser-hosted MCP server's page had gone away",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.259",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1rxlg6f",
-   "title": "Improved headless/SDK session start: the first turn begins up to 50 ms sooner when MCP servers finish connecting",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.259",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
    "id": "1qwzabw",
    "title": "Added browser-tab icons for published artifacts, chosen by Claude to match each page",
    "summary": "",
@@ -1110,6 +1094,39 @@
     "k-remote"
    ],
    "relevance": 15,
+   "application": false
+  },
+  {
+   "id": "e2f68x",
+   "title": "Added /output-style [name] to list and switch output styles, including over Remote Control and in cloud and other headless sessions",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.269",
+   "date": null,
+   "nodes": [
+    "k-remote",
+    "k-slash"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "zteqvz",
+   "title": "[VSCode] Removed the Claude Code items from a session tab's right-click menu and the editor title bar's \"...\" menu; they could not act on the tab the menu was opened on",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.269",
+   "date": null,
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 12,
    "application": false
   },
   {
@@ -1196,22 +1213,6 @@
    ],
    "relevance": 12,
    "application": false
-  },
-  {
-   "id": "jgb6ov",
-   "title": "Fixed Cowork scheduled tasks in the cloud failing at startup for organizations whose managed settings require sandboxing",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.267",
-   "date": null,
-   "nodes": [
-    "k-permissions"
-   ],
-   "relevance": 12,
-   "application": true
   },
   {
    "id": "18ur1cp",
@@ -1502,6 +1503,7 @@
    "cy2oqw",
    "uctr40",
    "o936zs",
+   "zteqvz",
    "1hrbh6d",
    "i5iqoq"
   ],
@@ -1522,17 +1524,16 @@
    "5envg7",
    "sv0i6",
    "1ilnp6h",
+   "imx7s2",
+   "1i3rnwv",
+   "78d8t8",
    "wvte4n",
    "99bngc",
    "800ooo",
    "1hjlg19",
    "cy2oqw",
    "uctr40",
-   "19epl4v",
-   "1mlqcjg",
-   "167xzma",
-   "1by74ww",
-   "1rxlg6f"
+   "19epl4v"
   ],
   "a-managed": [
    "1c6q1us",
@@ -1565,7 +1566,11 @@
   "k-remote": [
    "1q2hrn0",
    "1okxzyj",
+   "e2f68x",
    "i5iqoq"
+  ],
+  "k-slash": [
+   "e2f68x"
   ],
   "r-thinking": [
    "sfon3e",
@@ -1578,9 +1583,6 @@
   "r-effort": [
    "i5iqoq",
    "1n26dtz"
-  ],
-  "k-permissions": [
-   "jgb6ov"
   ]
  },
  "applications": [
