@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-10T20:50:20.441Z",
- "itemCount": 84,
+ "generated": "2026-09-11T04:36:55.528Z",
+ "itemCount": 83,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -56,17 +56,195 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 14
+   "kept": 19
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": true,
    "fetched": 20,
-   "kept": 8
+   "kept": 7
   }
  ],
  "items": [
+  {
+   "id": "468d6u",
+   "title": "RAG-Safety-Bench: Reliable Evaluation of Retrieval-Augmented LLM Safety",
+   "summary": "Allowing large language models (LLMs) to retrieve information from a set of trusted documents can increase reliability and reduce hallucination. However, recent work has demonstrated that retrieval-augmented generation (RAG) can have unintended side effects on the overall safety of the generated responses, when prompt…",
+   "url": "http://arxiv.org/abs/2609.11758v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-10T16:12:25Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1stk9s9",
+   "title": "When Agents Disagree: Bayesian Backward Reasoning as a Label-Free Anchor for Multi-Agent Collective Decision-Making",
+   "summary": "When multiple LLM agents yield conflicting answers, the decision-making process dictates whether agent diversity improves performance or merely compounds shared errors. Existing collective decision-making methods, including voting, electoral rules, and LLM judges, rely on forward reasoning: they map evidence to labels…",
+   "url": "http://arxiv.org/abs/2609.11709v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-10T15:27:58Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "rl10w8",
+   "title": "COBRA-Skills: Contextual Bandit-Guided Evolution for Agent Skill Optimization",
+   "summary": "Large language model (LLM) agents can benefit from reusable skills distilled from prior task experience, yet existing skill optimization methods often rely on costly execution-based evaluation and substantial task data. We introduce \\textbf{COBRA-Skills}, an efficient framework that formulates skill optimization as bu…",
+   "url": "http://arxiv.org/abs/2609.11682v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-10T15:12:24Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1qpfodo",
+   "title": "Your Retriever Already Knows: Distribution-Shape QPP for RAG Retrieval Sufficiency",
+   "summary": "Standard Retrieval-Augmented Generation (RAG) pipelines often provide no reliable inference-time signal of whether retrieval succeeded; on ambiguous or out-of-scope queries, generation may then hallucinate. Motivated by a Czech nuclear-regulator deployment where data sensitivity precludes third-party LLM APIs, we comp…",
+   "url": "http://arxiv.org/abs/2609.11646v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-10T14:52:16Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "kerv7j",
+   "title": "TimelyRAG: Semantic-Temporal Hybrid Retrieval for Time-Critical Question Answering in Overlapping-Evolving Documents",
+   "summary": "Although large language models (LLMs) and retrieval-augmented generation (RAG) have advanced open-domain question answering (QA), they remain unreliable when documents evolve through amendments. Existing time-sensitive retrieval methods address only the disjoint-evolving environment, where each update is an independen…",
+   "url": "http://arxiv.org/abs/2609.11572v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-10T14:07:20Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ec2uu9",
+   "title": "From Document Silos to Process Intelligence: A Multi-Layer Knowledge Graph for CMC Process Development",
+   "summary": "Chemistry, Manufacturing and Controls (CMC) process development generates an enormous body of technical information across a multi-stage, knowledge-intensive continuum from drug discovery to commercial manufacturing. This knowledge is traditionally fragmented across functions and heterogeneous formats, causing traceab…",
+   "url": "http://arxiv.org/abs/2609.11493v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-10T12:59:04Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "11cml1h",
+   "title": "VikingRAG: Accurate and Token-efficient Retrieval-augmented Generation over Structured Documents",
+   "summary": "State-of-the-art retrieval-augmented generation (RAG) methods exploit document structures to acquire sufficient evidence, but often incur substantial token costs. To reduce structural-context tokens without compromising high RAG accuracy, we present {\\sf VikingRAG}, a directory-aware semantic data management system th…",
+   "url": "http://arxiv.org/abs/2609.11390v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-10T11:25:59Z",
+   "nodes": [
+    "c-retrieval",
+    "s-cost"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1dxg8cp",
+   "title": "Mr.LHDR: A Benchmark for Multimodal Real-World Long-Horizon Deep Research Agents",
+   "summary": "Deep research agents are increasingly capable of web search, tool use, multimodal evidence analysis, and information synthesis. However, existing benchmarks mainly evaluate medium-horizon exploration and rarely test whether agents can sustain long, dependency-heavy research processes. We introduce Mr.LHDR (Multimodal…",
+   "url": "http://arxiv.org/abs/2609.11318v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-10T09:47:44Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1rjjw0p",
+   "title": "A Voice-Interactive Multi-Agent System for Smart Operating Rooms: Architecture Design and Key Technologies",
+   "summary": "This paper presents SurgicalRoomAgent, a voice-interactive multi-agent system for smart operating rooms based on large language models (LLMs). The system achieves natural language understanding, device control, intraoperative recording, and surgical report generation through a layered architecture comprising a voice i…",
+   "url": "http://arxiv.org/abs/2609.11231v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-10T08:29:27Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "4f10u1",
+   "title": "REVA: Reusable Evidence View Aggregation for Context-Efficient RAG Serving",
+   "summary": "Retrieval-augmented generation (RAG) improves knowledge-intensive large language model (LLM) applications by conditioning generation on retrieved documents, but longer contexts increase latency, key-value (KV) cache memory, and token cost. Post-retrieval compression can reduce this cost, yet existing compressors often…",
+   "url": "http://arxiv.org/abs/2609.11209v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-10T08:14:22Z",
+   "nodes": [
+    "c-retrieval",
+    "s-cost"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1l2mxyn",
+   "title": "Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation",
+   "summary": "Benchmark researchers and developers of large language models (LLMs) and other AI systems need to find relevant evaluations, locate their benchmark datasets and code, and understand the settings behind reported scores. We present Benchmark Radar, a living database and search engine for retrieval and discovery of AI be…",
+   "url": "http://arxiv.org/abs/2609.11115v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-10T05:47:22Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "hzhlbu",
    "title": "Show HN: Self-hosted company OS, Claude Code and Codex agents in departments",
@@ -83,166 +261,6 @@
    ],
    "relevance": 3,
    "application": true
-  },
-  {
-   "id": "3sq9o7",
-   "title": "KVShareArena: KV-Cache Reuse Across Contexts and Model Checkpoints",
-   "summary": "LLM serving systems already reuse KV caches, but only when the reused text sits at the very start of the prompt. Two growing workloads break this condition: a retrieval-augmented generation server assembles a different set of retrieved chunks for every query, and a multi-agent coordinator reads reports written by othe…",
-   "url": "http://arxiv.org/abs/2609.10266v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-09T14:53:45Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1sy3s6a",
-   "title": "The Answer Path and the Grounding Instruction in LLM Question Answering over Knowledge Graphs",
-   "summary": "A graph retrieval-augmented generation pipeline chooses which triples to put in the prompt, a syntax to write them in, an order to write them in, and a sentence telling the model what to do with them. We vary all four over six large language models and two knowledge-graph question answering benchmarks. Two of the four…",
-   "url": "http://arxiv.org/abs/2609.10237v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-09T14:31:11Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "rsxhjk",
-   "title": "Kernel-Managed Shared Memory for System-Wide Personalization",
-   "summary": "AI systems become more useful when they can adapt to the people using them, but in multi-agent systems, useful context learned by one agent often remains unavailable to others. We present kernel-managed shared memory, a system-level abstraction in which specialized agents write structured, tagged memories while the ag…",
-   "url": "http://arxiv.org/abs/2609.10144v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-09T13:20:47Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "wbyucj",
-   "title": "RAP: Research Attention Prediction Reveals Target-Conditioned Evidence Acquisition Biases",
-   "summary": "Large language models (LLMs) increasingly act as research agents, yet their ability to track shifts in research attention is difficult to evaluate because reviews and research ideas lack uniquely verifiable outcomes. We introduce Research Attention Prediction (RAP), a rolling benchmark covering 278 AI/ML fields and 1,…",
-   "url": "http://arxiv.org/abs/2609.10092v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-09T12:15:14Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "shddxb",
-   "title": "Direct Diversity Optimization for Diverse Successful Trajectories in Preference Post-Training",
-   "summary": "LLM agents for sequential decision tasks are often post-trained with trajectory-level outcome labels, but such labels provide little supervision for preserving multiple successful branches from the same decision state. We study this problem as successful strategy coverage: how broadly a model realizes distinct success…",
-   "url": "http://arxiv.org/abs/2609.10052v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-09T11:27:34Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1upmp18",
-   "title": "Guaranteeing Faithful Evidence Extraction in Speculative Retrieval-Augmented Generation",
-   "summary": "Large Language Models (LLMs) are increasingly used as interfaces for information retrieval, but they remain prone to hallucinations and faithfulness errors, in which the generated answers diverge from the retrieved evidence. While Retrieval-Augmented Generation (RAG) and recent hybrid or semi-extractive approaches mit…",
-   "url": "http://arxiv.org/abs/2609.10046v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-09T11:21:07Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "19wqxmx",
-   "title": "Belief-State Engine: Augmenting LLMs for Principled Planning Under Partial Observability",
-   "summary": "Large language model agents produce fluent action sequences across a wide range of tasks, yet they fail in characteristic ways once the environment becomes partially observable. Ambiguous feedback pushes them into premature commitments. A single informative observation can collapse their uncertainty onto the wrong hyp…",
-   "url": "http://arxiv.org/abs/2609.10036v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-09T11:07:47Z",
-   "nodes": [
-    "s-observability"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "t0van1",
-   "title": "InstantMimic: A High Performance System for Learning Physics-based Skills in Seconds",
-   "summary": "Physics-based character control is a long-standing challenge in computer graphics and robotics, requiring policies that satisfy complex dynamics while producing realistic motion. Recent Deep RL approaches, particularly imitation learning methods such as DeepMimic, have had broad impact beyond animation, influencing ro…",
-   "url": "http://arxiv.org/abs/2609.09821v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-09T07:23:51Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "v3r19n",
-   "title": "Fine-Tuning a KV Cache Concatenation-Aware Model or Recomputing KV Caches? Why Not Both?",
-   "summary": "In Retrieval-Augmented Generation (RAG) systems, a large number of retrieved chunks are concatenated to form the input context so that users can receive high-quality responses based on external knowledge. As a result, the input context length increases substantially, leading to a larger prefill workload and, in turn,…",
-   "url": "http://arxiv.org/abs/2609.09768v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-09T06:12:39Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1ms44dz",
-   "title": "Who Are They to Each Other? Multi-Agent Reasoning for Speaker Relationship Inference",
-   "summary": "Inferring speaker relationships from spoken conversations is an important step towards socially aware speech understanding. However, this task remains underexplored, and supervised modeling is costly to train and scale. At the same time, existing inference-time LLM approaches provide limited structure for handling sub…",
-   "url": "http://arxiv.org/abs/2609.09628v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-09T02:40:02Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
   },
   {
    "id": "d8x6sy",
@@ -339,38 +357,6 @@
    "date": "2026-09-06T03:55:09Z",
    "nodes": [
     "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1s8wg5b",
-   "title": "KVMem: Virtualizing Million-Token Agent Workspaces on a Consumer GPU",
-   "summary": "Modern LLM agents operate in persistent workspaces whose accumulated history can exceed both GPU KV capacity and the model's native context window. Existing systems typically compact older context into summaries or retrieve it later as text, either losing fine-grained execution evidence or repeatedly prefilling conten…",
-   "url": "http://arxiv.org/abs/2609.04852v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-04T08:09:59Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "wjbazh",
-   "title": "Adaptive Context Parallelism for Production LLM Serving",
-   "summary": "As LLM context windows expand and input sequences grow longer, serving systems face increasing computational and memory demands. Context parallelism (CP), which partitions the input sequence across multiple ranks to parallelize the computation, has therefore become increasingly important for efficient LLM serving. How…",
-   "url": "http://arxiv.org/abs/2609.04774v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-04T06:10:15Z",
-   "nodes": [
-    "c-longctx"
    ],
    "relevance": 3,
    "application": false
@@ -1453,6 +1439,45 @@
   }
  ],
  "byNode": {
+  "c-retrieval": [
+   "468d6u",
+   "1qpfodo",
+   "kerv7j",
+   "ec2uu9",
+   "11cml1h",
+   "4f10u1",
+   "12j9jur",
+   "1hbklw3"
+  ],
+  "a-teams": [
+   "1stk9s9",
+   "1rjjw0p",
+   "r0td06"
+  ],
+  "k-skills": [
+   "rl10w8",
+   "12j9jur",
+   "1g5lpqi",
+   "13xt578",
+   "qqjnqh",
+   "10ci3e9",
+   "1paf9pw",
+   "1tq7txv",
+   "1ve6d6g",
+   "12kn1mf",
+   "16cua2z"
+  ],
+  "s-cost": [
+   "11cml1h",
+   "4f10u1",
+   "1hrbh6d"
+  ],
+  "a-tools": [
+   "1dxg8cp"
+  ],
+  "s-models": [
+   "1l2mxyn"
+  ],
   "k-cli": [
    "hzhlbu",
    "yq92q5",
@@ -1480,45 +1505,10 @@
    "1hrbh6d",
    "i5iqoq"
   ],
-  "a-teams": [
-   "3sq9o7",
-   "rsxhjk",
-   "1ms44dz",
-   "r0td06"
-  ],
-  "s-models": [
-   "1sy3s6a",
-   "wbyucj"
-  ],
-  "c-retrieval": [
-   "shddxb",
-   "1upmp18",
-   "v3r19n",
-   "12j9jur",
-   "1hbklw3"
-  ],
-  "s-observability": [
-   "19wqxmx"
-  ],
-  "k-skills": [
-   "t0van1",
-   "12j9jur",
-   "1g5lpqi",
-   "13xt578",
-   "qqjnqh",
-   "10ci3e9",
-   "1paf9pw",
-   "1tq7txv",
-   "1ve6d6g",
-   "12kn1mf",
-   "16cua2z"
-  ],
   "c-longctx": [
    "d8x6sy",
    "z98g5z",
-   "1i67ekt",
-   "1s8wg5b",
-   "wjbazh"
+   "1i67ekt"
   ],
   "a-subagents": [
    "12j9jur"
@@ -1576,9 +1566,6 @@
    "1q2hrn0",
    "1okxzyj",
    "i5iqoq"
-  ],
-  "s-cost": [
-   "1hrbh6d"
   ],
   "r-thinking": [
    "sfon3e",
