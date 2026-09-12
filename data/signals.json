@@ -1,13 +1,13 @@
 {
- "generated": "2026-09-12T15:29:59.988Z",
+ "generated": "2026-09-12T20:31:53.417Z",
  "itemCount": 83,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 432,
-   "kept": 139
+   "fetched": 367,
+   "kept": 109
   },
   {
    "id": "python-sdk-changelog",
@@ -254,7 +254,7 @@
    "source": "Hacker News · Claude",
    "sourceId": "hn-claude",
    "category": "market",
-   "badge": "49 pts",
+   "badge": "50 pts",
    "date": "2026-09-09T17:57:55Z",
    "nodes": [
     "k-cli"
@@ -789,38 +789,6 @@
    "application": true
   },
   {
-   "id": "1ilnp6h",
-   "title": "Fixed SDK-provided MCP servers (e.g. Desktop connectors) sometimes missing from the first turn and only appearing on the next one",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.260",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 21,
-   "application": false
-  },
-  {
-   "id": "gkwozc",
-   "title": "Improved structured output: Workflow agent({schema}) rejects a JSON Schema that can never be satisfied up front, and retry-cap errors now include the last validation failure",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.260",
-   "date": null,
-   "nodes": [
-    "s-structured"
-   ],
-   "relevance": 21,
-   "application": false
-  },
-  {
    "id": "imx7s2",
    "title": "Fixed synced plugin MCP servers not connecting when a remote session resumes",
    "summary": "",
@@ -1081,22 +1049,6 @@
    "application": false
   },
   {
-   "id": "1okxzyj",
-   "title": "Improved deleting a background session whose worktree has unpushed commits: the message now names the branch and commit count, and deleting again discards the worktree",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.260",
-   "date": null,
-   "nodes": [
-    "k-remote"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
    "id": "e2f68x",
    "title": "Added /output-style [name] to list and switch output styles, including over Remote Control and in cloud and other headless sessions",
    "summary": "",
@@ -1210,6 +1162,54 @@
    "nodes": [
     "r-effort",
     "s-deploy"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "jgb6ov",
+   "title": "Fixed Cowork scheduled tasks in the cloud failing at startup for organizations whose managed settings require sandboxing",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.267",
+   "date": null,
+   "nodes": [
+    "k-permissions"
+   ],
+   "relevance": 12,
+   "application": true
+  },
+  {
+   "id": "gkboed",
+   "title": "Fixed resumed sessions rewriting the inline tool set when an MCP connector reconnects at a different moment than before",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.267",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "p590cu",
+   "title": "Fixed prompt-cache misses and dropped extended thinking when a claude.ai connector's tools change between a session and its resume",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.267",
+   "date": null,
+   "nodes": [
+    "r-thinking"
    ],
    "relevance": 12,
    "application": false
@@ -1523,7 +1523,6 @@
   "a-mcp": [
    "5envg7",
    "sv0i6",
-   "1ilnp6h",
    "imx7s2",
    "1i3rnwv",
    "78d8t8",
@@ -1533,7 +1532,8 @@
    "1hjlg19",
    "cy2oqw",
    "uctr40",
-   "19epl4v"
+   "19epl4v",
+   "gkboed"
   ],
   "a-managed": [
    "1c6q1us",
@@ -1544,10 +1544,6 @@
   ],
   "k-claudemd": [
    "f9yd9e"
-  ],
-  "s-structured": [
-   "gkwozc",
-   "1ytqzun"
   ],
   "s-deploy": [
    "o936zs",
@@ -1565,7 +1561,6 @@
   ],
   "k-remote": [
    "1q2hrn0",
-   "1okxzyj",
    "e2f68x",
    "i5iqoq"
   ],
@@ -1574,6 +1569,7 @@
   ],
   "r-thinking": [
    "sfon3e",
+   "p590cu",
    "1ysfqj5",
    "jc6uj8"
   ],
@@ -1583,6 +1579,12 @@
   "r-effort": [
    "i5iqoq",
    "1n26dtz"
+  ],
+  "k-permissions": [
+   "jgb6ov"
+  ],
+  "s-structured": [
+   "1ytqzun"
   ]
  },
  "applications": [
