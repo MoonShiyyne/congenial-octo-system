@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-14T12:43:11.364Z",
+ "generated": "2026-09-14T21:49:46.676Z",
  "itemCount": 66,
  "sourceStatus": [
   {
@@ -55,13 +55,13 @@
    "id": "arxiv-agents",
    "label": "arXiv · agents & LLM systems",
    "ok": false,
-   "error": "The operation was aborted due to timeout"
+   "error": "HTTP 429"
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": false,
-   "error": "HTTP 429"
+   "error": "The operation was aborted due to timeout"
   }
  ],
  "items": [
