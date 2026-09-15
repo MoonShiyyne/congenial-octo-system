@@ -1,13 +1,13 @@
 {
- "generated": "2026-09-15T16:57:35.383Z",
- "itemCount": 64,
+ "generated": "2026-09-15T21:18:36.980Z",
+ "itemCount": 80,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 396,
-   "kept": 132
+   "fetched": 410,
+   "kept": 149
   },
   {
    "id": "python-sdk-changelog",
@@ -20,8 +20,8 @@
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 50,
-   "kept": 11
+   "fetched": 75,
+   "kept": 16
   },
   {
    "id": "hn-mcp",
@@ -54,17 +54,278 @@
   {
    "id": "arxiv-agents",
    "label": "arXiv · agents & LLM systems",
-   "ok": false,
-   "error": "HTTP 429"
+   "ok": true,
+   "fetched": 25,
+   "kept": 15
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
-   "ok": false,
-   "error": "HTTP 429"
+   "ok": true,
+   "fetched": 20,
+   "kept": 6
   }
  ],
  "items": [
+  {
+   "id": "1ppsa6b",
+   "title": "The Router Within: Eliciting Native Skill Routing from a Frozen LLM",
+   "summary": "Skills extend an LLM agent beyond its parametric knowledge, and the gain they promise rests on picking the right one. Deployed harnesses route by preloading every skill's metadata into the context, which disperses the agent's attention and caps the library size. Retrieval pipelines move the selection out of the contex…",
+   "url": "http://arxiv.org/abs/2609.15982v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-14T17:58:27Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1kv4dq2",
+   "title": "Discovery Foundation Models: Toward Open-Ended Discovery Intelligence",
+   "summary": "Foundation models have progressed from learning and reasoning over existing knowledge, to increasingly learning through action, tool use, and outcome feedback. We argue that the next frontier is a further transition: from solving and acting within problems specified by humans to participating in the process by which n…",
+   "url": "http://arxiv.org/abs/2609.15973v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-14T17:56:00Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1c0p3ru",
+   "title": "HypoEvolve: Genetic Algorithms Enable Multi-Agent LLMs to Discover Scientific Hypotheses",
+   "summary": "Scientific agents contribute to hypothesis discovery by synthesizing evidence, assessing proposals, and developing new explanations. Recent systems combine scientific agents with evolutionary search through critique, comparison, and revision. However, how different forms of agent collaboration affect hypothesis qualit…",
+   "url": "http://arxiv.org/abs/2609.15938v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-14T17:44:49Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1276iyf",
+   "title": "Authorization Architectures for Tool-Using AI Agents",
+   "summary": "Tool-using artificial intelligence (AI) agents, systems that autonomously invoke application programming interfaces (APIs), databases, browsers, and inter-agent protocols such as the Model Context Protocol (MCP), are becoming production infrastructure. Yet the security model governing when an agent is authorized to ac…",
+   "url": "http://arxiv.org/abs/2609.15906v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-14T17:21:22Z",
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "hjdggu",
+   "title": "CiteGuard-RAG: A Validation-Centered AI System for Evidence-Grounded Question Answering",
+   "summary": "Retrieval-augmented generation (RAG) can improve access to complex information; however, retrieving evidence alone does not ensure that answers are grounded, citation-valid, or appropriately refused. This paper introduces CiteGuard-RAG, a validation-centered AI system for evidence-grounded question answering. The syst…",
+   "url": "http://arxiv.org/abs/2609.15830v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-14T16:30:54Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1n4o2cb",
+   "title": "Navigating Sparse Evidence: Agentic Visual RAG via Explicit Context Selection and Consolidation",
+   "summary": "Visual Retrieval-Augmented Generation (VRAG) empowers models to navigate and answer queries about visually rich documents by retrieving relevant page images as visual evidence and reasoning over their content. However, effectively utilizing this visual evidence is usually impeded by two main challenges. First, answer-…",
+   "url": "http://arxiv.org/abs/2609.15800v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-14T16:11:35Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "pxooh9",
+   "title": "Assembling the CREW: A Collaborative Multi-agent Reinforcement Learning Framework for Automated Related Work Generation",
+   "summary": "Automatic Related Work Generation (RWG) significantly reduces the human time and effort required to author the Related Work Section (RWS) of a research paper. However, prior methods leveraging multi-agent Large Language Models (LLMs) typically rely on a predefined workflow, where each agent is responsible for a specif…",
+   "url": "http://arxiv.org/abs/2609.15721v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-14T15:20:29Z",
+   "nodes": [
+    "c-retrieval",
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "z3zicj",
+   "title": "CiteShade: Citation Laundering in Multi-Source Retrieval-Augmented Generation and Its Counterfactual Defense",
+   "summary": "Retrieval-augmented generation (RAG) grounds a language model's answers on retrieved external knowledge and returns each answer with citations that identify its sources. Those citations are the user's audit trail: they let a reader verify a claim without trusting the model. Prior security work on RAG asks whether an a…",
+   "url": "http://arxiv.org/abs/2609.15660v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-14T14:41:37Z",
+   "nodes": [
+    "c-citations",
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "gvlbt8",
+   "title": "VideoScout: Learning Agentic Active Exploration with Adaptive Reasoning Pacing for Long Video Understanding",
+   "summary": "Multimodal Large Language Models (MLLMs) have achieved remarkable progress on short video understanding yet remain limited on long videos due to the limited visual context window. Prevailing approaches rely on uniform frame sampling or recent coarse-to-fine agentic zooming, both of which struggle to localize sparse, d…",
+   "url": "http://arxiv.org/abs/2609.15606v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-14T14:04:03Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1tsnkjg",
+   "title": "Benchmarking Embedding Models for ESG Data",
+   "summary": "The use of Environmental, Social, and Governance (ESG) data is fundamental for modern corporate accountability, sustainability reporting, and financial decision-making. Embedding models have emerged as a powerful approach for transforming unstructured ESG text into numerical representations suitable for downstream nat…",
+   "url": "http://arxiv.org/abs/2609.15434v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-14T11:59:58Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1tcmirz",
+   "title": "Why LLM Agents Collapse Without Oversight: The Enforcement Gap as the Mechanism Behind Emergence World Failures",
+   "summary": "When Emergence World placed frontier LLM agents in an unsupervised multi-agent simulation, the results were alarming: agents committed crimes, starved, and enforced unanimous conformity -- without any external attacker. This paper identifies the mechanism. Reflexion-style agents already detect dangerous plan steps thr…",
+   "url": "http://arxiv.org/abs/2609.15293v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-14T09:46:59Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "b6w8lw",
+   "title": "Overflip: Repetition-Induced Label Flips in Guardrail Models",
+   "summary": "Guardrail models are classifiers deployed to screen malicious prompts and responses in LLM-based services. To meet latency constraints, many lightweight guardrails adopt compact Transformer backbones (e.g., DeBERTa) that are trained with short context windows (typically 512 tokens) and rely on bucketed relative positi…",
+   "url": "http://arxiv.org/abs/2609.15013v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-14T04:24:44Z",
+   "nodes": [
+    "c-longctx",
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "lxm343",
+   "title": "SpectralShift: Effective Context Window Extension of Gated DeltaNet via Spectral Reparameterization",
+   "summary": "Recently, linear attention layers have been increasingly adopted to replace softmax attention at scale for long-context modeling. However, existing context extension approaches typically apply continued pretraining directly without modifying these layers, overlooking the spectral properties of linear attention state d…",
+   "url": "http://arxiv.org/abs/2609.14320v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-13T06:30:16Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "2r48qg",
+   "title": "Residual Vector-based Reconstruction as Long-Context Recall Regardless of Context Window Size",
+   "summary": "Large language models (LLMs) process long contexts, including long documents and lengthy conversations, but face token-level memory usage that increases proportionally to input length. Although model optimization and lossy prompt compression are widely used, these methods still fail to solve the long-context recall pr…",
+   "url": "http://arxiv.org/abs/2609.12686v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-11T10:31:46Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 5,
+   "application": false
+  },
+  {
+   "id": "wz54lu",
+   "title": "Doc2FRC: Length-Consistent Document-Level Machine Translation via Fixed-Range Chunking",
+   "summary": "Advanced large language models (LLMs) with long context windows can substantially reduce input truncation in document-level machine translation (DocMT). However, direct Doc2Doc translation remains prone to n-gram repetition and progressive quality degradation. A common remedy is to segment the document into finer-grai…",
+   "url": "http://arxiv.org/abs/2609.12674v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-11T10:17:55Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 5,
+   "application": false
+  },
+  {
+   "id": "en17k7",
+   "title": "Separating Engineering Reasoning from DEXPI Serialization in LLM-Based Greenfield Surface-Process Design: A Three-Case Study for Underground Gas Storage",
+   "summary": "Large language models can produce engineering descriptions and structured process representations, but standards-level serialization can substantially increase the generation burden. This diagnostic study examines whether separating engineering reasoning from Data Exchange in the Process Industry (DEXPI) serialization…",
+   "url": "http://arxiv.org/abs/2609.12656v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-11T10:02:18Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "hzhlbu",
    "title": "Show HN: Self-hosted company OS, Claude Code and Codex agents in departments",
@@ -476,6 +737,54 @@
    "application": true
   },
   {
+   "id": "tfmn5",
+   "title": "Added a notification when an MCP server disconnects mid-session and automatic reconnection gives up, pointing at /mcp",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.273",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1pd9lo3",
+   "title": "Improved the error shown when an MCP server's sign-in expires mid-session to say how to re-authenticate (/mcp)",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.273",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1eq7uu6",
+   "title": "Changed OTEL_LOG_TOOL_DETAILS=1 to also include real agent, skill, plugin and MCP server names on cost and token metrics",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.273",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
    "id": "1g1f927",
    "title": "Added a spinner tip pointing Bedrock, Vertex AI, Foundry and LLM gateway users to the Claude desktop app; the claude.ai desktop app tip now suggests /desktop, which offers to download the app",
    "summary": "",
@@ -734,37 +1043,35 @@
    "application": false
   },
   {
-   "id": "cy2oqw",
-   "title": "Fixed MCP servers configured as http that only speak the legacy HTTP+SSE transport never connecting; Claude Code now falls back to SSE as the MCP spec describes",
+   "id": "zjjxdz",
+   "title": "Fixed a false-positive spinner tip suggesting the frontend-design plugin after reading or publishing Artifacts",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.265",
+   "badge": "2.1.273",
    "date": null,
    "nodes": [
-    "a-mcp",
-    "k-cli"
+    "f-artifacts"
    ],
-   "relevance": 18,
+   "relevance": 15,
    "application": false
   },
   {
-   "id": "uctr40",
-   "title": "Improved remote MCP servers that need sign-in: Claude Code no longer registers an OAuth client with them until you actually authenticate",
+   "id": "1em11c9",
+   "title": "Improved the Artifact tool's error when a publish includes a file type artifacts don't serve: Claude is told which types are served and what to do instead, and the terminal shows one plain line",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.265",
+   "badge": "2.1.273",
    "date": null,
    "nodes": [
-    "a-mcp",
-    "k-cli"
+    "f-artifacts"
    ],
-   "relevance": 18,
+   "relevance": 15,
    "application": false
   },
   {
@@ -844,54 +1151,6 @@
    "date": null,
    "nodes": [
     "f-artifacts"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "1d3jhp2",
-   "title": "Improved artifact watching: a session can now watch up to 10 published artifacts at once for republishes made elsewhere, up from 5",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.271",
-   "date": null,
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "1qwzabw",
-   "title": "Added browser-tab icons for published artifacts, chosen by Claude to match each page",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.268",
-   "date": null,
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "1k4b7f7",
-   "title": "Improved --continue / --resume: the conversation appears immediately instead of waiting for SessionStart hooks, and the first message no longer re-reads the whole transcript",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.268",
-   "date": null,
-   "nodes": [
-    "k-hooks"
    ],
    "relevance": 15,
    "application": false
@@ -1041,14 +1300,14 @@
    "application": false
   },
   {
-   "id": "anwlxt",
-   "title": "**api:** add auto mode tool permissions for Managed Agents ([7f5e2c6](https://github.com/anthropics/anthropic-sdk-typescript/commit/7f5e2c6d01eb3498b86ddbf5eaf1327c266f2ded))",
+   "id": "6oymk4",
+   "title": "**api:** add auto mode tool permissions for Managed Agents ([7829b43](https://github.com/anthropics/anthropic-sdk-typescript/commit/7829b4302375a14db64d5536226768601f843233))",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
    "source": "Anthropic TypeScript SDK",
    "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "0.125.0",
+   "badge": "0.126.0",
    "date": null,
    "nodes": [
     "a-managed"
@@ -1057,71 +1316,132 @@
    "application": false
   },
   {
-   "id": "mu605a",
-   "title": "**api:** support mounting public GitHub repositories without an authorization_token in Managed Agents sessions ([9e2d945](https://github.com/anthropics/anthropic-sdk-typescript/commit/9e2d945226435360915908c529ba7c6969f…",
+   "id": "oltrp2",
+   "title": "**api:** add compaction parameter and signed compaction blocks (beta) ([05fd878](https://github.com/anthropics/anthropic-sdk-typescript/commit/05fd87804f1cb2db1ea94528ba3b5087403177ba))",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
    "source": "Anthropic TypeScript SDK",
    "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "0.125.0",
+   "badge": "0.126.0",
    "date": null,
    "nodes": [
-    "a-managed"
+    "c-editing"
    ],
    "relevance": 6,
    "application": false
   },
   {
-   "id": "1ve6d6g",
-   "title": "**changelog:** detail the beta files/skills GA-shape change ([#1175](https://github.com/anthropics/anthropic-sdk-typescript/issues/1175)) ([4951de0](https://github.com/anthropics/anthropic-sdk-typescript/commit/4951de02…",
+   "id": "4hozcv",
+   "title": "**api:** add url_sources to the web fetch tool ([ee23dd2](https://github.com/anthropics/anthropic-sdk-typescript/commit/ee23dd2b1000499cdbe5dcce1c7487c6744d33d1))",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
    "source": "Anthropic TypeScript SDK",
    "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "0.123.0",
+   "badge": "0.126.0",
    "date": null,
    "nodes": [
-    "k-skills"
+    "a-servertools"
    ],
    "relevance": 6,
    "application": false
   },
   {
-   "id": "12kn1mf",
-   "title": "**api:** beta files/skills namespaces use GA shapes; drop dated beta header pins ([45d693a](https://github.com/anthropics/anthropic-sdk-typescript/commit/45d693a66bc7fb1af66d9c4e3625f6d6f64bae59))",
+   "id": "1wf5b96",
+   "title": "**docs:** clarify that session_thread_id on tool use events is informational ([a07ecf3](https://github.com/anthropics/anthropic-sdk-typescript/commit/a07ecf3e54502cc635c6a5a6ed790d4a2fd70b47))",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
    "source": "Anthropic TypeScript SDK",
    "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "0.122.0",
+   "badge": "0.126.0",
    "date": null,
    "nodes": [
-    "k-skills"
+    "a-tools"
    ],
    "relevance": 6,
    "application": false
   },
   {
-   "id": "16cua2z",
-   "title": "**uploads:** default bare Blob filename on skills endpoints ([#422](https://github.com/anthropics/anthropic-sdk-typescript/issues/422)) ([e111649](https://github.com/anthropics/anthropic-sdk-typescript/commit/e1116491dd…",
+   "id": "14yqm3r",
+   "title": "**docs:** correct the compaction beta's parameter descriptions ([eb9abd2](https://github.com/anthropics/anthropic-sdk-typescript/commit/eb9abd200de3a13098a796fa8482f2764df6bd98))",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
    "source": "Anthropic TypeScript SDK",
    "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "0.122.0",
+   "badge": "0.126.0",
    "date": null,
    "nodes": [
-    "k-skills"
+    "c-editing"
    ],
    "relevance": 6,
    "application": false
   }
  ],
  "byNode": {
+  "k-skills": [
+   "1ppsa6b",
+   "1g5lpqi",
+   "13xt578",
+   "qqjnqh",
+   "qbakwv"
+  ],
+  "a-tools": [
+   "1kv4dq2",
+   "1ecghce",
+   "1wf5b96"
+  ],
+  "a-teams": [
+   "1c0p3ru",
+   "pxooh9",
+   "1tcmirz"
+  ],
+  "a-mcp": [
+   "1276iyf",
+   "5envg7",
+   "tfmn5",
+   "1pd9lo3",
+   "1eq7uu6",
+   "1mc7mfe",
+   "z0niv6",
+   "9lcuqq",
+   "qbakwv",
+   "grns2r",
+   "imx7s2",
+   "1i3rnwv",
+   "78d8t8",
+   "wvte4n",
+   "99bngc",
+   "800ooo",
+   "1hjlg19",
+   "1jrie0v"
+  ],
+  "c-retrieval": [
+   "hjdggu",
+   "1n4o2cb",
+   "pxooh9",
+   "z3zicj",
+   "en17k7"
+  ],
+  "c-citations": [
+   "z3zicj"
+  ],
+  "c-longctx": [
+   "gvlbt8",
+   "b6w8lw",
+   "lxm343",
+   "2r48qg",
+   "wz54lu",
+   "4ryc97"
+  ],
+  "s-models": [
+   "1tsnkjg"
+  ],
+  "s-guardrails": [
+   "b6w8lw"
+  ],
   "k-cli": [
    "hzhlbu",
    "yq92q5",
@@ -1141,36 +1461,7 @@
    "1euvjgd",
    "haqhq7",
    "rq0kwf",
-   "68j9su",
-   "cy2oqw",
-   "uctr40"
-  ],
-  "k-skills": [
-   "1g5lpqi",
-   "13xt578",
-   "qqjnqh",
-   "qbakwv",
-   "1ve6d6g",
-   "12kn1mf",
-   "16cua2z"
-  ],
-  "a-mcp": [
-   "5envg7",
-   "1mc7mfe",
-   "z0niv6",
-   "9lcuqq",
-   "qbakwv",
-   "grns2r",
-   "imx7s2",
-   "1i3rnwv",
-   "78d8t8",
-   "wvte4n",
-   "99bngc",
-   "800ooo",
-   "1hjlg19",
-   "cy2oqw",
-   "uctr40",
-   "1jrie0v"
+   "68j9su"
   ],
   "c-memory": [
    "1furdo9",
@@ -1180,8 +1471,7 @@
    "1c6q1us",
    "1g39cjk",
    "xbi3xg",
-   "anwlxt",
-   "mu605a"
+   "6oymk4"
   ],
   "k-claudemd": [
    "f9yd9e"
@@ -1194,22 +1484,18 @@
    "9lcuqq",
    "1om280d"
   ],
-  "c-longctx": [
-   "4ryc97"
-  ],
   "k-slash": [
    "1wtfvof"
   ],
   "f-artifacts": [
+   "zjjxdz",
+   "1em11c9",
    "1qymdgn",
    "1om280d",
-   "14q2v12",
-   "1d3jhp2",
-   "1qwzabw"
+   "14q2v12"
   ],
   "k-hooks": [
-   "lr00do",
-   "1k4b7f7"
+   "lr00do"
   ],
   "s-structured": [
    "1ytqzun"
@@ -1219,16 +1505,32 @@
   ],
   "c-editing": [
    "jdh8k3",
-   "1lsa4li"
+   "1lsa4li",
+   "oltrp2",
+   "14yqm3r"
   ],
   "a-servertools": [
-   "p1px6g"
-  ],
-  "a-tools": [
-   "1ecghce"
+   "p1px6g",
+   "4hozcv"
   ]
  },
  "applications": [
+  {
+   "id": "pxooh9",
+   "node": "c-retrieval",
+   "nodeTitle": "Retrieval vs. Context",
+   "discipline": "context",
+   "title": "Assembling the CREW: A Collaborative Multi-agent Reinforcement Learning Framework for Automated Related Work Generation",
+   "url": "http://arxiv.org/abs/2609.15721v1"
+  },
+  {
+   "id": "en17k7",
+   "node": "c-retrieval",
+   "nodeTitle": "Retrieval vs. Context",
+   "discipline": "context",
+   "title": "Separating Engineering Reasoning from DEXPI Serialization in LLM-Based Greenfield Surface-Process Design: A Three-Case Study for Underground Gas Storage",
+   "url": "http://arxiv.org/abs/2609.12656v1"
+  },
   {
    "id": "hzhlbu",
    "node": "k-cli",
