@@ -1,13 +1,13 @@
 {
- "generated": "2026-09-14T21:49:46.676Z",
- "itemCount": 66,
+ "generated": "2026-09-15T04:53:31.163Z",
+ "itemCount": 65,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 367,
-   "kept": 109
+   "fetched": 396,
+   "kept": 132
   },
   {
    "id": "python-sdk-changelog",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 10
+   "kept": 9
   },
   {
    "id": "arxiv-agents",
@@ -61,7 +61,7 @@
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": false,
-   "error": "The operation was aborted due to timeout"
+   "error": "HTTP 429"
   }
  ],
  "items": [
@@ -408,23 +408,6 @@
    "application": true
   },
   {
-   "id": "7i82b8",
-   "title": "Show HN: Pull Claude Code transcripts into your Codex session, and vice versa",
-   "summary": "",
-   "url": "https://contextify.sh/",
-   "discussion": "https://news.ycombinator.com/item?id=48777790",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "7 pts",
-   "date": "2026-07-03T17:50:59Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
    "id": "1euvjgd",
    "title": "Blog HN: Claude Code Making an Ass Out of You and Me",
    "summary": "",
@@ -508,6 +491,152 @@
    ],
    "relevance": 12,
    "application": true
+  },
+  {
+   "id": "1g1f927",
+   "title": "Added a spinner tip pointing Bedrock, Vertex AI, Foundry and LLM gateway users to the Claude desktop app; the claude.ai desktop app tip now suggests /desktop, which offers to download the app",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.271",
+   "date": null,
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1mc7mfe",
+   "title": "Fixed resumed claude -p sessions whose tools all come from MCP servers failing with \"At least one tool must have defer_loading=false\"",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.271",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "z0niv6",
+   "title": "Fixed sustained high CPU usage and repeated tool-list requests when an MCP server sends list_changed notifications in a tight loop",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.271",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "9lcuqq",
+   "title": "Fixed Ctrl+O cancelling pending MCP server reconnects, and /mcp sent from Remote Control failing while the transcript view is open",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.271",
+   "date": null,
+   "nodes": [
+    "a-mcp",
+    "k-remote"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "4ryc97",
+   "title": "Fixed --resume dropping the 1M context window ([1m]) when the resumed session's model family differs from the configured default model",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.271",
+   "date": null,
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1wtfvof",
+   "title": "Fixed custom agents, slash commands and output styles beyond the first not loading from a virtual drive that reports inode 0, such as an encrypted vault mounted as a Windows drive",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.271",
+   "date": null,
+   "nodes": [
+    "k-slash"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "qbakwv",
+   "title": "Fixed self-hosted runner sessions silently losing all host config (settings, skills, plugins, MCP servers) when the host config directory exceeds 64 MiB; added --host-config-snapshot disk|memory",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.271",
+   "date": null,
+   "nodes": [
+    "a-mcp",
+    "k-skills"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "grns2r",
+   "title": "Improved Foundry and Claude Platform on AWS sessions: an alwaysLoad MCP server that finishes connecting mid-conversation is usable on the next turn without a tool-search round trip",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.271",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "11weedg",
+   "title": "Changed Claude apps gateway, Bedrock, Vertex AI, and Foundry sessions so that they no longer refresh a leftover claude.ai login that the session does not use",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.271",
+   "date": null,
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 18,
+   "application": false
   },
   {
    "id": "imx7s2",
@@ -656,52 +785,100 @@
    "application": false
   },
   {
-   "id": "o936zs",
-   "title": "Improved the /model picker and the VS Code model pill to show a model's name instead of its raw Bedrock, Vertex AI, or LLM gateway ID when Claude Code recognizes it",
+   "id": "1jrie0v",
+   "title": "Fixed tool search returning no match when Claude selects an MCP tool by its bare name instead of its full mcp__server__tool name",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.261",
-   "date": null,
-   "nodes": [
-    "s-deploy",
-    "k-cli"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "113cp0b",
-   "title": "Changed machines whose managed settings pin forceLoginMethod: \"gateway\" to ignore a leftover API key or claude.ai login and ask for /login; Bedrock, Vertex AI, and Foundry sessions are unaffected",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.261",
-   "date": null,
-   "nodes": [
-    "s-deploy"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "19epl4v",
-   "title": "[VSCode] Added an Add server form and a Remove action to the MCP servers dialog, so MCP servers can be added and removed without leaving the IDE",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.261",
+   "badge": "2.1.271",
    "date": null,
    "nodes": [
     "a-mcp"
    ],
-   "relevance": 18,
+   "relevance": 15,
+   "application": false
+  },
+  {
+   "id": "1qymdgn",
+   "title": "Fixed artifacts attached with /artifacts disappearing from the session after --resume",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.271",
+   "date": null,
+   "nodes": [
+    "f-artifacts"
+   ],
+   "relevance": 15,
+   "application": false
+  },
+  {
+   "id": "1om280d",
+   "title": "Fixed background sessions (claude --bg, claude agents) not watching the artifacts they publish for republishes made elsewhere",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.271",
+   "date": null,
+   "nodes": [
+    "f-artifacts",
+    "k-remote"
+   ],
+   "relevance": 15,
+   "application": false
+  },
+  {
+   "id": "lr00do",
+   "title": "Improved hook feedback: while a SessionStart, UserPromptSubmit, PreToolUse or SessionEnd hook runs, the spinner says so with elapsed time, and Esc cancels a prompt waiting on a SessionStart hook",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.271",
+   "date": null,
+   "nodes": [
+    "k-hooks"
+   ],
+   "relevance": 15,
+   "application": false
+  },
+  {
+   "id": "14q2v12",
+   "title": "Improved Markdown files published as artifacts: they now render as styled document pages (title header, document typography, syntax-highlighted code)",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.271",
+   "date": null,
+   "nodes": [
+    "f-artifacts"
+   ],
+   "relevance": 15,
+   "application": false
+  },
+  {
+   "id": "1d3jhp2",
+   "title": "Improved artifact watching: a session can now watch up to 10 published artifacts at once for republishes made elsewhere, up from 5",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.271",
+   "date": null,
+   "nodes": [
+    "f-artifacts"
+   ],
+   "relevance": 15,
    "application": false
   },
   {
@@ -734,205 +911,6 @@
     "k-hooks"
    ],
    "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "7ac7sd",
-   "title": "Improved the terminal permission prompt for artifacts: it now leads with the ask's question",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.268",
-   "date": null,
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "1q2hrn0",
-   "title": "Fixed /clear from Remote Control waiting on SessionStart hooks and on open terminal dialogs before completing",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.265",
-   "date": null,
-   "nodes": [
-    "k-hooks",
-    "k-remote"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "e2f68x",
-   "title": "Added /output-style [name] to list and switch output styles, including over Remote Control and in cloud and other headless sessions",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.269",
-   "date": null,
-   "nodes": [
-    "k-remote",
-    "k-slash"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "zteqvz",
-   "title": "[VSCode] Removed the Claude Code items from a session tab's right-click menu and the editor title bar's \"...\" menu; they could not act on the tab the menu was opened on",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.269",
-   "date": null,
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "1hrbh6d",
-   "title": "Added to the Claude apps gateway: with pricing: set in gateway.yaml, signed-in Claude Code clients receive the same rates through managed settings, so /cost and telemetry match the spend meter",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.268",
-   "date": null,
-   "nodes": [
-    "k-cli",
-    "s-cost"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "sfon3e",
-   "title": "Fixed prompt caching and extended thinking breaking mid-session for SDK sessions using excludeDynamicSections: the first message is no longer re-rendered each request",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.268",
-   "date": null,
-   "nodes": [
-    "r-thinking",
-    "c-cache"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "10ci3e9",
-   "title": "Fixed plugins silently skipping a default monitors file or root SKILL.md that could not be checked",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.268",
-   "date": null,
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "i5iqoq",
-   "title": "[Claude Code on the web] Fixed \"Invalid effort level\" errors when a routine resumes a session, or a session starts with no set effort, in orgs where an admin caps a model's effort",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.268",
-   "date": null,
-   "nodes": [
-    "r-effort",
-    "k-cli",
-    "k-remote"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "1n26dtz",
-   "title": "Added maxEffortLevel setting (top-level or per model under modelSettings): caps the effort level on every provider, including Bedrock, Vertex and Foundry; users can still pick a lower level",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.267",
-   "date": null,
-   "nodes": [
-    "r-effort",
-    "s-deploy"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "jgb6ov",
-   "title": "Fixed Cowork scheduled tasks in the cloud failing at startup for organizations whose managed settings require sandboxing",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.267",
-   "date": null,
-   "nodes": [
-    "k-permissions"
-   ],
-   "relevance": 12,
-   "application": true
-  },
-  {
-   "id": "gkboed",
-   "title": "Fixed resumed sessions rewriting the inline tool set when an MCP connector reconnects at a different moment than before",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.267",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "p590cu",
-   "title": "Fixed prompt-cache misses and dropped extended thinking when a claude.ai connector's tools change between a session and its resume",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.267",
-   "date": null,
-   "nodes": [
-    "r-thinking"
-   ],
-   "relevance": 12,
    "application": false
   },
   {
@@ -1177,23 +1155,18 @@
    "8kcnsx",
    "94d0dx",
    "9m1dvn",
-   "7i82b8",
    "1euvjgd",
    "haqhq7",
    "rq0kwf",
    "68j9su",
    "cy2oqw",
-   "uctr40",
-   "o936zs",
-   "zteqvz",
-   "1hrbh6d",
-   "i5iqoq"
+   "uctr40"
   ],
   "k-skills": [
    "1g5lpqi",
    "13xt578",
    "qqjnqh",
-   "10ci3e9",
+   "qbakwv",
    "1paf9pw",
    "1tq7txv",
    "1ve6d6g",
@@ -1203,6 +1176,11 @@
   "a-mcp": [
    "5envg7",
    "sv0i6",
+   "1mc7mfe",
+   "z0niv6",
+   "9lcuqq",
+   "qbakwv",
+   "grns2r",
    "imx7s2",
    "1i3rnwv",
    "78d8t8",
@@ -1212,8 +1190,7 @@
    "1hjlg19",
    "cy2oqw",
    "uctr40",
-   "19epl4v",
-   "gkboed"
+   "1jrie0v"
   ],
   "c-memory": [
    "1furdo9",
@@ -1230,45 +1207,34 @@
    "f9yd9e"
   ],
   "s-deploy": [
-   "o936zs",
-   "113cp0b",
-   "1n26dtz"
-  ],
-  "f-artifacts": [
-   "1qwzabw",
-   "7ac7sd"
-  ],
-  "k-hooks": [
-   "1k4b7f7",
-   "1q2hrn0",
-   "1gbehs5"
+   "1g1f927",
+   "11weedg"
   ],
   "k-remote": [
-   "1q2hrn0",
-   "e2f68x",
-   "i5iqoq"
+   "9lcuqq",
+   "1om280d"
+  ],
+  "c-longctx": [
+   "4ryc97"
   ],
   "k-slash": [
-   "e2f68x"
+   "1wtfvof"
   ],
-  "s-cost": [
-   "1hrbh6d"
+  "f-artifacts": [
+   "1qymdgn",
+   "1om280d",
+   "14q2v12",
+   "1d3jhp2",
+   "1qwzabw"
+  ],
+  "k-hooks": [
+   "lr00do",
+   "1k4b7f7",
+   "1gbehs5"
   ],
   "r-thinking": [
-   "sfon3e",
-   "p590cu",
    "1ysfqj5",
    "jc6uj8"
-  ],
-  "c-cache": [
-   "sfon3e"
-  ],
-  "r-effort": [
-   "i5iqoq",
-   "1n26dtz"
-  ],
-  "k-permissions": [
-   "jgb6ov"
   ],
   "s-structured": [
    "1ytqzun"
@@ -1426,14 +1392,6 @@
    "discipline": "code",
    "title": "Show HN: Make your terminal pulse orange when Claude Code needs input",
    "url": "https://github.com/rickardstureborg/claude-needs-input"
-  },
-  {
-   "id": "7i82b8",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Pull Claude Code transcripts into your Codex session, and vice versa",
-   "url": "https://contextify.sh/"
   },
   {
    "id": "rq0kwf",
