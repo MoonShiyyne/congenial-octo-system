@@ -1,13 +1,13 @@
 {
- "generated": "2026-09-16T21:16:18.881Z",
+ "generated": "2026-09-17T04:50:07.663Z",
  "itemCount": 81,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 410,
-   "kept": 149
+   "fetched": 517,
+   "kept": 187
   },
   {
    "id": "python-sdk-changelog",
@@ -56,17 +56,245 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 16
+   "kept": 12
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": true,
    "fetched": 20,
-   "kept": 9
+   "kept": 13
   }
  ],
  "items": [
+  {
+   "id": "19uw98p",
+   "title": "ASLEval: Measuring Privacy Exposure Displacement in LLM Agent Sessions",
+   "summary": "Privacy evaluations of tool-using LLM agents often inspect a designated action, final response, or attacker report. These local proxies can miss unauthorized exposure elsewhere in a multi-step session and lack common ground truth across outlets, reports, and tool paths. We introduce privacy exposure displacement, the…",
+   "url": "http://arxiv.org/abs/2609.18864v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-16T16:03:11Z",
+   "nodes": [
+    "a-managed"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1jucg1v",
+   "title": "CASHEWS: Source Preprocessor for LLM-based Malicious Package Detection",
+   "summary": "Malicious npm package detection tools now leverage LLMs' semantic understanding of source code to detect malicious intent at scale. This capability has proven invaluable in identifying packages involved in recent supply-chain attacks such as Shai-Hulud. However, threat actors exploit the limited context windows of LLM…",
+   "url": "http://arxiv.org/abs/2609.18862v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-16T16:00:58Z",
+   "nodes": [
+    "c-longctx",
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "g74xaq",
+   "title": "Recursive Reasoning or Statistical Extrapolation? In-Context Learning in Multi-Agent Interdependent Decision-Making",
+   "summary": "In-context learning (ICL) enables large language model (LLM) agents to improve decisions using interaction history, yet it remains unclear whether such improvement reflects refined internal reasoning or mere extrapolation of statistical patterns. To disentangle these mechanisms, we study LLM agents in multi-agent inco…",
+   "url": "http://arxiv.org/abs/2609.18591v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-16T12:49:19Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1jqd0z7",
+   "title": "AeroWeaver: An Embodied-Agent Harness for Weaving Aerial Skills into Distributed, Adaptive Swarm Execution",
+   "summary": "Collective intelligence is a collaborative autonomy paradigm in which multiple agents pursue shared objectives through local perception, information exchange, and coordinated action. UAV swarms embody this paradigm by coordinating multiple vehicles in tasks such as search, inspection, and tracking. Recent advances in…",
+   "url": "http://arxiv.org/abs/2609.18520v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-16T11:49:38Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1hy3eq1",
+   "title": "Size Matters: Foundation Model for Czech HTML documents",
+   "summary": "Creating universal, high-quality representations of web documents in high-traffic industrial environments requires models that are both performant and economic. Existing approaches, however, often depend on large models, overlook the structural information inherent in HTML, or are constrained by short context windows,…",
+   "url": "http://arxiv.org/abs/2609.18494v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-16T11:31:52Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1s4y0bc",
+   "title": "M-SQE: Multilingual Skill Quality Estimation for Enhancing Language Equality in Agentic Skill Use",
+   "summary": "Agent skills, reusable procedural documents that extend LLM agents beyond their parametric memory, have become an important interface for deploying agents on real-world tasks. Community-maintained skill libraries built around this interface are growing rapidly. However, this ecosystem remains deeply English-centric: o…",
+   "url": "http://arxiv.org/abs/2609.18445v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-16T10:36:32Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "17bf0j8",
+   "title": "Exploring LLMs and RAG for Plausible and Explainable Material Prediction of Vehicle Components",
+   "summary": "In this work, we explore whether LLMs can accurately predict and explain plausible materials for vehicle components such as brake discs or fuel injectors without requiring extensive fine-tuning. We test and evaluate three approaches: a standard generative LLM baseline, a single-pass Retrieval-Augmented Generation (RAG…",
+   "url": "http://arxiv.org/abs/2609.18437v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-16T10:28:28Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "5lozty",
+   "title": "Knowledge-Graph Based Augmentation versus Retrieval Augmented Generation for Cultural-Related Question Answering",
+   "summary": "Large language models (LLMs) suffer from a long-tail deficit: culturally specific facts, particularly those concerning underrepresented regions such as Latin America, appear too rarely in pretraining corpora to be reliably memorized. Retrieval-Augmented Generation (RAG) addresses this by grounding generation in extern…",
+   "url": "http://arxiv.org/abs/2609.18317v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-16T08:36:30Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1datrkw",
+   "title": "Measuring and Exploiting Implicit Trust in LLM Tool-Calling Pipelines",
+   "summary": "The Model Context Protocol (MCP) enables LLMs to invoke external tools, but every tool interaction exposes the model to attacker-controlled text through multiple input channels (tool descriptions, tool results, sampling messages) that share a single context window without privilege separation. In this paper, we presen…",
+   "url": "http://arxiv.org/abs/2609.18217v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-16T06:47:10Z",
+   "nodes": [
+    "a-mcp",
+    "c-longctx"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "7119uc",
+   "title": "When Is Graph Structure Worth Its Cost? The Case for Structure Pricing in Retrieval-Augmented Generation",
+   "summary": "Graph-based retrieval-augmented generation (RAG) can help answer questions that require information from many documents. However, building a graph often requires many language-model calls during ingestion. It is therefore important to ask whether its quality gains justify the additional cost. We present EffiRAG, a gra…",
+   "url": "http://arxiv.org/abs/2609.18099v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-16T04:08:15Z",
+   "nodes": [
+    "c-retrieval",
+    "s-cost"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1ktpdp0",
+   "title": "A Calibrated Instrument for Measuring How Inference Optimizations Affect Output Quality",
+   "summary": "Large language model optimization is an active research area, spanning quantization of model weights, early-exit methods for skipping layers, and speculative decoding. Each track uses its own quality measures, typically an idiosyncratic benchmark score. Few approach the measurement precision required by other scientif…",
+   "url": "http://arxiv.org/abs/2609.18005v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-16T01:49:12Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1vp9fgh",
+   "title": "One Size Does Not Fit All! Dynamic Retriever and Generator Selection for RAG",
+   "summary": "Retrieval-Augmented Generation (RAG) systems typically employ fixed retriever and generator configurations across queries, despite substantial differences in query complexity and information needs, leading to inefficient allocation of computational resources. While retrieval and generation adaptivity have been studied…",
+   "url": "http://arxiv.org/abs/2609.17709v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-15T18:20:38Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "fh013u",
+   "title": "A Large-Scale Empirical Study of Quality Assurance Practices and Gaps in AI Agents",
+   "summary": "Large language model (LLM)-based agents are increasingly used across software engineering, web automation, research, and productivity applications. Their integration of planning, memory, tool use, code execution, and external interactions enables greater autonomy but also introduces new reliability, safety, and securi…",
+   "url": "http://arxiv.org/abs/2609.17698v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-15T18:10:57Z",
+   "nodes": [
+    "a-tools",
+    "a-servertools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "i7dak5",
+   "title": "GraphEcho: Structural Redundancy and Evidence Provenance in LLM Graph Agents",
+   "summary": "A large language model (LLM) agent can follow more graph paths without acquiring more independent evidence. GraphEcho tests whether agents mistake these repeated encounters for additional corroboration. The benchmark varies path counts and evidential origins while holding evidence content fixed, and evaluates both jud…",
+   "url": "http://arxiv.org/abs/2609.17695v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-15T18:07:09Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "va7mlb",
    "title": "Where Should a Document Live: Context, Representations, or Parameters?",
@@ -100,38 +328,6 @@
    "application": false
   },
   {
-   "id": "8viod6",
-   "title": "DriveMCP: An Agentic AI framework for Advanced Driver Assistance System",
-   "summary": "An agentic AI driver-assistance framework that integrates perception, compliance reasoning, vehicle-state interpretation, and safety arbitration into a modular and auditable pipeline. The architecture, referred to as DriveMCP, incorporates a sensor-like perception stack alongside DriveLM as the vision-language front e…",
-   "url": "http://arxiv.org/abs/2609.17247v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-15T14:29:18Z",
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "19blcao",
-   "title": "ORDER: Task-Conditioned Routing for Retrieval-Augmented Generation",
-   "summary": "Retrieval-Augmented Generation (RAG) pipelines typically rely on a fixed indexing and retrieval configuration determined at preprocessing time. This one-size-fits-all design is ill-suited to domain-expert settings, where heterogeneous queries require different chunking granularities, metadata constraints, and source-s…",
-   "url": "http://arxiv.org/abs/2609.17012v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-15T11:23:16Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 4,
-   "application": false
-  },
-  {
    "id": "13655c3",
    "title": "LLMDE: A Large Language Model-Driven Differential Evolution Algorithm for Portfolio Optimization",
    "summary": "This study proposes a Large Language Model-Driven Differential Evolution (LLMDE) algorithm to reduce the reliance on handcrafted hyperparameter design. The proposed algorithm leverages a prompt engineering strategy, allowing large language models (LLMs) to dynamically select mutation strategies and configure control p…",
@@ -141,54 +337,6 @@
    "category": "research",
    "badge": "preprint",
    "date": "2026-09-15T08:39:44Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "hk4ajc",
-   "title": "InceptionRAG: Stealthy Poisoning Attack Against Retrieval-Augmented Generation",
-   "summary": "Retrieval-augmented generation (RAG) systems enhance large language models (LLMs) with external knowledge but have been demonstrated to be vulnerable to corpus poisoning. Existing poisoning attacks against RAG largely focus on single-point explicit injection, where the malicious payload is fully encapsulated within a…",
-   "url": "http://arxiv.org/abs/2609.16818v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-15T08:22:10Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1xednfn",
-   "title": "RECTIFY: An Interactive Workbench for Post-Evaluation RAG Diagnosis, Repair, and Verification",
-   "summary": "Retrieval-Augmented Generation (RAG) evaluators can identify failures such as weak retrieval, poor grounding, incomplete answers, and unsupported generation, but they rarely help developers decide what to repair next. We present RECTIFY, an interactive Streamlit workbench that turns evaluated RAG cases into auditable…",
-   "url": "http://arxiv.org/abs/2609.16764v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-15T07:37:58Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1y0l0c",
-   "title": "SpecLens: LLM-Based Verilog Generation with Specification-Derived Constraints via Behavioral Divergence",
-   "summary": "Large language models (LLMs) have recently shown promise in Verilog generation, but producing functionally correct RTL directly from natural-language specifications remains a highly challenging task. Existing approaches improve LLM-based Verilog generation mainly with retrieval-augmented generation (RAG), self-plannin…",
-   "url": "http://arxiv.org/abs/2609.16729v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-15T06:59:00Z",
    "nodes": [
     "c-retrieval"
    ],
@@ -207,154 +355,6 @@
    "date": "2026-09-15T06:47:20Z",
    "nodes": [
     "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "k3o8ft",
-   "title": "Query-Aware Source-Risk Triage for Retrieval-Augmented Generation",
-   "summary": "Retrieval-augmented generation (RAG) pipelines may omit a source's material relationship to the query. We study a pre-generation triage layer that treats this relationship as query dependent. The method routes canonical query families for enhanced review and assigns retrieved pages to pass, contextualize, exclude, or…",
-   "url": "http://arxiv.org/abs/2609.16564v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-15T03:01:27Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "npwmkt",
-   "title": "AquiLLM: Evaluating Faithfulness in Open-Weight RAG-LLM Systems for Scientific Research",
-   "summary": "Scientific research increasingly relies on large, heterogeneous data sources, motivating interest in retrieval-augmented generation (RAG) systems that provide natural language access to scientific knowledge and research workflows. Researchers are exploring the viability of these systems as natural language interfaces…",
-   "url": "http://arxiv.org/abs/2609.16519v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-15T02:09:45Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1nfytfl",
-   "title": "Beyond the Name: Demographic Leakage in De-Identified Résumés and Evaluation Artifacts in LLM Bias Audits",
-   "summary": "De-identified résumé screening assumes that redacting explicit fields prevents ethnocultural inference; however, recent audits attribute residual leakage to declared languages. We investigate whether eliminating language fields resolves this leakage across nine open-weight models and 620 counterfactual résumés. By hol…",
-   "url": "http://arxiv.org/abs/2609.16501v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-15T01:48:44Z",
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 5,
-   "application": false
-  },
-  {
-   "id": "1kgcp85",
-   "title": "Predicting Partial Answer Quality and Utility in Agentic Retrieval-Augmented Generation",
-   "summary": "Agentic Retrieval-Augmented Generation (RAG) has become a promising paradigm for multi-hop question answering, where a reasoning model iteratively issues queries to a retriever and incorporates newly retrieved context into subsequent reasoning steps. While this iterative process can improve final answer quality, curre…",
-   "url": "http://arxiv.org/abs/2609.16453v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-15T00:17:50Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1rqhj0r",
-   "title": "BLINDSPOT: A Benchmark for Safety and Refusal Calibration in Long-Horizon Tool-Using Agents",
-   "summary": "Large language model (LLM) agents increasingly operate over long-horizon interactions involving tool use, persistent state, evolving authorization, and external environment feedback. In such settings, safety failures may emerge only after multiple turns, yet existing evaluations often reduce agent behavior to task or…",
-   "url": "http://arxiv.org/abs/2609.16305v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-14T20:12:27Z",
-   "nodes": [
-    "a-tools",
-    "s-models",
-    "s-guardrails"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "unlgg0",
-   "title": "CLEAR: Cross-Source Evidence Adjudication for Large Language Models in Medicine",
-   "summary": "Medical knowledge evolves continuously, whereas the parametric knowledge encoded in large language models (LLMs) is fixed at training time. External retrieval, including retrieval-augmented generation (RAG), can provide access to newly available evidence, but retrieved information may be irrelevant, incomplete, or con…",
-   "url": "http://arxiv.org/abs/2609.16301v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-14T20:00:16Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "gvlbt8",
-   "title": "VideoScout: Learning Agentic Active Exploration with Adaptive Reasoning Pacing for Long Video Understanding",
-   "summary": "Multimodal Large Language Models (MLLMs) have achieved remarkable progress on short video understanding yet remain limited on long videos due to the limited visual context window. Prevailing approaches rely on uniform frame sampling or recent coarse-to-fine agentic zooming, both of which struggle to localize sparse, d…",
-   "url": "http://arxiv.org/abs/2609.15606v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-14T14:04:03Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "b6w8lw",
-   "title": "Overflip: Repetition-Induced Label Flips in Guardrail Models",
-   "summary": "Guardrail models are classifiers deployed to screen malicious prompts and responses in LLM-based services. To meet latency constraints, many lightweight guardrails adopt compact Transformer backbones (e.g., DeBERTa) that are trained with short context windows (typically 512 tokens) and rely on bucketed relative positi…",
-   "url": "http://arxiv.org/abs/2609.15013v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-14T04:24:44Z",
-   "nodes": [
-    "c-longctx",
-    "s-guardrails"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "dxj04e",
-   "title": "The Immutable Past: Formalizing State Mutability and Conflict Resolution in Mutable RAG",
-   "summary": "Retrieval-Augmented Generation (RAG) serves as the primary memory architecture for long-horizon autonomous agents. However, treating shared memory as an append-only stream introduces \\textit{Semantic Shadowing}, a critical failure mode where conflicting historical observations accumulate and statistically dominate val…",
-   "url": "http://arxiv.org/abs/2609.16073v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-13T15:28:07Z",
-   "nodes": [
-    "c-retrieval",
-    "a-scheduled"
    ],
    "relevance": 3,
    "application": false
@@ -753,6 +753,102 @@
    "application": true
   },
   {
+   "id": "1r7pff",
+   "title": "Improved startup in --input-format stream-json sessions: the first turn no longer waits up to 2s for still-connecting MCP servers whose tools tool search defers; they arrive on a later turn",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.274",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 24,
+   "application": true
+  },
+  {
+   "id": "19fnlqw",
+   "title": "Added CLAUDE_CODE_MCP_STARTUP_WAIT_MS to bound how long the first non-interactive turn waits for connecting MCP servers (0 = don't wait)",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.274",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": true
+  },
+  {
+   "id": "19bprxy",
+   "title": "Fixed MCP servers configured as http that only speak legacy HTTP+SSE failing to connect when they answer the first request with 422 or another 4xx error",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.274",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1v2lgmb",
+   "title": "Fixed the first turn of a cloud session sometimes starting without the tools of an SDK-hosted MCP server that was still connecting",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.274",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1gh5s7v",
+   "title": "Fixed --strict-mcp-config with an empty --mcp-config holding the first non-interactive turn for up to MCP_TIMEOUT on incidental MCP servers",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.274",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "est25l",
+   "title": "[VSCode] Fixed the Manage Plugins enable toggle and MCP servers dialog rows being unreachable from the keyboard",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.274",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
    "id": "tfmn5",
    "title": "Added a notification when an MCP server disconnects mid-session and automatic reconnection gives up, pointing at /mcp",
    "summary": "",
@@ -1075,103 +1171,6 @@
    "application": false
   },
   {
-   "id": "1em11c9",
-   "title": "Improved the Artifact tool's error when a publish includes a file type artifacts don't serve: Claude is told which types are served and what to do instead, and the terminal shows one plain line",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.273",
-   "date": null,
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "1jrie0v",
-   "title": "Fixed tool search returning no match when Claude selects an MCP tool by its bare name instead of its full mcp__server__tool name",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.271",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "1qymdgn",
-   "title": "Fixed artifacts attached with /artifacts disappearing from the session after --resume",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.271",
-   "date": null,
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "1om280d",
-   "title": "Fixed background sessions (claude --bg, claude agents) not watching the artifacts they publish for republishes made elsewhere",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.271",
-   "date": null,
-   "nodes": [
-    "f-artifacts",
-    "k-remote"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "lr00do",
-   "title": "Improved hook feedback: while a SessionStart, UserPromptSubmit, PreToolUse or SessionEnd hook runs, the spinner says so with elapsed time, and Esc cancels a prompt waiting on a SessionStart hook",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.271",
-   "date": null,
-   "nodes": [
-    "k-hooks"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "14q2v12",
-   "title": "Improved Markdown files published as artifacts: they now render as styled document pages (title header, document typography, syntax-highlighted code)",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.271",
-   "date": null,
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
    "id": "18ur1cp",
    "title": "**tools:** preserve exact file bytes in the agent toolset and memory tool (no newline translation) ([#540](https://github.com/anthropics/anthropic-sdk-python/issues/540)) ([56921a8](https://github.com/anthropics/anthrop…",
    "summary": "",
@@ -1397,19 +1396,50 @@
   }
  ],
  "byNode": {
+  "a-managed": [
+   "19uw98p",
+   "1c6q1us",
+   "1g39cjk",
+   "xbi3xg",
+   "6oymk4"
+  ],
   "c-longctx": [
+   "1jucg1v",
+   "1hy3eq1",
+   "1datrkw",
    "va7mlb",
    "19oxnsk",
-   "gvlbt8",
-   "b6w8lw",
    "4ryc97"
   ],
+  "c-retrieval": [
+   "1jucg1v",
+   "17bf0j8",
+   "5lozty",
+   "7119uc",
+   "1vp9fgh",
+   "13655c3"
+  ],
   "a-teams": [
+   "g74xaq",
    "f7665y"
   ],
+  "k-skills": [
+   "1jqd0z7",
+   "1s4y0bc",
+   "1g5lpqi",
+   "13xt578",
+   "qqjnqh",
+   "qbakwv"
+  ],
   "a-mcp": [
-   "8viod6",
+   "1datrkw",
    "5envg7",
+   "1r7pff",
+   "19fnlqw",
+   "19bprxy",
+   "1v2lgmb",
+   "1gh5s7v",
+   "est25l",
    "tfmn5",
    "1pd9lo3",
    "1eq7uu6",
@@ -1424,43 +1454,24 @@
    "wvte4n",
    "99bngc",
    "800ooo",
-   "1hjlg19",
-   "1jrie0v"
+   "1hjlg19"
   ],
-  "c-retrieval": [
-   "19blcao",
-   "13655c3",
-   "hk4ajc",
-   "1xednfn",
-   "1y0l0c",
-   "k3o8ft",
-   "npwmkt",
-   "1kgcp85",
-   "unlgg0",
-   "dxj04e"
+  "s-cost": [
+   "7119uc"
   ],
-  "f-artifacts": [
-   "1nfytfl",
-   "zjjxdz",
-   "1em11c9",
-   "1qymdgn",
-   "1om280d",
-   "14q2v12"
+  "s-models": [
+   "1ktpdp0",
+   "i7dak5"
   ],
   "a-tools": [
-   "1rqhj0r",
+   "fh013u",
    "1ecghce",
    "1wf5b96"
   ],
-  "s-models": [
-   "1rqhj0r"
-  ],
-  "s-guardrails": [
-   "1rqhj0r",
-   "b6w8lw"
-  ],
-  "a-scheduled": [
-   "dxj04e"
+  "a-servertools": [
+   "fh013u",
+   "p1px6g",
+   "4hozcv"
   ],
   "k-cli": [
    "hzhlbu",
@@ -1482,21 +1493,9 @@
    "rq0kwf",
    "68j9su"
   ],
-  "k-skills": [
-   "1g5lpqi",
-   "13xt578",
-   "qqjnqh",
-   "qbakwv"
-  ],
   "c-memory": [
    "1furdo9",
    "18ur1cp"
-  ],
-  "a-managed": [
-   "1c6q1us",
-   "1g39cjk",
-   "xbi3xg",
-   "6oymk4"
   ],
   "k-claudemd": [
    "f9yd9e"
@@ -1506,14 +1505,13 @@
    "11weedg"
   ],
   "k-remote": [
-   "9lcuqq",
-   "1om280d"
+   "9lcuqq"
   ],
   "k-slash": [
    "1wtfvof"
   ],
-  "k-hooks": [
-   "lr00do"
+  "f-artifacts": [
+   "zjjxdz"
   ],
   "s-structured": [
    "1ytqzun"
@@ -1526,10 +1524,6 @@
    "1lsa4li",
    "oltrp2",
    "14yqm3r"
-  ],
-  "a-servertools": [
-   "p1px6g",
-   "4hozcv"
   ]
  },
  "applications": [
@@ -1692,6 +1686,22 @@
    "discipline": "code",
    "title": "Show HN: Claumon – forecasting Claude Code usage limits with a Gamma process",
    "url": "https://github.com/fabioconcina/claumon"
+  },
+  {
+   "id": "1r7pff",
+   "node": "a-mcp",
+   "nodeTitle": "MCP",
+   "discipline": "agents",
+   "title": "Improved startup in --input-format stream-json sessions: the first turn no longer waits up to 2s for still-connecting MCP servers whose tools tool search defers; they arrive on a later turn",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+  },
+  {
+   "id": "19fnlqw",
+   "node": "a-mcp",
+   "nodeTitle": "MCP",
+   "discipline": "agents",
+   "title": "Added CLAUDE_CODE_MCP_STARTUP_WAIT_MS to bound how long the first non-interactive turn waits for connecting MCP servers (0 = don't wait)",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   },
   {
    "id": "99bngc",
