@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-18T11:11:18.056Z",
+ "generated": "2026-09-18T16:22:30.085Z",
  "itemCount": 78,
  "sourceStatus": [
   {
@@ -13,8 +13,8 @@
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 88,
-   "kept": 15
+   "fetched": 91,
+   "kept": 17
   },
   {
    "id": "typescript-sdk-changelog",
@@ -1169,6 +1169,70 @@
    "application": false
   },
   {
+   "id": "latl6w",
+   "title": "**tools:** add compact_before_next_turn() to the tool runner ([#641](https://github.com/anthropics/anthropic-sdk-python/issues/641)) ([8b23fb3](https://github.com/anthropics/anthropic-sdk-python/commit/8b23fb33f326c7ffa…",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "1.7.0",
+   "date": null,
+   "nodes": [
+    "a-runner"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "13ioyoz",
+   "title": "**bedrock:** raise an API error for eventstream exception and error frames ([#769](https://github.com/anthropics/anthropic-sdk-python/issues/769)) ([8ec9cc9](https://github.com/anthropics/anthropic-sdk-python/commit/8ec…",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "1.7.0",
+   "date": null,
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "lajrrq",
+   "title": "**docs:** clarify the compaction tool_changes and tool change descriptions ([eacc0ff](https://github.com/anthropics/anthropic-sdk-python/commit/eacc0ffde324201faac42fdcb60500b2076c25b6))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "1.7.0",
+   "date": null,
+   "nodes": [
+    "c-editing"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1qosvj9",
+   "title": "**internal:** pass strict= to zip() in the MCP tool helpers ([13cfe64](https://github.com/anthropics/anthropic-sdk-python/commit/13cfe644920119b718e0a73085b7ecd9726fb9e9))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "1.7.0",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
    "id": "1g39cjk",
    "title": "**api:** add auto mode tool permissions for Managed Agents ([909d92f](https://github.com/anthropics/anthropic-sdk-python/commit/909d92ff57dd27270796407547ffbbf521cf941e))",
    "summary": "",
@@ -1196,70 +1260,6 @@
    "date": null,
    "nodes": [
     "c-editing"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "p1px6g",
-   "title": "**api:** add url_sources to the web fetch tool ([4ba7115](https://github.com/anthropics/anthropic-sdk-python/commit/4ba7115da810cade002b1893973ac3812466d2f4))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "1.6.0",
-   "date": null,
-   "nodes": [
-    "a-servertools"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1ecghce",
-   "title": "**docs:** clarify that session_thread_id on tool use events is informational ([2ac7b60](https://github.com/anthropics/anthropic-sdk-python/commit/2ac7b60beedb00f404f5e792c7a87b51629b4082))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "1.6.0",
-   "date": null,
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1lsa4li",
-   "title": "**docs:** correct the compaction beta's parameter descriptions ([5048c9a](https://github.com/anthropics/anthropic-sdk-python/commit/5048c9a8446a2daa24fb918b976ffa4b8587033e))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "1.6.0",
-   "date": null,
-   "nodes": [
-    "c-editing"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "xbi3xg",
-   "title": "**api:** add auto mode tool permissions for Managed Agents ([62aa21b](https://github.com/anthropics/anthropic-sdk-python/commit/62aa21bb10c5d058d44ac969b06421f169495bee))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "1.5.0",
-   "date": null,
-   "nodes": [
-    "a-managed"
    ],
    "relevance": 6,
    "application": false
@@ -1361,7 +1361,6 @@
   ],
   "a-tools": [
    "j0spkp",
-   "1ecghce",
    "1wf5b96"
   ],
   "c-longctx": [
@@ -1392,7 +1391,8 @@
    "grns2r",
    "imx7s2",
    "1i3rnwv",
-   "78d8t8"
+   "78d8t8",
+   "1qosvj9"
   ],
   "a-teams": [
    "f7665y"
@@ -1430,7 +1430,6 @@
   "a-managed": [
    "1c6q1us",
    "1g39cjk",
-   "xbi3xg",
    "6oymk4"
   ],
   "k-claudemd": [
@@ -1442,7 +1441,8 @@
   ],
   "s-deploy": [
    "1g1f927",
-   "11weedg"
+   "11weedg",
+   "13ioyoz"
   ],
   "k-remote": [
    "9lcuqq"
@@ -1460,14 +1460,16 @@
   "r-thinking": [
    "jc6uj8"
   ],
+  "a-runner": [
+   "latl6w"
+  ],
   "c-editing": [
+   "lajrrq",
    "jdh8k3",
-   "1lsa4li",
    "oltrp2",
    "14yqm3r"
   ],
   "a-servertools": [
-   "p1px6g",
    "4hozcv"
   ]
  },
