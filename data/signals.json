@@ -1,13 +1,13 @@
 {
- "generated": "2026-09-17T21:20:11.809Z",
- "itemCount": 81,
+ "generated": "2026-09-18T04:40:29.625Z",
+ "itemCount": 77,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 517,
-   "kept": 187
+   "fetched": 465,
+   "kept": 173
   },
   {
    "id": "python-sdk-changelog",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 53,
-   "kept": 14
+   "kept": 13
   },
   {
    "id": "hn-agents",
@@ -56,7 +56,7 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 12
+   "kept": 7
   },
   {
    "id": "arxiv-eval",
@@ -68,17 +68,145 @@
  ],
  "items": [
   {
-   "id": "19uw98p",
-   "title": "ASLEval: Measuring Privacy Exposure Displacement in LLM Agent Sessions",
-   "summary": "Privacy evaluations of tool-using LLM agents often inspect a designated action, final response, or attacker report. These local proxies can miss unauthorized exposure elsewhere in a multi-step session and lack common ground truth across outlets, reports, and tool paths. We introduce privacy exposure displacement, the…",
-   "url": "http://arxiv.org/abs/2609.18864v1",
+   "id": "whb3dt",
+   "title": "RAFT: A Stateful Retrieval-Augmented Framework for Troubleshooting Agents",
+   "summary": "Effective troubleshooting agents in enterprise customer support depend on retrieving actionable guidance from similar historical cases, yet existing retrieval-augmented generation (RAG) systems treat support cases as static documents and overlook their multi-stage, stateful nature. We introduce RAFT (Retrieval-Augment…",
+   "url": "http://arxiv.org/abs/2609.20754v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-16T16:03:11Z",
+   "date": "2026-09-17T17:41:31Z",
    "nodes": [
-    "a-managed"
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1nlxfv8",
+   "title": "SAFARI: An Industrial Benchmark for LLM-Assisted Hazard Analysis and Risk Assessment",
+   "summary": "Large language models (LLMs) are increasingly considered for safety-critical engineering, yet their reliability in regulated functional-safety workflows remains underexplored. We introduce SAFARI (Safety-Aware Functional Automotive Risk Inference), the first industrial benchmark for LLM-assisted automotive Hazard Anal…",
+   "url": "http://arxiv.org/abs/2609.20584v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-17T15:37:51Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "j0spkp",
+   "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
+   "summary": "As coding agents move from supervised code completion to unattended, around-the-clock exploration, their work expands from isolated predictions into long trajectories of reasoning, tool use, and feedback. Token efficiency therefore becomes important for scaling recursive self-improvement. We take an RSI-inspired appro…",
+   "url": "http://arxiv.org/abs/2609.20519v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-17T14:58:29Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "7h0x5t",
+   "title": "Scientific Image Quality Assessment via Multi-modal Retrieval-Augmented Generation",
+   "summary": "This paper proposes a Retrieval-Augmented Generation (RAG) framework for scientific image quality assessment, designed to simultaneously address both the understanding track (SIQA-U) and the scoring track (SIQA-S) of the SIQA challenge. We construct a multimodal index that integrates textual semantics with fine-graine…",
+   "url": "http://arxiv.org/abs/2609.19634v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-17T03:27:17Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "12hu4q",
+   "title": "Beyond Similarity through Zero-Token Geometric Graphs for Multi-Hop RAG",
+   "summary": "Multi-hop retrieval-augmented generation (RAG) requires evidence that remains relevant to a query while introducing enough novelty to bridge semantic gaps. Dense retrieval tends to concentrate on semantically similar documents, whereas graph-based alternatives often depend on costly Large Language Model (LLM) entity e…",
+   "url": "http://arxiv.org/abs/2609.19622v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-17T03:14:30Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "1n2wzrz",
+   "title": "FootprintRAG: Visual Analytics for Evidence Context Refinement in RAG-based Scientific Literature Exploration",
+   "summary": "Retrieval-Augmented Generation (RAG) is increasingly used to ground large language model (LLM) outputs in scientific literature. However, in open-ended literature exploration, the evidence context used for generation is often produced through hidden retrieval, reranking, assessment, and filtering steps. Users may rece…",
+   "url": "http://arxiv.org/abs/2609.19601v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-17T02:29:37Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "6pcg6i",
+   "title": "Large Language Model Agents for Evidence Based Genetic Disease Severity Classification",
+   "summary": "Disease severity classification for genetic conditions is subjective and labor-intensive, creating bottlenecks in genomic screening, where commercial panels vary widely in size and overlap. We developed an autonomous AI agent integrating Reasoning and Acting (ReAct) with Retrieval-Augmented Generation (RAG) to classif…",
+   "url": "http://arxiv.org/abs/2609.19569v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-17T01:56:38Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "j0tbi0",
+   "title": "A Unified Evaluation Framework for Trustworthy Large Language Models, Agentic AI, and Multimodal Systems",
+   "summary": "Benchmark scores alone provide an incomplete basis for assessing the trustworthiness of modern artificial intelligence systems. Large language models (LLMs), agentic systems, and multimodal models (MLLMs) require different forms of assessment, yet their evaluation evidence must remain interpretable for development and…",
+   "url": "http://arxiv.org/abs/2609.19524v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-17T00:31:16Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1a6yyfi",
+   "title": "An Architecture for Long-Horizon Agents: Levels, Ticks and Cascaded Intelligence",
+   "summary": "Language-model agents are increasingly asked to carry out work spanning days or weeks, such as an operations remediation or a research programme. Such a task outlives any context window, any process and any interval at which a person can attend. In this paper, we argue that a long-horizon agent must run continually wi…",
+   "url": "http://arxiv.org/abs/2609.19519v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-17T00:15:24Z",
+   "nodes": [
+    "c-longctx"
    ],
    "relevance": 3,
    "application": false
@@ -101,38 +229,6 @@
    "application": false
   },
   {
-   "id": "g74xaq",
-   "title": "Recursive Reasoning or Statistical Extrapolation? In-Context Learning in Multi-Agent Interdependent Decision-Making",
-   "summary": "In-context learning (ICL) enables large language model (LLM) agents to improve decisions using interaction history, yet it remains unclear whether such improvement reflects refined internal reasoning or mere extrapolation of statistical patterns. To disentangle these mechanisms, we study LLM agents in multi-agent inco…",
-   "url": "http://arxiv.org/abs/2609.18591v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-16T12:49:19Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1jqd0z7",
-   "title": "AeroWeaver: An Embodied-Agent Harness for Weaving Aerial Skills into Distributed, Adaptive Swarm Execution",
-   "summary": "Collective intelligence is a collaborative autonomy paradigm in which multiple agents pursue shared objectives through local perception, information exchange, and coordinated action. UAV swarms embody this paradigm by coordinating multiple vehicles in tasks such as search, inspection, and tracking. Recent advances in…",
-   "url": "http://arxiv.org/abs/2609.18520v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-16T11:49:38Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
    "id": "1hy3eq1",
    "title": "Size Matters: Foundation Model for Czech HTML documents",
    "summary": "Creating universal, high-quality representations of web documents in high-traffic industrial environments requires models that are both performant and economic. Existing approaches, however, often depend on large models, overlook the structural information inherent in HTML, or are constrained by short context windows,…",
@@ -146,54 +242,6 @@
     "c-longctx"
    ],
    "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1s4y0bc",
-   "title": "M-SQE: Multilingual Skill Quality Estimation for Enhancing Language Equality in Agentic Skill Use",
-   "summary": "Agent skills, reusable procedural documents that extend LLM agents beyond their parametric memory, have become an important interface for deploying agents on real-world tasks. Community-maintained skill libraries built around this interface are growing rapidly. However, this ecosystem remains deeply English-centric: o…",
-   "url": "http://arxiv.org/abs/2609.18445v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-16T10:36:32Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "17bf0j8",
-   "title": "Exploring LLMs and RAG for Plausible and Explainable Material Prediction of Vehicle Components",
-   "summary": "In this work, we explore whether LLMs can accurately predict and explain plausible materials for vehicle components such as brake discs or fuel injectors without requiring extensive fine-tuning. We test and evaluate three approaches: a standard generative LLM baseline, a single-pass Retrieval-Augmented Generation (RAG…",
-   "url": "http://arxiv.org/abs/2609.18437v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-16T10:28:28Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "5lozty",
-   "title": "Knowledge-Graph Based Augmentation versus Retrieval Augmented Generation for Cultural-Related Question Answering",
-   "summary": "Large language models (LLMs) suffer from a long-tail deficit: culturally specific facts, particularly those concerning underrepresented regions such as Latin America, appear too rarely in pretraining corpora to be reliably memorized. Retrieval-Augmented Generation (RAG) addresses this by grounding generation in extern…",
-   "url": "http://arxiv.org/abs/2609.18317v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-16T08:36:30Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 6,
    "application": false
   },
   {
@@ -214,23 +262,6 @@
    "application": false
   },
   {
-   "id": "7119uc",
-   "title": "When Is Graph Structure Worth Its Cost? The Case for Structure Pricing in Retrieval-Augmented Generation",
-   "summary": "Graph-based retrieval-augmented generation (RAG) can help answer questions that require information from many documents. However, building a graph often requires many language-model calls during ingestion. It is therefore important to ask whether its quality gains justify the additional cost. We present EffiRAG, a gra…",
-   "url": "http://arxiv.org/abs/2609.18099v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-16T04:08:15Z",
-   "nodes": [
-    "c-retrieval",
-    "s-cost"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
    "id": "1ktpdp0",
    "title": "A Calibrated Instrument for Measuring How Inference Optimizations Affect Output Quality",
    "summary": "Large language model optimization is an active research area, spanning quantization of model weights, early-exit methods for skipping layers, and speculative decoding. Each track uses its own quality measures, typically an idiosyncratic benchmark score. Few approach the measurement precision required by other scientif…",
@@ -240,55 +271,6 @@
    "category": "research",
    "badge": "preprint",
    "date": "2026-09-16T01:49:12Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1vp9fgh",
-   "title": "One Size Does Not Fit All! Dynamic Retriever and Generator Selection for RAG",
-   "summary": "Retrieval-Augmented Generation (RAG) systems typically employ fixed retriever and generator configurations across queries, despite substantial differences in query complexity and information needs, leading to inefficient allocation of computational resources. While retrieval and generation adaptivity have been studied…",
-   "url": "http://arxiv.org/abs/2609.17709v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-15T18:20:38Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "fh013u",
-   "title": "A Large-Scale Empirical Study of Quality Assurance Practices and Gaps in AI Agents",
-   "summary": "Large language model (LLM)-based agents are increasingly used across software engineering, web automation, research, and productivity applications. Their integration of planning, memory, tool use, code execution, and external interactions enables greater autonomy but also introduces new reliability, safety, and securi…",
-   "url": "http://arxiv.org/abs/2609.17698v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-15T18:10:57Z",
-   "nodes": [
-    "a-tools",
-    "a-servertools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "i7dak5",
-   "title": "GraphEcho: Structural Redundancy and Evidence Provenance in LLM Graph Agents",
-   "summary": "A large language model (LLM) agent can follow more graph paths without acquiring more independent evidence. GraphEcho tests whether agents mistake these repeated encounters for additional corroboration. The benchmark varies path counts and evidential origins while holding evidence content fixed, and evaluates both jud…",
-   "url": "http://arxiv.org/abs/2609.17695v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-15T18:07:09Z",
    "nodes": [
     "s-models"
    ],
@@ -323,38 +305,6 @@
    "date": "2026-09-15T15:17:29Z",
    "nodes": [
     "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "13655c3",
-   "title": "LLMDE: A Large Language Model-Driven Differential Evolution Algorithm for Portfolio Optimization",
-   "summary": "This study proposes a Large Language Model-Driven Differential Evolution (LLMDE) algorithm to reduce the reliance on handcrafted hyperparameter design. The proposed algorithm leverages a prompt engineering strategy, allowing large language models (LLMs) to dynamically select mutation strategies and configure control p…",
-   "url": "http://arxiv.org/abs/2609.16846v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-15T08:39:44Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "19oxnsk",
-   "title": "VideoMM: Adaptive Macro-Micro Inference for Efficient Video MLLMs",
-   "summary": "Scaling Multimodal Large Language Models (MLLMs) to long-form video understanding is bottlenecked by the explosion of visual tokens, which saturates context windows and incurs prohibitive costs. Current solutions predominantly rely on auxiliary models for token reduction but face a fundamental dilemma: lightweight enc…",
-   "url": "http://arxiv.org/abs/2609.16722v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-15T06:47:20Z",
-   "nodes": [
-    "c-longctx"
    ],
    "relevance": 3,
    "application": false
@@ -736,23 +686,6 @@
    "application": true
   },
   {
-   "id": "68j9su",
-   "title": "Show HN: Claumon – forecasting Claude Code usage limits with a Gamma process",
-   "summary": "",
-   "url": "https://github.com/fabioconcina/claumon",
-   "discussion": "https://news.ycombinator.com/item?id=48488753",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "7 pts",
-   "date": "2026-06-11T11:05:55Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
    "id": "1r7pff",
    "title": "Improved startup in --input-format stream-json sessions: the first turn no longer waits up to 2s for still-connecting MCP servers whose tools tool search defers; they arrive on a later turn",
    "summary": "",
@@ -767,6 +700,54 @@
    ],
    "relevance": 24,
    "application": true
+  },
+  {
+   "id": "1rs3v8o",
+   "title": "Fixed claude plugin marketplace update deleting a GitHub marketplace's local copy when the fetch failed and the marketplace was named after its repository",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.275",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "gv332d",
+   "title": "Fixed plugin and marketplace messages, logs and claude plugin marketplace list showing a password or token stored in a git, ssh or marketplace URL",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.275",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "7o4v6u",
+   "title": "[VSCode] Added a Retry link to the MCP servers dialog when the server list fails to load",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.275",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
   },
   {
    "id": "19fnlqw",
@@ -1091,67 +1072,19 @@
    "application": false
   },
   {
-   "id": "wvte4n",
-   "title": "Fixed MCP server OAuth sign-in failing with \"No available ports for OAuth redirect\" when the local callback port range can't be bound",
+   "id": "limyou",
+   "title": "Changed scheduled and Run now routine runs to save data to, and republish the page of, an artifact you can edit without asking; public artifacts, first publishes and deletes still ask",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.268",
+   "badge": "2.1.275",
    "date": null,
    "nodes": [
-    "a-mcp"
+    "f-artifacts"
    ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "99bngc",
-   "title": "Changed the \"N MCP servers need authentication\" startup notice to announce each server once instead of at every launch",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.268",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": true
-  },
-  {
-   "id": "800ooo",
-   "title": "Fixed earlier reasoning being dropped when an MCP server re-sends, or a built-in tool re-renders, a tool the model already loaded",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.267",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1hjlg19",
-   "title": "Fixed a tool that disappears mid-conversation, from a disconnected MCP server or an upgrade, rewriting the tool list and discarding earlier thinking",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.267",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
+   "relevance": 15,
    "application": false
   },
   {
@@ -1396,45 +1329,37 @@
   }
  ],
  "byNode": {
-  "a-managed": [
-   "19uw98p",
-   "1c6q1us",
-   "1g39cjk",
-   "xbi3xg",
-   "6oymk4"
+  "c-retrieval": [
+   "whb3dt",
+   "7h0x5t",
+   "12hu4q",
+   "1n2wzrz",
+   "6pcg6i",
+   "1jucg1v"
+  ],
+  "s-models": [
+   "1nlxfv8",
+   "j0tbi0",
+   "1ktpdp0"
+  ],
+  "a-tools": [
+   "j0spkp",
+   "1ecghce",
+   "1wf5b96"
   ],
   "c-longctx": [
+   "1a6yyfi",
    "1jucg1v",
    "1hy3eq1",
    "1datrkw",
    "va7mlb",
-   "19oxnsk",
    "4ryc97"
-  ],
-  "c-retrieval": [
-   "1jucg1v",
-   "17bf0j8",
-   "5lozty",
-   "7119uc",
-   "1vp9fgh",
-   "13655c3"
-  ],
-  "a-teams": [
-   "g74xaq",
-   "f7665y"
-  ],
-  "k-skills": [
-   "1jqd0z7",
-   "1s4y0bc",
-   "1g5lpqi",
-   "13xt578",
-   "qqjnqh",
-   "qbakwv"
   ],
   "a-mcp": [
    "1datrkw",
    "5envg7",
    "1r7pff",
+   "7o4v6u",
    "19fnlqw",
    "19bprxy",
    "1v2lgmb",
@@ -1450,28 +1375,10 @@
    "grns2r",
    "imx7s2",
    "1i3rnwv",
-   "78d8t8",
-   "wvte4n",
-   "99bngc",
-   "800ooo",
-   "1hjlg19"
+   "78d8t8"
   ],
-  "s-cost": [
-   "7119uc"
-  ],
-  "s-models": [
-   "1ktpdp0",
-   "i7dak5"
-  ],
-  "a-tools": [
-   "fh013u",
-   "1ecghce",
-   "1wf5b96"
-  ],
-  "a-servertools": [
-   "fh013u",
-   "p1px6g",
-   "4hozcv"
+  "a-teams": [
+   "f7665y"
   ],
   "k-cli": [
    "hzhlbu",
@@ -1490,15 +1397,30 @@
    "9m1dvn",
    "1euvjgd",
    "haqhq7",
-   "rq0kwf",
-   "68j9su"
+   "rq0kwf"
+  ],
+  "k-skills": [
+   "1g5lpqi",
+   "13xt578",
+   "qqjnqh",
+   "qbakwv"
   ],
   "c-memory": [
    "1furdo9",
    "18ur1cp"
   ],
+  "a-managed": [
+   "1c6q1us",
+   "1g39cjk",
+   "xbi3xg",
+   "6oymk4"
+  ],
   "k-claudemd": [
    "f9yd9e"
+  ],
+  "k-plugins": [
+   "1rs3v8o",
+   "gv332d"
   ],
   "s-deploy": [
    "1g1f927",
@@ -1511,6 +1433,7 @@
    "1wtfvof"
   ],
   "f-artifacts": [
+   "limyou",
    "zjjxdz"
   ],
   "s-structured": [
@@ -1524,9 +1447,21 @@
    "1lsa4li",
    "oltrp2",
    "14yqm3r"
+  ],
+  "a-servertools": [
+   "p1px6g",
+   "4hozcv"
   ]
  },
  "applications": [
+  {
+   "id": "12hu4q",
+   "node": "c-retrieval",
+   "nodeTitle": "Retrieval vs. Context",
+   "discipline": "context",
+   "title": "Beyond Similarity through Zero-Token Geometric Graphs for Multi-Hop RAG",
+   "url": "http://arxiv.org/abs/2609.19622v1"
+  },
   {
    "id": "hzhlbu",
    "node": "k-cli",
@@ -1680,14 +1615,6 @@
    "url": "https://github.com/arturogarrido/claudinho"
   },
   {
-   "id": "68j9su",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Claumon – forecasting Claude Code usage limits with a Gamma process",
-   "url": "https://github.com/fabioconcina/claumon"
-  },
-  {
    "id": "1r7pff",
    "node": "a-mcp",
    "nodeTitle": "MCP",
@@ -1701,14 +1628,6 @@
    "nodeTitle": "MCP",
    "discipline": "agents",
    "title": "Added CLAUDE_CODE_MCP_STARTUP_WAIT_MS to bound how long the first non-interactive turn waits for connecting MCP servers (0 = don't wait)",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
-  },
-  {
-   "id": "99bngc",
-   "node": "a-mcp",
-   "nodeTitle": "MCP",
-   "discipline": "agents",
-   "title": "Changed the \"N MCP servers need authentication\" startup notice to announce each server once instead of at every launch",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   }
  ]
