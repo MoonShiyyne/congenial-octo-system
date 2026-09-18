@@ -1,13 +1,13 @@
 {
- "generated": "2026-09-18T16:22:30.085Z",
+ "generated": "2026-09-18T20:52:49.144Z",
  "itemCount": 78,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 465,
-   "kept": 173
+   "fetched": 454,
+   "kept": 176
   },
   {
    "id": "python-sdk-changelog",
@@ -20,7 +20,7 @@
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 75,
+   "fetched": 80,
    "kept": 16
   },
   {
@@ -719,6 +719,22 @@
    "application": true
   },
   {
+   "id": "1ock99d",
+   "title": "Improved /plugin Installed: an MCP server listed apart from its plugin now shows which plugin it belongs to",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.277",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
    "id": "1rs3v8o",
    "title": "Fixed claude plugin marketplace update deleting a GitHub marketplace's local copy when the fetch failed and the marketplace was named after its repository",
    "summary": "",
@@ -1041,51 +1057,19 @@
    "application": false
   },
   {
-   "id": "imx7s2",
-   "title": "Fixed synced plugin MCP servers not connecting when a remote session resumes",
+   "id": "1l7tmdk",
+   "title": "Improved the Artifact tool's permission prompts: shorter sentences, pages and artifacts named by title or file name, and links listed after the text",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.269",
+   "badge": "2.1.277",
    "date": null,
    "nodes": [
-    "a-mcp"
+    "f-artifacts"
    ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1i3rnwv",
-   "title": "Fixed MCP servers reconnecting when an updated config only changed the order of the server URL's query parameters",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.269",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "78d8t8",
-   "title": "Improved first-party sessions with telemetry disabled: an alwaysLoad MCP server that finishes connecting mid-conversation is usable on the next turn without a tool-search round trip",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.269",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
+   "relevance": 15,
    "application": false
   },
   {
@@ -1121,6 +1105,22 @@
    "application": false
   },
   {
+   "id": "1em11c9",
+   "title": "Improved the Artifact tool's error when a publish includes a file type artifacts don't serve: Claude is told which types are served and what to do instead, and the terminal shows one plain line",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.273",
+   "date": null,
+   "nodes": [
+    "f-artifacts"
+   ],
+   "relevance": 15,
+   "application": false
+  },
+  {
    "id": "18ur1cp",
    "title": "**tools:** preserve exact file bytes in the agent toolset and memory tool (no newline translation) ([#540](https://github.com/anthropics/anthropic-sdk-python/issues/540)) ([56921a8](https://github.com/anthropics/anthrop…",
    "summary": "",
@@ -1132,38 +1132,6 @@
    "date": null,
    "nodes": [
     "c-memory"
-   ],
-   "relevance": 8,
-   "application": false
-  },
-  {
-   "id": "1ytqzun",
-   "title": "**helpers:** support Standard Schema for structured outputs and tools ([7880078](https://github.com/anthropics/anthropic-sdk-typescript/commit/788007889c048e18f6bdf19d4903f1ac96f66cb0))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "0.121.0",
-   "date": null,
-   "nodes": [
-    "s-structured"
-   ],
-   "relevance": 8,
-   "application": false
-  },
-  {
-   "id": "jc6uj8",
-   "title": "**examples:** use adaptive thinking in thinking examples ([3dd7699](https://github.com/anthropics/anthropic-sdk-typescript/commit/3dd7699110fd34b82b795841e76ac40122a63c7d))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "0.121.0",
-   "date": null,
-   "nodes": [
-    "r-thinking"
    ],
    "relevance": 8,
    "application": false
@@ -1265,6 +1233,70 @@
    "application": false
   },
   {
+   "id": "15pioec",
+   "title": "**tools:** add compactBeforeNextTurn() to the tool runner ([#682](https://github.com/anthropics/anthropic-sdk-typescript/issues/682)) ([9f75ca6](https://github.com/anthropics/anthropic-sdk-typescript/commit/9f75ca69905b…",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "0.127.0",
+   "date": null,
+   "nodes": [
+    "a-runner"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "7yvlxq",
+   "title": "**BetaMessageStream:** stop coercing a null compaction_delta content into \"null\" ([#655](https://github.com/anthropics/anthropic-sdk-typescript/issues/655)) ([dbd6845](https://github.com/anthropics/anthropic-sdk-typescr…",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "0.127.0",
+   "date": null,
+   "nodes": [
+    "c-editing"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "q0z50x",
+   "title": "**middleware:** echo a streamed compaction summary in the fallback continuation ([#657](https://github.com/anthropics/anthropic-sdk-typescript/issues/657)) ([2e0f004](https://github.com/anthropics/anthropic-sdk-typescri…",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "0.127.0",
+   "date": null,
+   "nodes": [
+    "c-editing"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "3lx8ph",
+   "title": "**docs:** clarify the compaction tool_changes and tool change descriptions ([5a695eb](https://github.com/anthropics/anthropic-sdk-typescript/commit/5a695eb84e48b7e639465aecd09442ac168f78a5))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "0.127.0",
+   "date": null,
+   "nodes": [
+    "c-editing"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
    "id": "6oymk4",
    "title": "**api:** add auto mode tool permissions for Managed Agents ([7829b43](https://github.com/anthropics/anthropic-sdk-typescript/commit/7829b4302375a14db64d5536226768601f843233))",
    "summary": "",
@@ -1311,38 +1343,6 @@
    ],
    "relevance": 6,
    "application": false
-  },
-  {
-   "id": "1wf5b96",
-   "title": "**docs:** clarify that session_thread_id on tool use events is informational ([a07ecf3](https://github.com/anthropics/anthropic-sdk-typescript/commit/a07ecf3e54502cc635c6a5a6ed790d4a2fd70b47))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "0.126.0",
-   "date": null,
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "14yqm3r",
-   "title": "**docs:** correct the compaction beta's parameter descriptions ([eb9abd2](https://github.com/anthropics/anthropic-sdk-typescript/commit/eb9abd200de3a13098a796fa8482f2764df6bd98))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "0.126.0",
-   "date": null,
-   "nodes": [
-    "c-editing"
-   ],
-   "relevance": 6,
-   "application": false
   }
  ],
  "byNode": {
@@ -1360,8 +1360,7 @@
    "1ktpdp0"
   ],
   "a-tools": [
-   "j0spkp",
-   "1wf5b96"
+   "j0spkp"
   ],
   "c-longctx": [
    "1a6yyfi",
@@ -1375,6 +1374,7 @@
    "1datrkw",
    "5envg7",
    "1r7pff",
+   "1ock99d",
    "7o4v6u",
    "19fnlqw",
    "19bprxy",
@@ -1389,9 +1389,6 @@
    "9lcuqq",
    "qbakwv",
    "grns2r",
-   "imx7s2",
-   "1i3rnwv",
-   "78d8t8",
    "1qosvj9"
   ],
   "a-teams": [
@@ -1451,23 +1448,22 @@
    "1wtfvof"
   ],
   "f-artifacts": [
+   "1l7tmdk",
    "limyou",
-   "zjjxdz"
-  ],
-  "s-structured": [
-   "1ytqzun"
-  ],
-  "r-thinking": [
-   "jc6uj8"
+   "zjjxdz",
+   "1em11c9"
   ],
   "a-runner": [
-   "latl6w"
+   "latl6w",
+   "15pioec"
   ],
   "c-editing": [
    "lajrrq",
    "jdh8k3",
-   "oltrp2",
-   "14yqm3r"
+   "7yvlxq",
+   "q0z50x",
+   "3lx8ph",
+   "oltrp2"
   ],
   "a-servertools": [
    "4hozcv"
