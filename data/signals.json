@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-20T20:47:06.175Z",
- "itemCount": 78,
+ "generated": "2026-09-21T04:52:31.640Z",
+ "itemCount": 81,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -56,7 +56,7 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 7
+   "kept": 10
   },
   {
    "id": "arxiv-eval",
@@ -67,6 +67,134 @@
   }
  ],
  "items": [
+  {
+   "id": "o9rtqv",
+   "title": "MintAct: A Unified Visual Agent for Digital Environments",
+   "summary": "We present MintAct, a family of vision-language models that unifies UI grounding, multi-step navigation across mobile, desktop, and web, and visual tool use, trained at 2B, 4B, and 8B scales. Through careful design of our environments, data, and training recipes, MintAct models match the performance of per-domain spec…",
+   "url": "http://arxiv.org/abs/2609.22083v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-18T17:59:34Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "h22hb1",
+   "title": "APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport",
+   "summary": "APort Vault is a benchmark for payment authorization in tool-using AI agents. It replays 4,371 attacks written by humans against a live payment agent during a public capture-the-flag event, across 14 models from 8 labs, five policy configurations and two replay tracks, with and without a deterministic pre-action check…",
+   "url": "http://arxiv.org/abs/2609.22076v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-18T17:58:10Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1195dac",
+   "title": "An Interpretable Memory Decision Controller for LLM Agents Based on Three-Signal Complementarity: Decoupling Confidence and Consistency",
+   "summary": "Memory systems for large language models have focused predominantly on efficient retrieval, whereas the decision of whether retrieved memories should be trusted has received comparatively little attention. When the memory store contains conflicting positions, standard retrieval-augmented generation (RAG) blindly injec…",
+   "url": "http://arxiv.org/abs/2609.22043v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-18T17:34:13Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1lpov93",
+   "title": "GraphSkillEvo: Evolutionary Optimization of Graph-Structured Agent Skills",
+   "summary": "Skills can improve the performance of Large Language Model (LLM) agents by providing task-specific procedural guidance, while skill optimization further improves their effectiveness through iterative refinement. However, existing skill optimization methods typically represent skills as unstructured natural-language in…",
+   "url": "http://arxiv.org/abs/2609.21749v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-18T13:24:33Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "158ms44",
+   "title": "Reducing Barriers to Academic Support: Evaluating a Course-Specific RAG System for Addressing Help-Seeking Disparities in Higher Education",
+   "summary": "Access to academic support is a key determinant of student success, yet students experience it unequally: some readily seek help from lecturers or tutors, while others hesitate due to anxiety, fear of judgement, uncertainty about expectations, or low confidence in their understanding. This may be especially evident in…",
+   "url": "http://arxiv.org/abs/2609.21600v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-18T10:30:26Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "4mf0b6",
+   "title": "Micro-Collaborative Poisoning: A Distributed Attack on RAG Systems",
+   "summary": "Retrieval-Augmented Generation (RAG) improves large language models by grounding outputs in external knowledge sources, but this dependency also creates a surface for poisoning attacks. This paper introduces Micro-Collaborative Poisoning, a distributed attack in which a false target claim is divided across multiple lo…",
+   "url": "http://arxiv.org/abs/2609.21573v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-18T10:03:33Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "16jogfe",
+   "title": "SkillIR: Evolving Scene-Aware Skills for Agentic Image Restoration",
+   "summary": "This paper studies agentic image restoration, in which multimodal agents coordinate specialized restoration tools to recover images affected by complex degradations. Existing restoration agents often derive complete tool-use plans from the original degraded image or retrieve previously successful trajectories, providi…",
+   "url": "http://arxiv.org/abs/2609.21468v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-18T08:17:31Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1g3mlzf",
+   "title": "Can Agents Design Better Chips with a Higher Level Abstraction?",
+   "summary": "Large Language Model (LLM) agents are increasingly being explored for chip design, but most existing approaches operate directly at RTL. We ask whether agents can design better chips by leveraging higher-level abstractions. We compare Direct RTL Design, Agent-based HLS Design, Post-Compiler HLS Refinement, and Post-HL…",
+   "url": "http://arxiv.org/abs/2609.21157v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-17T23:55:03Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "whb3dt",
    "title": "RAFT: A Stateful Retrieval-Augmented Framework for Troubleshooting Agents",
@@ -111,86 +239,6 @@
    "date": "2026-09-17T14:58:29Z",
    "nodes": [
     "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "7h0x5t",
-   "title": "Scientific Image Quality Assessment via Multi-modal Retrieval-Augmented Generation",
-   "summary": "This paper proposes a Retrieval-Augmented Generation (RAG) framework for scientific image quality assessment, designed to simultaneously address both the understanding track (SIQA-U) and the scoring track (SIQA-S) of the SIQA challenge. We construct a multimodal index that integrates textual semantics with fine-graine…",
-   "url": "http://arxiv.org/abs/2609.19634v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-17T03:27:17Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "12hu4q",
-   "title": "Beyond Similarity through Zero-Token Geometric Graphs for Multi-Hop RAG",
-   "summary": "Multi-hop retrieval-augmented generation (RAG) requires evidence that remains relevant to a query while introducing enough novelty to bridge semantic gaps. Dense retrieval tends to concentrate on semantically similar documents, whereas graph-based alternatives often depend on costly Large Language Model (LLM) entity e…",
-   "url": "http://arxiv.org/abs/2609.19622v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-17T03:14:30Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "1n2wzrz",
-   "title": "FootprintRAG: Visual Analytics for Evidence Context Refinement in RAG-based Scientific Literature Exploration",
-   "summary": "Retrieval-Augmented Generation (RAG) is increasingly used to ground large language model (LLM) outputs in scientific literature. However, in open-ended literature exploration, the evidence context used for generation is often produced through hidden retrieval, reranking, assessment, and filtering steps. Users may rece…",
-   "url": "http://arxiv.org/abs/2609.19601v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-17T02:29:37Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "6pcg6i",
-   "title": "Large Language Model Agents for Evidence Based Genetic Disease Severity Classification",
-   "summary": "Disease severity classification for genetic conditions is subjective and labor-intensive, creating bottlenecks in genomic screening, where commercial panels vary widely in size and overlap. We developed an autonomous AI agent integrating Reasoning and Acting (ReAct) with Retrieval-Augmented Generation (RAG) to classif…",
-   "url": "http://arxiv.org/abs/2609.19569v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-17T01:56:38Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "j0tbi0",
-   "title": "A Unified Evaluation Framework for Trustworthy Large Language Models, Agentic AI, and Multimodal Systems",
-   "summary": "Benchmark scores alone provide an incomplete basis for assessing the trustworthiness of modern artificial intelligence systems. Large language models (LLMs), agentic systems, and multimodal models (MLLMs) require different forms of assessment, yet their evaluation evidence must remain interpretable for development and…",
-   "url": "http://arxiv.org/abs/2609.19524v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-17T00:31:16Z",
-   "nodes": [
-    "s-models"
    ],
    "relevance": 3,
    "application": false
@@ -1346,21 +1394,30 @@
   }
  ],
  "byNode": {
-  "c-retrieval": [
-   "whb3dt",
-   "7h0x5t",
-   "12hu4q",
-   "1n2wzrz",
-   "6pcg6i",
-   "1jucg1v"
+  "a-tools": [
+   "o9rtqv",
+   "j0spkp"
   ],
   "s-models": [
+   "h22hb1",
    "1nlxfv8",
-   "j0tbi0",
    "1ktpdp0"
   ],
-  "a-tools": [
-   "j0spkp"
+  "c-retrieval": [
+   "1195dac",
+   "158ms44",
+   "4mf0b6",
+   "1g3mlzf",
+   "whb3dt",
+   "1jucg1v"
+  ],
+  "k-skills": [
+   "1lpov93",
+   "16jogfe",
+   "1g5lpqi",
+   "13xt578",
+   "qqjnqh",
+   "qbakwv"
   ],
   "c-longctx": [
    "1a6yyfi",
@@ -1414,12 +1471,6 @@
    "rq0kwf",
    "68j9su"
   ],
-  "k-skills": [
-   "1g5lpqi",
-   "13xt578",
-   "qqjnqh",
-   "qbakwv"
-  ],
   "c-memory": [
    "1furdo9",
    "18ur1cp"
@@ -1470,14 +1521,6 @@
   ]
  },
  "applications": [
-  {
-   "id": "12hu4q",
-   "node": "c-retrieval",
-   "nodeTitle": "Retrieval vs. Context",
-   "discipline": "context",
-   "title": "Beyond Similarity through Zero-Token Geometric Graphs for Multi-Hop RAG",
-   "url": "http://arxiv.org/abs/2609.19622v1"
-  },
   {
    "id": "hzhlbu",
    "node": "k-cli",
