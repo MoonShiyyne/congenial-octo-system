@@ -1,12 +1,12 @@
 {
- "generated": "2026-09-21T04:52:31.640Z",
- "itemCount": 81,
+ "generated": "2026-09-21T12:44:38.450Z",
+ "itemCount": 80,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 455,
+   "fetched": 454,
    "kept": 177
   },
   {
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 53,
-   "kept": 14
+   "kept": 13
   },
   {
    "id": "hn-agents",
@@ -727,23 +727,6 @@
    "category": "market",
    "badge": "6 pts",
    "date": "2026-06-12T02:31:26Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "68j9su",
-   "title": "Show HN: Claumon – forecasting Claude Code usage limits with a Gamma process",
-   "summary": "",
-   "url": "https://github.com/fabioconcina/claumon",
-   "discussion": "https://news.ycombinator.com/item?id=48488753",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "7 pts",
-   "date": "2026-06-11T11:05:55Z",
    "nodes": [
     "k-cli"
    ],
@@ -1468,8 +1451,7 @@
    "9m1dvn",
    "1euvjgd",
    "haqhq7",
-   "rq0kwf",
-   "68j9su"
+   "rq0kwf"
   ],
   "c-memory": [
    "1furdo9",
@@ -1672,14 +1654,6 @@
    "discipline": "code",
    "title": "Show HN: A Claude Code statusline that shows live World Cup scores",
    "url": "https://github.com/arturogarrido/claudinho"
-  },
-  {
-   "id": "68j9su",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Claumon – forecasting Claude Code usage limits with a Gamma process",
-   "url": "https://github.com/fabioconcina/claumon"
   },
   {
    "id": "1r7pff",
