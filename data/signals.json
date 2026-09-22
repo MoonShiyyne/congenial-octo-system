@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-22T16:55:34.166Z",
+ "generated": "2026-09-22T21:16:40.556Z",
  "itemCount": 78,
  "sourceStatus": [
   {
@@ -76,7 +76,7 @@
    "source": "Show HN · built with AI",
    "sourceId": "hn-show",
    "category": "market",
-   "badge": "6 pts",
+   "badge": "31 pts",
    "date": "2026-09-22T16:15:06Z",
    "nodes": [
     "c-retrieval"
