@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-22T04:52:20.704Z",
- "itemCount": 79,
+ "generated": "2026-09-22T11:34:50.419Z",
+ "itemCount": 78,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 53,
-   "kept": 13
+   "kept": 12
   },
   {
    "id": "hn-agents",
@@ -700,23 +700,6 @@
    ],
    "relevance": 3,
    "application": false
-  },
-  {
-   "id": "rq0kwf",
-   "title": "Show HN: A Claude Code statusline that shows live World Cup scores",
-   "summary": "",
-   "url": "https://github.com/arturogarrido/claudinho",
-   "discussion": "https://news.ycombinator.com/item?id=48499159",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "6 pts",
-   "date": "2026-06-12T02:31:26Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
-   "application": true
   },
   {
    "id": "1r7pff",
@@ -1431,8 +1414,7 @@
    "8kcnsx",
    "9m1dvn",
    "1euvjgd",
-   "haqhq7",
-   "rq0kwf"
+   "haqhq7"
   ],
   "k-skills": [
    "1g5lpqi",
@@ -1641,14 +1623,6 @@
    "discipline": "code",
    "title": "Show HN: Make your terminal pulse orange when Claude Code needs input",
    "url": "https://github.com/rickardstureborg/claude-needs-input"
-  },
-  {
-   "id": "rq0kwf",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: A Claude Code statusline that shows live World Cup scores",
-   "url": "https://github.com/arturogarrido/claudinho"
   },
   {
    "id": "1r7pff",
