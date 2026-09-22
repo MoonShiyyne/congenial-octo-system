@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-21T21:57:35.730Z",
- "itemCount": 80,
+ "generated": "2026-09-22T04:52:20.704Z",
+ "itemCount": 79,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -63,20 +63,20 @@
    "label": "arXiv · evaluation & prompting",
    "ok": true,
    "fetched": 20,
-   "kept": 13
+   "kept": 7
   }
  ],
  "items": [
   {
-   "id": "o9rtqv",
-   "title": "MintAct: A Unified Visual Agent for Digital Environments",
-   "summary": "We present MintAct, a family of vision-language models that unifies UI grounding, multi-step navigation across mobile, desktop, and web, and visual tool use, trained at 2B, 4B, and 8B scales. Through careful design of our environments, data, and training recipes, MintAct models match the performance of per-domain spec…",
-   "url": "http://arxiv.org/abs/2609.22083v1",
+   "id": "ajsua0",
+   "title": "Critical-State RL: Diagnosing Trainable States for Multi-Turn Tool Use",
+   "summary": "Multi-turn tool-use failures can hinge on a single model call, yet reward variation alone does not reveal which call would benefit from training. When rewards depend on later interactions, their variation can reflect downstream randomness rather than differences between the current actions. We introduce Critical-State…",
+   "url": "http://arxiv.org/abs/2609.24985v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-18T17:59:34Z",
+   "date": "2026-09-21T17:57:20Z",
    "nodes": [
     "a-tools"
    ],
@@ -84,31 +84,48 @@
    "application": false
   },
   {
-   "id": "h22hb1",
-   "title": "APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport",
-   "summary": "APort Vault is a benchmark for payment authorization in tool-using AI agents. It replays 4,371 attacks written by humans against a live payment agent during a public capture-the-flag event, across 14 models from 8 labs, five policy configurations and two replay tracks, with and without a deterministic pre-action check…",
-   "url": "http://arxiv.org/abs/2609.22076v1",
+   "id": "ppf313",
+   "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
+   "summary": "LLM agents are increasingly deployed in collaborative settings, yet long-term interaction may give rise to undesirable coordination. We study the emergence of collusion in a long-horizon multi-agent environment: two agents repeatedly complete individual tasks, share task logs, verify each other's work, and receive rew…",
+   "url": "http://arxiv.org/abs/2609.24967v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-18T17:58:10Z",
+   "date": "2026-09-21T17:52:48Z",
    "nodes": [
-    "s-models"
+    "a-teams"
    ],
    "relevance": 3,
    "application": false
   },
   {
-   "id": "1195dac",
-   "title": "An Interpretable Memory Decision Controller for LLM Agents Based on Three-Signal Complementarity: Decoupling Confidence and Consistency",
-   "summary": "Memory systems for large language models have focused predominantly on efficient retrieval, whereas the decision of whether retrieved memories should be trusted has received comparatively little attention. When the memory store contains conflicting positions, standard retrieval-augmented generation (RAG) blindly injec…",
-   "url": "http://arxiv.org/abs/2609.22043v1",
+   "id": "1s08gnd",
+   "title": "Few-Shot Demonstrations Elicit the Use of In-Context World Representations in LLMs",
+   "summary": "Large language models (LLMs), when acting as agents, are expected to take observed data in context, infer the latent state space underlying the world, and leverage it for downstream prediction. However, prior work demonstrated that LLMs struggle to use representations learned in context on a graph tracking task, where…",
+   "url": "http://arxiv.org/abs/2609.24352v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-18T17:34:13Z",
+   "date": "2026-09-21T09:44:24Z",
+   "nodes": [
+    "r-examples",
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1fb1v8t",
+   "title": "LADDER: Graph-Guided Diffusion Language Models for Efficient Multi-Hop Reasoning",
+   "summary": "Graph Retrieval-Augmented Generation (GraphRAG) has remarkably enhanced large language models on complex reasoning by leveraging structured entity topologies. However, existing frameworks heavily rely on standard autoregressive language models where the nature of inherent sequential generation severely hinders overall…",
+   "url": "http://arxiv.org/abs/2609.24346v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-21T09:41:07Z",
    "nodes": [
     "c-retrieval"
    ],
@@ -116,31 +133,95 @@
    "application": false
   },
   {
-   "id": "1lpov93",
-   "title": "GraphSkillEvo: Evolutionary Optimization of Graph-Structured Agent Skills",
-   "summary": "Skills can improve the performance of Large Language Model (LLM) agents by providing task-specific procedural guidance, while skill optimization further improves their effectiveness through iterative refinement. However, existing skill optimization methods typically represent skills as unstructured natural-language in…",
-   "url": "http://arxiv.org/abs/2609.21749v1",
+   "id": "zlhay9",
+   "title": "Document Retrieval-Aware Chunking (D-RAC): Universal Retrieval-Aware Ingestion of Enterprise Documents via PDF Normalization and Multimodal Markdown Conversion",
+   "summary": "Retrieval-Augmented Generation (RAG) systems over enterprise knowledge bases must ingest heterogeneous document formats -- PDFs, Word documents, presentations, and scans -- whose content is locked inside complex visual layouts, multi-column pages, and dense tables. Rule-based extraction and OCR destroy reading order,…",
+   "url": "http://arxiv.org/abs/2609.24220v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-18T13:24:33Z",
+   "date": "2026-09-21T07:38:12Z",
    "nodes": [
-    "k-skills"
+    "c-retrieval"
    ],
-   "relevance": 6,
+   "relevance": 4,
    "application": false
   },
   {
-   "id": "158ms44",
-   "title": "Reducing Barriers to Academic Support: Evaluating a Course-Specific RAG System for Addressing Help-Seeking Disparities in Higher Education",
-   "summary": "Access to academic support is a key determinant of student success, yet students experience it unequally: some readily seek help from lecturers or tutors, while others hesitate due to anxiety, fear of judgement, uncertainty about expectations, or low confidence in their understanding. This may be especially evident in…",
-   "url": "http://arxiv.org/abs/2609.21600v1",
+   "id": "ctyngd",
+   "title": "APEXA: Execution-Integrity Enforcement for Multi-Agent LLM Automation of Synchrotron Data Reduction",
+   "summary": "Synchrotron data reduction, detector calibration followed by azimuthal integration of terabyte-scale diffraction series, is a multi-step, expert-bound bottleneck that increasingly limits the science rate of user facilities. LLM agents promise to collapse it, but driving a real pipeline with a stochastic model creates…",
+   "url": "http://arxiv.org/abs/2609.24165v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-18T10:30:26Z",
+   "date": "2026-09-21T06:33:11Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "i793xc",
+   "title": "MCP-GRANITE Benchmark: GRANularity Interface TEsting for MCP-Based LLM Agents",
+   "summary": "As LLM agents increasingly interact with external tools through standardized protocols such as MCP, tool-interface design becomes a critical yet underexplored factor. How funψtionality is decomposed into tools affects whether an agent can select the right tool and construct valid arguments. This choice is especially c…",
+   "url": "http://arxiv.org/abs/2609.24161v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-21T06:21:13Z",
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ilg1vq",
+   "title": "Re:CAP - Auditing Retrieval Coverage in Production RAG Pipelines",
+   "summary": "Retrieval-augmented generation (RAG) is hard to monitor in production: exhaustive relevance labels do not exist for non-stationary multi-million-passage corpora that re-index in real time. As a result, retrieval quality is generally understudied and often deprioritised in favour of generation-oriented metrics. In this…",
+   "url": "http://arxiv.org/abs/2609.24122v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-21T05:19:40Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "h23q3s",
+   "title": "Connecting the Dots in Agentic AI Security: A Cross-Dimensional Threat Taxonomy, Evaluation Maturity, and Open Challenges",
+   "summary": "Agentic AI extends LLM security beyond generated content to persistent state, autonomous actions, tool use, and interactions with humans and other agents. Existing threat classifications often emphasize individual dimensions, obscuring connections among entry points, affected components, and security consequences. The…",
+   "url": "http://arxiv.org/abs/2609.23894v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-20T22:00:52Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "10gzps4",
+   "title": "Q-TIE: A Lightweight and Generalizable Re-ranking Framework for Temporal Information Retrieval",
+   "summary": "Temporal Information Retrieval (TIR) has been increasingly critical given the rise of Retrieval-Augmented Generation (RAG). Since temporally mismatched evidence can be highly misleading, TIR aims to retrieve documents that are both semantically and temporally relevant to a query. Two TIR paradigms have emerged - tempo…",
+   "url": "http://arxiv.org/abs/2609.23880v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-20T21:30:31Z",
    "nodes": [
     "c-retrieval"
    ],
@@ -148,65 +229,17 @@
    "application": false
   },
   {
-   "id": "4mf0b6",
-   "title": "Micro-Collaborative Poisoning: A Distributed Attack on RAG Systems",
-   "summary": "Retrieval-Augmented Generation (RAG) improves large language models by grounding outputs in external knowledge sources, but this dependency also creates a surface for poisoning attacks. This paper introduces Micro-Collaborative Poisoning, a distributed attack in which a false target claim is divided across multiple lo…",
-   "url": "http://arxiv.org/abs/2609.21573v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
+   "id": "55mufy",
+   "title": "ConsistWorld: Evidence Routing for Consistent Multi-Agent World Models",
+   "summary": "Autoregressive video world models enable temporally coherent generation for a single observer. Extending them to multiple agents requires consistency across independently controlled views and temporal gaps under causal streaming. We present ConsistWorld, a multi-agent world model that generates camera-controlled video…",
+   "url": "http://arxiv.org/abs/2609.22641v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-18T10:03:33Z",
+   "date": "2026-09-18T23:31:01Z",
    "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "16jogfe",
-   "title": "SkillIR: Evolving Scene-Aware Skills for Agentic Image Restoration",
-   "summary": "This paper studies agentic image restoration, in which multimodal agents coordinate specialized restoration tools to recover images affected by complex degradations. Existing restoration agents often derive complete tool-use plans from the original degraded image or retrieve previously successful trajectories, providi…",
-   "url": "http://arxiv.org/abs/2609.21468v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-18T08:17:31Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1g3mlzf",
-   "title": "Can Agents Design Better Chips with a Higher Level Abstraction?",
-   "summary": "Large Language Model (LLM) agents are increasingly being explored for chip design, but most existing approaches operate directly at RTL. We ask whether agents can design better chips by leveraging higher-level abstractions. We compare Direct RTL Design, Agent-based HLS Design, Post-Compiler HLS Refinement, and Post-HL…",
-   "url": "http://arxiv.org/abs/2609.21157v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-17T23:55:03Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "whb3dt",
-   "title": "RAFT: A Stateful Retrieval-Augmented Framework for Troubleshooting Agents",
-   "summary": "Effective troubleshooting agents in enterprise customer support depend on retrieving actionable guidance from similar historical cases, yet existing retrieval-augmented generation (RAG) systems treat support cases as static documents and overlook their multi-stage, stateful nature. We introduce RAFT (Retrieval-Augment…",
-   "url": "http://arxiv.org/abs/2609.20754v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-17T17:41:31Z",
-   "nodes": [
-    "c-retrieval"
+    "a-teams"
    ],
    "relevance": 3,
    "application": false
@@ -223,22 +256,6 @@
    "date": "2026-09-17T15:37:51Z",
    "nodes": [
     "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "j0spkp",
-   "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
-   "summary": "As coding agents move from supervised code completion to unattended, around-the-clock exploration, their work expands from isolated predictions into long trajectories of reasoning, tool use, and feedback. Token efficiency therefore becomes important for scaling recursive self-improvement. We take an RSI-inspired appro…",
-   "url": "http://arxiv.org/abs/2609.20519v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-17T14:58:29Z",
-   "nodes": [
-    "a-tools"
    ],
    "relevance": 3,
    "application": false
@@ -321,38 +338,6 @@
    "date": "2026-09-16T01:49:12Z",
    "nodes": [
     "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "va7mlb",
-   "title": "Where Should a Document Live: Context, Representations, or Parameters?",
-   "summary": "To answer questions outside of their pre-training data, large language models (LLMs) need access to new information, which can be presented in the context window as documents, encoded into the model's parameters, or injected as latent representations. However, each of these methods comes with different efficiency, cos…",
-   "url": "http://arxiv.org/abs/2609.17346v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-15T15:47:02Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "f7665y",
-   "title": "Mo' Models, Mo' Problems: How to best select model pools when designing Multi-Agent Systems",
-   "summary": "Multi-agent Systems (MAS) combine multiple model outputs to solve complex reasoning tasks. However, despite rapid growth of available open-source models, there is limited research on how to select optimal model candidates out of this massive pool. We systematically evaluate 8 model selection strategies (including mode…",
-   "url": "http://arxiv.org/abs/2609.17306v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-15T15:17:29Z",
-   "nodes": [
-    "a-teams"
    ],
    "relevance": 3,
    "application": false
@@ -1378,39 +1363,27 @@
  ],
  "byNode": {
   "a-tools": [
-   "o9rtqv",
-   "j0spkp"
+   "ajsua0",
+   "h23q3s"
   ],
-  "s-models": [
-   "h22hb1",
-   "1nlxfv8",
-   "1ktpdp0"
+  "a-teams": [
+   "ppf313",
+   "ctyngd",
+   "55mufy"
+  ],
+  "r-examples": [
+   "1s08gnd"
   ],
   "c-retrieval": [
-   "1195dac",
-   "158ms44",
-   "4mf0b6",
-   "1g3mlzf",
-   "whb3dt",
+   "1s08gnd",
+   "1fb1v8t",
+   "zlhay9",
+   "ilg1vq",
+   "10gzps4",
    "1jucg1v"
   ],
-  "k-skills": [
-   "1lpov93",
-   "16jogfe",
-   "1g5lpqi",
-   "13xt578",
-   "qqjnqh",
-   "qbakwv"
-  ],
-  "c-longctx": [
-   "1a6yyfi",
-   "1jucg1v",
-   "1hy3eq1",
-   "1datrkw",
-   "va7mlb",
-   "4ryc97"
-  ],
   "a-mcp": [
+   "i793xc",
    "1datrkw",
    "5envg7",
    "1r7pff",
@@ -1431,8 +1404,16 @@
    "grns2r",
    "1qosvj9"
   ],
-  "a-teams": [
-   "f7665y"
+  "s-models": [
+   "1nlxfv8",
+   "1ktpdp0"
+  ],
+  "c-longctx": [
+   "1a6yyfi",
+   "1jucg1v",
+   "1hy3eq1",
+   "1datrkw",
+   "4ryc97"
   ],
   "k-cli": [
    "hzhlbu",
@@ -1452,6 +1433,12 @@
    "1euvjgd",
    "haqhq7",
    "rq0kwf"
+  ],
+  "k-skills": [
+   "1g5lpqi",
+   "13xt578",
+   "qqjnqh",
+   "qbakwv"
   ],
   "c-memory": [
    "1furdo9",
@@ -1503,6 +1490,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "ilg1vq",
+   "node": "c-retrieval",
+   "nodeTitle": "Retrieval vs. Context",
+   "discipline": "context",
+   "title": "Re:CAP - Auditing Retrieval Coverage in Production RAG Pipelines",
+   "url": "http://arxiv.org/abs/2609.24122v1"
+  },
   {
    "id": "hzhlbu",
    "node": "k-cli",
