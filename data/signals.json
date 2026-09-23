@@ -1,13 +1,13 @@
 {
- "generated": "2026-09-23T16:55:58.769Z",
+ "generated": "2026-09-23T21:28:33.119Z",
  "itemCount": 74,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 472,
-   "kept": 177
+   "fetched": 647,
+   "kept": 240
   },
   {
    "id": "python-sdk-changelog",
@@ -94,7 +94,7 @@
    "source": "Show HN · built with AI",
    "sourceId": "hn-show",
    "category": "market",
-   "badge": "41 pts",
+   "badge": "42 pts",
    "date": "2026-09-22T16:15:06Z",
    "nodes": [
     "c-retrieval"
@@ -641,6 +641,22 @@
    "application": false
   },
   {
+   "id": "1kaaa3l",
+   "title": "Fixed the prompt cache being lost when an MCP server disconnects mid-conversation, or is still connecting after a resume, while tool search is off (for example behind a proxy or gateway)",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.281",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 24,
+   "application": false
+  },
+  {
    "id": "1r7pff",
    "title": "Improved startup in --input-format stream-json sessions: the first turn no longer waits up to 2s for still-connecting MCP servers whose tools tool search defers; they arrive on a later turn",
    "summary": "",
@@ -655,6 +671,87 @@
    ],
    "relevance": 24,
    "application": true
+  },
+  {
+   "id": "lqawh1",
+   "title": "Fixed the same MCP server being connected twice when a plugin or claude.ai connector and a configured server spell its URL differently (host letter case, default port, trailing slash)",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.281",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 21,
+   "application": false
+  },
+  {
+   "id": "kqgskl",
+   "title": "Added MCP server checks to claude plugin validate: it reports .mcp.json entries that would be silently dropped at load, undeclared ${user_config.*} references, and insecure URLs",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.281",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1rz26d1",
+   "title": "Fixed headless sessions with host-side (SDK) MCP servers stalling on the first message when the host stops responding mid-handshake; remote sessions now wait a few seconds at most",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.281",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "fb20y6",
+   "title": "Fixed interactive startup waiting on the managed-settings network request (about 80 ms, 17+ seconds when the network is unreachable) when no MCP servers or plugins are configured",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.281",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": true
+  },
+  {
+   "id": "o1sviw",
+   "title": "Fixed mcp_tool hooks on blocking events (PreToolUse and similar) being skipped while their MCP server was still connecting; they now wait for it, up to the MCP connect timeout",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.281",
+   "date": null,
+   "nodes": [
+    "k-hooks",
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
   },
   {
    "id": "1srpvsf",
@@ -913,6 +1010,22 @@
    "application": false
   },
   {
+   "id": "rq6ey",
+   "title": "Changed the session artifact links under the prompt into one footer pill (⧉ name or ⧉ N) that opens /artifacts, which now lists this session's artifacts first",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.281",
+   "date": null,
+   "nodes": [
+    "f-artifacts"
+   ],
+   "relevance": 15,
+   "application": false
+  },
+  {
    "id": "fm3d97",
    "title": "Fixed Ctrl+C or Ctrl+D pressed twice in most dialogs (/model, /effort, /config, /status, /usage, /plugin, /sandbox, /permissions, /artifacts, /mobile, /login, /upgrade, /usage-credits, /install-github-app, /setup-bedroc…",
    "summary": "",
@@ -942,121 +1055,6 @@
     "f-artifacts"
    ],
    "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "1l7tmdk",
-   "title": "Improved the Artifact tool's permission prompts: shorter sentences, pages and artifacts named by title or file name, and links listed after the text",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.277",
-   "date": null,
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "limyou",
-   "title": "Changed scheduled and Run now routine runs to save data to, and republish the page of, an artifact you can edit without asking; public artifacts, first publishes and deletes still ask",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.275",
-   "date": null,
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "zjjxdz",
-   "title": "Fixed a false-positive spinner tip suggesting the frontend-design plugin after reading or publishing Artifacts",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.273",
-   "date": null,
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "1em11c9",
-   "title": "Improved the Artifact tool's error when a publish includes a file type artifacts don't serve: Claude is told which types are served and what to do instead, and the terminal shows one plain line",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.273",
-   "date": null,
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "15f49ok",
-   "title": "Added Claude Opus 5.5 (claude-opus-5-5), now the default Opus model — 1M context, $4/$20 per Mtok with $0.20/Mtok cache reads",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.280",
-   "date": null,
-   "nodes": [
-    "s-models",
-    "c-longctx"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "1u4411a",
-   "title": "Fixed resumed fork subagents rebuilding their tool list instead of re-sending the one they first used, which broke prompt caching for that agent",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.280",
-   "date": null,
-   "nodes": [
-    "c-cache",
-    "a-subagents"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "1sw30bp",
-   "title": "Changed an effort level saved before /effort became per-model to no longer apply to newly released models such as Opus 5.5; they start at their default until you pick a level",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.280",
-   "date": null,
-   "nodes": [
-    "r-effort",
-    "s-models"
-   ],
-   "relevance": 12,
    "application": false
   },
   {
@@ -1289,8 +1287,7 @@
  "byNode": {
   "c-longctx": [
    "o8nrfg",
-   "iw5uez",
-   "15f49ok"
+   "iw5uez"
   ],
   "c-editing": [
    "o8nrfg",
@@ -1326,9 +1323,7 @@
   "s-models": [
    "1oq9tx3",
    "1aozpaz",
-   "1nlxfv8",
-   "15f49ok",
-   "1sw30bp"
+   "1nlxfv8"
   ],
   "a-tools": [
    "1d9h25m",
@@ -1358,7 +1353,13 @@
   ],
   "a-mcp": [
    "5envg7",
+   "1kaaa3l",
    "1r7pff",
+   "lqawh1",
+   "kqgskl",
+   "1rz26d1",
+   "fb20y6",
+   "o1sviw",
    "1srpvsf",
    "1ilhjwg",
    "1ock99d",
@@ -1384,6 +1385,9 @@
   "k-claudemd": [
    "f9yd9e"
   ],
+  "k-hooks": [
+   "o1sviw"
+  ],
   "k-plugins": [
    "zucubx",
    "r0ou1e",
@@ -1391,21 +1395,9 @@
    "gv332d"
   ],
   "f-artifacts": [
+   "rq6ey",
    "fm3d97",
-   "1p5d8o5",
-   "1l7tmdk",
-   "limyou",
-   "zjjxdz",
-   "1em11c9"
-  ],
-  "c-cache": [
-   "1u4411a"
-  ],
-  "a-subagents": [
-   "1u4411a"
-  ],
-  "r-effort": [
-   "1sw30bp"
+   "1p5d8o5"
   ],
   "c-files": [
    "l9p9p6",
@@ -1566,6 +1558,14 @@
    "nodeTitle": "MCP",
    "discipline": "agents",
    "title": "Improved startup in --input-format stream-json sessions: the first turn no longer waits up to 2s for still-connecting MCP servers whose tools tool search defers; they arrive on a later turn",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+  },
+  {
+   "id": "fb20y6",
+   "node": "a-mcp",
+   "nodeTitle": "MCP",
+   "discipline": "agents",
+   "title": "Fixed interactive startup waiting on the managed-settings network request (about 80 ms, 17+ seconds when the network is unreachable) when no MCP servers or plugins are configured",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   },
   {
