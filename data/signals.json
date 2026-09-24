@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-23T21:28:33.119Z",
- "itemCount": 74,
+ "generated": "2026-09-24T04:46:55.427Z",
+ "itemCount": 75,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -56,17 +56,178 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 8
+   "kept": 13
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": true,
    "fetched": 20,
-   "kept": 6
+   "kept": 7
   }
  ],
  "items": [
+  {
+   "id": "1v08ind",
+   "title": "Dual-Hypergraph Indexing: Bridging Knowledge Islands for Multi-Hop Reasoning in Retrieval-Augmented Generation",
+   "summary": "While hypergraph-based Retrieval-Augmented Generation (RAG) effectively captures higher-order multi-entity correlations, existing paradigms treat extracted hyperedges as isolated factual assertions. This structural fragmentation engenders rigid \"knowledge islands\" that bottleneck multi-hop causal inference, temporal t…",
+   "url": "http://arxiv.org/abs/2609.28108v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-23T13:39:19Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "oqwd3g",
+   "title": "TEMPS: Temporal Sentence Embeddings for Temporal Information Retrieval",
+   "summary": "Modern information retrieval (IR) systems rarely represent time, yet many information needs depend on it: in clinical, journalistic, and legal search, when an event occurred can decide whether a document is relevant. Dense retrievers and Retrieval-Augmented Generation (RAG) pipelines match queries to documents well on…",
+   "url": "http://arxiv.org/abs/2609.28048v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-23T13:05:09Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 5,
+   "application": false
+  },
+  {
+   "id": "1h0a37p",
+   "title": "Integration of Retrieval-Augmented Generation for Knowledge Access in the ELBE Accelerator Control System",
+   "summary": "The efficient operation of accelerator facilities increas- ingly relies on rapid access to heterogeneous operational knowledge, including logbooks, interlock reports, machine parameters, and historical archive data. At ELBE, we pro- posed a Retrieval-Augmented Generation (RAG) frame- work that integrates facility docu…",
+   "url": "http://arxiv.org/abs/2609.27579v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-23T08:58:23Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1fbeaum",
+   "title": "Only Pay What You Must Spend: On-Demand Privacy Budget Payment for Differentially Private RAG",
+   "summary": "Deploying large language models (LLMs) on sensitive data via Retrieval-Augmented Generation (RAG) introduces severe privacy risks. Recent studies apply Differential Privacy (DP) to LLMs with RAG for formal privacy guarantees. However, existing DP-RAG frameworks rapidly exhaust the privacy budget. Although recent effor…",
+   "url": "http://arxiv.org/abs/2609.27406v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-23T06:20:17Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "o0qots",
+   "title": "MolDesignBench: Evaluating LLM-based Agent for Scenario-grounded Molecular Design",
+   "summary": "Real-world molecular design remains challenging for large language model (LLM)-based agents. It requires them to interpret design contexts, satisfy multiple constraints, identify infeasible specifications, and reason over multi-step tool outputs. Existing benchmarks do not capture this complexity, focusing instead on…",
+   "url": "http://arxiv.org/abs/2609.27349v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-23T04:39:56Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ib1zwx",
+   "title": "CART: Closed-Loop Adaptive Red Teaming for Large Language Models",
+   "summary": "Automated red teaming often replays a fixed set of prompts, which measures known risks but cannot learn from failures found during testing. We present CART (Closed-Loop Adaptive Red Teaming), a framework that uses each result to guide what it tests next. CART begins with broad risk coverage, follows weaknesses that em…",
+   "url": "http://arxiv.org/abs/2609.27336v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-23T04:16:46Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "snc9h5",
+   "title": "Can One Adapted Model Do It All? Fine-Tuning Strategy Selection for Customer Support LLMs",
+   "summary": "Production customer-support systems often require LLMs to support multiple skills, such as intent classification, question answering, summarization, or tool-use decisions. A central deployment question is whether these skills should be handled by separate task-specialist models or by a single model trained through mul…",
+   "url": "http://arxiv.org/abs/2609.27262v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-23T02:46:50Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "16rnprr",
+   "title": "Meet, Compare, or Abstain: LatWeave for Deterministic Multi-Hop Question Answering on Knowledge Lattices",
+   "summary": "Probabilistic question-answering systems -- whether large language models (LLMs) themselves, retrieval-augmented generation (RAG), or trained multi-hop retrievers -- conflate \"what is known\" and \"how to reason\" into a single probabilistic computation: hallucination cannot be eradicated, evidence chains cannot be audit…",
+   "url": "http://arxiv.org/abs/2609.27225v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-23T01:45:23Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "12bihru",
+   "title": "BoundaryMORPH: Budgeted Reranking via Active Set Selection for Diffuse Retrieval",
+   "summary": "Open-ended queries in modern Retrieval-Augmented Generation (RAG) are increasingly \"diffuse,\" requiring a large set of documents to be assembled into a finite LLM context window. To ensure retrieval quality, systems use fast dual-encoders and more expensive cross-encoders (CEs) to score candidates. However, the CE bud…",
+   "url": "http://arxiv.org/abs/2609.27213v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-23T01:22:22Z",
+   "nodes": [
+    "c-longctx",
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "72km19",
+   "title": "When Direct Manipulation Becomes a Guess: Productive Friction in AI-Mediated Multisensory Visualization",
+   "summary": "Generative visualization increasingly embeds large language models within direct manipulation and multisensory interaction. Speech, gaze, touch, gesture, sound, and haptics can make probabilistic inference feel like familiar, deterministic tool use. I call this gap a deterministic-affordance mismatch: deterministic in…",
+   "url": "http://arxiv.org/abs/2609.27104v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-22T21:59:04Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "o8nrfg",
    "title": "CliffCompaction: Cost-Efficient Compaction for Long-Horizon Coding Agents",
@@ -94,7 +255,7 @@
    "source": "Show HN · built with AI",
    "sourceId": "hn-show",
    "category": "market",
-   "badge": "42 pts",
+   "badge": "43 pts",
    "date": "2026-09-22T16:15:06Z",
    "nodes": [
     "c-retrieval"
@@ -114,40 +275,6 @@
    "date": "2026-09-22T14:28:31Z",
    "nodes": [
     "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1d9h25m",
-   "title": "Fast Karhunen-Loève Expansions via FFT-Accelerated Toeplitz Operators",
-   "summary": "Gaussian random fields are a versatile tool used in the fields of stochastic PDEs, uncertainty quantification, and geostatistical simulation. One way to obtain them is to use a truncated Karhunen--Loève expansion (KLE). Computing the expansion requires the leading eigenpairs of an $N \\times N$ covariance matrix, where…",
-   "url": "http://arxiv.org/abs/2609.26459v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-22T14:12:19Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "l14oi8",
-   "title": "Knowledge-as-Skill: A Structural Design for Autonomous Knowledge-Base Use by LLM Agents",
-   "summary": "Retrieval-augmented generation (RAG) gives large language models (LLMs) access to external knowledge, but its conventional retrieve-concatenate-generate pipeline makes retrieval decisions on behalf of the model. As tool use and agent loops become more reliable, an agent can decide whether to retrieve, what to inspect,…",
-   "url": "http://arxiv.org/abs/2609.25991v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-22T10:44:10Z",
-   "nodes": [
-    "c-retrieval",
-    "a-tools",
-    "a-runner"
    ],
    "relevance": 3,
    "application": false
@@ -175,8 +302,8 @@
    "title": "RAG-NAROK: Retrieval-Aware Knowledge Corpus Poisoning in RAG with Source-specific Refutation",
    "summary": "Retrieval augmented generation (RAG) systems have emerged as the dominant architecture for grounding large language model (LLM) outputs in verifiable external knowledge, yet their structural reliance on a dynamic retrieval pipeline introduces a largely unexplored class of adversarial vulnerability. Existing knowledge-…",
    "url": "http://arxiv.org/abs/2609.25469v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
    "date": "2026-09-21T22:53:04Z",
@@ -184,118 +311,6 @@
     "c-retrieval"
    ],
    "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "lb939",
-   "title": "Potential for Enhanced Learning in Machine Learning Classes by Using Wiki LLM Indexing",
-   "summary": "Large language models are increasingly deployed as course-specific tutors, but their usefulness depends on grounding in vetted instructional materials that are often revised mid-semester. Our prior work built a multimodal retrieval-augmented generation (RAG) system over an authentic machine learning course corpus (Fou…",
-   "url": "http://arxiv.org/abs/2609.25303v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-21T18:53:37Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1aozpaz",
-   "title": "Trains but Doesn't Learn: A Post-Training Delivery Benchmark for LLM Agents as Forward-Deployed Engineers",
-   "summary": "Post-training is becoming a service (PTaaS): a customer hands an operator data and a goal, and a forward-deployed engineer (FDE) returns a fine-tuned, evaluated, and deployed model under a budget, a human-approval gate, and reproducibility requirements. Seating an LLM agent in the FDE seat raises a question existing b…",
-   "url": "http://arxiv.org/abs/2609.25237v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-21T18:01:24Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "ajsua0",
-   "title": "Critical-State RL: Diagnosing Trainable States for Multi-Turn Tool Use",
-   "summary": "Multi-turn tool-use failures can hinge on a single model call, yet reward variation alone does not reveal which call would benefit from training. When rewards depend on later interactions, their variation can reflect downstream randomness rather than differences between the current actions. We introduce Critical-State…",
-   "url": "http://arxiv.org/abs/2609.24985v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-21T17:57:20Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "ppf313",
-   "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
-   "summary": "LLM agents are increasingly deployed in collaborative settings, yet long-term interaction may give rise to undesirable coordination. We study the emergence of collusion in a long-horizon multi-agent environment: two agents repeatedly complete individual tasks, share task logs, verify each other's work, and receive rew…",
-   "url": "http://arxiv.org/abs/2609.24967v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-21T17:52:48Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "r95ime",
-   "title": "Qwen-Audio-Agent Technical Report",
-   "summary": "We present Qwen-Audio-Agent, a harness that combines full-duplex voice interaction with asynchronous task execution through a foreground-background architecture. A Frontend Agent manages dialogue and selects between direct tool use and delegation, while a Backend Agent carries out delegated tasks in a separate context…",
-   "url": "http://arxiv.org/abs/2609.25195v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-21T17:40:55Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "55mufy",
-   "title": "ConsistWorld: Evidence Routing for Consistent Multi-Agent World Models",
-   "summary": "Autoregressive video world models enable temporally coherent generation for a single observer. Extending them to multiple agents requires consistency across independently controlled views and temporal gaps under causal streaming. We present ConsistWorld, a multi-agent world model that generates camera-controlled video…",
-   "url": "http://arxiv.org/abs/2609.22641v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-18T23:31:01Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1nlxfv8",
-   "title": "SAFARI: An Industrial Benchmark for LLM-Assisted Hazard Analysis and Risk Assessment",
-   "summary": "Large language models (LLMs) are increasingly considered for safety-critical engineering, yet their reliability in regulated functional-safety workflows remains underexplored. We introduce SAFARI (Safety-Aware Functional Automotive Risk Inference), the first industrial benchmark for LLM-assisted automotive Hazard Anal…",
-   "url": "http://arxiv.org/abs/2609.20584v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-17T15:37:51Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
    "application": false
   },
   {
@@ -1285,9 +1300,35 @@
   }
  ],
  "byNode": {
+  "c-retrieval": [
+   "1v08ind",
+   "oqwd3g",
+   "1h0a37p",
+   "1fbeaum",
+   "ib1zwx",
+   "16rnprr",
+   "12bihru",
+   "1a89hn0",
+   "iw5uez",
+   "jf8ozm"
+  ],
+  "s-models": [
+   "o0qots",
+   "1oq9tx3"
+  ],
+  "k-skills": [
+   "snc9h5",
+   "1g5lpqi",
+   "13xt578",
+   "qqjnqh"
+  ],
   "c-longctx": [
+   "12bihru",
    "o8nrfg",
    "iw5uez"
+  ],
+  "a-tools": [
+   "72km19"
   ],
   "c-editing": [
    "o8nrfg",
@@ -1313,43 +1354,9 @@
    "1euvjgd",
    "haqhq7"
   ],
-  "c-retrieval": [
-   "1a89hn0",
-   "l14oi8",
-   "iw5uez",
-   "jf8ozm",
-   "lb939"
-  ],
-  "s-models": [
-   "1oq9tx3",
-   "1aozpaz",
-   "1nlxfv8"
-  ],
-  "a-tools": [
-   "1d9h25m",
-   "l14oi8",
-   "ajsua0",
-   "r95ime"
-  ],
-  "a-runner": [
-   "l14oi8",
-   "10o92d",
-   "latl6w",
-   "10rjcso",
-   "15pioec"
-  ],
   "c-memory": [
    "iw5uez",
    "1furdo9"
-  ],
-  "a-teams": [
-   "ppf313",
-   "55mufy"
-  ],
-  "k-skills": [
-   "1g5lpqi",
-   "13xt578",
-   "qqjnqh"
   ],
   "a-mcp": [
    "5envg7",
@@ -1399,6 +1406,12 @@
    "fm3d97",
    "1p5d8o5"
   ],
+  "a-runner": [
+   "10o92d",
+   "latl6w",
+   "10rjcso",
+   "15pioec"
+  ],
   "c-files": [
    "l9p9p6",
    "11el4ul"
@@ -1408,6 +1421,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "ib1zwx",
+   "node": "c-retrieval",
+   "nodeTitle": "Retrieval vs. Context",
+   "discipline": "context",
+   "title": "CART: Closed-Loop Adaptive Red Teaming for Large Language Models",
+   "url": "http://arxiv.org/abs/2609.27336v1"
+  },
   {
    "id": "1a89hn0",
    "node": "c-retrieval",
