@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-26T11:21:42.047Z",
- "itemCount": 78,
+ "generated": "2026-09-26T16:21:30.703Z",
+ "itemCount": 79,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 7
+   "kept": 8
   },
   {
    "id": "arxiv-agents",
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "1knufoo",
+   "title": "Show HN: I built a tool that gives any website an API and MCP",
+   "summary": "",
+   "url": "https://news.ycombinator.com/item?id=49855468",
+   "discussion": "https://news.ycombinator.com/item?id=49855468",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "5 pts",
+   "date": "2026-09-26T11:22:37Z",
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "17y683f",
    "title": "LLM Agents Can Easily Tamper With Their Own Traces",
@@ -1353,6 +1370,29 @@
   }
  ],
  "byNode": {
+  "a-mcp": [
+   "1knufoo",
+   "5envg7",
+   "1kaaa3l",
+   "lqawh1",
+   "1esh5k2",
+   "1cto390",
+   "1by8ydl",
+   "1v5eu74",
+   "1nkqp9b",
+   "1v4wrmb",
+   "kvm2m5",
+   "kqgskl",
+   "1rz26d1",
+   "fb20y6",
+   "o1sviw",
+   "1srpvsf",
+   "1ilhjwg",
+   "1ock99d",
+   "7o4v6u",
+   "dugupe",
+   "116g84u"
+  ],
   "k-cli": [
    "17y683f",
    "a3h8c4",
@@ -1435,28 +1475,6 @@
    "1oq9tx3",
    "1o6uh5z"
   ],
-  "a-mcp": [
-   "5envg7",
-   "1kaaa3l",
-   "lqawh1",
-   "1esh5k2",
-   "1cto390",
-   "1by8ydl",
-   "1v5eu74",
-   "1nkqp9b",
-   "1v4wrmb",
-   "kvm2m5",
-   "kqgskl",
-   "1rz26d1",
-   "fb20y6",
-   "o1sviw",
-   "1srpvsf",
-   "1ilhjwg",
-   "1ock99d",
-   "7o4v6u",
-   "dugupe",
-   "116g84u"
-  ],
   "c-memory": [
    "1furdo9"
   ],
@@ -1489,6 +1507,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "1knufoo",
+   "node": "a-mcp",
+   "nodeTitle": "MCP",
+   "discipline": "agents",
+   "title": "Show HN: I built a tool that gives any website an API and MCP",
+   "url": "https://news.ycombinator.com/item?id=49855468"
+  },
   {
    "id": "sren20",
    "node": "c-retrieval",
