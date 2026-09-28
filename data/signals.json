@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-27T21:19:18.335Z",
- "itemCount": 79,
+ "generated": "2026-09-28T05:20:20.639Z",
+ "itemCount": 77,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -49,87 +49,185 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 8
+   "kept": 7
   },
   {
    "id": "arxiv-agents",
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 10
+   "kept": 12
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": true,
    "fetched": 20,
-   "kept": 10
+   "kept": 7
   }
  ],
  "items": [
   {
-   "id": "1knufoo",
-   "title": "Show HN: I built a tool that gives any website an API and MCP",
-   "summary": "",
-   "url": "https://news.ycombinator.com/item?id=49855468",
-   "discussion": "https://news.ycombinator.com/item?id=49855468",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "5 pts",
-   "date": "2026-09-26T11:22:37Z",
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "17y683f",
-   "title": "LLM Agents Can Easily Tamper With Their Own Traces",
-   "summary": "Asynchronous monitoring, incident investigations, and compliance audits primarily rely on agent traces to reconstruct what happened. These analyses assume that LLM agents cannot tamper with their own execution traces. We show that local LLM agents such as Claude Code, Codex, Antigravity, Open Code and Grok Build fail…",
-   "url": "http://arxiv.org/abs/2609.30266v1",
+   "id": "804tze",
+   "title": "Stale-Document Poisoning: When Outdated Retrieval Overrides Correct Model Answers",
+   "summary": "Retrieval-augmented generation (RAG) is often used to address outdated knowledge by providing external evidence. But retrieval helps only when that evidence is still valid. We identify a temporal alignment failure, stale-document poisoning, in which outdated evidence makes a model wrong despite answering correctly wit…",
+   "url": "http://arxiv.org/abs/2609.31342v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-24T17:59:54Z",
+   "date": "2026-09-25T14:43:43Z",
    "nodes": [
-    "k-cli"
+    "c-retrieval"
    ],
    "relevance": 3,
    "application": false
   },
   {
-   "id": "3usqe",
-   "title": "KREX: Concurrent Kernel Benchmarking on Shared GPUs via Region-Granular Exclusivity",
-   "summary": "LLM agents automate GPU kernel optimization by repeatedly composing candidates and measuring their duration on real GPUs. Existing systems preserve measurement fidelity by reserving a GPU for an entire agent session or benchmarking command. However, this results in poor utilization because only a small fraction of com…",
-   "url": "http://arxiv.org/abs/2609.30057v1",
+   "id": "r2v43t",
+   "title": "AgentXploit: Autonomous Repository-to-Runtime Red-Teaming for AI Agents",
+   "summary": "AI agents combine language models with external data and tools that can modify files, call APIs, or execute code. Security failures can arise when adversarial content changes an agent's tool use or when the surrounding software contains vulnerabilities such as path traversal or command injection. We study authorized w…",
+   "url": "http://arxiv.org/abs/2609.31318v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-24T16:14:04Z",
+   "date": "2026-09-25T14:26:04Z",
    "nodes": [
-    "a-managed"
+    "a-tools"
+   ],
+   "relevance": 4,
+   "application": false
+  },
+  {
+   "id": "m9zksg",
+   "title": "MetaPermit: Scalable and Auditable Access Control for AI Agents via LLM-Inferred Meta-Attributes",
+   "summary": "The rise of autonomous AI agents equipped with tools has introduced significant security risks, ranging from unintended tool misuse to adversarial manipulation through Indirect Prompt Injection (IPI) attacks. In practice, deployed agent systems such as OpenAI Codex and Claude Code protect tool invocations through a co…",
+   "url": "http://arxiv.org/abs/2609.31039v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-25T09:32:31Z",
+   "nodes": [
+    "k-cli",
+    "s-guardrails"
    ],
    "relevance": 3,
    "application": false
   },
   {
-   "id": "yvfzun",
-   "title": "How does Adversarial Influence Scale in Multi-Agent Systems?",
-   "summary": "Multi-agent deliberation can improve performance, but what happens when some agents do not act in good faith? In practice, an agent may be deceptive and work to subvert the group, whether through its own objectives or external instruction. We study how susceptibility to deception scales as groups increase in size and…",
-   "url": "http://arxiv.org/abs/2609.30028v1",
+   "id": "65ukz2",
+   "title": "LogicTree-RAG: Logic Tree-guided Retrieval-Augmented Generation for Long-form Patent Drafting",
+   "summary": "Long-form technical text generation underpins knowledge-intensive workflows, yet remains challenging for large language models (LLMs) due to the need for globally consistent logical structuring and faithful technical reasoning beyond local coherence. Patent drafting is a canonical instance of this challenge, demanding…",
+   "url": "http://arxiv.org/abs/2609.30943v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-24T16:02:40Z",
+   "date": "2026-09-25T07:56:10Z",
    "nodes": [
-    "a-teams"
+    "c-retrieval"
    ],
    "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1ix9tex",
+   "title": "Financial Fragility in Societies of LLM Agents: Coordination Failures and Stabilizing Mechanisms",
+   "summary": "Individually protective decisions can produce avoidable collective failures. As large language model (LLM) agents take on greater roles in financial decision-making, financial AI safety must therefore be considered not only at the level of individual agents, but also at the level of the systems they jointly create. We…",
+   "url": "http://arxiv.org/abs/2609.30940v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-25T07:55:14Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "11xcstm",
+   "title": "ToolSearcher: Optimizing Tool Selection at Scale via Reinforcement Learning",
+   "summary": "Large language models (LLMs) excel at natural language processing but struggle to interact with external environments. Tool learning provides a promising way to extend LLMs into actionable agents, where tool selection is a critical prerequisite for successful tool use. Existing work often assumes a small or predefined…",
+   "url": "http://arxiv.org/abs/2609.30906v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-25T07:13:21Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 4,
+   "application": false
+  },
+  {
+   "id": "1lp65f5",
+   "title": "PHASE: Compliance-Enabled Tactile Phase Retrieval for Few-Shot Insertion Learning",
+   "summary": "Contact-rich assembly tasks such as peg-in-hole insertion remain difficult to learn from limited demonstrations. While retrieval-augmented imitation learning, which augments target demonstrations with relevant prior data, offers a promising direction, its applicability to contact-rich manipulation remains largely unex…",
+   "url": "http://arxiv.org/abs/2609.30889v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-25T06:53:56Z",
+   "nodes": [
+    "r-examples"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1bn9xac",
+   "title": "Prompt Injection Detection for Email Agents Through Attack Chain Modeling",
+   "summary": "Large language model email assistants are particularly vulnerable to indirect prompt injection because untrusted email content can be retrieved into the model context and influence subsequent tool use. Existing prompt injection detectors mainly formulate this problem as binary malicious text classification, which over…",
+   "url": "http://arxiv.org/abs/2609.30657v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-25T00:51:56Z",
+   "nodes": [
+    "a-tools",
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "l2y27y",
+   "title": "Subjects, Not Authors: The Authorship Hazard in Agentic Dataspaces",
+   "summary": "Dataspace connectors decide whether a transfer may occur, not what the transferred value contains, tolerable for contracted applications, not for LLM agents that compose tool calls and spawn sub-agents. Research on agents that generate governance artifacts evaluates output quality; who may authorize an artifact for us…",
+   "url": "http://arxiv.org/abs/2609.30614v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-24T22:58:16Z",
+   "nodes": [
+    "f-artifacts",
+    "a-subagents"
+   ],
+   "relevance": 5,
+   "application": false
+  },
+  {
+   "id": "9wak3y",
+   "title": "The Hard Part Comes After Search: Benchmarking Web Agents on Synthesizing, Organizing, and Displaying Knowledge",
+   "summary": "Existing computer-use agent benchmarks do not fully evaluate agents acting as assistants. A useful assistant retrieves information across complex, multi-step workflows, synthesizes it into artifacts (documents, presentations, spreadsheets), and navigates program interfaces to produce a coherent final product. Such wor…",
+   "url": "http://arxiv.org/abs/2609.30604v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-24T22:36:10Z",
+   "nodes": [
+    "f-artifacts"
+   ],
+   "relevance": 5,
    "application": false
   },
   {
@@ -165,110 +263,12 @@
    "application": false
   },
   {
-   "id": "1bsccik",
-   "title": "Breaking the Environment Wall: Evolving LLM Agent Environments for Recursive Self-Improvement",
-   "summary": "Many real-world tasks (e.g., office workflows, scientific experimentation) require LLM agents to interact repeatedly with their environments for context-dependent operations. However, such environments are often not agent-ready. First, information is often scattered and fragmented across the environment. Second, relev…",
-   "url": "http://arxiv.org/abs/2609.29773v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-24T13:17:57Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "a3h8c4",
-   "title": "Demystifying Agent Skills for Smart Contract Auditing: Design, Effectiveness, Behavioral Impact",
-   "summary": "LLM agents, notably Claude Code and OpenAI Codex, are emerging as versatile tools beyond coding agents only. These agents can be enhanced with skills---reusable artifacts that package domain knowledge, workflows, and tool-use instructions. To date, however, little is known about how such skills are designed or how the…",
-   "url": "http://arxiv.org/abs/2609.29454v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-24T12:09:55Z",
-   "nodes": [
-    "k-skills",
-    "k-cli",
-    "f-artifacts"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1w7tvhq",
-   "title": "SkinAgent AI: A Safety-Grounded Multimodal Agentic Framework for Non-Diagnostic Skincare Support",
-   "summary": "Consumer-facing skincare AI must coordinate visual evidence, product information, tool use, and user-facing actions within explicit evidence and safety boundaries. This study evaluates SkinAgent AI, a non-diagnostic multimodal framework that combines visual concern routing with grounded and auditable LLM-based orchest…",
-   "url": "http://arxiv.org/abs/2609.29341v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-24T10:15:06Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "ore0j6",
-   "title": "Asymmetric Dynamic Routing: Balancing Reasoning Depth and Computational Efficiency in Hypergraph RAG",
-   "summary": "While graph-based and hypergraph-based Retrieval-Augmented Generation (RAG) significantly mitigate hallucinations in Large Language Models (LLMs), existing structure-based RAG systems typically adopt static traversal strategies regardless of the query complexity. We identify this ``static retrieval fallacy'' as a prim…",
-   "url": "http://arxiv.org/abs/2609.29282v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-24T09:17:40Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "58uv11",
-   "title": "A Wrong Turn Does Not Ruin the Journey: Deviation-Guided Skill Self-Evolution for LLM Agents",
-   "summary": "Large language model agents increasingly rely on natural-language skills to solve complex tool-use tasks. However, such tasks often admit multiple valid solution paths, making it inappropriate to improve skills by forcing failed trajectories to match a fixed successful trajectory. Moreover, failed trajectories are rar…",
-   "url": "http://arxiv.org/abs/2609.29154v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-24T07:31:00Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "2mp9re",
-   "title": "Advancing the Physical Internet with GraphRAG: A New Way to Review and Integrate Existing Research",
-   "summary": "Physical Internet (PI) is an emerging concept that applies the digital internet as a design metaphor for the development of sustainable, interoperable, and collaborative freight transportation. It is considered a way to bring logistics into the next generation of transformation. Effective tools for organizing and inte…",
-   "url": "http://arxiv.org/abs/2609.29083v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-24T06:10:27Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
    "id": "1abulq5",
    "title": "CRISS: A Retrieval-Augmented AI Chatbot for Assisting Cancer Registrars",
    "summary": "Cancer registrars, including Oncology Data Specialists (ODSs), must interpret complex and frequently updated coding and staging standards. We developed CRISS (Cancer Registry Intelligent Support System), a retrieval-augmented generation (RAG) conversational assistant that provides rapid, citation-supported access to r…",
    "url": "http://arxiv.org/abs/2609.29075v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
    "date": "2026-09-24T06:05:11Z",
@@ -361,39 +361,6 @@
    ],
    "relevance": 3,
    "application": true
-  },
-  {
-   "id": "1oq9tx3",
-   "title": "Calibration as a First-Class Criterion in LLM Evaluation",
-   "summary": "Calibration of language models -- the alignment between expressed or implicit confidence and empirical correctness -- is a well-studied subfield within NLP. Methods to measure it already exist. The problem is adoption: outside this subfield, NLP research regularly introduces new models, datasets, and benchmarks withou…",
-   "url": "http://arxiv.org/abs/2609.26489v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-22T14:28:31Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1o6uh5z",
-   "title": "COPE: Continual Personalization of LLMs under Sparse User Feedback via User Embeddings and Self-Evaluation",
-   "summary": "While Large Language Models (LLMs) have achieved remarkable results across various benchmarks, their alignment with normative values often results in homogenized responses that fail to address diverse user preferences. Existing training-free methods often occupy valuable context windows through prompt engineering, whi…",
-   "url": "http://arxiv.org/abs/2609.26853v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-22T12:23:22Z",
-   "nodes": [
-    "c-longctx",
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
   },
   {
    "id": "hzhlbu",
@@ -1370,8 +1337,83 @@
   }
  ],
  "byNode": {
+  "c-retrieval": [
+   "804tze",
+   "65ukz2",
+   "1ix9tex",
+   "sren20",
+   "1abulq5",
+   "12bihru",
+   "1a89hn0"
+  ],
+  "a-tools": [
+   "r2v43t",
+   "11xcstm",
+   "1bn9xac"
+  ],
+  "k-cli": [
+   "m9zksg",
+   "o8nrfg",
+   "hzhlbu",
+   "yq92q5",
+   "hbx7k7",
+   "13xt578",
+   "186d7xe",
+   "1c6q1us",
+   "1cc8uxk",
+   "1ledpgp",
+   "1v41iem",
+   "11wcs",
+   "8kcnsx",
+   "9m1dvn",
+   "1euvjgd",
+   "haqhq7"
+  ],
+  "s-guardrails": [
+   "m9zksg",
+   "1bn9xac"
+  ],
+  "r-examples": [
+   "1lp65f5"
+  ],
+  "f-artifacts": [
+   "l2y27y",
+   "9wak3y",
+   "1perbcd",
+   "lgh5ou"
+  ],
+  "a-subagents": [
+   "l2y27y"
+  ],
+  "c-longctx": [
+   "7j7vf7",
+   "8wzniw",
+   "12bihru",
+   "o8nrfg",
+   "vl06jn"
+  ],
+  "a-runner": [
+   "ifsp2v",
+   "10o92d",
+   "latl6w",
+   "10rjcso",
+   "15pioec"
+  ],
+  "c-editing": [
+   "o8nrfg",
+   "10o92d",
+   "10rjcso",
+   "7yvlxq"
+  ],
+  "k-skills": [
+   "1g5lpqi",
+   "13xt578",
+   "qqjnqh",
+   "1v4wrmb",
+   "kvm2m5",
+   "1perbcd"
+  ],
   "a-mcp": [
-   "1knufoo",
    "5envg7",
    "1kaaa3l",
    "lqawh1",
@@ -1393,90 +1435,15 @@
    "dugupe",
    "116g84u"
   ],
-  "k-cli": [
-   "17y683f",
-   "a3h8c4",
-   "o8nrfg",
-   "hzhlbu",
-   "yq92q5",
-   "hbx7k7",
-   "13xt578",
-   "186d7xe",
-   "1c6q1us",
-   "1cc8uxk",
-   "1ledpgp",
-   "1v41iem",
-   "11wcs",
-   "8kcnsx",
-   "9m1dvn",
-   "1euvjgd",
-   "haqhq7"
+  "c-memory": [
+   "1furdo9"
   ],
   "a-managed": [
-   "3usqe",
    "1c6q1us",
    "10nk3l4",
    "fsjr9w",
    "pwv0ia",
    "14p4423"
-  ],
-  "a-teams": [
-   "yvfzun"
-  ],
-  "c-retrieval": [
-   "sren20",
-   "1bsccik",
-   "ore0j6",
-   "2mp9re",
-   "1abulq5",
-   "12bihru",
-   "1a89hn0"
-  ],
-  "c-longctx": [
-   "7j7vf7",
-   "8wzniw",
-   "12bihru",
-   "o8nrfg",
-   "1o6uh5z",
-   "vl06jn"
-  ],
-  "k-skills": [
-   "a3h8c4",
-   "58uv11",
-   "1g5lpqi",
-   "13xt578",
-   "qqjnqh",
-   "1v4wrmb",
-   "kvm2m5",
-   "1perbcd"
-  ],
-  "f-artifacts": [
-   "a3h8c4",
-   "1perbcd",
-   "lgh5ou"
-  ],
-  "a-tools": [
-   "1w7tvhq"
-  ],
-  "a-runner": [
-   "ifsp2v",
-   "10o92d",
-   "latl6w",
-   "10rjcso",
-   "15pioec"
-  ],
-  "c-editing": [
-   "o8nrfg",
-   "10o92d",
-   "10rjcso",
-   "7yvlxq"
-  ],
-  "s-models": [
-   "1oq9tx3",
-   "1o6uh5z"
-  ],
-  "c-memory": [
-   "1furdo9"
   ],
   "k-claudemd": [
    "f9yd9e"
@@ -1507,14 +1474,6 @@
   ]
  },
  "applications": [
-  {
-   "id": "1knufoo",
-   "node": "a-mcp",
-   "nodeTitle": "MCP",
-   "discipline": "agents",
-   "title": "Show HN: I built a tool that gives any website an API and MCP",
-   "url": "https://news.ycombinator.com/item?id=49855468"
-  },
   {
    "id": "sren20",
    "node": "c-retrieval",
