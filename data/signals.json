@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-28T05:20:20.639Z",
- "itemCount": 77,
+ "generated": "2026-09-28T13:49:58.774Z",
+ "itemCount": 78,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 7
+   "kept": 8
   },
   {
    "id": "arxiv-agents",
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "yaz21r",
+   "title": "Show HN: OpenAPPA – deterministic AI guardrails that don't break agents",
+   "summary": "",
+   "url": "https://www.openappa.com/",
+   "discussion": "https://news.ycombinator.com/item?id=49877515",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "17 pts",
+   "date": "2026-09-28T13:20:44Z",
+   "nodes": [
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "804tze",
    "title": "Stale-Document Poisoning: When Outdated Retrieval Overrides Correct Model Answers",
@@ -1337,6 +1354,11 @@
   }
  ],
  "byNode": {
+  "s-guardrails": [
+   "yaz21r",
+   "m9zksg",
+   "1bn9xac"
+  ],
   "c-retrieval": [
    "804tze",
    "65ukz2",
@@ -1368,10 +1390,6 @@
    "9m1dvn",
    "1euvjgd",
    "haqhq7"
-  ],
-  "s-guardrails": [
-   "m9zksg",
-   "1bn9xac"
   ],
   "r-examples": [
    "1lp65f5"
@@ -1474,6 +1492,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "yaz21r",
+   "node": "s-guardrails",
+   "nodeTitle": "Refusals & Fallbacks",
+   "discipline": "scale",
+   "title": "Show HN: OpenAPPA – deterministic AI guardrails that don't break agents",
+   "url": "https://www.openappa.com/"
+  },
   {
    "id": "sren20",
    "node": "c-retrieval",
