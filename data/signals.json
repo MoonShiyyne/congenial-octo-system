@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-29T05:41:14.647Z",
- "itemCount": 79,
+ "generated": "2026-09-29T12:49:14.938Z",
+ "itemCount": 80,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 8
+   "kept": 9
   },
   {
    "id": "arxiv-agents",
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "bkmagq",
+   "title": "Show HN: Open-source skills for end-to-end video ad campaigns",
+   "summary": "",
+   "url": "https://github.com/SupercmoHQ/superCMO-skills",
+   "discussion": "https://news.ycombinator.com/item?id=49888905",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "3 pts",
+   "date": "2026-09-29T06:11:45Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "185nbfx",
    "title": "Harness Learning Enables Generalizable Test-Time Adaptation",
@@ -1361,6 +1378,16 @@
   }
  ],
  "byNode": {
+  "k-skills": [
+   "bkmagq",
+   "1l5eu2g",
+   "ragkyg",
+   "1g5lpqi",
+   "13xt578",
+   "qqjnqh",
+   "1v4wrmb",
+   "kvm2m5"
+  ],
   "a-tools": [
    "185nbfx",
    "uy1j22"
@@ -1369,15 +1396,6 @@
    "x1a68s",
    "1k59z61",
    "izz394"
-  ],
-  "k-skills": [
-   "1l5eu2g",
-   "ragkyg",
-   "1g5lpqi",
-   "13xt578",
-   "qqjnqh",
-   "1v4wrmb",
-   "kvm2m5"
   ],
   "c-editing": [
    "1s26um1",
@@ -1489,6 +1507,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "bkmagq",
+   "node": "k-skills",
+   "nodeTitle": "Skills",
+   "discipline": "code",
+   "title": "Show HN: Open-source skills for end-to-end video ad campaigns",
+   "url": "https://github.com/SupercmoHQ/superCMO-skills"
+  },
   {
    "id": "1vyzb0t",
    "node": "s-guardrails",
