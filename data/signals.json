@@ -1,27 +1,27 @@
 {
- "generated": "2026-09-30T12:31:10.897Z",
+ "generated": "2026-09-30T22:13:10.561Z",
  "itemCount": 81,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 796,
-   "kept": 290
+   "fetched": 797,
+   "kept": 297
   },
   {
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 105,
-   "kept": 22
+   "fetched": 109,
+   "kept": 29
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 100,
-   "kept": 21
+   "fetched": 107,
+   "kept": 28
   },
   {
    "id": "hn-mcp",
@@ -384,7 +384,7 @@
    "source": "Show HN · built with AI",
    "sourceId": "hn-show",
    "category": "market",
-   "badge": "23 pts",
+   "badge": "24 pts",
    "date": "2026-09-28T13:20:44Z",
    "nodes": [
     "s-guardrails"
@@ -418,7 +418,7 @@
    "source": "Show HN · built with AI",
    "sourceId": "hn-show",
    "category": "market",
-   "badge": "44 pts",
+   "badge": "45 pts",
    "date": "2026-09-22T16:15:06Z",
    "nodes": [
     "c-retrieval"
@@ -816,6 +816,86 @@
    "application": false
   },
   {
+   "id": "1v69mnm",
+   "title": "Fixed the Claude apps gateway's spend meter pricing 1-hour prompt cache writes at the cheaper 5-minute rate, and counting only the first model call's input tokens on streamed turns that run a server-side tool such as we…",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.286",
+   "date": null,
+   "nodes": [
+    "s-cost"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "x4kuzd",
+   "title": "Fixed headless sessions repeating the \"MCP servers require authentication\" reminder after a successful re-authentication when the MCP discovery cache is enabled",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.286",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "o4isne",
+   "title": "Fixed /usage not crediting an MCP server for a tool call made while that server was still connecting or had only just connected, such as right after a restart",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.286",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "t0kbse",
+   "title": "Improved responsiveness of SDK and -p sessions when a host re-sends an MCP server enable for a server that is already connected",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.286",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "7hcf6e",
+   "title": "Changed --bare to connect only the MCP servers named on the command line, send the model no system reminders, and start no background tasks; under --bare, a shell command that reaches its timeout now stops instead of mo…",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.286",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
    "id": "lplaov",
    "title": "Added <server>.<key>=<value> to claude plugin install --config, so a bundled .mcpb MCP server's own settings can be set at install time and it starts without visiting /plugin → Configure",
    "summary": "",
@@ -1089,94 +1169,63 @@
    "application": false
   },
   {
-   "id": "1u50ens",
-   "title": "Changed the non-interactive first turn to still wait up to 2s for connecting MCP servers named by --allowedTools or an mcp_tool hook, even when CLAUDE_CODE_MCP_STARTUP_WAIT_MS is 0",
+   "id": "14qu9u1",
+   "title": "**api:** add Plugins and Plugin Marketplaces to the Admin API ([1baad3b](https://github.com/anthropics/anthropic-sdk-python/commit/1baad3b04df8fc5f1cbcf59bd2eca5e51d88c1e0))",
    "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.284",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": true
-  },
-  {
-   "id": "1esh5k2",
-   "title": "Fixed stdio MCP servers being left running when the session ended while they were still starting",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.283",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1cto390",
-   "title": "Fixed a brief HTTP 404 from a stateless remote MCP server (for example a proxy mid-redeploy) leaving that server unusable for the rest of the session while still shown as connected",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.283",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1by8ydl",
-   "title": "Fixed claude plugin details showing 0 MCP servers for plugins that declare their servers in plugin.json",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.283",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1hmzvmj",
-   "title": "Fixed claude plugin marketplace remove not saying which installed plugins it uninstalled with the marketplace; it now lists them",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.283",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "1.10.0",
    "date": null,
    "nodes": [
     "k-plugins"
    ],
-   "relevance": 18,
+   "relevance": 12,
    "application": false
   },
   {
-   "id": "1yjg7he",
-   "title": "**api:** add typed event type values to the Managed Agents events list filter ([1b82cd9](https://github.com/anthropics/anthropic-sdk-python/commit/1b82cd91ddd0874fb59a020fabc76618cb036ced))",
+   "id": "1hpfded",
+   "title": "**api:** add Plugins and Plugin Marketplaces to the Admin API ([40c2160](https://github.com/anthropics/anthropic-sdk-typescript/commit/40c2160271c63605f161c0d0dd8a8aff0fcf81de))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "0.130.0",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "3hac4g",
+   "title": "**api:** add a refusal stop reason and stop_details to Managed Agents session idle events ([cba653f](https://github.com/anthropics/anthropic-sdk-python/commit/cba653fc52ed4a9b57108a0b1ae80d1f51fb46dd))",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
    "source": "Anthropic Python SDK",
    "sourceId": "python-sdk-changelog",
    "category": "model",
-   "badge": "1.9.0",
+   "badge": "1.10.0",
+   "date": null,
+   "nodes": [
+    "a-managed",
+    "s-guardrails"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1au9ipo",
+   "title": "**api:** add repository error types to Managed Agents session errors ([c682f7e](https://github.com/anthropics/anthropic-sdk-python/commit/c682f7e359e3367581a41829fdb51250dd51b0c3))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "1.10.0",
    "date": null,
    "nodes": [
     "a-managed"
@@ -1185,78 +1234,14 @@
    "application": false
   },
   {
-   "id": "1d0rwvq",
-   "title": "**client:** stop sending beta header from parse and tool runner ([#907](https://github.com/anthropics/anthropic-sdk-python/issues/907)) ([1428100](https://github.com/anthropics/anthropic-sdk-python/commit/142810093d6858…",
+   "id": "17hcvfv",
+   "title": "**api:** MCP tunnels beta: add read-only transport object to Tunnel and return the one-time relay token in the create response ([88718ff](https://github.com/anthropics/anthropic-sdk-python/commit/88718ff4bdfab22f256b12e…",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
    "source": "Anthropic Python SDK",
    "sourceId": "python-sdk-changelog",
    "category": "model",
-   "badge": "1.9.0",
-   "date": null,
-   "nodes": [
-    "a-runner"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "xk0pti",
-   "title": "**docs:** make Managed Agents actor descriptions resource-neutral ([34ef524](https://github.com/anthropics/anthropic-sdk-python/commit/34ef5243ca062d7878f4c673503c57c84dfdbaa2))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "1.9.0",
-   "date": null,
-   "nodes": [
-    "a-managed"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1eh5we0",
-   "title": "add field docstring spacing rule to CLAUDE.md ([e5c35f4](https://github.com/anthropics/anthropic-sdk-python/commit/e5c35f4a70c38289286e16fe3d5e4ef0d3a3731a))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "1.9.0",
-   "date": null,
-   "nodes": [
-    "k-claudemd"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "2fo38u",
-   "title": "**claude.md:** add function body spacing rule ([3174f8f](https://github.com/anthropics/anthropic-sdk-python/commit/3174f8f4215edefa2dfe5d895ae003c292c5dd2a))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "1.9.0",
-   "date": null,
-   "nodes": [
-    "k-claudemd"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "dugupe",
-   "title": "**api:** add support for claude-opus-5-5, inline tool definitions and MCP tool-list pinning (beta) ([b5cc700](https://github.com/anthropics/anthropic-sdk-python/commit/b5cc70071a60def1d2e93f3634d1a595919007c8))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "1.8.0",
+   "badge": "1.10.0",
    "date": null,
    "nodes": [
     "a-mcp"
@@ -1265,94 +1250,46 @@
    "application": false
   },
   {
-   "id": "10nk3l4",
-   "title": "**api:** share one evaluated_permission enum across Managed Agents events ([f4f51c8](https://github.com/anthropics/anthropic-sdk-python/commit/f4f51c8d4c8d6d8ec8ed21775034ca3b3736d733))",
+   "id": "82q6vz",
+   "title": "**api:** type admin plugin preference and marketplace fields as enums ([b4dfd99](https://github.com/anthropics/anthropic-sdk-python/commit/b4dfd998969d8a23ab7128caa152989aa867c7d2))",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
    "source": "Anthropic Python SDK",
    "sourceId": "python-sdk-changelog",
    "category": "model",
-   "badge": "1.8.0",
+   "badge": "1.10.0",
    "date": null,
    "nodes": [
-    "a-managed"
+    "k-plugins"
    ],
    "relevance": 6,
    "application": false
   },
   {
-   "id": "16jne29",
-   "title": "**api:** add typed event type values to the Managed Agents events list filter ([8ac4a26](https://github.com/anthropics/anthropic-sdk-typescript/commit/8ac4a26809418453b64fee79f8ec790d32d1f92c))",
+   "id": "1x57iw3",
+   "title": "**tools:** stop the session tool runner after any idle that ends the turn ([#969](https://github.com/anthropics/anthropic-sdk-python/issues/969)) ([9c60a53](https://github.com/anthropics/anthropic-sdk-python/commit/9c60…",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
    "category": "model",
-   "badge": "0.129.0",
+   "badge": "1.10.0",
    "date": null,
    "nodes": [
-    "a-managed"
+    "a-runner"
    ],
    "relevance": 6,
    "application": false
   },
   {
-   "id": "1nyo7yi",
-   "title": "**docs:** make Managed Agents actor descriptions resource-neutral ([15733f9](https://github.com/anthropics/anthropic-sdk-typescript/commit/15733f98deaae4aee2fba26c1bfe4ee1514c7080))",
+   "id": "1fwmv86",
+   "title": "**api:** update MCP Tunnels types and descriptions ([aa49ba7](https://github.com/anthropics/anthropic-sdk-python/commit/aa49ba7fbb56425feebb7c3d0dcc75fd1f109ed4))",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
    "category": "model",
-   "badge": "0.129.0",
-   "date": null,
-   "nodes": [
-    "a-managed"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "sj7p8c",
-   "title": "**tools:** remove client-side compaction control ([#802](https://github.com/anthropics/anthropic-sdk-typescript/issues/802)) ([9c3e8a5](https://github.com/anthropics/anthropic-sdk-typescript/commit/9c3e8a5ffa38c35dec32f…",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "0.129.0",
-   "date": null,
-   "nodes": [
-    "c-editing"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1fqbm0u",
-   "title": "expand CLAUDE.md into a full contributor guide ([98d2ddb](https://github.com/anthropics/anthropic-sdk-typescript/commit/98d2ddbce7c1eabbabe5a130d18d307c237fb75c))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "0.129.0",
-   "date": null,
-   "nodes": [
-    "k-claudemd"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "116g84u",
-   "title": "**api:** add support for claude-opus-5-5, inline tool definitions and MCP tool-list pinning (beta) ([eff2748](https://github.com/anthropics/anthropic-sdk-typescript/commit/eff27483d20beffef332312ef764a92c80ec5681))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "0.128.0",
+   "badge": "1.10.0",
    "date": null,
    "nodes": [
     "a-mcp"
@@ -1361,14 +1298,31 @@
    "application": false
   },
   {
-   "id": "pwv0ia",
-   "title": "**api:** share one evaluated_permission enum across Managed Agents events ([0c1cc0f](https://github.com/anthropics/anthropic-sdk-typescript/commit/0c1cc0fdf89efed709728e7f4fc8ac9ce3149cdb))",
+   "id": "1v82se7",
+   "title": "**api:** add a refusal stop reason and stop_details to Managed Agents session idle events ([5cd6910](https://github.com/anthropics/anthropic-sdk-typescript/commit/5cd6910a0e74923f1bef35f5368f9c2cee410058))",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
    "source": "Anthropic TypeScript SDK",
    "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "0.128.0",
+   "badge": "0.130.0",
+   "date": null,
+   "nodes": [
+    "a-managed",
+    "s-guardrails"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "5cjbao",
+   "title": "**api:** add repository error types to Managed Agents session errors ([6735615](https://github.com/anthropics/anthropic-sdk-typescript/commit/673561514091a1339b3350f1beb2ae2ec2528528))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "0.130.0",
    "date": null,
    "nodes": [
     "a-managed"
@@ -1377,18 +1331,65 @@
    "application": false
   },
   {
-   "id": "10rjcso",
-   "title": "**tools:** leave reply-only params off the tool runner's compaction request ([#769](https://github.com/anthropics/anthropic-sdk-typescript/issues/769)) ([8afc336](https://github.com/anthropics/anthropic-sdk-typescript/c…",
+   "id": "12tiait",
+   "title": "**api:** MCP tunnels beta: add read-only transport object to Tunnel and return the one-time relay token in the create response ([b0e57ce](https://github.com/anthropics/anthropic-sdk-typescript/commit/b0e57ce51410dccafee…",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
    "source": "Anthropic TypeScript SDK",
    "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "0.128.0",
+   "badge": "0.130.0",
    "date": null,
    "nodes": [
-    "c-editing",
+    "a-mcp"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1te5wlg",
+   "title": "**api:** type admin plugin preference and marketplace fields as enums ([942ae01](https://github.com/anthropics/anthropic-sdk-typescript/commit/942ae01dc1b9fa0c6cad49ed564c4824e36d3e81))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "0.130.0",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "nilamj",
+   "title": "**tools:** stop the session tool runner after any idle that ends the turn ([#878](https://github.com/anthropics/anthropic-sdk-typescript/issues/878)) ([cab32f8](https://github.com/anthropics/anthropic-sdk-typescript/com…",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "0.130.0",
+   "date": null,
+   "nodes": [
     "a-runner"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "m0mnu",
+   "title": "**api:** update MCP Tunnels types and descriptions ([394d60c](https://github.com/anthropics/anthropic-sdk-typescript/commit/394d60cf15873544c3b34a609f8a194d0f566182))",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "0.130.0",
+   "date": null,
+   "nodes": [
+    "a-mcp"
    ],
    "relevance": 6,
    "application": false
@@ -1434,7 +1435,9 @@
   ],
   "s-guardrails": [
    "16p9w5o",
-   "1vyzb0t"
+   "1vyzb0t",
+   "3hac4g",
+   "1v82se7"
   ],
   "a-tools": [
    "1co1qm2"
@@ -1460,6 +1463,10 @@
    "1kaaa3l",
    "1tom56z",
    "lqawh1",
+   "x4kuzd",
+   "o4isne",
+   "t0kbse",
+   "7hcf6e",
    "lplaov",
    "19w3zkb",
    "1fir68e",
@@ -1469,41 +1476,40 @@
    "flm7um",
    "b6f0bc",
    "176s12p",
-   "1u50ens",
-   "1esh5k2",
-   "1cto390",
-   "1by8ydl",
-   "dugupe",
-   "116g84u"
+   "17hcvfv",
+   "1fwmv86",
+   "12tiait",
+   "m0mnu"
   ],
   "c-memory": [
    "1furdo9"
   ],
   "a-managed": [
    "1c6q1us",
-   "1yjg7he",
-   "xk0pti",
-   "10nk3l4",
-   "16jne29",
-   "1nyo7yi",
-   "pwv0ia"
+   "3hac4g",
+   "1au9ipo",
+   "1v82se7",
+   "5cjbao"
   ],
   "k-claudemd": [
-   "f9yd9e",
-   "1eh5we0",
-   "2fo38u",
-   "1fqbm0u"
+   "f9yd9e"
   ],
   "s-deploy": [
    "11iyaow",
    "5adai7",
    "1pkn77w"
   ],
+  "s-cost": [
+   "1v69mnm"
+  ],
   "k-plugins": [
    "1u3bax3",
    "hbr0a0",
    "94sq1m",
-   "1hmzvmj"
+   "14qu9u1",
+   "1hpfded",
+   "82q6vz",
+   "1te5wlg"
   ],
   "a-subagents": [
    "1jktapg"
@@ -1512,12 +1518,8 @@
    "2r55sd"
   ],
   "a-runner": [
-   "1d0rwvq",
-   "10rjcso"
-  ],
-  "c-editing": [
-   "sj7p8c",
-   "10rjcso"
+   "1x57iw3",
+   "nilamj"
   ]
  },
  "applications": [
@@ -1680,14 +1682,6 @@
    "discipline": "code",
    "title": "Show HN: Make your terminal pulse orange when Claude Code needs input",
    "url": "https://github.com/rickardstureborg/claude-needs-input"
-  },
-  {
-   "id": "1u50ens",
-   "node": "a-mcp",
-   "nodeTitle": "MCP",
-   "discipline": "agents",
-   "title": "Changed the non-interactive first turn to still wait up to 2s for connecting MCP servers named by --allowedTools or an mcp_tool hook, even when CLAUDE_CODE_MCP_STARTUP_WAIT_MS is 0",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   }
  ]
 }
