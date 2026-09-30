@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T22:12:58.871Z",
+ "generated": "2026-09-30T05:29:43.981Z",
  "itemCount": 81,
  "sourceStatus": [
   {
@@ -56,7 +56,7 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 13
+   "kept": 10
   },
   {
    "id": "arxiv-eval",
@@ -67,6 +67,102 @@
   }
  ],
  "items": [
+  {
+   "id": "b4tfxk",
+   "title": "Breakdown of Local Denoising as Semantic Speciation",
+   "summary": "The dynamics of generative models exhibit two apparently distinct temporal windows: a speciation window, in which a sample commits to a semantic class, and a nonlocality window, in which local context windows become insufficient for generation. Motivated by evidence of their near-concurrence in a variety of frontier m…",
+   "url": "http://arxiv.org/abs/2609.38176v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-29T17:59:50Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1q9morh",
+   "title": "Retrieval-Augmented Skill Optimization via Cross-Harness Adaptation",
+   "summary": "An agent skill is a reusable, actionable natural-language artifact that guides an agent to perform a task effectively under a given harness. Recent studies have explored the optimization of agent skills, contributing to a growing collection of publicly available skills spanning diverse tasks, domains, and harnesses. D…",
+   "url": "http://arxiv.org/abs/2609.38024v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-29T17:06:43Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "c3z7d8",
+   "title": "Towards Semi-Automatically Comparing Keyword-Based and Semantic Search Accuracy",
+   "summary": "The increasing importance of Information Retrieval (IR) in managing large datasets has highlighted significant limitations in traditional keyword-based search systems. Context-aware chat-based search methods, such as Retrieval Augmented Generation (RAG), have recently emerged, but their evaluation compared to keyword-…",
+   "url": "http://arxiv.org/abs/2609.37749v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-29T15:00:22Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1gej5we",
+   "title": "ContextRender: From Execution Dependencies to Agent Context",
+   "summary": "LLM agents performing long-horizon tasks accumulate tool results that later steps may need. Passing the full history to every invocation is costly even when it fits within the context window, while reducing it risks omitting needed information. Existing context management methods can overlook how earlier tool results…",
+   "url": "http://arxiv.org/abs/2609.37743v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-29T14:57:00Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1abjclm",
+   "title": "Retrieve, Reproduce, Reveal: Dissecting Retrieval-Augmented Software Vulnerability Detection",
+   "summary": "Retrieval-Augmented Generation (RAG) is increasingly used to enhance Large Language Model (LLM)-based software vulnerability detection by grounding predictions in retrieved vulnerability knowledge, such as vulnerability reports. However, existing RAG-based software vulnerability detection (RAG4SVD) systems are often e…",
+   "url": "http://arxiv.org/abs/2609.37669v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-29T14:24:46Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1dqchcc",
+   "title": "SkillGym: Training Skill-Use Agents with Automatic Verifiable Environment Generation",
+   "summary": "Skills equip LLM agents with professional knowledge and guidance to complete long-horizon and complex tasks. Although skills have been widely adopted in recent agent paradigms and harnesses, how to synthesize reliable training data and how to train agents for skill use remain underexplored. In this work, we propose Sk…",
+   "url": "http://arxiv.org/abs/2609.37539v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-29T13:21:38Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "hzvm6i",
    "title": "Show HN: Gangway, self-hosted artifacts and apps from folders, PRs, and agents",
@@ -83,6 +179,135 @@
    ],
    "relevance": 5,
    "application": true
+  },
+  {
+   "id": "1v7jvnz",
+   "title": "LazySloth: Bounded LLM-based Lazy Tree Search for Fast Long Video Comprehension",
+   "summary": "Modern vision-language models (VLMs) have shown promising results in long-video understanding due to the rich semantic information they can capture. However, most methods focus on coarse captioning of extracted image frames that are computationally inefficient and require models with large context windows. While past…",
+   "url": "http://arxiv.org/abs/2609.37426v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-29T12:53:57Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "qxnac5",
+   "title": "TAEC: Trajectory-Aware Evidence Coordination for Multi-Step Visual RAG",
+   "summary": "Multi-step visual retrieval-augmented generation (RAG) answers complex questions by repeatedly retrieving visual evidence, updating an intermediate state, and deciding whether to continue searching or answer. Yet retrieving relevant evidence does not ensure its effective use throughout the reasoning trajectory. As mul…",
+   "url": "http://arxiv.org/abs/2609.37349v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-29T12:15:51Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1bn3sip",
+   "title": "What Comes Next? Omni-StoryBench for Evaluating Story-Grounded Omnimodal Generation",
+   "summary": "Omnimodal evaluation should go beyond independent text, image, and speech production: individually plausible outputs may not express a coherent shared event. We introduce Omni-StoryBench, a story-grounded omnimodal benchmark evaluating whether models can coherently continue stories across image, narration, and speech.…",
+   "url": "http://arxiv.org/abs/2609.37317v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-29T11:53:15Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "16p9w5o",
+   "title": "ToolFence: Fine-Grained Authorization for Secure Tool-Using LLM Agents",
+   "summary": "Tool-using LLM agents remain vulnerable to indirect prompt injection because trusted instructions and untrusted observations share one context, allowing malicious content to steer consequential input-filtering defenses. Multi-path consensus defenses still leave a high attack success rate because they examine content o…",
+   "url": "http://arxiv.org/abs/2609.37196v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-29T10:16:01Z",
+   "nodes": [
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ay9s71",
+   "title": "Bridging Semantic Gaps in RAG through Generated Context Knowledge Fusion",
+   "summary": "Retrieval-Augmented Generation has established itself as a fundamental framework in natural language processing, seamlessly integrating information retrieval with the generative capabilities of large language models. However, this process is fundamentally constrained by a critical challenge: semantic space mismatch be…",
+   "url": "http://arxiv.org/abs/2609.37171v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-29T09:57:57Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1co1qm2",
+   "title": "When Should Agents Check External State? Budgeting Observations for Stored Intentions",
+   "summary": "Prospective memory allows an agent to retain an intention tied to a future condition, but the stored intention does not reveal whether that condition currently holds. Checking it may require web access, multi-step tool use, and paid calls. Existing systems decide when intentions require attention, but do not allocate…",
+   "url": "http://arxiv.org/abs/2609.37125v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-29T09:32:43Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "16bta4d",
+   "title": "FinRegQA-EU: Corruption-Based Preference Data for Grounded EU Financial Regulatory Question Answering",
+   "summary": "Large Language Models (LLMs) struggle with region-specific factual knowledge, particularly in financial regulation. While benchmarks such as CFinBench, provide broad coverage of financial knowledge in other regions, no comparable resource exists for European financial regulation. We close this gap by proposing an end-…",
+   "url": "http://arxiv.org/abs/2609.36856v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-29T07:02:08Z",
+   "nodes": [
+    "c-retrieval",
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "uuxnw4",
+   "title": "Does the Unsafe Gradient Survive a Conversation? On the Fragility of Gradient-Based Jailbreak Detection in Multi-Turn Dialogue",
+   "summary": "Safety-aligned language models are commonly deployed as multi-turn assistants, which lets adversaries spread unsafe intent across several user turns instead of a single prompt. Gradient-based jailbreak detectors such as GradSafe were developed for single prompts: they score an input by the alignment between its induce…",
+   "url": "http://arxiv.org/abs/2609.36849v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-29T06:59:37Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
   },
   {
    "id": "bkmagq",
@@ -102,97 +327,34 @@
    "application": true
   },
   {
-   "id": "185nbfx",
-   "title": "Harness Learning Enables Generalizable Test-Time Adaptation",
-   "summary": "A language-model agent is jointly defined by its model and its harness, the executable program that organizes model calls, tool use, and information flow. Because different tasks call for different ways of organizing these operations, the harness needs to be adapted using feedback from the task at hand. We introduce h…",
-   "url": "http://arxiv.org/abs/2609.35738v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
+   "id": "1up3gx5",
+   "title": "Eternal Sunshine of the Spotless Mind: Systematically Erasing LLM's Memories",
+   "summary": "We consider persistent LLMs that accumulate memories of their interactions with a user over time. Such LLMs maintain memories using external storage, which they can query to overcome the limitations of a fixed context window. Such systems have numerous practical applications, as they can draw on all past interactions…",
+   "url": "http://arxiv.org/abs/2609.36414v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-28T17:52:54Z",
+   "date": "2026-09-29T00:11:56Z",
    "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "x1a68s",
-   "title": "Failure-Transparent Agents: Benchmarking Post-Failure Reporting in Tool-Using Language Models",
-   "summary": "Tool-using agents can fail twice: a required tool can fail, and the agent can then report success without the evidence needed to justify it. Existing benchmarks often entangle this reporting failure with tool selection, recovery, and environment dynamics. We introduce Failure-Transparent Agents (FTA), a controlled ben…",
-   "url": "http://arxiv.org/abs/2609.35732v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-28T17:51:41Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1l5eu2g",
-   "title": "SEABench: Benchmarking Endogenous Misalignment In Self-Evolving Agents",
-   "summary": "Self-evolving LLM agents have gained prominence for their ability to improve after deployment by modifying their harness, including their controller instructions, memory management protocols, and reusable tools and skills, in response to user and environment feedback. However, locally useful updates may persist into l…",
-   "url": "http://arxiv.org/abs/2609.35596v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-28T16:46:25Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1s26um1",
-   "title": "Continuous Context Management",
-   "summary": "Long-horizon large language model (LLM) agents commonly retain their complete interaction history until compaction is triggered at a predefined threshold. We study Continuous Context Management (CCM), which performs compaction at every turn to prevent interaction history from accumulating in the active prompt. At each…",
-   "url": "http://arxiv.org/abs/2609.35540v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-28T16:20:08Z",
-   "nodes": [
-    "c-editing"
-   ],
-   "relevance": 5,
-   "application": false
-  },
-  {
-   "id": "7l32oh",
-   "title": "From Pixel to Poses: Object-centric Tool Manipulation Learning from Human Demonstrations",
-   "summary": "Scaling up robotic manipulation is primarily bottlenecked by the scarcity of real-world robot data. While recent approaches leverage human video demonstrations to mitigate this shortage, they remain computationally expensive and still rely on paired human-robot data for domain alignment. Although current state-of-the-…",
-   "url": "http://arxiv.org/abs/2609.35375v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-28T15:12:53Z",
-   "nodes": [
+    "c-longctx",
     "c-retrieval"
    ],
    "relevance": 3,
    "application": false
   },
   {
-   "id": "18flrpn",
-   "title": "TMCS: Tool-Grounded Multi-Agent Reasoning for Compositional Chemical Problem Solving",
-   "summary": "Despite the promise of Large Language Models (LLMs) in computational chemistry, rigorous combinatorial chemistry problems remain difficult because they require quantitatively constrained molecular modification, candidate validation, and systematic revision after failed attempts. Existing tool-augmented chemical agents…",
-   "url": "http://arxiv.org/abs/2609.35336v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
+   "id": "1fhpbyq",
+   "title": "Assay: Claims That Decay With the Code. Content-Addressed Evidence Graphs for Accountable AI-Assisted Software Delivery",
+   "summary": "AI coding agents fail in two coupled ways. They spend most of their context window rediscovering where things live, and they assert success without evidence when the work gets hard. Repository indexes address the first with cheap context, and orchestration frameworks with adversarial review address the second with acc…",
+   "url": "http://arxiv.org/abs/2609.36170v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-09-28T14:56:41Z",
+   "date": "2026-09-28T19:40:35Z",
    "nodes": [
-    "a-teams"
+    "c-longctx"
    ],
    "relevance": 3,
    "application": false
@@ -209,70 +371,6 @@
    "date": "2026-09-28T14:54:05Z",
    "nodes": [
     "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "uy1j22",
-   "title": "Reliability Engineering for AI Systems: Challenges, Methods, and Directions",
-   "summary": "AI reliability concerns whether an AI system performs its intended function dependably over a stated period and under stated operating conditions, with stated evidence. As these systems become more autonomous, that function includes more than a correct output. Retrieval, memory, tool use, permissions, human oversight,…",
-   "url": "http://arxiv.org/abs/2609.35316v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-28T14:48:59Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "10cve6",
-   "title": "EP-Mem: Elastic Privacy Memory for Social Relationship-Aware LLM Agents",
-   "summary": "Large language model (LLM) agents face critical privacy risks when acting as delegates in human-agent-human communication. To prevent such breaches, agents must understand users' social relationships and adhere to context-dependent social information disclosure boundaries. Current studies on agent memory privacy focus…",
-   "url": "http://arxiv.org/abs/2609.35233v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-28T14:10:37Z",
-   "nodes": [
-    "c-memory"
-   ],
-   "relevance": 4,
-   "application": false
-  },
-  {
-   "id": "yonoka",
-   "title": "LENS: The Sum Is Worse Than the Parts for Set-Level Poisoning in Retrieval-Augmented Generation",
-   "summary": "Retrieval-augmented generation (RAG) aggregates evidence from multiple external documents, yet this joint integration creates an underexamined vulnerability: attack effects absent in individual documents can emerge through set-level composition. Existing coordinated attacks do not explicitly enforce that every proper…",
-   "url": "http://arxiv.org/abs/2609.35155v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-28T13:33:32Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "tq1qun",
-   "title": "CacheRepair: Learning to Repair Cross-Chunk Context in RAG for KV Cache Fusion",
-   "summary": "Multi-document retrieval-augmented generation (RAG) requires a language model to process multiple retrieved text chunks before answering a question. Precomputing each chunk's KV cache independently and concatenating the caches when the chunks are retrieved can accelerate this step. However, the assembled cache lacks c…",
-   "url": "http://arxiv.org/abs/2609.35139v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-28T13:26:55Z",
-   "nodes": [
-    "c-retrieval"
    ],
    "relevance": 3,
    "application": false
@@ -306,102 +404,6 @@
    "date": "2026-09-28T10:03:59Z",
    "nodes": [
     "c-retrieval",
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1xreg6f",
-   "title": "AgentWare: Automating the Lifecycle of Agentic Applications across the Edge-to-Cloud Continuum",
-   "summary": "Deploying LLM-enabled agentic applications across the Edge-to-Cloud continuum remains challenging due to hardware heterogeneity, deployment complexity, limited observability, and the lack of systematic evaluation methods. Existing solutions address agent development, observability, or benchmarking separately, offering…",
-   "url": "http://arxiv.org/abs/2609.34586v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-28T08:25:48Z",
-   "nodes": [
-    "s-observability"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "ragkyg",
-   "title": "SkillPE: Creativity-Oriented Cinematic Skill Evolution for Text-to-Video Prompt Engineering",
-   "summary": "Achieving high-quality, cinematic results in text-to-video generation remains challenging for non-experts, whose prompts often lack professional narrative and creative design. We propose SkillPE, a prompt engineering (PE) framework that evolves reusable cinematic skills from expert-authored seeds. SkillPE represents s…",
-   "url": "http://arxiv.org/abs/2609.34335v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-28T05:11:39Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "ign5mg",
-   "title": "Population Physics, Population Problems: Safety and Emergence in LLM Societies",
-   "summary": "The collective behaviour of large language model (LLM) societies is not the sum of their individual outputs. It yields statistically distinct, sometimes-unpredictable phenomena, for which the tools we use to study single agents may not scale. Due to recent incidents involving autonomous agentic systems, however, under…",
-   "url": "http://arxiv.org/abs/2609.33871v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-27T19:48:06Z",
-   "nodes": [
-    "a-scheduled"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "3sm78t",
-   "title": "DISCO: Distributed Long Context Scaling with Grounding-Reasoning Disaggregation",
-   "summary": "While Large Language Models (LLMs) advertise million-token context windows, reasoning quality often collapses as inputs grow -- a phenomenon termed context rot. This failure stems from a structural entanglement in monolithic architectures, where the massive search burden of contextual grounding exhausts the representa…",
-   "url": "http://arxiv.org/abs/2609.33485v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-27T11:52:58Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 5,
-   "application": false
-  },
-  {
-   "id": "1szfim2",
-   "title": "Contract Memory Compiler: Resolve, Then Traverse",
-   "summary": "External memory lets language-model agents answer questions about histories too long for the answer model's context window. Updates create a harder problem than retrieving a recent fact: changing one relation can redirect a multi-hop question to records about an entity absent from the question. We study this update-de…",
-   "url": "http://arxiv.org/abs/2609.32658v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-26T14:17:22Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "izz394",
-   "title": "LLMAdBench: A Human Preference Benchmark for Advertising in LLM Responses",
-   "summary": "Inserting advertisements (ads) into consumer-facing LLM output is emerging as a new business model, but there is little shared evidence on how such ad insertion should be evaluated or how it affects user preferences. We introduce LLMAdBench, a human-preference benchmark for studying advertising in LLM-generated conten…",
-   "url": "http://arxiv.org/abs/2609.32533v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-26T12:14:49Z",
-   "nodes": [
     "s-models"
    ],
    "relevance": 3,
@@ -1393,60 +1395,49 @@
   }
  ],
  "byNode": {
-  "f-artifacts": [
-   "hzvm6i"
+  "c-longctx": [
+   "b4tfxk",
+   "1gej5we",
+   "1v7jvnz",
+   "1up3gx5",
+   "1fhpbyq",
+   "4ls79i",
+   "1mayufo"
   ],
   "k-skills": [
+   "1q9morh",
+   "1dqchcc",
    "bkmagq",
-   "1l5eu2g",
-   "ragkyg",
    "1g5lpqi",
    "13xt578",
    "qqjnqh"
   ],
-  "a-tools": [
-   "185nbfx",
-   "uy1j22"
-  ],
-  "s-models": [
-   "x1a68s",
-   "1k59z61",
-   "izz394",
-   "1mayufo"
-  ],
-  "c-editing": [
-   "1s26um1",
-   "sj7p8c",
-   "10rjcso"
-  ],
   "c-retrieval": [
-   "7l32oh",
-   "yonoka",
-   "tq1qun",
+   "c3z7d8",
+   "1abjclm",
+   "qxnac5",
+   "ay9s71",
+   "16bta4d",
+   "uuxnw4",
+   "1up3gx5",
    "1k59z61",
    "1a89hn0"
   ],
-  "a-teams": [
-   "18flrpn"
+  "f-artifacts": [
+   "hzvm6i"
   ],
-  "c-longctx": [
-   "4ls79i",
-   "3sm78t",
-   "1szfim2",
+  "s-models": [
+   "1bn3sip",
+   "16bta4d",
+   "1k59z61",
    "1mayufo"
   ],
-  "c-memory": [
-   "10cve6",
-   "1furdo9"
-  ],
   "s-guardrails": [
+   "16p9w5o",
    "1vyzb0t"
   ],
-  "s-observability": [
-   "1xreg6f"
-  ],
-  "a-scheduled": [
-   "ign5mg"
+  "a-tools": [
+   "1co1qm2"
   ],
   "k-cli": [
    "hzhlbu",
@@ -1485,6 +1476,9 @@
    "dugupe",
    "116g84u"
   ],
+  "c-memory": [
+   "1furdo9"
+  ],
   "a-managed": [
    "1c6q1us",
    "1yjg7he",
@@ -1520,6 +1514,10 @@
   "a-runner": [
    "1d0rwvq",
    "10rjcso"
+  ],
+  "c-editing": [
+   "sj7p8c",
+   "10rjcso"
   ]
  },
  "applications": [
@@ -1546,14 +1544,6 @@
    "discipline": "scale",
    "title": "Show HN: OpenAPPA – open-source deterministic guardrails that don't break agents",
    "url": "https://www.openappa.com/"
-  },
-  {
-   "id": "1xreg6f",
-   "node": "s-observability",
-   "nodeTitle": "Observability & Admin",
-   "discipline": "scale",
-   "title": "AgentWare: Automating the Lifecycle of Agentic Applications across the Edge-to-Cloud Continuum",
-   "url": "http://arxiv.org/abs/2609.34586v1"
   },
   {
    "id": "1a89hn0",
