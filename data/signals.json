@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-02T12:30:26.376Z",
+ "generated": "2026-10-02T22:11:36.301Z",
  "itemCount": 81,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 901,
-   "kept": 344
+   "fetched": 876,
+   "kept": 333
   },
   {
    "id": "python-sdk-changelog",
@@ -800,6 +800,38 @@
    "application": false
   },
   {
+   "id": "1kthjel",
+   "title": "Changed the client-side auto mode classifier to ignore an ANTHROPIC_DEFAULT_SONNET_MODEL pin that names Claude Sonnet 5.5 or Opus 5.5 and use Claude Sonnet 5 instead",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.288",
+   "date": null,
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 21,
+   "application": false
+  },
+  {
+   "id": "xt6y0j",
+   "title": "[VSCode] Fixed a claude.ai connector staying on \"Needs authentication\" after you authorize it: the MCP servers dialog now offers Check connection",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.288",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 21,
+   "application": false
+  },
+  {
    "id": "1b9pv7a",
    "title": "Fixed switching between Opus 5.5 and Sonnet 5.5 (/model, opusplan) rewriting earlier MCP tool announcements, which could drop earlier extended thinking",
    "summary": "",
@@ -847,6 +879,87 @@
     "a-mcp"
    ],
    "relevance": 21,
+   "application": false
+  },
+  {
+   "id": "13gaf2q",
+   "title": "Added a re-authenticate prompt when an MCP server asks for more OAuth scope during a tool call",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.288",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1kx339a",
+   "title": "Fixed subagents in Claude Desktop's Code tab getting none of the tools of a user-configured MCP server named memory",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.288",
+   "date": null,
+   "nodes": [
+    "a-mcp",
+    "a-subagents"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1864pgt",
+   "title": "Fixed owner/repo plugin marketplaces showing only the second attempt's error when both the SSH and HTTPS fetch fail; both errors are now shown, with the transport tried first on top",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.288",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1157ob5",
+   "title": "Fixed PreToolUse and PermissionRequest hooks being skipped when matching them failed or the tool's input could not be serialized to JSON; the call is now blocked",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.288",
+   "date": null,
+   "nodes": [
+    "k-hooks"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "7pwxf5",
+   "title": "Improved cloud sessions: a new conversation's first turn no longer waits for a stdio MCP server whose config sets alwaysLoad: false",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.288",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
    "application": false
   },
   {
@@ -1045,119 +1158,6 @@
   {
    "id": "19w3zkb",
    "title": "Fixed switching off an MCP server added mid-session in SDK and -p sessions leaving its tools available",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.285",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1fir68e",
-   "title": "Fixed claude mcp list and claude mcp get, and the not-found error of claude mcp remove, login and logout, printing line breaks and terminal escape sequences from MCP server names and values",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.285",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "112lc3r",
-   "title": "Fixed plugins silently skipping a bundled .mcpb MCP server that still needs configuration: /plugin, the install message and claude plugin install now say so and point to Configure",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.285",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "4vq0n0",
-   "title": "Fixed claude mcp list leaving out WebSocket (ws) MCP servers; each is now listed with its URL and health status",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.285",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1pkn77w",
-   "title": "Improved Bedrock and Vertex AI sessions to switch to an older available model of the same tier, instead of failing, when an admin removes access to the default model; session titles and summaries now fall back with it",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.285",
-   "date": null,
-   "nodes": [
-    "s-deploy"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1u3bax3",
-   "title": "Improved plugin marketplace errors to name why a git address is refused instead of citing enterprise policy",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.285",
-   "date": null,
-   "nodes": [
-    "k-plugins"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1mayufo",
-   "title": "Changed sessions behind a custom ANTHROPIC_BASE_URL to use the 1M context window of models that have one (Opus 4.7+, Sonnet 5+, Fable); run /autocompact 200k if your gateway stops at 200K",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.285",
-   "date": null,
-   "nodes": [
-    "c-longctx",
-    "s-models"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "lzhlzb",
-   "title": "Changed the MCP server name widgets to be reserved in cloud sessions and on self-hosted runners: your own server under it, or a close spelling such as widgets_, no longer loads, so rename it",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
@@ -1420,13 +1420,12 @@
    "12bicrg",
    "1b1n23k",
    "1d87a6r",
-   "81dij",
-   "1mayufo"
+   "81dij"
   ],
   "s-models": [
    "q1my0s",
-   "1b9pv7a",
-   "1mayufo"
+   "1kthjel",
+   "1b9pv7a"
   ],
   "c-retrieval": [
    "1bp2t41",
@@ -1469,9 +1468,13 @@
    "5envg7",
    "1f7bdas",
    "1kaaa3l",
+   "xt6y0j",
    "1b9pv7a",
    "1tom56z",
    "lqawh1",
+   "13gaf2q",
+   "1kx339a",
+   "7pwxf5",
    "4x6v59",
    "2s1j67",
    "x4kuzd",
@@ -1480,10 +1483,6 @@
    "7hcf6e",
    "lplaov",
    "19w3zkb",
-   "1fir68e",
-   "112lc3r",
-   "4vq0n0",
-   "lzhlzb",
    "17hcvfv",
    "1fwmv86",
    "12tiait",
@@ -1505,20 +1504,25 @@
   "s-deploy": [
    "11iyaow",
    "81dij",
-   "5adai7",
-   "1pkn77w"
+   "5adai7"
   ],
   "r-thinking": [
    "1b9pv7a"
   ],
+  "a-subagents": [
+   "1kx339a"
+  ],
   "k-plugins": [
+   "1864pgt",
    "nvbco0",
    "3uqi5v",
-   "1u3bax3",
    "14qu9u1",
    "1hpfded",
    "82q6vz",
    "1te5wlg"
+  ],
+  "k-hooks": [
+   "1157ob5"
   ],
   "s-cost": [
    "1v69mnm"
