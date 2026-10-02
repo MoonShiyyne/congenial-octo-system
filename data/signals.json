@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-02T05:36:15.875Z",
- "itemCount": 63,
+ "generated": "2026-10-02T12:30:26.376Z",
+ "itemCount": 81,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -54,17 +54,310 @@
   {
    "id": "arxiv-agents",
    "label": "arXiv · agents & LLM systems",
-   "ok": false,
-   "error": "HTTP 429"
+   "ok": true,
+   "fetched": 25,
+   "kept": 15
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
-   "ok": false,
-   "error": "The operation was aborted due to timeout"
+   "ok": true,
+   "fetched": 20,
+   "kept": 9
   }
  ],
  "items": [
+  {
+   "id": "xb8x0w",
+   "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+   "summary": "LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations. However, existing evaluations focus on knowledge-based assessments or end-to-end agentic tasks, and do not directly measure LLMs' ability to generate executable commands for real-world…",
+   "url": "http://arxiv.org/abs/2610.02206v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T17:59:55Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "aues7n",
+   "title": "InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation",
+   "summary": "We study test-time evolution for humanoid loco-manipulation: solving tasks that a controller was never trained for by repurposing its existing skills, improving from its own attempts, and retaining what it learns, without retraining. Our key insight is that a broad controller already holds much of the competence a new…",
+   "url": "http://arxiv.org/abs/2610.02196v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T17:59:40Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1hnfdjc",
+   "title": "OmniSeek: Native Tool Integration for Multi-turn Audio-Visual Reasoning",
+   "summary": "We present OmniSeek, an agentic framework that transforms an Omni Large Language Model (Omni-LLM) into an active, multi-turn reasoning agent with native tool use. Rather than passively processing an entire audio-visual sequence in a single forward pass, OmniSeek makes evidence acquisition part of the reasoning process…",
+   "url": "http://arxiv.org/abs/2610.02181v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T17:58:16Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "yfgiv8",
+   "title": "MosaiChunk: Compositing Spatio-Temporal Memory for Autoregressive Video Generation",
+   "summary": "Long-horizon autoregressive video generation is limited by a finite context window. When an object or scene falls out of context, its fine-grained visual details may be lost and difficult to recover upon reappearance. To retain access to such visual details, we introduce MosaiChunk, a spatio-temporal memory mechanism…",
+   "url": "http://arxiv.org/abs/2610.02153v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T17:51:05Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "q1my0s",
+   "title": "Keyword Harnesses Fail Open: A Cheap Diagnostic Ladder for Tool-Use Claims in Small Language Models",
+   "summary": "Keyword-matching benchmarks can credit small models for tool use they never perform. We document such a false positive in a matched-architecture pair of Spanish security language models and propose a ladder of strict, cheap diagnostics. A 661.6M parameter model (approx. 65% code/technical text; no dedicated SFT) and a…",
+   "url": "http://arxiv.org/abs/2610.02142v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T17:46:38Z",
+   "nodes": [
+    "a-tools",
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1yv7mh9",
+   "title": "HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution",
+   "summary": "As robotic hardware and learning methods advance, humanoids need tools to perform tasks beyond their inherent physical limits. Successful tool use requires selecting a suitable tool and coordinating manipulation and, when needed, locomotion to complete the task. Existing benchmarks do not jointly evaluate these capabi…",
+   "url": "http://arxiv.org/abs/2610.02089v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T17:21:54Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 4,
+   "application": false
+  },
+  {
+   "id": "dnr3jt",
+   "title": "Mimir: Physics-Grounded LLM Agents for Long-Horizon Irrigation Control",
+   "summary": "Large language model (LLM) agents increasingly combine reasoning, tool use, and action, but most evidence comes from episodic tasks with relatively immediate feedback and reset failures. Long-running physical control operates in a different regime: actions alter future states, errors compound across decisions, and an…",
+   "url": "http://arxiv.org/abs/2610.02038v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T16:50:52Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1bp2t41",
+   "title": "Mapping the RAG Landscape: A Four Axis Taxonomy of Efficiency, Defense, Interactivity, and Reasoning",
+   "summary": "Large Language Models (LLMs) have demonstrated remarkable fluency across many tasks but remain limited by their static, parameter bound knowledge and their susceptibility to hallucinating information. Retrieval Augmented Generation (RAG) addresses these issues by incorporating external retrieval into the generation pr…",
+   "url": "http://arxiv.org/abs/2610.01936v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T16:06:05Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "75qcrh",
+   "title": "Walking the Embedding Space: Datastore Extraction from Multimodal RAG",
+   "summary": "Multimodal Retrieval-Augmented Generation (MRAG) has emerged as a reliable and cost-effective technique of grounding the generative capabilities of Multimodal Large Language Models (MLLMs) into relevant, up-to-date, external knowledge. Despite presenting several benefits, such as reducing hallucinatory behavior, they…",
+   "url": "http://arxiv.org/abs/2610.01871v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T15:30:06Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 5,
+   "application": false
+  },
+  {
+   "id": "e89760",
+   "title": "A Matryoshka Hierarchical RAG for Efficient Multi-Hop Question Answering",
+   "summary": "Retrieval-Augmented Generation (RAG) systems for multi-hop Question Answering (QA) must balance retrieval quality with computational cost. This cost is incurred during indexing time, through the use of expensive Knowledge Graphs (KGs) or Large Language Models (LLMs) to generate summaries, or during querying, through i…",
+   "url": "http://arxiv.org/abs/2610.01767v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T14:25:23Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "2fyqvc",
+   "title": "Architectural Degradation: How to Measure and to Remediate",
+   "summary": "Context. Architectural degradation undermines software maintainability, evolvability, and quality. However, existing research remains fragmented across measurement approaches, metrics, tools, and remediation strategies, limiting our understanding of how these elements relate across the degradation lifecycle. Aim. We c…",
+   "url": "http://arxiv.org/abs/2610.01611v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T12:51:12Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ys54zg",
+   "title": "RPTune: Learned Context Curation for LLM Catalog Search",
+   "summary": "For small merchant businesses (SMBs) whose catalogs fit within a long-context LLM, full-catalog prompting offers a compelling alternative to multi-stage retrieval designed primarily for large marketplaces with millions of items. However, fitting the full catalog into the context window does not ensure that the model c…",
+   "url": "http://arxiv.org/abs/2610.00964v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T02:52:24Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "12bicrg",
+   "title": "Persistent Context Graphs for Efficient Memory Compaction in LLM Agents",
+   "summary": "As LLM capabilities advance, agents are tackling increasingly complex tasks over longer horizons. Their growing interaction histories make memory compaction essential for staying within context windows and reducing prefill cost. Existing methods summarize the history or compress its KV cache, often adding model comput…",
+   "url": "http://arxiv.org/abs/2609.40118v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-30T16:43:28Z",
+   "nodes": [
+    "c-longctx",
+    "c-editing"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ky0vn6",
+   "title": "LLM-as-a-Judge for Low-Resource Languages: Adapting Ragas and Comparative Ranking for Romanian",
+   "summary": "Evaluating Retrieval-Augmented Generation (RAG) systems remains a challenge for Low-Resource Languages (LRLs), where standard reference-based metrics fall short. This paper investigates the viability of the \"LLM-as-a-Judge\" paradigm for Romanian by adapting the Ragas framework using next-generation models (Gemini 2.5…",
+   "url": "http://arxiv.org/abs/2610.00406v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-30T13:19:21Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "zr6l6v",
+   "title": "Pretext: Defeating Malicious Skill Detection Frameworks for AI Agents",
+   "summary": "Skills extend an agent's capabilities by injecting instructions and information into the context, and are widely used by agents such as OpenClaw and Claude Code. Prior work shows third-party marketplaces host malicious skills that give attackers direct influence over the victim's agent. The emerging defense scans skil…",
+   "url": "http://arxiv.org/abs/2609.39607v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-30T12:26:33Z",
+   "nodes": [
+    "k-cli",
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1b1n23k",
+   "title": "The Invisible Language Tax: Token Premiums of French and Regional Languages in 2026 LLM Tokenizers, and a French-Optimized Prototype",
+   "summary": "LLM services are billed per token and context windows are measured in tokens, yet the number of tokens needed for the same content varies across languages. We measure this token premium on seven tokenizers of widely used 2026 models (OpenAI o200k, Llama 3, Qwen3, DeepSeek V3/V4, Gemma 3, Mistral Tekken, and the Claude…",
+   "url": "http://arxiv.org/abs/2609.39001v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-30T05:14:43Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1fmvsw2",
+   "title": "Re-ranking and Late Interaction Drive Retrieval Quality: A Controlled Comparison of RAG Strategies for Scientific Question Answering",
+   "summary": "Retrieval-Augmented Generation (RAG) is now the standard way to ground Large Language Models (LLMs) in external knowledge, yet the design space of retrieval pipelines is large and the trade-offs between variants are not well understood, especially on domain-specific corpora at realistic scale. In this work, we present…",
+   "url": "http://arxiv.org/abs/2609.38473v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-29T20:04:29Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1d87a6r",
+   "title": "Hermes: Learning Contextual Reasoning Unlocks Test-Time Scaling",
+   "summary": "Test-time scaling improves model performance by allocating additional compute during inference. Using this compute effectively across multiple context windows requires deciding how to allocate fresh contexts and what information to carry between them. We call a model's ability to make these decisions contextual reason…",
+   "url": "http://arxiv.org/abs/2609.38332v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-09-29T18:01:13Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "hzvm6i",
    "title": "Show HN: Gangway, self-hosted artifacts and apps from folders, PRs, and agents",
@@ -1106,24 +1399,49 @@
   }
  ],
  "byNode": {
-  "f-artifacts": [
-   "hzvm6i"
+  "a-tools": [
+   "xb8x0w",
+   "1hnfdjc",
+   "q1my0s",
+   "1yv7mh9",
+   "dnr3jt"
   ],
   "k-skills": [
+   "aues7n",
+   "zr6l6v",
    "bkmagq",
    "1g5lpqi",
    "13xt578",
    "qqjnqh"
   ],
-  "s-guardrails": [
-   "1vyzb0t",
-   "3hac4g",
-   "1v82se7"
+  "c-longctx": [
+   "yfgiv8",
+   "ys54zg",
+   "12bicrg",
+   "1b1n23k",
+   "1d87a6r",
+   "81dij",
+   "1mayufo"
+  ],
+  "s-models": [
+   "q1my0s",
+   "1b9pv7a",
+   "1mayufo"
   ],
   "c-retrieval": [
+   "1bp2t41",
+   "75qcrh",
+   "e89760",
+   "2fyqvc",
+   "ky0vn6",
+   "1fmvsw2",
    "1a89hn0"
   ],
+  "c-editing": [
+   "12bicrg"
+  ],
   "k-cli": [
+   "zr6l6v",
    "hzhlbu",
    "yq92q5",
    "hbx7k7",
@@ -1138,6 +1456,14 @@
    "9m1dvn",
    "1euvjgd",
    "haqhq7"
+  ],
+  "f-artifacts": [
+   "hzvm6i"
+  ],
+  "s-guardrails": [
+   "1vyzb0t",
+   "3hac4g",
+   "1v82se7"
   ],
   "a-mcp": [
    "5envg7",
@@ -1182,10 +1508,6 @@
    "5adai7",
    "1pkn77w"
   ],
-  "s-models": [
-   "1b9pv7a",
-   "1mayufo"
-  ],
   "r-thinking": [
    "1b9pv7a"
   ],
@@ -1197,10 +1519,6 @@
    "1hpfded",
    "82q6vz",
    "1te5wlg"
-  ],
-  "c-longctx": [
-   "81dij",
-   "1mayufo"
   ],
   "s-cost": [
    "1v69mnm"
