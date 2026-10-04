@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-03T21:12:46.140Z",
+ "generated": "2026-10-04T05:49:24.528Z",
  "itemCount": 81,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 876,
-   "kept": 333
+   "fetched": 726,
+   "kept": 274
   },
   {
    "id": "python-sdk-changelog",
@@ -752,22 +752,6 @@
    "application": false
   },
   {
-   "id": "11iyaow",
-   "title": "Changed AGENTS.md support to also work on Amazon Bedrock, Google Vertex AI, Microsoft Foundry, LLM gateways, and sessions with telemetry disabled",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.281",
-   "date": null,
-   "nodes": [
-    "s-deploy"
-   ],
-   "relevance": 27,
-   "application": false
-  },
-  {
    "id": "1f7bdas",
    "title": "Changed MCP server alwaysLoad: false to defer all of that server's tools behind tool search",
    "summary": "",
@@ -776,22 +760,6 @@
    "sourceId": "claude-code-changelog",
    "category": "tooling",
    "badge": "2.1.287",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 24,
-   "application": false
-  },
-  {
-   "id": "1kaaa3l",
-   "title": "Fixed the prompt cache being lost when an MCP server disconnects mid-conversation, or is still connecting after a resume, while tool search is off (for example behind a proxy or gateway)",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.281",
    "date": null,
    "nodes": [
     "a-mcp"
@@ -866,19 +834,19 @@
    "application": false
   },
   {
-   "id": "lqawh1",
-   "title": "Fixed the same MCP server being connected twice when a plugin or claude.ai connector and a configured server spell its URL differently (host letter case, default port, trailing slash)",
+   "id": "yfcsv3",
+   "title": "Fixed a user-installed plugin being able to rewrite the descriptions of an organization-managed MCP server's sign-in tools",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.281",
+   "badge": "2.1.289",
    "date": null,
    "nodes": [
     "a-mcp"
    ],
-   "relevance": 21,
+   "relevance": 18,
    "application": false
   },
   {
@@ -1158,6 +1126,38 @@
   {
    "id": "19w3zkb",
    "title": "Fixed switching off an MCP server added mid-session in SDK and -p sessions leaving its tools available",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.285",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1fir68e",
+   "title": "Fixed claude mcp list and claude mcp get, and the not-found error of claude mcp remove, login and logout, printing line breaks and terminal escape sequences from MCP server names and values",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.285",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "112lc3r",
+   "title": "Fixed plugins silently skipping a bundled .mcpb MCP server that still needs configuration: /plugin, the install message and claude plugin install now say so and point to Configure",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
@@ -1467,11 +1467,10 @@
   "a-mcp": [
    "5envg7",
    "1f7bdas",
-   "1kaaa3l",
    "xt6y0j",
    "1b9pv7a",
    "1tom56z",
-   "lqawh1",
+   "yfcsv3",
    "13gaf2q",
    "1kx339a",
    "7pwxf5",
@@ -1483,6 +1482,8 @@
    "7hcf6e",
    "lplaov",
    "19w3zkb",
+   "1fir68e",
+   "112lc3r",
    "17hcvfv",
    "1fwmv86",
    "12tiait",
@@ -1501,11 +1502,6 @@
   "k-claudemd": [
    "f9yd9e"
   ],
-  "s-deploy": [
-   "11iyaow",
-   "81dij",
-   "5adai7"
-  ],
   "r-thinking": [
    "1b9pv7a"
   ],
@@ -1523,6 +1519,10 @@
   ],
   "k-hooks": [
    "1157ob5"
+  ],
+  "s-deploy": [
+   "81dij",
+   "5adai7"
   ],
   "s-cost": [
    "1v69mnm"
