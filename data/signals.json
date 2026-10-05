@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-04T21:21:20.567Z",
- "itemCount": 81,
+ "generated": "2026-10-05T05:35:23.833Z",
+ "itemCount": 78,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -56,43 +56,91 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 15
+   "kept": 7
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": true,
    "fetched": 20,
-   "kept": 9
+   "kept": 8
   }
  ],
  "items": [
   {
-   "id": "xb8x0w",
-   "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
-   "summary": "LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations. However, existing evaluations focus on knowledge-based assessments or end-to-end agentic tasks, and do not directly measure LLMs' ability to generate executable commands for real-world…",
-   "url": "http://arxiv.org/abs/2610.02206v1",
+   "id": "zb4e23",
+   "title": "World Embedding Benchmark",
+   "summary": "Physical fidelity has received increasing attention in world models and video generation, yet how video representations encode physical information remains less understood. We introduce the World Embedding Benchmark, comprising 8,000 controlled simulation cases from 80 families spanning fluid mechanics, solid mechanic…",
+   "url": "http://arxiv.org/abs/2610.03632v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-10-01T17:59:55Z",
+   "date": "2026-10-02T17:24:25Z",
    "nodes": [
-    "a-tools"
+    "s-models"
    ],
    "relevance": 3,
    "application": false
   },
   {
-   "id": "aues7n",
-   "title": "InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation",
-   "summary": "We study test-time evolution for humanoid loco-manipulation: solving tasks that a controller was never trained for by repurposing its existing skills, improving from its own attempts, and retaining what it learns, without retraining. Our key insight is that a broad controller already holds much of the competence a new…",
-   "url": "http://arxiv.org/abs/2610.02196v1",
+   "id": "1c0kl8k",
+   "title": "CLIMB: Confidence-Guided Complementary Evidence for Multimodal Retrieval-Augmented Generation",
+   "summary": "Multimodal large language models (MLLMs) have shown strong visual reasoning abilities, but knowledge-intensive visual question answering often requires external textual evidence beyond the image and the model's parametric knowledge. Existing multimodal RAG systems commonly rely on Top-$K$ retrieval or reranking, which…",
+   "url": "http://arxiv.org/abs/2610.03421v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-10-01T17:59:40Z",
+   "date": "2026-10-02T15:09:06Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ayasab",
+   "title": "EdgeAgent: Orchestrating On-Device LLM inference for End-User Multi-Agent Systems on CPU-GPU Unified Memory Architectures",
+   "summary": "Emerging multi-agent LLMs demand privacy-preserving edge deployment, yet current inference systems struggle with these collaborative workflows. Specifically, the memory-bound decode phase causes severe bus contention on unified memory architectures (UMA), paralyzing naive CPU-GPU co-execution. Furthermore, speculative…",
+   "url": "http://arxiv.org/abs/2610.03394v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-02T14:43:42Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1en2qca",
+   "title": "ReFract: Benchmarking Perspective Awareness in Language Model Agents with Text World Models",
+   "summary": "Large Language Model (LLM) agents are increasingly deployed in high-stakes settings such as industrial maintenance and equipment fault troubleshooting, where workers occupy a variety of roles. A capable agent must therefore act in a way that is calibrated to user's role: taking actions and providing information that r…",
+   "url": "http://arxiv.org/abs/2610.03356v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-02T14:21:26Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "2ri4o",
+   "title": "A Kinetic Theory of the Gated Self-Evolving LLM Agent",
+   "summary": "We find traces of fluid dynamics in the self-evolution of an LLM agent, and give the kinetic theory that predicts them. Gated self-evolution is the loop in which an agent rewrites its own skills under a validation gate. Self-evolution research has treated the agent as the unit; we study instead the individual instance…",
+   "url": "http://arxiv.org/abs/2610.03243v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-02T12:55:38Z",
    "nodes": [
     "k-skills"
    ],
@@ -100,17 +148,65 @@
    "application": false
   },
   {
-   "id": "1hnfdjc",
-   "title": "OmniSeek: Native Tool Integration for Multi-turn Audio-Visual Reasoning",
-   "summary": "We present OmniSeek, an agentic framework that transforms an Omni Large Language Model (Omni-LLM) into an active, multi-turn reasoning agent with native tool use. Rather than passively processing an entire audio-visual sequence in a single forward pass, OmniSeek makes evidence acquisition part of the reasoning process…",
-   "url": "http://arxiv.org/abs/2610.02181v1",
+   "id": "13ccuzt",
+   "title": "D2K-Bench: Can LLM Agents Turn Expert Designs into Efficient GPU Kernels?",
+   "summary": "GPU kernels generated by large language model (LLM) agents can remain less efficient than expert implementations, but runtime alone does not reveal how the gap relates to design discovery and implementation. We introduce D2K-Bench, a diagnostic benchmark of 26 tasks and 85 workloads that measures how effectively agent…",
+   "url": "http://arxiv.org/abs/2610.03226v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-10-01T17:58:16Z",
+   "date": "2026-10-02T12:42:12Z",
    "nodes": [
-    "a-tools"
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1bt97yx",
+   "title": "Silent Dissent: LLM Agents That Yield to the Majority Still Represent Their Original Premise",
+   "summary": "Multi-agent debate is increasingly used to reach consensus among LLM agents, yet agents often yield to a unanimous majority. When an agent changes its answer, has it changed its mind or only its statement? We study this with two-hop factual questions whose intermediate entity (the bridge, e.g. the country in \"the capi…",
+   "url": "http://arxiv.org/abs/2610.02702v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-02T02:37:05Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "icmpg3",
+   "title": "Evaluating and Improving the Robustness of Large Language Models to Input Sequence Variations",
+   "summary": "Large language models (LLMs) in production systems face prompt injections, trojans (backdoors), and manipulation of automatic quality metrics. This thesis develops models, methods, and algorithms for evaluating and improving LLM robustness to adversarial input sequence variations. We propose R_stab(f), a generative ro…",
+   "url": "http://arxiv.org/abs/2610.02432v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T19:57:56Z",
+   "nodes": [
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "12f0l9f",
+   "title": "MIRROR: Multipath Quorum Integrity for LLM Multi-Agent Communication",
+   "summary": "Inter-agent communication is central to Large Language Model Multi-Agent Systems (LLM-MAS), but it introduces an underexplored vulnerability: Agent-in-the-Middle (AiTM) attacks that manipulate messages in transit without compromising the agents themselves. Prior work reports Attack Success Rates (ASR) approaching 100%…",
+   "url": "http://arxiv.org/abs/2610.02349v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T18:22:22Z",
+   "nodes": [
+    "a-teams"
    ],
    "relevance": 3,
    "application": false
@@ -127,119 +223,6 @@
    "date": "2026-10-01T17:51:05Z",
    "nodes": [
     "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "q1my0s",
-   "title": "Keyword Harnesses Fail Open: A Cheap Diagnostic Ladder for Tool-Use Claims in Small Language Models",
-   "summary": "Keyword-matching benchmarks can credit small models for tool use they never perform. We document such a false positive in a matched-architecture pair of Spanish security language models and propose a ladder of strict, cheap diagnostics. A 661.6M parameter model (approx. 65% code/technical text; no dedicated SFT) and a…",
-   "url": "http://arxiv.org/abs/2610.02142v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-01T17:46:38Z",
-   "nodes": [
-    "a-tools",
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1yv7mh9",
-   "title": "HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution",
-   "summary": "As robotic hardware and learning methods advance, humanoids need tools to perform tasks beyond their inherent physical limits. Successful tool use requires selecting a suitable tool and coordinating manipulation and, when needed, locomotion to complete the task. Existing benchmarks do not jointly evaluate these capabi…",
-   "url": "http://arxiv.org/abs/2610.02089v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-01T17:21:54Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 4,
-   "application": false
-  },
-  {
-   "id": "dnr3jt",
-   "title": "Mimir: Physics-Grounded LLM Agents for Long-Horizon Irrigation Control",
-   "summary": "Large language model (LLM) agents increasingly combine reasoning, tool use, and action, but most evidence comes from episodic tasks with relatively immediate feedback and reset failures. Long-running physical control operates in a different regime: actions alter future states, errors compound across decisions, and an…",
-   "url": "http://arxiv.org/abs/2610.02038v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-01T16:50:52Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1bp2t41",
-   "title": "Mapping the RAG Landscape: A Four Axis Taxonomy of Efficiency, Defense, Interactivity, and Reasoning",
-   "summary": "Large Language Models (LLMs) have demonstrated remarkable fluency across many tasks but remain limited by their static, parameter bound knowledge and their susceptibility to hallucinating information. Retrieval Augmented Generation (RAG) addresses these issues by incorporating external retrieval into the generation pr…",
-   "url": "http://arxiv.org/abs/2610.01936v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-01T16:06:05Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "75qcrh",
-   "title": "Walking the Embedding Space: Datastore Extraction from Multimodal RAG",
-   "summary": "Multimodal Retrieval-Augmented Generation (MRAG) has emerged as a reliable and cost-effective technique of grounding the generative capabilities of Multimodal Large Language Models (MLLMs) into relevant, up-to-date, external knowledge. Despite presenting several benefits, such as reducing hallucinatory behavior, they…",
-   "url": "http://arxiv.org/abs/2610.01871v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-01T15:30:06Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 5,
-   "application": false
-  },
-  {
-   "id": "e89760",
-   "title": "A Matryoshka Hierarchical RAG for Efficient Multi-Hop Question Answering",
-   "summary": "Retrieval-Augmented Generation (RAG) systems for multi-hop Question Answering (QA) must balance retrieval quality with computational cost. This cost is incurred during indexing time, through the use of expensive Knowledge Graphs (KGs) or Large Language Models (LLMs) to generate summaries, or during querying, through i…",
-   "url": "http://arxiv.org/abs/2610.01767v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-01T14:25:23Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "2fyqvc",
-   "title": "Architectural Degradation: How to Measure and to Remediate",
-   "summary": "Context. Architectural degradation undermines software maintainability, evolvability, and quality. However, existing research remains fragmented across measurement approaches, metrics, tools, and remediation strategies, limiting our understanding of how these elements relate across the degradation lifecycle. Aim. We c…",
-   "url": "http://arxiv.org/abs/2610.01611v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-01T12:51:12Z",
-   "nodes": [
-    "c-retrieval"
    ],
    "relevance": 3,
    "application": false
@@ -320,38 +303,6 @@
    "category": "research",
    "badge": "preprint",
    "date": "2026-09-30T05:14:43Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1fmvsw2",
-   "title": "Re-ranking and Late Interaction Drive Retrieval Quality: A Controlled Comparison of RAG Strategies for Scientific Question Answering",
-   "summary": "Retrieval-Augmented Generation (RAG) is now the standard way to ground Large Language Models (LLMs) in external knowledge, yet the design space of retrieval pipelines is large and the trade-offs between variants are not well understood, especially on domain-specific corpora at realistic scale. In this work, we present…",
-   "url": "http://arxiv.org/abs/2609.38473v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-29T20:04:29Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1d87a6r",
-   "title": "Hermes: Learning Contextual Reasoning Unlocks Test-Time Scaling",
-   "summary": "Test-time scaling improves model performance by allocating additional compute during inference. Using this compute effectively across multiple context windows requires deciding how to allocate fresh contexts and what information to carry between them. We call a model's ability to make these decisions contextual reason…",
-   "url": "http://arxiv.org/abs/2609.38332v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-29T18:01:13Z",
    "nodes": [
     "c-longctx"
    ],
@@ -1399,42 +1350,43 @@
   }
  ],
  "byNode": {
-  "a-tools": [
-   "xb8x0w",
-   "1hnfdjc",
-   "q1my0s",
-   "1yv7mh9",
-   "dnr3jt"
+  "s-models": [
+   "zb4e23",
+   "1en2qca",
+   "13ccuzt",
+   "1kthjel",
+   "1b9pv7a"
+  ],
+  "c-retrieval": [
+   "1c0kl8k",
+   "ky0vn6",
+   "1a89hn0"
+  ],
+  "a-teams": [
+   "ayasab",
+   "1bt97yx",
+   "12f0l9f"
   ],
   "k-skills": [
-   "aues7n",
+   "2ri4o",
    "zr6l6v",
    "bkmagq",
    "1g5lpqi",
    "13xt578",
    "qqjnqh"
   ],
+  "s-guardrails": [
+   "icmpg3",
+   "1vyzb0t",
+   "3hac4g",
+   "1v82se7"
+  ],
   "c-longctx": [
    "yfgiv8",
    "ys54zg",
    "12bicrg",
    "1b1n23k",
-   "1d87a6r",
    "81dij"
-  ],
-  "s-models": [
-   "q1my0s",
-   "1kthjel",
-   "1b9pv7a"
-  ],
-  "c-retrieval": [
-   "1bp2t41",
-   "75qcrh",
-   "e89760",
-   "2fyqvc",
-   "ky0vn6",
-   "1fmvsw2",
-   "1a89hn0"
   ],
   "c-editing": [
    "12bicrg"
@@ -1458,11 +1410,6 @@
   ],
   "f-artifacts": [
    "hzvm6i"
-  ],
-  "s-guardrails": [
-   "1vyzb0t",
-   "3hac4g",
-   "1v82se7"
   ],
   "a-mcp": [
    "5envg7",
@@ -1533,6 +1480,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "icmpg3",
+   "node": "s-guardrails",
+   "nodeTitle": "Refusals & Fallbacks",
+   "discipline": "scale",
+   "title": "Evaluating and Improving the Robustness of Large Language Models to Input Sequence Variations",
+   "url": "http://arxiv.org/abs/2610.02432v1"
+  },
   {
    "id": "hzvm6i",
    "node": "f-artifacts",
