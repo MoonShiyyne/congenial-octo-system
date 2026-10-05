@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-05T05:35:23.833Z",
- "itemCount": 78,
+ "generated": "2026-10-05T14:32:43.665Z",
+ "itemCount": 79,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 10
+   "kept": 11
   },
   {
    "id": "arxiv-agents",
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "1maeyx6",
+   "title": "Show HN: Vibivibi – End-to-end encrypted sharing of Coding Agent sessions",
+   "summary": "",
+   "url": "https://vibivibi.com/",
+   "discussion": "https://news.ycombinator.com/item?id=49965199",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "1 pts",
+   "date": "2026-10-05T14:16:09Z",
+   "nodes": [
+    "a-managed"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "zb4e23",
    "title": "World Embedding Benchmark",
@@ -1350,6 +1367,14 @@
   }
  ],
  "byNode": {
+  "a-managed": [
+   "1maeyx6",
+   "1c6q1us",
+   "3hac4g",
+   "1au9ipo",
+   "1v82se7",
+   "5cjbao"
+  ],
   "s-models": [
    "zb4e23",
    "1en2qca",
@@ -1439,13 +1464,6 @@
   "c-memory": [
    "1furdo9"
   ],
-  "a-managed": [
-   "1c6q1us",
-   "3hac4g",
-   "1au9ipo",
-   "1v82se7",
-   "5cjbao"
-  ],
   "k-claudemd": [
    "f9yd9e"
   ],
@@ -1480,6 +1498,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "1maeyx6",
+   "node": "a-managed",
+   "nodeTitle": "Managed Agents",
+   "discipline": "agents",
+   "title": "Show HN: Vibivibi – End-to-end encrypted sharing of Coding Agent sessions",
+   "url": "https://vibivibi.com/"
+  },
   {
    "id": "icmpg3",
    "node": "s-guardrails",
