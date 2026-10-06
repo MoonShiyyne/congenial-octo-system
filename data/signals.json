@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-06T13:22:55.777Z",
- "itemCount": 81,
+ "generated": "2026-10-06T22:38:41.460Z",
+ "itemCount": 82,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 738,
-   "kept": 274
+   "fetched": 730,
+   "kept": 272
   },
   {
    "id": "python-sdk-changelog",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 11
+   "kept": 12
   },
   {
    "id": "arxiv-agents",
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "1tlnnxf",
+   "title": "Show HN: Azurade, image and video generation with MCP, credits never expire",
+   "summary": "",
+   "url": "https://azurade.com/developers/",
+   "discussion": "https://news.ycombinator.com/item?id=49978155",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "2 pts",
+   "date": "2026-10-06T13:29:38Z",
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "h32ui1",
    "title": "MemPilot: Orchestrating On-Demand Multimodal Memory Curation for LLM Agents",
@@ -850,6 +867,71 @@
    "application": false
   },
   {
+   "id": "1yv2nu1",
+   "title": "Added --marketplace <source> to claude plugin install: adds the marketplace if needed, under the same policy checks as claude plugin marketplace add, then installs the plugin from it",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.292",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "ziaixy",
+   "title": "Improved startup of claude -p and SDK sessions: the first turn no longer waits for HTTP and SSE MCP servers to answer resources/list",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.292",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": true
+  },
+  {
+   "id": "1x5x49q",
+   "title": "Improved startup with local (stdio) MCP servers that ignore the newer protocol check: after one slow connect they are remembered for 7 days and connected the older way without the wait",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.292",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": true
+  },
+  {
+   "id": "m3fujc",
+   "title": "Changed local (stdio) MCP server connections to negotiate protocol version 2026-07-28 by default on every install, including Bedrock, Vertex and Foundry; MCP_PROTOCOL_NEGOTIATION=legacy opts out",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.292",
+   "date": null,
+   "nodes": [
+    "a-mcp",
+    "s-deploy"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
    "id": "6ldq8k",
    "title": "Fixed an MCP server provided by your organization being relisted as your own after signing in or reconnecting, including from a late result in headless and SDK sessions",
    "summary": "",
@@ -1108,70 +1190,6 @@
    "application": false
   },
   {
-   "id": "1v69mnm",
-   "title": "Fixed the Claude apps gateway's spend meter pricing 1-hour prompt cache writes at the cheaper 5-minute rate, and counting only the first model call's input tokens on streamed turns that run a server-side tool such as we…",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.286",
-   "date": null,
-   "nodes": [
-    "s-cost"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "x4kuzd",
-   "title": "Fixed headless sessions repeating the \"MCP servers require authentication\" reminder after a successful re-authentication when the MCP discovery cache is enabled",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.286",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "o4isne",
-   "title": "Fixed /usage not crediting an MCP server for a tool call made while that server was still connecting or had only just connected, such as right after a restart",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.286",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "t0kbse",
-   "title": "Improved responsiveness of SDK and -p sessions when a host re-sends an MCP server enable for a server that is already connected",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.286",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
    "id": "14qu9u1",
    "title": "**api:** add Plugins and Plugin Marketplaces to the Admin API ([1baad3b](https://github.com/anthropics/anthropic-sdk-python/commit/1baad3b04df8fc5f1cbcf59bd2eca5e51d88c1e0))",
    "summary": "",
@@ -1399,6 +1417,30 @@
   }
  ],
  "byNode": {
+  "a-mcp": [
+   "1tlnnxf",
+   "5envg7",
+   "1f7bdas",
+   "xt6y0j",
+   "1b9pv7a",
+   "1tom56z",
+   "ziaixy",
+   "1x5x49q",
+   "m3fujc",
+   "6ldq8k",
+   "1mpse4d",
+   "1jv6270",
+   "yfcsv3",
+   "13gaf2q",
+   "1kx339a",
+   "7pwxf5",
+   "4x6v59",
+   "2s1j67",
+   "17hcvfv",
+   "1fwmv86",
+   "12tiait",
+   "m0mnu"
+  ],
   "c-memory": [
    "h32ui1",
    "1furdo9"
@@ -1477,29 +1519,6 @@
    "9m1dvn",
    "1euvjgd"
   ],
-  "a-mcp": [
-   "5envg7",
-   "1f7bdas",
-   "xt6y0j",
-   "1b9pv7a",
-   "1tom56z",
-   "6ldq8k",
-   "1mpse4d",
-   "1jv6270",
-   "yfcsv3",
-   "13gaf2q",
-   "1kx339a",
-   "7pwxf5",
-   "4x6v59",
-   "2s1j67",
-   "x4kuzd",
-   "o4isne",
-   "t0kbse",
-   "17hcvfv",
-   "1fwmv86",
-   "12tiait",
-   "m0mnu"
-  ],
   "k-claudemd": [
    "f9yd9e",
    "1qiyj9s"
@@ -1508,6 +1527,7 @@
    "1b9pv7a"
   ],
   "k-plugins": [
+   "1yv2nu1",
    "dz5e2d",
    "1864pgt",
    "nvbco0",
@@ -1517,17 +1537,15 @@
    "82q6vz",
    "1te5wlg"
   ],
+  "s-deploy": [
+   "m3fujc",
+   "81dij"
+  ],
   "a-subagents": [
    "1kx339a"
   ],
   "k-hooks": [
    "1157ob5"
-  ],
-  "s-deploy": [
-   "81dij"
-  ],
-  "s-cost": [
-   "1v69mnm"
   ],
   "a-runner": [
    "1x57iw3",
@@ -1535,6 +1553,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "1tlnnxf",
+   "node": "a-mcp",
+   "nodeTitle": "MCP",
+   "discipline": "agents",
+   "title": "Show HN: Azurade, image and video generation with MCP, credits never expire",
+   "url": "https://azurade.com/developers/"
+  },
   {
    "id": "rnpaeu",
    "node": "s-guardrails",
@@ -1718,14 +1744,6 @@
    "discipline": "code",
    "title": "Show HN: Dex – Cost-aware analytics engineering skills for agents",
    "url": "https://github.com/exmergo/dex"
-  },
-  {
-   "id": "9m1dvn",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Make your terminal pulse orange when Claude Code needs input",
-   "url": "https://github.com/rickardstureborg/claude-needs-input"
   }
  ]
 }
