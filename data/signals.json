@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-05T14:32:43.665Z",
- "itemCount": 79,
+ "generated": "2026-10-06T00:04:14.614Z",
+ "itemCount": 62,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 726,
-   "kept": 274
+   "fetched": 830,
+   "kept": 307
   },
   {
    "id": "python-sdk-changelog",
@@ -34,8 +34,8 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 53,
-   "kept": 12
+   "fetched": 52,
+   "kept": 10
   },
   {
    "id": "hn-agents",
@@ -54,16 +54,14 @@
   {
    "id": "arxiv-agents",
    "label": "arXiv · agents & LLM systems",
-   "ok": true,
-   "fetched": 25,
-   "kept": 7
+   "ok": false,
+   "error": "HTTP 429"
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
-   "ok": true,
-   "fetched": 20,
-   "kept": 8
+   "ok": false,
+   "error": "The operation was aborted due to timeout"
   }
  ],
  "items": [
@@ -76,255 +74,13 @@
    "source": "Show HN · built with AI",
    "sourceId": "hn-show",
    "category": "market",
-   "badge": "1 pts",
+   "badge": "4 pts",
    "date": "2026-10-05T14:16:09Z",
    "nodes": [
     "a-managed"
    ],
    "relevance": 3,
    "application": true
-  },
-  {
-   "id": "zb4e23",
-   "title": "World Embedding Benchmark",
-   "summary": "Physical fidelity has received increasing attention in world models and video generation, yet how video representations encode physical information remains less understood. We introduce the World Embedding Benchmark, comprising 8,000 controlled simulation cases from 80 families spanning fluid mechanics, solid mechanic…",
-   "url": "http://arxiv.org/abs/2610.03632v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-02T17:24:25Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1c0kl8k",
-   "title": "CLIMB: Confidence-Guided Complementary Evidence for Multimodal Retrieval-Augmented Generation",
-   "summary": "Multimodal large language models (MLLMs) have shown strong visual reasoning abilities, but knowledge-intensive visual question answering often requires external textual evidence beyond the image and the model's parametric knowledge. Existing multimodal RAG systems commonly rely on Top-$K$ retrieval or reranking, which…",
-   "url": "http://arxiv.org/abs/2610.03421v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-02T15:09:06Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "ayasab",
-   "title": "EdgeAgent: Orchestrating On-Device LLM inference for End-User Multi-Agent Systems on CPU-GPU Unified Memory Architectures",
-   "summary": "Emerging multi-agent LLMs demand privacy-preserving edge deployment, yet current inference systems struggle with these collaborative workflows. Specifically, the memory-bound decode phase causes severe bus contention on unified memory architectures (UMA), paralyzing naive CPU-GPU co-execution. Furthermore, speculative…",
-   "url": "http://arxiv.org/abs/2610.03394v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-02T14:43:42Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1en2qca",
-   "title": "ReFract: Benchmarking Perspective Awareness in Language Model Agents with Text World Models",
-   "summary": "Large Language Model (LLM) agents are increasingly deployed in high-stakes settings such as industrial maintenance and equipment fault troubleshooting, where workers occupy a variety of roles. A capable agent must therefore act in a way that is calibrated to user's role: taking actions and providing information that r…",
-   "url": "http://arxiv.org/abs/2610.03356v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-02T14:21:26Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "2ri4o",
-   "title": "A Kinetic Theory of the Gated Self-Evolving LLM Agent",
-   "summary": "We find traces of fluid dynamics in the self-evolution of an LLM agent, and give the kinetic theory that predicts them. Gated self-evolution is the loop in which an agent rewrites its own skills under a validation gate. Self-evolution research has treated the agent as the unit; we study instead the individual instance…",
-   "url": "http://arxiv.org/abs/2610.03243v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-02T12:55:38Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "13ccuzt",
-   "title": "D2K-Bench: Can LLM Agents Turn Expert Designs into Efficient GPU Kernels?",
-   "summary": "GPU kernels generated by large language model (LLM) agents can remain less efficient than expert implementations, but runtime alone does not reveal how the gap relates to design discovery and implementation. We introduce D2K-Bench, a diagnostic benchmark of 26 tasks and 85 workloads that measures how effectively agent…",
-   "url": "http://arxiv.org/abs/2610.03226v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-02T12:42:12Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1bt97yx",
-   "title": "Silent Dissent: LLM Agents That Yield to the Majority Still Represent Their Original Premise",
-   "summary": "Multi-agent debate is increasingly used to reach consensus among LLM agents, yet agents often yield to a unanimous majority. When an agent changes its answer, has it changed its mind or only its statement? We study this with two-hop factual questions whose intermediate entity (the bridge, e.g. the country in \"the capi…",
-   "url": "http://arxiv.org/abs/2610.02702v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-02T02:37:05Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "icmpg3",
-   "title": "Evaluating and Improving the Robustness of Large Language Models to Input Sequence Variations",
-   "summary": "Large language models (LLMs) in production systems face prompt injections, trojans (backdoors), and manipulation of automatic quality metrics. This thesis develops models, methods, and algorithms for evaluating and improving LLM robustness to adversarial input sequence variations. We propose R_stab(f), a generative ro…",
-   "url": "http://arxiv.org/abs/2610.02432v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-01T19:57:56Z",
-   "nodes": [
-    "s-guardrails"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "12f0l9f",
-   "title": "MIRROR: Multipath Quorum Integrity for LLM Multi-Agent Communication",
-   "summary": "Inter-agent communication is central to Large Language Model Multi-Agent Systems (LLM-MAS), but it introduces an underexplored vulnerability: Agent-in-the-Middle (AiTM) attacks that manipulate messages in transit without compromising the agents themselves. Prior work reports Attack Success Rates (ASR) approaching 100%…",
-   "url": "http://arxiv.org/abs/2610.02349v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-01T18:22:22Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "yfgiv8",
-   "title": "MosaiChunk: Compositing Spatio-Temporal Memory for Autoregressive Video Generation",
-   "summary": "Long-horizon autoregressive video generation is limited by a finite context window. When an object or scene falls out of context, its fine-grained visual details may be lost and difficult to recover upon reappearance. To retain access to such visual details, we introduce MosaiChunk, a spatio-temporal memory mechanism…",
-   "url": "http://arxiv.org/abs/2610.02153v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-01T17:51:05Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "ys54zg",
-   "title": "RPTune: Learned Context Curation for LLM Catalog Search",
-   "summary": "For small merchant businesses (SMBs) whose catalogs fit within a long-context LLM, full-catalog prompting offers a compelling alternative to multi-stage retrieval designed primarily for large marketplaces with millions of items. However, fitting the full catalog into the context window does not ensure that the model c…",
-   "url": "http://arxiv.org/abs/2610.00964v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-01T02:52:24Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "12bicrg",
-   "title": "Persistent Context Graphs for Efficient Memory Compaction in LLM Agents",
-   "summary": "As LLM capabilities advance, agents are tackling increasingly complex tasks over longer horizons. Their growing interaction histories make memory compaction essential for staying within context windows and reducing prefill cost. Existing methods summarize the history or compress its KV cache, often adding model comput…",
-   "url": "http://arxiv.org/abs/2609.40118v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-30T16:43:28Z",
-   "nodes": [
-    "c-longctx",
-    "c-editing"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "ky0vn6",
-   "title": "LLM-as-a-Judge for Low-Resource Languages: Adapting Ragas and Comparative Ranking for Romanian",
-   "summary": "Evaluating Retrieval-Augmented Generation (RAG) systems remains a challenge for Low-Resource Languages (LRLs), where standard reference-based metrics fall short. This paper investigates the viability of the \"LLM-as-a-Judge\" paradigm for Romanian by adapting the Ragas framework using next-generation models (Gemini 2.5…",
-   "url": "http://arxiv.org/abs/2610.00406v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-30T13:19:21Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "zr6l6v",
-   "title": "Pretext: Defeating Malicious Skill Detection Frameworks for AI Agents",
-   "summary": "Skills extend an agent's capabilities by injecting instructions and information into the context, and are widely used by agents such as OpenClaw and Claude Code. Prior work shows third-party marketplaces host malicious skills that give attackers direct influence over the victim's agent. The emerging defense scans skil…",
-   "url": "http://arxiv.org/abs/2609.39607v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-30T12:26:33Z",
-   "nodes": [
-    "k-cli",
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1b1n23k",
-   "title": "The Invisible Language Tax: Token Premiums of French and Regional Languages in 2026 LLM Tokenizers, and a French-Optimized Prototype",
-   "summary": "LLM services are billed per token and context windows are measured in tokens, yet the number of tokens needed for the same content varies across languages. We measure this token premium on seven tokenizers of widely used 2026 models (OpenAI o200k, Llama 3, Qwen3, DeepSeek V3/V4, Gemma 3, Mistral Tekken, and the Claude…",
-   "url": "http://arxiv.org/abs/2609.39001v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-09-30T05:14:43Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
   },
   {
    "id": "hzvm6i",
@@ -686,40 +442,6 @@
    "application": true
   },
   {
-   "id": "1euvjgd",
-   "title": "Blog HN: Claude Code Making an Ass Out of You and Me",
-   "summary": "",
-   "url": "https://news.ycombinator.com/item?id=48763592",
-   "discussion": "https://news.ycombinator.com/item?id=48763592",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "3 pts",
-   "date": "2026-07-02T16:08:17Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "haqhq7",
-   "title": "Ask HN: Anthropic banned me from using Claude Code and I don't know what to do",
-   "summary": "",
-   "url": "https://news.ycombinator.com/item?id=48641160",
-   "discussion": "https://news.ycombinator.com/item?id=48641160",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "82 pts",
-   "date": "2026-06-23T06:33:52Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
    "id": "1f7bdas",
    "title": "Changed MCP server alwaysLoad: false to defer all of that server's tools behind tool search",
    "summary": "",
@@ -733,6 +455,23 @@
     "a-mcp"
    ],
    "relevance": 24,
+   "application": false
+  },
+  {
+   "id": "1qiyj9s",
+   "title": "Changed /code-review at medium effort to also report cleanup and CLAUDE.md conventions findings on models without tuned review settings, including Opus 5.5 and Sonnet 5.5",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.290",
+   "date": null,
+   "nodes": [
+    "s-models",
+    "k-claudemd"
+   ],
+   "relevance": 21,
    "application": false
   },
   {
@@ -799,6 +538,86 @@
     "a-mcp"
    ],
    "relevance": 21,
+   "application": false
+  },
+  {
+   "id": "6ldq8k",
+   "title": "Fixed an MCP server provided by your organization being relisted as your own after signing in or reconnecting, including from a late result in headless and SDK sessions",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.290",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1qkiriu",
+   "title": "Fixed skills not being found when asked for by the name in SKILL.md when their folder has a different name (for example a non-English name): the skill listing now shows both names",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.290",
+   "date": null,
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1mpse4d",
+   "title": "Fixed unbounded memory use when an HTTP MCP server sends a very large response",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.290",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1jv6270",
+   "title": "Fixed a stall when an MCP server's tool listing contains very long runs of combining characters",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.290",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "dz5e2d",
+   "title": "[VSCode] Added a way to review and run a plugin marketplace's install or update command from the Manage plugins dialog",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.290",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
    "application": false
   },
   {
@@ -1044,102 +863,6 @@
    "application": false
   },
   {
-   "id": "7hcf6e",
-   "title": "Changed --bare to connect only the MCP servers named on the command line, send the model no system reminders, and start no background tasks; under --bare, a shell command that reaches its timeout now stops instead of mo…",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.286",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "lplaov",
-   "title": "Added <server>.<key>=<value> to claude plugin install --config, so a bundled .mcpb MCP server's own settings can be set at install time and it starts without visiting /plugin → Configure",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.285",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "5adai7",
-   "title": "Added allowedProviders managed setting to limit which API providers a machine may use (Anthropic API, a custom endpoint, Bedrock, Mantle, Vertex AI, Foundry, Claude Platform on AWS, or a Cloud gateway)",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.285",
-   "date": null,
-   "nodes": [
-    "s-deploy"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "19w3zkb",
-   "title": "Fixed switching off an MCP server added mid-session in SDK and -p sessions leaving its tools available",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.285",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1fir68e",
-   "title": "Fixed claude mcp list and claude mcp get, and the not-found error of claude mcp remove, login and logout, printing line breaks and terminal escape sequences from MCP server names and values",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.285",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "112lc3r",
-   "title": "Fixed plugins silently skipping a bundled .mcpb MCP server that still needs configuration: /plugin, the install message and claude plugin install now say so and point to Configure",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.285",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
    "id": "14qu9u1",
    "title": "**api:** add Plugins and Plugin Marketplaces to the Admin API ([1baad3b](https://github.com/anthropics/anthropic-sdk-python/commit/1baad3b04df8fc5f1cbcf59bd2eca5e51d88c1e0))",
    "summary": "",
@@ -1375,49 +1098,25 @@
    "1v82se7",
    "5cjbao"
   ],
-  "s-models": [
-   "zb4e23",
-   "1en2qca",
-   "13ccuzt",
-   "1kthjel",
-   "1b9pv7a"
-  ],
-  "c-retrieval": [
-   "1c0kl8k",
-   "ky0vn6",
-   "1a89hn0"
-  ],
-  "a-teams": [
-   "ayasab",
-   "1bt97yx",
-   "12f0l9f"
+  "f-artifacts": [
+   "hzvm6i"
   ],
   "k-skills": [
-   "2ri4o",
-   "zr6l6v",
    "bkmagq",
    "1g5lpqi",
    "13xt578",
-   "qqjnqh"
+   "qqjnqh",
+   "1qkiriu"
   ],
   "s-guardrails": [
-   "icmpg3",
    "1vyzb0t",
    "3hac4g",
    "1v82se7"
   ],
-  "c-longctx": [
-   "yfgiv8",
-   "ys54zg",
-   "12bicrg",
-   "1b1n23k",
-   "81dij"
-  ],
-  "c-editing": [
-   "12bicrg"
+  "c-retrieval": [
+   "1a89hn0"
   ],
   "k-cli": [
-   "zr6l6v",
    "hzhlbu",
    "yq92q5",
    "hbx7k7",
@@ -1429,12 +1128,7 @@
    "1v41iem",
    "11wcs",
    "8kcnsx",
-   "9m1dvn",
-   "1euvjgd",
-   "haqhq7"
-  ],
-  "f-artifacts": [
-   "hzvm6i"
+   "9m1dvn"
   ],
   "a-mcp": [
    "5envg7",
@@ -1442,6 +1136,9 @@
    "xt6y0j",
    "1b9pv7a",
    "1tom56z",
+   "6ldq8k",
+   "1mpse4d",
+   "1jv6270",
    "yfcsv3",
    "13gaf2q",
    "1kx339a",
@@ -1451,11 +1148,6 @@
    "x4kuzd",
    "o4isne",
    "t0kbse",
-   "7hcf6e",
-   "lplaov",
-   "19w3zkb",
-   "1fir68e",
-   "112lc3r",
    "17hcvfv",
    "1fwmv86",
    "12tiait",
@@ -1465,15 +1157,19 @@
    "1furdo9"
   ],
   "k-claudemd": [
-   "f9yd9e"
+   "f9yd9e",
+   "1qiyj9s"
+  ],
+  "s-models": [
+   "1qiyj9s",
+   "1kthjel",
+   "1b9pv7a"
   ],
   "r-thinking": [
    "1b9pv7a"
   ],
-  "a-subagents": [
-   "1kx339a"
-  ],
   "k-plugins": [
+   "dz5e2d",
    "1864pgt",
    "nvbco0",
    "3uqi5v",
@@ -1482,12 +1178,17 @@
    "82q6vz",
    "1te5wlg"
   ],
+  "a-subagents": [
+   "1kx339a"
+  ],
   "k-hooks": [
    "1157ob5"
   ],
+  "c-longctx": [
+   "81dij"
+  ],
   "s-deploy": [
-   "81dij",
-   "5adai7"
+   "81dij"
   ],
   "s-cost": [
    "1v69mnm"
@@ -1505,14 +1206,6 @@
    "discipline": "agents",
    "title": "Show HN: Vibivibi – End-to-end encrypted sharing of Coding Agent sessions",
    "url": "https://vibivibi.com/"
-  },
-  {
-   "id": "icmpg3",
-   "node": "s-guardrails",
-   "nodeTitle": "Refusals & Fallbacks",
-   "discipline": "scale",
-   "title": "Evaluating and Improving the Robustness of Large Language Models to Input Sequence Variations",
-   "url": "http://arxiv.org/abs/2610.02432v1"
   },
   {
    "id": "hzvm6i",
