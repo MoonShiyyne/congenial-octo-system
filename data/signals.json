@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-06T00:04:14.614Z",
- "itemCount": 62,
+ "generated": "2026-10-06T06:17:08.251Z",
+ "itemCount": 81,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 830,
-   "kept": 307
+   "fetched": 738,
+   "kept": 274
   },
   {
    "id": "python-sdk-changelog",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 52,
-   "kept": 10
+   "kept": 11
   },
   {
    "id": "hn-agents",
@@ -54,17 +54,83 @@
   {
    "id": "arxiv-agents",
    "label": "arXiv · agents & LLM systems",
-   "ok": false,
-   "error": "HTTP 429"
+   "ok": true,
+   "fetched": 25,
+   "kept": 12
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
-   "ok": false,
-   "error": "The operation was aborted due to timeout"
+   "ok": true,
+   "fetched": 20,
+   "kept": 8
   }
  ],
  "items": [
+  {
+   "id": "h32ui1",
+   "title": "MemPilot: Orchestrating On-Demand Multimodal Memory Curation for LLM Agents",
+   "summary": "Memory has become integral to the LLM agent ecosystem, supporting information retention and reuse across interactions. However, most existing agent memory systems construct memory in a query-agnostic manner, which can incur unnecessary preprocessing cost and discard details that later prove essential. Recent studies h…",
+   "url": "http://arxiv.org/abs/2610.06830v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-05T17:58:06Z",
+   "nodes": [
+    "c-memory"
+   ],
+   "relevance": 4,
+   "application": false
+  },
+  {
+   "id": "1dktbhi",
+   "title": "Can Agent Harnesses and Inference Engines Hear Each Other? The HEAR Protocol for Agentic LLM Serving",
+   "summary": "LLM agents increasingly execute complex workflows involving multi-turn reasoning, tool use, and parallel agents. Efficient serving requires decisions that span two layers with complementary information: the agent harness understands workflow dependencies, context lifecycles, and execution objectives, whereas the infer…",
+   "url": "http://arxiv.org/abs/2610.06597v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-05T16:07:33Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "xjeu04",
+   "title": "ANT: A Multi-Granularity Network Traffic Dataset and Benchmark for Agents Behavior Auditing",
+   "summary": "The growing adoption of large language model (LLM) agents creates a need for network administrators and security teams to audit agent behavior within organizational networks without inspecting private user content. Network traffic offers an observable source of evidence, but how much it reveals about agent tasks and o…",
+   "url": "http://arxiv.org/abs/2610.06514v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-05T15:30:02Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "rnpaeu",
+   "title": "RAISED: Self-Distillation for Robustness to Prompt Injection in LLM Agents",
+   "summary": "Tool-using language-model agents are vulnerable to indirect prompt injection because they must act on untrusted external content. Existing training-time defenses can reduce attack success rates, but often at the cost of general capabilities. We show that training-based defenses induce substantial drift in the model's…",
+   "url": "http://arxiv.org/abs/2610.06401v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-05T14:21:30Z",
+   "nodes": [
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "1maeyx6",
    "title": "Show HN: Vibivibi – End-to-end encrypted sharing of Coding Agent sessions",
@@ -81,6 +147,232 @@
    ],
    "relevance": 3,
    "application": true
+  },
+  {
+   "id": "1ek9dmt",
+   "title": "AI-Decision Checkpoints for AI-Augmented Business Process Management: Framework and Educational Instantiation",
+   "summary": "Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and AI agents are increasingly embedded in operational business processes. Yet Business Process Management (BPM) curricula and frameworks still largely treat artificial intelligence (AI) as an add-on technology, leaving graduates (as potential future…",
+   "url": "http://arxiv.org/abs/2610.06207v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-05T12:18:14Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "jbbuik",
+   "title": "Copies or Sources? Measuring How LLM Aggregators Count Restated Evidence in Multi-Agent Systems",
+   "summary": "Multi-agent systems built on large language models (LLMs) restate observations as a matter of course: relays forward them, shared boards repeat them and discussion rounds echo them. An aggregator that pools such messages should count sources, not statements. We convert a reported probability into units of independent…",
+   "url": "http://arxiv.org/abs/2610.06192v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-05T12:08:11Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "kb0o2g",
+   "title": "The Optimization Landscape of Learning Compacted Context Models",
+   "summary": "Many works approach continual learning through the lens of infinite context windows. As an agent puts more observation into context (concretely the KV cache), compacting said context is akin to direct memory manipulation, without affecting the base model's weights. Many works pose KV compaction as an optimization prob…",
+   "url": "http://arxiv.org/abs/2610.05885v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-05T07:00:44Z",
+   "nodes": [
+    "c-longctx",
+    "c-editing"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "cadk06",
+   "title": "Bounded Provisional Visibility: Controlling Poisoning Exposure in Continuously Ingested RAG Vector Stores",
+   "summary": "Continuous ingestion can expose new retrieval-augmented generation (RAG) content to retrieval before vetting completes, creating a temporal attack surface that conventional admission decisions do not capture. We present a fail-closed provisional-visibility protocol that admits new content under a deadline, hides items…",
+   "url": "http://arxiv.org/abs/2610.05826v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-05T05:28:57Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "hbzqqw",
+   "title": "Agentic-ZTA: A Multi-Agent Architecture for Autonomous Zero Trust Enforcement",
+   "summary": "Agentic AI is emerging as a promising paradigm for automating complex cybersecurity decisions, yet its use in enforcing zero trust introduces significant challenges in safety, reliability, and policy compliance. This paper presents Agentic AI based zero trust architecture (Agentic-ZTA) that operationalizes the NIST SP…",
+   "url": "http://arxiv.org/abs/2610.05782v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-05T04:31:29Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "l22v37",
+   "title": "MedicalHarness: A Controlled Evaluation of LLMs and Agent Harnesses on Medical Tasks",
+   "summary": "LLM agents are increasingly built for medical work and scored on clinical benchmarks. Each such score, however, comes from a model running inside an agent harness, the system that controls the loop between the model and its environment. An agent's score is therefore a property of a model--harness pair. For medical age…",
+   "url": "http://arxiv.org/abs/2610.05778v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-05T04:22:28Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "145guro",
+   "title": "Can CaMeLs Talk? Securing Multi-Agent Systems Against Indirect Prompt Injection Attacks",
+   "summary": "Indirect prompt injection attacks - malicious instructions embedded in content processed by large language models - remain a major obstacle to safely deploying tool-using agents. CaMeL [Debenedetti et al., 2025] mitigates this threat for an individual agent by separating trusted control flow from untrusted data and en…",
+   "url": "http://arxiv.org/abs/2610.05640v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-05T00:33:15Z",
+   "nodes": [
+    "a-teams",
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1lr11fm",
+   "title": "When Agent Context Goes Stale: Incoherence in Volatile Agent Context",
+   "summary": "Modern agents increasingly ground their reasoning in observations returned by tools, such as file contents read from a workspace. However, the data sources underlying these observations may later be modified by users, other agents, or external tools, while the model retains only the stale content in its context window…",
+   "url": "http://arxiv.org/abs/2610.05281v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-04T15:01:14Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "freiee",
+   "title": "Back to the Future: Regressing Readability Features from LLMs",
+   "summary": "Code readability supports software understanding, review, and maintenance. As AI coding agents become more widely used, readable code helps both humans review agent-generated output and agents maintain code within limited context windows. Yet existing readability models do not consistently agree with human judgements…",
+   "url": "http://arxiv.org/abs/2610.04641v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-03T16:31:50Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "jt5bb7",
+   "title": "Auditing Pairwise Equivalence Judgments: Self-Critique Effects and Diversity Measurement in Multi-Agent Hypothesis Generation",
+   "summary": "Multi-agent systems built on large language models (LLMs) are increasingly applied to scientific discovery and hypothesis generation. Both the effect of refinement and the diversity of the delivered set are hard to interpret before experimental ground truth exists, and both are typically reported by deciding whether p…",
+   "url": "http://arxiv.org/abs/2610.04133v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-02T23:07:36Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "px27h4",
+   "title": "Periscope: Extending Frozen Language Models Beyond Their Context Window",
+   "summary": "A language model reads long text in one quadratic forward pass, stops at the context window, and loses accuracy with length before reaching it. We ask whether the read can be factorized when deciding over a finite set: which document is relevant, which option is supported, which passage is the evidence. Periscope, a t…",
+   "url": "http://arxiv.org/abs/2610.04047v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-02T20:52:06Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "icmpg3",
+   "title": "Evaluating and Improving the Robustness of Large Language Models to Input Sequence Variations",
+   "summary": "Large language models (LLMs) in production systems face prompt injections, trojans (backdoors), and manipulation of automatic quality metrics. This thesis develops models, methods, and algorithms for evaluating and improving LLM robustness to adversarial input sequence variations. We propose R_stab(f), a generative ro…",
+   "url": "http://arxiv.org/abs/2610.02432v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T19:57:56Z",
+   "nodes": [
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "12f0l9f",
+   "title": "MIRROR: Multipath Quorum Integrity for LLM Multi-Agent Communication",
+   "summary": "Inter-agent communication is central to Large Language Model Multi-Agent Systems (LLM-MAS), but it introduces an underexplored vulnerability: Agent-in-the-Middle (AiTM) attacks that manipulate messages in transit without compromising the agents themselves. Prior work reports Attack Success Rates (ASR) approaching 100%…",
+   "url": "http://arxiv.org/abs/2610.02349v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T18:22:22Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "yfgiv8",
+   "title": "MosaiChunk: Compositing Spatio-Temporal Memory for Autoregressive Video Generation",
+   "summary": "Long-horizon autoregressive video generation is limited by a finite context window. When an object or scene falls out of context, its fine-grained visual details may be lost and difficult to recover upon reappearance. To retain access to such visual details, we introduce MosaiChunk, a spatio-temporal memory mechanism…",
+   "url": "http://arxiv.org/abs/2610.02153v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-01T17:51:05Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
   },
   {
    "id": "hzvm6i",
@@ -440,6 +732,23 @@
    ],
    "relevance": 3,
    "application": true
+  },
+  {
+   "id": "1euvjgd",
+   "title": "Blog HN: Claude Code Making an Ass Out of You and Me",
+   "summary": "",
+   "url": "https://news.ycombinator.com/item?id=48763592",
+   "discussion": "https://news.ycombinator.com/item?id=48763592",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "3 pts",
+   "date": "2026-07-02T16:08:17Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": false
   },
   {
    "id": "1f7bdas",
@@ -1090,6 +1399,28 @@
   }
  ],
  "byNode": {
+  "c-memory": [
+   "h32ui1",
+   "1furdo9"
+  ],
+  "a-tools": [
+   "1dktbhi"
+  ],
+  "s-models": [
+   "xjeu04",
+   "l22v37",
+   "1qiyj9s",
+   "1kthjel",
+   "1b9pv7a"
+  ],
+  "s-guardrails": [
+   "rnpaeu",
+   "145guro",
+   "icmpg3",
+   "1vyzb0t",
+   "3hac4g",
+   "1v82se7"
+  ],
   "a-managed": [
    "1maeyx6",
    "1c6q1us",
@@ -1097,6 +1428,29 @@
    "1au9ipo",
    "1v82se7",
    "5cjbao"
+  ],
+  "c-retrieval": [
+   "1ek9dmt",
+   "cadk06",
+   "1a89hn0"
+  ],
+  "a-teams": [
+   "jbbuik",
+   "hbzqqw",
+   "145guro",
+   "jt5bb7",
+   "12f0l9f"
+  ],
+  "c-longctx": [
+   "kb0o2g",
+   "1lr11fm",
+   "freiee",
+   "px27h4",
+   "yfgiv8",
+   "81dij"
+  ],
+  "c-editing": [
+   "kb0o2g"
   ],
   "f-artifacts": [
    "hzvm6i"
@@ -1107,14 +1461,6 @@
    "13xt578",
    "qqjnqh",
    "1qkiriu"
-  ],
-  "s-guardrails": [
-   "1vyzb0t",
-   "3hac4g",
-   "1v82se7"
-  ],
-  "c-retrieval": [
-   "1a89hn0"
   ],
   "k-cli": [
    "hzhlbu",
@@ -1128,7 +1474,8 @@
    "1v41iem",
    "11wcs",
    "8kcnsx",
-   "9m1dvn"
+   "9m1dvn",
+   "1euvjgd"
   ],
   "a-mcp": [
    "5envg7",
@@ -1153,17 +1500,9 @@
    "12tiait",
    "m0mnu"
   ],
-  "c-memory": [
-   "1furdo9"
-  ],
   "k-claudemd": [
    "f9yd9e",
    "1qiyj9s"
-  ],
-  "s-models": [
-   "1qiyj9s",
-   "1kthjel",
-   "1b9pv7a"
   ],
   "r-thinking": [
    "1b9pv7a"
@@ -1184,9 +1523,6 @@
   "k-hooks": [
    "1157ob5"
   ],
-  "c-longctx": [
-   "81dij"
-  ],
   "s-deploy": [
    "81dij"
   ],
@@ -1200,12 +1536,36 @@
  },
  "applications": [
   {
+   "id": "rnpaeu",
+   "node": "s-guardrails",
+   "nodeTitle": "Refusals & Fallbacks",
+   "discipline": "scale",
+   "title": "RAISED: Self-Distillation for Robustness to Prompt Injection in LLM Agents",
+   "url": "http://arxiv.org/abs/2610.06401v1"
+  },
+  {
    "id": "1maeyx6",
    "node": "a-managed",
    "nodeTitle": "Managed Agents",
    "discipline": "agents",
    "title": "Show HN: Vibivibi – End-to-end encrypted sharing of Coding Agent sessions",
    "url": "https://vibivibi.com/"
+  },
+  {
+   "id": "hbzqqw",
+   "node": "a-teams",
+   "nodeTitle": "Agent Teams & Orchestration",
+   "discipline": "agents",
+   "title": "Agentic-ZTA: A Multi-Agent Architecture for Autonomous Zero Trust Enforcement",
+   "url": "http://arxiv.org/abs/2610.05782v1"
+  },
+  {
+   "id": "icmpg3",
+   "node": "s-guardrails",
+   "nodeTitle": "Refusals & Fallbacks",
+   "discipline": "scale",
+   "title": "Evaluating and Improving the Robustness of Large Language Models to Input Sequence Variations",
+   "url": "http://arxiv.org/abs/2610.02432v1"
   },
   {
    "id": "hzvm6i",
