@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-08T13:25:22.758Z",
+ "generated": "2026-10-08T23:19:03.780Z",
  "itemCount": 80,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 564,
-   "kept": 198
+   "fetched": 601,
+   "kept": 201
   },
   {
    "id": "python-sdk-changelog",
@@ -736,22 +736,6 @@
    "application": false
   },
   {
-   "id": "1f7bdas",
-   "title": "Changed MCP server alwaysLoad: false to defer all of that server's tools behind tool search",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.287",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 24,
-   "application": false
-  },
-  {
    "id": "1qiyj9s",
    "title": "Changed /code-review at medium effort to also report cleanup and CLAUDE.md conventions findings on models without tuned review settings, including Opus 5.5 and Sonnet 5.5",
    "summary": "",
@@ -801,21 +785,115 @@
    "application": false
   },
   {
-   "id": "1b9pv7a",
-   "title": "Fixed switching between Opus 5.5 and Sonnet 5.5 (/model, opusplan) rewriting earlier MCP tool announcements, which could drop earlier extended thinking",
+   "id": "1cs60m0",
+   "title": "Fixed remote MCP servers in headless and SDK sessions staying disconnected after an outage longer than 15 seconds, or reconnecting in a tight loop to a server that drops each connection right after it connects; repeated…",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.287",
+   "badge": "2.1.295",
    "date": null,
    "nodes": [
-    "s-models",
-    "r-thinking",
     "a-mcp"
    ],
-   "relevance": 21,
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1l0p8p4",
+   "title": "Fixed MCP servers that repeat a pagination cursor being asked for the same page up to 20 times at every connect",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.295",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1wkjvra",
+   "title": "Fixed claude plugin marketplace add reporting success for a marketplace whose name no plugin can be installed under; such an add is now refused",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.295",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "e0pis5",
+   "title": "Fixed an interrupt not ending the turn until a timeout while Claude waited for an MCP server's resource list",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.295",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "oou94t",
+   "title": "Fixed plugin marketplaces whose repository has large git submodules failing to add or refresh: only the submodules that hold plugin files are now fetched",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.295",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "3f40y3",
+   "title": "Fixed non-interactive sessions telling you about MCP servers that need authentication when your request doesn't use them",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.295",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "ejtdxj",
+   "title": "Changed WebSocket (ws) MCP servers: a message over 16 MiB is no longer parsed and closes the connection, the limit the other transports already have",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.295",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
    "application": false
   },
   {
@@ -1077,87 +1155,6 @@
    "application": false
   },
   {
-   "id": "4x6v59",
-   "title": "Added URL prompts from MCP servers on the 2025-11-25 protocol, for example to sign in. If a server no longer connects after this update, add \"bareElicitationCapability\": true to its MCP config entry",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.287",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "nvbco0",
-   "title": "Fixed claude plugin marketplace add --sparse and git-subdir plugin installs failing with \"transport 'http' not allowed\" when the repository is served over plain http",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.287",
-   "date": null,
-   "nodes": [
-    "k-plugins"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "2s1j67",
-   "title": "Fixed headless sessions reporting an MCP server as needing authentication after one refused call, even though later calls succeed",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.287",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "3uqi5v",
-   "title": "Improved plugin marketplace errors to say in plain words why a marketplace was ignored or refused, and what to do",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.287",
-   "date": null,
-   "nodes": [
-    "k-plugins"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "81dij",
-   "title": "Changed Opus 4.7+ and Fable to use a 1M context window by default on Bedrock, Vertex, Foundry and the Claude apps gateway, with no [1m] suffix (CLAUDE_CODE_DISABLE_1M_CONTEXT=1 keeps 200K)",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.287",
-   "date": null,
-   "nodes": [
-    "c-longctx",
-    "s-deploy"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
    "id": "14qu9u1",
    "title": "**api:** add Plugins and Plugin Marketplaces to the Admin API ([1baad3b](https://github.com/anthropics/anthropic-sdk-python/commit/1baad3b04df8fc5f1cbcf59bd2eca5e51d88c1e0))",
    "summary": "",
@@ -1409,8 +1406,7 @@
    "14fema",
    "1u63t52",
    "kb0o2g",
-   "q02vn",
-   "81dij"
+   "q02vn"
   ],
   "k-skills": [
    "4zh4qc",
@@ -1426,9 +1422,12 @@
   "a-mcp": [
    "1tlnnxf",
    "5envg7",
-   "1f7bdas",
    "xt6y0j",
-   "1b9pv7a",
+   "1cs60m0",
+   "1l0p8p4",
+   "e0pis5",
+   "3f40y3",
+   "ejtdxj",
    "1ebo1hp",
    "ziaixy",
    "1x5x49q",
@@ -1440,16 +1439,13 @@
    "13gaf2q",
    "1kx339a",
    "7pwxf5",
-   "4x6v59",
-   "2s1j67",
    "17hcvfv",
    "w2jlr8"
   ],
   "s-models": [
    "kbq0ks",
    "1qiyj9s",
-   "1kthjel",
-   "1b9pv7a"
+   "1kthjel"
   ],
   "a-managed": [
    "1maeyx6",
@@ -1491,21 +1487,17 @@
    "1qiyj9s",
    "146oifn"
   ],
-  "r-thinking": [
-   "1b9pv7a"
-  ],
   "k-plugins": [
+   "1wkjvra",
+   "oou94t",
    "1yv2nu1",
    "dz5e2d",
    "1864pgt",
-   "nvbco0",
-   "3uqi5v",
    "14qu9u1",
    "1hpfded"
   ],
   "s-deploy": [
-   "m3fujc",
-   "81dij"
+   "m3fujc"
   ],
   "a-subagents": [
    "1kx339a"
