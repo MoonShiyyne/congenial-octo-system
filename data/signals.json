@@ -1,27 +1,27 @@
 {
- "generated": "2026-10-09T13:13:09.955Z",
- "itemCount": 82,
+ "generated": "2026-10-09T22:36:04.728Z",
+ "itemCount": 81,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 601,
-   "kept": 201
+   "fetched": 591,
+   "kept": 193
   },
   {
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 84,
-   "kept": 20
+   "fetched": 71,
+   "kept": 16
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 85,
-   "kept": 22
+   "fetched": 77,
+   "kept": 19
   },
   {
    "id": "hn-mcp",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 52,
-   "kept": 11
+   "kept": 10
   },
   {
    "id": "hn-agents",
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "15ne7i1",
+   "title": "Show HN: Context Diet – trims tool output before it floods Claude Code's context",
+   "summary": "",
+   "url": "https://github.com/drkokorev/context-diet",
+   "discussion": "https://news.ycombinator.com/item?id=50024608",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "1 pts",
+   "date": "2026-10-09T18:18:26Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "717eaj",
    "title": "ORCAGen: Orchestrating Context-Aware Malware Deception with RAG-Guided Generative AI",
@@ -597,24 +614,6 @@
    "application": true
   },
   {
-   "id": "1c6q1us",
-   "title": "Show HN: Tuneloop – a local CLI for analyzing coding agent session transcripts",
-   "summary": "",
-   "url": "https://github.com/tuneloop/tuneloop",
-   "discussion": "https://news.ycombinator.com/item?id=49112195",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "5 pts",
-   "date": "2026-07-30T16:23:34Z",
-   "nodes": [
-    "k-cli",
-    "a-managed"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
    "id": "f9yd9e",
    "title": "Ask HN: How to rewrite `Claude.md` and install the skill for Opus5 and Fable5",
    "summary": "",
@@ -751,23 +750,6 @@
    "application": true
   },
   {
-   "id": "1euvjgd",
-   "title": "Blog HN: Claude Code Making an Ass Out of You and Me",
-   "summary": "",
-   "url": "https://news.ycombinator.com/item?id=48763592",
-   "discussion": "https://news.ycombinator.com/item?id=48763592",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "3 pts",
-   "date": "2026-07-02T16:08:17Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
    "id": "1qiyj9s",
    "title": "Changed /code-review at medium effort to also report cleanup and CLAUDE.md conventions findings on models without tuned review settings, including Opus 5.5 and Sonnet 5.5",
    "summary": "",
@@ -785,35 +767,116 @@
    "application": false
   },
   {
-   "id": "1kthjel",
-   "title": "Changed the client-side auto mode classifier to ignore an ANTHROPIC_DEFAULT_SONNET_MODEL pin that names Claude Sonnet 5.5 or Opus 5.5 and use Claude Sonnet 5 instead",
+   "id": "5i3es7",
+   "title": "Fixed managed-settings PreToolUse hooks that deny a tool call with \"continue\": false, and managed prompt hooks that block one, refusing the call but not ending the turn",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.288",
+   "badge": "2.1.296",
    "date": null,
    "nodes": [
-    "s-models"
+    "k-hooks"
    ],
-   "relevance": 21,
+   "relevance": 18,
    "application": false
   },
   {
-   "id": "xt6y0j",
-   "title": "[VSCode] Fixed a claude.ai connector staying on \"Needs authentication\" after you authorize it: the MCP servers dialog now offers Check connection",
+   "id": "1tsj1yk",
+   "title": "Fixed PostToolUse hooks in managed settings not applying updatedMCPToolOutput in some sessions",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.288",
+   "badge": "2.1.296",
+   "date": null,
+   "nodes": [
+    "k-hooks",
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1ahnqfx",
+   "title": "Fixed headless sessions starting a folder's .mcp.json or plugin MCP server that was switched off for that folder, after changing directory or reloading plugins",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.296",
    "date": null,
    "nodes": [
     "a-mcp"
    ],
-   "relevance": 21,
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "daq1z8",
+   "title": "Fixed claude plugin marketplace add, marketplace update and plugin install failing with an internal error for a marketplace named like constructor; add now refuses such names clearly",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.296",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1iyeya7",
+   "title": "Fixed Claude calling cloud sessions non-interactive and suggesting /mcp or claude mcp when an MCP server needs authentication",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.296",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "12v8p07",
+   "title": "Windows: Fixed stdio MCP servers being force-killed at shutdown; stdin now closes first and the process tree is killed only if the server is still running after 300 ms",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.296",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1g0r4mg",
+   "title": "Changed the default limit on MCP tool descriptions sent up front and on MCP server instructions from 2,048 to 4,096 characters",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.296",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
    "application": false
   },
   {
@@ -1106,87 +1169,6 @@
    "application": false
   },
   {
-   "id": "13gaf2q",
-   "title": "Added a re-authenticate prompt when an MCP server asks for more OAuth scope during a tool call",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.288",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1kx339a",
-   "title": "Fixed subagents in Claude Desktop's Code tab getting none of the tools of a user-configured MCP server named memory",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.288",
-   "date": null,
-   "nodes": [
-    "a-mcp",
-    "a-subagents"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1864pgt",
-   "title": "Fixed owner/repo plugin marketplaces showing only the second attempt's error when both the SSH and HTTPS fetch fail; both errors are now shown, with the transport tried first on top",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.288",
-   "date": null,
-   "nodes": [
-    "k-plugins"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1157ob5",
-   "title": "Fixed PreToolUse and PermissionRequest hooks being skipped when matching them failed or the tool's input could not be serialized to JSON; the call is now blocked",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.288",
-   "date": null,
-   "nodes": [
-    "k-hooks"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "7pwxf5",
-   "title": "Improved cloud sessions: a new conversation's first turn no longer waits for a stdio MCP server whose config sets alwaysLoad: false",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.288",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
    "id": "14qu9u1",
    "title": "**api:** add Plugins and Plugin Marketplaces to the Admin API ([1baad3b](https://github.com/anthropics/anthropic-sdk-python/commit/1baad3b04df8fc5f1cbcf59bd2eca5e51d88c1e0))",
    "summary": "",
@@ -1216,6 +1198,23 @@
     "k-plugins"
    ],
    "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "1lvna2l",
+   "title": "**api:** add workflows, multiagent configuration and thread status filtering to Managed Agents",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[1.13.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.12.1...v1.13.0)",
+   "date": null,
+   "nodes": [
+    "a-teams",
+    "a-managed"
+   ],
+   "relevance": 6,
    "application": false
   },
   {
@@ -1301,17 +1300,34 @@
    "application": false
   },
   {
-   "id": "17hcvfv",
-   "title": "**api:** MCP tunnels beta: add read-only transport object to Tunnel and return the one-time relay token in the create response ([88718ff](https://github.com/anthropics/anthropic-sdk-python/commit/88718ff4bdfab22f256b12e…",
+   "id": "1xqla26",
+   "title": "**api:** add workflows, multiagent configuration and thread status filtering to Managed Agents",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "1.10.0",
+   "badge": "[0.133.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.132.1...sdk-v0.133.0)",
    "date": null,
    "nodes": [
-    "a-mcp"
+    "a-teams",
+    "a-managed"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "jbw7na",
+   "title": "**internal:** remove the next branch rule from CLAUDE.md",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "[0.133.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.132.1...sdk-v0.133.0)",
+   "date": null,
+   "nodes": [
+    "k-claudemd"
    ],
    "relevance": 6,
    "application": false
@@ -1380,41 +1396,24 @@
    ],
    "relevance": 6,
    "application": false
-  },
-  {
-   "id": "w2jlr8",
-   "title": "**tests:** run the skipped MCP resource upload test ([#888](https://github.com/anthropics/anthropic-sdk-typescript/issues/888)) ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7c…",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "0.132.0",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "yupqjx",
-   "title": "**examples:** show initial_events when creating a Managed Agents session ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "0.132.0",
-   "date": null,
-   "nodes": [
-    "a-managed"
-   ],
-   "relevance": 6,
-   "application": false
   }
  ],
  "byNode": {
+  "k-cli": [
+   "15ne7i1",
+   "125gz7p",
+   "hzhlbu",
+   "yq92q5",
+   "hbx7k7",
+   "13xt578",
+   "186d7xe",
+   "1cc8uxk",
+   "1ledpgp",
+   "1v41iem",
+   "11wcs",
+   "8kcnsx",
+   "9m1dvn"
+  ],
   "c-retrieval": [
    "717eaj",
    "3vk182",
@@ -1427,8 +1426,7 @@
    "o24vc8",
    "jm5up0",
    "omcwq1",
-   "1qiyj9s",
-   "1kthjel"
+   "1qiyj9s"
   ],
   "a-tools": [
    "54o848"
@@ -1438,24 +1436,10 @@
    "19yruop",
    "h4sw63",
    "bslt5j",
+   "1lvna2l",
    "y02v1v",
+   "1xqla26",
    "v2id6z"
-  ],
-  "k-cli": [
-   "125gz7p",
-   "hzhlbu",
-   "yq92q5",
-   "hbx7k7",
-   "13xt578",
-   "186d7xe",
-   "1c6q1us",
-   "1cc8uxk",
-   "1ledpgp",
-   "1v41iem",
-   "11wcs",
-   "8kcnsx",
-   "9m1dvn",
-   "1euvjgd"
   ],
   "c-longctx": [
    "10bxj6f",
@@ -1470,7 +1454,11 @@
   "a-mcp": [
    "1tlnnxf",
    "5envg7",
-   "xt6y0j",
+   "1tsj1yk",
+   "1ahnqfx",
+   "1iyeya7",
+   "12v8p07",
+   "1g0r4mg",
    "1cs60m0",
    "1l0p8p4",
    "e0pis5",
@@ -1483,23 +1471,18 @@
    "6ldq8k",
    "1mpse4d",
    "1jv6270",
-   "yfcsv3",
-   "13gaf2q",
-   "1kx339a",
-   "7pwxf5",
-   "17hcvfv",
-   "w2jlr8"
+   "yfcsv3"
   ],
   "a-managed": [
    "1maeyx6",
-   "1c6q1us",
+   "1lvna2l",
    "1cbyefz",
    "y02v1v",
    "3hac4g",
    "1au9ipo",
+   "1xqla26",
    "1ub95d3",
-   "v2id6z",
-   "yupqjx"
+   "v2id6z"
   ],
   "f-artifacts": [
    "hzvm6i"
@@ -1521,25 +1504,24 @@
   "k-claudemd": [
    "f9yd9e",
    "1qiyj9s",
+   "jbw7na",
    "146oifn"
   ],
+  "k-hooks": [
+   "5i3es7",
+   "1tsj1yk"
+  ],
   "k-plugins": [
+   "daq1z8",
    "1wkjvra",
    "oou94t",
    "1yv2nu1",
    "dz5e2d",
-   "1864pgt",
    "14qu9u1",
    "1hpfded"
   ],
   "s-deploy": [
    "m3fujc"
-  ],
-  "a-subagents": [
-   "1kx339a"
-  ],
-  "k-hooks": [
-   "1157ob5"
   ],
   "a-servertools": [
    "h5o8w2",
@@ -1547,6 +1529,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "15ne7i1",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Context Diet – trims tool output before it floods Claude Code's context",
+   "url": "https://github.com/drkokorev/context-diet"
+  },
   {
    "id": "1tlnnxf",
    "node": "a-mcp",
@@ -1658,14 +1648,6 @@
    "discipline": "code",
    "title": "Show HN: Ski – Voice Coding for Claude Code, Codex and More – On-Device – Free",
    "url": "https://heyski.io/"
-  },
-  {
-   "id": "1c6q1us",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Tuneloop – a local CLI for analyzing coding agent session transcripts",
-   "url": "https://github.com/tuneloop/tuneloop"
   },
   {
    "id": "1cc8uxk",
