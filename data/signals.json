@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-09T22:36:04.728Z",
+ "generated": "2026-10-10T05:48:50.423Z",
  "itemCount": 81,
  "sourceStatus": [
   {
@@ -67,23 +67,6 @@
   }
  ],
  "items": [
-  {
-   "id": "15ne7i1",
-   "title": "Show HN: Context Diet – trims tool output before it floods Claude Code's context",
-   "summary": "",
-   "url": "https://github.com/drkokorev/context-diet",
-   "discussion": "https://news.ycombinator.com/item?id=50024608",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "1 pts",
-   "date": "2026-10-09T18:18:26Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
-   "application": true
-  },
   {
    "id": "717eaj",
    "title": "ORCAGen: Orchestrating Context-Aware Malware Deception with RAG-Guided Generative AI",
@@ -609,6 +592,24 @@
    "date": "2026-07-30T18:10:04Z",
    "nodes": [
     "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "1c6q1us",
+   "title": "Show HN: Tuneloop – a local CLI for analyzing coding agent session transcripts",
+   "summary": "",
+   "url": "https://github.com/tuneloop/tuneloop",
+   "discussion": "https://news.ycombinator.com/item?id=49112195",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "5 pts",
+   "date": "2026-07-30T16:23:34Z",
+   "nodes": [
+    "k-cli",
+    "a-managed"
    ],
    "relevance": 3,
    "application": true
@@ -1399,21 +1400,6 @@
   }
  ],
  "byNode": {
-  "k-cli": [
-   "15ne7i1",
-   "125gz7p",
-   "hzhlbu",
-   "yq92q5",
-   "hbx7k7",
-   "13xt578",
-   "186d7xe",
-   "1cc8uxk",
-   "1ledpgp",
-   "1v41iem",
-   "11wcs",
-   "8kcnsx",
-   "9m1dvn"
-  ],
   "c-retrieval": [
    "717eaj",
    "3vk182",
@@ -1440,6 +1426,21 @@
    "y02v1v",
    "1xqla26",
    "v2id6z"
+  ],
+  "k-cli": [
+   "125gz7p",
+   "hzhlbu",
+   "yq92q5",
+   "hbx7k7",
+   "13xt578",
+   "186d7xe",
+   "1c6q1us",
+   "1cc8uxk",
+   "1ledpgp",
+   "1v41iem",
+   "11wcs",
+   "8kcnsx",
+   "9m1dvn"
   ],
   "c-longctx": [
    "10bxj6f",
@@ -1475,6 +1476,7 @@
   ],
   "a-managed": [
    "1maeyx6",
+   "1c6q1us",
    "1lvna2l",
    "1cbyefz",
    "y02v1v",
@@ -1529,14 +1531,6 @@
   ]
  },
  "applications": [
-  {
-   "id": "15ne7i1",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Context Diet – trims tool output before it floods Claude Code's context",
-   "url": "https://github.com/drkokorev/context-diet"
-  },
   {
    "id": "1tlnnxf",
    "node": "a-mcp",
@@ -1648,6 +1642,14 @@
    "discipline": "code",
    "title": "Show HN: Ski – Voice Coding for Claude Code, Codex and More – On-Device – Free",
    "url": "https://heyski.io/"
+  },
+  {
+   "id": "1c6q1us",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Tuneloop – a local CLI for analyzing coding agent session transcripts",
+   "url": "https://github.com/tuneloop/tuneloop"
   },
   {
    "id": "1cc8uxk",
