@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-12T05:53:00.407Z",
- "itemCount": 78,
+ "generated": "2026-10-12T15:18:35.948Z",
+ "itemCount": 77,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 11
+   "kept": 10
   },
   {
    "id": "arxiv-agents",
@@ -542,23 +542,6 @@
    "nodes": [
     "k-cli",
     "k-skills"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "186d7xe",
-   "title": "Show HN: Ski – Voice Coding for Claude Code, Codex and More – On-Device – Free",
-   "summary": "",
-   "url": "https://heyski.io/",
-   "discussion": "https://news.ycombinator.com/item?id=49113559",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "15 pts",
-   "date": "2026-07-30T18:10:04Z",
-   "nodes": [
-    "k-cli"
    ],
    "relevance": 3,
    "application": true
@@ -1434,7 +1417,6 @@
    "yq92q5",
    "hbx7k7",
    "13xt578",
-   "186d7xe",
    "1cc8uxk",
    "1ledpgp",
    "1v41iem",
@@ -1594,14 +1576,6 @@
    "url": "https://github.com/wienerdog-ai/wienerdog/"
   },
   {
-   "id": "186d7xe",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Ski – Voice Coding for Claude Code, Codex and More – On-Device – Free",
-   "url": "https://heyski.io/"
-  },
-  {
    "id": "1cc8uxk",
    "node": "k-cli",
    "nodeTitle": "Claude Code",
@@ -1663,6 +1637,14 @@
    "nodeTitle": "MCP",
    "discipline": "agents",
    "title": "Improved startup of claude -p and SDK sessions: the first turn no longer waits for HTTP and SSE MCP servers to answer resources/list",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+  },
+  {
+   "id": "1x5x49q",
+   "node": "a-mcp",
+   "nodeTitle": "MCP",
+   "discipline": "agents",
+   "title": "Improved startup with local (stdio) MCP servers that ignore the newer protocol check: after one slow connect they are remembered for 7 days and connected the older way without the wait",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   }
  ]
