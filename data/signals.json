@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T00:37:19.722Z",
+ "generated": "2026-10-13T14:07:59.411Z",
  "itemCount": 77,
  "sourceStatus": [
   {
@@ -34,8 +34,8 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 51,
-   "kept": 10
+   "fetched": 50,
+   "kept": 9
   },
   {
    "id": "hn-agents",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 10
+   "kept": 11
   },
   {
    "id": "arxiv-agents",
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "1tnpag7",
+   "title": "Show HN: Ret – An inbox and canvas for your Codex and Claude Code agents",
+   "summary": "",
+   "url": "https://getret.app/",
+   "discussion": "https://news.ycombinator.com/item?id=50069764",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "2 pts",
+   "date": "2026-10-13T11:02:22Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "1ibsrv8",
    "title": "OccludeBench: Can VLMs Find What's Missing?",
@@ -661,23 +678,6 @@
    "date": "2026-07-08T14:08:48Z",
    "nodes": [
     "k-skills"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "9m1dvn",
-   "title": "Show HN: Make your terminal pulse orange when Claude Code needs input",
-   "summary": "",
-   "url": "https://github.com/rickardstureborg/claude-needs-input",
-   "discussion": "https://news.ycombinator.com/item?id=48778710",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "3 pts",
-   "date": "2026-07-03T19:04:49Z",
-   "nodes": [
-    "k-cli"
    ],
    "relevance": 3,
    "application": true
@@ -1332,6 +1332,18 @@
   }
  ],
  "byNode": {
+  "k-cli": [
+   "1tnpag7",
+   "hzhlbu",
+   "yq92q5",
+   "hbx7k7",
+   "13xt578",
+   "1cc8uxk",
+   "1ledpgp",
+   "1v41iem",
+   "11wcs",
+   "8kcnsx"
+  ],
   "s-models": [
    "1ibsrv8",
    "46ep7d",
@@ -1412,18 +1424,6 @@
   "f-artifacts": [
    "hzvm6i"
   ],
-  "k-cli": [
-   "hzhlbu",
-   "yq92q5",
-   "hbx7k7",
-   "13xt578",
-   "1cc8uxk",
-   "1ledpgp",
-   "1v41iem",
-   "11wcs",
-   "8kcnsx",
-   "9m1dvn"
-  ],
   "c-memory": [
    "1furdo9"
   ],
@@ -1455,6 +1455,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "1tnpag7",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Ret – An inbox and canvas for your Codex and Claude Code agents",
+   "url": "https://getret.app/"
+  },
   {
    "id": "1ibsrv8",
    "node": "s-models",
@@ -1622,14 +1630,6 @@
    "discipline": "code",
    "title": "Show HN: Dex – Cost-aware analytics engineering skills for agents",
    "url": "https://github.com/exmergo/dex"
-  },
-  {
-   "id": "9m1dvn",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Make your terminal pulse orange when Claude Code needs input",
-   "url": "https://github.com/rickardstureborg/claude-needs-input"
   },
   {
    "id": "ziaixy",
