@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-13T14:07:59.411Z",
- "itemCount": 77,
+ "generated": "2026-10-13T22:42:18.365Z",
+ "itemCount": 76,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 11
+   "kept": 10
   },
   {
    "id": "arxiv-agents",
@@ -526,23 +526,6 @@
     "k-cli"
    ],
    "relevance": 5,
-   "application": true
-  },
-  {
-   "id": "hbx7k7",
-   "title": "Show HN: AgentCodeGUI – Multi-Account Desktop GUI for Claude Code and Codex",
-   "summary": "",
-   "url": "https://github.com/UnrealFactory/AgentCodeGUI",
-   "discussion": "https://news.ycombinator.com/item?id=49154498",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "1 pts",
-   "date": "2026-08-03T11:48:18Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
    "application": true
   },
   {
@@ -1336,7 +1319,6 @@
    "1tnpag7",
    "hzhlbu",
    "yq92q5",
-   "hbx7k7",
    "13xt578",
    "1cc8uxk",
    "1ledpgp",
@@ -1566,14 +1548,6 @@
    "discipline": "code",
    "title": "Show HN: A faster coding agent than Codex and Claude Code",
    "url": "https://www.codewithbullet.com"
-  },
-  {
-   "id": "hbx7k7",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: AgentCodeGUI – Multi-Account Desktop GUI for Claude Code and Codex",
-   "url": "https://github.com/UnrealFactory/AgentCodeGUI"
   },
   {
    "id": "13xt578",
