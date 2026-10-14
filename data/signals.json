@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14T04:49:48.419Z",
+ "generated": "2026-10-14T11:48:29.059Z",
  "itemCount": 78,
  "sourceStatus": [
   {
@@ -34,7 +34,7 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 50,
+   "fetched": 51,
    "kept": 9
   },
   {
@@ -56,7 +56,7 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 14
+   "kept": 12
   },
   {
    "id": "arxiv-eval",
@@ -67,6 +67,71 @@
   }
  ],
  "items": [
+  {
+   "id": "zobato",
+   "title": "SEAR: Self-Evolving Agentic Robotics",
+   "summary": "Frontier language-model agents can now improve robots on their own: they write control code, test it, and keep what works as skills and memories for the next task. We introduce SEAR (Self-Evolving Agentic Robotics), a framework and benchmark built around two questions. Is the agent really learning, or just trying more…",
+   "url": "http://arxiv.org/abs/2610.18792v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-13T17:40:20Z",
+   "nodes": [
+    "k-skills",
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "b5zrnr",
+   "title": "Knowledge Graphs as Files: An Agent Harness Where Tool Creation and Tool Use Co-Evolve",
+   "summary": "Searching text-rich knowledge graphs requires following relations while examining textual evidence. Predefined graph interfaces constrain what evidence agents can access, even when they write code to combine tool calls or process retrieved subgraphs. We propose direct knowledge graph interaction (DKGI), a harness in w…",
+   "url": "http://arxiv.org/abs/2610.18616v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-13T16:00:50Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "8tz7an",
+   "title": "Reading Right, Acting Wrong: Diagnosing Decision Failures of System One Models in Agent Loops",
+   "summary": "System One models choose an agent's next action by scoring a supplied set of options in a single pass. This makes them fast and cheap, but when they choose wrongly there is nothing to inspect: did the model misread what the agent has seen, or read it correctly and still act wrongly? We answer behaviorally. On a frozen…",
+   "url": "http://arxiv.org/abs/2610.18579v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-13T15:43:30Z",
+   "nodes": [
+    "a-runner"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1tx77e0",
+   "title": "Configuring RAG Systems: What Breaks, Where Originates, and How to Fix",
+   "summary": "Retrieval-Augmented Generation (RAG) has emerged as a dominant paradigm for improving Large Language Model (LLM) by intertwining it with other components, such as a vector/graph database. Therefore, the resulting RAG systems are often highly configurable, under which a non-trivial amount of failures are related to the…",
+   "url": "http://arxiv.org/abs/2610.18567v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-13T15:37:27Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "1lclnir",
    "title": "Lost in Implicit Routing: How LLM Agents Fail to Load Relevant Skills at Scale",
@@ -133,23 +198,6 @@
    "application": false
   },
   {
-   "id": "1tnpag7",
-   "title": "Show HN: Ret – An inbox and canvas for your Codex and Claude Code agents",
-   "summary": "",
-   "url": "https://getret.app/",
-   "discussion": "https://news.ycombinator.com/item?id=50069764",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "2 pts",
-   "date": "2026-10-13T11:02:22Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
    "id": "17kg4g8",
    "title": "Can Agents Forget When Asked? A Benchmark for Memory Unlearning in LLM Agents",
    "summary": "Long-term memory has become a core component of large language model (LLM) agents. As agents accumulate personal information over long-term use, users increasingly ask them to delete sensitive or outdated facts. A memory system should honor such requests. It should remove exactly what was requested and keep the rest o…",
@@ -177,71 +225,6 @@
    "date": "2026-10-13T09:16:24Z",
    "nodes": [
     "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "q4ppxa",
-   "title": "Agent-Reflex: Teaching Language Agents to Act Reflectively",
-   "summary": "Large language models have evolved from single-turn chatbots into interactive agents capable of long-horizon reasoning. In real deployments, MCP tool services can return noisy feedback and users may intervene to correct the agent, but existing methods provide limited supervision for reflection learning and failure rec…",
-   "url": "http://arxiv.org/abs/2610.17953v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-13T08:36:20Z",
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1wq0rqr",
-   "title": "Training LLMs for Multi-Agent Collaboration with Verifiable Information Rewards",
-   "summary": "Effective collaboration among large language model (LLM) agents in multi-agent systems requires sharing relevant evidence, requesting missing information, and incorporating teammates' contributions into decisions. Training these behaviors is challenging because final task outcomes provide limited feedback on the value…",
-   "url": "http://arxiv.org/abs/2610.17893v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-13T07:46:48Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "y7fuhw",
-   "title": "Socratic Skill Learning: Interleaving Teaching and Practice for Transferable Agent Skills",
-   "summary": "Agent Skills improve LLM agents by making task knowledge reusable across sessions. Learning transferable Skills requires evidence about a procedure and its conditions of use, which a successful task attempt can leave untested. We introduce Socratic Skill Learning (SSL), which interleaves expert teaching with Student p…",
-   "url": "http://arxiv.org/abs/2610.17860v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-13T07:23:34Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "15izxl3",
-   "title": "ProtoArena: Can AI Agents Discover and Exploit Real-World Cross-Component Protocol Vulnerabilities?",
-   "summary": "Large language model (LLM) agents are increasingly used for vulnerability analysis, yet existing benchmarks provide limited coverage of exploitation that depends on interactions among network protocol components. Such vulnerabilities arise from inconsistencies in message interpretation, timing, state, or trust assumpt…",
-   "url": "http://arxiv.org/abs/2610.17837v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-13T06:56:32Z",
-   "nodes": [
-    "c-retrieval",
-    "s-models"
    ],
    "relevance": 3,
    "application": false
@@ -559,6 +542,23 @@
     "k-cli"
    ],
    "relevance": 5,
+   "application": true
+  },
+  {
+   "id": "hbx7k7",
+   "title": "Show HN: AgentCodeGUI – Multi-Account Desktop GUI for Claude Code and Codex",
+   "summary": "",
+   "url": "https://github.com/UnrealFactory/AgentCodeGUI",
+   "discussion": "https://news.ycombinator.com/item?id=49154498",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "1 pts",
+   "date": "2026-08-03T11:48:18Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
    "application": true
   },
   {
@@ -1349,48 +1349,52 @@
  ],
  "byNode": {
   "k-skills": [
+   "zobato",
    "1lclnir",
    "1yry2c4",
-   "y7fuhw",
    "bkmagq",
    "1g5lpqi",
    "13xt578",
    "qqjnqh"
   ],
+  "s-models": [
+   "zobato",
+   "17kg4g8",
+   "rzfae6",
+   "1qiyj9s"
+  ],
   "a-tools": [
+   "b5zrnr",
    "f1ulc7"
   ],
-  "c-files": [
-   "2rr6no"
+  "a-runner": [
+   "8tz7an"
   ],
   "c-retrieval": [
+   "1tx77e0",
    "2rr6no",
    "1da6hlm",
-   "15izxl3",
    "6jz00x",
    "c89t98",
    "717eaj",
    "1a89hn0"
   ],
-  "k-cli": [
-   "1tnpag7",
-   "hzhlbu",
-   "yq92q5",
-   "13xt578",
-   "1cc8uxk",
-   "1ledpgp",
-   "1v41iem",
-   "11wcs",
-   "8kcnsx"
+  "c-files": [
+   "2rr6no"
   ],
-  "s-models": [
-   "17kg4g8",
-   "15izxl3",
-   "rzfae6",
-   "1qiyj9s"
+  "s-guardrails": [
+   "1fmvfzh",
+   "1vyzb0t",
+   "3hac4g"
+  ],
+  "c-longctx": [
+   "tba7d3",
+   "r28f4p"
+  ],
+  "f-generative": [
+   "kvdyph"
   ],
   "a-mcp": [
-   "q4ppxa",
    "1tlnnxf",
    "5envg7",
    "c68jre",
@@ -1414,25 +1418,6 @@
    "e0pis5",
    "3f40y3"
   ],
-  "a-teams": [
-   "1wq0rqr",
-   "1lvna2l",
-   "y02v1v",
-   "1xqla26",
-   "v2id6z"
-  ],
-  "s-guardrails": [
-   "1fmvfzh",
-   "1vyzb0t",
-   "3hac4g"
-  ],
-  "c-longctx": [
-   "tba7d3",
-   "r28f4p"
-  ],
-  "f-generative": [
-   "kvdyph"
-  ],
   "a-managed": [
    "1maeyx6",
    "1lvna2l",
@@ -1446,6 +1431,17 @@
   ],
   "f-artifacts": [
    "hzvm6i"
+  ],
+  "k-cli": [
+   "hzhlbu",
+   "yq92q5",
+   "hbx7k7",
+   "13xt578",
+   "1cc8uxk",
+   "1ledpgp",
+   "1v41iem",
+   "11wcs",
+   "8kcnsx"
   ],
   "c-memory": [
    "1furdo9"
@@ -1471,20 +1467,18 @@
    "14qu9u1",
    "1hpfded"
   ],
+  "a-teams": [
+   "1lvna2l",
+   "y02v1v",
+   "1xqla26",
+   "v2id6z"
+  ],
   "a-servertools": [
    "h5o8w2",
    "g89lau"
   ]
  },
  "applications": [
-  {
-   "id": "1tnpag7",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Ret – An inbox and canvas for your Codex and Claude Code agents",
-   "url": "https://getret.app/"
-  },
   {
    "id": "kvdyph",
    "node": "f-generative",
@@ -1588,6 +1582,14 @@
    "discipline": "code",
    "title": "Show HN: A faster coding agent than Codex and Claude Code",
    "url": "https://www.codewithbullet.com"
+  },
+  {
+   "id": "hbx7k7",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: AgentCodeGUI – Multi-Account Desktop GUI for Claude Code and Codex",
+   "url": "https://github.com/UnrealFactory/AgentCodeGUI"
   },
   {
    "id": "13xt578",
