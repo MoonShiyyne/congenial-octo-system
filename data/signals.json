@@ -1,27 +1,27 @@
 {
- "generated": "2026-10-14T17:07:42.138Z",
- "itemCount": 78,
+ "generated": "2026-10-14T21:38:59.625Z",
+ "itemCount": 79,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 754,
-   "kept": 258
+   "fetched": 652,
+   "kept": 225
   },
   {
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 71,
-   "kept": 16
+   "fetched": 67,
+   "kept": 14
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
    "fetched": 77,
-   "kept": 19
+   "kept": 18
   },
   {
    "id": "hn-mcp",
@@ -34,8 +34,8 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 50,
-   "kept": 9
+   "fetched": 51,
+   "kept": 10
   },
   {
    "id": "hn-agents",
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "1ktme1w",
+   "title": "Show HN: VS Code Bridge for Claude Code",
+   "summary": "",
+   "url": "https://github.com/Klaster1/vscode-bridge-for-claude-code",
+   "discussion": "https://news.ycombinator.com/item?id=50089454",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "2 pts",
+   "date": "2026-10-14T15:42:45Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "1wgt1b8",
    "title": "Show HN: Merlin, Run Your Claude Code and Codex from Slack, Linear and GitHub",
@@ -699,6 +716,22 @@
    "application": true
   },
   {
+   "id": "o49b8v",
+   "title": "Fixed automatic tool search (ENABLE_TOOL_SEARCH=auto) turning off part-way through a conversation, for example while MCP servers reconnect after a resume",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.300",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 24,
+   "application": false
+  },
+  {
    "id": "c68jre",
    "title": "Fixed self-hosted runner sessions shutting down MCP servers added through an --exec-path wrapper's own --mcp-config when connectors change mid-session",
    "summary": "",
@@ -731,20 +764,36 @@
    "application": false
   },
   {
-   "id": "1qiyj9s",
-   "title": "Changed /code-review at medium effort to also report cleanup and CLAUDE.md conventions findings on models without tuned review settings, including Opus 5.5 and Sonnet 5.5",
+   "id": "9vi2u5",
+   "title": "Fixed Claude not being told about an MCP server's tools and instructions until its next tool call, when the server finished connecting after a compaction",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.290",
+   "badge": "2.1.300",
    "date": null,
    "nodes": [
-    "s-models",
-    "k-claudemd"
+    "a-mcp",
+    "c-editing"
    ],
-   "relevance": 21,
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "pihaid",
+   "title": "Changed hooks: updatedInput from PreToolUse and PermissionRequest hooks is now validated like Claude's own input: unknown keys are dropped, and input the tool rejects denies the call",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.300",
+   "date": null,
+   "nodes": [
+    "k-hooks"
+   ],
+   "relevance": 18,
    "application": false
   },
   {
@@ -1086,38 +1135,6 @@
    "application": false
   },
   {
-   "id": "oou94t",
-   "title": "Fixed plugin marketplaces whose repository has large git submodules failing to add or refresh: only the submodules that hold plugin files are now fetched",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.295",
-   "date": null,
-   "nodes": [
-    "k-plugins"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "3f40y3",
-   "title": "Fixed non-interactive sessions telling you about MCP servers that need authentication when your request doesn't use them",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.295",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
    "id": "14qu9u1",
    "title": "**api:** add Plugins and Plugin Marketplaces to the Admin API ([1baad3b](https://github.com/anthropics/anthropic-sdk-python/commit/1baad3b04df8fc5f1cbcf59bd2eca5e51d88c1e0))",
    "summary": "",
@@ -1147,6 +1164,54 @@
     "k-plugins"
    ],
    "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "a2lv6v",
+   "title": "**api:** add execution_identity to Managed Agents agents",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[1.14.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.13.0...v1.14.0)",
+   "date": null,
+   "nodes": [
+    "a-managed"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "sy29q9",
+   "title": "**api:** add telemetry destinations to the Admin API",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[1.14.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.13.0...v1.14.0)",
+   "date": null,
+   "nodes": [
+    "s-observability"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "i384h5",
+   "title": "**client:** add OpenTelemetry tracing for API calls, streaming and tool runs",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[1.14.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.13.0...v1.14.0)",
+   "date": null,
+   "nodes": [
+    "s-observability"
+   ],
+   "relevance": 6,
    "application": false
   },
   {
@@ -1199,51 +1264,49 @@
    "application": false
   },
   {
-   "id": "y02v1v",
-   "title": "**docs:** update Managed Agents multiagent and thread descriptions ([78d815d](https://github.com/anthropics/anthropic-sdk-python/commit/78d815d78b33cfea5f4aa78c57a30b341fa8ff42))",
+   "id": "1a0ehsc",
+   "title": "**api:** add execution_identity to Managed Agents agents",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "1.12.0",
+   "badge": "[0.134.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.133.0...sdk-v0.134.0)",
    "date": null,
    "nodes": [
-    "a-teams",
     "a-managed"
    ],
    "relevance": 6,
    "application": false
   },
   {
-   "id": "3hac4g",
-   "title": "**api:** add a refusal stop reason and stop_details to Managed Agents session idle events ([cba653f](https://github.com/anthropics/anthropic-sdk-python/commit/cba653fc52ed4a9b57108a0b1ae80d1f51fb46dd))",
+   "id": "1w436vi",
+   "title": "**api:** add telemetry destinations to the Admin API",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "1.10.0",
+   "badge": "[0.134.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.133.0...sdk-v0.134.0)",
    "date": null,
    "nodes": [
-    "a-managed",
-    "s-guardrails"
+    "s-observability"
    ],
    "relevance": 6,
    "application": false
   },
   {
-   "id": "1au9ipo",
-   "title": "**api:** add repository error types to Managed Agents session errors ([c682f7e](https://github.com/anthropics/anthropic-sdk-python/commit/c682f7e359e3367581a41829fdb51250dd51b0c3))",
+   "id": "4qt9ev",
+   "title": "move more shared rules into the shared part of CLAUDE.md",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "1.10.0",
+   "badge": "[0.134.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.133.0...sdk-v0.134.0)",
    "date": null,
    "nodes": [
-    "a-managed"
+    "k-claudemd"
    ],
    "relevance": 6,
    "application": false
@@ -1296,59 +1359,11 @@
    ],
    "relevance": 6,
    "application": false
-  },
-  {
-   "id": "1ub95d3",
-   "title": "**api:** add url_sources to the Managed Agents web_fetch tool config ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "0.132.0",
-   "date": null,
-   "nodes": [
-    "a-managed"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "g89lau",
-   "title": "**api:** add web search and code execution support to model capabilities ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "0.132.0",
-   "date": null,
-   "nodes": [
-    "a-servertools"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "v2id6z",
-   "title": "**docs:** update Managed Agents multiagent and thread descriptions ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "0.132.0",
-   "date": null,
-   "nodes": [
-    "a-teams",
-    "a-managed"
-   ],
-   "relevance": 6,
-   "application": false
   }
  ],
  "byNode": {
   "k-cli": [
+   "1ktme1w",
    "1wgt1b8",
    "hzhlbu",
    "yq92q5",
@@ -1371,8 +1386,7 @@
   "s-models": [
    "zobato",
    "17kg4g8",
-   "rzfae6",
-   "1qiyj9s"
+   "rzfae6"
   ],
   "a-tools": [
    "b5zrnr",
@@ -1395,8 +1409,7 @@
   ],
   "s-guardrails": [
    "1fmvfzh",
-   "1vyzb0t",
-   "3hac4g"
+   "1vyzb0t"
   ],
   "c-longctx": [
    "tba7d3",
@@ -1408,8 +1421,10 @@
   "a-mcp": [
    "1tlnnxf",
    "5envg7",
+   "o49b8v",
    "c68jre",
    "12eprqz",
+   "9vi2u5",
    "c0gsc6",
    "1ninn2b",
    "bp2fab",
@@ -1426,19 +1441,15 @@
    "1g0r4mg",
    "1cs60m0",
    "1l0p8p4",
-   "e0pis5",
-   "3f40y3"
+   "e0pis5"
   ],
   "a-managed": [
    "1maeyx6",
+   "a2lv6v",
    "1lvna2l",
    "1cbyefz",
-   "y02v1v",
-   "3hac4g",
-   "1au9ipo",
-   "1xqla26",
-   "1ub95d3",
-   "v2id6z"
+   "1a0ehsc",
+   "1xqla26"
   ],
   "f-artifacts": [
    "hzvm6i"
@@ -1448,37 +1459,50 @@
   ],
   "k-claudemd": [
    "f9yd9e",
-   "1qiyj9s",
+   "4qt9ev",
    "jbw7na",
    "146oifn"
   ],
-  "a-subagents": [
-   "1fyga0q"
+  "c-editing": [
+   "9vi2u5"
   ],
   "k-hooks": [
+   "pihaid",
    "jeqh8k",
    "5i3es7",
    "1tsj1yk"
   ],
+  "a-subagents": [
+   "1fyga0q"
+  ],
   "k-plugins": [
    "daq1z8",
    "1wkjvra",
-   "oou94t",
    "14qu9u1",
    "1hpfded"
   ],
+  "s-observability": [
+   "sy29q9",
+   "i384h5",
+   "1w436vi"
+  ],
   "a-teams": [
    "1lvna2l",
-   "y02v1v",
-   "1xqla26",
-   "v2id6z"
+   "1xqla26"
   ],
   "a-servertools": [
-   "h5o8w2",
-   "g89lau"
+   "h5o8w2"
   ]
  },
  "applications": [
+  {
+   "id": "1ktme1w",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: VS Code Bridge for Claude Code",
+   "url": "https://github.com/Klaster1/vscode-bridge-for-claude-code"
+  },
   {
    "id": "1wgt1b8",
    "node": "k-cli",
