@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14T11:48:29.059Z",
+ "generated": "2026-10-14T17:07:42.138Z",
  "itemCount": 78,
  "sourceStatus": [
   {
@@ -34,7 +34,7 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 51,
+   "fetched": 50,
    "kept": 9
   },
   {
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "1wgt1b8",
+   "title": "Show HN: Merlin, Run Your Claude Code and Codex from Slack, Linear and GitHub",
+   "summary": "",
+   "url": "https://usemerlin.ai",
+   "discussion": "https://news.ycombinator.com/item?id=50088088",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "1 pts",
+   "date": "2026-10-14T14:13:33Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "zobato",
    "title": "SEAR: Self-Evolving Agentic Robotics",
@@ -542,23 +559,6 @@
     "k-cli"
    ],
    "relevance": 5,
-   "application": true
-  },
-  {
-   "id": "hbx7k7",
-   "title": "Show HN: AgentCodeGUI – Multi-Account Desktop GUI for Claude Code and Codex",
-   "summary": "",
-   "url": "https://github.com/UnrealFactory/AgentCodeGUI",
-   "discussion": "https://news.ycombinator.com/item?id=49154498",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "1 pts",
-   "date": "2026-08-03T11:48:18Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
    "application": true
   },
   {
@@ -1348,6 +1348,17 @@
   }
  ],
  "byNode": {
+  "k-cli": [
+   "1wgt1b8",
+   "hzhlbu",
+   "yq92q5",
+   "13xt578",
+   "1cc8uxk",
+   "1ledpgp",
+   "1v41iem",
+   "11wcs",
+   "8kcnsx"
+  ],
   "k-skills": [
    "zobato",
    "1lclnir",
@@ -1432,17 +1443,6 @@
   "f-artifacts": [
    "hzvm6i"
   ],
-  "k-cli": [
-   "hzhlbu",
-   "yq92q5",
-   "hbx7k7",
-   "13xt578",
-   "1cc8uxk",
-   "1ledpgp",
-   "1v41iem",
-   "11wcs",
-   "8kcnsx"
-  ],
   "c-memory": [
    "1furdo9"
   ],
@@ -1479,6 +1479,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "1wgt1b8",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Merlin, Run Your Claude Code and Codex from Slack, Linear and GitHub",
+   "url": "https://usemerlin.ai"
+  },
   {
    "id": "kvdyph",
    "node": "f-generative",
@@ -1582,14 +1590,6 @@
    "discipline": "code",
    "title": "Show HN: A faster coding agent than Codex and Claude Code",
    "url": "https://www.codewithbullet.com"
-  },
-  {
-   "id": "hbx7k7",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: AgentCodeGUI – Multi-Account Desktop GUI for Claude Code and Codex",
-   "url": "https://github.com/UnrealFactory/AgentCodeGUI"
   },
   {
    "id": "13xt578",
