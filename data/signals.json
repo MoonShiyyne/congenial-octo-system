@@ -1,27 +1,27 @@
 {
- "generated": "2026-10-15T16:58:00.982Z",
+ "generated": "2026-10-15T21:20:17.939Z",
  "itemCount": 77,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 652,
-   "kept": 225
+   "fetched": 701,
+   "kept": 239
   },
   {
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 67,
-   "kept": 14
+   "fetched": 57,
+   "kept": 8
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 77,
-   "kept": 18
+   "fetched": 69,
+   "kept": 13
   },
   {
    "id": "hn-mcp",
@@ -733,6 +733,22 @@
    "application": false
   },
   {
+   "id": "1feku0o",
+   "title": "Self-hosted runner: Fixed sessions started from Slack being unable to find or attach a repository when managed settings restrict MCP servers; use deniedMcpServers to keep those tools off",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.301",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
    "id": "9vi2u5",
    "title": "Fixed Claude not being told about an MCP server's tools and instructions until its next tool call, when the server finished connecting after a compaction",
    "summary": "",
@@ -1088,51 +1104,19 @@
    "application": false
   },
   {
-   "id": "e0pis5",
-   "title": "Fixed an interrupt not ending the turn until a timeout while Claude waited for an MCP server's resource list",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.295",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "14qu9u1",
-   "title": "**api:** add Plugins and Plugin Marketplaces to the Admin API ([1baad3b](https://github.com/anthropics/anthropic-sdk-python/commit/1baad3b04df8fc5f1cbcf59bd2eca5e51d88c1e0))",
+   "id": "99jelt",
+   "title": "**docs:** describe headers on Managed Agents and telemetry endpoints",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
    "source": "Anthropic Python SDK",
    "sourceId": "python-sdk-changelog",
    "category": "model",
-   "badge": "1.10.0",
+   "badge": "[1.15.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.14.0...v1.15.0)",
    "date": null,
    "nodes": [
-    "k-plugins"
+    "a-managed"
    ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "1hpfded",
-   "title": "**api:** add Plugins and Plugin Marketplaces to the Admin API ([40c2160](https://github.com/anthropics/anthropic-sdk-typescript/commit/40c2160271c63605f161c0d0dd8a8aff0fcf81de))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "0.130.0",
-   "date": null,
-   "nodes": [
-    "k-plugins"
-   ],
-   "relevance": 12,
+   "relevance": 6,
    "application": false
   },
   {
@@ -1168,8 +1152,8 @@
    "application": false
   },
   {
-   "id": "i384h5",
-   "title": "**client:** add OpenTelemetry tracing for API calls, streaming and tool runs",
+   "id": "11dtj6r",
+   "title": "**client:** add native support for OpenTelemetry tracing",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
    "source": "Anthropic Python SDK",
@@ -1233,6 +1217,22 @@
    "application": false
   },
   {
+   "id": "1pggadi",
+   "title": "**docs:** describe headers on Managed Agents and telemetry endpoints",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "[0.135.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.134.0...sdk-v0.135.0)",
+   "date": null,
+   "nodes": [
+    "a-managed"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
    "id": "1a0ehsc",
    "title": "**api:** add execution_identity to Managed Agents agents",
    "summary": "",
@@ -1251,6 +1251,22 @@
   {
    "id": "1w436vi",
    "title": "**api:** add telemetry destinations to the Admin API",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "[0.134.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.133.0...sdk-v0.134.0)",
+   "date": null,
+   "nodes": [
+    "s-observability"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "la29vc",
+   "title": "**client:** add native support for OpenTelemetry tracing",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
    "source": "Anthropic TypeScript SDK",
@@ -1312,22 +1328,6 @@
    ],
    "relevance": 6,
    "application": false
-  },
-  {
-   "id": "146oifn",
-   "title": "split CLAUDE.md into shared, TypeScript, and repository rules",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[0.132.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.132.0...sdk-v0.132.1)",
-   "date": null,
-   "nodes": [
-    "k-claudemd"
-   ],
-   "relevance": 6,
-   "application": false
   }
  ],
  "byNode": {
@@ -1370,9 +1370,11 @@
   "a-managed": [
    "1k59g17",
    "1maeyx6",
+   "99jelt",
    "a2lv6v",
    "1lvna2l",
    "1cbyefz",
+   "1pggadi",
    "1a0ehsc",
    "1xqla26"
   ],
@@ -1403,6 +1405,7 @@
    "o49b8v",
    "c68jre",
    "12eprqz",
+   "1feku0o",
    "9vi2u5",
    "c0gsc6",
    "1ninn2b",
@@ -1419,8 +1422,7 @@
    "12v8p07",
    "1g0r4mg",
    "1cs60m0",
-   "1l0p8p4",
-   "e0pis5"
+   "1l0p8p4"
   ],
   "f-artifacts": [
    "hzvm6i"
@@ -1436,8 +1438,7 @@
   "k-claudemd": [
    "f9yd9e",
    "4qt9ev",
-   "jbw7na",
-   "146oifn"
+   "jbw7na"
   ],
   "k-hooks": [
    "pihaid",
@@ -1450,14 +1451,13 @@
   ],
   "k-plugins": [
    "daq1z8",
-   "1wkjvra",
-   "14qu9u1",
-   "1hpfded"
+   "1wkjvra"
   ],
   "s-observability": [
    "sy29q9",
-   "i384h5",
-   "1w436vi"
+   "11dtj6r",
+   "1w436vi",
+   "la29vc"
   ],
   "a-servertools": [
    "h5o8w2"
