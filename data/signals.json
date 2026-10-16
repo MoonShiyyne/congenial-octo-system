@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-16T16:35:59.202Z",
- "itemCount": 79,
+ "generated": "2026-10-16T21:04:37.513Z",
+ "itemCount": 78,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 701,
-   "kept": 239
+   "fetched": 672,
+   "kept": 223
   },
   {
    "id": "python-sdk-changelog",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 50,
-   "kept": 9
+   "kept": 8
   },
   {
    "id": "hn-agents",
@@ -700,23 +700,6 @@
    "application": true
   },
   {
-   "id": "8kcnsx",
-   "title": "Show HN: Abralo – Free, easy way to run several Claude Code agents in one window",
-   "summary": "",
-   "url": "https://abralo.com/",
-   "discussion": "https://news.ycombinator.com/item?id=48832797",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "37 pts",
-   "date": "2026-07-08T14:54:59Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
    "id": "o49b8v",
    "title": "Fixed automatic tool search (ENABLE_TOOL_SEARCH=auto) turning off part-way through a conversation, for example while MCP servers reconnect after a resume",
    "summary": "",
@@ -730,6 +713,22 @@
     "a-mcp"
    ],
    "relevance": 24,
+   "application": false
+  },
+  {
+   "id": "kdam9d",
+   "title": "[Claude Tag] Fixed custom connectors whose MCP servers share one host showing as a single connector in Claude Tag admin settings; each server is now its own connector",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.302",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 21,
    "application": false
   },
   {
@@ -762,6 +761,70 @@
     "a-mcp"
    ],
    "relevance": 21,
+   "application": false
+  },
+  {
+   "id": "a47bd7",
+   "title": "Fixed plugin marketplaces re-cloning on every refresh, and newly installed git plugins showing version \"unknown\", when git defaults to the reftable ref format",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.302",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "mjhkhe",
+   "title": "Fixed Claude in the desktop app pointing you to claude.ai settings or /mcp to authorize or reconnect an MCP server where that option isn't available",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.302",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "73va5v",
+   "title": "Fixed MCP servers showing no tools, or every tool call failing, when the server negotiates protocol version 2026-07-28 but omits resultType, ttlMs or cacheScope",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.302",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "hddo0o",
+   "title": "[VSCode] Fixed MCP server sign-in from the panel opening a broken authorization page when the server URL contains a query string",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.302",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
    "application": false
   },
   {
@@ -1056,86 +1119,6 @@
    "application": false
   },
   {
-   "id": "12v8p07",
-   "title": "Windows: Fixed stdio MCP servers being force-killed at shutdown; stdin now closes first and the process tree is killed only if the server is still running after 300 ms",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.296",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1g0r4mg",
-   "title": "Changed the default limit on MCP tool descriptions sent up front and on MCP server instructions from 2,048 to 4,096 characters",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.296",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1cs60m0",
-   "title": "Fixed remote MCP servers in headless and SDK sessions staying disconnected after an outage longer than 15 seconds, or reconnecting in a tight loop to a server that drops each connection right after it connects; repeated…",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.295",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1l0p8p4",
-   "title": "Fixed MCP servers that repeat a pagination cursor being asked for the same page up to 20 times at every connect",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.295",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1wkjvra",
-   "title": "Fixed claude plugin marketplace add reporting success for a marketplace whose name no plugin can be installed under; such an add is now refused",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.295",
-   "date": null,
-   "nodes": [
-    "k-plugins"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
    "id": "99jelt",
    "title": "**docs:** describe headers on Managed Agents and telemetry endpoints",
    "summary": "",
@@ -1412,15 +1395,18 @@
    "1cc8uxk",
    "1ledpgp",
    "1v41iem",
-   "11wcs",
-   "8kcnsx"
+   "11wcs"
   ],
   "a-mcp": [
    "1tlnnxf",
    "5envg7",
    "o49b8v",
+   "kdam9d",
    "c68jre",
    "12eprqz",
+   "mjhkhe",
+   "73va5v",
+   "hddo0o",
    "1feku0o",
    "9vi2u5",
    "c0gsc6",
@@ -1434,11 +1420,7 @@
    "1083o92",
    "1tsj1yk",
    "1ahnqfx",
-   "1iyeya7",
-   "12v8p07",
-   "1g0r4mg",
-   "1cs60m0",
-   "1l0p8p4"
+   "1iyeya7"
   ],
   "a-managed": [
    "1maeyx6",
@@ -1469,6 +1451,10 @@
    "4qt9ev",
    "jbw7na"
   ],
+  "k-plugins": [
+   "a47bd7",
+   "daq1z8"
+  ],
   "k-hooks": [
    "pihaid",
    "jeqh8k",
@@ -1477,10 +1463,6 @@
   ],
   "a-subagents": [
    "1fyga0q"
-  ],
-  "k-plugins": [
-   "daq1z8",
-   "1wkjvra"
   ],
   "s-observability": [
    "sy29q9",
@@ -1644,14 +1626,6 @@
    "discipline": "code",
    "title": "Show HN: Policy enforcement for Claude Code, Cursor, and Codex",
    "url": "https://kastra.ai/"
-  },
-  {
-   "id": "8kcnsx",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Abralo – Free, easy way to run several Claude Code agents in one window",
-   "url": "https://abralo.com/"
   }
  ]
 }
