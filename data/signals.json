@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-16T11:19:33.826Z",
- "itemCount": 78,
+ "generated": "2026-10-16T16:35:59.202Z",
+ "itemCount": 79,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 50,
-   "kept": 8
+   "kept": 9
   },
   {
    "id": "hn-agents",
@@ -693,6 +693,23 @@
    "category": "market",
    "badge": "13 pts",
    "date": "2026-07-09T15:26:24Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "8kcnsx",
+   "title": "Show HN: Abralo – Free, easy way to run several Claude Code agents in one window",
+   "summary": "",
+   "url": "https://abralo.com/",
+   "discussion": "https://news.ycombinator.com/item?id=48832797",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "37 pts",
+   "date": "2026-07-08T14:54:59Z",
    "nodes": [
     "k-cli"
    ],
@@ -1395,7 +1412,8 @@
    "1cc8uxk",
    "1ledpgp",
    "1v41iem",
-   "11wcs"
+   "11wcs",
+   "8kcnsx"
   ],
   "a-mcp": [
    "1tlnnxf",
@@ -1626,6 +1644,14 @@
    "discipline": "code",
    "title": "Show HN: Policy enforcement for Claude Code, Cursor, and Codex",
    "url": "https://kastra.ai/"
+  },
+  {
+   "id": "8kcnsx",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Abralo – Free, easy way to run several Claude Code agents in one window",
+   "url": "https://abralo.com/"
   }
  ]
 }
