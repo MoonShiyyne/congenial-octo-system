@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-16T04:28:11.138Z",
- "itemCount": 79,
+ "generated": "2026-10-16T11:19:33.826Z",
+ "itemCount": 78,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -34,8 +34,8 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 51,
-   "kept": 10
+   "fetched": 50,
+   "kept": 8
   },
   {
    "id": "hn-agents",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 10
+   "kept": 11
   },
   {
    "id": "arxiv-agents",
@@ -580,6 +580,23 @@
    "application": true
   },
   {
+   "id": "hbx7k7",
+   "title": "Show HN: AgentCodeGUI – Multi-Account Desktop GUI for Claude Code and Codex",
+   "summary": "",
+   "url": "https://github.com/UnrealFactory/AgentCodeGUI",
+   "discussion": "https://news.ycombinator.com/item?id=49154498",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "1 pts",
+   "date": "2026-08-03T11:48:18Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
    "id": "13xt578",
    "title": "Show HN: Wienerdog – memory and self-improving skills for Claude Code/Codex",
    "summary": "",
@@ -678,40 +695,6 @@
    "date": "2026-07-09T15:26:24Z",
    "nodes": [
     "k-cli"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "8kcnsx",
-   "title": "Show HN: Abralo – Free, easy way to run several Claude Code agents in one window",
-   "summary": "",
-   "url": "https://abralo.com/",
-   "discussion": "https://news.ycombinator.com/item?id=48832797",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "37 pts",
-   "date": "2026-07-08T14:54:59Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "qqjnqh",
-   "title": "Show HN: Dex – Cost-aware analytics engineering skills for agents",
-   "summary": "",
-   "url": "https://github.com/exmergo/dex",
-   "discussion": "https://news.ycombinator.com/item?id=48832208",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "5 pts",
-   "date": "2026-07-08T14:08:48Z",
-   "nodes": [
-    "k-skills"
    ],
    "relevance": 3,
    "application": true
@@ -1407,12 +1390,12 @@
    "1wgt1b8",
    "hzhlbu",
    "yq92q5",
+   "hbx7k7",
    "13xt578",
    "1cc8uxk",
    "1ledpgp",
    "1v41iem",
-   "11wcs",
-   "8kcnsx"
+   "11wcs"
   ],
   "a-mcp": [
    "1tlnnxf",
@@ -1455,8 +1438,7 @@
   "k-skills": [
    "bkmagq",
    "1g5lpqi",
-   "13xt578",
-   "qqjnqh"
+   "13xt578"
   ],
   "s-guardrails": [
    "1vyzb0t"
@@ -1598,6 +1580,14 @@
    "url": "https://www.codewithbullet.com"
   },
   {
+   "id": "hbx7k7",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: AgentCodeGUI – Multi-Account Desktop GUI for Claude Code and Codex",
+   "url": "https://github.com/UnrealFactory/AgentCodeGUI"
+  },
+  {
    "id": "13xt578",
    "node": "k-cli",
    "nodeTitle": "Claude Code",
@@ -1636,22 +1626,6 @@
    "discipline": "code",
    "title": "Show HN: Policy enforcement for Claude Code, Cursor, and Codex",
    "url": "https://kastra.ai/"
-  },
-  {
-   "id": "8kcnsx",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Abralo – Free, easy way to run several Claude Code agents in one window",
-   "url": "https://abralo.com/"
-  },
-  {
-   "id": "qqjnqh",
-   "node": "k-skills",
-   "nodeTitle": "Skills",
-   "discipline": "code",
-   "title": "Show HN: Dex – Cost-aware analytics engineering skills for agents",
-   "url": "https://github.com/exmergo/dex"
   }
  ]
 }
