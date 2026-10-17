@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-17T04:23:45.579Z",
- "itemCount": 70,
+ "generated": "2026-10-17T10:39:55.959Z",
+ "itemCount": 78,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -61,8 +61,9 @@
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
-   "ok": false,
-   "error": "HTTP 429"
+   "ok": true,
+   "fetched": 20,
+   "kept": 13
   }
  ],
  "items": [
@@ -84,6 +85,22 @@
    "application": false
   },
   {
+   "id": "ui59zg",
+   "title": "MindEval2: Clinically Grounded Patients and Rubrics for Evaluating Language Models in Mental Health Support",
+   "summary": "With people increasingly turning to AI chatbots for mental health support, the need to evaluate these tools is becoming more pressing. Recent benchmarks attempt to mimic a realistic setting by simulating multi-turn interactions with synthetic patients and evaluating them with an LLM-as-a-judge. However, the usefulness…",
+   "url": "http://arxiv.org/abs/2610.22314v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-15T17:51:01Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
    "id": "uiev5s",
    "title": "Private Retrieval Augmented Generation via Random Projection",
    "summary": "Retrieval-Augmented Generation (RAG) enhances the capabilities of large language models (LLMs) by querying external structured knowledge. However, it can also introduce privacy risks by leaking sensitive information from the retrieval datastore. We propose a simple method to preserve datastore privacy in RAG systems v…",
@@ -97,6 +114,22 @@
     "c-retrieval"
    ],
    "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "175d5cj",
+   "title": "Hy-Memory-30B-A3B: Attributed Reinforcement Learning for Long-Term Memory Writing",
+   "summary": "External-memory systems extend language-model applications beyond a context window, but their quality depends critically on the model executing the write path: deciding what to retain, how precisely to represent it, and how new evidence should update persistent state. Existing frameworks typically place a general-purp…",
+   "url": "http://arxiv.org/abs/2610.22196v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-15T16:46:47Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
    "application": false
   },
   {
@@ -143,6 +176,22 @@
    "date": "2026-10-15T16:01:38Z",
    "nodes": [
     "s-cost"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1johc5i",
+   "title": "Beyond Context Length: Characterising the Difficulty of Long-Context Reasoning",
+   "summary": "Long-context language models support ever longer context windows, and evaluations typically treat context length as the main indicator of difficulty. However, context length alone cannot explain why models fail on long-context tasks that require reasoning over complex information. Contexts of equal length can pose ver…",
+   "url": "http://arxiv.org/abs/2610.22067v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-15T15:28:33Z",
+   "nodes": [
+    "c-longctx"
    ],
    "relevance": 3,
    "application": false
@@ -223,6 +272,88 @@
    "date": "2026-10-15T08:06:48Z",
    "nodes": [
     "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "j2astj",
+   "title": "Memorilla: Latent Semantic Memory for LLMs",
+   "summary": "Memory enables large language models (LLMs) to use information beyond their parameters, such as past user conversations, long documents, or an agent's earlier actions. For a frozen LLM, access to this accumulated knowledge is limited to what a memory system places in its context window. However, gathering and combinin…",
+   "url": "http://arxiv.org/abs/2610.21375v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-15T06:55:55Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1aq14jd",
+   "title": "From Long Context to Selective Memory:A Survey of Memory-Centric Compression for Large Language Models",
+   "summary": "Long-context capability has become essential for large language models (LLMs) to handle complex tasks, yet continuously expanding the context window does not remove the computational, storage, and information-selection pressures incurred at inference time. Existing work on prompt compression, KV-cache management, effi…",
+   "url": "http://arxiv.org/abs/2610.21165v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-15T03:24:36Z",
+   "nodes": [
+    "c-longctx",
+    "c-retrieval"
+   ],
+   "relevance": 5,
+   "application": false
+  },
+  {
+   "id": "j166kj",
+   "title": "SSR: Structural Signal Retriever for Scalable Agent Discovery in LLM-Orchestrated Multi-Agent Systems",
+   "summary": "Large-scale multi-agent ecosystems require mechanisms for discovering suitable agents without exposing entire registries to a large language model (LLM) orchestrator. The challenge is not only to retrieve relevant Agent Cards from a growing registry, but also to maintain a compact candidate context, since each additio…",
+   "url": "http://arxiv.org/abs/2610.21113v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-15T02:16:12Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 5,
+   "application": false
+  },
+  {
+   "id": "1oqjxsm",
+   "title": "Skip the Compressor: Coding Agents Fix More Issues When They Pick Whole Files",
+   "summary": "A coding agent works on repositories that can be far larger than its context window can hold. Prompt compressors and retrievers offer solutions to this problem, but patching an issue needs two things at once: the files that must change, and their code exactly as written, since the model must reproduce the lines it edi…",
+   "url": "http://arxiv.org/abs/2610.21073v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-15T01:21:36Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ozfxtn",
+   "title": "Prune the Summary, Not the History: Source-Judged Compaction for Long-Horizon Agents",
+   "summary": "Long-horizon LLM agents rely on context compaction: when the interaction history outgrows the context window, a compressor replaces it with a natural-language summary. We show that these summaries contain more than a record of what happened. Compaction prompts ask for decisions and next steps, so each summary mixes fa…",
+   "url": "http://arxiv.org/abs/2610.20927v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-14T20:57:32Z",
+   "nodes": [
+    "c-longctx",
+    "c-editing"
    ],
    "relevance": 3,
    "application": false
@@ -1223,8 +1354,12 @@
   ],
   "a-teams": [
    "u222n6",
+   "j166kj",
    "1lvna2l",
    "1xqla26"
+  ],
+  "s-models": [
+   "ui59zg"
   ],
   "c-retrieval": [
    "uiev5s",
@@ -1232,10 +1367,23 @@
    "vljhn3",
    "1a8upy5",
    "15d11yn",
+   "1aq14jd",
    "1a89hn0"
+  ],
+  "c-longctx": [
+   "175d5cj",
+   "1johc5i",
+   "j2astj",
+   "1aq14jd",
+   "1oqjxsm",
+   "ozfxtn"
   ],
   "s-cost": [
    "uzp0gk"
+  ],
+  "c-editing": [
+   "ozfxtn",
+   "9vi2u5"
   ],
   "k-cli": [
    "1ktme1w",
@@ -1306,9 +1454,6 @@
   "k-plugins": [
    "a47bd7",
    "daq1z8"
-  ],
-  "c-editing": [
-   "9vi2u5"
   ],
   "k-hooks": [
    "pihaid",
