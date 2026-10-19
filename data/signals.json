@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-19T13:09:57.763Z",
- "itemCount": 67,
+ "generated": "2026-10-19T22:19:32.431Z",
+ "itemCount": 77,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 617,
-   "kept": 204
+   "fetched": 691,
+   "kept": 234
   },
   {
    "id": "python-sdk-changelog",
@@ -34,8 +34,8 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 50,
-   "kept": 8
+   "fetched": 49,
+   "kept": 7
   },
   {
    "id": "hn-agents",
@@ -49,13 +49,14 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 10
+   "kept": 11
   },
   {
    "id": "arxiv-agents",
    "label": "arXiv · agents & LLM systems",
-   "ok": false,
-   "error": "HTTP 429"
+   "ok": true,
+   "fetched": 25,
+   "kept": 15
   },
   {
    "id": "arxiv-eval",
@@ -66,6 +67,40 @@
   }
  ],
  "items": [
+  {
+   "id": "ouarcq",
+   "title": "Show HN: Krites, Claude Code Plugin that forces your tests to run",
+   "summary": "",
+   "url": "https://github.com/krites-dev/krites",
+   "discussion": "https://news.ycombinator.com/item?id=50156263",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "1 pts",
+   "date": "2026-10-19T18:45:47Z",
+   "nodes": [
+    "k-plugins",
+    "k-cli"
+   ],
+   "relevance": 4,
+   "application": true
+  },
+  {
+   "id": "11atiz5",
+   "title": "Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models",
+   "summary": "Interactive models increasingly hand complex reasoning and tool use to a slow brain in the background, leaving a realtime front model free to sustain full-duplex dialogue. Yet the user may refine, cancel or replace a request while its task runs, so a plan or result that made sense a moment ago goes stale. Each new utt…",
+   "url": "http://arxiv.org/abs/2610.23804v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T17:29:10Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "ynapbr",
    "title": "Tool Recommendation for Multi-Step Agents: Finding Every Tool a Task Needs",
@@ -78,6 +113,153 @@
    "date": "2026-10-16T16:30:38Z",
    "nodes": [
     "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "4ihk7d",
+   "title": "On the possibilities and limitations of LLM-based multi-agent systems for multi-criteria decision-making in healthcare operations management",
+   "summary": "Multi-criteria models for healthcare operations need weights that express how stakeholders trade off patient waiting time, provider workload, and operating cost, but these weights are difficult to quantify. Teams of large language model (LLM) agents, each prompted to represent a stakeholder, have been used to supply t…",
+   "url": "http://arxiv.org/abs/2610.23673v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T16:05:15Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "8xak5i",
+   "title": "ThetreStageAI: Multi-View Retrieval-Augmented Generation for Structured Bengali Theatre Production Planning",
+   "summary": "Staging a theatre performance requires coordinating dialogue, actor movement, stage directions, lighting focus, cue timing, and equipment constraints within the same production plan. This work presents ThetreStageAI, a retrieval augmented framework for structured Bengali theatre production planning. Rather than retrie…",
+   "url": "http://arxiv.org/abs/2610.23618v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T15:29:20Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1jga8a3",
+   "title": "From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving Agents",
+   "summary": "Large language model (LLM) agents tackle complex tasks through reasoning and interaction with external environments. Agent skills provide persistent, transferable capabilities that guide task planning, inform contextual decisions, support tool use, and enable executable procedures. Yet existing skill-evolution methods…",
+   "url": "http://arxiv.org/abs/2610.23599v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T15:16:56Z",
+   "nodes": [
+    "k-skills",
+    "a-tools"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1fz44cu",
+   "title": "RL-Guided Temporal Localization for Dual-Channel Retrieval in Long-Horizon Agent Memory",
+   "summary": "Time-aware retrieval is crucial for long-horizon LLM agents to effectively leverage ever-growing long-term memory. Existing methods focus on lexical or semantic similarity, leading to target memories being crowded out by temporally mismatched yet semantically similar candidates. Even time-aware approaches inject tempo…",
+   "url": "http://arxiv.org/abs/2610.23598v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T15:16:50Z",
+   "nodes": [
+    "c-memory",
+    "c-retrieval"
+   ],
+   "relevance": 4,
+   "application": false
+  },
+  {
+   "id": "x2ba9q",
+   "title": "Enhancing RAG-based Medical VQA with Gated Multimodal Representations",
+   "summary": "Medical Vision-Language Models (Med-LVLMs) have shown strong performance in Medical Visual Question Answering (MVQA), yet they may still produce factually inconsistent responses. Retrieval-Augmented Generation (RAG) can mitigate this issue by incorporating external clinical evidence; however, retrieval is often guided…",
+   "url": "http://arxiv.org/abs/2610.23588v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T15:07:33Z",
+   "nodes": [
+    "c-files",
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "5ki0hx",
+   "title": "SkillBrowser: Selective Skill Exposure for Scalable Skill-Using Agents",
+   "summary": "Large language model agents increasingly rely on skills to extend their capabilities in complex tasks. However, scalable skill use requires Selective Skill Exposure (SSE): providing relevant procedural content when needed while avoiding unnecessary exposure that may disrupt reasoning. Existing paradigms fall short in…",
+   "url": "http://arxiv.org/abs/2610.23554v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T14:44:01Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "rwe5ap",
+   "title": "GatewayBench: Unified Capability and Security Evaluation Platform for MCP Gateways",
+   "summary": "AI agents have increasingly interacted with external environments by invoking tools, with Model Context Protocol (MCP) emerging as a standard interface for connecting agents to heterogeneous tools and services. As organizations deploy agents at scale, MCP gateways have become a critical middleware layer for aggregatin…",
+   "url": "http://arxiv.org/abs/2610.23449v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T13:31:09Z",
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "4bw2nw",
+   "title": "Robust Function Calling for LLM Agents Under Interface Drift",
+   "summary": "Tool-augmented language-model agents rely on interface text: tool descriptions, argument schemas, and the candidate tool list shown at inference time. These interfaces often change after deployment even when the underlying tool semantics remain fixed, creating a practical reliability problem for function-calling syste…",
+   "url": "http://arxiv.org/abs/2610.23342v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T11:49:37Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "89n8s4",
+   "title": "Annotrace: A Workbench for Step-Level Annotation of Agent Traces",
+   "summary": "Every study of why LLM agents fail begins by labelling traces by hand, and every such study builds its own throwaway tool. Observability platforms record agent traces but offer no structured labelling; annotation tools label text but have no notion of a step, a delegation or a tool call, leaving it unclear what the sm…",
+   "url": "http://arxiv.org/abs/2610.23284v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T10:55:26Z",
+   "nodes": [
+    "s-observability"
    ],
    "relevance": 3,
    "application": false
@@ -486,23 +668,6 @@
    "application": true
   },
   {
-   "id": "1v41iem",
-   "title": "Show HN: OtoDock, run Claude Code and Codex as a team of agents on your server",
-   "summary": "",
-   "url": "https://github.com/OtoDock/oto-dock/",
-   "discussion": "https://news.ycombinator.com/item?id=48923047",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "3 pts",
-   "date": "2026-07-15T16:11:23Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
    "id": "11wcs",
    "title": "Show HN: Policy enforcement for Claude Code, Cursor, and Codex",
    "summary": "",
@@ -518,6 +683,22 @@
    ],
    "relevance": 3,
    "application": true
+  },
+  {
+   "id": "1nnfsk0",
+   "title": "[VSCode] Added mod drawing in the chat panel for sessions on Amazon Bedrock, Google Vertex AI and Microsoft Foundry, behind an LLM gateway, or with telemetry turned off",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.304",
+   "date": null,
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 27,
+   "application": false
   },
   {
    "id": "o49b8v",
@@ -581,6 +762,22 @@
     "a-mcp"
    ],
    "relevance": 21,
+   "application": false
+  },
+  {
+   "id": "nqqr0",
+   "title": "Improved cloud sessions: a new conversation's first turn no longer waits for the local (stdio) MCP servers of plugins synced from claude.ai, unless a server sets alwaysLoad: true",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.304",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
    "application": false
   },
   {
@@ -907,38 +1104,6 @@
    "application": false
   },
   {
-   "id": "daq1z8",
-   "title": "Fixed claude plugin marketplace add, marketplace update and plugin install failing with an internal error for a marketplace named like constructor; add now refuses such names clearly",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.296",
-   "date": null,
-   "nodes": [
-    "k-plugins"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1iyeya7",
-   "title": "Fixed Claude calling cloud sessions non-interactive and suggesting /mcp or claude mcp when an MCP server needs authentication",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.296",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
    "id": "99jelt",
    "title": "**docs:** describe headers on Managed Agents and telemetry endpoints",
    "summary": "",
@@ -1166,29 +1331,12 @@
   }
  ],
  "byNode": {
-  "c-longctx": [
-   "ynapbr",
-   "175d5cj",
-   "1johc5i",
-   "j2astj",
-   "1aq14jd"
-  ],
-  "s-structured": [
-   "i4s82j"
-  ],
-  "s-models": [
-   "ui59zg"
-  ],
-  "c-retrieval": [
-   "1aq14jd",
-   "1a89hn0"
-  ],
-  "a-teams": [
-   "j166kj",
-   "1lvna2l",
-   "1xqla26"
+  "k-plugins": [
+   "ouarcq",
+   "a47bd7"
   ],
   "k-cli": [
+   "ouarcq",
    "1ktme1w",
    "1wgt1b8",
    "hzhlbu",
@@ -1196,16 +1344,56 @@
    "13xt578",
    "1cc8uxk",
    "1ledpgp",
-   "1v41iem",
    "11wcs"
   ],
+  "a-tools": [
+   "11atiz5",
+   "1jga8a3",
+   "4bw2nw"
+  ],
+  "c-longctx": [
+   "ynapbr",
+   "175d5cj",
+   "1johc5i",
+   "j2astj",
+   "1aq14jd"
+  ],
+  "a-teams": [
+   "4ihk7d",
+   "j166kj",
+   "1lvna2l",
+   "1xqla26"
+  ],
+  "c-retrieval": [
+   "8xak5i",
+   "1fz44cu",
+   "x2ba9q",
+   "1aq14jd",
+   "1a89hn0"
+  ],
+  "k-skills": [
+   "1jga8a3",
+   "5ki0hx",
+   "bkmagq",
+   "1g5lpqi",
+   "13xt578"
+  ],
+  "c-memory": [
+   "1fz44cu",
+   "1furdo9"
+  ],
+  "c-files": [
+   "x2ba9q"
+  ],
   "a-mcp": [
+   "rwe5ap",
    "1tlnnxf",
    "5envg7",
    "o49b8v",
    "kdam9d",
    "c68jre",
    "12eprqz",
+   "nqqr0",
    "mjhkhe",
    "73va5v",
    "hddo0o",
@@ -1221,8 +1409,20 @@
    "eyhrtf",
    "1083o92",
    "1tsj1yk",
-   "1ahnqfx",
-   "1iyeya7"
+   "1ahnqfx"
+  ],
+  "s-observability": [
+   "89n8s4",
+   "sy29q9",
+   "11dtj6r",
+   "1w436vi",
+   "la29vc"
+  ],
+  "s-structured": [
+   "i4s82j"
+  ],
+  "s-models": [
+   "ui59zg"
   ],
   "a-managed": [
    "1maeyx6",
@@ -1237,25 +1437,16 @@
   "f-artifacts": [
    "hzvm6i"
   ],
-  "k-skills": [
-   "bkmagq",
-   "1g5lpqi",
-   "13xt578"
-  ],
   "s-guardrails": [
    "1vyzb0t"
-  ],
-  "c-memory": [
-   "1furdo9"
   ],
   "k-claudemd": [
    "f9yd9e",
    "4qt9ev",
    "jbw7na"
   ],
-  "k-plugins": [
-   "a47bd7",
-   "daq1z8"
+  "s-deploy": [
+   "1nnfsk0"
   ],
   "c-editing": [
    "9vi2u5"
@@ -1269,17 +1460,19 @@
   "a-subagents": [
    "1fyga0q"
   ],
-  "s-observability": [
-   "sy29q9",
-   "11dtj6r",
-   "1w436vi",
-   "la29vc"
-  ],
   "a-servertools": [
    "h5o8w2"
   ]
  },
  "applications": [
+  {
+   "id": "ouarcq",
+   "node": "k-plugins",
+   "nodeTitle": "Plugins & Marketplaces",
+   "discipline": "code",
+   "title": "Show HN: Krites, Claude Code Plugin that forces your tests to run",
+   "url": "https://github.com/krites-dev/krites"
+  },
   {
    "id": "1ktme1w",
    "node": "k-cli",
@@ -1407,14 +1600,6 @@
    "discipline": "code",
    "title": "Show HN: Claudexor – quota-aware routing for Claude Code, Codex, and Cursor",
    "url": "https://github.com/razzant/claudexor"
-  },
-  {
-   "id": "1v41iem",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: OtoDock, run Claude Code and Codex as a team of agents on your server",
-   "url": "https://github.com/OtoDock/oto-dock/"
   },
   {
    "id": "11wcs",
