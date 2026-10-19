@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-18T20:39:15.704Z",
- "itemCount": 78,
+ "generated": "2026-10-19T04:36:37.536Z",
+ "itemCount": 77,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 672,
-   "kept": 223
+   "fetched": 617,
+   "kept": 204
   },
   {
    "id": "python-sdk-changelog",
@@ -49,37 +49,215 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 11
+   "kept": 10
   },
   {
    "id": "arxiv-agents",
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 11
+   "kept": 15
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": true,
    "fetched": 20,
-   "kept": 13
+   "kept": 12
   }
  ],
  "items": [
   {
-   "id": "u222n6",
-   "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
-   "summary": "Large language model (LLM)-based agents and multi-agent systems increasingly tackle complex tasks through long-horizon tool use and inter-agent collaboration. However, these systems are prone to deviating from the overall goal as execution unfolds, which wastes execution resources and leads to undesired outcomes, a fa…",
-   "url": "http://arxiv.org/abs/2610.22316v1",
+   "id": "11atiz5",
+   "title": "Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models",
+   "summary": "Interactive models increasingly hand complex reasoning and tool use to a slow brain in the background, leaving a realtime front model free to sustain full-duplex dialogue. Yet the user may refine, cancel or replace a request while its task runs, so a plan or result that made sense a moment ago goes stale. Each new utt…",
+   "url": "http://arxiv.org/abs/2610.23804v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-10-15T17:51:17Z",
+   "date": "2026-10-16T17:29:10Z",
    "nodes": [
-    "a-tools",
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ynapbr",
+   "title": "Tool Recommendation for Multi-Step Agents: Finding Every Tool a Task Needs",
+   "summary": "A multi-step agent task fails when a single tool it needs is missing, yet the tools an agent may need are too many to list: the roughly 8,200 tools on the platform we study have definitions that together exceed the context window of any model we evaluate. We present Tool Recommendation, a deployed system that gives an…",
+   "url": "http://arxiv.org/abs/2610.23707v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T16:30:38Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "4ihk7d",
+   "title": "On the possibilities and limitations of LLM-based multi-agent systems for multi-criteria decision-making in healthcare operations management",
+   "summary": "Multi-criteria models for healthcare operations need weights that express how stakeholders trade off patient waiting time, provider workload, and operating cost, but these weights are difficult to quantify. Teams of large language model (LLM) agents, each prompted to represent a stakeholder, have been used to supply t…",
+   "url": "http://arxiv.org/abs/2610.23673v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T16:05:15Z",
+   "nodes": [
     "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "8xak5i",
+   "title": "ThetreStageAI: Multi-View Retrieval-Augmented Generation for Structured Bengali Theatre Production Planning",
+   "summary": "Staging a theatre performance requires coordinating dialogue, actor movement, stage directions, lighting focus, cue timing, and equipment constraints within the same production plan. This work presents ThetreStageAI, a retrieval augmented framework for structured Bengali theatre production planning. Rather than retrie…",
+   "url": "http://arxiv.org/abs/2610.23618v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T15:29:20Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1jga8a3",
+   "title": "From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving Agents",
+   "summary": "Large language model (LLM) agents tackle complex tasks through reasoning and interaction with external environments. Agent skills provide persistent, transferable capabilities that guide task planning, inform contextual decisions, support tool use, and enable executable procedures. Yet existing skill-evolution methods…",
+   "url": "http://arxiv.org/abs/2610.23599v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T15:16:56Z",
+   "nodes": [
+    "k-skills",
+    "a-tools"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1fz44cu",
+   "title": "RL-Guided Temporal Localization for Dual-Channel Retrieval in Long-Horizon Agent Memory",
+   "summary": "Time-aware retrieval is crucial for long-horizon LLM agents to effectively leverage ever-growing long-term memory. Existing methods focus on lexical or semantic similarity, leading to target memories being crowded out by temporally mismatched yet semantically similar candidates. Even time-aware approaches inject tempo…",
+   "url": "http://arxiv.org/abs/2610.23598v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T15:16:50Z",
+   "nodes": [
+    "c-memory",
+    "c-retrieval"
+   ],
+   "relevance": 4,
+   "application": false
+  },
+  {
+   "id": "x2ba9q",
+   "title": "Enhancing RAG-based Medical VQA with Gated Multimodal Representations",
+   "summary": "Medical Vision-Language Models (Med-LVLMs) have shown strong performance in Medical Visual Question Answering (MVQA), yet they may still produce factually inconsistent responses. Retrieval-Augmented Generation (RAG) can mitigate this issue by incorporating external clinical evidence; however, retrieval is often guided…",
+   "url": "http://arxiv.org/abs/2610.23588v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T15:07:33Z",
+   "nodes": [
+    "c-files",
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "5ki0hx",
+   "title": "SkillBrowser: Selective Skill Exposure for Scalable Skill-Using Agents",
+   "summary": "Large language model agents increasingly rely on skills to extend their capabilities in complex tasks. However, scalable skill use requires Selective Skill Exposure (SSE): providing relevant procedural content when needed while avoiding unnecessary exposure that may disrupt reasoning. Existing paradigms fall short in…",
+   "url": "http://arxiv.org/abs/2610.23554v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T14:44:01Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "rwe5ap",
+   "title": "GatewayBench: Unified Capability and Security Evaluation Platform for MCP Gateways",
+   "summary": "AI agents have increasingly interacted with external environments by invoking tools, with Model Context Protocol (MCP) emerging as a standard interface for connecting agents to heterogeneous tools and services. As organizations deploy agents at scale, MCP gateways have become a critical middleware layer for aggregatin…",
+   "url": "http://arxiv.org/abs/2610.23449v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T13:31:09Z",
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "4bw2nw",
+   "title": "Robust Function Calling for LLM Agents Under Interface Drift",
+   "summary": "Tool-augmented language-model agents rely on interface text: tool descriptions, argument schemas, and the candidate tool list shown at inference time. These interfaces often change after deployment even when the underlying tool semantics remain fixed, creating a practical reliability problem for function-calling syste…",
+   "url": "http://arxiv.org/abs/2610.23342v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T11:49:37Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "89n8s4",
+   "title": "Annotrace: A Workbench for Step-Level Annotation of Agent Traces",
+   "summary": "Every study of why LLM agents fail begins by labelling traces by hand, and every such study builds its own throwaway tool. Observability platforms record agent traces but offer no structured labelling; annotation tools label text but have no notion of a step, a delegation or a tool call, leaving it unclear what the sm…",
+   "url": "http://arxiv.org/abs/2610.23284v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T10:55:26Z",
+   "nodes": [
+    "s-observability"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "i4s82j",
+   "title": "The Ethics of Prompt Engineering",
+   "summary": "Prompt engineering is commonly understood as a technical practice aimed at eliciting useful, accurate, and appropriately structured outputs from large language models (LLMs). Yet prompts do more than optimize model performance: they shape what information is elicited, which assumptions are introduced, and which perspe…",
+   "url": "http://arxiv.org/abs/2610.23082v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-16T07:52:18Z",
+   "nodes": [
+    "s-structured"
    ],
    "relevance": 3,
    "application": false
@@ -101,22 +279,6 @@
    "application": false
   },
   {
-   "id": "uiev5s",
-   "title": "Private Retrieval Augmented Generation via Random Projection",
-   "summary": "Retrieval-Augmented Generation (RAG) enhances the capabilities of large language models (LLMs) by querying external structured knowledge. However, it can also introduce privacy risks by leaking sensitive information from the retrieval datastore. We propose a simple method to preserve datastore privacy in RAG systems v…",
-   "url": "http://arxiv.org/abs/2610.22297v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-15T17:45:51Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
    "id": "175d5cj",
    "title": "Hy-Memory-30B-A3B: Attributed Reinforcement Learning for Long-Term Memory Writing",
    "summary": "External-memory systems extend language-model applications beyond a context window, but their quality depends critically on the model executing the write path: deciding what to retain, how precisely to represent it, and how new evidence should update persistent state. Existing frameworks typically place a general-purp…",
@@ -133,54 +295,6 @@
    "application": false
   },
   {
-   "id": "1ts4alh",
-   "title": "Inertially Significant Humanoid Teleoperation via Whole Body Model Predictive Control and Online Parameter Estimation",
-   "summary": "The effective deployment of humanoid robots in practical tasks of interest will require a capability of sensing and adapting to variations in inertial parameters, as occurs during heavy tool use or when carrying significant payload. Such payloads constitute a significant proportion of the combined payload-robot system…",
-   "url": "http://arxiv.org/abs/2610.22176v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-15T16:32:58Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "mee0p1",
-   "title": "RAG-RST: Retrieved Exemplars as In-Context Discourse Schema for RST Parsing",
-   "summary": "In Rhetorical Structure Theory (RST), each edge of a discourse tree carries a nuclearity label, marking which span holds the central content, and a relation drawn from a closed inventory of functional categories. Neither label is a surface property: the same two clauses can be Elaboration or Background depending on rh…",
-   "url": "http://arxiv.org/abs/2610.22150v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-15T16:18:06Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "uzp0gk",
-   "title": "PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents",
-   "summary": "Modern agentic systems extend language models with external tools, enabling them to complete complex tasks through multi-turn interactions. As these agents are deployed in consequential settings, they are often constrained by policies governing pricing, privacy, confirmation, safety, and other requirements. However, e…",
-   "url": "http://arxiv.org/abs/2610.22124v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-15T16:01:38Z",
-   "nodes": [
-    "s-cost"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
    "id": "1johc5i",
    "title": "Beyond Context Length: Characterising the Difficulty of Long-Context Reasoning",
    "summary": "Long-context language models support ever longer context windows, and evaluations typically treat context length as the main indicator of difficulty. However, context length alone cannot explain why models fail on long-context tasks that require reasoning over complex information. Contexts of equal length can pose ver…",
@@ -192,86 +306,6 @@
    "date": "2026-10-15T15:28:33Z",
    "nodes": [
     "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "dss2zo",
-   "title": "RSIFlow: Adaptive Self-Improvement Workflows with an Evolving Meta-Agent",
-   "summary": "Large language model (LLM) agents have demonstrated strong capabilities in complex tasks, including code generation, tool use, and multi-hop question answering. Existing self-improvement methods enhance agent performance through model optimization, harness evolution, and executable artifact refinement, while recursive…",
-   "url": "http://arxiv.org/abs/2610.21791v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-15T12:45:08Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "vljhn3",
-   "title": "ConStore: Search-Overlapped Prefetch and Co-Retrieval-Aware Content Storage for Disk-Based ANNS",
-   "summary": "Disk-based approximate nearest-neighbor search (ANNS) supports retrieval-augmented generation (RAG), search, recommendation, and advertising over corpora that exceed memory capacity. Existing ANNS research often focuses on vector search at small top-K, whereas industrial-scale applications require larger retrieval set…",
-   "url": "http://arxiv.org/abs/2610.21676v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-15T11:01:16Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "13g8go4",
-   "title": "Rethinking the Role of Tool Graph Memory in Multi-Turn Tool Use",
-   "summary": "Large language model (LLM) agents solve complex tasks by calling external tools over multiple turns. Recent work has proposed tool graph memory, which stores past experience as tool transitions to guide subsequent selection. However, it remains unclear whether this component consistently improves agents' tool use or u…",
-   "url": "http://arxiv.org/abs/2610.21571v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-15T09:24:30Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 4,
-   "application": false
-  },
-  {
-   "id": "1a8upy5",
-   "title": "Independent Data-Integrity Verification for LLM-Driven Functional Coverage Closure in Hardware Design",
-   "summary": "LLM agents can write directed tests that close functional coverage, but coverage only shows that a state was reached, not that the data on the way there was correct. This is a long-known point in verification and we do not claim it as new. We describe a small coverage-closure agent that applies it to an LLM loop: cove…",
-   "url": "http://arxiv.org/abs/2610.21570v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-15T09:24:01Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "15d11yn",
-   "title": "Poisoning the Neighborhood: A Topology-Aware Topic-Level Attack on Large-Scale HNSW-based RAG Systems",
-   "summary": "Retrieval-augmented generation (RAG) mitigates hallucinations and knowledge staleness in large language models using external knowledge. However, ingestion from public and third-party sources exposes RAG systems to poisoning attacks. Existing attacks are designed and evaluated under exact retrieval, where poisoned doc…",
-   "url": "http://arxiv.org/abs/2610.21464v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-15T08:06:48Z",
-   "nodes": [
-    "c-retrieval"
    ],
    "relevance": 3,
    "application": false
@@ -323,39 +357,6 @@
     "a-teams"
    ],
    "relevance": 5,
-   "application": false
-  },
-  {
-   "id": "1oqjxsm",
-   "title": "Skip the Compressor: Coding Agents Fix More Issues When They Pick Whole Files",
-   "summary": "A coding agent works on repositories that can be far larger than its context window can hold. Prompt compressors and retrievers offer solutions to this problem, but patching an issue needs two things at once: the files that must change, and their code exactly as written, since the model must reproduce the lines it edi…",
-   "url": "http://arxiv.org/abs/2610.21073v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-15T01:21:36Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "ozfxtn",
-   "title": "Prune the Summary, Not the History: Source-Judged Compaction for Long-Horizon Agents",
-   "summary": "Long-horizon LLM agents rely on context compaction: when the interaction history outgrows the context window, a compressor replaces it with a natural-language summary. We show that these summaries contain more than a record of what happened. Compaction prompts ask for decisions and next steps, so each summary mixes fa…",
-   "url": "http://arxiv.org/abs/2610.20927v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-14T20:57:32Z",
-   "nodes": [
-    "c-longctx",
-    "c-editing"
-   ],
-   "relevance": 3,
    "application": false
   },
   {
@@ -577,23 +578,6 @@
     "k-cli"
    ],
    "relevance": 5,
-   "application": true
-  },
-  {
-   "id": "hbx7k7",
-   "title": "Show HN: AgentCodeGUI – Multi-Account Desktop GUI for Claude Code and Codex",
-   "summary": "",
-   "url": "https://github.com/UnrealFactory/AgentCodeGUI",
-   "discussion": "https://news.ycombinator.com/item?id=49154498",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "1 pts",
-   "date": "2026-08-03T11:48:18Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
    "application": true
   },
   {
@@ -1347,57 +1331,46 @@
  ],
  "byNode": {
   "a-tools": [
-   "u222n6",
-   "1ts4alh",
-   "dss2zo",
-   "13g8go4"
+   "11atiz5",
+   "1jga8a3",
+   "4bw2nw"
+  ],
+  "c-longctx": [
+   "ynapbr",
+   "175d5cj",
+   "1johc5i",
+   "j2astj",
+   "1aq14jd"
   ],
   "a-teams": [
-   "u222n6",
+   "4ihk7d",
    "j166kj",
    "1lvna2l",
    "1xqla26"
   ],
-  "s-models": [
-   "ui59zg"
-  ],
   "c-retrieval": [
-   "uiev5s",
-   "mee0p1",
-   "vljhn3",
-   "1a8upy5",
-   "15d11yn",
+   "8xak5i",
+   "1fz44cu",
+   "x2ba9q",
    "1aq14jd",
    "1a89hn0"
   ],
-  "c-longctx": [
-   "175d5cj",
-   "1johc5i",
-   "j2astj",
-   "1aq14jd",
-   "1oqjxsm",
-   "ozfxtn"
+  "k-skills": [
+   "1jga8a3",
+   "5ki0hx",
+   "bkmagq",
+   "1g5lpqi",
+   "13xt578"
   ],
-  "s-cost": [
-   "uzp0gk"
+  "c-memory": [
+   "1fz44cu",
+   "1furdo9"
   ],
-  "c-editing": [
-   "ozfxtn",
-   "9vi2u5"
-  ],
-  "k-cli": [
-   "1ktme1w",
-   "1wgt1b8",
-   "hzhlbu",
-   "yq92q5",
-   "hbx7k7",
-   "13xt578",
-   "1cc8uxk",
-   "1ledpgp",
-   "1v41iem",
-   "11wcs"
+  "c-files": [
+   "x2ba9q"
   ],
   "a-mcp": [
+   "rwe5ap",
    "1tlnnxf",
    "5envg7",
    "o49b8v",
@@ -1422,6 +1395,30 @@
    "1ahnqfx",
    "1iyeya7"
   ],
+  "s-observability": [
+   "89n8s4",
+   "sy29q9",
+   "11dtj6r",
+   "1w436vi",
+   "la29vc"
+  ],
+  "s-structured": [
+   "i4s82j"
+  ],
+  "s-models": [
+   "ui59zg"
+  ],
+  "k-cli": [
+   "1ktme1w",
+   "1wgt1b8",
+   "hzhlbu",
+   "yq92q5",
+   "13xt578",
+   "1cc8uxk",
+   "1ledpgp",
+   "1v41iem",
+   "11wcs"
+  ],
   "a-managed": [
    "1maeyx6",
    "99jelt",
@@ -1435,16 +1432,8 @@
   "f-artifacts": [
    "hzvm6i"
   ],
-  "k-skills": [
-   "bkmagq",
-   "1g5lpqi",
-   "13xt578"
-  ],
   "s-guardrails": [
    "1vyzb0t"
-  ],
-  "c-memory": [
-   "1furdo9"
   ],
   "k-claudemd": [
    "f9yd9e",
@@ -1455,6 +1444,9 @@
    "a47bd7",
    "daq1z8"
   ],
+  "c-editing": [
+   "9vi2u5"
+  ],
   "k-hooks": [
    "pihaid",
    "jeqh8k",
@@ -1463,12 +1455,6 @@
   ],
   "a-subagents": [
    "1fyga0q"
-  ],
-  "s-observability": [
-   "sy29q9",
-   "11dtj6r",
-   "1w436vi",
-   "la29vc"
   ],
   "a-servertools": [
    "h5o8w2"
@@ -1578,14 +1564,6 @@
    "discipline": "code",
    "title": "Show HN: A faster coding agent than Codex and Claude Code",
    "url": "https://www.codewithbullet.com"
-  },
-  {
-   "id": "hbx7k7",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: AgentCodeGUI – Multi-Account Desktop GUI for Claude Code and Codex",
-   "url": "https://github.com/UnrealFactory/AgentCodeGUI"
   },
   {
    "id": "13xt578",
