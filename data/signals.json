@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-19T04:36:37.536Z",
- "itemCount": 77,
+ "generated": "2026-10-19T13:09:57.763Z",
+ "itemCount": 67,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -54,9 +54,8 @@
   {
    "id": "arxiv-agents",
    "label": "arXiv · agents & LLM systems",
-   "ok": true,
-   "fetched": 25,
-   "kept": 15
+   "ok": false,
+   "error": "HTTP 429"
   },
   {
    "id": "arxiv-eval",
@@ -67,22 +66,6 @@
   }
  ],
  "items": [
-  {
-   "id": "11atiz5",
-   "title": "Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models",
-   "summary": "Interactive models increasingly hand complex reasoning and tool use to a slow brain in the background, leaving a realtime front model free to sustain full-duplex dialogue. Yet the user may refine, cancel or replace a request while its task runs, so a plan or result that made sense a moment ago goes stale. Each new utt…",
-   "url": "http://arxiv.org/abs/2610.23804v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-16T17:29:10Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
   {
    "id": "ynapbr",
    "title": "Tool Recommendation for Multi-Step Agents: Finding Every Tool a Task Needs",
@@ -95,153 +78,6 @@
    "date": "2026-10-16T16:30:38Z",
    "nodes": [
     "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "4ihk7d",
-   "title": "On the possibilities and limitations of LLM-based multi-agent systems for multi-criteria decision-making in healthcare operations management",
-   "summary": "Multi-criteria models for healthcare operations need weights that express how stakeholders trade off patient waiting time, provider workload, and operating cost, but these weights are difficult to quantify. Teams of large language model (LLM) agents, each prompted to represent a stakeholder, have been used to supply t…",
-   "url": "http://arxiv.org/abs/2610.23673v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-16T16:05:15Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "8xak5i",
-   "title": "ThetreStageAI: Multi-View Retrieval-Augmented Generation for Structured Bengali Theatre Production Planning",
-   "summary": "Staging a theatre performance requires coordinating dialogue, actor movement, stage directions, lighting focus, cue timing, and equipment constraints within the same production plan. This work presents ThetreStageAI, a retrieval augmented framework for structured Bengali theatre production planning. Rather than retrie…",
-   "url": "http://arxiv.org/abs/2610.23618v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-16T15:29:20Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1jga8a3",
-   "title": "From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving Agents",
-   "summary": "Large language model (LLM) agents tackle complex tasks through reasoning and interaction with external environments. Agent skills provide persistent, transferable capabilities that guide task planning, inform contextual decisions, support tool use, and enable executable procedures. Yet existing skill-evolution methods…",
-   "url": "http://arxiv.org/abs/2610.23599v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-16T15:16:56Z",
-   "nodes": [
-    "k-skills",
-    "a-tools"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1fz44cu",
-   "title": "RL-Guided Temporal Localization for Dual-Channel Retrieval in Long-Horizon Agent Memory",
-   "summary": "Time-aware retrieval is crucial for long-horizon LLM agents to effectively leverage ever-growing long-term memory. Existing methods focus on lexical or semantic similarity, leading to target memories being crowded out by temporally mismatched yet semantically similar candidates. Even time-aware approaches inject tempo…",
-   "url": "http://arxiv.org/abs/2610.23598v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-16T15:16:50Z",
-   "nodes": [
-    "c-memory",
-    "c-retrieval"
-   ],
-   "relevance": 4,
-   "application": false
-  },
-  {
-   "id": "x2ba9q",
-   "title": "Enhancing RAG-based Medical VQA with Gated Multimodal Representations",
-   "summary": "Medical Vision-Language Models (Med-LVLMs) have shown strong performance in Medical Visual Question Answering (MVQA), yet they may still produce factually inconsistent responses. Retrieval-Augmented Generation (RAG) can mitigate this issue by incorporating external clinical evidence; however, retrieval is often guided…",
-   "url": "http://arxiv.org/abs/2610.23588v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-16T15:07:33Z",
-   "nodes": [
-    "c-files",
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "5ki0hx",
-   "title": "SkillBrowser: Selective Skill Exposure for Scalable Skill-Using Agents",
-   "summary": "Large language model agents increasingly rely on skills to extend their capabilities in complex tasks. However, scalable skill use requires Selective Skill Exposure (SSE): providing relevant procedural content when needed while avoiding unnecessary exposure that may disrupt reasoning. Existing paradigms fall short in…",
-   "url": "http://arxiv.org/abs/2610.23554v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-16T14:44:01Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "rwe5ap",
-   "title": "GatewayBench: Unified Capability and Security Evaluation Platform for MCP Gateways",
-   "summary": "AI agents have increasingly interacted with external environments by invoking tools, with Model Context Protocol (MCP) emerging as a standard interface for connecting agents to heterogeneous tools and services. As organizations deploy agents at scale, MCP gateways have become a critical middleware layer for aggregatin…",
-   "url": "http://arxiv.org/abs/2610.23449v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-16T13:31:09Z",
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "4bw2nw",
-   "title": "Robust Function Calling for LLM Agents Under Interface Drift",
-   "summary": "Tool-augmented language-model agents rely on interface text: tool descriptions, argument schemas, and the candidate tool list shown at inference time. These interfaces often change after deployment even when the underlying tool semantics remain fixed, creating a practical reliability problem for function-calling syste…",
-   "url": "http://arxiv.org/abs/2610.23342v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-16T11:49:37Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "89n8s4",
-   "title": "Annotrace: A Workbench for Step-Level Annotation of Agent Traces",
-   "summary": "Every study of why LLM agents fail begins by labelling traces by hand, and every such study builds its own throwaway tool. Observability platforms record agent traces but offer no structured labelling; annotation tools label text but have no notion of a step, a delegation or a tool call, leaving it unclear what the sm…",
-   "url": "http://arxiv.org/abs/2610.23284v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-16T10:55:26Z",
-   "nodes": [
-    "s-observability"
    ],
    "relevance": 3,
    "application": false
@@ -1330,11 +1166,6 @@
   }
  ],
  "byNode": {
-  "a-tools": [
-   "11atiz5",
-   "1jga8a3",
-   "4bw2nw"
-  ],
   "c-longctx": [
    "ynapbr",
    "175d5cj",
@@ -1342,35 +1173,33 @@
    "j2astj",
    "1aq14jd"
   ],
+  "s-structured": [
+   "i4s82j"
+  ],
+  "s-models": [
+   "ui59zg"
+  ],
+  "c-retrieval": [
+   "1aq14jd",
+   "1a89hn0"
+  ],
   "a-teams": [
-   "4ihk7d",
    "j166kj",
    "1lvna2l",
    "1xqla26"
   ],
-  "c-retrieval": [
-   "8xak5i",
-   "1fz44cu",
-   "x2ba9q",
-   "1aq14jd",
-   "1a89hn0"
-  ],
-  "k-skills": [
-   "1jga8a3",
-   "5ki0hx",
-   "bkmagq",
-   "1g5lpqi",
-   "13xt578"
-  ],
-  "c-memory": [
-   "1fz44cu",
-   "1furdo9"
-  ],
-  "c-files": [
-   "x2ba9q"
+  "k-cli": [
+   "1ktme1w",
+   "1wgt1b8",
+   "hzhlbu",
+   "yq92q5",
+   "13xt578",
+   "1cc8uxk",
+   "1ledpgp",
+   "1v41iem",
+   "11wcs"
   ],
   "a-mcp": [
-   "rwe5ap",
    "1tlnnxf",
    "5envg7",
    "o49b8v",
@@ -1395,30 +1224,6 @@
    "1ahnqfx",
    "1iyeya7"
   ],
-  "s-observability": [
-   "89n8s4",
-   "sy29q9",
-   "11dtj6r",
-   "1w436vi",
-   "la29vc"
-  ],
-  "s-structured": [
-   "i4s82j"
-  ],
-  "s-models": [
-   "ui59zg"
-  ],
-  "k-cli": [
-   "1ktme1w",
-   "1wgt1b8",
-   "hzhlbu",
-   "yq92q5",
-   "13xt578",
-   "1cc8uxk",
-   "1ledpgp",
-   "1v41iem",
-   "11wcs"
-  ],
   "a-managed": [
    "1maeyx6",
    "99jelt",
@@ -1432,8 +1237,16 @@
   "f-artifacts": [
    "hzvm6i"
   ],
+  "k-skills": [
+   "bkmagq",
+   "1g5lpqi",
+   "13xt578"
+  ],
   "s-guardrails": [
    "1vyzb0t"
+  ],
+  "c-memory": [
+   "1furdo9"
   ],
   "k-claudemd": [
    "f9yd9e",
@@ -1455,6 +1268,12 @@
   ],
   "a-subagents": [
    "1fyga0q"
+  ],
+  "s-observability": [
+   "sy29q9",
+   "11dtj6r",
+   "1w436vi",
+   "la29vc"
   ],
   "a-servertools": [
    "h5o8w2"
