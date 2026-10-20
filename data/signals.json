@@ -1,27 +1,27 @@
 {
- "generated": "2026-10-20T17:00:21.554Z",
+ "generated": "2026-10-20T21:35:03.324Z",
  "itemCount": 77,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 691,
-   "kept": 234
+   "fetched": 586,
+   "kept": 197
   },
   {
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 57,
-   "kept": 8
+   "fetched": 66,
+   "kept": 11
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 69,
-   "kept": 13
+   "fetched": 83,
+   "kept": 17
   },
   {
    "id": "hn-mcp",
@@ -767,6 +767,22 @@
    "application": false
   },
   {
+   "id": "1u97o1b",
+   "title": "Fixed an MCP server passed by a cloud session or by the SDK's setMcpServers being replaced later in the session by a same-named server from your own settings",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.305",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": true
+  },
+  {
    "id": "nqqr0",
    "title": "Improved cloud sessions: a new conversation's first turn no longer waits for the local (stdio) MCP servers of plugins synced from claude.ai, unless a server sets alwaysLoad: true",
    "summary": "",
@@ -1090,19 +1106,67 @@
    "application": false
   },
   {
-   "id": "1ahnqfx",
-   "title": "Fixed headless sessions starting a folder's .mcp.json or plugin MCP server that was switched off for that folder, after changing directory or reloading plugins",
+   "id": "1e12vd9",
+   "title": "**tools:** keep $ sequences literal in memory tool str_replace",
    "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.296",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "[0.136.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.135.0...sdk-v0.136.0)",
    "date": null,
    "nodes": [
-    "a-mcp"
+    "c-memory"
    ],
-   "relevance": 18,
+   "relevance": 8,
+   "application": false
+  },
+  {
+   "id": "1texc3k",
+   "title": "**docs:** add credential expiry descriptions to the Managed Agents API reference",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[1.16.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.15.0...v1.16.0)",
+   "date": null,
+   "nodes": [
+    "a-managed"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "n850b0",
+   "title": "**docs:** improve Managed Agents memory store descriptions",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[1.16.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.15.0...v1.16.0)",
+   "date": null,
+   "nodes": [
+    "a-managed"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "kvzcm0",
+   "title": "**docs:** improve Managed Agents vault and credential descriptions",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[1.16.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.15.0...v1.16.0)",
+   "date": null,
+   "nodes": [
+    "a-managed"
+   ],
+   "relevance": 6,
    "application": false
   },
   {
@@ -1170,31 +1234,14 @@
    "application": false
   },
   {
-   "id": "1lvna2l",
-   "title": "**api:** add workflows, multiagent configuration and thread status filtering to Managed Agents",
+   "id": "yax02v",
+   "title": "**docs:** add credential expiry descriptions to the Managed Agents API reference",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "[1.13.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.12.1...v1.13.0)",
-   "date": null,
-   "nodes": [
-    "a-teams",
-    "a-managed"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1cbyefz",
-   "title": "**api:** add url_sources to the Managed Agents web_fetch tool config ([78d815d](https://github.com/anthropics/anthropic-sdk-python/commit/78d815d78b33cfea5f4aa78c57a30b341fa8ff42))",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "1.12.0",
+   "badge": "[0.136.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.135.0...sdk-v0.136.0)",
    "date": null,
    "nodes": [
     "a-managed"
@@ -1203,17 +1250,33 @@
    "application": false
   },
   {
-   "id": "h5o8w2",
-   "title": "**api:** add web search and code execution support to model capabilities ([78d815d](https://github.com/anthropics/anthropic-sdk-python/commit/78d815d78b33cfea5f4aa78c57a30b341fa8ff42))",
+   "id": "17a2skn",
+   "title": "**docs:** improve Managed Agents memory store descriptions",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "1.12.0",
+   "badge": "[0.136.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.135.0...sdk-v0.136.0)",
    "date": null,
    "nodes": [
-    "a-servertools"
+    "a-managed"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "okdfg3",
+   "title": "**docs:** improve Managed Agents vault and credential descriptions",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "[0.136.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.135.0...sdk-v0.136.0)",
+   "date": null,
+   "nodes": [
+    "a-managed"
    ],
    "relevance": 6,
    "application": false
@@ -1262,71 +1325,6 @@
    "date": null,
    "nodes": [
     "s-observability"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "la29vc",
-   "title": "**client:** add native support for OpenTelemetry tracing",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[0.134.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.133.0...sdk-v0.134.0)",
-   "date": null,
-   "nodes": [
-    "s-observability"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "4qt9ev",
-   "title": "move more shared rules into the shared part of CLAUDE.md",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[0.134.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.133.0...sdk-v0.134.0)",
-   "date": null,
-   "nodes": [
-    "k-claudemd"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1xqla26",
-   "title": "**api:** add workflows, multiagent configuration and thread status filtering to Managed Agents",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[0.133.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.132.1...sdk-v0.133.0)",
-   "date": null,
-   "nodes": [
-    "a-teams",
-    "a-managed"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "jbw7na",
-   "title": "**internal:** remove the next branch rule from CLAUDE.md",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[0.133.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.132.1...sdk-v0.133.0)",
-   "date": null,
-   "nodes": [
-    "k-claudemd"
    ],
    "relevance": 6,
    "application": false
@@ -1383,8 +1381,7 @@
    "snivsg",
    "sy29q9",
    "11dtj6r",
-   "1w436vi",
-   "la29vc"
+   "1w436vi"
   ],
   "s-guardrails": [
    "lxssnl",
@@ -1392,7 +1389,8 @@
   ],
   "c-memory": [
    "1kfc4x1",
-   "1furdo9"
+   "1furdo9",
+   "1e12vd9"
   ],
   "c-editing": [
    "18ga90w",
@@ -1411,6 +1409,7 @@
    "kdam9d",
    "c68jre",
    "12eprqz",
+   "1u97o1b",
    "nqqr0",
    "mjhkhe",
    "73va5v",
@@ -1426,26 +1425,26 @@
    "af9gje",
    "eyhrtf",
    "1083o92",
-   "1tsj1yk",
-   "1ahnqfx"
+   "1tsj1yk"
   ],
   "a-managed": [
    "1maeyx6",
+   "1texc3k",
+   "n850b0",
+   "kvzcm0",
    "99jelt",
    "a2lv6v",
-   "1lvna2l",
-   "1cbyefz",
+   "yax02v",
+   "17a2skn",
+   "okdfg3",
    "1pggadi",
-   "1a0ehsc",
-   "1xqla26"
+   "1a0ehsc"
   ],
   "f-artifacts": [
    "hzvm6i"
   ],
   "k-claudemd": [
-   "f9yd9e",
-   "4qt9ev",
-   "jbw7na"
+   "f9yd9e"
   ],
   "s-deploy": [
    "1nnfsk0"
@@ -1458,13 +1457,6 @@
   ],
   "a-subagents": [
    "1fyga0q"
-  ],
-  "a-teams": [
-   "1lvna2l",
-   "1xqla26"
-  ],
-  "a-servertools": [
-   "h5o8w2"
   ]
  },
  "applications": [
@@ -1627,6 +1619,14 @@
    "discipline": "code",
    "title": "Show HN: Policy enforcement for Claude Code, Cursor, and Codex",
    "url": "https://kastra.ai/"
+  },
+  {
+   "id": "1u97o1b",
+   "node": "a-mcp",
+   "nodeTitle": "MCP",
+   "discipline": "agents",
+   "title": "Fixed an MCP server passed by a cloud session or by the SDK's setMcpServers being replaced later in the session by a same-named server from your own settings",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   }
  ]
 }
