@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-21T11:44:40.957Z",
- "itemCount": 78,
+ "generated": "2026-10-21T17:11:14.333Z",
+ "itemCount": 79,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -13,15 +13,15 @@
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 46,
+   "fetched": 47,
    "kept": 9
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 59,
-   "kept": 12
+   "fetched": 60,
+   "kept": 11
   },
   {
    "id": "hn-mcp",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 12
+   "kept": 13
   },
   {
    "id": "arxiv-agents",
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "16jzqx9",
+   "title": "Show HN: Peras – Pause Claude Code and Codex before they burn your weekly limit",
+   "summary": "",
+   "url": "https://peras.vertias.eu/",
+   "discussion": "https://news.ycombinator.com/item?id=50180215",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "1 pts",
+   "date": "2026-10-21T13:01:26Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "1tbejz4",
    "title": "TraceLite: Efficient Trace Reduction for SWE Agents via Optical Compression and Redundancy Removal",
@@ -1349,6 +1366,19 @@
   }
  ],
  "byNode": {
+  "k-cli": [
+   "16jzqx9",
+   "kginxy",
+   "ouarcq",
+   "1ktme1w",
+   "1wgt1b8",
+   "hzhlbu",
+   "yq92q5",
+   "13xt578",
+   "1cc8uxk",
+   "1ledpgp",
+   "11wcs"
+  ],
   "a-tools": [
    "1tbejz4",
    "18phb0e",
@@ -1371,18 +1401,6 @@
    "du1dvz",
    "s318vb",
    "1vyzb0t"
-  ],
-  "k-cli": [
-   "kginxy",
-   "ouarcq",
-   "1ktme1w",
-   "1wgt1b8",
-   "hzhlbu",
-   "yq92q5",
-   "13xt578",
-   "1cc8uxk",
-   "1ledpgp",
-   "11wcs"
   ],
   "k-skills": [
    "18phb0e",
@@ -1479,6 +1497,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "16jzqx9",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Peras – Pause Claude Code and Codex before they burn your weekly limit",
+   "url": "https://peras.vertias.eu/"
+  },
   {
    "id": "kginxy",
    "node": "k-cli",
