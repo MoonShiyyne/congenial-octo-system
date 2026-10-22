@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-22T17:07:43.913Z",
- "itemCount": 80,
+ "generated": "2026-10-22T21:36:06.369Z",
+ "itemCount": 61,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 49,
-   "kept": 8
+   "kept": 7
   },
   {
    "id": "hn-agents",
@@ -54,16 +54,14 @@
   {
    "id": "arxiv-agents",
    "label": "arXiv · agents & LLM systems",
-   "ok": true,
-   "fetched": 25,
-   "kept": 13
+   "ok": false,
+   "error": "The operation was aborted due to timeout"
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
-   "ok": true,
-   "fetched": 20,
-   "kept": 9
+   "ok": false,
+   "error": "The operation was aborted due to timeout"
   }
  ],
  "items": [
@@ -85,39 +83,6 @@
    "application": true
   },
   {
-   "id": "1jp6l4c",
-   "title": "From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks",
-   "summary": "Recent advances in frontier AI models have demonstrated remarkable capabilities in visual understanding, reasoning, planning, and tool use, raising the possibility of using general-purpose AI models for robot manipulation without task-specific training. However, their manipulation capabilities have not been systematic…",
-   "url": "http://arxiv.org/abs/2610.30051v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-21T17:11:52Z",
-   "nodes": [
-    "a-tools",
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1ml1ug6",
-   "title": "Robust Soft Skill Adaptation via Behavioral Localization in Tool-Using Agents",
-   "summary": "Text skills can extend the capabilities of tool-using agents, but long skill descriptions increase computational costs. Soft prompts provide a compact alternative, yet learning from entire successful trajectories may also introduce unnecessary behavioral changes. We find that the useful effect of a text skill is highl…",
-   "url": "http://arxiv.org/abs/2610.30041v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-21T17:02:06Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
    "id": "1u1z3v2",
    "title": "Show HN: Omnara – Open-source alternative to Claude Managed Agents",
    "summary": "",
@@ -126,93 +91,13 @@
    "source": "Hacker News · Claude",
    "sourceId": "hn-claude",
    "category": "market",
-   "badge": "104 pts",
+   "badge": "107 pts",
    "date": "2026-10-21T16:44:53Z",
    "nodes": [
     "a-managed"
    ],
    "relevance": 3,
    "application": true
-  },
-  {
-   "id": "1nnxlug",
-   "title": "ToM2Vec: Continuous Theory-of-Mind Tokens for Multi-Agent Coordination",
-   "summary": "Forming an accurate theory-of-mind (ToM) is key to successful multi-agent collaboration and requires reasoning under uncertainty to capture multiple possible partner states. This is hard to do in the text representation space native to large language model (LLM) agents, which more easily describe a single partner stat…",
-   "url": "http://arxiv.org/abs/2610.29934v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-21T16:05:54Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "19p4zml",
-   "title": "Graph Topology Meets Energy-Driven Pathfinding: Preserving Contextual Consistency in Retrieval-Augmented Generation",
-   "summary": "Retrieval-augmented generation (RAG) frequently integrates knowledge graphs (KGs) for complex multi-hop question answering. However, their performance is increasingly bottlenecked by the knowledge structuring and reasoning processes. (i) Severe semantic loss: Distilling continuous texts into discrete symbols strips aw…",
-   "url": "http://arxiv.org/abs/2610.29933v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-21T16:05:44Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "yck55g",
-   "title": "Compaction Laundering: Provenance Destruction in Context-Compacting Coding Agents",
-   "summary": "Coding agents that run long enough must compact their context, summarizing the conversation, discarding the original, and carrying the summary forward as memory. We show that in popular open-source coding agents this step is an exploitable trust boundary. Harnesses that flatten the typed conversation into a single pla…",
-   "url": "http://arxiv.org/abs/2610.29869v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-21T15:24:23Z",
-   "nodes": [
-    "c-editing"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1mnv1c",
-   "title": "MAPS: Macro-Adaptive Parallel Reasoning for Regulating Search Momentum in Retrieval-Augmented Generation",
-   "summary": "Retrieval-Augmented Generation (RAG) improves the performance of Large Language Models (LLMs) by retrieving external knowledge. Recently, some RAG methods interleave reasoning and retrieval, enabling LLMs to progressively generate sub-queries and retrieve external knowledge. However, these methods may suffer from redu…",
-   "url": "http://arxiv.org/abs/2610.29792v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-21T14:19:17Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "12gngw2",
-   "title": "Retrieval Augmented Generation Compositionality",
-   "summary": "Retrieval Augmented Generation (RAG) grounds large language models in external knowledge. Modern pipelines combine embedding, chunking, retrieval, reranking, query augmentation, context compression, and agentic verification, yet these techniques are typically evaluated one at a time. It remains unclear whether their i…",
-   "url": "http://arxiv.org/abs/2610.29722v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-21T13:30:29Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 9,
-   "application": false
   },
   {
    "id": "16jzqx9",
@@ -232,103 +117,6 @@
    "application": true
   },
   {
-   "id": "e9dhae",
-   "title": "SatCraft: Agentic Optimization of Scheduling Policies for Satellite-Cellular Edge Services",
-   "summary": "Mobile edge services can combine local computation with satellite and cellular access to deliver time-sensitive results in areas with intermittent terrestrial coverage. Meeting their deadlines and quality requirements calls for joint computation and transmission scheduling that accounts for task dependencies, changing…",
-   "url": "http://arxiv.org/abs/2610.29588v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-21T11:29:37Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1v2fkkl",
-   "title": "A Stratified Multi-Rater Evaluation of LLM-Based Virtual Standardized Patients with a Deployed Data-Generation Platform",
-   "summary": "The Objective Structured Clinical Examination (OSCE) is widely used to assess clinical communication skills in medical education, requiring trainees to take histories and reason clinically with standardized patients (SPs). Large language model (LLM)-based virtual standardized patients (VSPs), typically built by person…",
-   "url": "http://arxiv.org/abs/2610.29312v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-21T07:08:59Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1ips2lw",
-   "title": "Learning Marginal Viewpoint Utility for Budgeted Evidence Selection in RAG",
-   "summary": "Retrieval-augmented generation over multi-viewpoint queries must preserve distinct answers and positions from the retrieved evidence while operating under a fixed context budget. We introduce LMVU, a lightweight ranker that learns to prioritize candidates by the marginal viewpoint coverage they add to the current sele…",
-   "url": "http://arxiv.org/abs/2610.29234v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-21T05:44:09Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1v4xo3i",
-   "title": "C$^2$U in RAG: Compositional Concept Unlearning in Retrieval-Augmented Generation",
-   "summary": "Retrieval-augmented generation can expose unwanted concepts through retrieved evidence even when the generator is moderated. We study query-side concept suppression with a fixed encoder and document index. Compositional Concept Unlearning (C$^2$U) routes a profile-derived direction through an augmented atom bank, addi…",
-   "url": "http://arxiv.org/abs/2610.29223v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-21T05:30:06Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1sj1aen",
-   "title": "Reasoning-Search-Augmented LLMs: An Operational Taxonomy, Benchmark Analysis and Controlled Evidence Synthesis",
-   "summary": "Large language models (LLMs) demonstrate impressive emergent reasoning capabilities, yet they remain constrained by fixed model parameters and finite context windows. Even when augmented with static retrieval, they can produce statements that are unsupported by, or even contradictory to, retrieved evidence. This leads…",
-   "url": "http://arxiv.org/abs/2610.29189v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-21T04:19:06Z",
-   "nodes": [
-    "c-longctx",
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "ilet65",
-   "title": "5uGUE: Agentic Hardware-in-the-Loop Fuzzing for 5G Devices and beyond",
-   "summary": "In this paper, we present 5uGUE, a large language model (LLM)-driven hardware-in-the-loop agent, which enables the wireless fuzzing of 5G-enabled devices (such as mobile phones). 5uGUE combines multi-step reasoning with tool-assisted interaction and integrates into the fuzzing pipeline by leveraging specialized tools…",
-   "url": "http://arxiv.org/abs/2610.29155v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-21T03:45:25Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
    "id": "kginxy",
    "title": "Show HN: Agent Archive – Session Handoffs and Backups for Claude Code and Codex",
    "summary": "",
@@ -344,54 +132,6 @@
    ],
    "relevance": 3,
    "application": true
-  },
-  {
-   "id": "1di83dn",
-   "title": "UvA-MT's Participation in the WMT26 General Translation Shared Task",
-   "summary": "This paper presents UvA-MT's submission to the WMT 2026 General Machine Translation shared task, competing in the unconstrained track across all 23 translation directions. This year, we fully leverage the test-time methods of Large Language Models (LLMs) for machine translation. Specifically, (1) we use sequential sam…",
-   "url": "http://arxiv.org/abs/2610.27852v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-20T08:33:34Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "t35u3m",
-   "title": "On the LLM Verification for Argument Graph Generation",
-   "summary": "Multi-agent LLM systems can formalize natural-language argumentation end-to-end, turning plain text into structured graphs by classifying components, connecting them with relations, and enriching the resulting graphs into formal models. Quality assurance for those graphs is almost always another LLMs: a reviewer, judg…",
-   "url": "http://arxiv.org/abs/2610.27361v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-19T22:41:41Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "c7u6eh",
-   "title": "On the Fragility of Tasks under Composition: Implicit Budgeting in Language Models",
-   "summary": "Modern language models are increasingly asked to handle several tasks within a single prompt. Doing so requires solving each task correctly while integrating the resulting answers into a coherent response. In this paper, we identify a fundamental limitation in this process, where models make substantially more errors…",
-   "url": "http://arxiv.org/abs/2610.27190v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-19T19:23:48Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
   },
   {
    "id": "ouarcq",
@@ -410,38 +150,6 @@
    ],
    "relevance": 4,
    "application": true
-  },
-  {
-   "id": "1e6x8ui",
-   "title": "LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models",
-   "summary": "Realistic market impact is essential for generative limit order book (LOB) models to serve as world models for trading agents. If a simulator misprices this mechanism, agents learn policies that are optimal in the simulator but wrong in the real market. Existing metrics assess generated streams purely through distribu…",
-   "url": "http://arxiv.org/abs/2610.27100v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-19T18:01:00Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "qfmqp7",
-   "title": "Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy",
-   "summary": "LLM agents that compute the right answer can still answer wrongly. Agent harnesses increasingly keep long tool outputs out of the context window, saving them to files that the agent searches or reads on demand. We ask where this costs accuracy with a real scientific tool: PHREEQC, a widely used geochemistry simulator…",
-   "url": "http://arxiv.org/abs/2610.26836v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-19T17:57:41Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
   },
   {
    "id": "1ktme1w",
@@ -697,23 +405,6 @@
     "k-cli"
    ],
    "relevance": 6,
-   "application": true
-  },
-  {
-   "id": "1ledpgp",
-   "title": "Show HN: Claudexor – quota-aware routing for Claude Code, Codex, and Cursor",
-   "summary": "",
-   "url": "https://github.com/razzant/claudexor",
-   "discussion": "https://news.ycombinator.com/item?id=48988194",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "4 pts",
-   "date": "2026-07-21T04:55:46Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
    "application": true
   },
   {
@@ -1379,32 +1070,7 @@
  "byNode": {
   "c-retrieval": [
    "1ep85ns",
-   "19p4zml",
-   "1mnv1c",
-   "12gngw2",
-   "e9dhae",
-   "1ips2lw",
-   "1v4xo3i",
-   "ilet65",
-   "1di83dn",
-   "c7u6eh",
    "1a89hn0"
-  ],
-  "a-tools": [
-   "1jp6l4c"
-  ],
-  "s-models": [
-   "1jp6l4c",
-   "1sj1aen",
-   "1e6x8ui"
-  ],
-  "k-skills": [
-   "1ml1ug6",
-   "1v2fkkl",
-   "bkmagq",
-   "1g5lpqi",
-   "13xt578",
-   "12juswi"
   ],
   "a-managed": [
    "1u1z3v2",
@@ -1420,13 +1086,6 @@
    "1pggadi",
    "1a0ehsc"
   ],
-  "a-teams": [
-   "1nnxlug",
-   "t35u3m"
-  ],
-  "c-editing": [
-   "yck55g"
-  ],
   "k-cli": [
    "16jzqx9",
    "kginxy",
@@ -1437,13 +1096,8 @@
    "yq92q5",
    "13xt578",
    "1cc8uxk",
-   "1ledpgp",
    "11wcs",
    "ty09yj"
-  ],
-  "c-longctx": [
-   "1sj1aen",
-   "qfmqp7"
   ],
   "k-plugins": [
    "ouarcq",
@@ -1472,6 +1126,12 @@
    "jop4r7",
    "kyumbj",
    "1bz925n"
+  ],
+  "k-skills": [
+   "bkmagq",
+   "1g5lpqi",
+   "13xt578",
+   "12juswi"
   ],
   "s-guardrails": [
    "1vyzb0t"
@@ -1658,14 +1318,6 @@
    "discipline": "code",
    "title": "Show HN: Termic – desktop app for running CLI coding agents (Claude Code, Codex)",
    "url": "https://termic.dev/"
-  },
-  {
-   "id": "1ledpgp",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Claudexor – quota-aware routing for Claude Code, Codex, and Cursor",
-   "url": "https://github.com/razzant/claudexor"
   },
   {
    "id": "11wcs",
