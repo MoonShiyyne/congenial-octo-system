@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-22T04:40:00.672Z",
- "itemCount": 80,
+ "generated": "2026-10-22T11:47:53.907Z",
+ "itemCount": 79,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 49,
-   "kept": 8
+   "kept": 7
   },
   {
    "id": "hn-agents",
@@ -76,7 +76,7 @@
    "source": "Show HN · built with AI",
    "sourceId": "hn-show",
    "category": "market",
-   "badge": "2 pts",
+   "badge": "3 pts",
    "date": "2026-10-21T22:22:59Z",
    "nodes": [
     "c-retrieval"
@@ -126,7 +126,7 @@
    "source": "Hacker News · Claude",
    "sourceId": "hn-claude",
    "category": "market",
-   "badge": "45 pts",
+   "badge": "86 pts",
    "date": "2026-10-21T16:44:53Z",
    "nodes": [
     "a-managed"
@@ -697,23 +697,6 @@
     "k-cli"
    ],
    "relevance": 6,
-   "application": true
-  },
-  {
-   "id": "1ledpgp",
-   "title": "Show HN: Claudexor – quota-aware routing for Claude Code, Codex, and Cursor",
-   "summary": "",
-   "url": "https://github.com/razzant/claudexor",
-   "discussion": "https://news.ycombinator.com/item?id=48988194",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "4 pts",
-   "date": "2026-07-21T04:55:46Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
    "application": true
   },
   {
@@ -1437,7 +1420,6 @@
    "yq92q5",
    "13xt578",
    "1cc8uxk",
-   "1ledpgp",
    "11wcs",
    "ty09yj"
   ],
@@ -1658,14 +1640,6 @@
    "discipline": "code",
    "title": "Show HN: Termic – desktop app for running CLI coding agents (Claude Code, Codex)",
    "url": "https://termic.dev/"
-  },
-  {
-   "id": "1ledpgp",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Claudexor – quota-aware routing for Claude Code, Codex, and Cursor",
-   "url": "https://github.com/razzant/claudexor"
   },
   {
    "id": "11wcs",
