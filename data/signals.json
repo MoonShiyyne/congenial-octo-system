@@ -1,27 +1,27 @@
 {
- "generated": "2026-10-21T21:40:24.809Z",
- "itemCount": 79,
+ "generated": "2026-10-22T04:40:00.672Z",
+ "itemCount": 80,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 509,
-   "kept": 173
+   "fetched": 275,
+   "kept": 93
   },
   {
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 47,
-   "kept": 9
+   "fetched": 45,
+   "kept": 8
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 60,
-   "kept": 11
+   "fetched": 58,
+   "kept": 9
   },
   {
    "id": "hn-mcp",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 49,
-   "kept": 7
+   "kept": 8
   },
   {
    "id": "hn-agents",
@@ -56,7 +56,7 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 10
+   "kept": 13
   },
   {
    "id": "arxiv-eval",
@@ -67,6 +67,153 @@
   }
  ],
  "items": [
+  {
+   "id": "1ep85ns",
+   "title": "Show HN: ReviewerAgent and StopContinue, for CC and Codex with Pi",
+   "summary": "",
+   "url": "https://github.com/rladr-org/reviewer-agent",
+   "discussion": "https://news.ycombinator.com/item?id=50188494",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "2 pts",
+   "date": "2026-10-21T22:22:59Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "1jp6l4c",
+   "title": "From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks",
+   "summary": "Recent advances in frontier AI models have demonstrated remarkable capabilities in visual understanding, reasoning, planning, and tool use, raising the possibility of using general-purpose AI models for robot manipulation without task-specific training. However, their manipulation capabilities have not been systematic…",
+   "url": "http://arxiv.org/abs/2610.30051v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-21T17:11:52Z",
+   "nodes": [
+    "a-tools",
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1ml1ug6",
+   "title": "Robust Soft Skill Adaptation via Behavioral Localization in Tool-Using Agents",
+   "summary": "Text skills can extend the capabilities of tool-using agents, but long skill descriptions increase computational costs. Soft prompts provide a compact alternative, yet learning from entire successful trajectories may also introduce unnecessary behavioral changes. We find that the useful effect of a text skill is highl…",
+   "url": "http://arxiv.org/abs/2610.30041v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-21T17:02:06Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1u1z3v2",
+   "title": "Show HN: Omnara – Open-source alternative to Claude Managed Agents",
+   "summary": "",
+   "url": "https://github.com/omnara-ai/omnara",
+   "discussion": "https://news.ycombinator.com/item?id=50183892",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "45 pts",
+   "date": "2026-10-21T16:44:53Z",
+   "nodes": [
+    "a-managed"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "1nnxlug",
+   "title": "ToM2Vec: Continuous Theory-of-Mind Tokens for Multi-Agent Coordination",
+   "summary": "Forming an accurate theory-of-mind (ToM) is key to successful multi-agent collaboration and requires reasoning under uncertainty to capture multiple possible partner states. This is hard to do in the text representation space native to large language model (LLM) agents, which more easily describe a single partner stat…",
+   "url": "http://arxiv.org/abs/2610.29934v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-21T16:05:54Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "19p4zml",
+   "title": "Graph Topology Meets Energy-Driven Pathfinding: Preserving Contextual Consistency in Retrieval-Augmented Generation",
+   "summary": "Retrieval-augmented generation (RAG) frequently integrates knowledge graphs (KGs) for complex multi-hop question answering. However, their performance is increasingly bottlenecked by the knowledge structuring and reasoning processes. (i) Severe semantic loss: Distilling continuous texts into discrete symbols strips aw…",
+   "url": "http://arxiv.org/abs/2610.29933v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-21T16:05:44Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "yck55g",
+   "title": "Compaction Laundering: Provenance Destruction in Context-Compacting Coding Agents",
+   "summary": "Coding agents that run long enough must compact their context, summarizing the conversation, discarding the original, and carrying the summary forward as memory. We show that in popular open-source coding agents this step is an exploitable trust boundary. Harnesses that flatten the typed conversation into a single pla…",
+   "url": "http://arxiv.org/abs/2610.29869v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-21T15:24:23Z",
+   "nodes": [
+    "c-editing"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1mnv1c",
+   "title": "MAPS: Macro-Adaptive Parallel Reasoning for Regulating Search Momentum in Retrieval-Augmented Generation",
+   "summary": "Retrieval-Augmented Generation (RAG) improves the performance of Large Language Models (LLMs) by retrieving external knowledge. Recently, some RAG methods interleave reasoning and retrieval, enabling LLMs to progressively generate sub-queries and retrieve external knowledge. However, these methods may suffer from redu…",
+   "url": "http://arxiv.org/abs/2610.29792v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-21T14:19:17Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "12gngw2",
+   "title": "Retrieval Augmented Generation Compositionality",
+   "summary": "Retrieval Augmented Generation (RAG) grounds large language models in external knowledge. Modern pipelines combine embedding, chunking, retrieval, reranking, query augmentation, context compression, and agentic verification, yet these techniques are typically evaluated one at a time. It remains unclear whether their i…",
+   "url": "http://arxiv.org/abs/2610.29722v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-21T13:30:29Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 9,
+   "application": false
+  },
   {
    "id": "16jzqx9",
    "title": "Show HN: Peras – Pause Claude Code and Codex before they burn your weekly limit",
@@ -85,31 +232,15 @@
    "application": true
   },
   {
-   "id": "1tbejz4",
-   "title": "TraceLite: Efficient Trace Reduction for SWE Agents via Optical Compression and Redundancy Removal",
-   "summary": "Software engineering agents solve repository-level tasks through iterative tool use, but their continuously growing interaction traces incur substantial token consumption and inference overhead. Existing compression approaches often require model training, auxiliary LLM calls, or assumptions about specific content suc…",
-   "url": "http://arxiv.org/abs/2610.28612v1",
+   "id": "e9dhae",
+   "title": "SatCraft: Agentic Optimization of Scheduling Policies for Satellite-Cellular Edge Services",
+   "summary": "Mobile edge services can combine local computation with satellite and cellular access to deliver time-sensitive results in areas with intermittent terrestrial coverage. Meeting their deadlines and quality requirements calls for joint computation and transmission scheduling that accounts for task dependencies, changing…",
+   "url": "http://arxiv.org/abs/2610.29588v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-10-20T17:53:35Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "igp1y4",
-   "title": "Cache Engineering for Agents",
-   "summary": "Large Language Model (LLM) agents can handle increasingly complex tasks, navigating long trajectories of observations and actions. As these trajectories grow, key-value (KV) cache I/O and storage become the dominant cost. Trajectories can also exceed the LLM's maximum context length, requiring control over active cach…",
-   "url": "http://arxiv.org/abs/2610.28577v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-20T17:32:24Z",
+   "date": "2026-10-21T11:29:37Z",
    "nodes": [
     "c-retrieval"
    ],
@@ -117,17 +248,82 @@
    "application": false
   },
   {
-   "id": "du1dvz",
-   "title": "After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents",
-   "summary": "Modern LLM agents persist state across sessions via two channels: long-lived memory files silently prepended to the system prompt, and scheduled tasks waking the agent without user input. A one-time indirect prompt injection committed to either channel can re-fire across sessions long after the attacker leaves, threat…",
-   "url": "http://arxiv.org/abs/2610.28425v1",
+   "id": "1v2fkkl",
+   "title": "A Stratified Multi-Rater Evaluation of LLM-Based Virtual Standardized Patients with a Deployed Data-Generation Platform",
+   "summary": "The Objective Structured Clinical Examination (OSCE) is widely used to assess clinical communication skills in medical education, requiring trainees to take histories and reason clinically with standardized patients (SPs). Large language model (LLM)-based virtual standardized patients (VSPs), typically built by person…",
+   "url": "http://arxiv.org/abs/2610.29312v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-21T07:08:59Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1ips2lw",
+   "title": "Learning Marginal Viewpoint Utility for Budgeted Evidence Selection in RAG",
+   "summary": "Retrieval-augmented generation over multi-viewpoint queries must preserve distinct answers and positions from the retrieved evidence while operating under a fixed context budget. We introduce LMVU, a lightweight ranker that learns to prioritize candidates by the marginal viewpoint coverage they add to the current sele…",
+   "url": "http://arxiv.org/abs/2610.29234v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-10-20T15:55:05Z",
+   "date": "2026-10-21T05:44:09Z",
    "nodes": [
-    "s-guardrails"
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1v4xo3i",
+   "title": "C$^2$U in RAG: Compositional Concept Unlearning in Retrieval-Augmented Generation",
+   "summary": "Retrieval-augmented generation can expose unwanted concepts through retrieved evidence even when the generator is moderated. We study query-side concept suppression with a fixed encoder and document index. Compositional Concept Unlearning (C$^2$U) routes a profile-derived direction through an augmented atom bank, addi…",
+   "url": "http://arxiv.org/abs/2610.29223v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-21T05:30:06Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1sj1aen",
+   "title": "Reasoning-Search-Augmented LLMs: An Operational Taxonomy, Benchmark Analysis and Controlled Evidence Synthesis",
+   "summary": "Large language models (LLMs) demonstrate impressive emergent reasoning capabilities, yet they remain constrained by fixed model parameters and finite context windows. Even when augmented with static retrieval, they can produce statements that are unsupported by, or even contradictory to, retrieved evidence. This leads…",
+   "url": "http://arxiv.org/abs/2610.29189v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-21T04:19:06Z",
+   "nodes": [
+    "c-longctx",
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ilet65",
+   "title": "5uGUE: Agentic Hardware-in-the-Loop Fuzzing for 5G Devices and beyond",
+   "summary": "In this paper, we present 5uGUE, a large language model (LLM)-driven hardware-in-the-loop agent, which enables the wireless fuzzing of 5G-enabled devices (such as mobile phones). 5uGUE combines multi-step reasoning with tool-assisted interaction and integrates into the fuzzing pipeline by leveraging specialized tools…",
+   "url": "http://arxiv.org/abs/2610.29155v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-21T03:45:25Z",
+   "nodes": [
+    "c-retrieval"
    ],
    "relevance": 3,
    "application": false
@@ -150,106 +346,6 @@
    "application": true
   },
   {
-   "id": "18phb0e",
-   "title": "VisualEvolve: A Skill Self-Evolution Framework for Visual Reasoning",
-   "summary": "Visual tool use enables vision-language models (VLMs) to acquire task-relevant evidence, but its effectiveness can be limited by predefined visual operations and the tool-use strategies learned during training. Representing these operations and strategies as reusable external skills allows them to be refined through s…",
-   "url": "http://arxiv.org/abs/2610.28386v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-20T15:37:38Z",
-   "nodes": [
-    "k-skills",
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "s318vb",
-   "title": "Context-Aware Prompt Injection Detection via Small Language Models in RAG Pipelines: nokast-secureRAG",
-   "summary": "Local Retrieval-Augmented Generation (RAG) systems are vulnerable to indirect prompt injection and retrieval poisoning, where malicious instructions in retrieved content are mistaken for trusted input. We present nokast-secureRAG, a roughly 0.5B-parameter small language model that acts as a semantic firewall between r…",
-   "url": "http://arxiv.org/abs/2610.28364v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-20T15:26:15Z",
-   "nodes": [
-    "c-retrieval",
-    "s-guardrails"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1thqtao",
-   "title": "Auto-Director: Leveraging Multi-Agent Collaboration for Autonomous Video Editing",
-   "summary": "Autonomous video editing from open-world resources remains a challenging problem in multimedia content creation. Retrieval-based methods are constrained by fixed source material and lack creative flexibility, while generative models struggle with long-horizon coherence and often diverge from user intent. Both paradigm…",
-   "url": "http://arxiv.org/abs/2610.28346v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-20T15:11:55Z",
-   "nodes": [
-    "c-retrieval",
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1ld83pw",
-   "title": "DeclineCraft: A RAG Abstention Benchmark for Jointly Measuring Combined Retrieval and Parametric Knowledge",
-   "summary": "Reliable retrieval-augmented generation (RAG) requires recognizing when neither retrieved documents nor parametric knowledge supports an answer. We introduce DeclineCraft, a dynamic abstention benchmark whose unanswerable questions target Minecraft feature additions after a corpus cut-off, with audits of possible para…",
-   "url": "http://arxiv.org/abs/2610.28340v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-20T15:07:19Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "em7gic",
-   "title": "A Multimodal Engineering GraphRAG Framework for Post-Wind-Event Building Assessment and Recovery Inference",
-   "summary": "Post-event building assessment requires linking observed physical damage to its consequences for safety, habitability, functionality, and recovery. Yet post-disaster evidence is often heterogeneous, incomplete, and distributed across images and reconnaissance reports, while recovery models typically require structured…",
-   "url": "http://arxiv.org/abs/2610.28216v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-20T13:50:50Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1hw96yj",
-   "title": "Elicitation or Expansion? Demystifying Gains from Agent Harness Optimization",
-   "summary": "Recent studies in harness optimization have shown substantial performance gains in language model agents without updating model weights. A well-designed harness more effectively leverages the underlying model's capabilities by shaping context, tool use, and execution workflows. However, naïve success rates alone do no…",
-   "url": "http://arxiv.org/abs/2610.27889v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-20T09:11:39Z",
-   "nodes": [
-    "c-retrieval",
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
    "id": "1di83dn",
    "title": "UvA-MT's Participation in the WMT26 General Translation Shared Task",
    "summary": "This paper presents UvA-MT's submission to the WMT 2026 General Machine Translation shared task, competing in the unconstrained track across all 23 translation directions. This year, we fully leverage the test-time methods of Large Language Models (LLMs) for machine translation. Specifically, (1) we use sequential sam…",
@@ -264,23 +360,6 @@
    ],
    "relevance": 3,
    "application": false
-  },
-  {
-   "id": "1dhzxhq",
-   "title": "RAG-NIMBF: A Non-Invasive, Modular Benchmarking Framework for Automated RAG Configuration Analysis",
-   "summary": "Retrieval-Augmented Generation (RAG) has become the dominant paradigm for grounding the outputs of large language models (LLM) in external knowledge. However, practitioners are faced with a vast configuration space comprising chunking, embedding, retrieval, reranking, prompting and generation models, and there is limi…",
-   "url": "http://arxiv.org/abs/2610.27816v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-20T08:08:08Z",
-   "nodes": [
-    "c-retrieval",
-    "s-models"
-   ],
-   "relevance": 6,
-   "application": true
   },
   {
    "id": "t35u3m",
@@ -358,57 +437,6 @@
    "category": "research",
    "badge": "preprint",
    "date": "2026-10-19T17:57:41Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "snivsg",
-   "title": "RouterWorld: Scaling Conversational AI with Latency-Aware LLM Routing",
-   "summary": "Conversational AI systems built on Large Language Models (LLMs) require routing mechanisms that balance answer quality and response latency at scale. However, existing LLM routing benchmarks assume full observability of all candidate model outcomes, under-emphasize latency as a first-class metric, and fragment evaluat…",
-   "url": "http://arxiv.org/abs/2610.26511v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-19T14:45:25Z",
-   "nodes": [
-    "c-retrieval",
-    "s-models",
-    "s-observability"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "18ga90w",
-   "title": "Bud ContextCompact 2.0: Context Compaction for Agent Success and Accuracy with Small Language Models and Constrained Context Windows",
-   "summary": "Agents that work for many turns outgrow the context window of the model that serves them, and on small language models (SLMs) and constrained inference systems that window is small. Context compaction replaces older turns with a summary so a session can continue, but it is lossy, costs a model call, and can help or hu…",
-   "url": "http://arxiv.org/abs/2610.25516v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-18T20:15:30Z",
-   "nodes": [
-    "c-longctx",
-    "c-editing"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "11lxrj3",
-   "title": "From Label Priors to Task Evidence: Efficient Long-Video Frame Selection via Bayesian GRPO",
-   "summary": "Multimodal Large Language Models (MLLMs) face significant scalability challenges in long-video understanding due to quadratic attention complexity and context window constraints. Existing retrieval-based approaches typically rely on supervised learning from static keyframe annotations. However, these label priors ofte…",
-   "url": "http://arxiv.org/abs/2610.25418v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-18T17:17:59Z",
    "nodes": [
     "c-longctx"
    ],
@@ -603,23 +631,6 @@
    "application": true
   },
   {
-   "id": "1furdo9",
-   "title": "Show HN: Remembrane – agent memory in one SQLite file, zero dependencies",
-   "summary": "",
-   "url": "https://github.com/satyasairay/remembrane",
-   "discussion": "https://news.ycombinator.com/item?id=49207194",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "13 pts",
-   "date": "2026-08-07T07:51:05Z",
-   "nodes": [
-    "c-memory"
-   ],
-   "relevance": 4,
-   "application": true
-  },
-  {
    "id": "yq92q5",
    "title": "Show HN: A faster coding agent than Codex and Claude Code",
    "summary": "",
@@ -739,22 +750,6 @@
    "application": false
   },
   {
-   "id": "o49b8v",
-   "title": "Fixed automatic tool search (ENABLE_TOOL_SEARCH=auto) turning off part-way through a conversation, for example while MCP servers reconnect after a resume",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.300",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 24,
-   "application": false
-  },
-  {
    "id": "kdam9d",
    "title": "[Claude Tag] Fixed custom connectors whose MCP servers share one host showing as a single connector in Claude Tag admin settings; each server is now its own connector",
    "summary": "",
@@ -771,35 +766,83 @@
    "application": false
   },
   {
-   "id": "c68jre",
-   "title": "Fixed self-hosted runner sessions shutting down MCP servers added through an --exec-path wrapper's own --mcp-config when connectors change mid-session",
+   "id": "1gt7k8d",
+   "title": "Fixed MCP servers showing \"needs authentication\" in claude -p on macOS while the login keychain was locked; they now say why, and the next run after an unlock connects without a new sign-in",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.299",
+   "badge": "2.1.307",
    "date": null,
    "nodes": [
     "a-mcp"
    ],
-   "relevance": 21,
+   "relevance": 18,
    "application": false
   },
   {
-   "id": "12eprqz",
-   "title": "Changed requests to claude.ai's connector proxy and to Anthropic-hosted MCP servers to no longer follow HTTP redirects; redirects by a connector's own server are unaffected",
+   "id": "y9xiix",
+   "title": "Fixed MCP servers being reported as timed out, and staying failed in headless runs, when a macOS or Linux computer went to sleep while they were connecting",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.299",
+   "badge": "2.1.307",
    "date": null,
    "nodes": [
     "a-mcp"
    ],
-   "relevance": 21,
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1u6tsa1",
+   "title": "Fixed a turn sometimes starting without an SDK MCP server's latest tools when a background task was running",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.307",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "573kuc",
+   "title": "Fixed write tools on a directly configured GitHub MCP server showing a form that closed without creating anything in the desktop app's Code tab",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.307",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1btkpdm",
+   "title": "Improved the time to the first reply in cloud sessions when one of the desktop app's MCP servers can't connect",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.307",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
    "application": false
   },
   {
@@ -915,200 +958,6 @@
    "application": false
   },
   {
-   "id": "9vi2u5",
-   "title": "Fixed Claude not being told about an MCP server's tools and instructions until its next tool call, when the server finished connecting after a compaction",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.300",
-   "date": null,
-   "nodes": [
-    "a-mcp",
-    "c-editing"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "pihaid",
-   "title": "Changed hooks: updatedInput from PreToolUse and PermissionRequest hooks is now validated like Claude's own input: unknown keys are dropped, and input the tool rejects denies the call",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.300",
-   "date": null,
-   "nodes": [
-    "k-hooks"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "c0gsc6",
-   "title": "Fixed sign-in, MCP servers and project trust appearing lost on Linux after a sandboxed command left an empty .config.json in the config directory",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.299",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1ninn2b",
-   "title": "Fixed MCP servers named constructor or prototype in an MCP config never being connected",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.299",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "bp2fab",
-   "title": "Fixed tools of an MCP server named constructor or toString asking for permission in auto mode and bypass permissions mode",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.299",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1u1ai2j",
-   "title": "Fixed deny and ask rules for an MCP server (mcp__<server>) not applying when the server's normalized name contains a double underscore",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.299",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1493e0a",
-   "title": "Fixed MCP servers added to a running headless or SDK session being connected before some policy checks ran; a blocked server is now reported as failed without being contacted",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.299",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1fyga0q",
-   "title": "Fixed claude mcp list, claude mcp get and subagent MCP servers starting a server that a policy check blocks; it is now reported as blocked without being started",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.299",
-   "date": null,
-   "nodes": [
-    "a-mcp",
-    "a-subagents"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "af9gje",
-   "title": "Fixed --bare sessions leaving out an MCP server named constructor or prototype that --channels asked for",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.299",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "jeqh8k",
-   "title": "Windows: Fixed PreToolUse and PermissionRequest hooks that set no shell failing open when Git for Windows isn't installed; a guard that fails now blocks the call",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.299",
-   "date": null,
-   "nodes": [
-    "k-hooks"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "eyhrtf",
-   "title": "Changed agent tools: lists to take only the named MCP server's tools; list a server whose name contains __ as mcp__<whole name>__*",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.299",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1083o92",
-   "title": "Changed MCP tool descriptions and server instructions from Anthropic's first-party MCP servers at api.anthropic.com to reach Claude in full instead of being cut at 4,096 characters",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.299",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
    "id": "1cged9n",
    "title": "Changed the /artifacts delete confirmation to take 1 or Enter to keep, 2 to delete, and Esc to cancel; y and n no longer answer it",
    "summary": "",
@@ -1138,6 +987,168 @@
     "k-hooks"
    ],
    "relevance": 15,
+   "application": false
+  },
+  {
+   "id": "jop4r7",
+   "title": "Improved artifacts with several views: when you ask for links to them, Claude now writes out each view's link and explains that the address bar stays the same as you switch views",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.304",
+   "date": null,
+   "nodes": [
+    "f-artifacts"
+   ],
+   "relevance": 15,
+   "application": false
+  },
+  {
+   "id": "kyumbj",
+   "title": "Changed the /artifacts delete confirmation to show numbered choices: 1 or Enter keeps the artifact, 2 deletes it, and y, n and Esc still work",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.304",
+   "date": null,
+   "nodes": [
+    "f-artifacts"
+   ],
+   "relevance": 15,
+   "application": false
+  },
+  {
+   "id": "1bz925n",
+   "title": "Improved artifacts: pages Claude writes now paint the band above a sticky header, so scrolled text no longer shows there in the mobile apps",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.301",
+   "date": null,
+   "nodes": [
+    "f-artifacts"
+   ],
+   "relevance": 15,
+   "application": false
+  },
+  {
+   "id": "15zqkq3",
+   "title": "Improved fork subagents launched together: each is now told which launch is its own, so forks are much less likely to try to start each other's work",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.307",
+   "date": null,
+   "nodes": [
+    "a-subagents"
+   ],
+   "relevance": 12,
+   "application": true
+  },
+  {
+   "id": "so9tsk",
+   "title": "Fixed /effort status, /effort ultracode and the prompt's effort indicator showing a guessed effort level when CLAUDE_CODE_EFFORT_LEVEL is auto or unset and no level is sent",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.304",
+   "date": null,
+   "nodes": [
+    "r-effort"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "55ftjh",
+   "title": "Changed fork subagents (subagent_type: \"fork\") to be on by default in claude -p, the Agent SDK, the desktop app and VS Code, as they already are in the terminal; CLAUDE_CODE_FORK_SUBAGENT=0 turns them off, and claude mc…",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.302",
+   "date": null,
+   "nodes": [
+    "a-subagents",
+    "a-sdk"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "pd1m2r",
+   "title": "Fixed HTTP MCP tool calls being sent twice when the connection closed mid-call; only read-only or idempotent tools are now retried",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.307",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 9,
+   "application": false
+  },
+  {
+   "id": "12juswi",
+   "title": "Fixed /help and the / command menu showing long model-facing descriptions for bundled skills such as /claude-api instead of their short descriptions",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.307",
+   "date": null,
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 9,
+   "application": false
+  },
+  {
+   "id": "1gj7xhw",
+   "title": "Fixed subagent transcripts recording placeholder token usage and an empty stop reason for streamed responses",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.307",
+   "date": null,
+   "nodes": [
+    "a-subagents"
+   ],
+   "relevance": 9,
+   "application": false
+  },
+  {
+   "id": "ty09yj",
+   "title": "Fixed model switches through the Agent SDK's setModel(), and apps built on it, being refused when the API took more than 5 seconds to confirm the model; Claude Code now waits up to 15 seconds",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.307",
+   "date": null,
+   "nodes": [
+    "k-cli",
+    "a-sdk"
+   ],
+   "relevance": 9,
    "application": false
   },
   {
@@ -1366,100 +1377,37 @@
   }
  ],
  "byNode": {
-  "k-cli": [
-   "16jzqx9",
-   "kginxy",
-   "ouarcq",
-   "1ktme1w",
-   "1wgt1b8",
-   "hzhlbu",
-   "yq92q5",
-   "13xt578",
-   "1cc8uxk",
-   "1ledpgp",
-   "11wcs"
-  ],
-  "a-tools": [
-   "1tbejz4",
-   "18phb0e",
-   "1hw96yj"
-  ],
   "c-retrieval": [
-   "igp1y4",
-   "s318vb",
-   "1thqtao",
-   "1ld83pw",
-   "em7gic",
-   "1hw96yj",
+   "1ep85ns",
+   "19p4zml",
+   "1mnv1c",
+   "12gngw2",
+   "e9dhae",
+   "1ips2lw",
+   "1v4xo3i",
+   "ilet65",
    "1di83dn",
-   "1dhzxhq",
    "c7u6eh",
-   "snivsg",
    "1a89hn0"
   ],
-  "s-guardrails": [
-   "du1dvz",
-   "s318vb",
-   "1vyzb0t"
-  ],
-  "k-skills": [
-   "18phb0e",
-   "bkmagq",
-   "1g5lpqi",
-   "13xt578"
-  ],
-  "a-teams": [
-   "1thqtao",
-   "t35u3m"
+  "a-tools": [
+   "1jp6l4c"
   ],
   "s-models": [
-   "1dhzxhq",
-   "1e6x8ui",
-   "snivsg"
+   "1jp6l4c",
+   "1sj1aen",
+   "1e6x8ui"
   ],
-  "k-plugins": [
-   "ouarcq",
-   "a47bd7"
-  ],
-  "c-longctx": [
-   "qfmqp7",
-   "18ga90w",
-   "11lxrj3"
-  ],
-  "s-observability": [
-   "snivsg",
-   "sy29q9",
-   "1w436vi"
-  ],
-  "c-editing": [
-   "18ga90w",
-   "9vi2u5"
-  ],
-  "a-mcp": [
-   "1tlnnxf",
-   "5envg7",
-   "o49b8v",
-   "kdam9d",
-   "c68jre",
-   "12eprqz",
-   "1u97o1b",
-   "nqqr0",
-   "mjhkhe",
-   "73va5v",
-   "hddo0o",
-   "1feku0o",
-   "9vi2u5",
-   "c0gsc6",
-   "1ninn2b",
-   "bp2fab",
-   "1u1ai2j",
-   "1493e0a",
-   "1fyga0q",
-   "af9gje",
-   "eyhrtf",
-   "1083o92"
+  "k-skills": [
+   "1ml1ug6",
+   "1v2fkkl",
+   "bkmagq",
+   "1g5lpqi",
+   "13xt578",
+   "12juswi"
   ],
   "a-managed": [
+   "1u1z3v2",
    "1maeyx6",
    "1texc3k",
    "n850b0",
@@ -1472,13 +1420,61 @@
    "1pggadi",
    "1a0ehsc"
   ],
+  "a-teams": [
+   "1nnxlug",
+   "t35u3m"
+  ],
+  "c-editing": [
+   "yck55g"
+  ],
+  "k-cli": [
+   "16jzqx9",
+   "kginxy",
+   "ouarcq",
+   "1ktme1w",
+   "1wgt1b8",
+   "hzhlbu",
+   "yq92q5",
+   "13xt578",
+   "1cc8uxk",
+   "1ledpgp",
+   "11wcs",
+   "ty09yj"
+  ],
+  "c-longctx": [
+   "1sj1aen",
+   "qfmqp7"
+  ],
+  "k-plugins": [
+   "ouarcq",
+   "a47bd7"
+  ],
+  "a-mcp": [
+   "1tlnnxf",
+   "5envg7",
+   "kdam9d",
+   "1gt7k8d",
+   "y9xiix",
+   "1u6tsa1",
+   "573kuc",
+   "1btkpdm",
+   "1u97o1b",
+   "nqqr0",
+   "mjhkhe",
+   "73va5v",
+   "hddo0o",
+   "1feku0o",
+   "pd1m2r"
+  ],
   "f-artifacts": [
    "hzvm6i",
-   "1cged9n"
+   "1cged9n",
+   "jop4r7",
+   "kyumbj",
+   "1bz925n"
   ],
-  "c-memory": [
-   "1furdo9",
-   "1e12vd9"
+  "s-guardrails": [
+   "1vyzb0t"
   ],
   "k-claudemd": [
    "f9yd9e"
@@ -1488,15 +1484,45 @@
    "sv9f4s"
   ],
   "k-hooks": [
-   "pihaid",
-   "jeqh8k",
    "1vjnbr5"
   ],
   "a-subagents": [
-   "1fyga0q"
+   "15zqkq3",
+   "55ftjh",
+   "1gj7xhw"
+  ],
+  "r-effort": [
+   "so9tsk"
+  ],
+  "a-sdk": [
+   "55ftjh",
+   "ty09yj"
+  ],
+  "c-memory": [
+   "1e12vd9"
+  ],
+  "s-observability": [
+   "sy29q9",
+   "1w436vi"
   ]
  },
  "applications": [
+  {
+   "id": "1ep85ns",
+   "node": "c-retrieval",
+   "nodeTitle": "Retrieval vs. Context",
+   "discipline": "context",
+   "title": "Show HN: ReviewerAgent and StopContinue, for CC and Codex with Pi",
+   "url": "https://github.com/rladr-org/reviewer-agent"
+  },
+  {
+   "id": "1u1z3v2",
+   "node": "a-managed",
+   "nodeTitle": "Managed Agents",
+   "discipline": "agents",
+   "title": "Show HN: Omnara – Open-source alternative to Claude Managed Agents",
+   "url": "https://github.com/omnara-ai/omnara"
+  },
   {
    "id": "16jzqx9",
    "node": "k-cli",
@@ -1512,14 +1538,6 @@
    "discipline": "code",
    "title": "Show HN: Agent Archive – Session Handoffs and Backups for Claude Code and Codex",
    "url": "https://github.com/wangjohn/agent-archive"
-  },
-  {
-   "id": "1dhzxhq",
-   "node": "c-retrieval",
-   "nodeTitle": "Retrieval vs. Context",
-   "discipline": "context",
-   "title": "RAG-NIMBF: A Non-Invasive, Modular Benchmarking Framework for Automated RAG Configuration Analysis",
-   "url": "http://arxiv.org/abs/2610.27816v1"
   },
   {
    "id": "ouarcq",
@@ -1618,14 +1636,6 @@
    "url": "https://www.salestrics.com/"
   },
   {
-   "id": "1furdo9",
-   "node": "c-memory",
-   "nodeTitle": "Memory",
-   "discipline": "context",
-   "title": "Show HN: Remembrane – agent memory in one SQLite file, zero dependencies",
-   "url": "https://github.com/satyasairay/remembrane"
-  },
-  {
    "id": "yq92q5",
    "node": "k-cli",
    "nodeTitle": "Claude Code",
@@ -1671,6 +1681,14 @@
    "nodeTitle": "MCP",
    "discipline": "agents",
    "title": "Fixed an MCP server passed by a cloud session or by the SDK's setMcpServers being replaced later in the session by a same-named server from your own settings",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+  },
+  {
+   "id": "15zqkq3",
+   "node": "a-subagents",
+   "nodeTitle": "Subagents",
+   "discipline": "agents",
+   "title": "Improved fork subagents launched together: each is now told which launch is its own, so forks are much less likely to try to start each other's work",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   }
  ]
