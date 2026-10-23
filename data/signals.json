@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T11:34:34.469Z",
+ "generated": "2026-10-23T17:03:54.516Z",
  "itemCount": 76,
  "sourceStatus": [
   {
@@ -13,15 +13,15 @@
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 45,
-   "kept": 8
+   "fetched": 42,
+   "kept": 9
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 58,
-   "kept": 9
+   "fetched": 43,
+   "kept": 7
   },
   {
    "id": "hn-mcp",
@@ -1104,6 +1104,70 @@
    "application": false
   },
   {
+   "id": "rettc9",
+   "title": "**tools:** leave the tool runner's history to the caller after append_messages(), and keep the current reply out of the set_messages_params() callback",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.2.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.1.0...v2.2.0)",
+   "date": null,
+   "nodes": [
+    "a-runner"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1a7iijl",
+   "title": "**tools:** keep running the tool runner's function tools when set_messages_params() gives tools as definitions, and stop running one it takes out of tools",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.2.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.1.0...v2.2.0)",
+   "date": null,
+   "nodes": [
+    "a-runner"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "kzwbwx",
+   "title": "**tools:** give the set_messages_params() callback of a tool runner its tools as definitions again",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.2.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.1.0...v2.2.0)",
+   "date": null,
+   "nodes": [
+    "a-runner"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "s3q9qd",
+   "title": "**tools:** keep a tool runner's betas, user_profile_id and workspace_id when set_messages_params() leaves them out",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.2.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.1.0...v2.2.0)",
+   "date": null,
+   "nodes": [
+    "a-runner"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
    "id": "sv9f4s",
    "title": "**bedrock:** keep a workspace ID set in default_headers on the Bedrock and Mantle clients",
    "summary": "",
@@ -1152,65 +1216,33 @@
    "application": false
   },
   {
-   "id": "kvzcm0",
-   "title": "**docs:** improve Managed Agents vault and credential descriptions",
+   "id": "ojp65w",
+   "title": "**tools:** copy the messages a tool runner is created with again",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "[1.16.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.15.0...v1.16.0)",
+   "badge": "[1.2.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.1.0...sdk-v1.2.0)",
    "date": null,
    "nodes": [
-    "a-managed"
+    "a-runner"
    ],
    "relevance": 6,
    "application": false
   },
   {
-   "id": "99jelt",
-   "title": "**docs:** describe headers on Managed Agents and telemetry endpoints",
+   "id": "1mxrf9k",
+   "title": "**tools:** restore what the tool runner does after setMessagesParams() or pushMessages() in the loop body",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "[1.15.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.14.0...v1.15.0)",
+   "badge": "[1.2.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.1.0...sdk-v1.2.0)",
    "date": null,
    "nodes": [
-    "a-managed"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "a2lv6v",
-   "title": "**api:** add execution_identity to Managed Agents agents",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "[1.14.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.13.0...v1.14.0)",
-   "date": null,
-   "nodes": [
-    "a-managed"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "sy29q9",
-   "title": "**api:** add telemetry destinations to the Admin API",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "[1.14.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.13.0...v1.14.0)",
-   "date": null,
-   "nodes": [
-    "s-observability"
+    "a-runner"
    ],
    "relevance": 6,
    "application": false
@@ -1278,38 +1310,6 @@
    ],
    "relevance": 6,
    "application": false
-  },
-  {
-   "id": "1a0ehsc",
-   "title": "**api:** add execution_identity to Managed Agents agents",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[0.134.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.133.0...sdk-v0.134.0)",
-   "date": null,
-   "nodes": [
-    "a-managed"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1w436vi",
-   "title": "**api:** add telemetry destinations to the Admin API",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[0.134.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.133.0...sdk-v0.134.0)",
-   "date": null,
-   "nodes": [
-    "s-observability"
-   ],
-   "relevance": 6,
-   "application": false
   }
  ],
  "byNode": {
@@ -1353,14 +1353,10 @@
    "1qbw57d",
    "1texc3k",
    "n850b0",
-   "kvzcm0",
-   "99jelt",
-   "a2lv6v",
    "yax02v",
    "17a2skn",
    "okdfg3",
-   "1pggadi",
-   "1a0ehsc"
+   "1pggadi"
   ],
   "c-editing": [
    "yck55g"
@@ -1434,9 +1430,13 @@
   "c-memory": [
    "1e12vd9"
   ],
-  "s-observability": [
-   "sy29q9",
-   "1w436vi"
+  "a-runner": [
+   "rettc9",
+   "1a7iijl",
+   "kzwbwx",
+   "s3q9qd",
+   "ojp65w",
+   "1mxrf9k"
   ]
  },
  "applications": [
