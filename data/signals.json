@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-22T21:36:06.369Z",
+ "generated": "2026-10-23T04:46:49.455Z",
  "itemCount": 61,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 275,
-   "kept": 93
+   "fetched": 303,
+   "kept": 101
   },
   {
    "id": "python-sdk-changelog",
@@ -55,13 +55,13 @@
    "id": "arxiv-agents",
    "label": "arXiv · agents & LLM systems",
    "ok": false,
-   "error": "The operation was aborted due to timeout"
+   "error": "HTTP 429"
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": false,
-   "error": "The operation was aborted due to timeout"
+   "error": "HTTP 429"
   }
  ],
  "items": [
@@ -91,7 +91,7 @@
    "source": "Hacker News · Claude",
    "sourceId": "hn-claude",
    "category": "market",
-   "badge": "107 pts",
+   "badge": "110 pts",
    "date": "2026-10-21T16:44:53Z",
    "nodes": [
     "a-managed"
@@ -457,6 +457,56 @@
    "application": false
   },
   {
+   "id": "y1hrzn",
+   "title": "Fixed a disabled MCP server being reconnected by a later permission prompt in print and SDK sessions",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.309",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "kj5o4",
+   "title": "Fixed hooks that run in PowerShell not blocking when the hook's program exits with code 2, and on Windows PreToolUse and PermissionRequest hooks with \"shell\": \"powershell\" failing open when Git for Windows isn't install…",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.309",
+   "date": null,
+   "nodes": [
+    "k-hooks"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1qbw57d",
+   "title": "Changed the /claude-api skill to build Managed Agents subagent teams on multiagent_20261001 with dynamic workflows on by default, instead of coordinator",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.309",
+   "date": null,
+   "nodes": [
+    "a-teams",
+    "a-subagents",
+    "a-managed"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
    "id": "1gt7k8d",
    "title": "Fixed MCP servers showing \"needs authentication\" in claude -p on macOS while the login keychain was locked; they now say why, and the next run after an unlock connects without a new sign-in",
    "summary": "",
@@ -633,19 +683,19 @@
    "application": false
   },
   {
-   "id": "1feku0o",
-   "title": "Self-hosted runner: Fixed sessions started from Slack being unable to find or attach a repository when managed settings restrict MCP servers; use deniedMcpServers to keep those tools off",
+   "id": "bqo05p",
+   "title": "Fixed artifact publishes and updates being refused for some ordinary pages, such as pages with certain minified scripts or artifacts Claude could not read first",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.301",
+   "badge": "2.1.309",
    "date": null,
    "nodes": [
-    "a-mcp"
+    "f-artifacts"
    ],
-   "relevance": 18,
+   "relevance": 15,
    "application": false
   },
   {
@@ -713,22 +763,6 @@
    "application": false
   },
   {
-   "id": "1bz925n",
-   "title": "Improved artifacts: pages Claude writes now paint the band above a sticky header, so scrolled text no longer shows there in the mobile apps",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.301",
-   "date": null,
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
    "id": "15zqkq3",
    "title": "Improved fork subagents launched together: each is now told which launch is its own, so forks are much less likely to try to start each other's work",
    "summary": "",
@@ -778,14 +812,14 @@
    "application": false
   },
   {
-   "id": "pd1m2r",
-   "title": "Fixed HTTP MCP tool calls being sent twice when the connection closed mid-call; only read-only or idempotent tools are now retried",
+   "id": "12n4t4e",
+   "title": "Fixed sandboxed commands and auto-accepted edits being able to modify the MCP config file passed with --mcp-config",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.307",
+   "badge": "2.1.309",
    "date": null,
    "nodes": [
     "a-mcp"
@@ -794,50 +828,17 @@
    "application": false
   },
   {
-   "id": "12juswi",
-   "title": "Fixed /help and the / command menu showing long model-facing descriptions for bundled skills such as /claude-api instead of their short descriptions",
+   "id": "17926p",
+   "title": "Fixed worktrees and branch checkouts that Claude Code creates so they ignore git replace refs, as its other git operations already do",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.307",
+   "badge": "2.1.309",
    "date": null,
    "nodes": [
-    "k-skills"
-   ],
-   "relevance": 9,
-   "application": false
-  },
-  {
-   "id": "1gj7xhw",
-   "title": "Fixed subagent transcripts recording placeholder token usage and an empty stop reason for streamed responses",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.307",
-   "date": null,
-   "nodes": [
-    "a-subagents"
-   ],
-   "relevance": 9,
-   "application": false
-  },
-  {
-   "id": "ty09yj",
-   "title": "Fixed model switches through the Agent SDK's setModel(), and apps built on it, being refused when the API took more than 5 seconds to confirm the model; Claude Code now waits up to 15 seconds",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.307",
-   "date": null,
-   "nodes": [
-    "k-cli",
-    "a-sdk"
+    "k-cli"
    ],
    "relevance": 9,
    "application": false
@@ -1075,6 +1076,7 @@
   "a-managed": [
    "1u1z3v2",
    "1maeyx6",
+   "1qbw57d",
    "1texc3k",
    "n850b0",
    "kvzcm0",
@@ -1097,7 +1099,7 @@
    "13xt578",
    "1cc8uxk",
    "11wcs",
-   "ty09yj"
+   "17926p"
   ],
   "k-plugins": [
    "ouarcq",
@@ -1107,6 +1109,7 @@
    "1tlnnxf",
    "5envg7",
    "kdam9d",
+   "y1hrzn",
    "1gt7k8d",
    "y9xiix",
    "1u6tsa1",
@@ -1117,21 +1120,19 @@
    "mjhkhe",
    "73va5v",
    "hddo0o",
-   "1feku0o",
-   "pd1m2r"
+   "12n4t4e"
   ],
   "f-artifacts": [
    "hzvm6i",
+   "bqo05p",
    "1cged9n",
    "jop4r7",
-   "kyumbj",
-   "1bz925n"
+   "kyumbj"
   ],
   "k-skills": [
    "bkmagq",
    "1g5lpqi",
-   "13xt578",
-   "12juswi"
+   "13xt578"
   ],
   "s-guardrails": [
    "1vyzb0t"
@@ -1144,19 +1145,22 @@
    "sv9f4s"
   ],
   "k-hooks": [
+   "kj5o4",
    "1vjnbr5"
   ],
+  "a-teams": [
+   "1qbw57d"
+  ],
   "a-subagents": [
+   "1qbw57d",
    "15zqkq3",
-   "55ftjh",
-   "1gj7xhw"
+   "55ftjh"
   ],
   "r-effort": [
    "so9tsk"
   ],
   "a-sdk": [
-   "55ftjh",
-   "ty09yj"
+   "55ftjh"
   ],
   "c-memory": [
    "1e12vd9"
