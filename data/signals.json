@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-23T04:46:49.455Z",
- "itemCount": 61,
+ "generated": "2026-10-23T11:34:34.469Z",
+ "itemCount": 76,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -54,17 +54,164 @@
   {
    "id": "arxiv-agents",
    "label": "arXiv · agents & LLM systems",
-   "ok": false,
-   "error": "HTTP 429"
+   "ok": true,
+   "fetched": 25,
+   "kept": 7
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
-   "ok": false,
-   "error": "HTTP 429"
+   "ok": true,
+   "fetched": 20,
+   "kept": 9
   }
  ],
  "items": [
+  {
+   "id": "1q39459",
+   "title": "How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions",
+   "summary": "Purpose: To describe an evidence-aware retrieval evaluation protocol for a clinical retrieval-augmented generation (RAG) system over breast lesion management literature, addressing the dependence of retrieval scores on annotation coverage. Methods: An 18-document corpus and an 18-query development benchmark, with one…",
+   "url": "http://arxiv.org/abs/2610.31606v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-22T17:36:14Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "96h1kk",
+   "title": "Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action",
+   "summary": "This paper studies the problem of safe tool execution for large language model (LLM) agents under prompt injection. Using Petri nets, we formalize the execution harness between the LLM and its tools as a supervisory control problem, in which marks represent capabilities, approvals and budgets. Since a transition fires…",
+   "url": "http://arxiv.org/abs/2610.31376v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-22T14:48:16Z",
+   "nodes": [
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1n4d9p4",
+   "title": "Consistent but Biased: Chair Personas Trade Noise for Bias in Multi-Agent Clinical Decisions",
+   "summary": "In clinical systems built from several large language model (LLM) agents, one agent often chairs the discussion and makes the final decision. Whether the chair's persona prompt changes that decision, or the agreement between repeated runs that some systems treat as reliability, has not been tested with the case held c…",
+   "url": "http://arxiv.org/abs/2610.31325v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-22T14:16:14Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "kxtzr9",
+   "title": "Prompting Strategy Effects Depend on the Judge: A Multilingual Study of LLM-as-a-Judge Robustness",
+   "summary": "LLM-as-a-Judge evaluation is increasingly applied to multilingual tasks, yet prompting strategies such as Chain-of-Thought and Role Conditioning are recommended based solely on English benchmarks. Whether their effectiveness transfers across judge models and languages remains unknown: prompt-sensitivity studies are la…",
+   "url": "http://arxiv.org/abs/2610.31172v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-22T12:27:05Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "gpwqmx",
+   "title": "GeoAgent: Contract-Constrained LLM Agents for Seismic Data Processing",
+   "summary": "Large language models (LLMs) can drive scientific software through function calling, but free-form tool use is fragile on long, data-dependent processing chains. Models omit arguments, invent units, feed the previous artifact into the wrong input, and report completion without a verifiable product. We present GeoAgent…",
+   "url": "http://arxiv.org/abs/2610.31096v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-22T11:07:12Z",
+   "nodes": [
+    "a-tools",
+    "c-retrieval"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "257x32",
+   "title": "Gandalf: Flash Shall Not Die! Increasing Flash Storage Lifetime for KV Cache Offloading in LLM Serving",
+   "summary": "KV caching reduces the serving cost of large language models (LLMs), but the growing KV cache footprint is increasingly exceeds GPU and host-memory capacity. Therefore, people use SSD to expand the KV cache storage capacity with high I/O bandwidth. However, in production LLM workload, such as multi-round conversation…",
+   "url": "http://arxiv.org/abs/2610.30791v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-22T06:10:08Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "wcx2ql",
+   "title": "Agentic Knowledge-Model Co-Evolution via Consistency Regularization",
+   "summary": "LLM agents can evolve by learning from accumulated experience. Existing approaches extract reusable external knowledge, such as skills and memories, from experience to guide subsequent task solving, with some further internalizing this knowledge through model training. However, different ways of analyzing and transfor…",
+   "url": "http://arxiv.org/abs/2610.30790v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-22T06:09:10Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "699qu3",
+   "title": "LLM Multi-Agent Systems Are Vulnerable to Herding and Runaway Cascades",
+   "summary": "Large language models (LLMs) increasingly operate in multi-agent systems where they collaborate by responding to others' choices, creating endogenous feedback loops with vulnerability to social influence, herding behavior and runaway cascades. Following the design of the classic Music Lab experiment, we tested this vu…",
+   "url": "http://arxiv.org/abs/2610.30769v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-22T05:42:55Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "4dunw7",
+   "title": "From Clinical Judgment to Checkable Rules: Clinician-Led Guardrails for Mental-Health Chatbots",
+   "summary": "Large language models (LLMs) deployed in mental-health contexts can be evaluated for safety failures, but the resulting judgments are often difficult to inspect or explain. Common approaches to improving safety rely on prompt engineering, LLM-as-a-Judge, and Constitutional AI. In this work, we describe a clinician-led…",
+   "url": "http://arxiv.org/abs/2610.30690v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-22T04:02:51Z",
+   "nodes": [
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "1ep85ns",
    "title": "Show HN: ReviewerAgent and StopContinue, for CC and Codex with Pi",
@@ -91,13 +238,29 @@
    "source": "Hacker News · Claude",
    "sourceId": "hn-claude",
    "category": "market",
-   "badge": "110 pts",
+   "badge": "111 pts",
    "date": "2026-10-21T16:44:53Z",
    "nodes": [
     "a-managed"
    ],
    "relevance": 3,
    "application": true
+  },
+  {
+   "id": "yck55g",
+   "title": "Compaction Laundering: Provenance Destruction in Context-Compacting Coding Agents",
+   "summary": "Coding agents that run long enough must compact their context, summarizing the conversation, discarding the original, and carrying the summary forward as memory. We show that in popular open-source coding agents this step is an exploitable trust boundary. Harnesses that flatten the typed conversation into a single pla…",
+   "url": "http://arxiv.org/abs/2610.29869v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-21T15:24:23Z",
+   "nodes": [
+    "c-editing"
+   ],
+   "relevance": 3,
+   "application": false
   },
   {
    "id": "16jzqx9",
@@ -117,6 +280,39 @@
    "application": true
   },
   {
+   "id": "1v2fkkl",
+   "title": "A Stratified Multi-Rater Evaluation of LLM-Based Virtual Standardized Patients with a Deployed Data-Generation Platform",
+   "summary": "The Objective Structured Clinical Examination (OSCE) is widely used to assess clinical communication skills in medical education, requiring trainees to take histories and reason clinically with standardized patients (SPs). Large language model (LLM)-based virtual standardized patients (VSPs), typically built by person…",
+   "url": "http://arxiv.org/abs/2610.29312v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-21T07:08:59Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1sj1aen",
+   "title": "Reasoning-Search-Augmented LLMs: An Operational Taxonomy, Benchmark Analysis and Controlled Evidence Synthesis",
+   "summary": "Large language models (LLMs) demonstrate impressive emergent reasoning capabilities, yet they remain constrained by fixed model parameters and finite context windows. Even when augmented with static retrieval, they can produce statements that are unsupported by, or even contradictory to, retrieved evidence. This leads…",
+   "url": "http://arxiv.org/abs/2610.29189v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-21T04:19:06Z",
+   "nodes": [
+    "c-longctx",
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
    "id": "kginxy",
    "title": "Show HN: Agent Archive – Session Handoffs and Backups for Claude Code and Codex",
    "summary": "",
@@ -132,6 +328,54 @@
    ],
    "relevance": 3,
    "application": true
+  },
+  {
+   "id": "1di83dn",
+   "title": "UvA-MT's Participation in the WMT26 General Translation Shared Task",
+   "summary": "This paper presents UvA-MT's submission to the WMT 2026 General Machine Translation shared task, competing in the unconstrained track across all 23 translation directions. This year, we fully leverage the test-time methods of Large Language Models (LLMs) for machine translation. Specifically, (1) we use sequential sam…",
+   "url": "http://arxiv.org/abs/2610.27852v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-20T08:33:34Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "t35u3m",
+   "title": "On the LLM Verification for Argument Graph Generation",
+   "summary": "Multi-agent LLM systems can formalize natural-language argumentation end-to-end, turning plain text into structured graphs by classifying components, connecting them with relations, and enriching the resulting graphs into formal models. Quality assurance for those graphs is almost always another LLMs: a reviewer, judg…",
+   "url": "http://arxiv.org/abs/2610.27361v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-19T22:41:41Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "c7u6eh",
+   "title": "On the Fragility of Tasks under Composition: Implicit Budgeting in Language Models",
+   "summary": "Modern language models are increasingly asked to handle several tasks within a single prompt. Doing so requires solving each task correctly while integrating the resulting answers into a coherent response. In this paper, we identify a fundamental limitation in this process, where models make substantially more errors…",
+   "url": "http://arxiv.org/abs/2610.27190v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-19T19:23:48Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
   },
   {
    "id": "ouarcq",
@@ -1070,8 +1314,38 @@
  ],
  "byNode": {
   "c-retrieval": [
+   "1q39459",
+   "gpwqmx",
+   "257x32",
    "1ep85ns",
+   "1di83dn",
+   "c7u6eh",
    "1a89hn0"
+  ],
+  "s-guardrails": [
+   "96h1kk",
+   "4dunw7",
+   "1vyzb0t"
+  ],
+  "a-teams": [
+   "1n4d9p4",
+   "699qu3",
+   "t35u3m",
+   "1qbw57d"
+  ],
+  "s-models": [
+   "kxtzr9",
+   "1sj1aen"
+  ],
+  "a-tools": [
+   "gpwqmx"
+  ],
+  "k-skills": [
+   "wcx2ql",
+   "1v2fkkl",
+   "bkmagq",
+   "1g5lpqi",
+   "13xt578"
   ],
   "a-managed": [
    "1u1z3v2",
@@ -1088,6 +1362,9 @@
    "1pggadi",
    "1a0ehsc"
   ],
+  "c-editing": [
+   "yck55g"
+  ],
   "k-cli": [
    "16jzqx9",
    "kginxy",
@@ -1100,6 +1377,9 @@
    "1cc8uxk",
    "11wcs",
    "17926p"
+  ],
+  "c-longctx": [
+   "1sj1aen"
   ],
   "k-plugins": [
    "ouarcq",
@@ -1129,14 +1409,6 @@
    "jop4r7",
    "kyumbj"
   ],
-  "k-skills": [
-   "bkmagq",
-   "1g5lpqi",
-   "13xt578"
-  ],
-  "s-guardrails": [
-   "1vyzb0t"
-  ],
   "k-claudemd": [
    "f9yd9e"
   ],
@@ -1147,9 +1419,6 @@
   "k-hooks": [
    "kj5o4",
    "1vjnbr5"
-  ],
-  "a-teams": [
-   "1qbw57d"
   ],
   "a-subagents": [
    "1qbw57d",
@@ -1171,6 +1440,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "257x32",
+   "node": "c-retrieval",
+   "nodeTitle": "Retrieval vs. Context",
+   "discipline": "context",
+   "title": "Gandalf: Flash Shall Not Die! Increasing Flash Storage Lifetime for KV Cache Offloading in LLM Serving",
+   "url": "http://arxiv.org/abs/2610.30791v1"
+  },
   {
    "id": "1ep85ns",
    "node": "c-retrieval",
