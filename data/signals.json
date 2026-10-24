@@ -1,26 +1,26 @@
 {
- "generated": "2026-10-23T21:22:14.942Z",
+ "generated": "2026-10-24T04:32:48.518Z",
  "itemCount": 76,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 303,
-   "kept": 101
+   "fetched": 266,
+   "kept": 94
   },
   {
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 42,
-   "kept": 9
+   "fetched": 49,
+   "kept": 11
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 43,
+   "fetched": 47,
    "kept": 7
   },
   {
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "1rvlid5",
+   "title": "Claude Code will refuse to fill in passwords or use a password manager",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/issues/65358",
+   "discussion": "https://news.ycombinator.com/item?id=50216816",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "2 pts",
+   "date": "2026-10-23T23:33:23Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "1q39459",
    "title": "How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions",
@@ -238,7 +255,7 @@
    "source": "Hacker News · Claude",
    "sourceId": "hn-claude",
    "category": "market",
-   "badge": "111 pts",
+   "badge": "112 pts",
    "date": "2026-10-21T16:44:53Z",
    "nodes": [
     "a-managed"
@@ -635,23 +652,6 @@
    "application": false
   },
   {
-   "id": "1cc8uxk",
-   "title": "Show HN: Termic – desktop app for running CLI coding agents (Claude Code, Codex)",
-   "summary": "",
-   "url": "https://termic.dev/",
-   "discussion": "https://news.ycombinator.com/item?id=49056316",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "3 pts",
-   "date": "2026-07-26T09:36:49Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 6,
-   "application": true
-  },
-  {
    "id": "11wcs",
    "title": "Show HN: Policy enforcement for Claude Code, Cursor, and Codex",
    "summary": "",
@@ -685,19 +685,19 @@
    "application": false
   },
   {
-   "id": "kdam9d",
-   "title": "[Claude Tag] Fixed custom connectors whose MCP servers share one host showing as a single connector in Claude Tag admin settings; each server is now its own connector",
+   "id": "pdmt3p",
+   "title": "Windows: Fixed PreToolUse and PermissionRequest hooks letting a tool call through when Git Bash is missing and the hook's command is only quoted strings, such as a quoted path",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.302",
+   "badge": "2.1.310",
    "date": null,
    "nodes": [
-    "a-mcp"
+    "k-hooks"
    ],
-   "relevance": 21,
+   "relevance": 18,
    "application": false
   },
   {
@@ -863,70 +863,6 @@
    "application": false
   },
   {
-   "id": "a47bd7",
-   "title": "Fixed plugin marketplaces re-cloning on every refresh, and newly installed git plugins showing version \"unknown\", when git defaults to the reftable ref format",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.302",
-   "date": null,
-   "nodes": [
-    "k-plugins"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "mjhkhe",
-   "title": "Fixed Claude in the desktop app pointing you to claude.ai settings or /mcp to authorize or reconnect an MCP server where that option isn't available",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.302",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "73va5v",
-   "title": "Fixed MCP servers showing no tools, or every tool call failing, when the server negotiates protocol version 2026-07-28 but omits resultType, ttlMs or cacheScope",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.302",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "hddo0o",
-   "title": "[VSCode] Fixed MCP server sign-in from the panel opening a broken authorization page when the server URL contains a query string",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.302",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
    "id": "bqo05p",
    "title": "Fixed artifact publishes and updates being refused for some ordinary pages, such as pages with certain minified scripts or artifacts Claude could not read first",
    "summary": "",
@@ -1039,31 +975,79 @@
    "application": false
   },
   {
-   "id": "55ftjh",
-   "title": "Changed fork subagents (subagent_type: \"fork\") to be on by default in claude -p, the Agent SDK, the desktop app and VS Code, as they already are in the terminal; CLAUDE_CODE_FORK_SUBAGENT=0 turns them off, and claude mc…",
+   "id": "9cttnp",
+   "title": "Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.302",
+   "badge": "2.1.310",
    "date": null,
    "nodes": [
-    "a-subagents",
-    "a-sdk"
+    "s-deploy"
    ],
-   "relevance": 12,
+   "relevance": 9,
    "application": false
   },
   {
-   "id": "12n4t4e",
-   "title": "Fixed sandboxed commands and auto-accepted edits being able to modify the MCP config file passed with --mcp-config",
+   "id": "i5iwgl",
+   "title": "Fixed requests failing behind some gateways and compatible servers that reject the effort-2025-11-24 beta value or mid-conversation system messages; Claude Code now retries without them",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.309",
+   "badge": "2.1.310",
+   "date": null,
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 9,
+   "application": false
+  },
+  {
+   "id": "15lt07r",
+   "title": "Fixed compaction after a \"Prompt is too long\" error keeping too much of a conversation with dense text, such as base64 or SVG, so the next request could fail again",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.310",
+   "date": null,
+   "nodes": [
+    "c-editing"
+   ],
+   "relevance": 9,
+   "application": false
+  },
+  {
+   "id": "rcgl08",
+   "title": "Improved memory use of non-interactive sessions (-p, Agent SDK) during compaction when the transcript file is very large",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.310",
+   "date": null,
+   "nodes": [
+    "c-editing",
+    "a-sdk"
+   ],
+   "relevance": 9,
+   "application": false
+  },
+  {
+   "id": "3bquuh",
+   "title": "Changed the error for an MCP tool call that times out in a non-interactive session while the server's elicitation is unanswered: it now tells Claude that no answer came and not to repeat the call",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.310",
    "date": null,
    "nodes": [
     "a-mcp"
@@ -1072,17 +1056,34 @@
    "application": false
   },
   {
-   "id": "17926p",
-   "title": "Fixed worktrees and branch checkouts that Claude Code creates so they ignore git replace refs, as its other git operations already do",
+   "id": "1wrb57a",
+   "title": "[Cloud sessions] Added Claude Code cloud sessions and Remote Control permissions to Enterprise custom roles, so Owners can control access to each by role",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.309",
+   "badge": "2.1.310",
    "date": null,
    "nodes": [
-    "k-cli"
+    "k-cli",
+    "k-remote"
+   ],
+   "relevance": 9,
+   "application": false
+  },
+  {
+   "id": "v99ptp",
+   "title": "[Cloud sessions] Changed turning on Cloud sessions or Remote Control in admin settings to ask for confirmation and list the custom roles that have that permission",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.310",
+   "date": null,
+   "nodes": [
+    "k-remote"
    ],
    "relevance": 9,
    "application": false
@@ -1101,6 +1102,54 @@
     "c-memory"
    ],
    "relevance": 8,
+   "application": false
+  },
+  {
+   "id": "1rnuoq2",
+   "title": "**docs:** improve the descriptions of the code execution tool and its encrypted results",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.3.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.2.0...v2.3.0)",
+   "date": null,
+   "nodes": [
+    "a-servertools"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "gt0ins",
+   "title": "**mcp:** remove the stray await from the async tool_runner examples",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.3.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.2.0...v2.3.0)",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1ogz1nn",
+   "title": "**client:** link the Bedrock and Vertex raw response docstrings to the SDK documentation",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.3.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.2.0...v2.3.0)",
+   "date": null,
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 6,
    "application": false
   },
   {
@@ -1168,49 +1217,17 @@
    "application": false
   },
   {
-   "id": "sv9f4s",
-   "title": "**bedrock:** keep a workspace ID set in default_headers on the Bedrock and Mantle clients",
+   "id": "lzk7lj",
+   "title": "**docs:** improve the descriptions of the code execution tool and its encrypted results",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "[1.17.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.16.0...v1.17.0)",
+   "badge": "[1.3.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.2.0...sdk-v1.3.0)",
    "date": null,
    "nodes": [
-    "s-deploy"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1texc3k",
-   "title": "**docs:** add credential expiry descriptions to the Managed Agents API reference",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "[1.16.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.15.0...v1.16.0)",
-   "date": null,
-   "nodes": [
-    "a-managed"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "n850b0",
-   "title": "**docs:** improve Managed Agents memory store descriptions",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "[1.16.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.15.0...v1.16.0)",
-   "date": null,
-   "nodes": [
-    "a-managed"
+    "a-servertools"
    ],
    "relevance": 6,
    "application": false
@@ -1294,25 +1311,23 @@
    ],
    "relevance": 6,
    "application": false
-  },
-  {
-   "id": "1pggadi",
-   "title": "**docs:** describe headers on Managed Agents and telemetry endpoints",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[0.135.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.134.0...sdk-v0.135.0)",
-   "date": null,
-   "nodes": [
-    "a-managed"
-   ],
-   "relevance": 6,
-   "application": false
   }
  ],
  "byNode": {
+  "k-cli": [
+   "1rvlid5",
+   "16jzqx9",
+   "kginxy",
+   "ouarcq",
+   "1ktme1w",
+   "1wgt1b8",
+   "hzhlbu",
+   "yq92q5",
+   "13xt578",
+   "11wcs",
+   "i5iwgl",
+   "1wrb57a"
+  ],
   "c-retrieval": [
    "1q39459",
    "gpwqmx",
@@ -1351,40 +1366,24 @@
    "1u1z3v2",
    "1maeyx6",
    "1qbw57d",
-   "1texc3k",
-   "n850b0",
    "yax02v",
    "17a2skn",
-   "okdfg3",
-   "1pggadi"
+   "okdfg3"
   ],
   "c-editing": [
-   "yck55g"
-  ],
-  "k-cli": [
-   "16jzqx9",
-   "kginxy",
-   "ouarcq",
-   "1ktme1w",
-   "1wgt1b8",
-   "hzhlbu",
-   "yq92q5",
-   "13xt578",
-   "1cc8uxk",
-   "11wcs",
-   "17926p"
+   "yck55g",
+   "15lt07r",
+   "rcgl08"
   ],
   "c-longctx": [
    "1sj1aen"
   ],
   "k-plugins": [
-   "ouarcq",
-   "a47bd7"
+   "ouarcq"
   ],
   "a-mcp": [
    "1tlnnxf",
    "5envg7",
-   "kdam9d",
    "y1hrzn",
    "1gt7k8d",
    "y9xiix",
@@ -1393,10 +1392,8 @@
    "1btkpdm",
    "1u97o1b",
    "nqqr0",
-   "mjhkhe",
-   "73va5v",
-   "hddo0o",
-   "12n4t4e"
+   "3bquuh",
+   "gt0ins"
   ],
   "f-artifacts": [
    "hzvm6i",
@@ -1410,25 +1407,34 @@
   ],
   "s-deploy": [
    "1nnfsk0",
-   "sv9f4s"
+   "9cttnp",
+   "1ogz1nn"
   ],
   "k-hooks": [
+   "pdmt3p",
    "kj5o4",
    "1vjnbr5"
   ],
   "a-subagents": [
    "1qbw57d",
-   "15zqkq3",
-   "55ftjh"
+   "15zqkq3"
   ],
   "r-effort": [
    "so9tsk"
   ],
   "a-sdk": [
-   "55ftjh"
+   "rcgl08"
+  ],
+  "k-remote": [
+   "1wrb57a",
+   "v99ptp"
   ],
   "c-memory": [
    "1e12vd9"
+  ],
+  "a-servertools": [
+   "1rnuoq2",
+   "lzk7lj"
   ],
   "a-runner": [
    "rettc9",
@@ -1591,14 +1597,6 @@
    "discipline": "code",
    "title": "Show HN: Wienerdog – memory and self-improving skills for Claude Code/Codex",
    "url": "https://github.com/wienerdog-ai/wienerdog/"
-  },
-  {
-   "id": "1cc8uxk",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Termic – desktop app for running CLI coding agents (Claude Code, Codex)",
-   "url": "https://termic.dev/"
   },
   {
    "id": "11wcs",
