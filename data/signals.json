@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-24T20:45:40.125Z",
- "itemCount": 75,
+ "generated": "2026-10-25T04:37:14.687Z",
+ "itemCount": 76,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 49,
-   "kept": 7
+   "kept": 8
   },
   {
    "id": "hn-agents",
@@ -633,6 +633,23 @@
    ],
    "relevance": 3,
    "application": false
+  },
+  {
+   "id": "1cc8uxk",
+   "title": "Show HN: Termic – desktop app for running CLI coding agents (Claude Code, Codex)",
+   "summary": "",
+   "url": "https://termic.dev/",
+   "discussion": "https://news.ycombinator.com/item?id=49056316",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "3 pts",
+   "date": "2026-07-26T09:36:49Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 6,
+   "application": true
   },
   {
    "id": "11wcs",
@@ -1307,6 +1324,7 @@
    "hzhlbu",
    "yq92q5",
    "13xt578",
+   "1cc8uxk",
    "11wcs",
    "i5iwgl",
    "1wrb57a"
@@ -1571,6 +1589,14 @@
    "discipline": "code",
    "title": "Show HN: Wienerdog – memory and self-improving skills for Claude Code/Codex",
    "url": "https://github.com/wienerdog-ai/wienerdog/"
+  },
+  {
+   "id": "1cc8uxk",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Termic – desktop app for running CLI coding agents (Claude Code, Codex)",
+   "url": "https://termic.dev/"
   },
   {
    "id": "11wcs",
