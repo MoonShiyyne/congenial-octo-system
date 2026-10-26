@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-26T12:56:39.702Z",
- "itemCount": 79,
+ "generated": "2026-10-26T22:37:56.570Z",
+ "itemCount": 78,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 266,
-   "kept": 94
+   "fetched": 357,
+   "kept": 135
   },
   {
    "id": "python-sdk-changelog",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 49,
-   "kept": 8
+   "kept": 7
   },
   {
    "id": "hn-agents",
@@ -686,23 +686,6 @@
    "application": false
   },
   {
-   "id": "1cc8uxk",
-   "title": "Show HN: Termic – desktop app for running CLI coding agents (Claude Code, Codex)",
-   "summary": "",
-   "url": "https://termic.dev/",
-   "discussion": "https://news.ycombinator.com/item?id=49056316",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "3 pts",
-   "date": "2026-07-26T09:36:49Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 6,
-   "application": true
-  },
-  {
    "id": "11wcs",
    "title": "Show HN: Policy enforcement for Claude Code, Cursor, and Codex",
    "summary": "",
@@ -733,6 +716,55 @@
     "s-deploy"
    ],
    "relevance": 27,
+   "application": false
+  },
+  {
+   "id": "nbj8vr",
+   "title": "Fixed interrupting Claude not taking effect until a timeout while an MCP server had not answered a resource read or a skill was still downloading",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.311",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1mz5gwd",
+   "title": "Fixed long hidden thinking being cut off as idle on Google Vertex AI, Microsoft Foundry and Claude Platform on AWS, where the endpoint sends thinking progress updates",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.311",
+   "date": null,
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "cni4bj",
+   "title": "Changed ultrathink in the interactive terminal to run its turn at xhigh effort on Opus 5.5, Sonnet 5.5, Haiku 5.5 and Fable 5.1 through Anthropic's API; typed while Claude is working, it raises the rest of that turn",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.311",
+   "date": null,
+   "nodes": [
+    "s-models",
+    "r-effort"
+   ],
+   "relevance": 18,
    "application": false
   },
   {
@@ -914,6 +946,22 @@
    "application": false
   },
   {
+   "id": "a31lqr",
+   "title": "Improved artifacts with several views: Claude now routes each view on the link's #name and no longer says the address bar stays the same as you switch views",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.311",
+   "date": null,
+   "nodes": [
+    "f-artifacts"
+   ],
+   "relevance": 15,
+   "application": false
+  },
+  {
    "id": "bqo05p",
    "title": "Fixed artifact publishes and updates being refused for some ordinary pages, such as pages with certain minified scripts or artifacts Claude could not read first",
    "summary": "",
@@ -994,6 +1042,22 @@
    "application": false
   },
   {
+   "id": "gl2351",
+   "title": "Changed /code-review to tell Claude to put the effort level first and use max only when asked",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.311",
+   "date": null,
+   "nodes": [
+    "r-effort"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
    "id": "15zqkq3",
    "title": "Improved fork subagents launched together: each is now told which launch is its own, so forks are much less likely to try to start each other's work",
    "summary": "",
@@ -1026,118 +1090,36 @@
    "application": false
   },
   {
-   "id": "9cttnp",
-   "title": "Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too",
+   "id": "kr5c3w",
+   "title": "Added a tip for the Explanatory output style, shown when you ask Claude for explanations",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.310",
+   "badge": "2.1.311",
    "date": null,
    "nodes": [
-    "s-deploy"
+    "k-slash"
    ],
    "relevance": 9,
    "application": false
   },
   {
-   "id": "i5iwgl",
-   "title": "Fixed requests failing behind some gateways and compatible servers that reject the effort-2025-11-24 beta value or mid-conversation system messages; Claude Code now retries without them",
+   "id": "x4mebm",
+   "title": "Fixed long freezes at startup and after reading or editing files when a CLAUDE.md file holds a very long list item",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.310",
+   "badge": "2.1.311",
    "date": null,
    "nodes": [
-    "k-cli"
+    "k-claudemd"
    ],
    "relevance": 9,
-   "application": false
-  },
-  {
-   "id": "15lt07r",
-   "title": "Fixed compaction after a \"Prompt is too long\" error keeping too much of a conversation with dense text, such as base64 or SVG, so the next request could fail again",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.310",
-   "date": null,
-   "nodes": [
-    "c-editing"
-   ],
-   "relevance": 9,
-   "application": false
-  },
-  {
-   "id": "rcgl08",
-   "title": "Improved memory use of non-interactive sessions (-p, Agent SDK) during compaction when the transcript file is very large",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.310",
-   "date": null,
-   "nodes": [
-    "c-editing",
-    "a-sdk"
-   ],
-   "relevance": 9,
-   "application": false
-  },
-  {
-   "id": "3bquuh",
-   "title": "Changed the error for an MCP tool call that times out in a non-interactive session while the server's elicitation is unanswered: it now tells Claude that no answer came and not to repeat the call",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.310",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 9,
-   "application": false
-  },
-  {
-   "id": "1wrb57a",
-   "title": "[Cloud sessions] Added Claude Code cloud sessions and Remote Control permissions to Enterprise custom roles, so Owners can control access to each by role",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.310",
-   "date": null,
-   "nodes": [
-    "k-cli",
-    "k-remote"
-   ],
-   "relevance": 9,
-   "application": false
-  },
-  {
-   "id": "v99ptp",
-   "title": "[Cloud sessions] Changed turning on Cloud sessions or Remote Control in admin settings to ask for confirmation and list the custom roles that have that permission",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.310",
-   "date": null,
-   "nodes": [
-    "k-remote"
-   ],
-   "relevance": 9,
-   "application": false
+   "application": true
   },
   {
    "id": "1e12vd9",
@@ -1375,10 +1357,7 @@
    "hzhlbu",
    "yq92q5",
    "13xt578",
-   "1cc8uxk",
-   "11wcs",
-   "i5iwgl",
-   "1wrb57a"
+   "11wcs"
   ],
   "c-retrieval": [
    "x87kau",
@@ -1393,6 +1372,7 @@
    "2knbzc",
    "1tlnnxf",
    "5envg7",
+   "nbj8vr",
    "y1hrzn",
    "1gt7k8d",
    "y9xiix",
@@ -1401,7 +1381,6 @@
    "1btkpdm",
    "1u97o1b",
    "nqqr0",
-   "3bquuh",
    "gt0ins"
   ],
   "s-models": [
@@ -1411,7 +1390,8 @@
    "plmoxg",
    "ozwkmc",
    "kxtzr9",
-   "1sj1aen"
+   "1sj1aen",
+   "cni4bj"
   ],
   "a-subagents": [
    "plmoxg",
@@ -1434,9 +1414,7 @@
   "c-editing": [
    "eximz5",
    "1spwt2c",
-   "yck55g",
-   "15lt07r",
-   "rcgl08"
+   "yck55g"
   ],
   "s-guardrails": [
    "4dunw7",
@@ -1455,18 +1433,25 @@
   ],
   "f-artifacts": [
    "hzvm6i",
+   "a31lqr",
    "bqo05p",
    "1cged9n",
    "jop4r7",
    "kyumbj"
   ],
   "k-claudemd": [
-   "f9yd9e"
+   "f9yd9e",
+   "x4mebm"
   ],
   "s-deploy": [
    "1nnfsk0",
-   "9cttnp",
+   "1mz5gwd",
    "1ogz1nn"
+  ],
+  "r-effort": [
+   "cni4bj",
+   "gl2351",
+   "so9tsk"
   ],
   "k-hooks": [
    "pdmt3p",
@@ -1476,15 +1461,8 @@
   "a-teams": [
    "1qbw57d"
   ],
-  "r-effort": [
-   "so9tsk"
-  ],
-  "a-sdk": [
-   "rcgl08"
-  ],
-  "k-remote": [
-   "1wrb57a",
-   "v99ptp"
+  "k-slash": [
+   "kr5c3w"
   ],
   "c-memory": [
    "1e12vd9"
@@ -1640,14 +1618,6 @@
    "url": "https://github.com/wienerdog-ai/wienerdog/"
   },
   {
-   "id": "1cc8uxk",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Termic – desktop app for running CLI coding agents (Claude Code, Codex)",
-   "url": "https://termic.dev/"
-  },
-  {
    "id": "11wcs",
    "node": "k-cli",
    "nodeTitle": "Claude Code",
@@ -1669,6 +1639,14 @@
    "nodeTitle": "Subagents",
    "discipline": "agents",
    "title": "Improved fork subagents launched together: each is now told which launch is its own, so forks are much less likely to try to start each other's work",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+  },
+  {
+   "id": "x4mebm",
+   "node": "k-claudemd",
+   "nodeTitle": "CLAUDE.md",
+   "discipline": "code",
+   "title": "Fixed long freezes at startup and after reading or editing files when a CLAUDE.md file holds a very long list item",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   }
  ]
