@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-27T12:07:57.426Z",
- "itemCount": 60,
+ "generated": "2026-10-27T17:58:41.924Z",
+ "itemCount": 77,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -34,8 +34,8 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 48,
-   "kept": 7
+   "fetched": 49,
+   "kept": 6
   },
   {
    "id": "hn-agents",
@@ -49,22 +49,299 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 12
+   "kept": 11
   },
   {
    "id": "arxiv-agents",
    "label": "arXiv · agents & LLM systems",
-   "ok": false,
-   "error": "HTTP 429"
+   "ok": true,
+   "fetched": 25,
+   "kept": 14
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
-   "ok": false,
-   "error": "HTTP 429"
+   "ok": true,
+   "fetched": 20,
+   "kept": 11
   }
  ],
  "items": [
+  {
+   "id": "1dwhgch",
+   "title": "Offline Language-Based Support System for Tactical Decision-Making in Air Combat Operations",
+   "summary": "An offline language-based support tool is presented to assist pilot training and tactical decision-making in air combat operations. The system, named MATE (Mission Assistant for Training and Evaluation), applies retrieval-augmented generation (RAG) to answer natural language questions using content extracted from doct…",
+   "url": "http://arxiv.org/abs/2610.35635v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-26T15:46:03Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "d59m2c",
+   "title": "Hypergraph-Enhanced Evidence Selection for Long-Context Multimodal Document QA",
+   "summary": "Long-context multimodal document question answering (QA) has become an important yet challenging task for modern vision-language models (VLMs), as it requires reasoning over evidence dispersed across pages and modalities within limited input budgets. Current pipelines adopt retrieval-augmented generation (RAG) to sele…",
+   "url": "http://arxiv.org/abs/2610.35542v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-26T14:53:28Z",
+   "nodes": [
+    "c-files",
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "g153ag",
+   "title": "ShutdownMod: Turning Any Trajectory into a Shutdown Evaluation",
+   "summary": "Theory and experiments suggest that capable AI agents may resist shutdown. Existing shutdown evaluations are informative but limited in coverage and vulnerable to evaluation awareness. We introduce ShutdownMod, a method that turns any agent trajectory into a shutdown evaluation by injecting a shutdown request into the…",
+   "url": "http://arxiv.org/abs/2610.35486v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-26T14:14:45Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1s443e1",
+   "title": "Read the Route: Attention-Steered Hypergraph Retrieval for Multi-hop RAG",
+   "summary": "Graph-based retrieval-augmented generation (GraphRAG) answers multi-hop questions by organizing a corpus into a graph and retrieving along its structure. Existing retrieval methods face two limitations. Diffusion- and similarity-based methods expand retrieval along fixed edge weights or by similarity to the question,…",
+   "url": "http://arxiv.org/abs/2610.35412v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-26T13:24:28Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "cj5n42",
+   "title": "Belief-Conditioned Multi-Agent Actor Critic for Decentralized LLM Collaboration",
+   "summary": "Recent work has explored optimizing LLM collaboration through Multi-Agent Reinforcement Learning (MARL), but many approaches still rely on predefined workflows, limiting efficiency and scalability. Decentralized LLM collaboration is challenging because agents execute independently with limited communication, share a j…",
+   "url": "http://arxiv.org/abs/2610.35398v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-26T13:12:41Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ip681",
+   "title": "MarkovSim: an LLM Agent Harness with Bounded Context for Long-Horizon Computational Simulation",
+   "summary": "Recent studies have applied large language model (LLM) agent systems to computational simulation workflows. Such workflows are long-horizon, so the information generated can exceed what an LLM can reason over at once, its context window. Context management is therefore essential, yet existing systems have either negle…",
+   "url": "http://arxiv.org/abs/2610.35349v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-26T12:41:39Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1hvhefr",
+   "title": "Reading Beyond OCR Noise: Robust Cross-Lingual RAG for Legislative Archives",
+   "summary": "India's historical public archives present severe computer vision and document image analysis challenges: decades of parliamentary records survive only as degraded, multi-column scanned pages featuring mixed scripts, complex layouts, and dense visual noise where OCR failure is the primary obstacle to information retri…",
+   "url": "http://arxiv.org/abs/2610.35240v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-26T11:24:16Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "3taxqc",
+   "title": "CalibraRL: Confidence-Calibrated Reinforcement Learning for Mitigating Hallucinations in RAG",
+   "summary": "Large language models (LLMs) often produce plausible but incorrect answers, motivating reinforcement learning methods that reward correct answers, penalize incorrect answers, and allow abstention. However, fixed outcome-based rewards do not distinguish incorrect responses with different confidence levels or account fo…",
+   "url": "http://arxiv.org/abs/2610.35142v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-26T10:11:24Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1h71u7n",
+   "title": "Retrieval-Augmented Parkinson's Disease Classification from Resting-State Functional Connectivity",
+   "summary": "Altered resting-state functional connectivity (FC) is a candidate marker for the diagnosis of Parkinson's disease (PD). Publicly available PD datasets, however, are small and fragmented across sites, scanners and clinical criteria. Transfer learning mitigates data scarcity by reusing a model trained on larger cohorts,…",
+   "url": "http://arxiv.org/abs/2610.35107v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-26T09:46:26Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1uj89br",
+   "title": "RAGing Against Misogyny: Improving Implicit Misogyny Explanations",
+   "summary": "Implicit misogyny often requires background knowledge to be understood. To address this challenge, we propose a Retrieval-Augmented Generation (RAG) framework for detecting and explaining implicit misogyny in English and Italian, leveraging encyclopedic, slang and feminist knowledge sources. Using the ImplicIT-Mis and…",
+   "url": "http://arxiv.org/abs/2610.35094v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-26T09:35:01Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ptm3tf",
+   "title": "Agent Memory as Recommendation: Recommender-System Design for Long-Term Memory of LLM Agents",
+   "summary": "Large language model (LLM) agents that serve users across many sessions must choose, for every request, the few stored memories that enter a limited context window. This choice largely decides whether the agent answers correctly, and it runs on every request at Web scale. This selection faces three challenges: a large…",
+   "url": "http://arxiv.org/abs/2610.34673v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-26T01:05:20Z",
+   "nodes": [
+    "c-memory",
+    "c-longctx"
+   ],
+   "relevance": 4,
+   "application": false
+  },
+  {
+   "id": "n4lk8j",
+   "title": "CodeMeepo: A Multi-Agent Workflow for Repository-Level Code Migration and Optimization",
+   "summary": "Repository-level code migration rewrites an entire project in a new programming language while preserving its observable behavior. It is challenging because behavior spans interdependent modules, dependencies and build infrastructure must be adapted to the target ecosystem, and the source code is often the only specif…",
+   "url": "http://arxiv.org/abs/2610.34633v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-25T23:15:38Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "lcot3v",
+   "title": "Large Language Models: A Plain-Language Overview for Engineers",
+   "summary": "Large language models (LLMs) are neural networks trained on huge text collections to generate text by predicting what comes next. Engineers using ChatGPT and other generative artificial intelligence (AI) tools need a clear picture of what training changes and prompts add. The article starts with the Transformer, which…",
+   "url": "http://arxiv.org/abs/2610.34585v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-25T21:30:03Z",
+   "nodes": [
+    "f-generative"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1kwtx9l",
+   "title": "CTXAgent - Self-Controlled Context Management of LLM Agents",
+   "summary": "Agent harnesses keep long sessions inside the context window by compacting the history when a token threshold is crossed. We study an alternative in which the model manages its own context: it decides when to compact, what to keep and what to write as the hand-off, given two tools and one paragraph of guidance. Since…",
+   "url": "http://arxiv.org/abs/2610.34425v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-25T16:30:56Z",
+   "nodes": [
+    "c-longctx",
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "8ngyfq",
+   "title": "CoLink: Global Compression and Knowledge Linking for Multi-Turn Dialogue Modeling",
+   "summary": "Extracting salient information from long-horizon dialogue histories remains a significant challenge for Large Language Models (LLMs) due to the restricted context windows and efficient retrieval challenges. Current methods typically rely on history organization or local token-level optimization, suffering from informa…",
+   "url": "http://arxiv.org/abs/2610.34335v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-25T14:51:19Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1ob7eym",
+   "title": "Can Agentic Code Review Catch Vulnerabilities Before They Are Merged?",
+   "summary": "LLM agents have been increasingly adopted for security-focused code review, but existing benchmarks mostly derive the reviewed changes from their later fixes instead of the real-world bug-introducing commits. In this paper, we present SecPRBench, the first comprehensive benchmark for evaluating agentic security review…",
+   "url": "http://arxiv.org/abs/2610.33509v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-24T07:32:42Z",
+   "nodes": [
+    "k-review"
+   ],
+   "relevance": 6,
+   "application": true
+  },
+  {
+   "id": "dnxdbh",
+   "title": "PinGER: Token-Efficient Generative Retrieval with Semantic IDs",
+   "summary": "Generative retrieval replaces nearest-neighbor search with token-by-token decoding of an item's semantic ID (SID). But existing SID-based methods primarily use L levels of tokens sequentially to represent each item in the input history. As a result, a fixed context window holds L times fewer items than it would with o…",
+   "url": "http://arxiv.org/abs/2610.33435v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-24T04:24:45Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "1rvlid5",
    "title": "Claude Code will refuse to fill in passwords or use a password manager",
@@ -78,6 +355,22 @@
    "date": "2026-10-23T23:33:23Z",
    "nodes": [
     "k-cli"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1x67i4v",
+   "title": "BenchBench-Cloning: Evaluating Molecular Cloning Design and Protocol Development",
+   "summary": "Molecular cloning is one of the most routine wet-lab workflows, yet existing evaluations of language models in biology mostly test knowledge recall or isolated steps rather than end-to-end experimental planning. We introduce BenchBench-Cloning, a benchmark for large language models comprising 65 molecular cloning task…",
+   "url": "http://arxiv.org/abs/2610.33355v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-23T22:51:29Z",
+   "nodes": [
+    "s-models"
    ],
    "relevance": 3,
    "application": false
@@ -372,23 +665,6 @@
    ],
    "relevance": 3,
    "application": true
-  },
-  {
-   "id": "f9yd9e",
-   "title": "Ask HN: How to rewrite `Claude.md` and install the skill for Opus5 and Fable5",
-   "summary": "",
-   "url": "https://news.ycombinator.com/item?id=49080135",
-   "discussion": "https://news.ycombinator.com/item?id=49080135",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "5 pts",
-   "date": "2026-07-28T06:29:39Z",
-   "nodes": [
-    "k-claudemd"
-   ],
-   "relevance": 3,
-   "application": false
   },
   {
    "id": "11wcs",
@@ -1052,6 +1328,43 @@
   }
  ],
  "byNode": {
+  "c-retrieval": [
+   "1dwhgch",
+   "d59m2c",
+   "g153ag",
+   "1s443e1",
+   "1hvhefr",
+   "3taxqc",
+   "1h71u7n",
+   "1uj89br",
+   "1kwtx9l",
+   "1a89hn0"
+  ],
+  "c-files": [
+   "d59m2c"
+  ],
+  "a-teams": [
+   "cj5n42",
+   "n4lk8j",
+   "1qbw57d"
+  ],
+  "c-longctx": [
+   "ip681",
+   "ptm3tf",
+   "1kwtx9l",
+   "8ngyfq",
+   "dnxdbh"
+  ],
+  "c-memory": [
+   "ptm3tf",
+   "1e12vd9"
+  ],
+  "f-generative": [
+   "lcot3v"
+  ],
+  "k-review": [
+   "1ob7eym"
+  ],
   "k-cli": [
    "1rvlid5",
    "16jzqx9",
@@ -1063,6 +1376,10 @@
    "yq92q5",
    "13xt578",
    "11wcs"
+  ],
+  "s-models": [
+   "1x67i4v",
+   "cni4bj"
   ],
   "a-managed": [
    "1u1z3v2",
@@ -1105,20 +1422,10 @@
   "s-guardrails": [
    "1vyzb0t"
   ],
-  "c-retrieval": [
-   "1a89hn0"
-  ],
-  "k-claudemd": [
-   "f9yd9e",
-   "x4mebm"
-  ],
   "s-deploy": [
    "1nnfsk0",
    "1mz5gwd",
    "1ogz1nn"
-  ],
-  "s-models": [
-   "cni4bj"
   ],
   "r-effort": [
    "cni4bj",
@@ -1130,9 +1437,6 @@
    "kj5o4",
    "1vjnbr5"
   ],
-  "a-teams": [
-   "1qbw57d"
-  ],
   "a-subagents": [
    "1qbw57d",
    "15zqkq3"
@@ -1140,8 +1444,8 @@
   "k-slash": [
    "kr5c3w"
   ],
-  "c-memory": [
-   "1e12vd9"
+  "k-claudemd": [
+   "x4mebm"
   ],
   "a-servertools": [
    "1rnuoq2",
@@ -1157,6 +1461,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "1ob7eym",
+   "node": "k-review",
+   "nodeTitle": "Review & Security Review",
+   "discipline": "code",
+   "title": "Can Agentic Code Review Catch Vulnerabilities Before They Are Merged?",
+   "url": "http://arxiv.org/abs/2610.33509v1"
+  },
   {
    "id": "1u1z3v2",
    "node": "a-managed",
