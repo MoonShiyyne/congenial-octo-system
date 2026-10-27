@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-27T17:58:41.924Z",
- "itemCount": 77,
+ "generated": "2026-10-27T22:10:51.757Z",
+ "itemCount": 78,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 357,
-   "kept": 135
+   "fetched": 320,
+   "kept": 115
   },
   {
    "id": "python-sdk-changelog",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 49,
-   "kept": 6
+   "kept": 7
   },
   {
    "id": "hn-agents",
@@ -667,6 +667,23 @@
    "application": true
   },
   {
+   "id": "f9yd9e",
+   "title": "Ask HN: How to rewrite `Claude.md` and install the skill for Opus5 and Fable5",
+   "summary": "",
+   "url": "https://news.ycombinator.com/item?id=49080135",
+   "discussion": "https://news.ycombinator.com/item?id=49080135",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "5 pts",
+   "date": "2026-07-28T06:29:39Z",
+   "nodes": [
+    "k-claudemd"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
    "id": "11wcs",
    "title": "Show HN: Policy enforcement for Claude Code, Cursor, and Codex",
    "summary": "",
@@ -684,19 +701,20 @@
    "application": true
   },
   {
-   "id": "1nnfsk0",
-   "title": "[VSCode] Added mod drawing in the chat panel for sessions on Amazon Bedrock, Google Vertex AI and Microsoft Foundry, behind an LLM gateway, or with telemetry turned off",
+   "id": "12n48t9",
+   "title": "Changed OpenTelemetry mcp_server.name to report the real name of fixed-URL remote MCP servers declared by plugins from the official Anthropic marketplace, instead of custom",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.304",
+   "badge": "2.1.312",
    "date": null,
    "nodes": [
-    "s-deploy"
+    "a-mcp",
+    "k-plugins"
    ],
-   "relevance": 27,
+   "relevance": 18,
    "application": false
   },
   {
@@ -911,22 +929,6 @@
    "application": true
   },
   {
-   "id": "nqqr0",
-   "title": "Improved cloud sessions: a new conversation's first turn no longer waits for the local (stdio) MCP servers of plugins synced from claude.ai, unless a server sets alwaysLoad: true",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.304",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
    "id": "a31lqr",
    "title": "Improved artifacts with several views: Claude now routes each view on the link's #name and no longer says the address bar stays the same as you switch views",
    "summary": "",
@@ -991,35 +993,52 @@
    "application": false
   },
   {
-   "id": "jop4r7",
-   "title": "Improved artifacts with several views: when you ask for links to them, Claude now writes out each view's link and explains that the address bar stays the same as you switch views",
+   "id": "15ujymx",
+   "title": "Fixed the spinner, OpenTelemetry effort values and transcripts naming a newly picked effort level during a task before the model applied it; they now show the level in force",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.304",
+   "badge": "2.1.312",
    "date": null,
    "nodes": [
-    "f-artifacts"
+    "r-effort"
    ],
-   "relevance": 15,
+   "relevance": 12,
    "application": false
   },
   {
-   "id": "kyumbj",
-   "title": "Changed the /artifacts delete confirmation to show numbered choices: 1 or Enter keeps the artifact, 2 deletes it, and y, n and Esc still work",
+   "id": "3sjnmq",
+   "title": "Changed automatic model switches after a flagged message to also cover model names Claude Code doesn't recognize, such as custom deployment names; set CLAUDE_CODE_DISABLE_REFUSAL_FALLBACK=1 to turn them off",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.304",
+   "badge": "2.1.312",
    "date": null,
    "nodes": [
-    "f-artifacts"
+    "s-guardrails",
+    "k-cli"
    ],
-   "relevance": 15,
+   "relevance": 12,
+   "application": false
+  },
+  {
+   "id": "1epc8p8",
+   "title": "[Cloud sessions] Added an effort level to the model picker when you create or edit a routine that runs in the cloud",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.312",
+   "date": null,
+   "nodes": [
+    "r-effort"
+   ],
+   "relevance": 12,
    "application": false
   },
   {
@@ -1055,52 +1074,53 @@
    "application": true
   },
   {
-   "id": "so9tsk",
-   "title": "Fixed /effort status, /effort ultracode and the prompt's effort indicator showing a guessed effort level when CLAUDE_CODE_EFFORT_LEVEL is auto or unset and no level is sent",
+   "id": "hx91xl",
+   "title": "Fixed Claude overwriting a very large CLAUDE.md, rules file or @-included file in a subdirectory after seeing only its start; Write now asks Claude to read it all or edit in place",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.304",
-   "date": null,
-   "nodes": [
-    "r-effort"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "kr5c3w",
-   "title": "Added a tip for the Explanatory output style, shown when you ask Claude for explanations",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.311",
-   "date": null,
-   "nodes": [
-    "k-slash"
-   ],
-   "relevance": 9,
-   "application": false
-  },
-  {
-   "id": "x4mebm",
-   "title": "Fixed long freezes at startup and after reading or editing files when a CLAUDE.md file holds a very long list item",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.311",
+   "badge": "2.1.312",
    "date": null,
    "nodes": [
     "k-claudemd"
    ],
    "relevance": 9,
-   "application": true
+   "application": false
+  },
+  {
+   "id": "yyklgb",
+   "title": "Fixed per-directory and paths: skills not being found after a Bash cd deeper into a git repository",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.312",
+   "date": null,
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 9,
+   "application": false
+  },
+  {
+   "id": "vjz7hs",
+   "title": "Changed Bedrock, Vertex, Foundry and Mantle to use the shorter system prompt for model names Claude Code doesn't recognize, such as custom deployment names and inference profile ARNs, even when they front Sonnet or Haik…",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.312",
+   "date": null,
+   "nodes": [
+    "k-cli",
+    "s-deploy"
+   ],
+   "relevance": 9,
+   "application": false
   },
   {
    "id": "1e12vd9",
@@ -1375,7 +1395,9 @@
    "hzhlbu",
    "yq92q5",
    "13xt578",
-   "11wcs"
+   "11wcs",
+   "3sjnmq",
+   "vjz7hs"
   ],
   "s-models": [
    "1x67i4v",
@@ -1390,11 +1412,13 @@
    "okdfg3"
   ],
   "k-plugins": [
-   "ouarcq"
+   "ouarcq",
+   "12n48t9"
   ],
   "a-mcp": [
    "1tlnnxf",
    "5envg7",
+   "12n48t9",
    "nbj8vr",
    "y1hrzn",
    "1gt7k8d",
@@ -1403,34 +1427,38 @@
    "573kuc",
    "1btkpdm",
    "1u97o1b",
-   "nqqr0",
    "gt0ins"
   ],
   "f-artifacts": [
    "hzvm6i",
    "a31lqr",
    "bqo05p",
-   "1cged9n",
-   "jop4r7",
-   "kyumbj"
+   "1cged9n"
   ],
   "k-skills": [
    "bkmagq",
    "1g5lpqi",
-   "13xt578"
+   "13xt578",
+   "yyklgb"
   ],
   "s-guardrails": [
-   "1vyzb0t"
+   "1vyzb0t",
+   "3sjnmq"
+  ],
+  "k-claudemd": [
+   "f9yd9e",
+   "hx91xl"
   ],
   "s-deploy": [
-   "1nnfsk0",
    "1mz5gwd",
+   "vjz7hs",
    "1ogz1nn"
   ],
   "r-effort": [
    "cni4bj",
-   "gl2351",
-   "so9tsk"
+   "15ujymx",
+   "1epc8p8",
+   "gl2351"
   ],
   "k-hooks": [
    "pdmt3p",
@@ -1440,12 +1468,6 @@
   "a-subagents": [
    "1qbw57d",
    "15zqkq3"
-  ],
-  "k-slash": [
-   "kr5c3w"
-  ],
-  "k-claudemd": [
-   "x4mebm"
   ],
   "a-servertools": [
    "1rnuoq2",
@@ -1627,14 +1649,6 @@
    "nodeTitle": "Subagents",
    "discipline": "agents",
    "title": "Improved fork subagents launched together: each is now told which launch is its own, so forks are much less likely to try to start each other's work",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
-  },
-  {
-   "id": "x4mebm",
-   "node": "k-claudemd",
-   "nodeTitle": "CLAUDE.md",
-   "discipline": "code",
-   "title": "Fixed long freezes at startup and after reading or editing files when a CLAUDE.md file holds a very long list item",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   }
  ]
