@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T12:56:33.036Z",
+ "generated": "2026-10-29T22:43:09.807Z",
  "itemCount": 77,
  "sourceStatus": [
   {
@@ -34,7 +34,7 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 48,
+   "fetched": 47,
    "kept": 6
   },
   {
