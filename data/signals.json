@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-30T12:50:14.288Z",
- "itemCount": 74,
+ "generated": "2026-10-30T22:15:52.442Z",
+ "itemCount": 75,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -34,7 +34,7 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 47,
+   "fetched": 46,
    "kept": 5
   },
   {
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 11
+   "kept": 12
   },
   {
    "id": "arxiv-agents",
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "1ynpj63",
+   "title": "Show HN: Cc-pair – Claude Code and Codex review each other's work",
+   "summary": "",
+   "url": "https://github.com/leonlee/cc-pair",
+   "discussion": "https://news.ycombinator.com/item?id=50304970",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "1 pts",
+   "date": "2026-10-30T15:06:54Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "11fkne1",
    "title": "Decompose, Estimate, Select: Coverage-Aware Context Construction for Long-Form RAG",
@@ -1280,6 +1297,20 @@
   }
  ],
  "byNode": {
+  "k-cli": [
+   "1ynpj63",
+   "1rvlid5",
+   "16jzqx9",
+   "kginxy",
+   "ouarcq",
+   "1ktme1w",
+   "1wgt1b8",
+   "hzhlbu",
+   "yq92q5",
+   "11wcs",
+   "1w52qto",
+   "3sjnmq"
+  ],
   "c-retrieval": [
    "11fkne1",
    "ir73ge",
@@ -1318,19 +1349,6 @@
   "c-editing": [
    "1m6o8m4",
    "l88wmb"
-  ],
-  "k-cli": [
-   "1rvlid5",
-   "16jzqx9",
-   "kginxy",
-   "ouarcq",
-   "1ktme1w",
-   "1wgt1b8",
-   "hzhlbu",
-   "yq92q5",
-   "11wcs",
-   "1w52qto",
-   "3sjnmq"
   ],
   "a-managed": [
    "1u1z3v2",
@@ -1411,6 +1429,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "1ynpj63",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Cc-pair – Claude Code and Codex review each other's work",
+   "url": "https://github.com/leonlee/cc-pair"
+  },
   {
    "id": "15cevrg",
    "node": "s-cost",
