@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-30T22:15:52.442Z",
+ "generated": "2026-10-31T05:36:13.202Z",
  "itemCount": 75,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 401,
-   "kept": 138
+   "fetched": 454,
+   "kept": 151
   },
   {
    "id": "python-sdk-changelog",
@@ -650,6 +650,54 @@
    "application": true
   },
   {
+   "id": "1av9m32",
+   "title": "Fixed sonnet, opus and haiku on Vertex AI and Amazon Bedrock showing an error mid-session instead of switching to an older model when the newest is not yet available to the account or region",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.316",
+   "date": null,
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1f0fzeq",
+   "title": "Self-hosted runner: Fixed an MCP server's on/off switch sometimes being lost when a session moved to a new machine",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.316",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1kxah6t",
+   "title": "[Cloud sessions] Added a form card to cloud sessions, so you can fill in or decline a form an MCP server asks for instead of the request being canceled without you seeing it",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.316",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
    "id": "dg7cjl",
    "title": "Fixed MCP servers that also work without sign-in showing \"needs authentication\" after their stored sign-in stopped working; they are now used signed out",
    "summary": "",
@@ -926,6 +974,23 @@
    "application": false
   },
   {
+   "id": "km9vu5",
+   "title": "Added CLAUDE_CODE_SUBAGENT_EFFORT to set the effort level subagents run at when nothing else names one, instead of inheriting the session's",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.316",
+   "date": null,
+   "nodes": [
+    "r-effort",
+    "a-subagents"
+   ],
+   "relevance": 12,
+   "application": false
+  },
+  {
    "id": "1w52qto",
    "title": "Fixed sessions failing turn after turn with \"Invalid effort level\" when an organization's admin caps a model's effort: Claude Code now lowers the effort, retries, and says which level it uses",
    "summary": "",
@@ -1005,70 +1070,6 @@
     "r-effort"
    ],
    "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "15zqkq3",
-   "title": "Improved fork subagents launched together: each is now told which launch is its own, so forks are much less likely to try to start each other's work",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.307",
-   "date": null,
-   "nodes": [
-    "a-subagents"
-   ],
-   "relevance": 12,
-   "application": true
-  },
-  {
-   "id": "7brti8",
-   "title": "Added permissions.blockWritesOutsideWorkingDirectories: Write, Edit and NotebookEdit refuse paths outside the working directories in every permission mode",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.314",
-   "date": null,
-   "nodes": [
-    "k-permissions"
-   ],
-   "relevance": 9,
-   "application": false
-  },
-  {
-   "id": "1s9ghm3",
-   "title": "Added guardrail_trace to Claude apps gateway Bedrock upstreams, to log which Amazon Bedrock guardrail filter fired on a request, without the matched text",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.314",
-   "date": null,
-   "nodes": [
-    "s-deploy"
-   ],
-   "relevance": 9,
-   "application": false
-  },
-  {
-   "id": "l88wmb",
-   "title": "Added idle compaction to VS Code and Claude Desktop's Code tab: a 200K+ token conversation left idle is summarized, and the summary is used on your next message if the prompt cache has expired",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.314",
-   "date": null,
-   "nodes": [
-    "c-editing"
-   ],
-   "relevance": 9,
    "application": false
   },
   {
@@ -1347,8 +1348,7 @@
    "15cevrg"
   ],
   "c-editing": [
-   "1m6o8m4",
-   "l88wmb"
+   "1m6o8m4"
   ],
   "a-managed": [
    "1u1z3v2",
@@ -1365,6 +1365,8 @@
   "a-mcp": [
    "1tlnnxf",
    "5envg7",
+   "1f0fzeq",
+   "1kxah6t",
    "dg7cjl",
    "fu0lto",
    "12n48t9",
@@ -1387,8 +1389,8 @@
    "1g5lpqi"
   ],
   "s-deploy": [
+   "1av9m32",
    "1mz5gwd",
-   "1s9ghm3",
    "1ogz1nn"
   ],
   "s-models": [
@@ -1396,6 +1398,7 @@
   ],
   "r-effort": [
    "cni4bj",
+   "km9vu5",
    "1w52qto",
    "15ujymx",
    "1epc8p8",
@@ -1407,10 +1410,7 @@
   ],
   "a-subagents": [
    "1qbw57d",
-   "15zqkq3"
-  ],
-  "k-permissions": [
-   "7brti8"
+   "km9vu5"
   ],
   "c-memory": [
    "1e12vd9"
@@ -1580,14 +1580,6 @@
    "discipline": "code",
    "title": "Show HN: Policy enforcement for Claude Code, Cursor, and Codex",
    "url": "https://kastra.ai/"
-  },
-  {
-   "id": "15zqkq3",
-   "node": "a-subagents",
-   "nodeTitle": "Subagents",
-   "discipline": "agents",
-   "title": "Improved fork subagents launched together: each is now told which launch is its own, so forks are much less likely to try to start each other's work",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   }
  ]
 }
