@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-01T21:59:15.438Z",
- "itemCount": 75,
+ "generated": "2026-11-02T05:57:40.088Z",
+ "itemCount": 73,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -56,7 +56,7 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 9
+   "kept": 7
   },
   {
    "id": "arxiv-eval",
@@ -67,6 +67,54 @@
   }
  ],
  "items": [
+  {
+   "id": "1gdu4z",
+   "title": "Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention",
+   "summary": "Agentic workflows are increasingly shifting towards long-horizon tasks, such as open-ended scientific work, where models benefit from long context windows. However, at ultra-long context (above 1M tokens), full attention is prohibitively expensive. A promising approach is sparse attention, in which a dedicated indexer…",
+   "url": "http://arxiv.org/abs/2610.42147v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-30T17:59:34Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 5,
+   "application": false
+  },
+  {
+   "id": "1f2xs4o",
+   "title": "RAMA: Retrieval-Augmented Multi-Agent Routing with Episodic Memory for LEO Satellite Networks",
+   "summary": "Low-Earth orbit (LEO) satellite networks present a challenging routing environment due to rapidly changing topology, traffic, and link conditions. Existing deep reinforcement learning (DRL) routing methods typically rely on current observations and information encoded in network weights, limiting their ability to expl…",
+   "url": "http://arxiv.org/abs/2610.42068v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-30T17:26:50Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "nxliu3",
+   "title": "TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents",
+   "summary": "Multi-turn negotiation remains a challenging problem for large language model (LLM) agents. While LLMs can conduct natural-language dialogue, existing benchmarks predominantly assess only agreement rates, overlooking whether negotiated commitments actually create value once executed. To address this gap, we introduce…",
+   "url": "http://arxiv.org/abs/2610.42004v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-30T16:45:29Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "1ynpj63",
    "title": "Show HN: Cc-pair – Claude Code and Codex review each other's work",
@@ -85,15 +133,47 @@
    "application": true
   },
   {
-   "id": "11fkne1",
-   "title": "Decompose, Estimate, Select: Coverage-Aware Context Construction for Long-Form RAG",
-   "summary": "Retrieval-augmented generation (RAG) grounds a language model's output in retrieved evidence, but for complex questions spanning multiple aspects of an information need, relevance-based retrieval may return redundant evidence while leaving some aspects unsupported. We propose a coverage-aware retrieval pipeline that d…",
-   "url": "http://arxiv.org/abs/2610.40314v1",
+   "id": "1uh165n",
+   "title": "What Standard Evaluations Hide About Detectors of Hijacked LLM Agents: Rare Attacks, Unseen Tools and Benchmark Transfer",
+   "summary": "Detectors can flag hijacked large language model (LLM) agents from the traces of the tools they call. In the eleven evaluations we audited, attacks or anomalies make up 16% to 86% of the test samples, no evaluation varies that share, and six report no test on data from a second benchmark or source. We ask what such ev…",
+   "url": "http://arxiv.org/abs/2610.41803v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-10-29T15:51:46Z",
+   "date": "2026-10-30T14:30:47Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1p385o0",
+   "title": "Evaluating Instrument-Centered AI Agents for Table-Top Science Experiments",
+   "summary": "Reliable evaluation of AI agents for table-top science experiments has remained elusive because live instruments are hard to reset and share at scale, while instrument statefulness and safety constraints complicate evaluation. We introduce instrMCP and q-devBench, an evaluation stack for instrument-centered AI agents…",
+   "url": "http://arxiv.org/abs/2610.41717v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-30T13:26:57Z",
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "l87qll",
+   "title": "Pix2Evidence: A Multimodal RAG System for Text and Visual Evidence",
+   "summary": "Retrieval-augmented generation (RAG) over visually rich documents must find both relevant content and the evidence that supports an answer. Screenshot retrieval preserves images and page structure, but written facts within screenshots also need to be searchable. Moreover, topical relevance alone does not identify whic…",
+   "url": "http://arxiv.org/abs/2610.41335v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-10-30T06:49:30Z",
    "nodes": [
     "c-retrieval"
    ],
@@ -101,58 +181,42 @@
    "application": false
   },
   {
-   "id": "1mv5ddm",
-   "title": "The Price of a Chance in Artificial Societies",
-   "summary": "Rapid advances in large language models (LLMs) have enabled autonomous agents to interact, coordinate, and pursue individual goals in artificial societies. However, our understanding of how reward structures shape their competitive behavior and collective outcomes remains incomplete. We simulate 200 LLM agents competi…",
-   "url": "http://arxiv.org/abs/2610.40259v1",
+   "id": "gtscre",
+   "title": "TalentRL: Strategy-Guided Reinforcement Learning for Hierarchical Skill Routing",
+   "summary": "Natural-language skills enable large language model (LLM) agents to reuse procedures across tasks, yet most systems retrieve individual skills from a flat SkillBank without explicitly modeling the high-level strategy that governs their selection and use. We introduce TalentRL, a strategy-guided reinforcement learning…",
+   "url": "http://arxiv.org/abs/2610.41143v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-10-29T15:24:00Z",
+   "date": "2026-10-30T02:03:55Z",
    "nodes": [
-    "a-scheduled"
+    "k-skills"
    ],
    "relevance": 3,
    "application": false
   },
   {
-   "id": "1rktxoy",
-   "title": "Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement",
-   "summary": "Video generation is shifting from end-to-end synthesis toward agentic generation, where planning, tool use, and feedback enable coherent, controllable multi-shot videos. In parallel, video world models provide action-conditioned observations and predicted futures, serving as interactive environments for agents. We stu…",
-   "url": "http://arxiv.org/abs/2610.40191v1",
+   "id": "z7flfo",
+   "title": "Consensus Within, Competition Between: Decentralized LLM Teams for Perimeter Defense",
+   "summary": "The use of large language models (LLMs) to coordinate multi-agent teams raises a fundamental architectural question: whether task allocation should be centralized in a single LLM controller or distributed across autonomous LLM agents, particularly when communication is unreliable. In a deliberately simplified perimete…",
+   "url": "http://arxiv.org/abs/2610.41044v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-10-29T14:47:39Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "go8hoo",
-   "title": "Locating and Closing Information Gaps in Multi-Agent Systems",
-   "summary": "Multi-step Web tasks often require several LLM agents to gather and combine evidence. The communication graph of a fixed workflow restricts which agents can read each other's outputs: evidence retrieved by one agent may never reach the agent that needs it, leaving an information gap and an incomplete or incorrect answ…",
-   "url": "http://arxiv.org/abs/2610.40186v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-29T14:45:43Z",
+   "date": "2026-10-29T22:34:13Z",
    "nodes": [
     "a-teams"
    ],
-   "relevance": 3,
+   "relevance": 6,
    "application": false
   },
   {
-   "id": "f45k32",
+   "id": "1z0mopj",
    "title": "GROME: GROunding Factorized MEmory into Video World Models",
    "summary": "Long-horizon consistency is essential for video world models, yet it becomes difficult to maintain once observed content falls outside the context window. Existing memory mechanisms either retrieve history as implicit context, which remains constrained by context capacity and entangles static and dynamic information o…",
-   "url": "http://arxiv.org/abs/2610.39812v1",
+   "url": "http://arxiv.org/abs/2610.39812v2",
    "source": "arXiv · evaluation & prompting",
    "sourceId": "arxiv-eval",
    "category": "research",
@@ -160,86 +224,6 @@
    "date": "2026-10-29T10:54:32Z",
    "nodes": [
     "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1tx0sn",
-   "title": "SEAL: Sealed Queries for Local Sanitization against Indirect Prompt Injection",
-   "summary": "Indirect prompt injection threatens local LLM agents through untrusted tool outputs, motivating defenses that suppress attacks while preserving task evidence under limited inference budgets. We introduce SEAL, which learns a soft prompt and scoring readout offline to sanitize tool outputs using a frozen task model. SE…",
-   "url": "http://arxiv.org/abs/2610.39758v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-29T10:11:51Z",
-   "nodes": [
-    "s-guardrails"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "ir73ge",
-   "title": "Incentivizing Self-Learning in Large Language Models via Reinforcement Learning",
-   "summary": "Large language models (LLMs) draw on parametric knowledge and retrieval-augmented generation (RAG) to solve knowledge-intensive tasks. Yet problem solving in unfamiliar domains calls for tightly coupled knowledge acquisition and reasoning, beyond factual retrieval and aggregation or learning solely from a preassembled…",
-   "url": "http://arxiv.org/abs/2610.39671v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-29T09:21:26Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "15cevrg",
-   "title": "Sticky Collusion: Persistence of LLM Agent Collusion after Incentive Removal and Partner Replacement",
-   "summary": "We ask whether collusion between AI agents survives once formed, when its incentive is removed or a colluder is replaced. Q-learning pricing agents stop colluding with a new rival; we test whether LLM agents do. We use the joint-task environment of Shi et al.\\ (2026), where two agents verify each other's work under a…",
-   "url": "http://arxiv.org/abs/2610.39660v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-29T09:13:06Z",
-   "nodes": [
-    "s-cost"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "1cvhv5n",
-   "title": "InterA11y: Interactive Web Accessibility Error Detection with LLM Agents",
-   "summary": "Large Language Models (LLMs) have shown potential to expand the coverage of web accessibility evaluation. However, current LLM-based checkers neglect much of the interactive and dynamic web contexts, resulting in limited coverage, high false discovery rates, and inconsistent performance across models. We present Inter…",
-   "url": "http://arxiv.org/abs/2610.39488v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-29T06:51:21Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "y1o28c",
-   "title": "ATLAS-Bench: An Agentic Tool-Use Benchmark for Local Area Search",
-   "summary": "Reliable local search is essential for LLM agents to support everyday decisions and longer plans by finding places that meet users' needs at given times and locations. Yet existing benchmarks provide limited coverage of whether search results satisfy mandatory requirements, account for preferences, and ground factual…",
-   "url": "http://arxiv.org/abs/2610.39438v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-29T06:14:52Z",
-   "nodes": [
-    "c-retrieval"
    ],
    "relevance": 3,
    "application": false
@@ -321,23 +305,6 @@
    "date": "2026-10-26T12:41:39Z",
    "nodes": [
     "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1tb6vf5",
-   "title": "Learning to Remember: Advances in Memory Mechanisms for Large Language Models",
-   "summary": "Memory has become a central mechanism for extending large language models (LLMs) beyond fixed context windows, stateless interaction, and static parametric knowledge. This survey organizes the literature around three complementary dimensions: the life cycle of memory, the storage substrate, and the system role that me…",
-   "url": "http://arxiv.org/abs/2610.35089v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-26T09:31:04Z",
-   "nodes": [
-    "c-longctx",
-    "c-retrieval"
    ],
    "relevance": 3,
    "application": false
@@ -1298,6 +1265,25 @@
   }
  ],
  "byNode": {
+  "c-longctx": [
+   "1gdu4z",
+   "1z0mopj",
+   "1wzb876",
+   "1ijh4e0",
+   "1ea0urp",
+   "ip681"
+  ],
+  "a-teams": [
+   "1f2xs4o",
+   "z7flfo",
+   "1wzb876",
+   "1qbw57d"
+  ],
+  "s-models": [
+   "nxliu3",
+   "1uh165n",
+   "cni4bj"
+  ],
   "k-cli": [
    "1ynpj63",
    "1rvlid5",
@@ -1312,57 +1298,8 @@
    "1w52qto",
    "3sjnmq"
   ],
-  "c-retrieval": [
-   "11fkne1",
-   "ir73ge",
-   "1cvhv5n",
-   "y1o28c",
-   "1tb6vf5",
-   "1a89hn0"
-  ],
-  "a-scheduled": [
-   "1mv5ddm"
-  ],
-  "a-tools": [
-   "1rktxoy"
-  ],
-  "a-teams": [
-   "go8hoo",
-   "1wzb876",
-   "1qbw57d"
-  ],
-  "c-longctx": [
-   "f45k32",
-   "1wzb876",
-   "1ijh4e0",
-   "1ea0urp",
-   "ip681",
-   "1tb6vf5"
-  ],
-  "s-guardrails": [
-   "1tx0sn",
-   "1vyzb0t",
-   "3sjnmq"
-  ],
-  "s-cost": [
-   "15cevrg"
-  ],
-  "c-editing": [
-   "1m6o8m4"
-  ],
-  "a-managed": [
-   "1u1z3v2",
-   "1maeyx6",
-   "1qbw57d",
-   "yax02v",
-   "17a2skn",
-   "okdfg3"
-  ],
-  "k-plugins": [
-   "ouarcq",
-   "12n48t9"
-  ],
   "a-mcp": [
+   "1p385o0",
    "1tlnnxf",
    "5envg7",
    "1f0fzeq",
@@ -1379,22 +1316,43 @@
    "1btkpdm",
    "gt0ins"
   ],
+  "c-retrieval": [
+   "l87qll",
+   "1a89hn0"
+  ],
+  "k-skills": [
+   "gtscre",
+   "bkmagq",
+   "1g5lpqi"
+  ],
+  "c-editing": [
+   "1m6o8m4"
+  ],
+  "a-managed": [
+   "1u1z3v2",
+   "1maeyx6",
+   "1qbw57d",
+   "yax02v",
+   "17a2skn",
+   "okdfg3"
+  ],
+  "k-plugins": [
+   "ouarcq",
+   "12n48t9"
+  ],
   "f-artifacts": [
    "hzvm6i",
    "a31lqr",
    "bqo05p"
   ],
-  "k-skills": [
-   "bkmagq",
-   "1g5lpqi"
+  "s-guardrails": [
+   "1vyzb0t",
+   "3sjnmq"
   ],
   "s-deploy": [
    "1av9m32",
    "1mz5gwd",
    "1ogz1nn"
-  ],
-  "s-models": [
-   "cni4bj"
   ],
   "r-effort": [
    "cni4bj",
@@ -1436,14 +1394,6 @@
    "discipline": "code",
    "title": "Show HN: Cc-pair – Claude Code and Codex review each other's work",
    "url": "https://github.com/leonlee/cc-pair"
-  },
-  {
-   "id": "15cevrg",
-   "node": "s-cost",
-   "nodeTitle": "Cost Engineering",
-   "discipline": "scale",
-   "title": "Sticky Collusion: Persistence of LLM Agent Collusion after Incentive Removal and Partner Replacement",
-   "url": "http://arxiv.org/abs/2610.39660v1"
   },
   {
    "id": "1u1z3v2",
