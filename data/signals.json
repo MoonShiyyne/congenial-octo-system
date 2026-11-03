@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-02T15:44:21.121Z",
- "itemCount": 73,
+ "generated": "2026-11-03T00:55:46.955Z",
+ "itemCount": 71,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -13,15 +13,15 @@
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 49,
-   "kept": 11
+   "fetched": 60,
+   "kept": 10
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 47,
-   "kept": 7
+   "fetched": 54,
+   "kept": 5
   },
   {
    "id": "hn-mcp",
@@ -1040,19 +1040,35 @@
    "application": false
   },
   {
-   "id": "1e12vd9",
-   "title": "**tools:** keep $ sequences literal in memory tool str_replace",
+   "id": "1kbthj7",
+   "title": "**api:** add tool_use_limit_reached_error and compaction_limit_reached_error session error types",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
    "category": "model",
-   "badge": "[0.136.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.135.0...sdk-v0.136.0)",
+   "badge": "[2.4.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.3.0...v2.4.0)",
    "date": null,
    "nodes": [
-    "c-memory"
+    "c-editing"
    ],
-   "relevance": 8,
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1efmfqi",
+   "title": "**examples:** keep the message threads example valid on Sonnet 5.5",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.4.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.3.0...v2.4.0)",
+   "date": null,
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 6,
    "application": false
   },
   {
@@ -1136,33 +1152,33 @@
    "application": false
   },
   {
-   "id": "kzwbwx",
-   "title": "**tools:** give the set_messages_params() callback of a tool runner its tools as definitions again",
+   "id": "1o4n0c",
+   "title": "**api:** add tool_use_limit_reached_error and compaction_limit_reached_error session error types",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "[2.2.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.1.0...v2.2.0)",
+   "badge": "[1.4.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.3.0...sdk-v1.4.0)",
    "date": null,
    "nodes": [
-    "a-runner"
+    "c-editing"
    ],
    "relevance": 6,
    "application": false
   },
   {
-   "id": "s3q9qd",
-   "title": "**tools:** keep a tool runner's betas, user_profile_id and workspace_id when set_messages_params() leaves them out",
+   "id": "1u9fug9",
+   "title": "**examples:** keep the message threads example valid on Sonnet 5.5",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "[2.2.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.1.0...v2.2.0)",
+   "badge": "[1.4.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.3.0...sdk-v1.4.0)",
    "date": null,
    "nodes": [
-    "a-runner"
+    "s-models"
    ],
    "relevance": 6,
    "application": false
@@ -1214,54 +1230,6 @@
    ],
    "relevance": 6,
    "application": false
-  },
-  {
-   "id": "yax02v",
-   "title": "**docs:** add credential expiry descriptions to the Managed Agents API reference",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[0.136.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.135.0...sdk-v0.136.0)",
-   "date": null,
-   "nodes": [
-    "a-managed"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "17a2skn",
-   "title": "**docs:** improve Managed Agents memory store descriptions",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[0.136.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.135.0...sdk-v0.136.0)",
-   "date": null,
-   "nodes": [
-    "a-managed"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "okdfg3",
-   "title": "**docs:** improve Managed Agents vault and credential descriptions",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[0.136.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.135.0...sdk-v0.136.0)",
-   "date": null,
-   "nodes": [
-    "a-managed"
-   ],
-   "relevance": 6,
-   "application": false
   }
  ],
  "byNode": {
@@ -1282,7 +1250,9 @@
   "s-models": [
    "nxliu3",
    "1uh165n",
-   "cni4bj"
+   "cni4bj",
+   "1efmfqi",
+   "1u9fug9"
   ],
   "k-cli": [
    "1ynpj63",
@@ -1326,15 +1296,14 @@
    "1g5lpqi"
   ],
   "c-editing": [
-   "1m6o8m4"
+   "1m6o8m4",
+   "1kbthj7",
+   "1o4n0c"
   ],
   "a-managed": [
    "1u1z3v2",
    "1maeyx6",
-   "1qbw57d",
-   "yax02v",
-   "17a2skn",
-   "okdfg3"
+   "1qbw57d"
   ],
   "k-plugins": [
    "ouarcq",
@@ -1370,9 +1339,6 @@
    "1qbw57d",
    "km9vu5"
   ],
-  "c-memory": [
-   "1e12vd9"
-  ],
   "a-servertools": [
    "1rnuoq2",
    "lzk7lj"
@@ -1380,8 +1346,6 @@
   "a-runner": [
    "rettc9",
    "1a7iijl",
-   "kzwbwx",
-   "s3q9qd",
    "ojp65w",
    "1mxrf9k"
   ]
