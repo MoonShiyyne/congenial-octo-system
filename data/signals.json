@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-03T14:08:04.215Z",
- "itemCount": 73,
+ "generated": "2026-11-03T23:19:09.838Z",
+ "itemCount": 71,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 46,
-   "kept": 5
+   "kept": 4
   },
   {
    "id": "hn-agents",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 12
+   "kept": 11
   },
   {
    "id": "arxiv-agents",
@@ -584,23 +584,6 @@
    "application": true
   },
   {
-   "id": "1g5lpqi",
-   "title": "Show HN: Turn repeated coding-agent corrections into rules/skills",
-   "summary": "",
-   "url": "https://blume.codes",
-   "discussion": "https://news.ycombinator.com/item?id=49511274",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "3 pts",
-   "date": "2026-08-31T15:57:10Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
    "id": "5envg7",
    "title": "Show HN: Salestrics – An open MCP server and CRM for AI-native revenue teams",
    "summary": "",
@@ -615,23 +598,6 @@
     "a-mcp"
    ],
    "relevance": 12,
-   "application": true
-  },
-  {
-   "id": "yq92q5",
-   "title": "Show HN: A faster coding agent than Codex and Claude Code",
-   "summary": "",
-   "url": "https://www.codewithbullet.com",
-   "discussion": "https://news.ycombinator.com/item?id=49173799",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "9 pts",
-   "date": "2026-08-04T19:33:34Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 5,
    "application": true
   },
   {
@@ -1324,7 +1290,6 @@
    "1ktme1w",
    "1wgt1b8",
    "hzhlbu",
-   "yq92q5",
    "11wcs",
    "1w52qto",
    "3sjnmq"
@@ -1361,8 +1326,7 @@
    "bqo05p"
   ],
   "k-skills": [
-   "bkmagq",
-   "1g5lpqi"
+   "bkmagq"
   ],
   "s-deploy": [
    "w23u20",
@@ -1512,28 +1476,12 @@
    "url": "https://github.com/OtoDock/oto-dock"
   },
   {
-   "id": "1g5lpqi",
-   "node": "k-skills",
-   "nodeTitle": "Skills",
-   "discipline": "code",
-   "title": "Show HN: Turn repeated coding-agent corrections into rules/skills",
-   "url": "https://blume.codes"
-  },
-  {
    "id": "5envg7",
    "node": "a-mcp",
    "nodeTitle": "MCP",
    "discipline": "agents",
    "title": "Show HN: Salestrics – An open MCP server and CRM for AI-native revenue teams",
    "url": "https://www.salestrics.com/"
-  },
-  {
-   "id": "yq92q5",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: A faster coding agent than Codex and Claude Code",
-   "url": "https://www.codewithbullet.com"
   },
   {
    "id": "11wcs",
