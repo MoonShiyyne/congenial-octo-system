@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-04T14:31:18.343Z",
- "itemCount": 73,
+ "generated": "2026-11-04T23:38:17.362Z",
+ "itemCount": 75,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -13,15 +13,15 @@
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 60,
-   "kept": 10
+   "fetched": 85,
+   "kept": 12
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 54,
-   "kept": 5
+   "fetched": 76,
+   "kept": 6
   },
   {
    "id": "hn-mcp",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 46,
-   "kept": 4
+   "kept": 5
   },
   {
    "id": "hn-agents",
@@ -633,6 +633,23 @@
    "application": true
   },
   {
+   "id": "yq92q5",
+   "title": "Show HN: A faster coding agent than Codex and Claude Code",
+   "summary": "",
+   "url": "https://www.codewithbullet.com",
+   "discussion": "https://news.ycombinator.com/item?id=49173799",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "9 pts",
+   "date": "2026-08-04T19:33:34Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 5,
+   "application": true
+  },
+  {
    "id": "11wcs",
    "title": "Show HN: Policy enforcement for Claude Code, Cursor, and Codex",
    "summary": "",
@@ -1073,6 +1090,70 @@
    "application": false
   },
   {
+   "id": "jimnoz",
+   "title": "**tools:** keep the memory tool from renaming or deleting the /memories directory",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.5.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.4.0...v2.5.0)",
+   "date": null,
+   "nodes": [
+    "c-memory"
+   ],
+   "relevance": 8,
+   "application": false
+  },
+  {
+   "id": "nwvk8q",
+   "title": "**tools:** keep the memory tool from renaming or deleting the /memories directory",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "[1.5.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.4.0...sdk-v1.5.0)",
+   "date": null,
+   "nodes": [
+    "c-memory"
+   ],
+   "relevance": 8,
+   "application": false
+  },
+  {
+   "id": "og6bj6",
+   "title": "**bedrock:** raise a ValueError when model is \".\" or \"..\" instead of sending the request to a different path",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.5.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.4.0...v2.5.0)",
+   "date": null,
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1kwqofj",
+   "title": "**bedrock:** raise a ValueError when model is empty instead of sending the request to /model//invoke",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.5.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.4.0...v2.5.0)",
+   "date": null,
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
    "id": "1kbthj7",
    "title": "**api:** add tool_use_limit_reached_error and compaction_limit_reached_error session error types",
    "summary": "",
@@ -1132,54 +1213,6 @@
    "date": null,
    "nodes": [
     "a-mcp"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1ogz1nn",
-   "title": "**client:** link the Bedrock and Vertex raw response docstrings to the SDK documentation",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "[2.3.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.2.0...v2.3.0)",
-   "date": null,
-   "nodes": [
-    "s-deploy"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "rettc9",
-   "title": "**tools:** leave the tool runner's history to the caller after append_messages(), and keep the current reply out of the set_messages_params() callback",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "[2.2.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.1.0...v2.2.0)",
-   "date": null,
-   "nodes": [
-    "a-runner"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1a7iijl",
-   "title": "**tools:** keep running the tool runner's function tools when set_messages_params() gives tools as definitions, and stop running one it takes out of tools",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "[2.2.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.1.0...v2.2.0)",
-   "date": null,
-   "nodes": [
-    "a-runner"
    ],
    "relevance": 6,
    "application": false
@@ -1348,6 +1381,7 @@
    "1ktme1w",
    "1wgt1b8",
    "hzhlbu",
+   "yq92q5",
    "11wcs"
   ],
   "a-managed": [
@@ -1364,7 +1398,8 @@
    "w23u20",
    "1av9m32",
    "1mz5gwd",
-   "1ogz1nn"
+   "og6bj6",
+   "1kwqofj"
   ],
   "r-effort": [
    "cni4bj",
@@ -1380,13 +1415,15 @@
    "8p13k7",
    "km9vu5"
   ],
+  "c-memory": [
+   "jimnoz",
+   "nwvk8q"
+  ],
   "a-servertools": [
    "1rnuoq2",
    "lzk7lj"
   ],
   "a-runner": [
-   "rettc9",
-   "1a7iijl",
    "ojp65w",
    "1mxrf9k"
   ]
@@ -1519,6 +1556,14 @@
    "discipline": "agents",
    "title": "Show HN: Salestrics – An open MCP server and CRM for AI-native revenue teams",
    "url": "https://www.salestrics.com/"
+  },
+  {
+   "id": "yq92q5",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: A faster coding agent than Codex and Claude Code",
+   "url": "https://www.codewithbullet.com"
   },
   {
    "id": "11wcs",
