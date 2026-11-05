@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T06:41:03.506Z",
+ "generated": "2026-11-05T19:54:36.337Z",
  "itemCount": 74,
  "sourceStatus": [
   {
@@ -13,15 +13,15 @@
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 85,
-   "kept": 12
+   "fetched": 93,
+   "kept": 14
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 76,
-   "kept": 6
+   "fetched": 81,
+   "kept": 7
   },
   {
    "id": "hn-mcp",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 12
+   "kept": 11
   },
   {
    "id": "arxiv-agents",
@@ -598,23 +598,6 @@
    "application": true
   },
   {
-   "id": "1g5lpqi",
-   "title": "Show HN: Turn repeated coding-agent corrections into rules/skills",
-   "summary": "",
-   "url": "https://blume.codes",
-   "discussion": "https://news.ycombinator.com/item?id=49511274",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "3 pts",
-   "date": "2026-08-31T15:57:10Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
    "id": "5envg7",
    "title": "Show HN: Salestrics – An open MCP server and CRM for AI-native revenue teams",
    "summary": "",
@@ -1104,6 +1087,38 @@
    "application": false
   },
   {
+   "id": "6d7pfl",
+   "title": "**bedrock,vertex:** raise error-code and status exception classes on platform clients",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.6.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.5.0...v2.6.0)",
+   "date": null,
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1628r0w",
+   "title": "**bedrock:** keep a custom http_client and aws_profile on copies made with copy and with_options",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.6.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.5.0...v2.6.0)",
+   "date": null,
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
    "id": "og6bj6",
    "title": "**bedrock:** raise a ValueError when model is \".\" or \"..\" instead of sending the request to a different path",
    "summary": "",
@@ -1168,33 +1183,17 @@
    "application": false
   },
   {
-   "id": "1rnuoq2",
-   "title": "**docs:** improve the descriptions of the code execution tool and its encrypted results",
+   "id": "172fnd4",
+   "title": "add the rules the SDKs share to CLAUDE.md",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "[2.3.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.2.0...v2.3.0)",
+   "badge": "[1.6.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.5.0...sdk-v1.6.0)",
    "date": null,
    "nodes": [
-    "a-servertools"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "gt0ins",
-   "title": "**mcp:** remove the stray await from the async tool_runner examples",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "[2.3.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.2.0...v2.3.0)",
-   "date": null,
-   "nodes": [
-    "a-mcp"
+    "k-claudemd"
    ],
    "relevance": 6,
    "application": false
@@ -1298,8 +1297,7 @@
    "12n48t9",
    "nbj8vr",
    "y1hrzn",
-   "11gg6kh",
-   "gt0ins"
+   "11gg6kh"
   ],
   "c-editing": [
    "1vs9cyx",
@@ -1369,13 +1367,14 @@
    "12n48t9"
   ],
   "k-skills": [
-   "bkmagq",
-   "1g5lpqi"
+   "bkmagq"
   ],
   "s-deploy": [
    "w23u20",
    "1av9m32",
    "1mz5gwd",
+   "6d7pfl",
+   "1628r0w",
    "og6bj6",
    "1kwqofj"
   ],
@@ -1397,8 +1396,10 @@
    "jimnoz",
    "nwvk8q"
   ],
+  "k-claudemd": [
+   "172fnd4"
+  ],
   "a-servertools": [
-   "1rnuoq2",
    "lzk7lj"
   ],
   "a-runner": [
@@ -1518,14 +1519,6 @@
    "discipline": "code",
    "title": "Show HN: Self-hosted company OS, Claude Code and Codex agents in departments",
    "url": "https://github.com/OtoDock/oto-dock"
-  },
-  {
-   "id": "1g5lpqi",
-   "node": "k-skills",
-   "nodeTitle": "Skills",
-   "discipline": "code",
-   "title": "Show HN: Turn repeated coding-agent corrections into rules/skills",
-   "url": "https://blume.codes"
   },
   {
    "id": "5envg7",
