@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-04T23:38:17.362Z",
- "itemCount": 75,
+ "generated": "2026-11-05T06:41:03.506Z",
+ "itemCount": 74,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 46,
-   "kept": 5
+   "kept": 4
   },
   {
    "id": "hn-agents",
@@ -68,17 +68,161 @@
  ],
  "items": [
   {
-   "id": "19nq3dk",
-   "title": "A semi-autonomous multi-agent pipeline for high-energy astrophysics research with enforced provenance and verifiable self-extension",
-   "summary": "Large language model (LLM) agents are now applied to astronomical data analysis. They retrieve the literature, reduce observations, and draft conclusions. Under pressure to complete a task, such agents can fabricate results, and the numbers they report may not come from the analysis they ran. We present auto_research,…",
-   "url": "http://arxiv.org/abs/2611.05251v1",
+   "id": "1beqcor",
+   "title": "MCP-Eco: A Linked Dataset of MCP Servers, Consumers, and Development Activity",
+   "summary": "The Model Context Protocol (MCP) enables LLM agents to access external tools and data. Studying its software ecosystem requires connecting server interfaces, the projects that configure these servers, and their development activity. However, this information is scattered across directories, package registries, configu…",
+   "url": "http://arxiv.org/abs/2611.06897v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-03T17:38:00Z",
+   "date": "2026-11-04T18:47:50Z",
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 9,
+   "application": false
+  },
+  {
+   "id": "1vs9cyx",
+   "title": "SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification",
+   "summary": "LLM agents use context compaction to manage growing interaction histories, but summarizing long histories with large models can introduce substantial delays. Compaction therefore requires balancing information retention against latency. We observe that structured summary slots can retain information when generated ind…",
+   "url": "http://arxiv.org/abs/2611.06876v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-04T18:34:41Z",
+   "nodes": [
+    "c-editing"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ga73s5",
+   "title": "Reasoning over Non-Parametric Memory in Multilingual LLMs: A Cognitive-Based Analysis of Relational Knowledge",
+   "summary": "Retrieval-augmented generation (RAG) assumes that language models can reason over relations stated in their context rather than fall back on associations memorized during pretraining. We study this evidence-conditioned relational reasoning in isolation, with the facts supplied directly in the prompt rather than retrie…",
+   "url": "http://arxiv.org/abs/2611.06715v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-04T16:11:26Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "5w26u",
+   "title": "SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents",
+   "summary": "Tool-using large language model (LLM) agents translate model outputs into consequential actions, turning indirect prompt injection into an execution-security problem. Existing defenses constrain tool calls, trajectories, or information flows, but often leave action semantics, state dependencies, and evidence relations…",
+   "url": "http://arxiv.org/abs/2611.06682v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-04T15:51:30Z",
+   "nodes": [
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "kq89aw",
+   "title": "Who Gets Counted? Large Language Models, Informative Refusal, and Downstream Bias in Name-Based Demographic Classification",
+   "summary": "Researchers routinely infer gender, race, and ethnicity from names, yet the standard tools used for this task misclassify the groups that diversity research most needs to measure. Large language models (LLMs) have been proposed as a remedy because they label diverse names accurately. We ask whether that accuracy carri…",
+   "url": "http://arxiv.org/abs/2611.06550v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-04T14:15:04Z",
+   "nodes": [
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ehaive",
+   "title": "Signed but Steerable: Measuring and Closing the Text-Vector Integrity Gap in Offline Retrieval-Augmented Generation",
+   "summary": "Offline retrieval-augmented generation (RAG) on edge devices is updated through signed knowledge packs that carry text and precomputed embedding vectors. A signature proves who published a pack, not that its vectors encode its text. We study this text-vector integrity gap. A verifier that recomputes vectors and accept…",
+   "url": "http://arxiv.org/abs/2611.06498v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-04T13:32:04Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 5,
+   "application": false
+  },
+  {
+   "id": "1m778e",
+   "title": "ArcRAG: Agentic Compositional Retrieval over Knowledge Graphs",
+   "summary": "Graph-based retrieval-augmented generation (GraphRAG) answers questions by retrieving over a knowledge graph built from a corpus. Yet retrieval strategies are designed around the structure their own construction pipeline produces, and whether they survive a change of construction is rarely tested. We study this cross-…",
+   "url": "http://arxiv.org/abs/2611.06481v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-04T13:20:51Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "15xa97a",
+   "title": "MA-Mesh: Resilient Multi-Agent Collaboration via Role-based Self-Healing",
+   "summary": "Effective collaboration in multi-agent systems requires mechanisms for coordination and adaptability in dynamic and uncertain environments. However, existing multi-agent systems rarely model resilience explicitly, instead relying on ad-hoc output correction that limits systematic, runtime management of robustness. In…",
+   "url": "http://arxiv.org/abs/2611.06389v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-04T11:54:59Z",
    "nodes": [
     "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "9qun51",
+   "title": "Evaluating Human-LLM Alignment on Visualization Preference",
+   "summary": "There are often multiple valid visualizations, spanning different chart types, visual encodings, and aesthetic choices, that can all support a user's goal of analyzing a dataset. Determining which of these candidate visualizations is most appropriate, however, remains challenging. Prior work has leveraged expert-curat…",
+   "url": "http://arxiv.org/abs/2611.06272v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-04T10:17:01Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1w4agls",
+   "title": "Weaver: Weaving Preference Evidence through Incremental Reasoning for Personalized Retrieval-Augmented Generation",
+   "summary": "Personalized retrieval-augmented generation requires extracting and applying user preferences from extended interaction histories. This task is challenging because preference evidence is scattered across past conversations and remains bound to specific temporal and situational contexts. Consequently, isolated fragment…",
+   "url": "http://arxiv.org/abs/2611.05900v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-04T03:48:15Z",
+   "nodes": [
+    "c-retrieval"
    ],
    "relevance": 3,
    "application": false
@@ -100,10 +244,10 @@
    "application": false
   },
   {
-   "id": "1qumpxj",
+   "id": "3tnrxi",
    "title": "Towards Multi-Method Evaluation of AI in Health: Integrating Benchmarks, Autoraters, and Expert Evaluation",
    "summary": "General-purpose generative AI (GenAI) models are being rapidly adopted in healthcare, but they are challenging to assess with traditional evaluation frameworks. These conceptual, methodological, and practical challenges parallel decades of work in evaluating clinician and health system quality and safety. We describe…",
-   "url": "http://arxiv.org/abs/2611.05127v1",
+   "url": "http://arxiv.org/abs/2611.05127v2",
    "source": "arXiv · evaluation & prompting",
    "sourceId": "arxiv-eval",
    "category": "research",
@@ -111,22 +255,6 @@
    "date": "2026-11-03T16:12:47Z",
    "nodes": [
     "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1vqj52s",
-   "title": "ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents",
-   "summary": "Large language models are deployed as long-horizon agents that compose diverse tools across MCP services into executable workflows. Existing MCP environment-scaling methods are data-centric: they first synthesize a database and scenario, then derive tools and tasks from them. As a result, tool interfaces may not match…",
-   "url": "http://arxiv.org/abs/2611.05036v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-03T15:09:01Z",
-   "nodes": [
-    "a-mcp"
    ],
    "relevance": 3,
    "application": false
@@ -146,119 +274,6 @@
     "a-teams"
    ],
    "relevance": 5,
-   "application": false
-  },
-  {
-   "id": "loz9hu",
-   "title": "Right Tool, Wrong Parameters: Defending LLM Agents Against Parameter Poisoning",
-   "summary": "Indirect Prompt Injection (IPI) poses a critical threat to LLM agents. Existing defenses largely focus on whether an injection induces a new tool invocation or unintended action. In this paper, we study a different attack surface, parameter poisoning, where the attacker preserves the intended action but manipulates on…",
-   "url": "http://arxiv.org/abs/2611.04673v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-03T10:57:12Z",
-   "nodes": [
-    "s-guardrails"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "7yruk9",
-   "title": "QueryFlow: Multi-Hop Graph Retrieval with Adaptive Query Evolution",
-   "summary": "Multi-hop retrieval-augmented generation (RAG) supports Web information seeking and fact verification by recovering complementary evidence across related pages within a limited retrieval budget. Scoring evidence independently against the original question can miss supporting units whose relevance emerges through inter…",
-   "url": "http://arxiv.org/abs/2611.04625v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-03T10:14:30Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "uh5nj0",
-   "title": "Sketchpad: certified exact arithmetic with a small vision-language model",
-   "summary": "Language models are accurate on most long-arithmetic problems, but their accuracy is estimated on samples and carries no guarantee for an unseen input; tool use is exact but moves the computation outside the network. We show that exactness at all input lengths becomes a finite, checkable property of a network when eac…",
-   "url": "http://arxiv.org/abs/2611.04434v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-03T07:25:42Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "47m4ua",
-   "title": "Drift No More: Spectral Locking for Long-Horizon Open-Weight Multi-Agent AI",
-   "summary": "Long-horizon multi-agent systems suffer from three tightly coupled failures: task drift, role drift, and state staleness. We test the hypothesis that these share a common representational cause: agent hidden states move away from the directions encoding the active task, assigned role, and current shared state. A pilot…",
-   "url": "http://arxiv.org/abs/2611.04315v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-03T04:46:59Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "192yo07",
-   "title": "Can Benign Skills Induce Misaligned Behavior in LLM Agents?",
-   "summary": "LLM agents increasingly rely on reusable skills to plan tasks, invoke tools, recover from errors, and complete workflows without modifying model parameters. Although these skills are typically developed to enhance benign tasks, they may also make an agent more capable of executing procedures for harmful purposes. We s…",
-   "url": "http://arxiv.org/abs/2611.04299v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-03T04:29:17Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1hek4qe",
-   "title": "When Debate Amplifies Risk: Social-Bias Vulnerabilities in Multi-Agent Safety Deliberation",
-   "summary": "Retrieval-augmented Web applications increasingly employ multi-agent debate (MAD) to aggregate conflicting, noisy, and heterogeneous information, yet deliberation is fundamentally a social process susceptible to interpersonal dynamics. When retrieved Web sources contain latent hazards alongside safe factual content, s…",
-   "url": "http://arxiv.org/abs/2611.04289v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-03T04:16:06Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "iamkdb",
-   "title": "Reliability Stress Testing of RAG Retrieval under Query-Relevant Corpus Poisoning",
-   "summary": "External text can affect a retrieval-augmented generation (RAG) system only after the retriever admits it to the model context. We stress this admission step while varying document content, attacker query information, per-target poison budget, and contamination scope. Across 623 Benchmarking Information Retrieval (BEI…",
-   "url": "http://arxiv.org/abs/2611.04264v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-03T03:52:58Z",
-   "nodes": [
-    "c-retrieval",
-    "s-models"
-   ],
-   "relevance": 3,
    "application": false
   },
   {
@@ -322,22 +337,6 @@
    "date": "2026-11-01T15:14:02Z",
    "nodes": [
     "s-guardrails"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1khxbdm",
-   "title": "UI-UG 2: Advancing Mobile UI Understanding and Generation with Fine-Grained Supervision and Reinforcement Learning",
-   "summary": "Mobile UI understanding and generation require both fine-grained component perception and reliable structured synthesis. Inspired by the unified direction introduced by UI-UG, we present UI-UG 2, a compact 4B-parameter multimodal large language model (MLLM) that advances mobile UI Understanding and Generation with bro…",
-   "url": "http://arxiv.org/abs/2611.00926v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-10-31T13:24:05Z",
-   "nodes": [
-    "c-files"
    ],
    "relevance": 3,
    "application": false
@@ -630,23 +629,6 @@
     "a-mcp"
    ],
    "relevance": 12,
-   "application": true
-  },
-  {
-   "id": "yq92q5",
-   "title": "Show HN: A faster coding agent than Codex and Claude Code",
-   "summary": "",
-   "url": "https://www.codewithbullet.com",
-   "discussion": "https://news.ycombinator.com/item?id=49173799",
-   "source": "Hacker News · Claude",
-   "sourceId": "hn-claude",
-   "category": "market",
-   "badge": "9 pts",
-   "date": "2026-08-04T19:33:34Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 5,
    "application": true
   },
   {
@@ -1299,23 +1281,8 @@
   }
  ],
  "byNode": {
-  "a-teams": [
-   "19nq3dk",
-   "1qn0qom",
-   "47m4ua",
-   "1hek4qe",
-   "1qbw57d"
-  ],
-  "s-models": [
-   "lstb3f",
-   "1qumpxj",
-   "iamkdb",
-   "cni4bj",
-   "1efmfqi",
-   "1u9fug9"
-  ],
   "a-mcp": [
-   "1vqj52s",
+   "1beqcor",
    "1tlnnxf",
    "5envg7",
    "lcn7sh",
@@ -1334,6 +1301,39 @@
    "11gg6kh",
    "gt0ins"
   ],
+  "c-editing": [
+   "1vs9cyx",
+   "1234iz2",
+   "1kbthj7",
+   "1o4n0c"
+  ],
+  "c-retrieval": [
+   "ga73s5",
+   "ehaive",
+   "1m778e",
+   "9qun51",
+   "1w4agls",
+   "t91d3m",
+   "1a89hn0"
+  ],
+  "s-guardrails": [
+   "5w26u",
+   "kq89aw",
+   "1mpblfm",
+   "1vyzb0t"
+  ],
+  "a-teams": [
+   "15xa97a",
+   "1qn0qom",
+   "1qbw57d"
+  ],
+  "s-models": [
+   "lstb3f",
+   "3tnrxi",
+   "cni4bj",
+   "1efmfqi",
+   "1u9fug9"
+  ],
   "f-artifacts": [
    "1qn0qom",
    "hzvm6i",
@@ -1341,36 +1341,11 @@
    "a31lqr",
    "bqo05p"
   ],
-  "s-guardrails": [
-   "loz9hu",
-   "1mpblfm",
-   "1vyzb0t"
-  ],
-  "c-retrieval": [
-   "7yruk9",
-   "iamkdb",
-   "t91d3m",
-   "1a89hn0"
-  ],
   "a-tools": [
-   "uh5nj0",
    "oyasc7"
-  ],
-  "k-skills": [
-   "192yo07",
-   "bkmagq",
-   "1g5lpqi"
   ],
   "c-longctx": [
    "1234iz2"
-  ],
-  "c-editing": [
-   "1234iz2",
-   "1kbthj7",
-   "1o4n0c"
-  ],
-  "c-files": [
-   "1khxbdm"
   ],
   "k-cli": [
    "1ynpj63",
@@ -1381,7 +1356,6 @@
    "1ktme1w",
    "1wgt1b8",
    "hzhlbu",
-   "yq92q5",
    "11wcs"
   ],
   "a-managed": [
@@ -1393,6 +1367,10 @@
    "ouarcq",
    "1n6ezd0",
    "12n48t9"
+  ],
+  "k-skills": [
+   "bkmagq",
+   "1g5lpqi"
   ],
   "s-deploy": [
    "w23u20",
@@ -1556,14 +1534,6 @@
    "discipline": "agents",
    "title": "Show HN: Salestrics – An open MCP server and CRM for AI-native revenue teams",
    "url": "https://www.salestrics.com/"
-  },
-  {
-   "id": "yq92q5",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: A faster coding agent than Codex and Claude Code",
-   "url": "https://www.codewithbullet.com"
   },
   {
    "id": "11wcs",
