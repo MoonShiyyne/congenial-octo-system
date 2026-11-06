@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-06T06:38:11.748Z",
- "itemCount": 75,
+ "generated": "2026-11-06T19:21:37.187Z",
+ "itemCount": 74,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 581,
-   "kept": 185
+   "fetched": 648,
+   "kept": 212
   },
   {
    "id": "python-sdk-changelog",
@@ -34,7 +34,7 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 46,
+   "fetched": 45,
    "kept": 4
   },
   {
@@ -636,21 +636,102 @@
    "application": true
   },
   {
-   "id": "11wcs",
-   "title": "Show HN: Policy enforcement for Claude Code, Cursor, and Codex",
+   "id": "17bor5j",
+   "title": "Added support for MCP tasks in the terminal: when an MCP server runs a tool call as a task, Claude Code moves it to the background right away and tells Claude the result when it finishes",
    "summary": "",
-   "url": "https://kastra.ai/",
-   "discussion": "https://news.ycombinator.com/item?id=48847526",
-   "source": "Hacker News · AI building",
-   "sourceId": "hn-agents",
-   "category": "market",
-   "badge": "13 pts",
-   "date": "2026-07-09T15:26:24Z",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.319",
+   "date": null,
    "nodes": [
+    "a-mcp",
     "k-cli"
    ],
-   "relevance": 3,
-   "application": true
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "cu0kch",
+   "title": "Fixed MCP servers on the older handshake failing to connect, or returning empty results, because Claude Code declared an extension that it only uses with newer servers",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.319",
+   "date": null,
+   "nodes": [
+    "a-mcp",
+    "k-cli"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "10x48xk",
+   "title": "Fixed claude -p --resume with a prompt losing a deferred tool call when its MCP server is missing: the run now exits 1, keeps the call and refuses later input",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.319",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "qg99da",
+   "title": "[VSCode] Improved the confirmation for removing a plugin marketplace: it now checks which of its plugins are installed at that moment",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.319",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "om6l6q",
+   "title": "Changed --add-dir directories to register plugin marketplaces only once that directory's own trust dialog has been accepted",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.319",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "bvs7n8",
+   "title": "Changed PostToolUse hooks to run, with up to 10 seconds to finish, on tool calls that finish after a new message interrupts the turn",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.319",
+   "date": null,
+   "nodes": [
+    "k-hooks"
+   ],
+   "relevance": 18,
+   "application": false
   },
   {
    "id": "1n6ezd0",
@@ -928,53 +1009,19 @@
    "application": false
   },
   {
-   "id": "y1hrzn",
-   "title": "Fixed a disabled MCP server being reconnected by a later permission prompt in print and SDK sessions",
+   "id": "xhe8oy",
+   "title": "Fixed Artifact database calls being re-sent to artifacts without a database; errors now say whether republishing helps",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
    "sourceId": "claude-code-changelog",
    "category": "tooling",
-   "badge": "2.1.309",
+   "badge": "2.1.319",
    "date": null,
    "nodes": [
-    "a-mcp"
+    "f-artifacts"
    ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "kj5o4",
-   "title": "Fixed hooks that run in PowerShell not blocking when the hook's program exits with code 2, and on Windows PreToolUse and PermissionRequest hooks with \"shell\": \"powershell\" failing open when Git for Windows isn't install…",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.309",
-   "date": null,
-   "nodes": [
-    "k-hooks"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1qbw57d",
-   "title": "Changed the /claude-api skill to build Managed Agents subagent teams on multiagent_20261001 with dynamic workflows on by default, instead of coordinator",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.309",
-   "date": null,
-   "nodes": [
-    "a-teams",
-    "a-subagents",
-    "a-managed"
-   ],
-   "relevance": 18,
+   "relevance": 15,
    "application": false
   },
   {
@@ -1007,72 +1054,6 @@
     "f-artifacts"
    ],
    "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "bqo05p",
-   "title": "Fixed artifact publishes and updates being refused for some ordinary pages, such as pages with certain minified scripts or artifacts Claude could not read first",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.309",
-   "date": null,
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "11gg6kh",
-   "title": "Changed deniedMcpServers URL entries to also block Anthropic-provided servers whose upstream URL matches, and connectors in cloud sessions and on self-hosted runners, where the session is given the connector's own URL;…",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.318",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "8p13k7",
-   "title": "Changed subagents and teammates on a different model from the main conversation to use that model's saved effort level or its default, instead of the session's effort level",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.317",
-   "date": null,
-   "nodes": [
-    "r-effort",
-    "a-subagents"
-   ],
-   "relevance": 12,
-   "application": false
-  },
-  {
-   "id": "km9vu5",
-   "title": "Added CLAUDE_CODE_SUBAGENT_EFFORT to set the effort level subagents run at when nothing else names one, instead of inheriting the session's",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.316",
-   "date": null,
-   "nodes": [
-    "r-effort",
-    "a-subagents"
-   ],
-   "relevance": 12,
    "application": false
   },
   {
@@ -1330,6 +1311,9 @@
    "14ycyu8",
    "1tlnnxf",
    "5envg7",
+   "17bor5j",
+   "cu0kch",
+   "10x48xk",
    "lcn7sh",
    "15ppawu",
    "1w66kus",
@@ -1341,15 +1325,12 @@
    "dg7cjl",
    "fu0lto",
    "12n48t9",
-   "nbj8vr",
-   "y1hrzn",
-   "11gg6kh"
+   "nbj8vr"
   ],
   "a-teams": [
    "6u0meo",
    "1be2pv1",
-   "11fnvi7",
-   "1qbw57d"
+   "11fnvi7"
   ],
   "c-longctx": [
    "hm6uvg",
@@ -1368,10 +1349,7 @@
    "m5i1yz"
   ],
   "a-subagents": [
-   "11fnvi7",
-   "1qbw57d",
-   "8p13k7",
-   "km9vu5"
+   "11fnvi7"
   ],
   "k-cli": [
    "1ynpj63",
@@ -1382,26 +1360,32 @@
    "1ktme1w",
    "1wgt1b8",
    "hzhlbu",
-   "11wcs"
+   "17bor5j",
+   "cu0kch"
   ],
   "a-managed": [
    "1u1z3v2",
-   "1maeyx6",
-   "1qbw57d"
+   "1maeyx6"
   ],
   "k-plugins": [
    "ouarcq",
+   "qg99da",
+   "om6l6q",
    "1n6ezd0",
    "12n48t9"
   ],
   "f-artifacts": [
    "hzvm6i",
+   "xhe8oy",
    "159298v",
-   "a31lqr",
-   "bqo05p"
+   "a31lqr"
   ],
   "k-skills": [
    "bkmagq"
+  ],
+  "k-hooks": [
+   "bvs7n8",
+   "pdmt3p"
   ],
   "s-deploy": [
    "w23u20",
@@ -1413,13 +1397,7 @@
    "1kwqofj"
   ],
   "r-effort": [
-   "cni4bj",
-   "8p13k7",
-   "km9vu5"
-  ],
-  "k-hooks": [
-   "pdmt3p",
-   "kj5o4"
+   "cni4bj"
   ],
   "c-memory": [
    "jimnoz",
@@ -1560,14 +1538,6 @@
    "discipline": "agents",
    "title": "Show HN: Salestrics – An open MCP server and CRM for AI-native revenue teams",
    "url": "https://www.salestrics.com/"
-  },
-  {
-   "id": "11wcs",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Policy enforcement for Claude Code, Cursor, and Codex",
-   "url": "https://kastra.ai/"
   }
  ]
 }
