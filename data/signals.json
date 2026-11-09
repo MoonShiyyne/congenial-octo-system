@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-08T22:00:34.283Z",
- "itemCount": 74,
+ "generated": "2026-11-09T06:20:41.833Z",
+ "itemCount": 75,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 46,
-   "kept": 4
+   "kept": 5
   },
   {
    "id": "hn-agents",
@@ -56,17 +56,228 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 11
+   "kept": 15
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": true,
    "fetched": 20,
-   "kept": 13
+   "kept": 14
   }
  ],
  "items": [
+  {
+   "id": "l5f9wm",
+   "title": "Tell HN: A flood of reports of Opus 5.5 being nerfed",
+   "summary": "",
+   "url": "https://news.ycombinator.com/item?id=50419019",
+   "discussion": "https://news.ycombinator.com/item?id=50419019",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "15 pts",
+   "date": "2026-11-08T23:49:19Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1t7rjzc",
+   "title": "GRAC: Graph-Based Retrieval-Augmented Captioning for Surgical Scene Description",
+   "summary": "Purpose: Surgical operative reports support procedural documentation, surgical training, performance assessment, and workflow review. However, extracting meaningful information often requires extensive manual review and clinical expertise. Automated surgical scene descriptions could reduce this burden by leveraging re…",
+   "url": "http://arxiv.org/abs/2611.09866v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-06T18:47:23Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "1n7kzuf",
+   "title": "Compaction, decay and reinforcement in a two-tier conversational memory: a paired evaluation against retrieval-augmented generation",
+   "summary": "A conversational agent that remembers has to decide what to keep. Retrieval-augmented generation keeps the transcript and searches it; the alternative is to compact each turn into atomic facts and search those. We compare the two on LoCoMo, with both arms answering all 1,985 questions in one window, against the same s…",
+   "url": "http://arxiv.org/abs/2611.09807v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-06T17:56:37Z",
+   "nodes": [
+    "c-editing"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1i9w2tr",
+   "title": "MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory",
+   "summary": "LLM agents benefit from using memory systems to improve performance on long-horizon, multi-session tasks. However, memory introduces a critical attack surface. Malicious instructions encountered in one session may be stored and propagated through memory before being retrieved and acted upon in later sessions. Because…",
+   "url": "http://arxiv.org/abs/2611.09721v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-06T17:00:09Z",
+   "nodes": [
+    "c-memory"
+   ],
+   "relevance": 4,
+   "application": false
+  },
+  {
+   "id": "1i4zcor",
+   "title": "Differentially Private GraphRAG: Protecting Relation Connectivity and Semantics",
+   "summary": "Graph Retrieval-Augmented Generation (GraphRAG) connects information across documents through entity relationships to support relational reasoning. However, black-box access to GraphRAG systems can enable adversaries to reconstruct knowledge graphs and recover both structural connectivity between entities and the sema…",
+   "url": "http://arxiv.org/abs/2611.09658v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-06T16:06:30Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "19q06sl",
+   "title": "Nebula: Distributed Position-Independent Caching for LLM Serving",
+   "summary": "Modern LLM workflows, such as retrieval-augmented generation (RAG) and LLM agents, build long prompts from multiple independent text segments, making prefill a major source of computation. Reusing KV caches is therefore important for reducing serving costs and latency: distributed caching systems spread KV cache acros…",
+   "url": "http://arxiv.org/abs/2611.09474v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-06T13:54:49Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "uyj3l1",
+   "title": "Incentive Pathologies in a Live LLM Agent Arena: An Empirical Study of Concentration, Reward-Rule Implementation Discrepancy, and Network Dilution",
+   "summary": "We audit one live LLM agent arena (AITRAP; 22 autonomous agent seats, ~96,000 reasoning nodes) over nine days (Oct 16-25, 2026), during which the platform deployed two bundled incentive changes: a progressive tax reform (V2.9.3, Oct 19) and a seed-inversion with explorer-side action update (V3.0, Oct 21). These serve…",
+   "url": "http://arxiv.org/abs/2611.09445v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-06T13:19:48Z",
+   "nodes": [
+    "a-scheduled"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "74bkd6",
+   "title": "Typed-Centrality Grounding for Agentic GraphRAG: A Symbolic Approach for Agentic Reasoning",
+   "summary": "Knowledge Graphs (KGs) and Large Language Models (LLMs) represent two approaches for knowledge representation and reasoning over heterogeneous data. Recent research has explored their integration through Graph Retrieval-Augmented Generation (GraphRAG) systems, which use KGs to provide structured context to LLMs. Howev…",
+   "url": "http://arxiv.org/abs/2611.09414v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-06T12:45:23Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "zd05to",
+   "title": "SafeOrchestrate: Runtime Checked Intent-Driven Orchestration for Cyber-Physical Systems",
+   "summary": "Modern cyber physical systems (CPS) integrate heterogeneous sensors, actuators, controllers, and services, composed at runtime rather than at design time. Orchestrating such systems through natural language (NL) is attractive, but unconstrained large language model (LLM) tool use is risky because actions must respect…",
+   "url": "http://arxiv.org/abs/2611.09364v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-06T12:03:02Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "8m8vhf",
+   "title": "Towards an Autonomous AI Steward for Large-Scale Physics Experiments: Integrating Causal Diagnostics, RAG, and Conformal Prediction",
+   "summary": "Long-term particle physics experiments face critical operational challenges: monitoring non-stationary machine data streams and preserving tacit expert knowledge. We present the \"Helmholtz Co-Pilot,\" a hybrid Multi-Agent System (MAS) acting as an autonomous experiment steward. The system can be triggered interactively…",
+   "url": "http://arxiv.org/abs/2611.09298v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-06T10:52:19Z",
+   "nodes": [
+    "c-retrieval",
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "mdqzdu",
+   "title": "RAG-Enhanced LLMs for Interactive Explainability in Clinical Decision Support Systems",
+   "summary": "Artificial Intelligence (AI) is increasingly embedded in high-risks decision-making systems across domains such as healthcare, finance, and the judicial system. As reliance on predictive models grows, so does the demand for Explainable AI (XAI) to ensure transparency, trust, and interpretability. However, existing XAI…",
+   "url": "http://arxiv.org/abs/2611.09232v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-06T09:50:51Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1irvvec",
+   "title": "Rethinking Requirement-to-Code Traceability Through Single-Agent and Multi-Agent Approaches",
+   "summary": "Requirements-to-code traceability supports essential software engineering activities, including change impact analysis, maintenance, and regulatory compliance. Existing approaches typically rely on a retrieval-and-classification pipeline, which suffers from an inherent retrieval bottleneck: relevant source files that…",
+   "url": "http://arxiv.org/abs/2611.09162v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-06T08:45:13Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1udx5ma",
+   "title": "Does Reasoning Improve Psychological Depth in Large Language Models?",
+   "summary": "Benchmark gains from reasoning-enhanced large language models encourage the assumption that these models should broadly perform better on complex generative tasks, but this remains underexplored in open-ended, creative domains shaped by nuances of reader experience. We tested this assumption through the lens of psycho…",
+   "url": "http://arxiv.org/abs/2611.09061v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-06T06:39:24Z",
+   "nodes": [
+    "c-retrieval",
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "12uaqbn",
    "title": "LABBA: LLM-Assisted Behavioral Biometric Authentication",
@@ -100,88 +311,6 @@
    "application": false
   },
   {
-   "id": "ft4ust",
-   "title": "Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
-   "summary": "Large language models have made rapid progress in agentic reasoning and tool use, raising expectations for agents that can take over realistic productivity work from humans. However, current agents still struggle to finish such tasks, where success requires following long-horizon professional workflows, understanding…",
-   "url": "http://arxiv.org/abs/2611.08219v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-05T16:08:05Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "uudl6a",
-   "title": "NutriVisRAG: Multimodal Exemplar Grounding for Nutrient Estimation with Vision-Language Models",
-   "summary": "Diet is a major determinant of health, yet accurate dietary assessment from free-living meal images remains challenging. Existing retrieval-based Vision-Language Model (VLM) approaches to nutrient estimation typically rely on textual food representations, while, to our knowledge, direct grounding on visually similar a…",
-   "url": "http://arxiv.org/abs/2611.08054v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-05T14:10:35Z",
-   "nodes": [
-    "c-files",
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "6a8lv4",
-   "title": "ZeroRAG: Adaptive Semantic Peer Routing for Decentralized Retrieval-Augmented Generation",
-   "summary": "Retrieval-augmented generation (RAG) is a standard approach to enhance the reliability of large language model (LLM) outputs by retrieving documents relevant to a query and supplying them in the LLM prompt. Today's RAG systems collect, index, and serve these documents from centralized stores. In practice, however, doc…",
-   "url": "http://arxiv.org/abs/2611.07928v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-05T12:33:45Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "14ycyu8",
-   "title": "MCPHallu: Benchmarking Reasoning, Execution, and Memory Hallucinations in MCP Agents",
-   "summary": "Large language model agents are increasingly deployed through the Model Context Protocol (MCP), which allows them to discover and invoke tools across multiple servers at runtime. Existing MCP benchmarks primarily measure task completion; where they diagnose failures, they do so after execution rather than building spe…",
-   "url": "http://arxiv.org/abs/2611.07689v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-05T09:14:26Z",
-   "nodes": [
-    "a-mcp",
-    "s-models"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "6u0meo",
-   "title": "Who Should Know What? Empirical Information Design for Multi-Agent LLM Economies",
-   "summary": "The performance of multi-agent LLM systems depends not only on the capabilities of the underlying models but also on information-sharing policies, which govern what information each agent observes and at what level of detail. But does providing AI agents with more detailed information always improve collective outcome…",
-   "url": "http://arxiv.org/abs/2611.07667v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-05T08:51:37Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
    "id": "hm6uvg",
    "title": "Don't Prompt Your Agents. Equip Them: Skillware as a Modular Standard for Sovereign, Auditable, and Deterministic Capability Execution for Logical Systems",
    "summary": "Current autonomous logical systems rely on a fragile assumption: that language models should dynamically write code, guess API payloads, and memorize operational constraints through prompt engineering. In practice, this burns massive context windows, inflates API bills, and produces brittle agents that fail unpredicta…",
@@ -193,54 +322,6 @@
    "date": "2026-11-05T08:38:51Z",
    "nodes": [
     "c-longctx",
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1a9ve02",
-   "title": "Beyond Instruction Override: Benchmarking Indirect Prompt Injection with Task-Tampering Attacks",
-   "summary": "Indirect prompt-injection (IPI) benchmarks predominantly test planted instructions that redirect a tool-using agent toward an attacker-chosen task. Yet attacker-controlled content can instead tamper with the outcome of the task already in progress. A buyer's dispute evidence can cite a false refund policy to inflate a…",
-   "url": "http://arxiv.org/abs/2611.07640v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-05T08:25:27Z",
-   "nodes": [
-    "s-guardrails"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1jqsiqj",
-   "title": "Binding Paraphrased Instructions to Encountered Objects in sLLM Agents under Partial Observability",
-   "summary": "Reliable deployment of LLM agents requires grounding diverse user expressions in their environments. Although RL-finetuned smaller large language model (sLLM) agents rival larger prompted LLMs on embodied tasks, their robustness to instruction paraphrases remains unclear. We introduce ALFWorld-Para to evaluate this ro…",
-   "url": "http://arxiv.org/abs/2611.07599v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-05T07:46:55Z",
-   "nodes": [
-    "s-observability"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1mfzik2",
-   "title": "Embodied RAG++: Retrieval-Augmented Generation From What Exists to What Works in Embodied Scenes",
-   "summary": "To serve a request in a human environment, a robot system must find an object that satisfies a functional requirement and a robot that can feasibly reach it. Scene graphs record which objects exist and where, but they often omit capabilities documented only in product manuals. Retrieval-augmented generation methods ca…",
-   "url": "http://arxiv.org/abs/2611.07517v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-05T06:26:12Z",
-   "nodes": [
     "c-retrieval"
    ],
    "relevance": 3,
@@ -279,40 +360,6 @@
    "application": false
   },
   {
-   "id": "16a8zut",
-   "title": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
-   "summary": "Tool-using agents act on email, files, and payments, so an instruction hidden in a web page or a shared document can make an agent send data or money to an attacker. Many runtime defenses put a language model on the decision that lets an action through, so the decision depends on a model that may read the attacker's t…",
-   "url": "http://arxiv.org/abs/2611.07222v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-04T23:18:10Z",
-   "nodes": [
-    "s-guardrails"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1be2pv1",
-   "title": "More Agents, More Reliable? System-Level Reliability of Multi-Agent LLMs under Operational-Profile Uncertainty",
-   "summary": "Teams increasingly build software from cooperating large language model (LLM) agents, often assuming more agents mean more reliability. Yet the usual evidence, average benchmark accuracy, ignores the input mix a deployed system meets and the rule merging the agents' answers. Building on HIP-LLM, a hierarchical impreci…",
-   "url": "http://arxiv.org/abs/2611.07140v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-04T21:08:18Z",
-   "nodes": [
-    "c-retrieval",
-    "a-teams",
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
    "id": "9qun51",
    "title": "Evaluating Human-LLM Alignment on Visualization Preference",
    "summary": "There are often multiple valid visualizations, spanning different chart types, visual encodings, and aesthetic choices, that can all support a user's goal of analyzing a dataset. Determining which of these candidate visualizations is most appropriate, however, remains challenging. Prior work has leveraged expert-curat…",
@@ -324,40 +371,6 @@
    "date": "2026-11-04T10:17:01Z",
    "nodes": [
     "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "11fnvi7",
-   "title": "Octopus: One Brain, Many Branches for Latent-KV Multi-Agent Reinforcement Learning",
-   "summary": "Multi-agent LLM systems explore in parallel by spawning sub-agents with isolated context windows, whereas single-agent systems append every search and verification step into one growing trajectory. However, existing multi-agent frameworks duplicate prefix KV caches across branches, exchange findings by re-prefilling t…",
-   "url": "http://arxiv.org/abs/2611.06956v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-03T22:42:25Z",
-   "nodes": [
-    "c-longctx",
-    "a-subagents",
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "lstb3f",
-   "title": "DSL-Bench: Evaluating and Explaining LLM Code Generation Across Domain-Specific Languages",
-   "summary": "Large language models (LLMs) are increasingly used in software-engineering workflows, but code-generation benchmarks largely focus on general-purpose languages. Domain-specific languages (DSLs) have distinct syntax, semantics, and validation requirements, making results from individual DSL benchmarks difficult to comp…",
-   "url": "http://arxiv.org/abs/2611.05168v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-03T16:37:19Z",
-   "nodes": [
-    "s-models"
    ],
    "relevance": 3,
    "application": false
@@ -1282,74 +1295,53 @@
   }
  ],
  "byNode": {
-  "c-retrieval": [
-   "12uaqbn",
-   "uudl6a",
-   "6a8lv4",
-   "hm6uvg",
-   "1mfzik2",
-   "1be2pv1",
-   "9qun51",
-   "1a89hn0"
-  ],
   "s-models": [
+   "l5f9wm",
+   "1udx5ma",
    "1wboe99",
-   "14ycyu8",
-   "1be2pv1",
-   "lstb3f",
    "cni4bj",
    "1efmfqi",
    "1u9fug9"
   ],
+  "c-retrieval": [
+   "1t7rjzc",
+   "1i4zcor",
+   "19q06sl",
+   "74bkd6",
+   "8m8vhf",
+   "mdqzdu",
+   "1udx5ma",
+   "12uaqbn",
+   "hm6uvg",
+   "9qun51",
+   "1a89hn0"
+  ],
+  "c-editing": [
+   "1n7kzuf",
+   "1kbthj7",
+   "1o4n0c"
+  ],
+  "c-memory": [
+   "1i9w2tr",
+   "jimnoz",
+   "nwvk8q"
+  ],
+  "a-scheduled": [
+   "uyj3l1"
+  ],
   "a-tools": [
-   "ft4ust"
-  ],
-  "c-files": [
-   "uudl6a"
-  ],
-  "a-mcp": [
-   "14ycyu8",
-   "1tlnnxf",
-   "5envg7",
-   "17bor5j",
-   "cu0kch",
-   "10x48xk",
-   "lcn7sh",
-   "15ppawu",
-   "1w66kus",
-   "w23u20",
-   "1wlh57h",
-   "uxo4g0",
-   "1f0fzeq",
-   "1kxah6t",
-   "dg7cjl",
-   "fu0lto",
-   "12n48t9",
-   "nbj8vr"
+   "zd05to"
   ],
   "a-teams": [
-   "6u0meo",
-   "1be2pv1",
-   "11fnvi7"
+   "8m8vhf",
+   "1irvvec"
   ],
   "c-longctx": [
    "hm6uvg",
-   "ld6b2k",
-   "11fnvi7"
-  ],
-  "s-guardrails": [
-   "1a9ve02",
-   "16a8zut",
-   "1vyzb0t"
-  ],
-  "s-observability": [
-   "1jqsiqj"
+   "ld6b2k"
   ],
   "s-cost": [
    "m5i1yz"
-  ],
-  "a-subagents": [
-   "11fnvi7"
   ],
   "k-cli": [
    "1ynpj63",
@@ -1374,6 +1366,25 @@
    "1n6ezd0",
    "12n48t9"
   ],
+  "a-mcp": [
+   "1tlnnxf",
+   "5envg7",
+   "17bor5j",
+   "cu0kch",
+   "10x48xk",
+   "lcn7sh",
+   "15ppawu",
+   "1w66kus",
+   "w23u20",
+   "1wlh57h",
+   "uxo4g0",
+   "1f0fzeq",
+   "1kxah6t",
+   "dg7cjl",
+   "fu0lto",
+   "12n48t9",
+   "nbj8vr"
+  ],
   "f-artifacts": [
    "hzvm6i",
    "xhe8oy",
@@ -1382,6 +1393,9 @@
   ],
   "k-skills": [
    "bkmagq"
+  ],
+  "s-guardrails": [
+   "1vyzb0t"
   ],
   "k-hooks": [
    "bvs7n8",
@@ -1399,14 +1413,6 @@
   "r-effort": [
    "cni4bj"
   ],
-  "c-memory": [
-   "jimnoz",
-   "nwvk8q"
-  ],
-  "c-editing": [
-   "1kbthj7",
-   "1o4n0c"
-  ],
   "k-claudemd": [
    "172fnd4"
   ],
@@ -1419,6 +1425,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "1t7rjzc",
+   "node": "c-retrieval",
+   "nodeTitle": "Retrieval vs. Context",
+   "discipline": "context",
+   "title": "GRAC: Graph-Based Retrieval-Augmented Captioning for Surgical Scene Description",
+   "url": "http://arxiv.org/abs/2611.09866v1"
+  },
   {
    "id": "1ynpj63",
    "node": "k-cli",
