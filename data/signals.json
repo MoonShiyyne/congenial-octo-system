@@ -1,27 +1,27 @@
 {
- "generated": "2026-11-09T06:20:41.833Z",
+ "generated": "2026-11-09T22:18:13.236Z",
  "itemCount": 75,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 648,
-   "kept": 212
+   "fetched": 740,
+   "kept": 246
   },
   {
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 93,
-   "kept": 14
+   "fetched": 109,
+   "kept": 20
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 81,
-   "kept": 7
+   "fetched": 94,
+   "kept": 8
   },
   {
    "id": "hn-mcp",
@@ -34,7 +34,7 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 46,
+   "fetched": 45,
    "kept": 5
   },
   {
@@ -76,7 +76,7 @@
    "source": "Hacker News · Claude",
    "sourceId": "hn-claude",
    "category": "market",
-   "badge": "15 pts",
+   "badge": "23 pts",
    "date": "2026-11-08T23:49:19Z",
    "nodes": [
     "s-models"
@@ -649,6 +649,103 @@
    "application": true
   },
   {
+   "id": "1ov28ac",
+   "title": "Fixed plugin auto-updates and /plugin marketplace updates downloading a plugin again for each worktree or folder of a repository",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.321",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1zkigr",
+   "title": "Fixed a project's MCP server being disconnected after the first message in a Claude Desktop Code tab session when the desktop app has an MCP server or extension of the same name",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.321",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1z0bf97",
+   "title": "Fixed an MCP server sometimes showing as connected with no tools after it was reconnected or the session's directory changed while its tools were still loading",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.321",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "m80syn",
+   "title": "Fixed Claude apps gateway refusing to start when a desktop setting holds a field newer than the gateway, such as a managed MCP server's oauth.omitResource; it now warns and serves it",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.321",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "15trj06",
+   "title": "Fixed PreToolUse mcp_tool hooks on stdio and HTTP MCP servers being skipped when their answer was over 16 MiB; the tool call is now refused",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.321",
+   "date": null,
+   "nodes": [
+    "k-hooks",
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "pq4i5i",
+   "title": "Changed policy_mode: layered in the Claude apps gateway: managed MCP servers now add up over every matching policy, match: {} included, so a gateway already on it serves more after the upgrade",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.321",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
    "id": "17bor5j",
    "title": "Added support for MCP tasks in the terminal: when an MCP server runs a tool call as a task, Claude Code moves it to the background right away and tells Claude the result when it finishes",
    "summary": "",
@@ -973,100 +1070,19 @@
    "application": false
   },
   {
-   "id": "1mz5gwd",
-   "title": "Fixed long hidden thinking being cut off as idle on Google Vertex AI, Microsoft Foundry and Claude Platform on AWS, where the endpoint sends thinking progress updates",
+   "id": "1bu0l4m",
+   "title": "**parse:** keep const in structured output schemas, and drop type beside const and enum",
    "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.311",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.7.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.6.0...v2.7.0)",
    "date": null,
    "nodes": [
-    "s-deploy"
+    "s-structured"
    ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "cni4bj",
-   "title": "Changed ultrathink in the interactive terminal to run its turn at xhigh effort on Opus 5.5, Sonnet 5.5, Haiku 5.5 and Fable 5.1 through Anthropic's API; typed while Claude is working, it raises the rest of that turn",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.311",
-   "date": null,
-   "nodes": [
-    "s-models",
-    "r-effort"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "pdmt3p",
-   "title": "Windows: Fixed PreToolUse and PermissionRequest hooks letting a tool call through when Git Bash is missing and the hook's command is only quoted strings, such as a quoted path",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.310",
-   "date": null,
-   "nodes": [
-    "k-hooks"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "xhe8oy",
-   "title": "Fixed Artifact database calls being re-sent to artifacts without a database; errors now say whether republishing helps",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.319",
-   "date": null,
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "159298v",
-   "title": "Fixed /artifacts and the Artifact tool's shared list showing no shared artifacts when you have 200 or more of your own",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.317",
-   "date": null,
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 15,
-   "application": false
-  },
-  {
-   "id": "a31lqr",
-   "title": "Improved artifacts with several views: Claude now routes each view on the link's #name and no longer says the address bar stays the same as you switch views",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.311",
-   "date": null,
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 15,
+   "relevance": 8,
    "application": false
   },
   {
@@ -1081,6 +1097,22 @@
    "date": null,
    "nodes": [
     "c-memory"
+   ],
+   "relevance": 8,
+   "application": false
+  },
+  {
+   "id": "nvylf2",
+   "title": "**helpers:** keep const and enum in structured output schemas",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "[1.7.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.6.0...sdk-v1.7.0)",
+   "date": null,
+   "nodes": [
+    "s-structured"
    ],
    "relevance": 8,
    "application": false
@@ -1102,14 +1134,14 @@
    "application": false
   },
   {
-   "id": "6d7pfl",
-   "title": "**bedrock,vertex:** raise error-code and status exception classes on platform clients",
+   "id": "msqi3m",
+   "title": "**bedrock,vertex:** add the parse and count_tokens methods missing from beta.messages.with_raw_response and with_streaming_response",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
    "source": "Anthropic Python SDK",
    "sourceId": "python-sdk-changelog",
    "category": "model",
-   "badge": "[2.6.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.5.0...v2.6.0)",
+   "badge": "[2.7.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.6.0...v2.7.0)",
    "date": null,
    "nodes": [
     "s-deploy"
@@ -1118,14 +1150,14 @@
    "application": false
   },
   {
-   "id": "1628r0w",
-   "title": "**bedrock:** keep a custom http_client and aws_profile on copies made with copy and with_options",
+   "id": "hx88sf",
+   "title": "**bedrock,vertex:** send the X-Stainless-Async header and stream raw requests that name no stream class",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
    "source": "Anthropic Python SDK",
    "sourceId": "python-sdk-changelog",
    "category": "model",
-   "badge": "[2.6.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.5.0...v2.6.0)",
+   "badge": "[2.7.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.6.0...v2.7.0)",
    "date": null,
    "nodes": [
     "s-deploy"
@@ -1134,14 +1166,14 @@
    "application": false
   },
   {
-   "id": "og6bj6",
-   "title": "**bedrock:** raise a ValueError when model is \".\" or \"..\" instead of sending the request to a different path",
+   "id": "1k6szzm",
+   "title": "**bedrock:** sign requests that have no Connection header instead of raising KeyError",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
    "source": "Anthropic Python SDK",
    "sourceId": "python-sdk-changelog",
    "category": "model",
-   "badge": "[2.5.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.4.0...v2.5.0)",
+   "badge": "[2.7.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.6.0...v2.7.0)",
    "date": null,
    "nodes": [
     "s-deploy"
@@ -1150,14 +1182,14 @@
    "application": false
   },
   {
-   "id": "1kwqofj",
-   "title": "**bedrock:** raise a ValueError when model is empty instead of sending the request to /model//invoke",
+   "id": "ozmi68",
+   "title": "**bedrock:** write a list in a query as a[]=1&a[]=2 on the Bedrock Mantle clients, as Anthropic does",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
    "source": "Anthropic Python SDK",
    "sourceId": "python-sdk-changelog",
    "category": "model",
-   "badge": "[2.5.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.4.0...v2.5.0)",
+   "badge": "[2.7.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.6.0...v2.7.0)",
    "date": null,
    "nodes": [
     "s-deploy"
@@ -1166,33 +1198,17 @@
    "application": false
   },
   {
-   "id": "1kbthj7",
-   "title": "**api:** add tool_use_limit_reached_error and compaction_limit_reached_error session error types",
+   "id": "1mf4guh",
+   "title": "**client:** read ANTHROPIC_CUSTOM_HEADERS on the Bedrock, Bedrock Mantle and Vertex clients",
    "summary": "",
    "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
    "source": "Anthropic Python SDK",
    "sourceId": "python-sdk-changelog",
    "category": "model",
-   "badge": "[2.4.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.3.0...v2.4.0)",
+   "badge": "[2.7.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.6.0...v2.7.0)",
    "date": null,
    "nodes": [
-    "c-editing"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1efmfqi",
-   "title": "**examples:** keep the message threads example valid on Sonnet 5.5",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "[2.4.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.3.0...v2.4.0)",
-   "date": null,
-   "nodes": [
-    "s-models"
+    "s-deploy"
    ],
    "relevance": 6,
    "application": false
@@ -1276,22 +1292,6 @@
    ],
    "relevance": 6,
    "application": false
-  },
-  {
-   "id": "1mxrf9k",
-   "title": "**tools:** restore what the tool runner does after setMessagesParams() or pushMessages() in the loop body",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[1.2.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.1.0...sdk-v1.2.0)",
-   "date": null,
-   "nodes": [
-    "a-runner"
-   ],
-   "relevance": 6,
-   "application": false
   }
  ],
  "byNode": {
@@ -1299,8 +1299,6 @@
    "l5f9wm",
    "1udx5ma",
    "1wboe99",
-   "cni4bj",
-   "1efmfqi",
    "1u9fug9"
   ],
   "c-retrieval": [
@@ -1318,7 +1316,6 @@
   ],
   "c-editing": [
    "1n7kzuf",
-   "1kbthj7",
    "1o4n0c"
   ],
   "c-memory": [
@@ -1361,6 +1358,7 @@
   ],
   "k-plugins": [
    "ouarcq",
+   "1ov28ac",
    "qg99da",
    "om6l6q",
    "1n6ezd0",
@@ -1369,6 +1367,11 @@
   "a-mcp": [
    "1tlnnxf",
    "5envg7",
+   "1zkigr",
+   "1z0bf97",
+   "m80syn",
+   "15trj06",
+   "pq4i5i",
    "17bor5j",
    "cu0kch",
    "10x48xk",
@@ -1386,10 +1389,7 @@
    "nbj8vr"
   ],
   "f-artifacts": [
-   "hzvm6i",
-   "xhe8oy",
-   "159298v",
-   "a31lqr"
+   "hzvm6i"
   ],
   "k-skills": [
    "bkmagq"
@@ -1398,20 +1398,21 @@
    "1vyzb0t"
   ],
   "k-hooks": [
-   "bvs7n8",
-   "pdmt3p"
+   "15trj06",
+   "bvs7n8"
   ],
   "s-deploy": [
    "w23u20",
    "1av9m32",
-   "1mz5gwd",
-   "6d7pfl",
-   "1628r0w",
-   "og6bj6",
-   "1kwqofj"
+   "msqi3m",
+   "hx88sf",
+   "1k6szzm",
+   "ozmi68",
+   "1mf4guh"
   ],
-  "r-effort": [
-   "cni4bj"
+  "s-structured": [
+   "1bu0l4m",
+   "nvylf2"
   ],
   "k-claudemd": [
    "172fnd4"
@@ -1420,8 +1421,7 @@
    "lzk7lj"
   ],
   "a-runner": [
-   "ojp65w",
-   "1mxrf9k"
+   "ojp65w"
   ]
  },
  "applications": [
