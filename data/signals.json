@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T07:13:14.780Z",
+ "generated": "2026-11-10T19:41:18.529Z",
  "itemCount": 75,
  "sourceStatus": [
   {
@@ -13,15 +13,15 @@
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 109,
-   "kept": 20
+   "fetched": 111,
+   "kept": 18
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 94,
-   "kept": 8
+   "fetched": 91,
+   "kept": 7
   },
   {
    "id": "hn-mcp",
@@ -34,7 +34,7 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 47,
+   "fetched": 46,
    "kept": 5
   },
   {
@@ -240,7 +240,7 @@
    "source": "Hacker News · Claude",
    "sourceId": "hn-claude",
    "category": "market",
-   "badge": "27 pts",
+   "badge": "28 pts",
    "date": "2026-11-08T23:49:19Z",
    "nodes": [
     "s-models"
@@ -1137,6 +1137,39 @@
    "application": false
   },
   {
+   "id": "r6yf3e",
+   "title": "**bedrock:** send \";\" in a model ID as is, and refuse a model ID whose part before the first \";\" is empty, \".\" or \"..\"",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.8.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.7.0...v2.8.0)",
+   "date": null,
+   "nodes": [
+    "s-deploy"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "53tssz",
+   "title": "**examples:** show multiagent when creating a Managed Agents agent",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.8.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.7.0...v2.8.0)",
+   "date": null,
+   "nodes": [
+    "a-teams",
+    "a-managed"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
    "id": "msqi3m",
    "title": "**bedrock,vertex:** add the parse and count_tokens methods missing from beta.messages.with_raw_response and with_streaming_response",
    "summary": "",
@@ -1185,33 +1218,18 @@
    "application": false
   },
   {
-   "id": "ozmi68",
-   "title": "**bedrock:** write a list in a query as a[]=1&a[]=2 on the Bedrock Mantle clients, as Anthropic does",
+   "id": "1dlcpbs",
+   "title": "**examples:** show multiagent when creating a Managed Agents agent",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "[2.7.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.6.0...v2.7.0)",
+   "badge": "[1.8.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.7.0...sdk-v1.8.0)",
    "date": null,
    "nodes": [
-    "s-deploy"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1mf4guh",
-   "title": "**client:** read ANTHROPIC_CUSTOM_HEADERS on the Bedrock, Bedrock Mantle and Vertex clients",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "[2.7.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.6.0...v2.7.0)",
-   "date": null,
-   "nodes": [
-    "s-deploy"
+    "a-teams",
+    "a-managed"
    ],
    "relevance": 6,
    "application": false
@@ -1279,22 +1297,6 @@
    ],
    "relevance": 6,
    "application": false
-  },
-  {
-   "id": "ojp65w",
-   "title": "**tools:** copy the messages a tool runner is created with again",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[1.2.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.1.0...sdk-v1.2.0)",
-   "date": null,
-   "nodes": [
-    "a-runner"
-   ],
-   "relevance": 6,
-   "application": false
   }
  ],
  "byNode": {
@@ -1310,7 +1312,9 @@
    "lqo4j7",
    "ovfnt8",
    "1r1ijak",
-   "1irvvec"
+   "1irvvec",
+   "53tssz",
+   "1dlcpbs"
   ],
   "c-retrieval": [
    "x7v7p1",
@@ -1383,7 +1387,9 @@
   ],
   "a-managed": [
    "1u1z3v2",
-   "1maeyx6"
+   "1maeyx6",
+   "53tssz",
+   "1dlcpbs"
   ],
   "k-plugins": [
    "ouarcq",
@@ -1407,11 +1413,10 @@
   "s-deploy": [
    "w23u20",
    "1av9m32",
+   "r6yf3e",
    "msqi3m",
    "hx88sf",
-   "1k6szzm",
-   "ozmi68",
-   "1mf4guh"
+   "1k6szzm"
   ],
   "s-structured": [
    "1bu0l4m",
@@ -1425,9 +1430,6 @@
   ],
   "a-servertools": [
    "lzk7lj"
-  ],
-  "a-runner": [
-   "ojp65w"
   ]
  },
  "applications": [
