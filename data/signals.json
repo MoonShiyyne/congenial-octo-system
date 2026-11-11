@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-10T19:41:18.529Z",
- "itemCount": 75,
+ "generated": "2026-11-11T06:10:10.390Z",
+ "itemCount": 71,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -56,17 +56,146 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 14
+   "kept": 8
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": true,
    "fetched": 20,
-   "kept": 10
+   "kept": 7
   }
  ],
  "items": [
+  {
+   "id": "1l9apv1",
+   "title": "PARLEY: Evaluating LLM Collaboration Through Cooperative Asymmetric Puzzles",
+   "summary": "As large language models power autonomous agents, understanding how they collaborate and where they fail becomes critical. We introduce PARLEY, an extensible platform for studying LLM agent collaboration through four asymmetric puzzle tasks grounded in cognitive psychology (referential communication, joint coordinatio…",
+   "url": "http://arxiv.org/abs/2611.14242v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-10T15:54:12Z",
+   "nodes": [
+    "a-scheduled"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1gs4aj7",
+   "title": "Isolation Is Not Confidentiality: Security Boundaries of Geometric Access Control in RAG",
+   "summary": "Retrieval-Augmented Generation (RAG) systems increasingly rely on vector databases containing documents governed by different access-control policies. Recent search-preserving geometric approaches enforce such access control by structuring the embedding space so that transformed embeddings, which we call protected rep…",
+   "url": "http://arxiv.org/abs/2611.14061v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-10T13:25:54Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 7,
+   "application": false
+  },
+  {
+   "id": "rcj57",
+   "title": "Program-Aided Patchable Skill Evolution",
+   "summary": "Agent skills have emerged as an effective means of enabling LLM agents to solve complex, interactive tasks by encoding reusable knowledge without modifying model parameters. Recent approaches further improve skill adaptation by distilling reusable experience from agent execution trajectories and evolving skills based…",
+   "url": "http://arxiv.org/abs/2611.14019v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-10T12:53:12Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1jgw5cz",
+   "title": "TreeAgent: Structure-Aware Memory Agent for Processing Long Hierarchical Data",
+   "summary": "Practical Web applications increasingly require agents to interpret long conversations or documents. For inputs exceeding the context windows of large language models (LLMs), memory agents process segments sequentially and retain past information in bounded memory. However, they typically divide inputs into flat token…",
+   "url": "http://arxiv.org/abs/2611.13946v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-10T11:33:05Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "11lgsdu",
+   "title": "OpticalRAG: Pixel-Space Compression for Token-Efficient Retrieval-Augmented Generation",
+   "summary": "Retrieval-augmented generation (RAG) is bottlenecked by the token budget of large language models: feeding long documents into the context window is expensive, while aggressive textual compression discards fine-grained information that is irreversibly lost in a one-dimensional token sequence. We argue that this bottle…",
+   "url": "http://arxiv.org/abs/2611.13675v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-10T07:24:50Z",
+   "nodes": [
+    "c-longctx",
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "xhv6u6",
+   "title": "AI is ready, but are the students. From answer-making to sense-making",
+   "summary": "Students in introductory physics often struggle with interpreting kinematics graphs, especially when connecting graphical features to physical meaning. We investigated AI tool use in kinematic graphing analysis as an intervention to support active sensemaking. This study examines GPT-5 performance on the Test of Under…",
+   "url": "http://arxiv.org/abs/2611.13404v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-10T00:37:55Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "jl7kqp",
+   "title": "PneuGen: Task-Driven Agentic Co-Design of Soft Pneumatic Robots",
+   "summary": "Task-driven design of soft robots requires the consideration of factors such as geometry, morphology, material properties, and actuation, resulting in a large and complex design space that is challenging to explore. Computational optimisation methods leverage signals from simulation to iteratively improve designs to a…",
+   "url": "http://arxiv.org/abs/2611.13344v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-09T23:13:59Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "8b9hej",
+   "title": "MRFoundry: Knowledge-guided agent loops for end-to-end MRI research",
+   "summary": "AI agents can write code, use scientific software, and revise computational workflows, opening new possibilities for MRI research. Effective assistance requires connecting acquisition physics, data conventions, specialized tools, and scientific validation. We present MRFoundry, an open-source, extensible package that…",
+   "url": "http://arxiv.org/abs/2611.13289v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-09T21:54:54Z",
+   "nodes": [
+    "a-runner"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "1hfde9e",
    "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
@@ -84,98 +213,17 @@
    "application": false
   },
   {
-   "id": "1qh4vxg",
-   "title": "Mitigating Agentic Deception via Evaluation-Side Partially Observable Games",
-   "summary": "As large language models become more capable agents, they can exhibit deceptive behaviors, cheating human for higher rewards while appearing helpful. We attribute this failure to evaluation-side partial observability, where models are evaluated mainly from final outcome, without checking the faithfulness of underlying…",
-   "url": "http://arxiv.org/abs/2611.12835v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
+   "id": "x2fvp2",
+   "title": "The Indic Token Tax in 2026: Measuring Tokenizer. Disparity and Its Cost for the Languages of India",
+   "summary": "Commercial language model APIs bill per token, so a tokenizer that needs more tokens for the same content in one language makes that language more expensive, slower, and able to fit less text in a fixed context window. We measure this disparity for nine public tokenizers, including those of GPT-4, GPT-4o, Qwen2.5, Dee…",
+   "url": "http://arxiv.org/abs/2611.13058v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-09T18:33:13Z",
+   "date": "2026-11-09T17:24:21Z",
    "nodes": [
-    "s-observability"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "ivi2wp",
-   "title": "Teamknitt: Configuring, Observing and Intervening in LLM-Agent Teams through the Lens of Dynamical-Systems and Human-Team Theory",
-   "summary": "Most frameworks for teams of large language model (LLM) agents fix the team's shape inside the software: who talks to whom, how much is passed along, and what a human can do once a run has started. Human-team research has long asked those questions: where team phenomena live (in members or in their interaction), how t…",
-   "url": "http://arxiv.org/abs/2611.12545v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-09T15:15:39Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "x7v7p1",
-   "title": "SNAPRAG: Cost-Efficient Knowledge Extraction Attack on RAG Systems via Adversarial Perturbations",
-   "summary": "Retrieval-Augmented Generation (RAG) systems improve Large Language Model (LLM) responses by incorporating information from external knowledge bases. However, recent studies have shown that attackers can extract substantial portions of private knowledge bases from RAG systems through repeated querying. Yet, state-of-t…",
-   "url": "http://arxiv.org/abs/2611.12241v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-09T11:30:44Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "lqo4j7",
-   "title": "PARIS: A multi-agent LLM framework for end-to-end, PRISMA-guided systematic literature reviews with pre-synthesis corpus quality assessment",
-   "summary": "Systematic literature reviews (SRs) remain slow and labor-intensive, and most automation tools address single stages of the workflow. We present PARIS (PRISMA Agentic Research Intelligence System), an open-source framework in which a conductor agent running in Claude Code orchestrates 15 specialized large language mod…",
-   "url": "http://arxiv.org/abs/2611.12222v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-09T11:16:03Z",
-   "nodes": [
-    "k-cli",
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "kon81e",
-   "title": "StealthyPoison: Manipulating LLM Agent Behavior through Procedural Poisoning of Third-Party Skills",
-   "summary": "LLM agents increasingly retrieve third-party skills from public registries and follow their procedures to complete user tasks. This reliance allows attackers to manipulate agent behavior by poisoning the skills. However, overtly malicious instructions can provide explicit signals for detection. We present StealthyPois…",
-   "url": "http://arxiv.org/abs/2611.12155v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-09T10:05:07Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "vrnmyd",
-   "title": "CARE-PO: Controllable Tool-Call Efficiency for LLM Agents",
-   "summary": "External tool calls are a major running cost of an LLM agent, while its training objectives align almost exclusively with task completion. In a step-level diagnosis of Qwen3.5 trajectories at two model sizes on GAIA, a long-horizon tool-use benchmark, we find that most contain removable calls, at a similar rate at bot…",
-   "url": "http://arxiv.org/abs/2611.12125v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-09T09:41:37Z",
-   "nodes": [
-    "s-models"
+    "c-longctx"
    ],
    "relevance": 3,
    "application": false
@@ -185,48 +233,13 @@
    "title": "OGDA: Ontology-Grounded Data Agents for Reliable Analysis over Heterogeneous Data Lakes",
    "summary": "Full-pipeline data analysis over real-world data lakes requires LLM agents to locate and integrate information across large collections of tables with different schemas. Existing data agents follow task-specific exploration, which exhausts the context window in massive lakes. As the context fills, the agent's reasonin…",
    "url": "http://arxiv.org/abs/2611.12114v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
    "date": "2026-11-09T09:26:35Z",
    "nodes": [
     "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "ovfnt8",
-   "title": "MIRIX-2.0: Multi-Agent Memory System",
-   "summary": "Long-term memory lets LLM agents personalize, stay consistent, and reuse what worked before. Parametric memories need training, consolidation can lose details for good, and keeping every record leaves a growing store to search. We present MIRIX-2.0, a multi-agent memory system designed to be practical, accurate, and e…",
-   "url": "http://arxiv.org/abs/2611.12068v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-09T08:43:21Z",
-   "nodes": [
-    "c-memory",
-    "a-teams"
-   ],
-   "relevance": 4,
-   "application": false
-  },
-  {
-   "id": "1r1ijak",
-   "title": "Benchmarking language models and agents for scientific reasoning in evolving materials laboratories",
-   "summary": "Large language models and the multi-agent systems built around them could accelerate materials discovery by connecting scientific knowledge with experimental decisions. Existing benchmarks establish capabilities in domain knowledge, multimodal interpretation and scientific tool use. As language models increasingly sup…",
-   "url": "http://arxiv.org/abs/2611.12014v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-09T07:51:52Z",
-   "nodes": [
-    "a-tools",
-    "a-teams",
-    "s-models"
    ],
    "relevance": 3,
    "application": false
@@ -240,7 +253,7 @@
    "source": "Hacker News · Claude",
    "sourceId": "hn-claude",
    "category": "market",
-   "badge": "28 pts",
+   "badge": "29 pts",
    "date": "2026-11-08T23:49:19Z",
    "nodes": [
     "s-models"
@@ -295,88 +308,6 @@
    ],
    "relevance": 6,
    "application": true
-  },
-  {
-   "id": "1irvvec",
-   "title": "Rethinking Requirement-to-Code Traceability Through Single-Agent and Multi-Agent Approaches",
-   "summary": "Requirements-to-code traceability supports essential software engineering activities, including change impact analysis, maintenance, and regulatory compliance. Existing approaches typically rely on a retrieval-and-classification pipeline, which suffers from an inherent retrieval bottleneck: relevant source files that…",
-   "url": "http://arxiv.org/abs/2611.09162v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-06T08:45:13Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1udx5ma",
-   "title": "Does Reasoning Improve Psychological Depth in Large Language Models?",
-   "summary": "Benchmark gains from reasoning-enhanced large language models encourage the assumption that these models should broadly perform better on complex generative tasks, but this remains underexplored in open-ended, creative domains shaped by nuances of reader experience. We tested this assumption through the lens of psycho…",
-   "url": "http://arxiv.org/abs/2611.09061v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-06T06:39:24Z",
-   "nodes": [
-    "c-retrieval",
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "12uaqbn",
-   "title": "LABBA: LLM-Assisted Behavioral Biometric Authentication",
-   "summary": "Behavioral biometrics have emerged as a promising complement to traditional physiological biometrics by leveraging dynamic human characteristics. These modalities offer advantages including continuous authentication, inherent liveness detection, and greater resistance to credential theft and other spoofing attacks. Ho…",
-   "url": "http://arxiv.org/abs/2611.08343v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-05T17:29:24Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1wboe99",
-   "title": "Decision Models as Retrieval Gates Against Injection and Pollution",
-   "summary": "Retrieved web text can carry instructions aimed at the language model, or synthetic pages written to mislead. We test whether released open-weight decision models, which answer typed questions about a text without generating tokens, can screen retrieved passages against both threats. On a benchmark of 1,000 questions…",
-   "url": "http://arxiv.org/abs/2611.08325v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-05T17:19:19Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "hm6uvg",
-   "title": "Don't Prompt Your Agents. Equip Them: Skillware as a Modular Standard for Sovereign, Auditable, and Deterministic Capability Execution for Logical Systems",
-   "summary": "Current autonomous logical systems rely on a fragile assumption: that language models should dynamically write code, guess API payloads, and memorize operational constraints through prompt engineering. In practice, this burns massive context windows, inflates API bills, and produces brittle agents that fail unpredicta…",
-   "url": "http://arxiv.org/abs/2611.07652v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-05T08:38:51Z",
-   "nodes": [
-    "c-longctx",
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
   },
   {
    "id": "1ynpj63",
@@ -1300,63 +1231,36 @@
   }
  ],
  "byNode": {
-  "a-tools": [
-   "1hfde9e",
-   "1r1ijak"
-  ],
-  "s-observability": [
-   "1qh4vxg"
-  ],
-  "a-teams": [
-   "ivi2wp",
-   "lqo4j7",
-   "ovfnt8",
-   "1r1ijak",
-   "1irvvec",
-   "53tssz",
-   "1dlcpbs"
+  "a-scheduled": [
+   "1l9apv1"
   ],
   "c-retrieval": [
-   "x7v7p1",
+   "1gs4aj7",
+   "11lgsdu",
+   "jl7kqp",
    "a9swn4",
-   "1udx5ma",
-   "12uaqbn",
-   "hm6uvg",
    "1a89hn0"
   ],
-  "k-cli": [
-   "lqo4j7",
-   "1ynpj63",
-   "1rvlid5",
-   "16jzqx9",
-   "kginxy",
-   "ouarcq",
-   "1ktme1w",
-   "1wgt1b8",
-   "hzhlbu",
-   "17bor5j",
-   "cu0kch"
-  ],
   "k-skills": [
-   "kon81e",
+   "rcj57",
    "bkmagq"
   ],
-  "s-models": [
-   "vrnmyd",
-   "1r1ijak",
-   "l5f9wm",
-   "1udx5ma",
-   "1wboe99",
-   "1u9fug9"
-  ],
   "c-longctx": [
-   "125c0wo",
-   "hm6uvg"
+   "1jgw5cz",
+   "11lgsdu",
+   "x2fvp2",
+   "125c0wo"
   ],
-  "c-memory": [
-   "ovfnt8",
-   "jimnoz",
-   "nwvk8q"
+  "a-tools": [
+   "xhv6u6",
+   "1hfde9e"
+  ],
+  "a-runner": [
+   "8b9hej"
+  ],
+  "s-models": [
+   "l5f9wm",
+   "1u9fug9"
   ],
   "c-files": [
    "9z7pw7"
@@ -1384,6 +1288,18 @@
    "dg7cjl",
    "fu0lto",
    "12n48t9"
+  ],
+  "k-cli": [
+   "1ynpj63",
+   "1rvlid5",
+   "16jzqx9",
+   "kginxy",
+   "ouarcq",
+   "1ktme1w",
+   "1wgt1b8",
+   "hzhlbu",
+   "17bor5j",
+   "cu0kch"
   ],
   "a-managed": [
    "1u1z3v2",
@@ -1421,6 +1337,14 @@
   "s-structured": [
    "1bu0l4m",
    "nvylf2"
+  ],
+  "c-memory": [
+   "jimnoz",
+   "nwvk8q"
+  ],
+  "a-teams": [
+   "53tssz",
+   "1dlcpbs"
   ],
   "k-claudemd": [
    "172fnd4"
