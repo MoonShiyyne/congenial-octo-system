@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-12T00:38:51.563Z",
- "itemCount": 72,
+ "generated": "2026-11-12T15:08:52.382Z",
+ "itemCount": 73,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 46,
-   "kept": 5
+   "kept": 6
   },
   {
    "id": "hn-agents",
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "10sfy2b",
+   "title": "Claude Code's API billing depends on how often the cache expires",
+   "summary": "",
+   "url": "https://news.ycombinator.com/item?id=50467233",
+   "discussion": "https://news.ycombinator.com/item?id=50467233",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "2 pts",
+   "date": "2026-11-12T14:02:38Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "1azp3ne",
    "title": "Show HN: Zeus – Claude Code for AI voice agents",
@@ -1249,6 +1266,7 @@
  ],
  "byNode": {
   "k-cli": [
+   "10sfy2b",
    "1azp3ne",
    "1ynpj63",
    "1rvlid5",
