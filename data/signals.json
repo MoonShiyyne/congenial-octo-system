@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-11T14:16:12.522Z",
- "itemCount": 71,
+ "generated": "2026-11-12T00:38:51.563Z",
+ "itemCount": 72,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 11
+   "kept": 12
   },
   {
    "id": "arxiv-agents",
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "1azp3ne",
+   "title": "Show HN: Zeus – Claude Code for AI voice agents",
+   "summary": "",
+   "url": "https://thunderphone.com/blog/introducing-zeus",
+   "discussion": "https://news.ycombinator.com/item?id=50445758",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "2 pts",
+   "date": "2026-11-10T20:20:03Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "1l9apv1",
    "title": "PARLEY: Evaluating LLM Collaboration Through Cooperative Asymmetric Puzzles",
@@ -253,7 +270,7 @@
    "source": "Hacker News · Claude",
    "sourceId": "hn-claude",
    "category": "market",
-   "badge": "30 pts",
+   "badge": "31 pts",
    "date": "2026-11-08T23:49:19Z",
    "nodes": [
     "s-models"
@@ -1231,6 +1248,19 @@
   }
  ],
  "byNode": {
+  "k-cli": [
+   "1azp3ne",
+   "1ynpj63",
+   "1rvlid5",
+   "16jzqx9",
+   "kginxy",
+   "ouarcq",
+   "1ktme1w",
+   "1wgt1b8",
+   "hzhlbu",
+   "17bor5j",
+   "cu0kch"
+  ],
   "a-scheduled": [
    "1l9apv1"
   ],
@@ -1289,18 +1319,6 @@
    "fu0lto",
    "12n48t9"
   ],
-  "k-cli": [
-   "1ynpj63",
-   "1rvlid5",
-   "16jzqx9",
-   "kginxy",
-   "ouarcq",
-   "1ktme1w",
-   "1wgt1b8",
-   "hzhlbu",
-   "17bor5j",
-   "cu0kch"
-  ],
   "a-managed": [
    "1u1z3v2",
    "1maeyx6",
@@ -1357,6 +1375,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "1azp3ne",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Zeus – Claude Code for AI voice agents",
+   "url": "https://thunderphone.com/blog/introducing-zeus"
+  },
   {
    "id": "1gc8pxj",
    "node": "a-mcp",
