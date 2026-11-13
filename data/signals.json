@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-12T23:35:35.843Z",
- "itemCount": 73,
+ "generated": "2026-11-13T06:40:18.818Z",
+ "itemCount": 76,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -56,17 +56,81 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 8
+   "kept": 11
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": true,
    "fetched": 20,
-   "kept": 7
+   "kept": 8
   }
  ],
  "items": [
+  {
+   "id": "1rgkaom",
+   "title": "Consistent Video-to-Video Translation via Explicit Correspondences",
+   "summary": "Interactive video-to-video applications require real-time generation while maintaining long-range temporal consistency. However, recent methods achieve speed by restricting attention to a fixed-length causal window. This limits long-range consistency whenever relevant history falls outside the context window. To addre…",
+   "url": "http://arxiv.org/abs/2611.17298v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-12T18:55:09Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "tjuzpj",
+   "title": "Cited but Unused: Parametric Provenance in Retrieval-Augmented Generation",
+   "summary": "Retrieval-augmented generation systems attach citations to attribute claims to their sources. These citations frequently misstate provenance, and standard verification cannot detect this. We measure provenance by counterfactual value substitution: a fact in the retrieved passages is replaced with a false variant and t…",
+   "url": "http://arxiv.org/abs/2611.17161v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-12T17:39:14Z",
+   "nodes": [
+    "c-citations"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "1zp4d7",
+   "title": "Skill Adapter: Personalized Modification and Online Routing of General-Purpose Skills",
+   "summary": "Large language model (LLM) agents use external skills to reuse task procedures and experience with tools. General-purpose skills describe shared execution procedures, while specific tool choices, operating practices, and output requirements vary across users. In long-horizon tasks, subgoals, available inputs, and envi…",
+   "url": "http://arxiv.org/abs/2611.17007v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-12T16:05:23Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "9ov5n4",
+   "title": "ControlHarbor: A Benchmark for Control Design by Coding Agents",
+   "summary": "LLM agents, i.e., language models run by a harness, can now write, run and debug software autonomously. This raises the question of whether they can also carry out control system design. In this paper, we consider control system design as a task for LLM agents and grade the designed controller as control engineers do:…",
+   "url": "http://arxiv.org/abs/2611.16867v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-12T14:37:35Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "10sfy2b",
    "title": "Claude Code's API billing depends on how often the cache expires",
@@ -80,6 +144,135 @@
    "date": "2026-11-12T14:02:38Z",
    "nodes": [
     "k-cli"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1hvyi6s",
+   "title": "Folio: Recoverable Multi-Resolution Context Folding for Long-Horizon Language Agents",
+   "summary": "Long-horizon language agents accumulate tool results and replies until the history no longer fits the context window. Current agents shrink this history by having a model summarize it, so each compaction rereads and rewrites the history it replaces, and cache-aware triggers decide when to compact while taking the size…",
+   "url": "http://arxiv.org/abs/2611.16627v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-12T10:59:40Z",
+   "nodes": [
+    "c-longctx",
+    "c-editing"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "b65eji",
+   "title": "RMIT-ADM+S at TREC RAG 2026: Research Agents, Retriever Ablations, and Open-Weight Replication",
+   "summary": "We describe the RMIT-ADM+S team's participation in the TREC 2026 Retrieval-Augmented Generation (RAG) track using the ClimbMix corpus. We submitted seven research-agent runs using proprietary OpenAI and open-weight models, exploring different retrieval strategies, writer models, and agent workflows. Pre-submission abl…",
+   "url": "http://arxiv.org/abs/2611.16425v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-12T07:34:28Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ium8pg",
+   "title": "Small Language Models for Inference-Capability Routing: Effects of Model Capacity and Prompt Optimization on Downstream Quality and Efficiency",
+   "summary": "Optional reasoning, retrieval, web search, and tool use can improve large language model responses but incur unnecessary computation when activated indiscriminately. This study investigates whether prompt optimization can compensate for limited router capacity and whether classification gains translate into downstream…",
+   "url": "http://arxiv.org/abs/2611.16414v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-12T07:25:46Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1b5lkr9",
+   "title": "CURATOR: Scalable Fine-grained Evidence Selection for Retrieval-Augmented Generation using Decision Models",
+   "summary": "Retrieval-augmented generation (RAG) provides entire retrieved passages to the LLM, even though only a handful of spans within them contain the evidence pertaining to the question. While precise selection of these spans can improve context utilization, identifying them in isolation is challenging. A span may appear ir…",
+   "url": "http://arxiv.org/abs/2611.16366v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-12T06:29:40Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "fjwds3",
+   "title": "StateAlign: Internalizing State-Aware Decision-Making for Reliable Multi-Turn Tool Agents via Reinforcement Learning",
+   "summary": "Reinforcement learning has improved the tool-use capabilities of large language models. However, better task performance can coincide with increased tool hallucination. Reliable tool use requires decisions to follow the current task state: available information, tool capabilities, and task progress. Our analysis shows…",
+   "url": "http://arxiv.org/abs/2611.16304v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-12T05:04:43Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ftf0uv",
+   "title": "DISCERN: Preserve at Write, Resolve at Read for Persistent LLM-Agent Memory",
+   "summary": "Enterprise agents accumulate memory across dozens of sessions in which facts contradict, get superseded, and blur as similarly named entities collide in embedding space. The field treats this as a retrieval problem; we show it is not. On ENT-310, a synthetic enterprise sales-agent memory benchmark of 310 queries (210…",
+   "url": "http://arxiv.org/abs/2611.15729v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-11T17:06:07Z",
+   "nodes": [
+    "c-memory"
+   ],
+   "relevance": 4,
+   "application": false
+  },
+  {
+   "id": "1722glr",
+   "title": "MemCredit: From Relevance to Utility for Decision-Time Memory in Long-Horizon Web Agents",
+   "summary": "Large language model (LLM) agents increasingly operate over long Web interaction histories, making memory management critical for reliable and efficient decision making. Existing methods primarily optimize storage, retrieval, or compression, but the memories most semantically relevant to the current state are not nece…",
+   "url": "http://arxiv.org/abs/2611.15600v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-11T15:17:38Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "xxf7ku",
+   "title": "Can We Make an LLM Dumber, or Is It Just Playing Dumb? An Empirical Study of Believable Performance Throttling",
+   "summary": "A benchmark score is commonly read as a proxy for model capability. We study the inverse problem: can a model be driven to a target score, and do its failures resemble those of a naturally weaker model? We operationalize believable performance reduction along three axes: target calibration, item-difficulty structure,…",
+   "url": "http://arxiv.org/abs/2611.15568v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-11T14:53:50Z",
+   "nodes": [
+    "s-models"
    ],
    "relevance": 3,
    "application": false
@@ -102,54 +295,6 @@
    "application": true
   },
   {
-   "id": "1l9apv1",
-   "title": "PARLEY: Evaluating LLM Collaboration Through Cooperative Asymmetric Puzzles",
-   "summary": "As large language models power autonomous agents, understanding how they collaborate and where they fail becomes critical. We introduce PARLEY, an extensible platform for studying LLM agent collaboration through four asymmetric puzzle tasks grounded in cognitive psychology (referential communication, joint coordinatio…",
-   "url": "http://arxiv.org/abs/2611.14242v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-10T15:54:12Z",
-   "nodes": [
-    "a-scheduled"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1gs4aj7",
-   "title": "Isolation Is Not Confidentiality: Security Boundaries of Geometric Access Control in RAG",
-   "summary": "Retrieval-Augmented Generation (RAG) systems increasingly rely on vector databases containing documents governed by different access-control policies. Recent search-preserving geometric approaches enforce such access control by structuring the embedding space so that transformed embeddings, which we call protected rep…",
-   "url": "http://arxiv.org/abs/2611.14061v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-10T13:25:54Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 7,
-   "application": false
-  },
-  {
-   "id": "rcj57",
-   "title": "Program-Aided Patchable Skill Evolution",
-   "summary": "Agent skills have emerged as an effective means of enabling LLM agents to solve complex, interactive tasks by encoding reusable knowledge without modifying model parameters. Recent approaches further improve skill adaptation by distilling reusable experience from agent execution trajectories and evolving skills based…",
-   "url": "http://arxiv.org/abs/2611.14019v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-10T12:53:12Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
    "id": "1jgw5cz",
    "title": "TreeAgent: Structure-Aware Memory Agent for Processing Long Hierarchical Data",
    "summary": "Practical Web applications increasingly require agents to interpret long conversations or documents. For inputs exceeding the context windows of large language models (LLMs), memory agents process segments sequentially and retain past information in bounded memory. However, they typically divide inputs into flat token…",
@@ -166,12 +311,12 @@
    "application": false
   },
   {
-   "id": "11lgsdu",
+   "id": "1gymdx7",
    "title": "OpticalRAG: Pixel-Space Compression for Token-Efficient Retrieval-Augmented Generation",
    "summary": "Retrieval-augmented generation (RAG) is bottlenecked by the token budget of large language models: feeding long documents into the context window is expensive, while aggressive textual compression discards fine-grained information that is irreversibly lost in a one-dimensional token sequence. We argue that this bottle…",
-   "url": "http://arxiv.org/abs/2611.13675v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
+   "url": "http://arxiv.org/abs/2611.13675v2",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
    "date": "2026-11-10T07:24:50Z",
@@ -183,65 +328,17 @@
    "application": false
   },
   {
-   "id": "xhv6u6",
-   "title": "AI is ready, but are the students. From answer-making to sense-making",
-   "summary": "Students in introductory physics often struggle with interpreting kinematics graphs, especially when connecting graphical features to physical meaning. We investigated AI tool use in kinematic graphing analysis as an intervention to support active sensemaking. This study examines GPT-5 performance on the Test of Under…",
-   "url": "http://arxiv.org/abs/2611.13404v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
+   "id": "1w8r53s",
+   "title": "When Evaluators of AI Agents Disagree: An Empirical Study of Native Scoring, LLM Judges, and Commit-Boundary Checks on tau2-bench",
+   "summary": "Agentic workflows, in which a large language model (LLM) calls tools to read and write data, are evaluated in two ways. Benchmarks compare the final state against a gold answer. Deployed services have none; an LLM judge reads the transcript and decides. Practice treats the two as interchangeable. This paper measures w…",
+   "url": "http://arxiv.org/abs/2611.14581v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-10T00:37:55Z",
+   "date": "2026-11-10T05:34:47Z",
    "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "jl7kqp",
-   "title": "PneuGen: Task-Driven Agentic Co-Design of Soft Pneumatic Robots",
-   "summary": "Task-driven design of soft robots requires the consideration of factors such as geometry, morphology, material properties, and actuation, resulting in a large and complex design space that is challenging to explore. Computational optimisation methods leverage signals from simulation to iteratively improve designs to a…",
-   "url": "http://arxiv.org/abs/2611.13344v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-09T23:13:59Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "8b9hej",
-   "title": "MRFoundry: Knowledge-guided agent loops for end-to-end MRI research",
-   "summary": "AI agents can write code, use scientific software, and revise computational workflows, opening new possibilities for MRI research. Effective assistance requires connecting acquisition physics, data conventions, specialized tools, and scientific validation. We present MRFoundry, an open-source, extensible package that…",
-   "url": "http://arxiv.org/abs/2611.13289v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-09T21:54:54Z",
-   "nodes": [
-    "a-runner"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1hfde9e",
-   "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
-   "summary": "Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned observations, while poorly grounded actions can limit the evidence available fo…",
-   "url": "http://arxiv.org/abs/2611.12886v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-09T18:59:54Z",
-   "nodes": [
-    "a-tools"
+    "s-models"
    ],
    "relevance": 3,
    "application": false
@@ -294,54 +391,6 @@
    ],
    "relevance": 3,
    "application": false
-  },
-  {
-   "id": "9z7pw7",
-   "title": "Multimodal Models Can See, But Can They Think? A Study of Turkish Visual Reasoning",
-   "summary": "Vision-Language Models have had massive leaps in recent years. Yet, when tested on high-level cognitive tasks like pattern completion, abstract logic, and relational reasoning, they still fall short. This limitation stems from the models' lack of ability to find out underlying rules and maintain constant intermediate…",
-   "url": "http://arxiv.org/abs/2611.10831v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-07T16:20:39Z",
-   "nodes": [
-    "c-files"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "a9swn4",
-   "title": "MMGraph-Agent: Agentic Multimodal RAG via Cache-Inspired Multimodal Knowledge HyperGraphs",
-   "summary": "Driven by increasingly complex real-world applications, Retrieval-Augmented Generation (RAG) has evolved from textual pipelines to multimodal settings, comprising two complementary dimensions: knowledge organization and retrieval enhancement. However, existing methods still face challenges of high construction cost, c…",
-   "url": "http://arxiv.org/abs/2611.10657v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-07T11:05:34Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1gc8pxj",
-   "title": "Jais 3: Introducing Arabic-centric Agentic AI",
-   "summary": "We present Jais 3, a fleet of six open, Arabic-centric agentic language models ranging from 0.9B to 375B parameters. Jais 3 is built to complete tasks for Arabic speakers, not only to answer questions in plain text: it is trained to plan multi-step tasks, call tools and Model Context Protocol (MCP) servers, operate a…",
-   "url": "http://arxiv.org/abs/2611.10224v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-06T21:11:05Z",
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 6,
-   "application": true
   },
   {
    "id": "1ynpj63",
@@ -1269,6 +1318,28 @@
   }
  ],
  "byNode": {
+  "c-longctx": [
+   "1rgkaom",
+   "1hvyi6s",
+   "1jgw5cz",
+   "1gymdx7",
+   "x2fvp2",
+   "125c0wo"
+  ],
+  "c-citations": [
+   "tjuzpj"
+  ],
+  "k-skills": [
+   "1zp4d7",
+   "bkmagq"
+  ],
+  "s-models": [
+   "9ov5n4",
+   "xxf7ku",
+   "1w8r53s",
+   "l5f9wm",
+   "1u9fug9"
+  ],
   "k-cli": [
    "10sfy2b",
    "1azp3ne",
@@ -1288,42 +1359,40 @@
    "17bor5j",
    "cu0kch"
   ],
-  "a-scheduled": [
-   "1l9apv1"
+  "c-editing": [
+   "1hvyi6s",
+   "1o4n0c"
   ],
   "c-retrieval": [
-   "1gs4aj7",
-   "11lgsdu",
-   "jl7kqp",
-   "a9swn4",
+   "b65eji",
+   "1b5lkr9",
+   "1722glr",
+   "1gymdx7",
    "1a89hn0"
   ],
-  "k-skills": [
-   "rcj57",
-   "bkmagq"
-  ],
-  "c-longctx": [
-   "1jgw5cz",
-   "11lgsdu",
-   "x2fvp2",
-   "125c0wo"
-  ],
   "a-tools": [
-   "xhv6u6",
-   "1hfde9e"
+   "ium8pg",
+   "fjwds3"
   ],
-  "a-runner": [
-   "8b9hej"
+  "c-memory": [
+   "ftf0uv",
+   "jimnoz",
+   "nwvk8q"
   ],
-  "s-models": [
-   "l5f9wm",
-   "1u9fug9"
+  "a-managed": [
+   "1u1z3v2",
+   "1maeyx6",
+   "53tssz",
+   "1dlcpbs"
   ],
-  "c-files": [
-   "9z7pw7"
+  "k-plugins": [
+   "ouarcq",
+   "8q1d7k",
+   "1ov28ac",
+   "qg99da",
+   "om6l6q"
   ],
   "a-mcp": [
-   "1gc8pxj",
    "1tlnnxf",
    "5envg7",
    "66j0eu",
@@ -1344,19 +1413,6 @@
    "17bor5j",
    "cu0kch",
    "10x48xk"
-  ],
-  "a-managed": [
-   "1u1z3v2",
-   "1maeyx6",
-   "53tssz",
-   "1dlcpbs"
-  ],
-  "k-plugins": [
-   "ouarcq",
-   "8q1d7k",
-   "1ov28ac",
-   "qg99da",
-   "om6l6q"
   ],
   "f-artifacts": [
    "hzvm6i"
@@ -1380,10 +1436,6 @@
    "1bu0l4m",
    "nvylf2"
   ],
-  "c-memory": [
-   "jimnoz",
-   "nwvk8q"
-  ],
   "s-deploy": [
    "r6yf3e",
    "msqi3m",
@@ -1397,14 +1449,19 @@
   "k-claudemd": [
    "172fnd4"
   ],
-  "c-editing": [
-   "1o4n0c"
-  ],
   "a-servertools": [
    "lzk7lj"
   ]
  },
  "applications": [
+  {
+   "id": "tjuzpj",
+   "node": "c-citations",
+   "nodeTitle": "Citations & Grounding",
+   "discipline": "context",
+   "title": "Cited but Unused: Parametric Provenance in Retrieval-Augmented Generation",
+   "url": "http://arxiv.org/abs/2611.17161v1"
+  },
   {
    "id": "1azp3ne",
    "node": "k-cli",
@@ -1412,14 +1469,6 @@
    "discipline": "code",
    "title": "Show HN: Zeus – Claude Code for AI voice agents",
    "url": "https://thunderphone.com/blog/introducing-zeus"
-  },
-  {
-   "id": "1gc8pxj",
-   "node": "a-mcp",
-   "nodeTitle": "MCP",
-   "discipline": "agents",
-   "title": "Jais 3: Introducing Arabic-centric Agentic AI",
-   "url": "http://arxiv.org/abs/2611.10224v1"
   },
   {
    "id": "1ynpj63",
