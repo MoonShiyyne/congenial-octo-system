@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-14T13:34:57.782Z",
- "itemCount": 76,
+ "generated": "2026-11-14T22:20:36.380Z",
+ "itemCount": 75,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 12
+   "kept": 11
   },
   {
    "id": "arxiv-agents",
@@ -140,7 +140,7 @@
    "source": "Hacker News · Claude",
    "sourceId": "hn-claude",
    "category": "market",
-   "badge": "4 pts",
+   "badge": "6 pts",
    "date": "2026-11-12T14:02:38Z",
    "nodes": [
     "k-cli"
@@ -610,23 +610,6 @@
    "date": "2026-09-28T13:20:44Z",
    "nodes": [
     "s-guardrails"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "1a89hn0",
-   "title": "Show HN: AI·rete·RAG – a Rete rule engine decides, RAG explains why",
-   "summary": "",
-   "url": "https://ai-rete-rag.com/",
-   "discussion": "https://news.ycombinator.com/item?id=49803683",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "46 pts",
-   "date": "2026-09-22T16:15:06Z",
-   "nodes": [
-    "c-retrieval"
    ],
    "relevance": 3,
    "application": true
@@ -1363,8 +1346,7 @@
    "b65eji",
    "1b5lkr9",
    "1722glr",
-   "1gymdx7",
-   "1a89hn0"
+   "1gymdx7"
   ],
   "a-tools": [
    "ium8pg",
@@ -1561,14 +1543,6 @@
    "discipline": "scale",
    "title": "Show HN: OpenAPPA – open-source deterministic guardrails that don't break agents",
    "url": "https://www.openappa.com/"
-  },
-  {
-   "id": "1a89hn0",
-   "node": "c-retrieval",
-   "nodeTitle": "Retrieval vs. Context",
-   "discipline": "context",
-   "title": "Show HN: AI·rete·RAG – a Rete rule engine decides, RAG explains why",
-   "url": "https://ai-rete-rag.com/"
   },
   {
    "id": "hzhlbu",
