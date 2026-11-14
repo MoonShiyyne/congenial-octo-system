@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-13T19:38:35.841Z",
+ "generated": "2026-11-14T06:16:02.430Z",
  "itemCount": 76,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 904,
-   "kept": 304
+   "fetched": 924,
+   "kept": 323
   },
   {
    "id": "python-sdk-changelog",
@@ -34,7 +34,7 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 46,
+   "fetched": 47,
    "kept": 6
   },
   {
@@ -682,6 +682,167 @@
    "application": false
   },
   {
+   "id": "52fenl",
+   "title": "Fixed startup warnings about permission rules and the \"N MCP servers need authentication\" notice being recorded as seen when they were scrolled out of view",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.325",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": true
+  },
+  {
+   "id": "yp34ce",
+   "title": "Fixed Claude Desktop and SDK sessions listing a folder's own MCP servers (.mcp.json, local) as host-added or not at all, and not connecting WebSocket ones, after a folder move or pre-warmed start",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.325",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "i7r6pm",
+   "title": "Fixed /mcp still listing a plugin's MCP server after a plugin reload removed it while it was connecting",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.325",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1a77g3j",
+   "title": "Fixed an MCP server staying \"needs authentication\", and its mcp_tool hooks being skipped, after a token refresh that was refused only for a moment",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.325",
+   "date": null,
+   "nodes": [
+    "a-mcp",
+    "k-hooks"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "l9416t",
+   "title": "Fixed MCP tool calls from an SDK host answering \"Not connected\" after a tool call had reconnected the MCP server",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.325",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "ecdd4g",
+   "title": "Fixed Code Mode scripts ignoring a worktree entered with EnterWorktree, writing ~ paths into the project, and leaving /mcp showing an MCP server as connected after its sign-in expired",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.325",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1635sp3",
+   "title": "Fixed deny and ask permission rules starting with mcp__plugin_*_ missing a plugin's MCP server or tool spelled in another letter case",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.325",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1jdd67v",
+   "title": "Improved the HTTPS authentication failed message for private plugin marketplaces: it now says git's terminal prompts and askpass programs are disabled, and it also appears with newer git versions",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.325",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "16l0xrd",
+   "title": "Changed plugin marketplace and plugin downloads to use a CONNECT tunnel when ALL_PROXY is the only proxy set; a proxy that refuses CONNECT now fails them",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.325",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "mzs5ao",
+   "title": "[VSCode] Added a field to paste the redirect URL when signing in to an MCP server from the panel in SSH, WSL and container windows",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.325",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
    "id": "9zfrm4",
    "title": "Fixed the claude -p warning about an ended claude.ai login to say that claude auth logout also removes saved MCP server logins and plugin secrets",
    "summary": "",
@@ -923,169 +1084,6 @@
    "date": null,
    "nodes": [
     "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1z0bf97",
-   "title": "Fixed an MCP server sometimes showing as connected with no tools after it was reconnected or the session's directory changed while its tools were still loading",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.321",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "m80syn",
-   "title": "Fixed Claude apps gateway refusing to start when a desktop setting holds a field newer than the gateway, such as a managed MCP server's oauth.omitResource; it now warns and serves it",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.321",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "15trj06",
-   "title": "Fixed PreToolUse mcp_tool hooks on stdio and HTTP MCP servers being skipped when their answer was over 16 MiB; the tool call is now refused",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.321",
-   "date": null,
-   "nodes": [
-    "k-hooks",
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "pq4i5i",
-   "title": "Changed policy_mode: layered in the Claude apps gateway: managed MCP servers now add up over every matching policy, match: {} included, so a gateway already on it serves more after the upgrade",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.321",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "17bor5j",
-   "title": "Added support for MCP tasks in the terminal: when an MCP server runs a tool call as a task, Claude Code moves it to the background right away and tells Claude the result when it finishes",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.319",
-   "date": null,
-   "nodes": [
-    "a-mcp",
-    "k-cli"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "cu0kch",
-   "title": "Fixed MCP servers on the older handshake failing to connect, or returning empty results, because Claude Code declared an extension that it only uses with newer servers",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.319",
-   "date": null,
-   "nodes": [
-    "a-mcp",
-    "k-cli"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "10x48xk",
-   "title": "Fixed claude -p --resume with a prompt losing a deferred tool call when its MCP server is missing: the run now exits 1, keeps the call and refuses later input",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.319",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "qg99da",
-   "title": "[VSCode] Improved the confirmation for removing a plugin marketplace: it now checks which of its plugins are installed at that moment",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.319",
-   "date": null,
-   "nodes": [
-    "k-plugins"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "om6l6q",
-   "title": "Changed --add-dir directories to register plugin marketplaces only once that directory's own trust dialog has been accepted",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.319",
-   "date": null,
-   "nodes": [
-    "k-plugins"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "bvs7n8",
-   "title": "Changed PostToolUse hooks to run, with up to 10 seconds to finish, on tool calls that finish after a new message interrupts the turn",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.319",
-   "date": null,
-   "nodes": [
-    "k-hooks"
    ],
    "relevance": 18,
    "application": false
@@ -1355,9 +1353,7 @@
    "mrp0fp",
    "z0vfxx",
    "1wzz4of",
-   "qcjcwc",
-   "17bor5j",
-   "cu0kch"
+   "qcjcwc"
   ],
   "c-editing": [
    "1hvyi6s",
@@ -1387,15 +1383,23 @@
   ],
   "k-plugins": [
    "ouarcq",
+   "1jdd67v",
+   "16l0xrd",
    "8q1d7k",
-   "1ov28ac",
-   "qg99da",
-   "om6l6q"
+   "1ov28ac"
   ],
   "a-mcp": [
    "1tlnnxf",
    "5envg7",
    "66j0eu",
+   "52fenl",
+   "yp34ce",
+   "i7r6pm",
+   "1a77g3j",
+   "l9416t",
+   "ecdd4g",
+   "1635sp3",
+   "mzs5ao",
    "9zfrm4",
    "monv4s",
    "1g34gn1",
@@ -1405,20 +1409,16 @@
    "ntpeq5",
    "kotgz8",
    "mrp0fp",
-   "1zkigr",
-   "1z0bf97",
-   "m80syn",
-   "15trj06",
-   "pq4i5i",
-   "17bor5j",
-   "cu0kch",
-   "10x48xk"
+   "1zkigr"
   ],
   "f-artifacts": [
    "hzvm6i"
   ],
   "s-guardrails": [
    "1vyzb0t"
+  ],
+  "k-hooks": [
+   "1a77g3j"
   ],
   "a-sdk": [
    "c940sx"
@@ -1427,10 +1427,6 @@
    "z0vfxx",
    "1wzz4of",
    "qcjcwc"
-  ],
-  "k-hooks": [
-   "15trj06",
-   "bvs7n8"
   ],
   "s-structured": [
    "1bu0l4m",
@@ -1589,6 +1585,14 @@
    "discipline": "agents",
    "title": "Show HN: Salestrics – An open MCP server and CRM for AI-native revenue teams",
    "url": "https://www.salestrics.com/"
+  },
+  {
+   "id": "52fenl",
+   "node": "a-mcp",
+   "nodeTitle": "MCP",
+   "discipline": "agents",
+   "title": "Fixed startup warnings about permission rules and the \"N MCP servers need authentication\" notice being recorded as seen when they were scrolled out of view",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   },
   {
    "id": "monv4s",
