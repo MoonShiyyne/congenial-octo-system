@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T06:22:19.433Z",
+ "generated": "2026-11-16T21:58:27.999Z",
  "itemCount": 76,
  "sourceStatus": [
   {
@@ -13,14 +13,14 @@
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 111,
+   "fetched": 120,
    "kept": 18
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 91,
+   "fetched": 101,
    "kept": 7
   },
   {
@@ -1154,6 +1154,54 @@
    "application": false
   },
   {
+   "id": "1cwntry",
+   "title": "**tools:** keep the session tool runner's max_idle countdown running when a session thread terminates",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.9.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.8.0...v2.9.0)",
+   "date": null,
+   "nodes": [
+    "a-runner"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "lsxl77",
+   "title": "**tools:** stop the session tool runner from running the tool calls of a terminated session thread",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.9.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.8.0...v2.9.0)",
+   "date": null,
+   "nodes": [
+    "a-runner"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "lw3x4c",
+   "title": "**docs:** recommend multiagent_20261001 over the coordinator type",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.9.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.8.0...v2.9.0)",
+   "date": null,
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
    "id": "r6yf3e",
    "title": "**bedrock:** send \";\" in a model ID as is, and refuse a model ID whose part before the first \";\" is empty, \".\" or \"..\"",
    "summary": "",
@@ -1187,49 +1235,17 @@
    "application": false
   },
   {
-   "id": "msqi3m",
-   "title": "**bedrock,vertex:** add the parse and count_tokens methods missing from beta.messages.with_raw_response and with_streaming_response",
+   "id": "149yfbh",
+   "title": "**docs:** recommend multiagent_20261001 over the coordinator type",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "[2.7.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.6.0...v2.7.0)",
+   "badge": "[1.9.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.8.0...sdk-v1.9.0)",
    "date": null,
    "nodes": [
-    "s-deploy"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "hx88sf",
-   "title": "**bedrock,vertex:** send the X-Stainless-Async header and stream raw requests that name no stream class",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "[2.7.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.6.0...v2.7.0)",
-   "date": null,
-   "nodes": [
-    "s-deploy"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1k6szzm",
-   "title": "**bedrock:** sign requests that have no Connection header instead of raising KeyError",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "[2.7.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.6.0...v2.7.0)",
-   "date": null,
-   "nodes": [
-    "s-deploy"
+    "a-teams"
    ],
    "relevance": 6,
    "application": false
@@ -1298,22 +1314,6 @@
    ],
    "relevance": 6,
    "application": false
-  },
-  {
-   "id": "lzk7lj",
-   "title": "**docs:** improve the descriptions of the code execution tool and its encrypted results",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[1.3.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.2.0...sdk-v1.3.0)",
-   "date": null,
-   "nodes": [
-    "a-servertools"
-   ],
-   "relevance": 6,
-   "application": false
   }
  ],
  "byNode": {
@@ -1345,7 +1345,9 @@
   "a-teams": [
    "17qgnwj",
    "igsfe3",
+   "lw3x4c",
    "53tssz",
+   "149yfbh",
    "1dlcpbs"
   ],
   "f-artifacts": [
@@ -1441,17 +1443,15 @@
    "1bu0l4m",
    "nvylf2"
   ],
+  "a-runner": [
+   "1cwntry",
+   "lsxl77"
+  ],
   "s-deploy": [
-   "r6yf3e",
-   "msqi3m",
-   "hx88sf",
-   "1k6szzm"
+   "r6yf3e"
   ],
   "k-claudemd": [
    "172fnd4"
-  ],
-  "a-servertools": [
-   "lzk7lj"
   ]
  },
  "applications": [
