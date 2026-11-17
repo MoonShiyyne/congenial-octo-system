@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T07:51:11.272Z",
+ "generated": "2026-11-17T20:52:14.447Z",
  "itemCount": 71,
  "sourceStatus": [
   {
@@ -13,15 +13,15 @@
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 120,
-   "kept": 18
+   "fetched": 112,
+   "kept": 17
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 101,
-   "kept": 7
+   "fetched": 92,
+   "kept": 8
   },
   {
    "id": "hn-mcp",
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "1botn7g",
+   "title": "Show HN: Wake, see what Claude Code did and where the tokens went",
+   "summary": "",
+   "url": "https://rcruz.dev/wake/",
+   "discussion": "https://news.ycombinator.com/item?id=50529742",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "2 pts",
+   "date": "2026-11-17T10:41:09Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
   {
    "id": "1k6xa3y",
    "title": "GRACE: Parallel Best-of-N Multi-Agent Analysis of Closed-Form Questions over Dataframes with Guardrail Selection and Adaptive Retry",
@@ -532,23 +549,6 @@
    "date": "2026-09-29T06:11:45Z",
    "nodes": [
     "k-skills"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "1vyzb0t",
-   "title": "Show HN: OpenAPPA – open-source deterministic guardrails that don't break agents",
-   "summary": "",
-   "url": "https://www.openappa.com/",
-   "discussion": "https://news.ycombinator.com/item?id=49877515",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "25 pts",
-   "date": "2026-09-28T13:20:44Z",
-   "nodes": [
-    "s-guardrails"
    ],
    "relevance": 3,
    "application": true
@@ -1071,6 +1071,22 @@
    "application": false
   },
   {
+   "id": "17c4avk",
+   "title": "**api:** add error codes for linked billing refusals",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.10.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.9.0...v2.10.0)",
+   "date": null,
+   "nodes": [
+    "s-guardrails"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
    "id": "1cwntry",
    "title": "**tools:** keep the session tool runner's max_idle countdown running when a session thread terminates",
    "summary": "",
@@ -1135,18 +1151,49 @@
    "application": false
   },
   {
-   "id": "53tssz",
-   "title": "**examples:** show multiagent when creating a Managed Agents agent",
+   "id": "wxdzqb",
+   "title": "**api:** add error codes for linked billing refusals",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "[2.8.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.7.0...v2.8.0)",
+   "badge": "[1.10.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.9.0...sdk-v1.10.0)",
    "date": null,
    "nodes": [
-    "a-teams",
-    "a-managed"
+    "s-guardrails"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "99ut0u",
+   "title": "**tools:** keep the session tool runner's maxIdleMs countdown running when a session thread terminates",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "[1.10.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.9.0...sdk-v1.10.0)",
+   "date": null,
+   "nodes": [
+    "a-runner"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "166kk28",
+   "title": "**tools:** stop the session tool runner from running the tool calls of a terminated session thread",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
+   "category": "model",
+   "badge": "[1.10.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.9.0...sdk-v1.10.0)",
+   "date": null,
+   "nodes": [
+    "a-runner"
    ],
    "relevance": 6,
    "application": false
@@ -1183,61 +1230,26 @@
    ],
    "relevance": 6,
    "application": false
-  },
-  {
-   "id": "172fnd4",
-   "title": "add the rules the SDKs share to CLAUDE.md",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[1.6.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.5.0...sdk-v1.6.0)",
-   "date": null,
-   "nodes": [
-    "k-claudemd"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1o4n0c",
-   "title": "**api:** add tool_use_limit_reached_error and compaction_limit_reached_error session error types",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[1.4.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.3.0...sdk-v1.4.0)",
-   "date": null,
-   "nodes": [
-    "c-editing"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1u9fug9",
-   "title": "**examples:** keep the message threads example valid on Sonnet 5.5",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[1.4.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.3.0...sdk-v1.4.0)",
-   "date": null,
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 6,
-   "application": false
   }
  ],
  "byNode": {
+  "k-cli": [
+   "1botn7g",
+   "10sfy2b",
+   "1azp3ne",
+   "1ynpj63",
+   "1rvlid5",
+   "16jzqx9",
+   "kginxy",
+   "ouarcq",
+   "1ktme1w",
+   "1wgt1b8",
+   "hzhlbu",
+   "8q1d7k"
+  ],
   "a-teams": [
    "1k6xa3y",
    "lw3x4c",
-   "53tssz",
    "149yfbh",
    "1dlcpbs"
   ],
@@ -1257,7 +1269,8 @@
   ],
   "s-guardrails": [
    "1r8a5lt",
-   "1vyzb0t"
+   "17c4avk",
+   "wxdzqb"
   ],
   "c-citations": [
    "1747vri"
@@ -1267,8 +1280,7 @@
   ],
   "s-models": [
    "i47it8",
-   "l5f9wm",
-   "1u9fug9"
+   "l5f9wm"
   ],
   "c-longctx": [
    "1rgkaom",
@@ -1276,22 +1288,8 @@
    "1jgw5cz",
    "1gymdx7"
   ],
-  "k-cli": [
-   "10sfy2b",
-   "1azp3ne",
-   "1ynpj63",
-   "1rvlid5",
-   "16jzqx9",
-   "kginxy",
-   "ouarcq",
-   "1ktme1w",
-   "1wgt1b8",
-   "hzhlbu",
-   "8q1d7k"
-  ],
   "c-editing": [
-   "1hvyi6s",
-   "1o4n0c"
+   "1hvyi6s"
   ],
   "c-memory": [
    "ftf0uv",
@@ -1301,7 +1299,6 @@
   "a-managed": [
    "1u1z3v2",
    "1maeyx6",
-   "53tssz",
    "1dlcpbs"
   ],
   "k-plugins": [
@@ -1350,16 +1347,23 @@
   ],
   "a-runner": [
    "1cwntry",
-   "lsxl77"
+   "lsxl77",
+   "99ut0u",
+   "166kk28"
   ],
   "s-deploy": [
    "r6yf3e"
-  ],
-  "k-claudemd": [
-   "172fnd4"
   ]
  },
  "applications": [
+  {
+   "id": "1botn7g",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Wake, see what Claude Code did and where the tokens went",
+   "url": "https://rcruz.dev/wake/"
+  },
   {
    "id": "i47it8",
    "node": "s-models",
@@ -1463,14 +1467,6 @@
    "discipline": "code",
    "title": "Show HN: Open-source skills for end-to-end video ad campaigns",
    "url": "https://github.com/SupercmoHQ/superCMO-skills"
-  },
-  {
-   "id": "1vyzb0t",
-   "node": "s-guardrails",
-   "nodeTitle": "Refusals & Fallbacks",
-   "discipline": "scale",
-   "title": "Show HN: OpenAPPA – open-source deterministic guardrails that don't break agents",
-   "url": "https://www.openappa.com/"
   },
   {
    "id": "hzhlbu",
