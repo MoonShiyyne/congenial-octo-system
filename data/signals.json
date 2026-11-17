@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-16T21:58:27.999Z",
- "itemCount": 76,
+ "generated": "2026-11-17T07:51:11.272Z",
+ "itemCount": 71,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 924,
-   "kept": 323
+   "fetched": 1236,
+   "kept": 415
   },
   {
    "id": "python-sdk-changelog",
@@ -56,64 +56,130 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 11
+   "kept": 5
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": true,
    "fetched": 20,
-   "kept": 9
+   "kept": 8
   }
  ],
  "items": [
   {
-   "id": "63h4lv",
-   "title": "ARCHER: From Rationale Imitation to Executable Reasoning in Small Language Models",
-   "summary": "Small language models are attractive for local, low-cost, and privacy-sensitive deployment, but they remain unreliable on mathematical reasoning tasks that require decomposition, exact computation, tool use, and verification. We introduce \\textbf{ARCHER}: \\textbf{A}ction-trace \\textbf{R}einforcement for \\textbf{C}alcu…",
-   "url": "http://arxiv.org/abs/2611.18494v1",
+   "id": "1k6xa3y",
+   "title": "GRACE: Parallel Best-of-N Multi-Agent Analysis of Closed-Form Questions over Dataframes with Guardrail Selection and Adaptive Retry",
+   "summary": "LLM agents answer closed-form questions over a tabular dataframe by writing and executing Python, almost always as a single rollout: one interpretation, one script, one result, accepted without comparison. The few pipelines that produce several candidates reconcile them by answer-agreement voting, which needs a single…",
+   "url": "http://arxiv.org/abs/2611.20983v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-13T18:05:33Z",
+   "date": "2026-11-16T12:16:45Z",
    "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "8uifq1",
+   "title": "Synapse: Optimizing Natural-Language Agent Skills through Program Repair",
+   "summary": "Large language model (LLM) agents can improve task performance by optimizing reusable natural-language skills without updating model parameters. Execution feedback reveals failures but does not directly identify which instructions to edit, which related instructions matter, or which tasks an edit may break. We propose…",
+   "url": "http://arxiv.org/abs/2611.20856v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-16T10:29:36Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1p9aylq",
+   "title": "A Self-Evolving Agent Runs Like a Gas: Describing and Predicting Its Evolution with Fluid Dynamics",
+   "summary": "A self-evolving LLM agent improves in service by rewriting its own plugin library under a validation gate. Agent engineering is converging on exactly such agents: single systems in continuous operation, carrying populations of runtime instances (plugins, skills, tools) past the point where anyone can read the library…",
+   "url": "http://arxiv.org/abs/2611.20584v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-16T06:06:20Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1cslno1",
+   "title": "DAPPT: Domain-Aware Policies from Procedural Trajectories for Sim-to-Real Dexterous Tool Use",
+   "summary": "Sim-to-real RL has achieved impressive results in dexterous manipulation but remains limited to tasks with accurate rigid-body simulation. However, these methods cannot be applied to skills that involve deformable and particles, with which the simulation speed will become too slow for large-scale RL learning. We prese…",
+   "url": "http://arxiv.org/abs/2611.20202v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-15T18:58:02Z",
+   "nodes": [
+    "k-skills",
     "a-tools"
    ],
    "relevance": 3,
    "application": false
   },
   {
-   "id": "14k4vwu",
-   "title": "SemRAG: Semantic-Guided Sentence-Level Retrieval-Augmented Sign Language Production",
-   "summary": "Sign language production (SLP) aims to generate sign pose sequences that faithfully express spoken-language text while preserving the rhythm and coordination patterns of signing. Common SLP methods learn text-to-pose mappings from training data but often suffer from semantic inaccuracies in long or complex sentences.…",
-   "url": "http://arxiv.org/abs/2611.18189v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
+   "id": "1r8a5lt",
+   "title": "Risk-certified prompt optimization for LLM-as-a-judge guardrails",
+   "summary": "LLM-as-a-judge guardrails are often controlled primarily through system prompts, yet standard prompt optimization methods target average performance rather than explicit safety constraints. This paper studies system-prompt selection as a constrained optimization problem: maximize benign pass rate while keeping the mis…",
+   "url": "http://arxiv.org/abs/2611.20156v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-13T13:58:22Z",
+   "date": "2026-11-15T17:45:49Z",
    "nodes": [
-    "c-retrieval"
+    "c-retrieval",
+    "s-guardrails"
    ],
    "relevance": 3,
    "application": false
   },
   {
-   "id": "1vxt0cc",
-   "title": "Forget the Lineage: Forward-Secure, Lineage-Complete Cryptographic Erasure for LLM-Agent Memory",
-   "summary": "Large language model (LLM) agents keep a long-term memory that the model itself writes: summaries, extracted facts and embeddings derived from what users said. Deleting a message is therefore not enough: its derivatives, storage residue and backups survive. We define lineage-complete forward-secure erasure: after a fo…",
-   "url": "http://arxiv.org/abs/2611.18133v1",
+   "id": "1747vri",
+   "title": "Security of Deep Research Agents: Attack Surface, Defenses, Benchmarks, and Agenda Seeding against Research Planning",
+   "summary": "Deep research and agentic search agents autonomously retrieve content from the open web and generate reports with citations, and their outputs are often taken directly as research conclusions. This paper systematizes security research in this area along four stages, namely retrieval, planning, evidence integration, an…",
+   "url": "http://arxiv.org/abs/2611.20045v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-13T13:01:47Z",
+   "date": "2026-11-15T14:44:28Z",
+   "nodes": [
+    "c-citations"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1wcemca",
+   "title": "Context Matters: Improving LLM-Based Code Summarization with Hierarchical Information",
+   "summary": "Source code documentation plays an important role in software quality activities, such as code review, program comprehension, maintenance, and bug fixing. However, it is often fragmented across individual code elements and focuses on local implementation details, providing little information about their surrounding co…",
+   "url": "http://arxiv.org/abs/2611.18964v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-13T21:40:43Z",
    "nodes": [
     "c-retrieval",
-    "c-memory"
+    "k-review"
    ],
-   "relevance": 5,
+   "relevance": 3,
    "application": false
   },
   {
@@ -121,8 +187,8 @@
    "title": "MineralExp: Benchmarking LLM Agents for Experimental Design in Real-World Mineral Exploration",
    "summary": "In mineral exploration, verifying geological hypotheses relies on designing a variety of geochemical experiments. While large language model (LLM) agents increasingly automate downstream geoscientific data analysis, a crucial upstream capability remains largely unexplored: automated geochemical experimental design, i.…",
    "url": "http://arxiv.org/abs/2611.17931v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
    "date": "2026-11-13T09:10:58Z",
@@ -131,103 +197,6 @@
    ],
    "relevance": 3,
    "application": true
-  },
-  {
-   "id": "xrj3so",
-   "title": "Adversarially Attacking Symbolic Vocabulary Vulnerabilities In LLM Planners",
-   "summary": "As large language models (LLMs) are increasingly deployed as autonomous agents, their abilities in navigating automated planning tasks have become essential. However, despite their strengths, LLMs' planning ability is not robust, particularly when they are not allowed to exploit commonsense cues in the symbolic vocabu…",
-   "url": "http://arxiv.org/abs/2611.17910v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-13T08:51:07Z",
-   "nodes": [
-    "a-scheduled"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "17qgnwj",
-   "title": "Aligning AI Teams",
-   "summary": "Previous work has shown that alignment training on individual LLM agents can fail to transfer to multi-agent settings. We investigate the underlying mechanisms for this failure, and explore interventions to preserve alignment transfer to multi-agent LLM teams. We focus on two software-engineering tasks (sepsis triage,…",
-   "url": "http://arxiv.org/abs/2611.17820v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-13T06:57:46Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "rfhydx",
-   "title": "Vision-as-a-Tool: Visual Harness for Multimodal Agentic Coding",
-   "summary": "Multimodal agentic coding requires robust visual reasoning to analyze observations and evaluate generated artifacts. Current frameworks largely rely on a Thinking-with-Images paradigm, where agents depend on their intrinsic vision to execute visually grounded tasks. However, this architectural coupling introduces a fu…",
-   "url": "http://arxiv.org/abs/2611.17797v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-13T06:23:19Z",
-   "nodes": [
-    "f-artifacts",
-    "c-files"
-   ],
-   "relevance": 5,
-   "application": false
-  },
-  {
-   "id": "hoxokk",
-   "title": "RAG-FGO: Dynamic Optimization of Query-Rewriting Agents for Generative RAG",
-   "summary": "In retrieval-augmented generation (RAG), query rewriting serves as a core interface that aligns user intent with external knowledge bases, and its effectiveness directly determines overall system performance. However, generative retrieval faces three critical challenges in real-world deployment: noisy retrieval feedba…",
-   "url": "http://arxiv.org/abs/2611.17788v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-13T06:01:09Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "fxlwaz",
-   "title": "LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent",
-   "summary": "Frontier LLM agents that query databases with tools are among the most accurate text-to-SQL systems, but per-query calls to a hosted model are slow, costly, and expose sensitive organizational queries to external APIs. For example, a Claude Opus 5.5 agent serving 10,000 queries a day costs over $70,000 a year at list…",
-   "url": "http://arxiv.org/abs/2611.17780v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-13T05:44:08Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 4,
-   "application": false
-  },
-  {
-   "id": "igsfe3",
-   "title": "I2C-GRPO: Insight Importance Checklist for Reinforcement Learning in a Multi-Agent DDoS Alert Triage Workflow",
-   "summary": "Large language model (LLM) agents are increasingly used for investigative tasks over incomplete evidence, such as cybersecurity alert triage, but reinforcement learning (RL) for such tasks is difficult: intermediate steps have no verifiable labels, rollouts are costly, and outcome rewards are sparse. We propose Insigh…",
-   "url": "http://arxiv.org/abs/2611.17534v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-12T21:41:24Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
   },
   {
    "id": "1rgkaom",
@@ -341,54 +310,6 @@
    "nodes": [
     "c-longctx",
     "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1w8r53s",
-   "title": "When Evaluators of AI Agents Disagree: An Empirical Study of Native Scoring, LLM Judges, and Commit-Boundary Checks on tau2-bench",
-   "summary": "Agentic workflows, in which a large language model (LLM) calls tools to read and write data, are evaluated in two ways. Benchmarks compare the final state against a gold answer. Deployed services have none; an LLM judge reads the transcript and decides. Practice treats the two as interchangeable. This paper measures w…",
-   "url": "http://arxiv.org/abs/2611.14581v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-10T05:34:47Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "x2fvp2",
-   "title": "The Indic Token Tax in 2026: Measuring Tokenizer. Disparity and Its Cost for the Languages of India",
-   "summary": "Commercial language model APIs bill per token, so a tokenizer that needs more tokens for the same content in one language makes that language more expensive, slower, and able to fit less text in a fixed context window. We measure this disparity for nine public tokenizers, including those of GPT-4, GPT-4o, Qwen2.5, Dee…",
-   "url": "http://arxiv.org/abs/2611.13058v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-09T17:24:21Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "125c0wo",
-   "title": "OGDA: Ontology-Grounded Data Agents for Reliable Analysis over Heterogeneous Data Lakes",
-   "summary": "Full-pipeline data analysis over real-world data lakes requires LLM agents to locate and integrate information across large collections of tables with different schemas. Existing data agents follow task-specific exploration, which exhausts the context window in massive lakes. As the context fills, the agent's reasonin…",
-   "url": "http://arxiv.org/abs/2611.12114v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-09T09:26:35Z",
-   "nodes": [
-    "c-longctx"
    ],
    "relevance": 3,
    "application": false
@@ -667,6 +588,22 @@
    "application": true
   },
   {
+   "id": "1y48bvc",
+   "title": "Fixed tool search sometimes loading another MCP server's tool when asked for a tool by its exact name; you may be asked again for that tool",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.326",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 24,
+   "application": false
+  },
+  {
    "id": "66j0eu",
    "title": "Changed which MCP servers are reported by name in OpenTelemetry exports to follow the current connector directory",
    "summary": "",
@@ -680,6 +617,199 @@
     "a-mcp"
    ],
    "relevance": 21,
+   "application": false
+  },
+  {
+   "id": "po1d2s",
+   "title": "Added a message explaining why MCP servers stop loading when an administrator adds managed-mcp.json during a session",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.326",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1r7zv4g",
+   "title": "Fixed PreToolUse hooks in managed settings leaving no OpenTelemetry tool_decision event or permission_denials entry when they refused a direct tool call",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.326",
+   "date": null,
+   "nodes": [
+    "k-hooks"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "s25h27",
+   "title": "Fixed a tool call to an MCP server that an SDK host had just removed reconnecting to it, or reporting that it needs authentication",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.326",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1bsbb1r",
+   "title": "Fixed Claude not being told that a remote MCP server's question was declined when the server then failed the tool call",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.326",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1vkcjzt",
+   "title": "Fixed /mcp not showing why a local (stdio) MCP server failed to start",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.326",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "fh9cgw",
+   "title": "Fixed Esc doing nothing while an MCP server reconnects: Esc, or Ctrl+C pressed twice, now closes the wait and the reconnect continues in the background",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.326",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "10fqzhi",
+   "title": "Fixed Tab and Shift+Tab not moving between fields in an MCP server's input form, and a required field there keeping its tick after being emptied",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.326",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1ms5ljt",
+   "title": "Fixed Stop in cloud and self-hosted runner sessions sometimes waiting for slow MCP servers to connect before taking effect",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.326",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "127b1zn",
+   "title": "Fixed a hang on malformed glob patterns in settings, plugin marketplace entries and Grep file filters",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.326",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "aq5ik4",
+   "title": "Improved time to first response in Claude Desktop's new sessions: the first turn no longer waits up to 500 ms for local MCP servers whose tools load on demand",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.326",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "b5u9ys",
+   "title": "Improved /plugin Marketplaces and Add marketplace: a compact list, a clearer remove confirmation, a clear text field and shorter errors when adding fails",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.326",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1tmmmgj",
+   "title": "Changed enabled plugins that were refused for a malformed plugin.json display field: they now load, with their hooks and MCP servers; administrators should check the plugins they deploy",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.326",
+   "date": null,
+   "nodes": [
+    "a-mcp",
+    "k-hooks"
+   ],
+   "relevance": 18,
    "application": false
   },
   {
@@ -872,219 +1002,6 @@
    "nodes": [
     "k-plugins",
     "k-cli"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "monv4s",
-   "title": "Fixed claude --bg --safe-mode sessions stopping at startup to ask about project MCP servers that safe mode never starts",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.323",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": true
-  },
-  {
-   "id": "1g34gn1",
-   "title": "Fixed /mcp and /plugins opening an MCP server's page with the cursor on \"Disable\" when the server needs authentication but still holds its sign-in; the page now offers \"Reconnect\" and opens on it",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.323",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "c940sx",
-   "title": "Fixed an MCP server staying disconnected with no tools after an Agent SDK app or claude -p caller removed and re-added it, when a tool call had tried to reach it in between",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.323",
-   "date": null,
-   "nodes": [
-    "a-mcp",
-    "a-sdk"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "3sso88",
-   "title": "Fixed SDK sessions giving an MCP server named by --allowedTools or an mcp_tool hook less than 2s before the first turn when settings lowered CLAUDE_CODE_MCP_STARTUP_WAIT_MS after start-up",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.323",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": true
-  },
-  {
-   "id": "a640yp",
-   "title": "Fixed headless sessions ending when an SDK host sent a null entry in an MCP server's tools list",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.323",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "ntpeq5",
-   "title": "Changed the tool Claude uses to finish an MCP server sign-in so that it asks you to confirm, even in bypass and auto modes; where nobody can be asked, such as in dontAsk mode, use /mcp",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.323",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "kotgz8",
-   "title": "Changed project (.mcp.json) MCP server approvals to match the server's exact name; an approval entry written in another spelling now asks again",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.323",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "mrp0fp",
-   "title": "[VSCode] Added a Claude Code trust prompt before the first session in a folder you haven't trusted; declining leaves the folder's settings and MCP servers unused",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.323",
-   "date": null,
-   "nodes": [
-    "a-mcp",
-    "k-cli"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "z0vfxx",
-   "title": "[Claude Code on the web] Improved the message when a file fails to upload to a cloud or Remote Control session: it now gives the reason, such as too many pages, a password or a time-out",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.323",
-   "date": null,
-   "nodes": [
-    "k-remote",
-    "k-cli"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1wzz4of",
-   "title": "[Claude Code on the web] Fixed an open cloud or Remote Control session's page staying \"Disconnected\" after a few minutes of failed connections; it now tries to reconnect by itself",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.323",
-   "date": null,
-   "nodes": [
-    "k-remote",
-    "k-cli"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "qcjcwc",
-   "title": "[Claude Code on the web] Fixed Try again on an open cloud or Remote Control session's \"Connection lost\" card sending \"Try again\" as your message; it now tries to reconnect instead",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.323",
-   "date": null,
-   "nodes": [
-    "k-remote",
-    "k-cli"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1ov28ac",
-   "title": "Fixed plugin auto-updates and /plugin marketplace updates downloading a plugin again for each worktree or folder of a repository",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.321",
-   "date": null,
-   "nodes": [
-    "k-plugins"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1zkigr",
-   "title": "Fixed a project's MCP server being disconnected after the first message in a Claude Desktop Code tab session when the desktop app has an MCP server or extension of the same name",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.321",
-   "date": null,
-   "nodes": [
-    "a-mcp"
    ],
    "relevance": 18,
    "application": false
@@ -1317,53 +1234,47 @@
   }
  ],
  "byNode": {
-  "a-tools": [
-   "63h4lv"
-  ],
-  "c-retrieval": [
-   "14k4vwu",
-   "1vxt0cc",
-   "hoxokk",
-   "1gymdx7"
-  ],
-  "c-memory": [
-   "1vxt0cc",
-   "ftf0uv",
-   "jimnoz",
-   "nwvk8q"
-  ],
-  "s-models": [
-   "i47it8",
-   "fxlwaz",
-   "1w8r53s",
-   "l5f9wm",
-   "1u9fug9"
-  ],
-  "a-scheduled": [
-   "xrj3so"
-  ],
   "a-teams": [
-   "17qgnwj",
-   "igsfe3",
+   "1k6xa3y",
    "lw3x4c",
    "53tssz",
    "149yfbh",
    "1dlcpbs"
   ],
-  "f-artifacts": [
-   "rfhydx",
-   "hzvm6i"
+  "k-skills": [
+   "8uifq1",
+   "1p9aylq",
+   "1cslno1",
+   "bkmagq"
   ],
-  "c-files": [
-   "rfhydx"
+  "a-tools": [
+   "1cslno1"
+  ],
+  "c-retrieval": [
+   "1r8a5lt",
+   "1wcemca",
+   "1gymdx7"
+  ],
+  "s-guardrails": [
+   "1r8a5lt",
+   "1vyzb0t"
+  ],
+  "c-citations": [
+   "1747vri"
+  ],
+  "k-review": [
+   "1wcemca"
+  ],
+  "s-models": [
+   "i47it8",
+   "l5f9wm",
+   "1u9fug9"
   ],
   "c-longctx": [
    "1rgkaom",
    "1hvyi6s",
    "1jgw5cz",
-   "1gymdx7",
-   "x2fvp2",
-   "125c0wo"
+   "1gymdx7"
   ],
   "k-cli": [
    "10sfy2b",
@@ -1376,15 +1287,16 @@
    "1ktme1w",
    "1wgt1b8",
    "hzhlbu",
-   "8q1d7k",
-   "mrp0fp",
-   "z0vfxx",
-   "1wzz4of",
-   "qcjcwc"
+   "8q1d7k"
   ],
   "c-editing": [
    "1hvyi6s",
    "1o4n0c"
+  ],
+  "c-memory": [
+   "ftf0uv",
+   "jimnoz",
+   "nwvk8q"
   ],
   "a-managed": [
    "1u1z3v2",
@@ -1394,15 +1306,26 @@
   ],
   "k-plugins": [
    "ouarcq",
+   "127b1zn",
+   "b5u9ys",
    "1jdd67v",
    "16l0xrd",
-   "8q1d7k",
-   "1ov28ac"
+   "8q1d7k"
   ],
   "a-mcp": [
    "1tlnnxf",
    "5envg7",
+   "1y48bvc",
    "66j0eu",
+   "po1d2s",
+   "s25h27",
+   "1bsbb1r",
+   "1vkcjzt",
+   "fh9cgw",
+   "10fqzhi",
+   "1ms5ljt",
+   "aq5ik4",
+   "1tmmmgj",
    "52fenl",
    "yp34ce",
    "i7r6pm",
@@ -1411,33 +1334,15 @@
    "ecdd4g",
    "1635sp3",
    "mzs5ao",
-   "9zfrm4",
-   "monv4s",
-   "1g34gn1",
-   "c940sx",
-   "3sso88",
-   "a640yp",
-   "ntpeq5",
-   "kotgz8",
-   "mrp0fp",
-   "1zkigr"
+   "9zfrm4"
   ],
-  "k-skills": [
-   "bkmagq"
-  ],
-  "s-guardrails": [
-   "1vyzb0t"
+  "f-artifacts": [
+   "hzvm6i"
   ],
   "k-hooks": [
+   "1r7zv4g",
+   "1tmmmgj",
    "1a77g3j"
-  ],
-  "a-sdk": [
-   "c940sx"
-  ],
-  "k-remote": [
-   "z0vfxx",
-   "1wzz4of",
-   "qcjcwc"
   ],
   "s-structured": [
    "1bu0l4m",
@@ -1462,14 +1367,6 @@
    "discipline": "scale",
    "title": "MineralExp: Benchmarking LLM Agents for Experimental Design in Real-World Mineral Exploration",
    "url": "http://arxiv.org/abs/2611.17931v1"
-  },
-  {
-   "id": "xrj3so",
-   "node": "a-scheduled",
-   "nodeTitle": "Scheduled & Autonomous Work",
-   "discipline": "agents",
-   "title": "Adversarially Attacking Symbolic Vocabulary Vulnerabilities In LLM Planners",
-   "url": "http://arxiv.org/abs/2611.17910v1"
   },
   {
    "id": "1azp3ne",
@@ -1597,22 +1494,6 @@
    "nodeTitle": "MCP",
    "discipline": "agents",
    "title": "Fixed startup warnings about permission rules and the \"N MCP servers need authentication\" notice being recorded as seen when they were scrolled out of view",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
-  },
-  {
-   "id": "monv4s",
-   "node": "a-mcp",
-   "nodeTitle": "MCP",
-   "discipline": "agents",
-   "title": "Fixed claude --bg --safe-mode sessions stopping at startup to ask about project MCP servers that safe mode never starts",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
-  },
-  {
-   "id": "3sso88",
-   "node": "a-mcp",
-   "nodeTitle": "MCP",
-   "discipline": "agents",
-   "title": "Fixed SDK sessions giving an MCP server named by --allowedTools or an mcp_tool hook less than 2s before the first turn when settings lowered CLAUDE_CODE_MCP_STARTUP_WAIT_MS after start-up",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   }
  ]
