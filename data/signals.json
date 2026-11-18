@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-17T20:52:14.447Z",
- "itemCount": 71,
+ "generated": "2026-11-18T07:22:57.998Z",
+ "itemCount": 70,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 1236,
-   "kept": 415
+   "fetched": 1322,
+   "kept": 440
   },
   {
    "id": "python-sdk-changelog",
@@ -56,17 +56,66 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 5
+   "kept": 6
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": true,
    "fetched": 20,
-   "kept": 8
+   "kept": 6
   }
  ],
  "items": [
+  {
+   "id": "bx6x82",
+   "title": "Dynamic Task Allocation with Dialogue",
+   "summary": "Effective multi-agent collaboration requires agents to adapt task allocation as goals and responsibilities evolve. Prior task-allocation frameworks often assume static goals, full observability, or rely on large language models (LLMs) without explicit, verifiable beliefs about task allocation or intent. These assumpti…",
+   "url": "http://arxiv.org/abs/2611.23119v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-17T17:37:17Z",
+   "nodes": [
+    "a-teams",
+    "s-observability"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "qtifob",
+   "title": "RagHarnessDebugger: Jev-Guided Agentic RAG in Contract Inference Repair Auditing",
+   "summary": "Agentic systems using retrieval-augmented generation (RAG) must repair their own answers by gathering more evidence, testing alternative policies and deciding if, when, and what repairs are needed. Yet how do we know if a system's repairs are working when metrics like accuracy can be misleading? We present RagHarnessD…",
+   "url": "http://arxiv.org/abs/2611.22991v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-17T16:07:17Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1t21859",
+   "title": "StitchRAG: Constructing Compact and Evidence-Preserving Contexts for RAG with Diffusion-Based Stitching",
+   "summary": "Retrieval-augmented generation (RAG) improves factuality by grounding large language models (LLMs) in external evidence. However, long retrieved contexts incur computational overhead and can even hurt performance due to noisy or irrelevant content. We propose \\textsc{StitchRAG}, a framework for constructing compact co…",
+   "url": "http://arxiv.org/abs/2611.22766v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-17T13:33:26Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "1botn7g",
    "title": "Show HN: Wake, see what Claude Code did and where the tokens went",
@@ -85,65 +134,48 @@
    "application": true
   },
   {
-   "id": "1k6xa3y",
-   "title": "GRACE: Parallel Best-of-N Multi-Agent Analysis of Closed-Form Questions over Dataframes with Guardrail Selection and Adaptive Retry",
-   "summary": "LLM agents answer closed-form questions over a tabular dataframe by writing and executing Python, almost always as a single rollout: one interpretation, one script, one result, accepted without comparison. The few pipelines that produce several candidates reconcile them by answer-agreement voting, which needs a single…",
-   "url": "http://arxiv.org/abs/2611.20983v1",
+   "id": "2zx4qn",
+   "title": "RAG in a Trenchcoat: When Minimal Memory Is Enough for Agentic Systems, and When It Isn't",
+   "summary": "Agentic memory research has accumulated extraction, supersession, reflection, and graph synthesis on top of retrieval-augmented generation. However, we found that almost none of those primitives earn their cost in our tested memory benchmarks: we show this with BRIDGE, a deliberately minimal RAG memory with chained ob…",
+   "url": "http://arxiv.org/abs/2611.22179v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-16T12:16:45Z",
+   "date": "2026-11-17T04:16:34Z",
    "nodes": [
-    "a-teams"
+    "c-retrieval"
    ],
    "relevance": 3,
    "application": false
   },
   {
-   "id": "8uifq1",
-   "title": "Synapse: Optimizing Natural-Language Agent Skills through Program Repair",
-   "summary": "Large language model (LLM) agents can improve task performance by optimizing reusable natural-language skills without updating model parameters. Execution feedback reveals failures but does not directly identify which instructions to edit, which related instructions matter, or which tasks an edit may break. We propose…",
-   "url": "http://arxiv.org/abs/2611.20856v1",
+   "id": "c16znq",
+   "title": "The Only Edge Was Memorized in Training: LLM Trading Agents Around Earnings and Bad News",
+   "summary": "Large language model (LLM) trading agents are tested on news, but news reaches stock prices within minutes, and a benchmark that replays headlines at their publication time finds no alpha in trading on them. Money can then remain in two places, before news whose date is known, such as earnings announcements, and after…",
+   "url": "http://arxiv.org/abs/2611.22177v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-16T10:29:36Z",
+   "date": "2026-11-17T04:13:18Z",
    "nodes": [
-    "k-skills"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1p9aylq",
-   "title": "A Self-Evolving Agent Runs Like a Gas: Describing and Predicting Its Evolution with Fluid Dynamics",
-   "summary": "A self-evolving LLM agent improves in service by rewriting its own plugin library under a validation gate. Agent engineering is converging on exactly such agents: single systems in continuous operation, carrying populations of runtime instances (plugins, skills, tools) past the point where anyone can read the library…",
-   "url": "http://arxiv.org/abs/2611.20584v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-16T06:06:20Z",
-   "nodes": [
-    "k-skills"
+    "s-models"
    ],
    "relevance": 3,
    "application": false
   },
   {
-   "id": "1cslno1",
-   "title": "DAPPT: Domain-Aware Policies from Procedural Trajectories for Sim-to-Real Dexterous Tool Use",
-   "summary": "Sim-to-real RL has achieved impressive results in dexterous manipulation but remains limited to tasks with accurate rigid-body simulation. However, these methods cannot be applied to skills that involve deformable and particles, with which the simulation speed will become too slow for large-scale RL learning. We prese…",
-   "url": "http://arxiv.org/abs/2611.20202v1",
+   "id": "pdraj0",
+   "title": "What RL on Expert-Built Tasks Teaches Nemotron 3.5 Super",
+   "summary": "We post-train NVIDIA's Nemotron 3.5 Super (120B total, 12B active parameters) with reinforcement learning (RL) on five expert-built task datasets, one at a time: real-world software engineering, complex constraints, long-horizon tool use, professional chart understanding and enterprise document reasoning. Each run tra…",
+   "url": "http://arxiv.org/abs/2611.22161v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-15T18:58:02Z",
+   "date": "2026-11-17T03:48:06Z",
    "nodes": [
-    "k-skills",
     "a-tools"
    ],
    "relevance": 3,
@@ -162,22 +194,6 @@
    "nodes": [
     "c-retrieval",
     "s-guardrails"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1747vri",
-   "title": "Security of Deep Research Agents: Attack Surface, Defenses, Benchmarks, and Agenda Seeding against Research Planning",
-   "summary": "Deep research and agentic search agents autonomously retrieve content from the open web and generate reports with citations, and their outputs are often taken directly as research conclusions. This paper systematizes security research in this area along four stages, namely retrieval, planning, evidence integration, an…",
-   "url": "http://arxiv.org/abs/2611.20045v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-15T14:44:28Z",
-   "nodes": [
-    "c-citations"
    ],
    "relevance": 3,
    "application": false
@@ -297,39 +313,6 @@
    ],
    "relevance": 3,
    "application": true
-  },
-  {
-   "id": "1jgw5cz",
-   "title": "TreeAgent: Structure-Aware Memory Agent for Processing Long Hierarchical Data",
-   "summary": "Practical Web applications increasingly require agents to interpret long conversations or documents. For inputs exceeding the context windows of large language models (LLMs), memory agents process segments sequentially and retain past information in bounded memory. However, they typically divide inputs into flat token…",
-   "url": "http://arxiv.org/abs/2611.13946v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-10T11:33:05Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1gymdx7",
-   "title": "OpticalRAG: Pixel-Space Compression for Token-Efficient Retrieval-Augmented Generation",
-   "summary": "Retrieval-augmented generation (RAG) is bottlenecked by the token budget of large language models: feeding long documents into the context window is expensive, while aggressive textual compression discards fine-grained information that is irreversibly lost in a one-dimensional token sequence. We argue that this bottle…",
-   "url": "http://arxiv.org/abs/2611.13675v2",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-10T07:24:50Z",
-   "nodes": [
-    "c-longctx",
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
   },
   {
    "id": "l5f9wm",
@@ -588,6 +571,23 @@
    "application": true
   },
   {
+   "id": "1ayrfjf",
+   "title": "Changed subagent progress summaries in terminal sessions on Amazon Bedrock, Google Vertex AI and Microsoft Foundry to be written from short notes, not the whole conversation, using far fewer tokens",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.327",
+   "date": null,
+   "nodes": [
+    "s-deploy",
+    "a-subagents"
+   ],
+   "relevance": 27,
+   "application": false
+  },
+  {
    "id": "1y48bvc",
    "title": "Fixed tool search sometimes loading another MCP server's tool when asked for a tool by its exact name; you may be asked again for that tool",
    "summary": "",
@@ -617,6 +617,71 @@
     "a-mcp"
    ],
    "relevance": 21,
+   "application": false
+  },
+  {
+   "id": "s8q72q",
+   "title": "Fixed remote MCP servers staying disconnected after a longer outage such as a VPN drop: most servers on other machines reached by hostname over https are now retried in the background for about a day",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.327",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "qxd3gg",
+   "title": "Fixed an MCP server's long question being cut off after one row, text fields hiding long pastes with no sign, and a doubled divider line in /plugin's options and /login's Bedrock and Vertex steps",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.327",
+   "date": null,
+   "nodes": [
+    "a-mcp",
+    "s-deploy"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "e2mqjh",
+   "title": "Improved MCP server pages in /mcp: local, remote and agent servers share one layout, menus end in Back, and actions are no longer numbered outside screen reader mode; use the arrow keys and Enter",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.327",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "mwrctx",
+   "title": "Changed MCP server logs to record the mode, action, and field names of elicitation requests and hook answers, not their full contents",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.327",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
    "application": false
   },
   {
@@ -926,87 +991,6 @@
    "application": false
   },
   {
-   "id": "1jdd67v",
-   "title": "Improved the HTTPS authentication failed message for private plugin marketplaces: it now says git's terminal prompts and askpass programs are disabled, and it also appears with newer git versions",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.325",
-   "date": null,
-   "nodes": [
-    "k-plugins"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "16l0xrd",
-   "title": "Changed plugin marketplace and plugin downloads to use a CONNECT tunnel when ALL_PROXY is the only proxy set; a proxy that refuses CONNECT now fails them",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.325",
-   "date": null,
-   "nodes": [
-    "k-plugins"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "mzs5ao",
-   "title": "[VSCode] Added a field to paste the redirect URL when signing in to an MCP server from the panel in SSH, WSL and container windows",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.325",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "9zfrm4",
-   "title": "Fixed the claude -p warning about an ended claude.ai login to say that claude auth logout also removes saved MCP server logins and plugin secrets",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.323",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "8q1d7k",
-   "title": "Fixed one malformed entry in a plugin marketplace's renames map making Claude Code ignore the marketplace's other renames",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.323",
-   "date": null,
-   "nodes": [
-    "k-plugins",
-    "k-cli"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
    "id": "1bu0l4m",
    "title": "**parse:** keep const in structured output schemas, and drop type beside const and enum",
    "summary": "",
@@ -1233,6 +1217,22 @@
   }
  ],
  "byNode": {
+  "a-teams": [
+   "bx6x82",
+   "lw3x4c",
+   "149yfbh",
+   "1dlcpbs"
+  ],
+  "s-observability": [
+   "bx6x82"
+  ],
+  "c-retrieval": [
+   "qtifob",
+   "1t21859",
+   "2zx4qn",
+   "1r8a5lt",
+   "1wcemca"
+  ],
   "k-cli": [
    "1botn7g",
    "10sfy2b",
@@ -1244,49 +1244,27 @@
    "ouarcq",
    "1ktme1w",
    "1wgt1b8",
-   "hzhlbu",
-   "8q1d7k"
+   "hzhlbu"
   ],
-  "a-teams": [
-   "1k6xa3y",
-   "lw3x4c",
-   "149yfbh",
-   "1dlcpbs"
-  ],
-  "k-skills": [
-   "8uifq1",
-   "1p9aylq",
-   "1cslno1",
-   "bkmagq"
+  "s-models": [
+   "c16znq",
+   "i47it8",
+   "l5f9wm"
   ],
   "a-tools": [
-   "1cslno1"
-  ],
-  "c-retrieval": [
-   "1r8a5lt",
-   "1wcemca",
-   "1gymdx7"
+   "pdraj0"
   ],
   "s-guardrails": [
    "1r8a5lt",
    "17c4avk",
    "wxdzqb"
   ],
-  "c-citations": [
-   "1747vri"
-  ],
   "k-review": [
    "1wcemca"
   ],
-  "s-models": [
-   "i47it8",
-   "l5f9wm"
-  ],
   "c-longctx": [
    "1rgkaom",
-   "1hvyi6s",
-   "1jgw5cz",
-   "1gymdx7"
+   "1hvyi6s"
   ],
   "c-editing": [
    "1hvyi6s"
@@ -1304,16 +1282,17 @@
   "k-plugins": [
    "ouarcq",
    "127b1zn",
-   "b5u9ys",
-   "1jdd67v",
-   "16l0xrd",
-   "8q1d7k"
+   "b5u9ys"
   ],
   "a-mcp": [
    "1tlnnxf",
    "5envg7",
    "1y48bvc",
    "66j0eu",
+   "s8q72q",
+   "qxd3gg",
+   "e2mqjh",
+   "mwrctx",
    "po1d2s",
    "s25h27",
    "1bsbb1r",
@@ -1329,12 +1308,21 @@
    "1a77g3j",
    "l9416t",
    "ecdd4g",
-   "1635sp3",
-   "mzs5ao",
-   "9zfrm4"
+   "1635sp3"
   ],
   "f-artifacts": [
    "hzvm6i"
+  ],
+  "k-skills": [
+   "bkmagq"
+  ],
+  "s-deploy": [
+   "1ayrfjf",
+   "qxd3gg",
+   "r6yf3e"
+  ],
+  "a-subagents": [
+   "1ayrfjf"
   ],
   "k-hooks": [
    "1r7zv4g",
@@ -1350,9 +1338,6 @@
    "lsxl77",
    "99ut0u",
    "166kk28"
-  ],
-  "s-deploy": [
-   "r6yf3e"
   ]
  },
  "applications": [
