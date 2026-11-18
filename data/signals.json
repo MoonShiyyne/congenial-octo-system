@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-18T07:22:57.998Z",
- "itemCount": 70,
+ "generated": "2026-11-18T20:28:04.680Z",
+ "itemCount": 71,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -35,7 +35,7 @@
    "label": "Hacker News · Claude",
    "ok": true,
    "fetched": 47,
-   "kept": 6
+   "kept": 7
   },
   {
    "id": "hn-agents",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 11
+   "kept": 12
   },
   {
    "id": "arxiv-agents",
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "1hcvipd",
+   "title": "Show HN: Terminess, a harness that runs the official Claude Code and Codex CLIs",
+   "summary": "",
+   "url": "https://github.com/Terminess/terminess",
+   "discussion": "https://news.ycombinator.com/item?id=50547235",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "2 pts",
+   "date": "2026-11-18T15:09:12Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 4,
+   "application": true
+  },
   {
    "id": "bx6x82",
    "title": "Dynamic Task Allocation with Dialogue",
@@ -1217,6 +1234,20 @@
   }
  ],
  "byNode": {
+  "k-cli": [
+   "1hcvipd",
+   "1botn7g",
+   "10sfy2b",
+   "1azp3ne",
+   "1ynpj63",
+   "1rvlid5",
+   "16jzqx9",
+   "kginxy",
+   "ouarcq",
+   "1ktme1w",
+   "1wgt1b8",
+   "hzhlbu"
+  ],
   "a-teams": [
    "bx6x82",
    "lw3x4c",
@@ -1232,19 +1263,6 @@
    "2zx4qn",
    "1r8a5lt",
    "1wcemca"
-  ],
-  "k-cli": [
-   "1botn7g",
-   "10sfy2b",
-   "1azp3ne",
-   "1ynpj63",
-   "1rvlid5",
-   "16jzqx9",
-   "kginxy",
-   "ouarcq",
-   "1ktme1w",
-   "1wgt1b8",
-   "hzhlbu"
   ],
   "s-models": [
    "c16znq",
@@ -1341,6 +1359,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "1hcvipd",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Terminess, a harness that runs the official Claude Code and Codex CLIs",
+   "url": "https://github.com/Terminess/terminess"
+  },
   {
    "id": "1botn7g",
    "node": "k-cli",
