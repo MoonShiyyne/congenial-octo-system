@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-19T07:20:06.497Z",
- "itemCount": 75,
+ "generated": "2026-11-19T20:31:28.453Z",
+ "itemCount": 74,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -13,14 +13,14 @@
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 112,
-   "kept": 17
+   "fetched": 88,
+   "kept": 16
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 92,
+   "fetched": 73,
    "kept": 8
   },
   {
@@ -34,7 +34,7 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 47,
+   "fetched": 48,
    "kept": 7
   },
   {
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 12
+   "kept": 11
   },
   {
    "id": "arxiv-agents",
@@ -601,23 +601,6 @@
    "application": true
   },
   {
-   "id": "bkmagq",
-   "title": "Show HN: Open-source skills for end-to-end video ad campaigns",
-   "summary": "",
-   "url": "https://github.com/SupercmoHQ/superCMO-skills",
-   "discussion": "https://news.ycombinator.com/item?id=49888905",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "7 pts",
-   "date": "2026-09-29T06:11:45Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
    "id": "hzhlbu",
    "title": "Show HN: Self-hosted company OS, Claude Code and Codex agents in departments",
    "summary": "",
@@ -1073,6 +1056,22 @@
    "application": true
   },
   {
+   "id": "9ejk2h",
+   "title": "**structured outputs:** build each call's output schema from a cached raw schema",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.11.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.10.0...v2.11.0)",
+   "date": null,
+   "nodes": [
+    "s-structured"
+   ],
+   "relevance": 8,
+   "application": false
+  },
+  {
    "id": "1bu0l4m",
    "title": "**parse:** keep const in structured output schemas, and drop type beside const and enum",
    "summary": "",
@@ -1084,22 +1083,6 @@
    "date": null,
    "nodes": [
     "s-structured"
-   ],
-   "relevance": 8,
-   "application": false
-  },
-  {
-   "id": "jimnoz",
-   "title": "**tools:** keep the memory tool from renaming or deleting the /memories directory",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
-   "category": "model",
-   "badge": "[2.5.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.4.0...v2.5.0)",
-   "date": null,
-   "nodes": [
-    "c-memory"
    ],
    "relevance": 8,
    "application": false
@@ -1121,19 +1104,19 @@
    "application": false
   },
   {
-   "id": "nwvk8q",
-   "title": "**tools:** keep the memory tool from renaming or deleting the /memories directory",
+   "id": "1a26jo",
+   "title": "**api:** add Claude Code managed settings to the Admin API",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
    "category": "model",
-   "badge": "[1.5.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.4.0...sdk-v1.5.0)",
+   "badge": "[2.11.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.10.0...v2.11.0)",
    "date": null,
    "nodes": [
-    "c-memory"
+    "k-cli"
    ],
-   "relevance": 8,
+   "relevance": 6,
    "application": false
   },
   {
@@ -1201,17 +1184,17 @@
    "application": false
   },
   {
-   "id": "r6yf3e",
-   "title": "**bedrock:** send \";\" in a model ID as is, and refuse a model ID whose part before the first \";\" is empty, \".\" or \"..\"",
+   "id": "cf8qgr",
+   "title": "**api:** add Claude Code managed settings to the Admin API",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "[2.8.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.7.0...v2.8.0)",
+   "badge": "[1.11.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.10.0...sdk-v1.11.0)",
    "date": null,
    "nodes": [
-    "s-deploy"
+    "k-cli"
    ],
    "relevance": 6,
    "application": false
@@ -1311,7 +1294,9 @@
    "ouarcq",
    "1ktme1w",
    "1wgt1b8",
-   "hzhlbu"
+   "hzhlbu",
+   "1a26jo",
+   "cf8qgr"
   ],
   "a-tools": [
    "1or0qlo"
@@ -1332,8 +1317,7 @@
    "wxdzqb"
   ],
   "k-skills": [
-   "1fwo2k8",
-   "bkmagq"
+   "1fwo2k8"
   ],
   "s-models": [
    "tmiv6n",
@@ -1353,9 +1337,7 @@
    "1hvyi6s"
   ],
   "c-memory": [
-   "ftf0uv",
-   "jimnoz",
-   "nwvk8q"
+   "ftf0uv"
   ],
   "a-managed": [
    "1u1z3v2",
@@ -1396,8 +1378,7 @@
   "s-deploy": [
    "1ayrfjf",
    "1ng11it",
-   "qxd3gg",
-   "r6yf3e"
+   "qxd3gg"
   ],
   "a-subagents": [
    "1ayrfjf"
@@ -1415,6 +1396,7 @@
    "1tmmmgj"
   ],
   "s-structured": [
+   "9ejk2h",
    "1bu0l4m",
    "nvylf2"
   ],
@@ -1550,14 +1532,6 @@
    "discipline": "craft",
    "title": "Show HN: Gangway, self-hosted artifacts and apps from folders, PRs, and agents",
    "url": "https://github.com/charlesabarnes/gangway"
-  },
-  {
-   "id": "bkmagq",
-   "node": "k-skills",
-   "nodeTitle": "Skills",
-   "discipline": "code",
-   "title": "Show HN: Open-source skills for end-to-end video ad campaigns",
-   "url": "https://github.com/SupercmoHQ/superCMO-skills"
   },
   {
    "id": "hzhlbu",
