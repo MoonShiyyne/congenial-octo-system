@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-18T20:28:04.680Z",
- "itemCount": 71,
+ "generated": "2026-11-19T07:20:06.497Z",
+ "itemCount": 75,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 1322,
-   "kept": 440
+   "fetched": 1382,
+   "kept": 453
   },
   {
    "id": "python-sdk-changelog",
@@ -56,7 +56,7 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 6
+   "kept": 13
   },
   {
    "id": "arxiv-eval",
@@ -76,7 +76,7 @@
    "source": "Hacker News · Claude",
    "sourceId": "hn-claude",
    "category": "market",
-   "badge": "2 pts",
+   "badge": "3 pts",
    "date": "2026-11-18T15:09:12Z",
    "nodes": [
     "k-cli"
@@ -85,32 +85,64 @@
    "application": true
   },
   {
-   "id": "bx6x82",
-   "title": "Dynamic Task Allocation with Dialogue",
-   "summary": "Effective multi-agent collaboration requires agents to adapt task allocation as goals and responsibilities evolve. Prior task-allocation frameworks often assume static goals, full observability, or rely on large language models (LLMs) without explicit, verifiable beliefs about task allocation or intent. These assumpti…",
-   "url": "http://arxiv.org/abs/2611.23119v1",
+   "id": "1or0qlo",
+   "title": "CanopyKV: Remember beyond the Crop for Fast Active Visual Reasoning",
+   "summary": "Active visual reasoning enables multimodal models to answer challenging visual questions by gathering fine-grained evidence through iterative image inspection and tool use. However, accumulating crops and reasoning tokens expands the key-value (KV) cache, making compression important for reducing memory and inference…",
+   "url": "http://arxiv.org/abs/2611.24373v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-17T17:37:17Z",
+   "date": "2026-11-18T13:05:16Z",
    "nodes": [
-    "a-teams",
-    "s-observability"
+    "a-tools"
    ],
    "relevance": 3,
    "application": false
   },
   {
-   "id": "qtifob",
-   "title": "RagHarnessDebugger: Jev-Guided Agentic RAG in Contract Inference Repair Auditing",
-   "summary": "Agentic systems using retrieval-augmented generation (RAG) must repair their own answers by gathering more evidence, testing alternative policies and deciding if, when, and what repairs are needed. Yet how do we know if a system's repairs are working when metrics like accuracy can be misleading? We present RagHarnessD…",
-   "url": "http://arxiv.org/abs/2611.22991v1",
+   "id": "dnx3j6",
+   "title": "PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents",
+   "summary": "Large language model (LLM) agents routinely interact with untrusted external data, exposing them to indirect prompt injection (IPI) attacks that hijack agents into executing attacker-chosen tasks. To uncover these vulnerabilities at scale, automated red-teaming methods often leverage reinforcement learning (RL) to gen…",
+   "url": "http://arxiv.org/abs/2611.24362v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-17T16:07:17Z",
+   "date": "2026-11-18T12:56:06Z",
+   "nodes": [
+    "c-retrieval",
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "14inomn",
+   "title": "AutoPI: Taxonomy-Guided Adaptive Red Teaming for Prompt Injection in LLM Agents",
+   "summary": "Prompt injection is the dominant unsolved security risk for LLM agents, and the community now agrees that robustness must be measured against adaptive attackers rather than fixed benchmark injections. Many adaptive red teamers exist, and most are built to maximize attack success rate (ASR). Yet ASR counts how often a…",
+   "url": "http://arxiv.org/abs/2611.24313v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-18T12:20:58Z",
+   "nodes": [
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ll9kcl",
+   "title": "KnowledgeClaw: Towards Agentic Knowledge Engineering via Omnimodal Hypergraphs",
+   "summary": "Knowledge engineering (KE) turns raw files into a reasoning-ready knowledge base, a task now within reach of LLM agents. KE has progressed from chunk and graph retrieval-augmented generation (RAG) to memory agents, agentic KE and multimodal KE. However, a live knowledge base needs omnimodality, a closed-loop lifecycle…",
+   "url": "http://arxiv.org/abs/2611.24294v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-18T12:06:06Z",
    "nodes": [
     "c-retrieval"
    ],
@@ -118,15 +150,95 @@
    "application": false
   },
   {
-   "id": "1t21859",
-   "title": "StitchRAG: Constructing Compact and Evidence-Preserving Contexts for RAG with Diffusion-Based Stitching",
-   "summary": "Retrieval-augmented generation (RAG) improves factuality by grounding large language models (LLMs) in external evidence. However, long retrieved contexts incur computational overhead and can even hurt performance due to noisy or irrelevant content. We propose \\textsc{StitchRAG}, a framework for constructing compact co…",
-   "url": "http://arxiv.org/abs/2611.22766v1",
+   "id": "1fwo2k8",
+   "title": "Guarding the Kingdom of Skill-Based Agents in the AI Dynasty of Computation: Control-Flow Integrity for Agent Skills",
+   "summary": "Control-flow integrity (CFI) confines a program to a control-flow graph fixed ahead of time. Procedural agent skills move this control flow into prompt text, and a large language model (LLM) agent decides at runtime whether each step runs in its reasoning, a tool call, or a script. The procedure's control skeleton sur…",
+   "url": "http://arxiv.org/abs/2611.24185v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-17T13:33:26Z",
+   "date": "2026-11-18T10:26:09Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "tmiv6n",
+   "title": "VideoACE: Benchmarking Agentic Video Understanding through High-Frame-Rate Actions",
+   "summary": "Agentic video understanding requires models to actively interact with video environments to gather evidence and form judgments. Evaluating this capability therefore requires assessing whether models can translate opportunities for interaction into better understanding. We introduce VideoACE, a benchmark for assessing…",
+   "url": "http://arxiv.org/abs/2611.24184v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-18T10:26:07Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1t7d225",
+   "title": "Benchmarking Reasoning Reliability,Prior_Evidence Contrast,and Spectral Discrimination in Remote-Sensing Geological Image Interpretation",
+   "summary": "Reliable lithology interpretation requires accurate geological recognition and reasoning grounded in visual evidence. Although Multimodal Large Language Models show promise in remote sensing, their reliability in geological interpretation remains unclear. We introduce HyGeoBench, a diagnostic benchmark of 10,000 quest…",
+   "url": "http://arxiv.org/abs/2611.24068v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-18T09:02:08Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "16ur6ut",
+   "title": "A Hybrid RAG Framework for Deceptive Review Detection: Integrating RoBERTa-LoRA, FAISS-Based Retrieval, and LLM Reasoning",
+   "summary": "The growth of deceptive online opinions poses a critical risk of misinformation and fraud. This paper proposes a Retrieval-Augmented Generation (RAG) system to automatically distinguish spam reviews. The architecture integrates RoBERTa with Low-Rank Adaptation (LoRA) classification, FAISS semantic vector retrieval, an…",
+   "url": "http://arxiv.org/abs/2611.24049v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-18T08:39:46Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "f193dh",
+   "title": "A Capability Framework for Evaluating Agentic AI Platforms in Regulated Enterprises",
+   "summary": "Agentic AI platforms-systems in which LLM agents plan, invoke tools, retain memory and coordinate to change the state of enterprise systems-are being procured faster than they can be measured. Public agent benchmarks score models in fixed harnesses; enterprises buy integrated platforms whose orchestration, memory, gov…",
+   "url": "http://arxiv.org/abs/2611.24039v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-18T08:28:02Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1psaurd",
+   "title": "Quantifying the Intrusiveness of Retrofitting Retrieval-Augmented Generation onto Legacy Software Systems",
+   "summary": "Enterprises increasingly add retrieval-augmented generation (RAG) to existing REST and monolithic systems, usually by writing an ad hoc HTTP call into a handler, and have no way to quantify how intrusive that choice is. We present (1) a taxonomy of three retrofit patterns, sidecar, SDK-embed and naive-invasive; (2) th…",
+   "url": "http://arxiv.org/abs/2611.23931v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-18T06:22:21Z",
    "nodes": [
     "c-retrieval"
    ],
@@ -149,54 +261,6 @@
    ],
    "relevance": 3,
    "application": true
-  },
-  {
-   "id": "2zx4qn",
-   "title": "RAG in a Trenchcoat: When Minimal Memory Is Enough for Agentic Systems, and When It Isn't",
-   "summary": "Agentic memory research has accumulated extraction, supersession, reflection, and graph synthesis on top of retrieval-augmented generation. However, we found that almost none of those primitives earn their cost in our tested memory benchmarks: we show this with BRIDGE, a deliberately minimal RAG memory with chained ob…",
-   "url": "http://arxiv.org/abs/2611.22179v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-17T04:16:34Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "c16znq",
-   "title": "The Only Edge Was Memorized in Training: LLM Trading Agents Around Earnings and Bad News",
-   "summary": "Large language model (LLM) trading agents are tested on news, but news reaches stock prices within minutes, and a benchmark that replays headlines at their publication time finds no alpha in trading on them. Money can then remain in two places, before news whose date is known, such as earnings announcements, and after…",
-   "url": "http://arxiv.org/abs/2611.22177v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-17T04:13:18Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "pdraj0",
-   "title": "What RL on Expert-Built Tasks Teaches Nemotron 3.5 Super",
-   "summary": "We post-train NVIDIA's Nemotron 3.5 Super (120B total, 12B active parameters) with reinforcement learning (RL) on five expert-built task datasets, one at a time: real-world software engineering, complex constraints, long-horizon tool use, professional chart understanding and enterprise document reasoning. Each run tra…",
-   "url": "http://arxiv.org/abs/2611.22161v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-17T03:48:06Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
   },
   {
    "id": "1r8a5lt",
@@ -637,6 +701,104 @@
    "application": false
   },
   {
+   "id": "1ng11it",
+   "title": "Added auto mode for Claude Opus 4.6 and Sonnet 4.6 on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude apps gateway; interactive sessions with no permission mode start in it",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.328",
+   "date": null,
+   "nodes": [
+    "s-deploy",
+    "k-permissions"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "xjbaah",
+   "title": "Fixed Code Mode scripts in auto and bypass-permissions modes failing to call an MCP server that had connected while the previous script was running",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.328",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "rkxukw",
+   "title": "Self-hosted runner: Fixed a session with a damaged .claude.json failing every later start under --trust-workspace false; it now starts on defaults, with MCP servers turned off there on again",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.328",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "hss7yb",
+   "title": "Improved prompt caching for new Code Mode sessions that have MCP servers, and Claude is now told when a server is still connecting and when the list of servers changes",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.328",
+   "date": null,
+   "nodes": [
+    "a-mcp",
+    "c-cache"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1b7gr9a",
+   "title": "Changed Code Mode to no longer run UserPromptSubmit hooks, managed ones included, on scripts' output; to redact that output, use a PostToolUse hook with updatedToolOutput",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.328",
+   "date": null,
+   "nodes": [
+    "k-hooks"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "17cl2t7",
+   "title": "Changed managed PostToolUse hooks to no longer fire for calls refused before they ran: no log entry, rewrite, block or stop there; PostToolBatch gets most, not marked as refused",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.328",
+   "date": null,
+   "nodes": [
+    "k-hooks"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
    "id": "s8q72q",
    "title": "Fixed remote MCP servers staying disconnected after a longer outage such as a VPN drop: most servers on other machines reached by hostname over https are now retried in the background for about a day",
    "summary": "",
@@ -911,103 +1073,6 @@
    "application": true
   },
   {
-   "id": "yp34ce",
-   "title": "Fixed Claude Desktop and SDK sessions listing a folder's own MCP servers (.mcp.json, local) as host-added or not at all, and not connecting WebSocket ones, after a folder move or pre-warmed start",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.325",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "i7r6pm",
-   "title": "Fixed /mcp still listing a plugin's MCP server after a plugin reload removed it while it was connecting",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.325",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1a77g3j",
-   "title": "Fixed an MCP server staying \"needs authentication\", and its mcp_tool hooks being skipped, after a token refresh that was refused only for a moment",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.325",
-   "date": null,
-   "nodes": [
-    "a-mcp",
-    "k-hooks"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "l9416t",
-   "title": "Fixed MCP tool calls from an SDK host answering \"Not connected\" after a tool call had reconnected the MCP server",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.325",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "ecdd4g",
-   "title": "Fixed Code Mode scripts ignoring a worktree entered with EnterWorktree, writing ~ paths into the project, and leaving /mcp showing an MCP server as connected after its sign-in expired",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.325",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1635sp3",
-   "title": "Fixed deny and ask permission rules starting with mcp__plugin_*_ missing a plugin's MCP server or tool spelled in another letter case",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.325",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
    "id": "1bu0l4m",
    "title": "**parse:** keep const in structured output schemas, and drop type beside const and enum",
    "summary": "",
@@ -1248,34 +1313,34 @@
    "1wgt1b8",
    "hzhlbu"
   ],
-  "a-teams": [
-   "bx6x82",
-   "lw3x4c",
-   "149yfbh",
-   "1dlcpbs"
-  ],
-  "s-observability": [
-   "bx6x82"
+  "a-tools": [
+   "1or0qlo"
   ],
   "c-retrieval": [
-   "qtifob",
-   "1t21859",
-   "2zx4qn",
+   "dnx3j6",
+   "ll9kcl",
+   "16ur6ut",
+   "1psaurd",
    "1r8a5lt",
    "1wcemca"
   ],
-  "s-models": [
-   "c16znq",
-   "i47it8",
-   "l5f9wm"
-  ],
-  "a-tools": [
-   "pdraj0"
-  ],
   "s-guardrails": [
+   "dnx3j6",
+   "14inomn",
    "1r8a5lt",
    "17c4avk",
    "wxdzqb"
+  ],
+  "k-skills": [
+   "1fwo2k8",
+   "bkmagq"
+  ],
+  "s-models": [
+   "tmiv6n",
+   "1t7d225",
+   "f193dh",
+   "i47it8",
+   "l5f9wm"
   ],
   "k-review": [
    "1wcemca"
@@ -1307,6 +1372,9 @@
    "5envg7",
    "1y48bvc",
    "66j0eu",
+   "xjbaah",
+   "rkxukw",
+   "hss7yb",
    "s8q72q",
    "qxd3gg",
    "e2mqjh",
@@ -1320,32 +1388,31 @@
    "1ms5ljt",
    "aq5ik4",
    "1tmmmgj",
-   "52fenl",
-   "yp34ce",
-   "i7r6pm",
-   "1a77g3j",
-   "l9416t",
-   "ecdd4g",
-   "1635sp3"
+   "52fenl"
   ],
   "f-artifacts": [
    "hzvm6i"
   ],
-  "k-skills": [
-   "bkmagq"
-  ],
   "s-deploy": [
    "1ayrfjf",
+   "1ng11it",
    "qxd3gg",
    "r6yf3e"
   ],
   "a-subagents": [
    "1ayrfjf"
   ],
+  "k-permissions": [
+   "1ng11it"
+  ],
+  "c-cache": [
+   "hss7yb"
+  ],
   "k-hooks": [
+   "1b7gr9a",
+   "17cl2t7",
    "1r7zv4g",
-   "1tmmmgj",
-   "1a77g3j"
+   "1tmmmgj"
   ],
   "s-structured": [
    "1bu0l4m",
@@ -1356,6 +1423,11 @@
    "lsxl77",
    "99ut0u",
    "166kk28"
+  ],
+  "a-teams": [
+   "lw3x4c",
+   "149yfbh",
+   "1dlcpbs"
   ]
  },
  "applications": [
@@ -1366,6 +1438,14 @@
    "discipline": "code",
    "title": "Show HN: Terminess, a harness that runs the official Claude Code and Codex CLIs",
    "url": "https://github.com/Terminess/terminess"
+  },
+  {
+   "id": "dnx3j6",
+   "node": "c-retrieval",
+   "nodeTitle": "Retrieval vs. Context",
+   "discipline": "context",
+   "title": "PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents",
+   "url": "http://arxiv.org/abs/2611.24362v1"
   },
   {
    "id": "1botn7g",
