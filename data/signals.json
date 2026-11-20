@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-19T20:31:28.453Z",
- "itemCount": 74,
+ "generated": "2026-11-20T07:10:05.994Z",
+ "itemCount": 72,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 1382,
-   "kept": 453
+   "fetched": 1366,
+   "kept": 443
   },
   {
    "id": "python-sdk-changelog",
@@ -56,17 +56,229 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 13
+   "kept": 10
   },
   {
    "id": "arxiv-eval",
    "label": "arXiv · evaluation & prompting",
    "ok": true,
    "fetched": 20,
-   "kept": 6
+   "kept": 4
   }
  ],
  "items": [
+  {
+   "id": "1azp3ne",
+   "title": "Show HN: Zeus – Claude Code for AI voice agents",
+   "summary": "",
+   "url": "https://thunderphone.com/blog/introducing-zeus",
+   "discussion": "https://news.ycombinator.com/item?id=50568763",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "2 pts",
+   "date": "2026-11-20T00:51:52Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "xgvv83",
+   "title": "AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher",
+   "summary": "Task success alone does not specify which behaviors post-training should reinforce. Even successful teacher trajectories can contain unsupported assumptions, unproductive repetition, or superficial verification. We propose Skill-FT (Skill-Guided Fine-Tuning), which uses natural-language skills to suppress undesirable…",
+   "url": "http://arxiv.org/abs/2611.26510v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-19T17:57:59Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "efp13m",
+   "title": "Held While Waiting: What LLM Agent Sessions Reserve on Serverless and Agent Runtimes",
+   "summary": "LLM agents spend nearly all their time waiting for the model. On Amazon Bedrock AgentCore, our agents waited a median of 2.7 seconds for each model reply, then computed for an estimated 5 to 40 milliseconds. AgentCore does not charge for CPU during the wait. But it reserves a separate environment, a virtual machine wi…",
+   "url": "http://arxiv.org/abs/2611.26480v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-19T17:40:09Z",
+   "nodes": [
+    "a-managed",
+    "s-deploy"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "18t00l3",
+   "title": "Risk-Controlled Test-Time Adaptation for Vision-Language-Action Models",
+   "summary": "Retrieval-augmented vision-language-action (VLA) models enable efficient test-time adaptation by leveraging expert demonstrations as additional context without updating model parameters. However, even when retrieved demonstrations are relevant to the current task, the VLA may fail to effectively utilize the retrieved…",
+   "url": "http://arxiv.org/abs/2611.26438v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-19T17:12:48Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "fmfhw8",
+   "title": "SkillBridge: Cost-Aware Diagnosis and Repair of Cross-OS Compatibility Defects in Agent Skills",
+   "summary": "LLM agents increasingly reuse executable capabilities through skills, but a skill that works on one OS may fail on another because OS assumptions are spread across guide text, scripts, metadata, install contracts, and local entrypoints. Diagnosing such failures by running every skill on every OS is expensive: many exe…",
+   "url": "http://arxiv.org/abs/2611.26256v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-19T15:30:28Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "1mkz6lf",
+   "title": "SpatialMem: Building Quantitative Spatial Reasoning Agents with Hierarchical Memory",
+   "summary": "Vision Language Models (VLMs) have shown remarkable capabilities in qualitative spatial reasoning, but remain limited in quantitative spatial reasoning. Current work leverages the VLM agent to invoke external vision tools to perform computation. However, these methods usually bind each functional requirement to a sing…",
+   "url": "http://arxiv.org/abs/2611.25925v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-19T11:08:50Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "cn6zmq",
+   "title": "Harnessing Medical Visual-Language Models with Agentic Evidence Management",
+   "summary": "Medical vision-language agents increasingly rely on segmentation tools, and recent work has focused on acquiring the right mask, often treating a good mask as the end point of tool use. But do these agents use the resulting evidence effectively? To answer this question, we need a benchmark that separates evidence use…",
+   "url": "http://arxiv.org/abs/2611.25840v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-19T09:55:33Z",
+   "nodes": [
+    "a-tools",
+    "s-models"
+   ],
+   "relevance": 4,
+   "application": false
+  },
+  {
+   "id": "1e3d6ad",
+   "title": "RAVEN: A Self-RAG Based Agent for Threat Classification and Response",
+   "summary": "Security event analysis in large enterprises can be overwhelming, as each alert typically requires manual in- spection by human operators. This process is time-consuming and prone to inconsistencies, especially in high-volume Secu- rity Operations Center (SOC) environments. In this work- in-progress paper, we present…",
+   "url": "http://arxiv.org/abs/2611.25832v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-19T09:47:11Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "5okm4f",
+   "title": "ALIoTh: Orchestrating Multi-Agent LLMs for Autonomous IoT Penetration Testing",
+   "summary": "Penetration testing in Internet of Things (IoT) environments, especially those composed of various different devices, e.g., smart plugs, smart cameras, and smart doors, presents great challenges across the phases of information gathering, attack surface enumeration, privilege escalation, and lateral movement. This pap…",
+   "url": "http://arxiv.org/abs/2611.25809v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-19T09:31:08Z",
+   "nodes": [
+    "a-teams"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "iykqog",
+   "title": "A$^2$-VLA: Adapting Vision-Language-Action Policies to New Tools through Agentic Affordance Discovery",
+   "summary": "Tools with different shapes can have similar functions, but transferring manipulation skills across tools requires understanding how tool geometry relates to the specific task and adjusting the manipulation strategy accordingly. The key challenge is to discover the common affordances that contribute to task completion…",
+   "url": "http://arxiv.org/abs/2611.25656v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-19T07:38:47Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1p6ygpl",
+   "title": "Rubric Semantics or Numerical Priors? Auditing Scale-Direction Bias in LLM Judges",
+   "summary": "Recent benchmark evaluations increasingly rely on Large Language Models (LLMs) as automatic judges. This paradigm assumes LLMs evaluate based on the rubric's semantic meaning rather than its numeric scale. We question this assumption by introducing semantic faithfulness: the principle that semantically equivalent rubr…",
+   "url": "http://arxiv.org/abs/2611.25588v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-19T06:31:51Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "9m4sls",
+   "title": "AutoRAGBench: A Benchmark for LLM Agents Automating RAG System Development",
+   "summary": "Retrieval-augmented generation (RAG) is a well-established paradigm for augmenting large language models (LLMs) with information retrieved from external corpora. However, developing effective RAG systems requires substantial engineering effort and iterative experimentation, as effective design choices vary across task…",
+   "url": "http://arxiv.org/abs/2611.25582v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-19T06:26:28Z",
+   "nodes": [
+    "c-retrieval",
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "gp9c2n",
+   "title": "Forget Freely, Grep Later: Lossless, Index-Free Memory for Long-Horizon LLM Agents",
+   "summary": "Long-horizon LLM agents often exceed their context windows, forcing them to discard information that may be needed later. Existing context management strategies rely on summarization, masking, or structured memory, requiring decisions about what to preserve or how to retrieve it before future needs are known. However,…",
+   "url": "http://arxiv.org/abs/2611.25123v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-18T20:02:57Z",
+   "nodes": [
+    "c-longctx"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "1hcvipd",
    "title": "Show HN: Terminess, a harness that runs the official Claude Code and Codex CLIs",
@@ -83,167 +295,6 @@
    ],
    "relevance": 4,
    "application": true
-  },
-  {
-   "id": "1or0qlo",
-   "title": "CanopyKV: Remember beyond the Crop for Fast Active Visual Reasoning",
-   "summary": "Active visual reasoning enables multimodal models to answer challenging visual questions by gathering fine-grained evidence through iterative image inspection and tool use. However, accumulating crops and reasoning tokens expands the key-value (KV) cache, making compression important for reducing memory and inference…",
-   "url": "http://arxiv.org/abs/2611.24373v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-18T13:05:16Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "dnx3j6",
-   "title": "PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents",
-   "summary": "Large language model (LLM) agents routinely interact with untrusted external data, exposing them to indirect prompt injection (IPI) attacks that hijack agents into executing attacker-chosen tasks. To uncover these vulnerabilities at scale, automated red-teaming methods often leverage reinforcement learning (RL) to gen…",
-   "url": "http://arxiv.org/abs/2611.24362v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-18T12:56:06Z",
-   "nodes": [
-    "c-retrieval",
-    "s-guardrails"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "14inomn",
-   "title": "AutoPI: Taxonomy-Guided Adaptive Red Teaming for Prompt Injection in LLM Agents",
-   "summary": "Prompt injection is the dominant unsolved security risk for LLM agents, and the community now agrees that robustness must be measured against adaptive attackers rather than fixed benchmark injections. Many adaptive red teamers exist, and most are built to maximize attack success rate (ASR). Yet ASR counts how often a…",
-   "url": "http://arxiv.org/abs/2611.24313v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-18T12:20:58Z",
-   "nodes": [
-    "s-guardrails"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "ll9kcl",
-   "title": "KnowledgeClaw: Towards Agentic Knowledge Engineering via Omnimodal Hypergraphs",
-   "summary": "Knowledge engineering (KE) turns raw files into a reasoning-ready knowledge base, a task now within reach of LLM agents. KE has progressed from chunk and graph retrieval-augmented generation (RAG) to memory agents, agentic KE and multimodal KE. However, a live knowledge base needs omnimodality, a closed-loop lifecycle…",
-   "url": "http://arxiv.org/abs/2611.24294v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-18T12:06:06Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1fwo2k8",
-   "title": "Guarding the Kingdom of Skill-Based Agents in the AI Dynasty of Computation: Control-Flow Integrity for Agent Skills",
-   "summary": "Control-flow integrity (CFI) confines a program to a control-flow graph fixed ahead of time. Procedural agent skills move this control flow into prompt text, and a large language model (LLM) agent decides at runtime whether each step runs in its reasoning, a tool call, or a script. The procedure's control skeleton sur…",
-   "url": "http://arxiv.org/abs/2611.24185v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-18T10:26:09Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "tmiv6n",
-   "title": "VideoACE: Benchmarking Agentic Video Understanding through High-Frame-Rate Actions",
-   "summary": "Agentic video understanding requires models to actively interact with video environments to gather evidence and form judgments. Evaluating this capability therefore requires assessing whether models can translate opportunities for interaction into better understanding. We introduce VideoACE, a benchmark for assessing…",
-   "url": "http://arxiv.org/abs/2611.24184v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-18T10:26:07Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1t7d225",
-   "title": "Benchmarking Reasoning Reliability,Prior_Evidence Contrast,and Spectral Discrimination in Remote-Sensing Geological Image Interpretation",
-   "summary": "Reliable lithology interpretation requires accurate geological recognition and reasoning grounded in visual evidence. Although Multimodal Large Language Models show promise in remote sensing, their reliability in geological interpretation remains unclear. We introduce HyGeoBench, a diagnostic benchmark of 10,000 quest…",
-   "url": "http://arxiv.org/abs/2611.24068v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-18T09:02:08Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "16ur6ut",
-   "title": "A Hybrid RAG Framework for Deceptive Review Detection: Integrating RoBERTa-LoRA, FAISS-Based Retrieval, and LLM Reasoning",
-   "summary": "The growth of deceptive online opinions poses a critical risk of misinformation and fraud. This paper proposes a Retrieval-Augmented Generation (RAG) system to automatically distinguish spam reviews. The architecture integrates RoBERTa with Low-Rank Adaptation (LoRA) classification, FAISS semantic vector retrieval, an…",
-   "url": "http://arxiv.org/abs/2611.24049v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-18T08:39:46Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "f193dh",
-   "title": "A Capability Framework for Evaluating Agentic AI Platforms in Regulated Enterprises",
-   "summary": "Agentic AI platforms-systems in which LLM agents plan, invoke tools, retain memory and coordinate to change the state of enterprise systems-are being procured faster than they can be measured. Public agent benchmarks score models in fixed harnesses; enterprises buy integrated platforms whose orchestration, memory, gov…",
-   "url": "http://arxiv.org/abs/2611.24039v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-18T08:28:02Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1psaurd",
-   "title": "Quantifying the Intrusiveness of Retrofitting Retrieval-Augmented Generation onto Legacy Software Systems",
-   "summary": "Enterprises increasingly add retrieval-augmented generation (RAG) to existing REST and monolithic systems, usually by writing an ad hoc HTTP call into a handler, and have no way to quantify how intrusive that choice is. We present (1) a taxonomy of three retrofit patterns, sidecar, SDK-embed and naive-invasive; (2) th…",
-   "url": "http://arxiv.org/abs/2611.23931v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-18T06:22:21Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
   },
   {
    "id": "1botn7g",
@@ -297,38 +348,6 @@
    "application": false
   },
   {
-   "id": "i47it8",
-   "title": "MineralExp: Benchmarking LLM Agents for Experimental Design in Real-World Mineral Exploration",
-   "summary": "In mineral exploration, verifying geological hypotheses relies on designing a variety of geochemical experiments. While large language model (LLM) agents increasingly automate downstream geoscientific data analysis, a crucial upstream capability remains largely unexplored: automated geochemical experimental design, i.…",
-   "url": "http://arxiv.org/abs/2611.17931v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-13T09:10:58Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "1rgkaom",
-   "title": "Consistent Video-to-Video Translation via Explicit Correspondences",
-   "summary": "Interactive video-to-video applications require real-time generation while maintaining long-range temporal consistency. However, recent methods achieve speed by restricting attention to a fixed-length causal window. This limits long-range consistency whenever relevant history falls outside the context window. To addre…",
-   "url": "http://arxiv.org/abs/2611.17298v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-12T18:55:09Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
    "id": "10sfy2b",
    "title": "Claude Code's API billing depends on how often the cache expires",
    "summary": "",
@@ -344,56 +363,6 @@
    ],
    "relevance": 3,
    "application": false
-  },
-  {
-   "id": "1hvyi6s",
-   "title": "Folio: Recoverable Multi-Resolution Context Folding for Long-Horizon Language Agents",
-   "summary": "Long-horizon language agents accumulate tool results and replies until the history no longer fits the context window. Current agents shrink this history by having a model summarize it, so each compaction rereads and rewrites the history it replaces, and cache-aware triggers decide when to compact while taking the size…",
-   "url": "http://arxiv.org/abs/2611.16627v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-12T10:59:40Z",
-   "nodes": [
-    "c-longctx",
-    "c-editing"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "ftf0uv",
-   "title": "DISCERN: Preserve at Write, Resolve at Read for Persistent LLM-Agent Memory",
-   "summary": "Enterprise agents accumulate memory across dozens of sessions in which facts contradict, get superseded, and blur as similarly named entities collide in embedding space. The field treats this as a retrieval problem; we show it is not. On ENT-310, a synthetic enterprise sales-agent memory benchmark of 310 queries (210…",
-   "url": "http://arxiv.org/abs/2611.15729v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-11T17:06:07Z",
-   "nodes": [
-    "c-memory"
-   ],
-   "relevance": 4,
-   "application": false
-  },
-  {
-   "id": "1azp3ne",
-   "title": "Show HN: Zeus – Claude Code for AI voice agents",
-   "summary": "",
-   "url": "https://thunderphone.com/blog/introducing-zeus",
-   "discussion": "https://news.ycombinator.com/item?id=50445758",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "2 pts",
-   "date": "2026-11-10T20:20:03Z",
-   "nodes": [
-    "k-cli"
-   ],
-   "relevance": 3,
-   "application": true
   },
   {
    "id": "l5f9wm",
@@ -635,6 +604,23 @@
    "application": true
   },
   {
+   "id": "zz3we2",
+   "title": "Fixed PDFs, images and .docx, .xlsx or .pptx files that MCP servers or websites send as application/octet-stream being saved as .bin, which kept Claude from reading the PDFs and images",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.329",
+   "date": null,
+   "nodes": [
+    "f-docs",
+    "a-mcp"
+   ],
+   "relevance": 27,
+   "application": false
+  },
+  {
    "id": "1ayrfjf",
    "title": "Changed subagent progress summaries in terminal sessions on Amazon Bedrock, Google Vertex AI and Microsoft Foundry to be written from short notes, not the whole conversation, using far fewer tokens",
    "summary": "",
@@ -649,6 +635,22 @@
     "a-subagents"
    ],
    "relevance": 27,
+   "application": false
+  },
+  {
+   "id": "1boo7oa",
+   "title": "Fixed Claude not being told that a connected MCP server's tools could not be loaded, and taking it for a server with no tools, in sessions with tool search",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.329",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 24,
    "application": false
   },
   {
@@ -668,6 +670,22 @@
    "application": false
   },
   {
+   "id": "1qx6450",
+   "title": "Fixed the Claude Docs connector's tools going missing when a plugin or MCP server at the same address failed to connect, and its error wrongly suggesting /login",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.329",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 21,
+   "application": false
+  },
+  {
    "id": "66j0eu",
    "title": "Changed which MCP servers are reported by name in OpenTelemetry exports to follow the current connector directory",
    "summary": "",
@@ -681,6 +699,87 @@
     "a-mcp"
    ],
    "relevance": 21,
+   "application": false
+  },
+  {
+   "id": "nipaxh",
+   "title": "Added a \"Server message\" row to a server's page in /mcp that shows the JSON-RPC error message of a remote HTTP MCP server that refuses the connection",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.329",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "85bq9m",
+   "title": "Fixed an MCP server being signed in again after you cleared its authentication while a token refresh was running",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.329",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1qu4p7p",
+   "title": "Fixed background MCP tasks that stalled after a slow reconnect: Claude Code now reconnects most HTTP MCP servers by itself when one is left on an older protocol version",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.329",
+   "date": null,
+   "nodes": [
+    "a-mcp",
+    "k-cli"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "kwxrc6",
+   "title": "Fixed a removed plugin's MCP server staying connected in headless sessions after reload_plugins or when the account's plugin list drops it",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.329",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1ta6q8e",
+   "title": "Fixed remote MCP servers in self-hosted runner sessions staying without tools, or (over https) disconnected, after a timeout or network error",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.329",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
    "application": false
   },
   {
@@ -927,135 +1026,6 @@
    "application": false
   },
   {
-   "id": "fh9cgw",
-   "title": "Fixed Esc doing nothing while an MCP server reconnects: Esc, or Ctrl+C pressed twice, now closes the wait and the reconnect continues in the background",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.326",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "10fqzhi",
-   "title": "Fixed Tab and Shift+Tab not moving between fields in an MCP server's input form, and a required field there keeping its tick after being emptied",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.326",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1ms5ljt",
-   "title": "Fixed Stop in cloud and self-hosted runner sessions sometimes waiting for slow MCP servers to connect before taking effect",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.326",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "127b1zn",
-   "title": "Fixed a hang on malformed glob patterns in settings, plugin marketplace entries and Grep file filters",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.326",
-   "date": null,
-   "nodes": [
-    "k-plugins"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "aq5ik4",
-   "title": "Improved time to first response in Claude Desktop's new sessions: the first turn no longer waits up to 500 ms for local MCP servers whose tools load on demand",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.326",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "b5u9ys",
-   "title": "Improved /plugin Marketplaces and Add marketplace: a compact list, a clearer remove confirmation, a clear text field and shorter errors when adding fails",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.326",
-   "date": null,
-   "nodes": [
-    "k-plugins"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1tmmmgj",
-   "title": "Changed enabled plugins that were refused for a malformed plugin.json display field: they now load, with their hooks and MCP servers; administrators should check the plugins they deploy",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.326",
-   "date": null,
-   "nodes": [
-    "a-mcp",
-    "k-hooks"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "52fenl",
-   "title": "Fixed startup warnings about permission rules and the \"N MCP servers need authentication\" notice being recorded as seen when they were scrolled out of view",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.325",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": true
-  },
-  {
    "id": "9ejk2h",
    "title": "**structured outputs:** build each call's output schema from a cached raw schema",
    "summary": "",
@@ -1283,10 +1253,10 @@
  ],
  "byNode": {
   "k-cli": [
+   "1azp3ne",
    "1hcvipd",
    "1botn7g",
    "10sfy2b",
-   "1azp3ne",
    "1ynpj63",
    "1rvlid5",
    "16jzqx9",
@@ -1295,65 +1265,77 @@
    "1ktme1w",
    "1wgt1b8",
    "hzhlbu",
+   "1qu4p7p",
    "1a26jo",
    "cf8qgr"
   ],
-  "a-tools": [
-   "1or0qlo"
-  ],
-  "c-retrieval": [
-   "dnx3j6",
-   "ll9kcl",
-   "16ur6ut",
-   "1psaurd",
-   "1r8a5lt",
-   "1wcemca"
-  ],
-  "s-guardrails": [
-   "dnx3j6",
-   "14inomn",
-   "1r8a5lt",
-   "17c4avk",
-   "wxdzqb"
-  ],
   "k-skills": [
-   "1fwo2k8"
-  ],
-  "s-models": [
-   "tmiv6n",
-   "1t7d225",
-   "f193dh",
-   "i47it8",
-   "l5f9wm"
-  ],
-  "k-review": [
-   "1wcemca"
-  ],
-  "c-longctx": [
-   "1rgkaom",
-   "1hvyi6s"
-  ],
-  "c-editing": [
-   "1hvyi6s"
-  ],
-  "c-memory": [
-   "ftf0uv"
+   "xgvv83",
+   "fmfhw8",
+   "iykqog"
   ],
   "a-managed": [
+   "efp13m",
    "1u1z3v2",
    "1maeyx6",
    "1dlcpbs"
   ],
+  "s-deploy": [
+   "efp13m",
+   "1ayrfjf",
+   "1ng11it",
+   "qxd3gg"
+  ],
+  "c-retrieval": [
+   "18t00l3",
+   "1mkz6lf",
+   "1e3d6ad",
+   "9m4sls",
+   "1r8a5lt",
+   "1wcemca"
+  ],
+  "a-tools": [
+   "cn6zmq"
+  ],
+  "s-models": [
+   "cn6zmq",
+   "1p6ygpl",
+   "9m4sls",
+   "l5f9wm"
+  ],
+  "a-teams": [
+   "5okm4f",
+   "lw3x4c",
+   "149yfbh",
+   "1dlcpbs"
+  ],
+  "c-longctx": [
+   "gp9c2n"
+  ],
+  "s-guardrails": [
+   "1r8a5lt",
+   "17c4avk",
+   "wxdzqb"
+  ],
+  "k-review": [
+   "1wcemca"
+  ],
   "k-plugins": [
-   "ouarcq",
-   "127b1zn",
-   "b5u9ys"
+   "ouarcq"
   ],
   "a-mcp": [
    "1tlnnxf",
    "5envg7",
+   "zz3we2",
+   "1boo7oa",
    "1y48bvc",
+   "1qx6450",
    "66j0eu",
+   "nipaxh",
+   "85bq9m",
+   "1qu4p7p",
+   "kwxrc6",
+   "1ta6q8e",
    "xjbaah",
    "rkxukw",
    "hss7yb",
@@ -1364,21 +1346,13 @@
    "po1d2s",
    "s25h27",
    "1bsbb1r",
-   "1vkcjzt",
-   "fh9cgw",
-   "10fqzhi",
-   "1ms5ljt",
-   "aq5ik4",
-   "1tmmmgj",
-   "52fenl"
+   "1vkcjzt"
   ],
   "f-artifacts": [
    "hzvm6i"
   ],
-  "s-deploy": [
-   "1ayrfjf",
-   "1ng11it",
-   "qxd3gg"
+  "f-docs": [
+   "zz3we2"
   ],
   "a-subagents": [
    "1ayrfjf"
@@ -1392,8 +1366,7 @@
   "k-hooks": [
    "1b7gr9a",
    "17cl2t7",
-   "1r7zv4g",
-   "1tmmmgj"
+   "1r7zv4g"
   ],
   "s-structured": [
    "9ejk2h",
@@ -1405,14 +1378,33 @@
    "lsxl77",
    "99ut0u",
    "166kk28"
-  ],
-  "a-teams": [
-   "lw3x4c",
-   "149yfbh",
-   "1dlcpbs"
   ]
  },
  "applications": [
+  {
+   "id": "1azp3ne",
+   "node": "k-cli",
+   "nodeTitle": "Claude Code",
+   "discipline": "code",
+   "title": "Show HN: Zeus – Claude Code for AI voice agents",
+   "url": "https://thunderphone.com/blog/introducing-zeus"
+  },
+  {
+   "id": "1p6ygpl",
+   "node": "s-models",
+   "nodeTitle": "Choosing a Model",
+   "discipline": "scale",
+   "title": "Rubric Semantics or Numerical Priors? Auditing Scale-Direction Bias in LLM Judges",
+   "url": "http://arxiv.org/abs/2611.25588v1"
+  },
+  {
+   "id": "9m4sls",
+   "node": "c-retrieval",
+   "nodeTitle": "Retrieval vs. Context",
+   "discipline": "context",
+   "title": "AutoRAGBench: A Benchmark for LLM Agents Automating RAG System Development",
+   "url": "http://arxiv.org/abs/2611.25582v1"
+  },
   {
    "id": "1hcvipd",
    "node": "k-cli",
@@ -1422,36 +1414,12 @@
    "url": "https://github.com/Terminess/terminess"
   },
   {
-   "id": "dnx3j6",
-   "node": "c-retrieval",
-   "nodeTitle": "Retrieval vs. Context",
-   "discipline": "context",
-   "title": "PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents",
-   "url": "http://arxiv.org/abs/2611.24362v1"
-  },
-  {
    "id": "1botn7g",
    "node": "k-cli",
    "nodeTitle": "Claude Code",
    "discipline": "code",
    "title": "Show HN: Wake, see what Claude Code did and where the tokens went",
    "url": "https://rcruz.dev/wake/"
-  },
-  {
-   "id": "i47it8",
-   "node": "s-models",
-   "nodeTitle": "Choosing a Model",
-   "discipline": "scale",
-   "title": "MineralExp: Benchmarking LLM Agents for Experimental Design in Real-World Mineral Exploration",
-   "url": "http://arxiv.org/abs/2611.17931v1"
-  },
-  {
-   "id": "1azp3ne",
-   "node": "k-cli",
-   "nodeTitle": "Claude Code",
-   "discipline": "code",
-   "title": "Show HN: Zeus – Claude Code for AI voice agents",
-   "url": "https://thunderphone.com/blog/introducing-zeus"
   },
   {
    "id": "1ynpj63",
@@ -1548,14 +1516,6 @@
    "discipline": "agents",
    "title": "Show HN: Salestrics – An open MCP server and CRM for AI-native revenue teams",
    "url": "https://www.salestrics.com/"
-  },
-  {
-   "id": "52fenl",
-   "node": "a-mcp",
-   "nodeTitle": "MCP",
-   "discipline": "agents",
-   "title": "Fixed startup warnings about permission rules and the \"N MCP servers need authentication\" notice being recorded as seen when they were scrolled out of view",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
   }
  ]
 }
