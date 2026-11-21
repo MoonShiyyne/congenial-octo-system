@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-20T20:11:29.059Z",
+ "generated": "2026-11-21T07:01:33.599Z",
  "itemCount": 73,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
    "label": "Claude Code changelog",
    "ok": true,
-   "fetched": 1366,
-   "kept": 443
+   "fetched": 1390,
+   "kept": 444
   },
   {
    "id": "python-sdk-changelog",
@@ -719,6 +719,72 @@
    "application": false
   },
   {
+   "id": "15deyvx",
+   "title": "Added a notice in cloud and self-hosted runner sessions when a plugin marketplace can't be fetched because its repository isn't one of the session's",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.330",
+   "date": null,
+   "nodes": [
+    "k-plugins"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1p0v6jt",
+   "title": "Fixed an MCP server that subagents declare being shut down when one of them finished, while other subagents or the session were still using it",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.330",
+   "date": null,
+   "nodes": [
+    "a-mcp",
+    "a-subagents"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "1v7hg88",
+   "title": "Fixed an \"MCP server blocked by enterprise policy: easel\" warning showing at every start when an MCP allowlist or denylist excludes the built-in chart tool, which stays blocked",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.330",
+   "date": null,
+   "nodes": [
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
+   "id": "o427qv",
+   "title": "[VSCode] Fixed holding Enter on /rewind restoring files, and a double click on Remove or Delete removing a memory, MCP server or plugin marketplace, without confirmation",
+   "summary": "",
+   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+   "source": "Claude Code changelog",
+   "sourceId": "claude-code-changelog",
+   "category": "tooling",
+   "badge": "2.1.330",
+   "date": null,
+   "nodes": [
+    "k-plugins",
+    "a-mcp"
+   ],
+   "relevance": 18,
+   "application": false
+  },
+  {
    "id": "nipaxh",
    "title": "Added a \"Server message\" row to a server's page in /mcp that shows the JSON-RPC error message of a remote HTTP MCP server that refuses the connection",
    "summary": "",
@@ -965,70 +1031,6 @@
   {
    "id": "po1d2s",
    "title": "Added a message explaining why MCP servers stop loading when an administrator adds managed-mcp.json during a session",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.326",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1r7zv4g",
-   "title": "Fixed PreToolUse hooks in managed settings leaving no OpenTelemetry tool_decision event or permission_denials entry when they refused a direct tool call",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.326",
-   "date": null,
-   "nodes": [
-    "k-hooks"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "s25h27",
-   "title": "Fixed a tool call to an MCP server that an SDK host had just removed reconnecting to it, or reporting that it needs authentication",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.326",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1bsbb1r",
-   "title": "Fixed Claude not being told that a remote MCP server's question was declined when the server then failed the tool call",
-   "summary": "",
-   "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-   "source": "Claude Code changelog",
-   "sourceId": "claude-code-changelog",
-   "category": "tooling",
-   "badge": "2.1.326",
-   "date": null,
-   "nodes": [
-    "a-mcp"
-   ],
-   "relevance": 18,
-   "application": false
-  },
-  {
-   "id": "1vkcjzt",
-   "title": "Fixed /mcp not showing why a local (stdio) MCP server failed to start",
    "summary": "",
    "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
    "source": "Claude Code changelog",
@@ -1339,7 +1341,9 @@
    "1wcemca"
   ],
   "k-plugins": [
-   "ouarcq"
+   "ouarcq",
+   "15deyvx",
+   "o427qv"
   ],
   "a-mcp": [
    "1tlnnxf",
@@ -1349,6 +1353,9 @@
    "1y48bvc",
    "1qx6450",
    "66j0eu",
+   "1p0v6jt",
+   "1v7hg88",
+   "o427qv",
    "nipaxh",
    "85bq9m",
    "1qu4p7p",
@@ -1361,10 +1368,7 @@
    "qxd3gg",
    "e2mqjh",
    "mwrctx",
-   "po1d2s",
-   "s25h27",
-   "1bsbb1r",
-   "1vkcjzt"
+   "po1d2s"
   ],
   "f-artifacts": [
    "hzvm6i"
@@ -1373,7 +1377,8 @@
    "zz3we2"
   ],
   "a-subagents": [
-   "1ayrfjf"
+   "1ayrfjf",
+   "1p0v6jt"
   ],
   "k-permissions": [
    "1ng11it"
@@ -1383,8 +1388,7 @@
   ],
   "k-hooks": [
    "1b7gr9a",
-   "17cl2t7",
-   "1r7zv4g"
+   "17cl2t7"
   ],
   "s-structured": [
    "9ejk2h",
