@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-23T23:50:21.834Z",
- "itemCount": 73,
+ "generated": "2026-11-24T09:50:29.439Z",
+ "itemCount": 71,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -56,7 +56,7 @@
    "label": "arXiv · agents & LLM systems",
    "ok": true,
    "fetched": 25,
-   "kept": 11
+   "kept": 8
   },
   {
    "id": "arxiv-eval",
@@ -68,31 +68,65 @@
  ],
  "items": [
   {
-   "id": "1udalv2",
-   "title": "EvoTER: Evolving Embodied Agents via Tool-Use Experience and Reflection",
-   "summary": "Long-horizon embodied tasks require agents to ground instructions in changing observations, coordinate heterogeneous tools, and recover from failures that can propagate through downstream operations. Although existing LLM-based agents retain experience and refine reusable skills, successful local repairs do not by the…",
-   "url": "http://arxiv.org/abs/2611.27797v1",
+   "id": "7bymj9",
+   "title": "MAASAI: A Tool-Augmented Multi-Agent System for Astronomical Data Analysis",
+   "summary": "Modern astronomical workflows require the coordinated use of specialised software, scientific archives, heterogeneous data, and domain-specific knowledge. Advances in large language models and multimodal foundation models enable natural-language interaction with scientific data and tools. Realising this potential requ…",
+   "url": "http://arxiv.org/abs/2611.31088v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-20T16:28:51Z",
+   "date": "2026-11-23T17:35:44Z",
    "nodes": [
-    "k-skills"
+    "a-teams"
    ],
    "relevance": 3,
    "application": false
   },
   {
-   "id": "91ciwr",
-   "title": "Report2Alpha-Bench: Evaluating LLM Agents on End-to-End Quantitative Research",
-   "summary": "We evaluate whether LLM agents can independently carry out a several-hour quantitative research project: read a brokerage research report, make a plan, and over 7 rounds of iteration propose hypotheses, write factor code and improve it from backtest feedback, seeing only 2022-2023 market data. Like Terminal-Bench-Scie…",
-   "url": "http://arxiv.org/abs/2611.27635v1",
+   "id": "1x9fw10",
+   "title": "From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems",
+   "summary": "In multi-agent systems (MAS) built on large language models (LLMs), errors can propagate through intermediate messages and compromise final answers. However, outcome-based evaluation obscures how agents amplify, attenuate, or correct these errors. We propose Response-Aware Error Propagation among Agents (REPA), a stru…",
+   "url": "http://arxiv.org/abs/2611.31063v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-20T14:00:32Z",
+   "date": "2026-11-23T17:20:43Z",
+   "nodes": [
+    "a-teams",
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ed3lv8",
+   "title": "Carried-Over and Agent-Native Threats in the Supply Chain of LLM Agent Skills",
+   "summary": "Agent skills are reusable packages that extend a large language model (LLM) agent with scripts, third-party dependencies, and natural-language instructions. An agent builds a skill's arguments from user requests and untrusted external content, so a flaw left by a benign author can escalate a prompt injection to code e…",
+   "url": "http://arxiv.org/abs/2611.30932v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-23T16:20:29Z",
+   "nodes": [
+    "k-skills",
+    "s-guardrails"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
+   "id": "lrk6tu",
+   "title": "SuSi-RAG: A Hybrid Graph RAG for Equipment Maintenance",
+   "summary": "In the manufacturing domain, equipment maintenance tasks depend on expert knowledge. Their documentation is often stored in heterogeneous formats and sources. The enhancement of LLMs with Retrieval-Augmented Generation (RAG) is promising for bridging the scattered knowledge, but traditional vector-based RAG shows weak…",
+   "url": "http://arxiv.org/abs/2611.30588v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-23T12:27:46Z",
    "nodes": [
     "c-retrieval"
    ],
@@ -100,66 +134,82 @@
    "application": false
   },
   {
-   "id": "11e5736",
-   "title": "When Visually Rich Documents Meet Multi-Vector Retrieval for Region-level Retrieval-Augmented Generation",
-   "summary": "Visually rich documents (VRDs) convey knowledge through textual, visual, and layout information that text-centric Retrieval-Augmented Generation (Text-RAG) struggles to fully exploit. Recent Vision-RAG approaches enable retrieval and generation directly from document images, retaining this multimodal information. Howe…",
-   "url": "http://arxiv.org/abs/2611.27542v1",
+   "id": "y95qaa",
+   "title": "Automated Call for Action: RAG-Based Environmental Law Enforcement Screening System",
+   "summary": "Environmental law inspectors face a structural issue in identifying potential violations from data: they often do not have the capacity to deal with large volume of data present in the emission events. This paper examines to what extent an LLM-based system can support evidence assembly and permit-based screening of su…",
+   "url": "http://arxiv.org/abs/2611.30423v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-20T12:38:38Z",
+   "date": "2026-11-23T10:18:39Z",
    "nodes": [
-    "c-files",
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
+   "id": "1dr7ohc",
+   "title": "HWRE-Bench: Can LLM Agents Understand Hardware They Did Not Design?",
+   "summary": "Hardware benchmarks for LLM agents all run the design flow forward, from a specification to RTL, a layout or a bug fix. We ask the reverse question: given an implemented artifact, such as a layout, a gate-level netlist or a protected simulation model, can an agent work out what it does well enough to act on that knowl…",
+   "url": "http://arxiv.org/abs/2611.30422v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-23T10:18:07Z",
+   "nodes": [
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1ppk523",
+   "title": "MH-RAG-DIVE: Dynamic and Cost-Efficient Multi-Hop RAG Evaluation via Tree-Cached Dialogue Simulation",
+   "summary": "Quality assessment is essential for determining whether changes to a Retrieval-Augmented Generation system improve or maintain its performance. However, existing evaluation approaches often rely on single-turn or single-hop interactions and therefore do not capture the complexity of multi-hop, multi-turn conversations…",
+   "url": "http://arxiv.org/abs/2611.30335v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-23T09:13:07Z",
+   "nodes": [
     "c-retrieval"
    ],
    "relevance": 3,
    "application": false
   },
   {
-   "id": "tdo4uu",
-   "title": "Poisoning Attacks and Collaborative Defense Framework for LightRAG-Based Construction Regulation Knowledge",
-   "summary": "Retrieval-augmented generation (RAG) is widely used in construction, yet the security of building-regulation knowledge bases has received little study. This thesis reports a pre-registered experiment on one fully instrumented LightRAG system built on the UK Approved Documents. Using a 150-item benchmark labeled with s…",
-   "url": "http://arxiv.org/abs/2611.27460v1",
+   "id": "leqacq",
+   "title": "Visual-RFT++: Extending Visual Reinforcement Fine-Tuning to Multimodal Tool Use",
+   "summary": "Reinforcement Fine-Tuning (RFT) has recently become a central paradigm for advancing Large Reasoning Models (LRMs), as demonstrated by systems such as OpenAI's o3 and the R1 series. Despite significant progress in LLMs, how to leverage RFT to unify visual perception, step-by-step reasoning, and agentic tool use into o…",
+   "url": "http://arxiv.org/abs/2611.30193v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-20T11:08:17Z",
+   "date": "2026-11-23T07:36:15Z",
    "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "18nmdgh",
-   "title": "Learning When to Ask: Advisor-Aware Post-Training for SLM Agents",
-   "summary": "Small language models (SLMs) are increasingly attractive for cheap, high-throughput agentic deployment, but they remain weak at multi-step reasoning and tool use that long-horizon tasks demand. We study how to post-train an SLM to seek advice from a stronger model and act on that advice itself, following an advisor-ex…",
-   "url": "http://arxiv.org/abs/2611.27443v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-20T10:39:02Z",
-   "nodes": [
+    "c-retrieval",
     "a-tools"
    ],
    "relevance": 3,
    "application": false
   },
   {
-   "id": "gd9c31",
-   "title": "Detecting Word-Substitution Poisoning of a RAG Knowledge Base with Relative Entropy and Runtime Verification",
-   "summary": "A retrieval-augmented generation (RAG) system answers questions using passages it retrieves from a knowledge base, so users must trust that knowledge base. We study an attacker who quietly edits existing passages by swapping words for synonyms (PWWS, TextFooler) in a cybersecurity RAG system built from MITRE ATT&CK an…",
-   "url": "http://arxiv.org/abs/2611.27410v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
+   "id": "1l9huae",
+   "title": "VistaTree: Question Answering over Long Multimodal Documents with Image-Derived Summary Trees",
+   "summary": "Answering questions over long multimodal documents requires locating relevant evidence across pages containing text, tables, and figures. When the document exceeds the model's context window, selective retrieval becomes necessary. We introduce VistaTree, a document question-answering agent that builds a summary tree d…",
+   "url": "http://arxiv.org/abs/2611.29419v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-20T10:15:58Z",
+   "date": "2026-11-22T11:55:45Z",
    "nodes": [
-    "c-retrieval"
+    "c-longctx"
    ],
    "relevance": 3,
    "application": false
@@ -178,70 +228,6 @@
     "s-models"
    ],
    "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "107j7q8",
-   "title": "$γ$-Scape: An Agent-Centric World for Mobile Embodied Intelligence",
-   "summary": "Recent embodied agents construct and adapt robot behavior through executable programs, tool use, and interaction feedback. Studying these systems in mobile manipulation calls for physical worlds that connect agent-directed execution with its physical consequences and reusable interaction experience. We introduce $γ$-S…",
-   "url": "http://arxiv.org/abs/2611.27306v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-20T08:49:02Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "c2hgvd",
-   "title": "HookEvo: A Framework for Coordinated Plugin Evolution on Hook-Enabled Agent Runtimes",
-   "summary": "Repairing failures in tool-using agents can require coordinated changes to how the harness interprets tool receipts, assembles context, and checks actions. We introduce HookEvo, a framework that uses an existing agent runtime's lifecycle hooks to evolve task-specific harnesses. We instantiate HookEvo on DeepSeek Harne…",
-   "url": "http://arxiv.org/abs/2611.27294v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-20T08:31:28Z",
-   "nodes": [
-    "k-hooks"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "rel62o",
-   "title": "\"More Than You Expect!\": Leakage-Abuse Attacks on Encrypted Vector Search",
-   "summary": "Vector databases support semantic search and retrieval-augmented generation, but embeddings, queries, and record labels may contain sensitive information. Although encrypted vector search protects these contents, some schemes expose records retrieved together across queries. We identify semantic neighborhood leakage,…",
-   "url": "http://arxiv.org/abs/2611.27174v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-20T06:00:12Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 4,
-   "application": false
-  },
-  {
-   "id": "1oungud",
-   "title": "$R^2$: Recognizing and Reducing Redundant Visual Tool Use",
-   "summary": "Recent studies have shown that visual tools can improve multimodal reasoning. However, the effects of tools vary substantially across samples, and benchmark accuracy alone does not reveal whether tool interactions are beneficial or redundant. We present $R^2$, a framework that recognizes and reduces redundant visual t…",
-   "url": "http://arxiv.org/abs/2611.27070v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-20T03:38:36Z",
-   "nodes": [
-    "a-tools"
-   ],
-   "relevance": 4,
    "application": false
   },
   {
@@ -328,35 +314,17 @@
    "application": true
   },
   {
-   "id": "1r8a5lt",
-   "title": "Risk-certified prompt optimization for LLM-as-a-judge guardrails",
-   "summary": "LLM-as-a-judge guardrails are often controlled primarily through system prompts, yet standard prompt optimization methods target average performance rather than explicit safety constraints. This paper studies system-prompt selection as a constrained optimization problem: maximize benign pass rate while keeping the mis…",
-   "url": "http://arxiv.org/abs/2611.20156v1",
+   "id": "11m6mkp",
+   "title": "VTree: Question-Driven Growth of Hierarchical Memory for Agentic Long-Video Understanding",
+   "summary": "Long videos spanning tens of minutes to hours far exceed the context window of today's vision-language models, and the standard remedy of sparse uniform frame sampling discards exactly the fine-grained evidence that specific questions depend on. Existing video agents explore on demand but re-explore from scratch for e…",
+   "url": "http://arxiv.org/abs/2611.28093v1",
    "source": "arXiv · evaluation & prompting",
    "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-15T17:45:49Z",
+   "date": "2026-11-17T07:16:51Z",
    "nodes": [
-    "c-retrieval",
-    "s-guardrails"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1wcemca",
-   "title": "Context Matters: Improving LLM-Based Code Summarization with Hierarchical Information",
-   "summary": "Source code documentation plays an important role in software quality activities, such as code review, program comprehension, maintenance, and bug fixing. However, it is often fragmented across individual code elements and focuses on local implementation details, providing little information about their surrounding co…",
-   "url": "http://arxiv.org/abs/2611.18964v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-13T21:40:43Z",
-   "nodes": [
-    "c-retrieval",
-    "k-review"
+    "c-longctx"
    ],
    "relevance": 3,
    "application": false
@@ -1266,39 +1234,42 @@
   }
  ],
  "byNode": {
+  "a-teams": [
+   "7bymj9",
+   "1x9fw10"
+  ],
+  "s-models": [
+   "1x9fw10",
+   "1dr7ohc",
+   "1xoxg2h",
+   "1p6ygpl",
+   "l5f9wm"
+  ],
   "k-skills": [
-   "1udalv2"
+   "ed3lv8"
+  ],
+  "s-guardrails": [
+   "ed3lv8",
+   "17c4avk",
+   "wxdzqb"
   ],
   "c-retrieval": [
-   "91ciwr",
-   "11e5736",
-   "tdo4uu",
-   "gd9c31",
-   "rel62o",
-   "1r8a5lt",
-   "1wcemca",
+   "lrk6tu",
+   "y95qaa",
+   "1ppk523",
+   "leqacq",
    "1s1dlbz",
    "18q993h",
    "hvyvr2",
    "6u8370"
   ],
-  "c-files": [
-   "11e5736"
-  ],
   "a-tools": [
-   "18nmdgh",
-   "107j7q8",
-   "1oungud"
+   "leqacq"
   ],
-  "s-models": [
-   "1xoxg2h",
-   "1p6ygpl",
-   "l5f9wm"
-  ],
-  "k-hooks": [
-   "c2hgvd",
-   "1b7gr9a",
-   "17cl2t7"
+  "c-longctx": [
+   "1l9huae",
+   "gp9c2n",
+   "11m6mkp"
   ],
   "k-cli": [
    "1azp3ne",
@@ -1316,17 +1287,6 @@
    "1qu4p7p",
    "1a26jo",
    "cf8qgr"
-  ],
-  "c-longctx": [
-   "gp9c2n"
-  ],
-  "s-guardrails": [
-   "1r8a5lt",
-   "17c4avk",
-   "wxdzqb"
-  ],
-  "k-review": [
-   "1wcemca"
   ],
   "a-managed": [
    "1u1z3v2",
@@ -1383,6 +1343,10 @@
   "c-cache": [
    "hss7yb"
   ],
+  "k-hooks": [
+   "1b7gr9a",
+   "17cl2t7"
+  ],
   "s-batch": [
    "1il4nu9",
    "aj5cli"
@@ -1396,6 +1360,14 @@
   ]
  },
  "applications": [
+  {
+   "id": "y95qaa",
+   "node": "c-retrieval",
+   "nodeTitle": "Retrieval vs. Context",
+   "discipline": "context",
+   "title": "Automated Call for Action: RAG-Based Environmental Law Enforcement Screening System",
+   "url": "http://arxiv.org/abs/2611.30423v1"
+  },
   {
    "id": "1azp3ne",
    "node": "k-cli",
