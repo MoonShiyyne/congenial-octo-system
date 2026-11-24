@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-24T09:50:29.439Z",
- "itemCount": 71,
+ "generated": "2026-11-24T22:23:07.104Z",
+ "itemCount": 72,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -13,14 +13,14 @@
    "id": "python-sdk-changelog",
    "label": "Anthropic Python SDK",
    "ok": true,
-   "fetched": 73,
-   "kept": 12
+   "fetched": 67,
+   "kept": 11
   },
   {
    "id": "typescript-sdk-changelog",
    "label": "Anthropic TypeScript SDK",
    "ok": true,
-   "fetched": 62,
+   "fetched": 60,
    "kept": 9
   },
   {
@@ -34,7 +34,7 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 48,
+   "fetched": 47,
    "kept": 7
   },
   {
@@ -552,6 +552,23 @@
    "application": true
   },
   {
+   "id": "bkmagq",
+   "title": "Show HN: Open-source skills for end-to-end video ad campaigns",
+   "summary": "",
+   "url": "https://github.com/SupercmoHQ/superCMO-skills",
+   "discussion": "https://news.ycombinator.com/item?id=49888905",
+   "source": "Show HN · built with AI",
+   "sourceId": "hn-show",
+   "category": "market",
+   "badge": "7 pts",
+   "date": "2026-09-29T06:11:45Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": true
+  },
+  {
    "id": "hzhlbu",
    "title": "Show HN: Self-hosted company OS, Claude Code and Codex agents in departments",
    "summary": "",
@@ -1057,6 +1074,22 @@
    "application": false
   },
   {
+   "id": "1hlgbjc",
+   "title": "**docs:** name both causes of the tool use limit error",
+   "summary": "",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
+   "source": "Anthropic Python SDK",
+   "sourceId": "python-sdk-changelog",
+   "category": "model",
+   "badge": "[2.14.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.13.0...v2.14.0)",
+   "date": null,
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 6,
+   "application": false
+  },
+  {
    "id": "1s1dlbz",
    "title": "**api:** add External Storage to the Admin API beta",
    "summary": "",
@@ -1121,17 +1154,17 @@
    "application": false
   },
   {
-   "id": "17c4avk",
-   "title": "**api:** add error codes for linked billing refusals",
+   "id": "76q8kv",
+   "title": "**docs:** name both causes of the tool use limit error",
    "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md",
-   "source": "Anthropic Python SDK",
-   "sourceId": "python-sdk-changelog",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
+   "source": "Anthropic TypeScript SDK",
+   "sourceId": "typescript-sdk-changelog",
    "category": "model",
-   "badge": "[2.10.0](https://github.com/anthropics/anthropic-sdk-python/compare/v2.9.0...v2.10.0)",
+   "badge": "[1.14.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.13.0...sdk-v1.14.0)",
    "date": null,
    "nodes": [
-    "s-guardrails"
+    "a-tools"
    ],
    "relevance": 6,
    "application": false
@@ -1215,22 +1248,6 @@
    ],
    "relevance": 6,
    "application": false
-  },
-  {
-   "id": "166kk28",
-   "title": "**tools:** stop the session tool runner from running the tool calls of a terminated session thread",
-   "summary": "",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/blob/main/CHANGELOG.md",
-   "source": "Anthropic TypeScript SDK",
-   "sourceId": "typescript-sdk-changelog",
-   "category": "model",
-   "badge": "[1.10.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.9.0...sdk-v1.10.0)",
-   "date": null,
-   "nodes": [
-    "a-runner"
-   ],
-   "relevance": 6,
-   "application": false
   }
  ],
  "byNode": {
@@ -1246,11 +1263,11 @@
    "l5f9wm"
   ],
   "k-skills": [
-   "ed3lv8"
+   "ed3lv8",
+   "bkmagq"
   ],
   "s-guardrails": [
    "ed3lv8",
-   "17c4avk",
    "wxdzqb"
   ],
   "c-retrieval": [
@@ -1264,7 +1281,9 @@
    "6u8370"
   ],
   "a-tools": [
-   "leqacq"
+   "leqacq",
+   "1hlgbjc",
+   "76q8kv"
   ],
   "c-longctx": [
    "1l9huae",
@@ -1355,8 +1374,7 @@
    "9ejk2h"
   ],
   "a-runner": [
-   "99ut0u",
-   "166kk28"
+   "99ut0u"
   ]
  },
  "applications": [
@@ -1479,6 +1497,14 @@
    "discipline": "craft",
    "title": "Show HN: Gangway, self-hosted artifacts and apps from folders, PRs, and agents",
    "url": "https://github.com/charlesabarnes/gangway"
+  },
+  {
+   "id": "bkmagq",
+   "node": "k-skills",
+   "nodeTitle": "Skills",
+   "discipline": "code",
+   "title": "Show HN: Open-source skills for end-to-end video ad campaigns",
+   "url": "https://github.com/SupercmoHQ/superCMO-skills"
   },
   {
    "id": "hzhlbu",
