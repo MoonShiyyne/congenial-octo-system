@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-26T08:11:51.139Z",
- "itemCount": 74,
+ "generated": "2026-11-26T21:27:52.339Z",
+ "itemCount": 73,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -49,7 +49,7 @@
    "label": "Show HN · built with AI",
    "ok": true,
    "fetched": 50,
-   "kept": 11
+   "kept": 10
   },
   {
    "id": "arxiv-agents",
@@ -580,23 +580,6 @@
     "f-artifacts"
    ],
    "relevance": 5,
-   "application": true
-  },
-  {
-   "id": "bkmagq",
-   "title": "Show HN: Open-source skills for end-to-end video ad campaigns",
-   "summary": "",
-   "url": "https://github.com/SupercmoHQ/superCMO-skills",
-   "discussion": "https://news.ycombinator.com/item?id=49888905",
-   "source": "Show HN · built with AI",
-   "sourceId": "hn-show",
-   "category": "market",
-   "badge": "7 pts",
-   "date": "2026-09-29T06:11:45Z",
-   "nodes": [
-    "k-skills"
-   ],
-   "relevance": 3,
    "application": true
   },
   {
@@ -1296,7 +1279,6 @@
   "k-skills": [
    "s4r7z4",
    "1sfafpy",
-   "bkmagq",
    "1iqa1zj"
   ],
   "c-retrieval": [
@@ -1521,14 +1503,6 @@
    "discipline": "craft",
    "title": "Show HN: Gangway, self-hosted artifacts and apps from folders, PRs, and agents",
    "url": "https://github.com/charlesabarnes/gangway"
-  },
-  {
-   "id": "bkmagq",
-   "node": "k-skills",
-   "nodeTitle": "Skills",
-   "discipline": "code",
-   "title": "Show HN: Open-source skills for end-to-end video ad campaigns",
-   "url": "https://github.com/SupercmoHQ/superCMO-skills"
   },
   {
    "id": "hzhlbu",
