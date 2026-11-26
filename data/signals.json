@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T21:38:56.870Z",
+ "generated": "2026-11-26T08:11:51.139Z",
  "itemCount": 74,
  "sourceStatus": [
   {
@@ -68,51 +68,181 @@
  ],
  "items": [
   {
-   "id": "5bb4rq",
-   "title": "Leto: Utility-Centric Agent Memory",
-   "summary": "Large language model (LLM) agents rely on external memory to retain and reuse information across interactions. Existing memory systems treat memory as a record of the past and evaluate it by fidelity to the conversation. However, the value of memory lies in whether it improves the agent's response. A memory system dec…",
-   "url": "http://arxiv.org/abs/2611.33005v1",
+   "id": "1u98lc8",
+   "title": "EvoLink-Bench: A Benchmark for Evaluating Self-Evolving Agents in Long-Horizon Interdependent Task Streams",
+   "summary": "Large language model (LLM) agents are evolving from passive chatbots into autonomous systems that operate continuously in dynamic environments. Such agents need not only solve current tasks but also learn from past interactions to improve future performance. However, existing streaming benchmarks often rely on short t…",
+   "url": "http://arxiv.org/abs/2611.34400v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-24T17:30:06Z",
+   "date": "2026-11-25T14:00:22Z",
    "nodes": [
-    "c-memory"
+    "s-models"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "s4r7z4",
+   "title": "MedSkill-E$^{2}$: Evaluating and Evolving Skills for Medical Agents",
+   "summary": "Large language model (LLM) agents increasingly use skills to access domain knowledge and complete real-world tasks. We observe that even when a skill specifies the rules and procedures needed for a task, agents may fail to apply them effectively during autonomous execution, a phenomenon we call skill Enable But Underu…",
+   "url": "http://arxiv.org/abs/2611.34250v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-25T12:13:27Z",
+   "nodes": [
+    "k-skills"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1fft2uq",
+   "title": "MINE: A Training-Free Defense against Indirect Prompt Injection via Mutual Information and Embedding Variance",
+   "summary": "Existing defenses against indirect prompt injection in retrieval-augmented generation (RAG) are inherently reactive: prompt-engineering methods are often overridden by the injected instructions, while supervised detectors must be retrained for each new attack style. We propose a different paradigm: defend by maximizin…",
+   "url": "http://arxiv.org/abs/2611.34188v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-25T11:16:43Z",
+   "nodes": [
+    "c-retrieval",
+    "s-guardrails"
+   ],
+   "relevance": 5,
+   "application": false
+  },
+  {
+   "id": "1fnsbuw",
+   "title": "Unstable Action Boundaries in Lethal Drone Agents",
+   "summary": "Tool-using large language model (LLM) agents raise safety risks that are not captured by text-only refusal behavior, especially when tools can trigger high-impact actions. This concern is salient in military settings, where autonomous weapons raise the possibility of delegating force decisions to software agents. In t…",
+   "url": "http://arxiv.org/abs/2611.34121v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-25T10:23:38Z",
+   "nodes": [
+    "s-guardrails"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "1l2zty4",
+   "title": "Few-Shot Adaptation of Vision-Language Models via Agentic Model Editing",
+   "summary": "Few-shot adaptation transfers pretrained Vision-Language Models (VLMs) to new domains using a small set of labeled images. Most methods fit prompts, representations, or classifiers within an adaptation procedure specified in advance. Yet the visual distinctions needed for recognition can differ substantially across do…",
+   "url": "http://arxiv.org/abs/2611.34036v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-25T09:18:22Z",
+   "nodes": [
+    "r-examples"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "fwad68",
+   "title": "EGSE: Evidence-Grounded Skill Evolution for Medical Reasoning Agents",
+   "summary": "Medical reasoning agents combine foundation models with specialized tools to interpret medical images, yet reusing their historical experience remains challenging. A correct final answer can conceal flawed reasoning or tool use, synthesized advice may lack source support, and superficially similar cases may require di…",
+   "url": "http://arxiv.org/abs/2611.33909v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-25T07:28:21Z",
+   "nodes": [
+    "a-tools"
    ],
    "relevance": 4,
    "application": false
   },
   {
-   "id": "kwligk",
-   "title": "Efficient Video Retrieval Augmented Generation via Token Allocation",
-   "summary": "Efficient long-video understanding requires identifying relevant evidence while minimizing the tokens processed by vision-language models (VLMs). Existing video retrieval-augmented generation (RAG) methods rely on frame selection and token compression, but overlook how much each additional token is worth. We introduce…",
-   "url": "http://arxiv.org/abs/2611.32938v1",
+   "id": "ld439h",
+   "title": "Privacy-Aware Adaptive Client Selection for Federated Retrieval-Augmented Generation",
+   "summary": "Federated retrieval-augmented generation retrieves evidence from distributed corpora. However, broadcasting queries to all clients increases the retrieval burden and query exposure. We present Privacy-Aware Adaptive Client Selection for Federated Retrieval-Augmented Generation (PACS-FedRAG), an online selector that ta…",
+   "url": "http://arxiv.org/abs/2611.33890v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-24T16:43:31Z",
+   "date": "2026-11-25T07:05:49Z",
    "nodes": [
     "c-retrieval"
    ],
-   "relevance": 6,
+   "relevance": 3,
    "application": false
   },
   {
-   "id": "enjcx0",
-   "title": "VISE: Verifier-Independent Skill Self-Evolution with Feedback from Tool Implementations",
-   "summary": "Agent skills provide reusable workflows that guide LLM agents in using tools. Refining these workflows requires feedback on missing or incorrect instructions, but task-specific verifiers are not always available. We propose VISE (Verifier-Independent Skill Evolution), a scripts-first approach that uses tool implementa…",
-   "url": "http://arxiv.org/abs/2611.32480v1",
+   "id": "1sfafpy",
+   "title": "FORK: Co-Evolving Safe Disclosure and Decision Skills Against Attackers Who Read Every Refusal",
+   "summary": "When a guardrail rejects an LLM agent's action, its message reaches any attacker observing the trajectory: a fixed refusal leaves benign users unable to recover, whereas an explanation can tell the attacker what to try next. We study this as safe disclosure: explaining rejections so that authorized tasks recover witho…",
+   "url": "http://arxiv.org/abs/2611.33879v1",
    "source": "arXiv · agents & LLM systems",
    "sourceId": "arxiv-agents",
    "category": "research",
    "badge": "preprint",
-   "date": "2026-11-24T12:08:40Z",
+   "date": "2026-11-25T06:57:56Z",
    "nodes": [
-    "k-skills"
+    "k-skills",
+    "s-guardrails"
    ],
-   "relevance": 6,
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "hj9aeu",
+   "title": "Multimodal Safety Evaluation of Vision-Language Models in Japanese",
+   "summary": "Vision-Language Models (VLMs) are increasingly deployed in Japanese-language settings, yet multimodal safety evaluation has been largely English-centric. We extend the Multimodal Safety Test Suite (MSTS) of Röttger et al. (2025) to Japanese as the 12th language, contributing 320 machine-translated and post-edited case…",
+   "url": "http://arxiv.org/abs/2611.33789v1",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-25T05:14:05Z",
+   "nodes": [
+    "c-files"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "hu7g9w",
+   "title": "Interactive Proofs as a Unified Framework for Evaluating and Leveraging Verifiable Proof Generation by LLM Agents",
+   "summary": "Recent advances in LLM-assisted theorem proving and program verification have attracted widespread attention. Beyond determining whether a proposition is true, LLM agents must produce evidence that can be independently checked by humans or formal verification tools. To evaluate the underlying, protocol-agnostic abilit…",
+   "url": "http://arxiv.org/abs/2611.33676v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-25T02:42:59Z",
+   "nodes": [
+    "c-retrieval"
+   ],
+   "relevance": 3,
+   "application": false
+  },
+  {
+   "id": "ly4kx1",
+   "title": "PRIOR: Pre-Call Reasoning in SFT and Its Influence on Tool-Use Retention under RL",
+   "summary": "Tool use learned during supervised fine-tuning (SFT) is not always retained during reinforcement learning (RL). We study how properties of SFT data may affect this retention by constructing Low, Medium, and High SFT datasets with approximately matched token budgets but different tool-call depths. Under the same RL rec…",
+   "url": "http://arxiv.org/abs/2611.33648v1",
+   "source": "arXiv · agents & LLM systems",
+   "sourceId": "arxiv-agents",
+   "category": "research",
+   "badge": "preprint",
+   "date": "2026-11-25T02:14:13Z",
+   "nodes": [
+    "a-tools"
+   ],
+   "relevance": 3,
    "application": false
   },
   {
@@ -132,115 +262,17 @@
    "application": false
   },
   {
-   "id": "8qqymn",
-   "title": "Validating Multi-Model AI-Generated Acceptance Criteria in Requirements Engineering",
-   "summary": "Large language models (LLMs) are increasingly used in software engineering to generate artifacts such as requirements, user stories, acceptance criteria, documentation, and code. Their use in requirements engineering raises important questions about correctness, traceability, and hallucination, especially because flaw…",
-   "url": "http://arxiv.org/abs/2611.32374v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-24T10:41:13Z",
-   "nodes": [
-    "f-artifacts"
-   ],
-   "relevance": 5,
-   "application": false
-  },
-  {
    "id": "80oxio",
    "title": "Unjamming Deferrals: Supporting Students Through JAMN Bot, a Mobile RAG-Grounded Policy Assistant",
    "summary": "In some educational institutions, workflows such as the exam deferral process can be slow, inconvenient, and inconsistent, which creates the need to implement novel digital systems. This paper presents Schedulater, a mobile app for managing university exam deferrals. JAMN Bot is a Large Language Model (LLM)-powered ch…",
    "url": "http://arxiv.org/abs/2611.32266v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
+   "source": "arXiv · evaluation & prompting",
+   "sourceId": "arxiv-eval",
    "category": "research",
    "badge": "preprint",
    "date": "2026-11-24T09:37:55Z",
    "nodes": [
     "c-retrieval"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "1cn3m2v",
-   "title": "LLM Agent Authorization Across Context Compaction",
-   "summary": "Request-derived authorizers such as Progent protect LLM agents from prompt injection by deriving what an agent may do from the user's request. Their guarantee rests on attribution: the request is taken to be what the user said. Compaction breaks it. At every automatic compaction we observed, Claude Code and Codex plac…",
-   "url": "http://arxiv.org/abs/2611.32194v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-24T08:44:15Z",
-   "nodes": [
-    "c-editing",
-    "k-cli",
-    "s-guardrails"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "i94urw",
-   "title": "AgentDRC: Multi-Agent Algorithms for Spatially-Aware Automated DRC Correction",
-   "summary": "Design Rule Checking (DRC) error fixing remains a time-consuming bottleneck in physical design, often requiring manual intervention despite advanced EDA optimizations. Existing LLM-agent approaches fall short due to redundant contextual shapes, limited spatial reasoning over raw coordinates, and inefficient flat layou…",
-   "url": "http://arxiv.org/abs/2611.31876v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-24T03:30:08Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "9th7hl",
-   "title": "RTLDetective: Agentic RTL Debugging through Dataflow Analysis and Simulation-Guided Fault Localization",
-   "summary": "Large language model (LLM) agents have shown promise in RTL debugging, yet accurately localizing functional errors and generating reliable repairs remain challenging. We propose RTLDetective, a multi-agent framework that integrates signal dependency analysis, simulation-guided fault localization, and knowledge-based r…",
-   "url": "http://arxiv.org/abs/2611.31709v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-23T23:59:43Z",
-   "nodes": [
-    "a-teams"
-   ],
-   "relevance": 3,
-   "application": false
-  },
-  {
-   "id": "yahb7l",
-   "title": "BRAG: Bayesian Retrieval Augmented Generation",
-   "summary": "Retrieval-augmented generation (RAG) ranks memory chunks by semantic similarity to the query. Many methods improve on this by learning from feedback on what was retrieved, but each is a separate heuristic, with no account of when it is the right choice. We introduce BRAG, a generative model of retrieval with use. Each…",
-   "url": "http://arxiv.org/abs/2611.31656v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-23T22:41:00Z",
-   "nodes": [
-    "c-retrieval"
-   ],
-   "relevance": 6,
-   "application": false
-  },
-  {
-   "id": "1bgl20c",
-   "title": "SpatialCraft: Evolving Procedural Intelligence from Experience and Skills for Spatial Reasoning Agents",
-   "summary": "Spatial reasoning agents increasingly rely on external tools, such as 3D reconstruction, segmentation, and geometric computation, to answer questions that a multimodal large language model (MLLM) cannot resolve from pixels alone. Tool access, however, shifts the bottleneck to orchestration: the agent must decide which…",
-   "url": "http://arxiv.org/abs/2611.31475v1",
-   "source": "arXiv · agents & LLM systems",
-   "sourceId": "arxiv-agents",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-23T19:47:57Z",
-   "nodes": [
-    "k-skills"
    ],
    "relevance": 3,
    "application": false
@@ -293,38 +325,6 @@
    ],
    "relevance": 3,
    "application": true
-  },
-  {
-   "id": "1p6ygpl",
-   "title": "Rubric Semantics or Numerical Priors? Auditing Scale-Direction Bias in LLM Judges",
-   "summary": "Recent benchmark evaluations increasingly rely on Large Language Models (LLMs) as automatic judges. This paradigm assumes LLMs evaluate based on the rubric's semantic meaning rather than its numeric scale. We question this assumption by introducing semantic faithfulness: the principle that semantically equivalent rubr…",
-   "url": "http://arxiv.org/abs/2611.25588v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-19T06:31:51Z",
-   "nodes": [
-    "s-models"
-   ],
-   "relevance": 3,
-   "application": true
-  },
-  {
-   "id": "gp9c2n",
-   "title": "Forget Freely, Grep Later: Lossless, Index-Free Memory for Long-Horizon LLM Agents",
-   "summary": "Long-horizon LLM agents often exceed their context windows, forcing them to discard information that may be needed later. Existing context management strategies rely on summarization, masking, or structured memory, requiring decisions about what to preserve or how to retrieve it before future needs are known. However,…",
-   "url": "http://arxiv.org/abs/2611.25123v1",
-   "source": "arXiv · evaluation & prompting",
-   "sourceId": "arxiv-eval",
-   "category": "research",
-   "badge": "preprint",
-   "date": "2026-11-18T20:02:57Z",
-   "nodes": [
-    "c-longctx"
-   ],
-   "relevance": 3,
-   "application": false
   },
   {
    "id": "1hcvipd",
@@ -1286,38 +1286,52 @@
   }
  ],
  "byNode": {
-  "c-memory": [
-   "5bb4rq"
+  "s-models": [
+   "1u98lc8",
+   "1xoxg2h",
+   "l5f9wm",
+   "1969w4",
+   "x33h3e"
+  ],
+  "k-skills": [
+   "s4r7z4",
+   "1sfafpy",
+   "bkmagq",
+   "1iqa1zj"
   ],
   "c-retrieval": [
-   "kwligk",
+   "1fft2uq",
+   "ld439h",
+   "hu7g9w",
    "80oxio",
-   "yahb7l",
    "1s1dlbz",
    "18q993h",
    "hvyvr2",
    "6u8370"
   ],
-  "k-skills": [
-   "enjcx0",
-   "1bgl20c",
-   "bkmagq",
-   "1iqa1zj"
+  "s-guardrails": [
+   "1fft2uq",
+   "1fnsbuw",
+   "1sfafpy",
+   "wxdzqb"
+  ],
+  "r-examples": [
+   "1l2zty4"
+  ],
+  "a-tools": [
+   "fwad68",
+   "ly4kx1",
+   "1hlgbjc",
+   "76q8kv"
+  ],
+  "c-files": [
+   "hj9aeu"
   ],
   "c-longctx": [
    "11ic24i",
-   "1l9huae",
-   "gp9c2n"
-  ],
-  "f-artifacts": [
-   "8qqymn",
-   "hzvm6i"
-  ],
-  "c-editing": [
-   "1cn3m2v"
+   "1l9huae"
   ],
   "k-cli": [
-   "1cn3m2v",
    "1azp3ne",
    "1hcvipd",
    "1botn7g",
@@ -1333,21 +1347,6 @@
    "1qu4p7p",
    "1a26jo",
    "cf8qgr"
-  ],
-  "s-guardrails": [
-   "1cn3m2v",
-   "wxdzqb"
-  ],
-  "a-teams": [
-   "i94urw",
-   "9th7hl"
-  ],
-  "s-models": [
-   "1xoxg2h",
-   "1p6ygpl",
-   "l5f9wm",
-   "1969w4",
-   "x33h3e"
   ],
   "a-managed": [
    "1u1z3v2",
@@ -1383,6 +1382,9 @@
    "85bq9m",
    "1qu4p7p"
   ],
+  "f-artifacts": [
+   "hzvm6i"
+  ],
   "f-docs": [
    "zz3we2"
   ],
@@ -1411,23 +1413,11 @@
   "s-structured": [
    "9ejk2h"
   ],
-  "a-tools": [
-   "1hlgbjc",
-   "76q8kv"
-  ],
   "a-runner": [
    "99ut0u"
   ]
  },
  "applications": [
-  {
-   "id": "i94urw",
-   "node": "a-teams",
-   "nodeTitle": "Agent Teams & Orchestration",
-   "discipline": "agents",
-   "title": "AgentDRC: Multi-Agent Algorithms for Spatially-Aware Automated DRC Correction",
-   "url": "http://arxiv.org/abs/2611.31876v1"
-  },
   {
    "id": "1azp3ne",
    "node": "k-cli",
@@ -1435,14 +1425,6 @@
    "discipline": "code",
    "title": "Show HN: Zeus – Claude Code for AI voice agents",
    "url": "https://thunderphone.com/blog/introducing-zeus"
-  },
-  {
-   "id": "1p6ygpl",
-   "node": "s-models",
-   "nodeTitle": "Choosing a Model",
-   "discipline": "scale",
-   "title": "Rubric Semantics or Numerical Priors? Auditing Scale-Direction Bias in LLM Judges",
-   "url": "http://arxiv.org/abs/2611.25588v1"
   },
   {
    "id": "1hcvipd",
