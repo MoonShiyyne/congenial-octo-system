@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-27T08:23:15.050Z",
- "itemCount": 73,
+ "generated": "2026-11-27T21:12:56.940Z",
+ "itemCount": 74,
  "sourceStatus": [
   {
    "id": "claude-code-changelog",
@@ -34,8 +34,8 @@
    "id": "hn-claude",
    "label": "Hacker News · Claude",
    "ok": true,
-   "fetched": 47,
-   "kept": 7
+   "fetched": 48,
+   "kept": 8
   },
   {
    "id": "hn-agents",
@@ -67,6 +67,23 @@
   }
  ],
  "items": [
+  {
+   "id": "10vad12",
+   "title": "Ask HN: Is Claude Code nerfing AI and agent-harness projects?",
+   "summary": "",
+   "url": "https://news.ycombinator.com/item?id=50665232",
+   "discussion": "https://news.ycombinator.com/item?id=50665232",
+   "source": "Hacker News · Claude",
+   "sourceId": "hn-claude",
+   "category": "market",
+   "badge": "5 pts",
+   "date": "2026-11-27T10:27:39Z",
+   "nodes": [
+    "k-cli"
+   ],
+   "relevance": 3,
+   "application": false
+  },
   {
    "id": "1u98lc8",
    "title": "EvoLink-Bench: A Benchmark for Evaluating Self-Evolving Agents in Long-Horizon Interdependent Task Streams",
@@ -1269,6 +1286,24 @@
   }
  ],
  "byNode": {
+  "k-cli": [
+   "10vad12",
+   "1azp3ne",
+   "1hcvipd",
+   "1botn7g",
+   "10sfy2b",
+   "1ynpj63",
+   "1rvlid5",
+   "16jzqx9",
+   "kginxy",
+   "ouarcq",
+   "1ktme1w",
+   "1wgt1b8",
+   "hzhlbu",
+   "1qu4p7p",
+   "1a26jo",
+   "cf8qgr"
+  ],
   "s-models": [
    "1u98lc8",
    "1xoxg2h",
@@ -1312,23 +1347,6 @@
   "c-longctx": [
    "11ic24i",
    "1l9huae"
-  ],
-  "k-cli": [
-   "1azp3ne",
-   "1hcvipd",
-   "1botn7g",
-   "10sfy2b",
-   "1ynpj63",
-   "1rvlid5",
-   "16jzqx9",
-   "kginxy",
-   "ouarcq",
-   "1ktme1w",
-   "1wgt1b8",
-   "hzhlbu",
-   "1qu4p7p",
-   "1a26jo",
-   "cf8qgr"
   ],
   "a-managed": [
    "1u1z3v2",
